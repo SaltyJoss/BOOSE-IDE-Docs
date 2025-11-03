@@ -1,6 +1,4 @@
----
-_layout: landing
----
+
 <div align="left">
 	<img src="_site/favicon/BOOSE-API-DOCS.png" width="480" height="96">
 </div>
