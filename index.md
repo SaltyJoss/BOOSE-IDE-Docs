@@ -1,6 +1,6 @@
 
 <div align="left">
-	<img src="docs/favicon/BOOSE-API-DOCS.png" width="480" height="96">
+	<img src="favicon/BOOSE-API-DOCS.png" width="480" height="96">
 </div>
 
  <br> 
