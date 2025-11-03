@@ -1,0 +1,686 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSECoreApp.Core.Variables.IntApp
+  commentId: T:BOOSECoreApp.Core.Variables.IntApp
+  id: IntApp
+  parent: BOOSECoreApp.Core.Variables
+  children:
+  - BOOSECoreApp.Core.Variables.IntApp.#ctor(System.String,System.Int32)
+  - BOOSECoreApp.Core.Variables.IntApp.GetValue
+  - BOOSECoreApp.Core.Variables.IntApp.SetValue(System.Object)
+  - BOOSECoreApp.Core.Variables.IntApp.VarType
+  langs:
+  - csharp
+  - vb
+  name: IntApp
+  nameWithType: IntApp
+  fullName: BOOSECoreApp.Core.Variables.IntApp
+  type: Class
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Variables/IntApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Variables
+  summary: ''
+  example: []
+  syntax:
+    content: 'public class IntApp : VariableAppBase'
+    content.vb: Public Class IntApp Inherits VariableAppBase
+  seealso:
+  - linkId: BOOSECoreApp.Core.Base.VariableAppBase
+    commentId: T:BOOSECoreApp.Core.Base.VariableAppBase
+  inheritance:
+  - System.Object
+  - BOOSECoreApp.Core.Base.VariableAppBase
+  inheritedMembers:
+  - BOOSECoreApp.Core.Base.VariableAppBase._value
+  - BOOSECoreApp.Core.Base.VariableAppBase.Name
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: BOOSECoreApp.Core.Variables.IntApp.#ctor(System.String,System.Int32)
+  commentId: M:BOOSECoreApp.Core.Variables.IntApp.#ctor(System.String,System.Int32)
+  id: '#ctor(System.String,System.Int32)'
+  parent: BOOSECoreApp.Core.Variables.IntApp
+  langs:
+  - csharp
+  - vb
+  name: IntApp(string, int)
+  nameWithType: IntApp.IntApp(string, int)
+  fullName: BOOSECoreApp.Core.Variables.IntApp.IntApp(string, int)
+  type: Constructor
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Variables/IntApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Variables
+  summary: Initialises a new instance of the <xref href="BOOSECoreApp.Core.Variables.IntApp" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public IntApp(string name, int initial = 0)
+    parameters:
+    - id: name
+      type: System.String
+      description: String name of variable.
+    - id: initial
+      type: System.Int32
+      description: Initial / Default integer value.
+    content.vb: Public Sub New(name As String, initial As Integer = 0)
+  overload: BOOSECoreApp.Core.Variables.IntApp.#ctor*
+  nameWithType.vb: IntApp.New(String, Integer)
+  fullName.vb: BOOSECoreApp.Core.Variables.IntApp.New(String, Integer)
+  name.vb: New(String, Integer)
+- uid: BOOSECoreApp.Core.Variables.IntApp.SetValue(System.Object)
+  commentId: M:BOOSECoreApp.Core.Variables.IntApp.SetValue(System.Object)
+  id: SetValue(System.Object)
+  parent: BOOSECoreApp.Core.Variables.IntApp
+  langs:
+  - csharp
+  - vb
+  name: SetValue(object)
+  nameWithType: IntApp.SetValue(object)
+  fullName: BOOSECoreApp.Core.Variables.IntApp.SetValue(object)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Variables/IntApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Variables
+  summary: Assigns a new value to the variable.
+  example: []
+  syntax:
+    content: public override void SetValue(object value)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The value to assign to the variable.
+    content.vb: Public Overrides Sub SetValue(value As Object)
+  overridden: BOOSECoreApp.Core.Base.VariableAppBase.SetValue(System.Object)
+  overload: BOOSECoreApp.Core.Variables.IntApp.SetValue*
+  nameWithType.vb: IntApp.SetValue(Object)
+  fullName.vb: BOOSECoreApp.Core.Variables.IntApp.SetValue(Object)
+  name.vb: SetValue(Object)
+- uid: BOOSECoreApp.Core.Variables.IntApp.GetValue
+  commentId: M:BOOSECoreApp.Core.Variables.IntApp.GetValue
+  id: GetValue
+  parent: BOOSECoreApp.Core.Variables.IntApp
+  langs:
+  - csharp
+  - vb
+  name: GetValue()
+  nameWithType: IntApp.GetValue()
+  fullName: BOOSECoreApp.Core.Variables.IntApp.GetValue()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Variables/IntApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Variables
+  summary: Retrieves the current value stored in the variable.
+  example: []
+  syntax:
+    content: public override object GetValue()
+    return:
+      type: System.Object
+      description: The current value of the variable.
+    content.vb: Public Overrides Function GetValue() As Object
+  overridden: BOOSECoreApp.Core.Base.VariableAppBase.GetValue
+  overload: BOOSECoreApp.Core.Variables.IntApp.GetValue*
+- uid: BOOSECoreApp.Core.Variables.IntApp.VarType
+  commentId: P:BOOSECoreApp.Core.Variables.IntApp.VarType
+  id: VarType
+  parent: BOOSECoreApp.Core.Variables.IntApp
+  langs:
+  - csharp
+  - vb
+  name: VarType
+  nameWithType: IntApp.VarType
+  fullName: BOOSECoreApp.Core.Variables.IntApp.VarType
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Variables/IntApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Variables
+  summary: Gets the data type of the variable.
+  remarks: >-
+    The type is determined by the <xref href="BOOSECoreApp.Core.Adapters.SoftVariable.VariableType" data-throw-if-not-resolved="false"></xref> enumeration 
+
+    and reflects the logical type (e.g. integer, real number, boolean) of the variable.
+  example: []
+  syntax:
+    content: public override SoftVariable.VariableType VarType { get; }
+    parameters: []
+    return:
+      type: BOOSECoreApp.Core.Adapters.SoftVariable.VariableType
+    content.vb: Public Overrides ReadOnly Property VarType As SoftVariable.VariableType
+  overridden: BOOSECoreApp.Core.Base.VariableAppBase.VarType
+  overload: BOOSECoreApp.Core.Variables.IntApp.VarType*
+references:
+- uid: BOOSECoreApp.Core.Base.VariableAppBase
+  commentId: T:BOOSECoreApp.Core.Base.VariableAppBase
+  parent: BOOSECoreApp.Core.Base
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.VariableAppBase.html
+  name: VariableAppBase
+  nameWithType: VariableAppBase
+  fullName: BOOSECoreApp.Core.Base.VariableAppBase
+- uid: BOOSECoreApp.Core.Variables
+  commentId: N:BOOSECoreApp.Core.Variables
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Variables
+  nameWithType: BOOSECoreApp.Core.Variables
+  fullName: BOOSECoreApp.Core.Variables
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Variables
+    name: Variables
+    isExternal: true
+    href: BOOSECoreApp.Core.Variables.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Variables
+    name: Variables
+    isExternal: true
+    href: BOOSECoreApp.Core.Variables.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BOOSECoreApp.Core.Base.VariableAppBase._value
+  commentId: F:BOOSECoreApp.Core.Base.VariableAppBase._value
+  parent: BOOSECoreApp.Core.Base.VariableAppBase
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.VariableAppBase.html#BOOSECoreApp_Core_Base_VariableAppBase__value
+  name: _value
+  nameWithType: VariableAppBase._value
+  fullName: BOOSECoreApp.Core.Base.VariableAppBase._value
+- uid: BOOSECoreApp.Core.Base.VariableAppBase.Name
+  commentId: P:BOOSECoreApp.Core.Base.VariableAppBase.Name
+  parent: BOOSECoreApp.Core.Base.VariableAppBase
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.VariableAppBase.html#BOOSECoreApp_Core_Base_VariableAppBase_Name
+  name: Name
+  nameWithType: VariableAppBase.Name
+  fullName: BOOSECoreApp.Core.Base.VariableAppBase.Name
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: BOOSECoreApp.Core.Base
+  commentId: N:BOOSECoreApp.Core.Base
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Base
+  nameWithType: BOOSECoreApp.Core.Base
+  fullName: BOOSECoreApp.Core.Base
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Base
+    name: Base
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Base
+    name: Base
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSECoreApp.Core.Variables.IntApp
+  commentId: T:BOOSECoreApp.Core.Variables.IntApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Variables.IntApp.html
+  name: IntApp
+  nameWithType: IntApp
+  fullName: BOOSECoreApp.Core.Variables.IntApp
+- uid: BOOSECoreApp.Core.Variables.IntApp.#ctor*
+  commentId: Overload:BOOSECoreApp.Core.Variables.IntApp.#ctor
+  isExternal: true
+  href: BOOSECoreApp.Core.Variables.IntApp.html#BOOSECoreApp_Core_Variables_IntApp__ctor_System_String_System_Int32_
+  name: IntApp
+  nameWithType: IntApp.IntApp
+  fullName: BOOSECoreApp.Core.Variables.IntApp.IntApp
+  nameWithType.vb: IntApp.New
+  fullName.vb: BOOSECoreApp.Core.Variables.IntApp.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: BOOSECoreApp.Core.Base.VariableAppBase.SetValue(System.Object)
+  commentId: M:BOOSECoreApp.Core.Base.VariableAppBase.SetValue(System.Object)
+  parent: BOOSECoreApp.Core.Base.VariableAppBase
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.VariableAppBase.html#BOOSECoreApp_Core_Base_VariableAppBase_SetValue_System_Object_
+  name: SetValue(object)
+  nameWithType: VariableAppBase.SetValue(object)
+  fullName: BOOSECoreApp.Core.Base.VariableAppBase.SetValue(object)
+  nameWithType.vb: VariableAppBase.SetValue(Object)
+  fullName.vb: BOOSECoreApp.Core.Base.VariableAppBase.SetValue(Object)
+  name.vb: SetValue(Object)
+  spec.csharp:
+  - uid: BOOSECoreApp.Core.Base.VariableAppBase.SetValue(System.Object)
+    name: SetValue
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.VariableAppBase.html#BOOSECoreApp_Core_Base_VariableAppBase_SetValue_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: BOOSECoreApp.Core.Base.VariableAppBase.SetValue(System.Object)
+    name: SetValue
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.VariableAppBase.html#BOOSECoreApp_Core_Base_VariableAppBase_SetValue_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: BOOSECoreApp.Core.Variables.IntApp.SetValue*
+  commentId: Overload:BOOSECoreApp.Core.Variables.IntApp.SetValue
+  isExternal: true
+  href: BOOSECoreApp.Core.Variables.IntApp.html#BOOSECoreApp_Core_Variables_IntApp_SetValue_System_Object_
+  name: SetValue
+  nameWithType: IntApp.SetValue
+  fullName: BOOSECoreApp.Core.Variables.IntApp.SetValue
+- uid: BOOSECoreApp.Core.Base.VariableAppBase.GetValue
+  commentId: M:BOOSECoreApp.Core.Base.VariableAppBase.GetValue
+  parent: BOOSECoreApp.Core.Base.VariableAppBase
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.VariableAppBase.html#BOOSECoreApp_Core_Base_VariableAppBase_GetValue
+  name: GetValue()
+  nameWithType: VariableAppBase.GetValue()
+  fullName: BOOSECoreApp.Core.Base.VariableAppBase.GetValue()
+  spec.csharp:
+  - uid: BOOSECoreApp.Core.Base.VariableAppBase.GetValue
+    name: GetValue
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.VariableAppBase.html#BOOSECoreApp_Core_Base_VariableAppBase_GetValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSECoreApp.Core.Base.VariableAppBase.GetValue
+    name: GetValue
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.VariableAppBase.html#BOOSECoreApp_Core_Base_VariableAppBase_GetValue
+  - name: (
+  - name: )
+- uid: BOOSECoreApp.Core.Variables.IntApp.GetValue*
+  commentId: Overload:BOOSECoreApp.Core.Variables.IntApp.GetValue
+  isExternal: true
+  href: BOOSECoreApp.Core.Variables.IntApp.html#BOOSECoreApp_Core_Variables_IntApp_GetValue
+  name: GetValue
+  nameWithType: IntApp.GetValue
+  fullName: BOOSECoreApp.Core.Variables.IntApp.GetValue
+- uid: BOOSECoreApp.Core.Adapters.SoftVariable.VariableType
+  commentId: T:BOOSECoreApp.Core.Adapters.SoftVariable.VariableType
+  parent: BOOSECoreApp.Core.Adapters
+  isExternal: true
+  href: BOOSECoreApp.Core.Adapters.SoftVariable.html
+  name: SoftVariable.VariableType
+  nameWithType: SoftVariable.VariableType
+  fullName: BOOSECoreApp.Core.Adapters.SoftVariable.VariableType
+  spec.csharp:
+  - uid: BOOSECoreApp.Core.Adapters.SoftVariable
+    name: SoftVariable
+    isExternal: true
+    href: BOOSECoreApp.Core.Adapters.SoftVariable.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Adapters.SoftVariable.VariableType
+    name: VariableType
+    isExternal: true
+    href: BOOSECoreApp.Core.Adapters.SoftVariable.VariableType.html
+  spec.vb:
+  - uid: BOOSECoreApp.Core.Adapters.SoftVariable
+    name: SoftVariable
+    isExternal: true
+    href: BOOSECoreApp.Core.Adapters.SoftVariable.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Adapters.SoftVariable.VariableType
+    name: VariableType
+    isExternal: true
+    href: BOOSECoreApp.Core.Adapters.SoftVariable.VariableType.html
+- uid: BOOSECoreApp.Core.Base.VariableAppBase.VarType
+  commentId: P:BOOSECoreApp.Core.Base.VariableAppBase.VarType
+  parent: BOOSECoreApp.Core.Base.VariableAppBase
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.VariableAppBase.html#BOOSECoreApp_Core_Base_VariableAppBase_VarType
+  name: VarType
+  nameWithType: VariableAppBase.VarType
+  fullName: BOOSECoreApp.Core.Base.VariableAppBase.VarType
+- uid: BOOSECoreApp.Core.Variables.IntApp.VarType*
+  commentId: Overload:BOOSECoreApp.Core.Variables.IntApp.VarType
+  isExternal: true
+  href: BOOSECoreApp.Core.Variables.IntApp.html#BOOSECoreApp_Core_Variables_IntApp_VarType
+  name: VarType
+  nameWithType: IntApp.VarType
+  fullName: BOOSECoreApp.Core.Variables.IntApp.VarType
+- uid: BOOSECoreApp.Core.Adapters
+  commentId: N:BOOSECoreApp.Core.Adapters
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Adapters
+  nameWithType: BOOSECoreApp.Core.Adapters
+  fullName: BOOSECoreApp.Core.Adapters
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Adapters
+    name: Adapters
+    isExternal: true
+    href: BOOSECoreApp.Core.Adapters.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Adapters
+    name: Adapters
+    isExternal: true
+    href: BOOSECoreApp.Core.Adapters.html

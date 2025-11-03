@@ -1,0 +1,477 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSECoreApp.Core.Base.WrapperApp
+  commentId: T:BOOSECoreApp.Core.Base.WrapperApp
+  id: WrapperApp
+  parent: BOOSECoreApp.Core.Base
+  children:
+  - BOOSECoreApp.Core.Base.WrapperApp.#ctor
+  - BOOSECoreApp.Core.Base.WrapperApp.RunProgram(System.String,BOOSECoreApp.Core.Interfaces.IGraphicAdapter)
+  langs:
+  - csharp
+  - vb
+  name: WrapperApp
+  nameWithType: WrapperApp
+  fullName: BOOSECoreApp.Core.Base.WrapperApp
+  type: Class
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/WrapperApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: >-
+    Adapts <xref href="BOOSECoreApp.Core.Base.CanvasApp" data-throw-if-not-resolved="false"></xref> for use by BOOSE commands via <xref href="BOOSECoreApp.Core.Interfaces.IGraphicAdapter" data-throw-if-not-resolved="false"></xref>.
+
+    Provides a unified interface for drawing operations, allowing commands to execute without directly referencing the canvas implementation.
+  example: []
+  syntax:
+    content: public class WrapperApp
+    content.vb: Public Class WrapperApp
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: BOOSECoreApp.Core.Base.WrapperApp.RunProgram(System.String,BOOSECoreApp.Core.Interfaces.IGraphicAdapter)
+  commentId: M:BOOSECoreApp.Core.Base.WrapperApp.RunProgram(System.String,BOOSECoreApp.Core.Interfaces.IGraphicAdapter)
+  id: RunProgram(System.String,BOOSECoreApp.Core.Interfaces.IGraphicAdapter)
+  parent: BOOSECoreApp.Core.Base.WrapperApp
+  langs:
+  - csharp
+  - vb
+  name: RunProgram(string, IGraphicAdapter)
+  nameWithType: WrapperApp.RunProgram(string, IGraphicAdapter)
+  fullName: BOOSECoreApp.Core.Base.WrapperApp.RunProgram(string, BOOSECoreApp.Core.Interfaces.IGraphicAdapter)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/WrapperApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: >-
+    Parses and runs a BOOSE program on the specified <xref href="BOOSECoreApp.Core.Interfaces.IGraphicAdapter" data-throw-if-not-resolved="false"></xref>.
+
+    Supports multi-line code and ignores empty lines or lines starting with '*'.
+  remarks: Creates a <xref href="BOOSECoreApp.Core.Base.CommandFactoryApp" data-throw-if-not-resolved="false"></xref> and <xref href="BOOSECoreApp.Core.Base.StoredProgramApp" data-throw-if-not-resolved="false"></xref>, parses commands with <xref href="BOOSECoreApp.Core.Base.ParserApp" data-throw-if-not-resolved="false"></xref>, then executes them. Exceptions are logged without terminating the host application.
+  example: []
+  syntax:
+    content: public static void RunProgram(string code, IGraphicAdapter grphicAdapter)
+    parameters:
+    - id: code
+      type: System.String
+      description: The BOOSE program code to execute.
+    - id: grphicAdapter
+      type: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+      description: The graphic adapter used to execute commands on a canvas.
+    content.vb: Public Shared Sub RunProgram(code As String, grphicAdapter As IGraphicAdapter)
+  overload: BOOSECoreApp.Core.Base.WrapperApp.RunProgram*
+  nameWithType.vb: WrapperApp.RunProgram(String, IGraphicAdapter)
+  fullName.vb: BOOSECoreApp.Core.Base.WrapperApp.RunProgram(String, BOOSECoreApp.Core.Interfaces.IGraphicAdapter)
+  name.vb: RunProgram(String, IGraphicAdapter)
+- uid: BOOSECoreApp.Core.Base.WrapperApp.#ctor
+  commentId: M:BOOSECoreApp.Core.Base.WrapperApp.#ctor
+  id: '#ctor'
+  parent: BOOSECoreApp.Core.Base.WrapperApp
+  langs:
+  - csharp
+  - vb
+  name: WrapperApp()
+  nameWithType: WrapperApp.WrapperApp()
+  fullName: BOOSECoreApp.Core.Base.WrapperApp.WrapperApp()
+  type: Constructor
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/WrapperApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  syntax:
+    content: public WrapperApp()
+    content.vb: Public Sub New()
+  overload: BOOSECoreApp.Core.Base.WrapperApp.#ctor*
+  nameWithType.vb: WrapperApp.New()
+  fullName.vb: BOOSECoreApp.Core.Base.WrapperApp.New()
+  name.vb: New()
+references:
+- uid: BOOSECoreApp.Core.Base.CanvasApp
+  commentId: T:BOOSECoreApp.Core.Base.CanvasApp
+  parent: BOOSECoreApp.Core.Base
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.CanvasApp.html
+  name: CanvasApp
+  nameWithType: CanvasApp
+  fullName: BOOSECoreApp.Core.Base.CanvasApp
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  commentId: T:BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  parent: BOOSECoreApp.Core.Interfaces
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html
+  name: IGraphicAdapter
+  nameWithType: IGraphicAdapter
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+- uid: BOOSECoreApp.Core.Base
+  commentId: N:BOOSECoreApp.Core.Base
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Base
+  nameWithType: BOOSECoreApp.Core.Base
+  fullName: BOOSECoreApp.Core.Base
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Base
+    name: Base
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Base
+    name: Base
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: BOOSECoreApp.Core.Interfaces
+  commentId: N:BOOSECoreApp.Core.Interfaces
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Interfaces
+  nameWithType: BOOSECoreApp.Core.Interfaces
+  fullName: BOOSECoreApp.Core.Interfaces
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSECoreApp.Core.Base.CommandFactoryApp
+  commentId: T:BOOSECoreApp.Core.Base.CommandFactoryApp
+  parent: BOOSECoreApp.Core.Base
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.CommandFactoryApp.html
+  name: CommandFactoryApp
+  nameWithType: CommandFactoryApp
+  fullName: BOOSECoreApp.Core.Base.CommandFactoryApp
+- uid: BOOSECoreApp.Core.Base.StoredProgramApp
+  commentId: T:BOOSECoreApp.Core.Base.StoredProgramApp
+  parent: BOOSECoreApp.Core.Base
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.StoredProgramApp.html
+  name: StoredProgramApp
+  nameWithType: StoredProgramApp
+  fullName: BOOSECoreApp.Core.Base.StoredProgramApp
+- uid: BOOSECoreApp.Core.Base.ParserApp
+  commentId: T:BOOSECoreApp.Core.Base.ParserApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.ParserApp.html
+  name: ParserApp
+  nameWithType: ParserApp
+  fullName: BOOSECoreApp.Core.Base.ParserApp
+- uid: BOOSECoreApp.Core.Base.WrapperApp.RunProgram*
+  commentId: Overload:BOOSECoreApp.Core.Base.WrapperApp.RunProgram
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.WrapperApp.html#BOOSECoreApp_Core_Base_WrapperApp_RunProgram_System_String_BOOSECoreApp_Core_Interfaces_IGraphicAdapter_
+  name: RunProgram
+  nameWithType: WrapperApp.RunProgram
+  fullName: BOOSECoreApp.Core.Base.WrapperApp.RunProgram
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BOOSECoreApp.Core.Base.WrapperApp.#ctor*
+  commentId: Overload:BOOSECoreApp.Core.Base.WrapperApp.#ctor
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.WrapperApp.html#BOOSECoreApp_Core_Base_WrapperApp__ctor
+  name: WrapperApp
+  nameWithType: WrapperApp.WrapperApp
+  fullName: BOOSECoreApp.Core.Base.WrapperApp.WrapperApp
+  nameWithType.vb: WrapperApp.New
+  fullName.vb: BOOSECoreApp.Core.Base.WrapperApp.New
+  name.vb: New

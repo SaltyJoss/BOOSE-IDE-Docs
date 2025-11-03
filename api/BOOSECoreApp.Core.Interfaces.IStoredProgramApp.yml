@@ -1,0 +1,414 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+  commentId: T:BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+  id: IStoredProgramApp
+  parent: BOOSECoreApp.Core.Interfaces
+  children:
+  - BOOSECoreApp.Core.Interfaces.IStoredProgramApp.Add(BOOSECoreApp.Core.Interfaces.ICommandApp)
+  langs:
+  - csharp
+  - vb
+  name: IStoredProgramApp
+  nameWithType: IStoredProgramApp
+  fullName: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+  type: Interface
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Interfaces/IStoredProgramApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Interface for implementing stored programs that can hold and manage a collection of <xref href="BOOSECoreApp.Core.Interfaces.ICommandApp" data-throw-if-not-resolved="false"></xref> objects.
+  example: []
+  syntax:
+    content: 'public interface IStoredProgramApp : IStoredProgram'
+    content.vb: Public Interface IStoredProgramApp Inherits IStoredProgram
+  inheritedMembers:
+  - BOOSE.IStoredProgram.AddVariable(BOOSE.Evaluation)
+  - BOOSE.IStoredProgram.VariableExists(System.String)
+  - BOOSE.IStoredProgram.GetVarValue(System.String)
+  - BOOSE.IStoredProgram.IsExpression(System.String)
+  - BOOSE.IStoredProgram.EvaluateExpression(System.String)
+  - BOOSE.IStoredProgram.Add(BOOSE.Command)
+  - BOOSE.IStoredProgram.ResetProgram
+  - BOOSE.IStoredProgram.Commandsleft
+  - BOOSE.IStoredProgram.Run
+  - BOOSE.IStoredProgram.PC
+- uid: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.Add(BOOSECoreApp.Core.Interfaces.ICommandApp)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IStoredProgramApp.Add(BOOSECoreApp.Core.Interfaces.ICommandApp)
+  id: Add(BOOSECoreApp.Core.Interfaces.ICommandApp)
+  parent: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+  langs:
+  - csharp
+  - vb
+  name: Add(ICommandApp)
+  nameWithType: IStoredProgramApp.Add(ICommandApp)
+  fullName: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.Add(BOOSECoreApp.Core.Interfaces.ICommandApp)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Interfaces/IStoredProgramApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  example: []
+  syntax:
+    content: int Add(ICommandApp command)
+    parameters:
+    - id: command
+      type: BOOSECoreApp.Core.Interfaces.ICommandApp
+    return:
+      type: System.Int32
+    content.vb: Function Add(command As ICommandApp) As Integer
+  overload: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.Add*
+references:
+- uid: BOOSECoreApp.Core.Interfaces.ICommandApp
+  commentId: T:BOOSECoreApp.Core.Interfaces.ICommandApp
+  parent: BOOSECoreApp.Core.Interfaces
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.ICommandApp.html
+  name: ICommandApp
+  nameWithType: ICommandApp
+  fullName: BOOSECoreApp.Core.Interfaces.ICommandApp
+- uid: BOOSECoreApp.Core.Interfaces
+  commentId: N:BOOSECoreApp.Core.Interfaces
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Interfaces
+  nameWithType: BOOSECoreApp.Core.Interfaces
+  fullName: BOOSECoreApp.Core.Interfaces
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.html
+- uid: BOOSE.IStoredProgram.AddVariable(BOOSE.Evaluation)
+  commentId: M:BOOSE.IStoredProgram.AddVariable(BOOSE.Evaluation)
+  parent: BOOSE.IStoredProgram
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_AddVariable_BOOSE_Evaluation_
+  name: AddVariable(Evaluation)
+  nameWithType: IStoredProgram.AddVariable(Evaluation)
+  fullName: BOOSE.IStoredProgram.AddVariable(BOOSE.Evaluation)
+  spec.csharp:
+  - uid: BOOSE.IStoredProgram.AddVariable(BOOSE.Evaluation)
+    name: AddVariable
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_AddVariable_BOOSE_Evaluation_
+  - name: (
+  - uid: BOOSE.Evaluation
+    name: Evaluation
+    isExternal: true
+    href: BOOSE.Evaluation.html
+  - name: )
+  spec.vb:
+  - uid: BOOSE.IStoredProgram.AddVariable(BOOSE.Evaluation)
+    name: AddVariable
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_AddVariable_BOOSE_Evaluation_
+  - name: (
+  - uid: BOOSE.Evaluation
+    name: Evaluation
+    isExternal: true
+    href: BOOSE.Evaluation.html
+  - name: )
+- uid: BOOSE.IStoredProgram.VariableExists(System.String)
+  commentId: M:BOOSE.IStoredProgram.VariableExists(System.String)
+  parent: BOOSE.IStoredProgram
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_VariableExists_System_String_
+  name: VariableExists(string)
+  nameWithType: IStoredProgram.VariableExists(string)
+  fullName: BOOSE.IStoredProgram.VariableExists(string)
+  nameWithType.vb: IStoredProgram.VariableExists(String)
+  fullName.vb: BOOSE.IStoredProgram.VariableExists(String)
+  name.vb: VariableExists(String)
+  spec.csharp:
+  - uid: BOOSE.IStoredProgram.VariableExists(System.String)
+    name: VariableExists
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_VariableExists_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.IStoredProgram.VariableExists(System.String)
+    name: VariableExists
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_VariableExists_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.IStoredProgram.GetVarValue(System.String)
+  commentId: M:BOOSE.IStoredProgram.GetVarValue(System.String)
+  parent: BOOSE.IStoredProgram
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_GetVarValue_System_String_
+  name: GetVarValue(string)
+  nameWithType: IStoredProgram.GetVarValue(string)
+  fullName: BOOSE.IStoredProgram.GetVarValue(string)
+  nameWithType.vb: IStoredProgram.GetVarValue(String)
+  fullName.vb: BOOSE.IStoredProgram.GetVarValue(String)
+  name.vb: GetVarValue(String)
+  spec.csharp:
+  - uid: BOOSE.IStoredProgram.GetVarValue(System.String)
+    name: GetVarValue
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_GetVarValue_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.IStoredProgram.GetVarValue(System.String)
+    name: GetVarValue
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_GetVarValue_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.IStoredProgram.IsExpression(System.String)
+  commentId: M:BOOSE.IStoredProgram.IsExpression(System.String)
+  parent: BOOSE.IStoredProgram
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_IsExpression_System_String_
+  name: IsExpression(string)
+  nameWithType: IStoredProgram.IsExpression(string)
+  fullName: BOOSE.IStoredProgram.IsExpression(string)
+  nameWithType.vb: IStoredProgram.IsExpression(String)
+  fullName.vb: BOOSE.IStoredProgram.IsExpression(String)
+  name.vb: IsExpression(String)
+  spec.csharp:
+  - uid: BOOSE.IStoredProgram.IsExpression(System.String)
+    name: IsExpression
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_IsExpression_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.IStoredProgram.IsExpression(System.String)
+    name: IsExpression
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_IsExpression_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.IStoredProgram.EvaluateExpression(System.String)
+  commentId: M:BOOSE.IStoredProgram.EvaluateExpression(System.String)
+  parent: BOOSE.IStoredProgram
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_EvaluateExpression_System_String_
+  name: EvaluateExpression(string)
+  nameWithType: IStoredProgram.EvaluateExpression(string)
+  fullName: BOOSE.IStoredProgram.EvaluateExpression(string)
+  nameWithType.vb: IStoredProgram.EvaluateExpression(String)
+  fullName.vb: BOOSE.IStoredProgram.EvaluateExpression(String)
+  name.vb: EvaluateExpression(String)
+  spec.csharp:
+  - uid: BOOSE.IStoredProgram.EvaluateExpression(System.String)
+    name: EvaluateExpression
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_EvaluateExpression_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.IStoredProgram.EvaluateExpression(System.String)
+    name: EvaluateExpression
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_EvaluateExpression_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.IStoredProgram.Add(BOOSE.Command)
+  commentId: M:BOOSE.IStoredProgram.Add(BOOSE.Command)
+  parent: BOOSE.IStoredProgram
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_Add_BOOSE_Command_
+  name: Add(Command)
+  nameWithType: IStoredProgram.Add(Command)
+  fullName: BOOSE.IStoredProgram.Add(BOOSE.Command)
+  spec.csharp:
+  - uid: BOOSE.IStoredProgram.Add(BOOSE.Command)
+    name: Add
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_Add_BOOSE_Command_
+  - name: (
+  - uid: BOOSE.Command
+    name: Command
+    isExternal: true
+    href: BOOSE.Command.html
+  - name: )
+  spec.vb:
+  - uid: BOOSE.IStoredProgram.Add(BOOSE.Command)
+    name: Add
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_Add_BOOSE_Command_
+  - name: (
+  - uid: BOOSE.Command
+    name: Command
+    isExternal: true
+    href: BOOSE.Command.html
+  - name: )
+- uid: BOOSE.IStoredProgram.ResetProgram
+  commentId: M:BOOSE.IStoredProgram.ResetProgram
+  parent: BOOSE.IStoredProgram
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_ResetProgram
+  name: ResetProgram()
+  nameWithType: IStoredProgram.ResetProgram()
+  fullName: BOOSE.IStoredProgram.ResetProgram()
+  spec.csharp:
+  - uid: BOOSE.IStoredProgram.ResetProgram
+    name: ResetProgram
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_ResetProgram
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.IStoredProgram.ResetProgram
+    name: ResetProgram
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_ResetProgram
+  - name: (
+  - name: )
+- uid: BOOSE.IStoredProgram.Commandsleft
+  commentId: M:BOOSE.IStoredProgram.Commandsleft
+  parent: BOOSE.IStoredProgram
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_Commandsleft
+  name: Commandsleft()
+  nameWithType: IStoredProgram.Commandsleft()
+  fullName: BOOSE.IStoredProgram.Commandsleft()
+  spec.csharp:
+  - uid: BOOSE.IStoredProgram.Commandsleft
+    name: Commandsleft
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_Commandsleft
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.IStoredProgram.Commandsleft
+    name: Commandsleft
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_Commandsleft
+  - name: (
+  - name: )
+- uid: BOOSE.IStoredProgram.Run
+  commentId: M:BOOSE.IStoredProgram.Run
+  parent: BOOSE.IStoredProgram
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_Run
+  name: Run()
+  nameWithType: IStoredProgram.Run()
+  fullName: BOOSE.IStoredProgram.Run()
+  spec.csharp:
+  - uid: BOOSE.IStoredProgram.Run
+    name: Run
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_Run
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.IStoredProgram.Run
+    name: Run
+    isExternal: true
+    href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_Run
+  - name: (
+  - name: )
+- uid: BOOSE.IStoredProgram.PC
+  commentId: P:BOOSE.IStoredProgram.PC
+  parent: BOOSE.IStoredProgram
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_PC
+  name: PC
+  nameWithType: IStoredProgram.PC
+  fullName: BOOSE.IStoredProgram.PC
+- uid: BOOSE.IStoredProgram
+  commentId: T:BOOSE.IStoredProgram
+  parent: BOOSE
+  isExternal: true
+  href: BOOSE.IStoredProgram.html
+  name: IStoredProgram
+  nameWithType: IStoredProgram
+  fullName: BOOSE.IStoredProgram
+- uid: BOOSE
+  commentId: N:BOOSE
+  isExternal: true
+  href: BOOSE.html
+  name: BOOSE
+  nameWithType: BOOSE
+  fullName: BOOSE
+- uid: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.Add*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IStoredProgramApp.Add
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.html#BOOSECoreApp_Core_Interfaces_IStoredProgramApp_Add_BOOSECoreApp_Core_Interfaces_ICommandApp_
+  name: Add
+  nameWithType: IStoredProgramApp.Add
+  fullName: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.Add
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

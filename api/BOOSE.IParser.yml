@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSE.IParser
+  commentId: T:BOOSE.IParser
+  id: IParser
+  parent: BOOSE
+  children:
+  - BOOSE.IParser.ParseCommand(System.String)
+  - BOOSE.IParser.ParseProgram(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IParser
+  nameWithType: IParser
+  fullName: BOOSE.IParser
+  type: Interface
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: public interface IParser
+    content.vb: Public Interface IParser
+- uid: BOOSE.IParser.ParseCommand(System.String)
+  commentId: M:BOOSE.IParser.ParseCommand(System.String)
+  id: ParseCommand(System.String)
+  parent: BOOSE.IParser
+  langs:
+  - csharp
+  - vb
+  name: ParseCommand(string)
+  nameWithType: IParser.ParseCommand(string)
+  fullName: BOOSE.IParser.ParseCommand(string)
+  type: Method
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: ICommand ParseCommand(string Line)
+    parameters:
+    - id: Line
+      type: System.String
+    return:
+      type: BOOSE.ICommand
+    content.vb: Function ParseCommand(Line As String) As ICommand
+  overload: BOOSE.IParser.ParseCommand*
+  nameWithType.vb: IParser.ParseCommand(String)
+  fullName.vb: BOOSE.IParser.ParseCommand(String)
+  name.vb: ParseCommand(String)
+- uid: BOOSE.IParser.ParseProgram(System.String)
+  commentId: M:BOOSE.IParser.ParseProgram(System.String)
+  id: ParseProgram(System.String)
+  parent: BOOSE.IParser
+  langs:
+  - csharp
+  - vb
+  name: ParseProgram(string)
+  nameWithType: IParser.ParseProgram(string)
+  fullName: BOOSE.IParser.ParseProgram(string)
+  type: Method
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: void ParseProgram(string program)
+    parameters:
+    - id: program
+      type: System.String
+    content.vb: Sub ParseProgram(program As String)
+  overload: BOOSE.IParser.ParseProgram*
+  nameWithType.vb: IParser.ParseProgram(String)
+  fullName.vb: BOOSE.IParser.ParseProgram(String)
+  name.vb: ParseProgram(String)
+references:
+- uid: BOOSE
+  commentId: N:BOOSE
+  isExternal: true
+  href: BOOSE.html
+  name: BOOSE
+  nameWithType: BOOSE
+  fullName: BOOSE
+- uid: BOOSE.IParser.ParseCommand*
+  commentId: Overload:BOOSE.IParser.ParseCommand
+  isExternal: true
+  href: BOOSE.IParser.html#BOOSE_IParser_ParseCommand_System_String_
+  name: ParseCommand
+  nameWithType: IParser.ParseCommand
+  fullName: BOOSE.IParser.ParseCommand
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BOOSE.ICommand
+  commentId: T:BOOSE.ICommand
+  parent: BOOSE
+  isExternal: true
+  href: BOOSE.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: BOOSE.ICommand
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSE.IParser.ParseProgram*
+  commentId: Overload:BOOSE.IParser.ParseProgram
+  isExternal: true
+  href: BOOSE.IParser.html#BOOSE_IParser_ParseProgram_System_String_
+  name: ParseProgram
+  nameWithType: IParser.ParseProgram
+  fullName: BOOSE.IParser.ParseProgram

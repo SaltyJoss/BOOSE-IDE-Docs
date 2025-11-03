@@ -1,0 +1,612 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  commentId: T:BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  id: IGraphicAdapter
+  parent: BOOSECoreApp.Core.Interfaces
+  children:
+  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Circle(System.Int32,System.Boolean)
+  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Clear
+  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.DrawTo(System.Int32,System.Int32)
+  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.MoveTo(System.Int32,System.Int32)
+  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Rect(System.Int32,System.Int32,System.Boolean)
+  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Reset
+  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Set(System.Int32,System.Int32)
+  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetColour(System.Int32,System.Int32,System.Int32)
+  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Square(System.Int32,System.Boolean)
+  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Tri(System.Int32,System.Int32)
+  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.WriteText(System.String)
+  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.getBitmap
+  langs:
+  - csharp
+  - vb
+  name: IGraphicAdapter
+  nameWithType: IGraphicAdapter
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  type: Interface
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Interfaces/IGraphicAdapter.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Provides a common interface for graphics operations on a canvas.
+  example: []
+  syntax:
+    content: public interface IGraphicAdapter
+    content.vb: Public Interface IGraphicAdapter
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetColour(System.Int32,System.Int32,System.Int32)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetColour(System.Int32,System.Int32,System.Int32)
+  id: SetColour(System.Int32,System.Int32,System.Int32)
+  parent: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  langs:
+  - csharp
+  - vb
+  name: SetColour(int, int, int)
+  nameWithType: IGraphicAdapter.SetColour(int, int, int)
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetColour(int, int, int)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Interfaces/IGraphicAdapter.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Sets the current pen colour.
+  example: []
+  syntax:
+    content: void SetColour(int r, int g, int b)
+    parameters:
+    - id: r
+      type: System.Int32
+      description: Red component (0-255).
+    - id: g
+      type: System.Int32
+      description: Green component (0-255).
+    - id: b
+      type: System.Int32
+      description: Blue component (0-255).
+    content.vb: Sub SetColour(r As Integer, g As Integer, b As Integer)
+  overload: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetColour*
+  nameWithType.vb: IGraphicAdapter.SetColour(Integer, Integer, Integer)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetColour(Integer, Integer, Integer)
+  name.vb: SetColour(Integer, Integer, Integer)
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+  id: SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+  parent: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  langs:
+  - csharp
+  - vb
+  name: SetBackgroundColour(int, int, int)
+  nameWithType: IGraphicAdapter.SetBackgroundColour(int, int, int)
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(int, int, int)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Interfaces/IGraphicAdapter.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Sets the background colour of the canvas.
+  example: []
+  syntax:
+    content: void SetBackgroundColour(int r, int g, int b)
+    parameters:
+    - id: r
+      type: System.Int32
+      description: Red component (0-255).
+    - id: g
+      type: System.Int32
+      description: Green component (0-255).
+    - id: b
+      type: System.Int32
+      description: Blue component (0-255).
+    content.vb: Sub SetBackgroundColour(r As Integer, g As Integer, b As Integer)
+  overload: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour*
+  nameWithType.vb: IGraphicAdapter.SetBackgroundColour(Integer, Integer, Integer)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(Integer, Integer, Integer)
+  name.vb: SetBackgroundColour(Integer, Integer, Integer)
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.MoveTo(System.Int32,System.Int32)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.MoveTo(System.Int32,System.Int32)
+  id: MoveTo(System.Int32,System.Int32)
+  parent: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  langs:
+  - csharp
+  - vb
+  name: MoveTo(int, int)
+  nameWithType: IGraphicAdapter.MoveTo(int, int)
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.MoveTo(int, int)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Interfaces/IGraphicAdapter.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Moves the current cursor to the specified position without drawing.
+  example: []
+  syntax:
+    content: void MoveTo(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: X-coordinate.
+    - id: y
+      type: System.Int32
+      description: Y-coordinate.
+    content.vb: Sub MoveTo(x As Integer, y As Integer)
+  overload: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.MoveTo*
+  nameWithType.vb: IGraphicAdapter.MoveTo(Integer, Integer)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.MoveTo(Integer, Integer)
+  name.vb: MoveTo(Integer, Integer)
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.DrawTo(System.Int32,System.Int32)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.DrawTo(System.Int32,System.Int32)
+  id: DrawTo(System.Int32,System.Int32)
+  parent: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  langs:
+  - csharp
+  - vb
+  name: DrawTo(int, int)
+  nameWithType: IGraphicAdapter.DrawTo(int, int)
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.DrawTo(int, int)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Interfaces/IGraphicAdapter.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Draws a line from the current cursor position to the specified coordinates.
+  example: []
+  syntax:
+    content: void DrawTo(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: X-coordinate.
+    - id: y
+      type: System.Int32
+      description: Y-coordinate.
+    content.vb: Sub DrawTo(x As Integer, y As Integer)
+  overload: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.DrawTo*
+  nameWithType.vb: IGraphicAdapter.DrawTo(Integer, Integer)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.DrawTo(Integer, Integer)
+  name.vb: DrawTo(Integer, Integer)
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Clear
+  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Clear
+  id: Clear
+  parent: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: IGraphicAdapter.Clear()
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Clear()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Interfaces/IGraphicAdapter.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Clears the canvas.
+  example: []
+  syntax:
+    content: void Clear()
+    content.vb: Sub Clear()
+  overload: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Clear*
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Reset
+  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Reset
+  id: Reset
+  parent: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: IGraphicAdapter.Reset()
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Reset()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Interfaces/IGraphicAdapter.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Resets the pen position, colour, and other settings to defaults.
+  example: []
+  syntax:
+    content: void Reset()
+    content.vb: Sub Reset()
+  overload: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Reset*
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Circle(System.Int32,System.Boolean)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Circle(System.Int32,System.Boolean)
+  id: Circle(System.Int32,System.Boolean)
+  parent: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  langs:
+  - csharp
+  - vb
+  name: Circle(int, bool)
+  nameWithType: IGraphicAdapter.Circle(int, bool)
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Circle(int, bool)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Interfaces/IGraphicAdapter.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Draws a circle with the specified radius.
+  example: []
+  syntax:
+    content: void Circle(int radius, bool filled)
+    parameters:
+    - id: radius
+      type: System.Int32
+      description: Radius of the circle.
+    - id: filled
+      type: System.Boolean
+      description: If true, the circle is filled.
+    content.vb: Sub Circle(radius As Integer, filled As Boolean)
+  overload: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Circle*
+  nameWithType.vb: IGraphicAdapter.Circle(Integer, Boolean)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Circle(Integer, Boolean)
+  name.vb: Circle(Integer, Boolean)
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Tri(System.Int32,System.Int32)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Tri(System.Int32,System.Int32)
+  id: Tri(System.Int32,System.Int32)
+  parent: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  langs:
+  - csharp
+  - vb
+  name: Tri(int, int)
+  nameWithType: IGraphicAdapter.Tri(int, int)
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Tri(int, int)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Interfaces/IGraphicAdapter.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Draws a triangle with the specified width and height.
+  example: []
+  syntax:
+    content: void Tri(int width, int height)
+    parameters:
+    - id: width
+      type: System.Int32
+      description: Width of the triangle.
+    - id: height
+      type: System.Int32
+      description: Height of the triangle.
+    content.vb: Sub Tri(width As Integer, height As Integer)
+  overload: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Tri*
+  nameWithType.vb: IGraphicAdapter.Tri(Integer, Integer)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Tri(Integer, Integer)
+  name.vb: Tri(Integer, Integer)
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Rect(System.Int32,System.Int32,System.Boolean)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Rect(System.Int32,System.Int32,System.Boolean)
+  id: Rect(System.Int32,System.Int32,System.Boolean)
+  parent: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  langs:
+  - csharp
+  - vb
+  name: Rect(int, int, bool)
+  nameWithType: IGraphicAdapter.Rect(int, int, bool)
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Rect(int, int, bool)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Interfaces/IGraphicAdapter.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Draws a rectangle with the specified width, height, and fill option.
+  example: []
+  syntax:
+    content: void Rect(int width, int height, bool filled)
+    parameters:
+    - id: width
+      type: System.Int32
+      description: Width of the rectangle.
+    - id: height
+      type: System.Int32
+      description: Height of the rectangle.
+    - id: filled
+      type: System.Boolean
+      description: If true, the rectangle is filled.
+    content.vb: Sub Rect(width As Integer, height As Integer, filled As Boolean)
+  overload: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Rect*
+  nameWithType.vb: IGraphicAdapter.Rect(Integer, Integer, Boolean)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Rect(Integer, Integer, Boolean)
+  name.vb: Rect(Integer, Integer, Boolean)
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Square(System.Int32,System.Boolean)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Square(System.Int32,System.Boolean)
+  id: Square(System.Int32,System.Boolean)
+  parent: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  langs:
+  - csharp
+  - vb
+  name: Square(int, bool)
+  nameWithType: IGraphicAdapter.Square(int, bool)
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Square(int, bool)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Interfaces/IGraphicAdapter.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Draws a square with the specified side length and fill option.
+  example: []
+  syntax:
+    content: void Square(int side, bool filled)
+    parameters:
+    - id: side
+      type: System.Int32
+      description: Length of the square's sides.
+    - id: filled
+      type: System.Boolean
+      description: If true, the square is filled.
+    content.vb: Sub Square(side As Integer, filled As Boolean)
+  overload: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Square*
+  nameWithType.vb: IGraphicAdapter.Square(Integer, Boolean)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Square(Integer, Boolean)
+  name.vb: Square(Integer, Boolean)
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.WriteText(System.String)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.WriteText(System.String)
+  id: WriteText(System.String)
+  parent: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  langs:
+  - csharp
+  - vb
+  name: WriteText(string)
+  nameWithType: IGraphicAdapter.WriteText(string)
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.WriteText(string)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Interfaces/IGraphicAdapter.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Writes text at the current cursor position.
+  example: []
+  syntax:
+    content: void WriteText(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: Text to write.
+    content.vb: Sub WriteText(text As String)
+  overload: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.WriteText*
+  nameWithType.vb: IGraphicAdapter.WriteText(String)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.WriteText(String)
+  name.vb: WriteText(String)
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Set(System.Int32,System.Int32)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Set(System.Int32,System.Int32)
+  id: Set(System.Int32,System.Int32)
+  parent: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  langs:
+  - csharp
+  - vb
+  name: Set(int, int)
+  nameWithType: IGraphicAdapter.Set(int, int)
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Set(int, int)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Interfaces/IGraphicAdapter.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: ''
+  example: []
+  syntax:
+    content: void Set(int width, int height)
+    parameters:
+    - id: width
+      type: System.Int32
+      description: ''
+    - id: height
+      type: System.Int32
+      description: ''
+    content.vb: Sub [Set](width As Integer, height As Integer)
+  overload: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Set*
+  nameWithType.vb: IGraphicAdapter.Set(Integer, Integer)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Set(Integer, Integer)
+  name.vb: Set(Integer, Integer)
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.getBitmap
+  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.getBitmap
+  id: getBitmap
+  parent: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  langs:
+  - csharp
+  - vb
+  name: getBitmap()
+  nameWithType: IGraphicAdapter.getBitmap()
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.getBitmap()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Interfaces/IGraphicAdapter.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Returns the underlying bitmap or canvas object.
+  example: []
+  syntax:
+    content: object getBitmap()
+    return:
+      type: System.Object
+      description: The bitmap or canvas object.
+    content.vb: Function getBitmap() As Object
+  overload: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.getBitmap*
+references:
+- uid: BOOSECoreApp.Core.Interfaces
+  commentId: N:BOOSECoreApp.Core.Interfaces
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Interfaces
+  nameWithType: BOOSECoreApp.Core.Interfaces
+  fullName: BOOSECoreApp.Core.Interfaces
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.html
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetColour*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetColour
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_SetColour_System_Int32_System_Int32_System_Int32_
+  name: SetColour
+  nameWithType: IGraphicAdapter.SetColour
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetColour
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_SetBackgroundColour_System_Int32_System_Int32_System_Int32_
+  name: SetBackgroundColour
+  nameWithType: IGraphicAdapter.SetBackgroundColour
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.MoveTo*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.MoveTo
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_MoveTo_System_Int32_System_Int32_
+  name: MoveTo
+  nameWithType: IGraphicAdapter.MoveTo
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.MoveTo
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.DrawTo*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.DrawTo
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_DrawTo_System_Int32_System_Int32_
+  name: DrawTo
+  nameWithType: IGraphicAdapter.DrawTo
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.DrawTo
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Clear*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Clear
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_Clear
+  name: Clear
+  nameWithType: IGraphicAdapter.Clear
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Clear
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Reset*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Reset
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_Reset
+  name: Reset
+  nameWithType: IGraphicAdapter.Reset
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Reset
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Circle*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Circle
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_Circle_System_Int32_System_Boolean_
+  name: Circle
+  nameWithType: IGraphicAdapter.Circle
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Circle
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Tri*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Tri
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_Tri_System_Int32_System_Int32_
+  name: Tri
+  nameWithType: IGraphicAdapter.Tri
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Tri
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Rect*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Rect
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_Rect_System_Int32_System_Int32_System_Boolean_
+  name: Rect
+  nameWithType: IGraphicAdapter.Rect
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Rect
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Square*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Square
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_Square_System_Int32_System_Boolean_
+  name: Square
+  nameWithType: IGraphicAdapter.Square
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Square
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.WriteText*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.WriteText
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_WriteText_System_String_
+  name: WriteText
+  nameWithType: IGraphicAdapter.WriteText
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.WriteText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Set*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Set
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_Set_System_Int32_System_Int32_
+  name: Set
+  nameWithType: IGraphicAdapter.Set
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.Set
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.getBitmap*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.getBitmap
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_getBitmap
+  name: getBitmap
+  nameWithType: IGraphicAdapter.getBitmap
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.getBitmap
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
