@@ -47,4 +47,3 @@
 - [IntApp](api/BOOSECoreApp.Core.Variables.IntApp.yml)
 - [RealApp](api/BOOSECoreApp.Core.Variables.RealApp.yml)
 - [BooleanApp](api/BOOSECoreApp.Core.Variables.BooleanApp.yml)
-- [CommandParameterValidator](api/BOOSECoreApp.Core.Variables.CommandParameterValidator.yml)
