@@ -27,13 +27,15 @@ items:
   summary: ''
   example: []
   syntax:
-    content: public class ArrayApp
-    content.vb: Public Class ArrayApp
+    content: 'public class ArrayApp : IArrayApp'
+    content.vb: Public Class ArrayApp Implements IArrayApp
   seealso:
   - linkId: BOOSECoreApp.Core.Interfaces.ICommandApp
     commentId: T:BOOSECoreApp.Core.Interfaces.ICommandApp
   inheritance:
   - System.Object
+  implements:
+  - BOOSECoreApp.Core.Interfaces.IArrayApp
   inheritedMembers:
   - System.Object.GetType
   - System.Object.MemberwiseClone
@@ -126,6 +128,8 @@ items:
   - type: System.IndexOutOfRangeException
     commentId: T:System.IndexOutOfRangeException
     description: ''
+  implements:
+  - BOOSECoreApp.Core.Interfaces.IArrayApp.CheckIndices(System.Int32,System.Int32)
   nameWithType.vb: ArrayApp.CheckIndices(Integer, Integer)
   fullName.vb: BOOSECoreApp.Core.Variables.ArrayApp.CheckIndices(Integer, Integer)
   name.vb: CheckIndices(Integer, Integer)
@@ -161,6 +165,8 @@ items:
       description: ''
     content.vb: Public Function getValue(col As Integer, row As Integer) As Double
   overload: BOOSECoreApp.Core.Variables.ArrayApp.getValue*
+  implements:
+  - BOOSECoreApp.Core.Interfaces.IArrayApp.getValue(System.Int32,System.Int32)
   nameWithType.vb: ArrayApp.getValue(Integer, Integer)
   fullName.vb: BOOSECoreApp.Core.Variables.ArrayApp.getValue(Integer, Integer)
   name.vb: getValue(Integer, Integer)
@@ -196,6 +202,8 @@ items:
       description: Value to be set at ColxRow index
     content.vb: Public Sub setValue(col As Integer, row As Integer, value As Double)
   overload: BOOSECoreApp.Core.Variables.ArrayApp.setValue*
+  implements:
+  - BOOSECoreApp.Core.Interfaces.IArrayApp.setValue(System.Int32,System.Int32,System.Double)
   nameWithType.vb: ArrayApp.setValue(Integer, Integer, Double)
   fullName.vb: BOOSECoreApp.Core.Variables.ArrayApp.setValue(Integer, Integer, Double)
   name.vb: setValue(Integer, Integer, Double)
@@ -224,6 +232,8 @@ items:
       type: System.Int32
     content.vb: Public ReadOnly Property Cols As Integer
   overload: BOOSECoreApp.Core.Variables.ArrayApp.Cols*
+  implements:
+  - BOOSECoreApp.Core.Interfaces.IArrayApp.Cols
 - uid: BOOSECoreApp.Core.Variables.ArrayApp.Rows
   commentId: P:BOOSECoreApp.Core.Variables.ArrayApp.Rows
   id: Rows
@@ -249,6 +259,8 @@ items:
       type: System.Int32
     content.vb: Public ReadOnly Property Rows As Integer
   overload: BOOSECoreApp.Core.Variables.ArrayApp.Rows*
+  implements:
+  - BOOSECoreApp.Core.Interfaces.IArrayApp.Rows
 - uid: BOOSECoreApp.Core.Variables.ArrayApp.ElementType
   commentId: P:BOOSECoreApp.Core.Variables.ArrayApp.ElementType
   id: ElementType
@@ -274,6 +286,8 @@ items:
       type: BOOSECoreApp.Core.Variables.ArrayElementType
     content.vb: Public ReadOnly Property ElementType As ArrayElementType
   overload: BOOSECoreApp.Core.Variables.ArrayApp.ElementType*
+  implements:
+  - BOOSECoreApp.Core.Interfaces.IArrayApp.ElementType
 references:
 - uid: BOOSECoreApp.Core.Interfaces.ICommandApp
   commentId: T:BOOSECoreApp.Core.Interfaces.ICommandApp
@@ -331,6 +345,14 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp
+  commentId: T:BOOSECoreApp.Core.Interfaces.IArrayApp
+  parent: BOOSECoreApp.Core.Interfaces
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IArrayApp.html
+  name: IArrayApp
+  nameWithType: IArrayApp
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
   parent: System.Object
@@ -676,6 +698,51 @@ references:
   name: CheckIndices
   nameWithType: ArrayApp.CheckIndices
   fullName: BOOSECoreApp.Core.Variables.ArrayApp.CheckIndices
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.CheckIndices(System.Int32,System.Int32)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IArrayApp.CheckIndices(System.Int32,System.Int32)
+  parent: BOOSECoreApp.Core.Interfaces.IArrayApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_CheckIndices_System_Int32_System_Int32_
+  name: CheckIndices(int, int)
+  nameWithType: IArrayApp.CheckIndices(int, int)
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.CheckIndices(int, int)
+  nameWithType.vb: IArrayApp.CheckIndices(Integer, Integer)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IArrayApp.CheckIndices(Integer, Integer)
+  name.vb: CheckIndices(Integer, Integer)
+  spec.csharp:
+  - uid: BOOSECoreApp.Core.Interfaces.IArrayApp.CheckIndices(System.Int32,System.Int32)
+    name: CheckIndices
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_CheckIndices_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BOOSECoreApp.Core.Interfaces.IArrayApp.CheckIndices(System.Int32,System.Int32)
+    name: CheckIndices
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_CheckIndices_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
 - uid: BOOSECoreApp.Core.Variables.ArrayApp.getValue*
   commentId: Overload:BOOSECoreApp.Core.Variables.ArrayApp.getValue
   isExternal: true
@@ -683,6 +750,51 @@ references:
   name: getValue
   nameWithType: ArrayApp.getValue
   fullName: BOOSECoreApp.Core.Variables.ArrayApp.getValue
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.getValue(System.Int32,System.Int32)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IArrayApp.getValue(System.Int32,System.Int32)
+  parent: BOOSECoreApp.Core.Interfaces.IArrayApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_getValue_System_Int32_System_Int32_
+  name: getValue(int, int)
+  nameWithType: IArrayApp.getValue(int, int)
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.getValue(int, int)
+  nameWithType.vb: IArrayApp.getValue(Integer, Integer)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IArrayApp.getValue(Integer, Integer)
+  name.vb: getValue(Integer, Integer)
+  spec.csharp:
+  - uid: BOOSECoreApp.Core.Interfaces.IArrayApp.getValue(System.Int32,System.Int32)
+    name: getValue
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_getValue_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BOOSECoreApp.Core.Interfaces.IArrayApp.getValue(System.Int32,System.Int32)
+    name: getValue
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_getValue_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
 - uid: System.Double
   commentId: T:System.Double
   parent: System
@@ -701,6 +813,63 @@ references:
   name: setValue
   nameWithType: ArrayApp.setValue
   fullName: BOOSECoreApp.Core.Variables.ArrayApp.setValue
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.setValue(System.Int32,System.Int32,System.Double)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IArrayApp.setValue(System.Int32,System.Int32,System.Double)
+  parent: BOOSECoreApp.Core.Interfaces.IArrayApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_setValue_System_Int32_System_Int32_System_Double_
+  name: setValue(int, int, double)
+  nameWithType: IArrayApp.setValue(int, int, double)
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.setValue(int, int, double)
+  nameWithType.vb: IArrayApp.setValue(Integer, Integer, Double)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IArrayApp.setValue(Integer, Integer, Double)
+  name.vb: setValue(Integer, Integer, Double)
+  spec.csharp:
+  - uid: BOOSECoreApp.Core.Interfaces.IArrayApp.setValue(System.Int32,System.Int32,System.Double)
+    name: setValue
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_setValue_System_Int32_System_Int32_System_Double_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: BOOSECoreApp.Core.Interfaces.IArrayApp.setValue(System.Int32,System.Int32,System.Double)
+    name: setValue
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_setValue_System_Int32_System_Int32_System_Double_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
 - uid: BOOSECoreApp.Core.Variables.ArrayApp.Cols*
   commentId: Overload:BOOSECoreApp.Core.Variables.ArrayApp.Cols
   isExternal: true
@@ -708,6 +877,14 @@ references:
   name: Cols
   nameWithType: ArrayApp.Cols
   fullName: BOOSECoreApp.Core.Variables.ArrayApp.Cols
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.Cols
+  commentId: P:BOOSECoreApp.Core.Interfaces.IArrayApp.Cols
+  parent: BOOSECoreApp.Core.Interfaces.IArrayApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_Cols
+  name: Cols
+  nameWithType: IArrayApp.Cols
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.Cols
 - uid: BOOSECoreApp.Core.Variables.ArrayApp.Rows*
   commentId: Overload:BOOSECoreApp.Core.Variables.ArrayApp.Rows
   isExternal: true
@@ -715,6 +892,14 @@ references:
   name: Rows
   nameWithType: ArrayApp.Rows
   fullName: BOOSECoreApp.Core.Variables.ArrayApp.Rows
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.Rows
+  commentId: P:BOOSECoreApp.Core.Interfaces.IArrayApp.Rows
+  parent: BOOSECoreApp.Core.Interfaces.IArrayApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_Rows
+  name: Rows
+  nameWithType: IArrayApp.Rows
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.Rows
 - uid: BOOSECoreApp.Core.Variables.ArrayApp.ElementType*
   commentId: Overload:BOOSECoreApp.Core.Variables.ArrayApp.ElementType
   isExternal: true
@@ -722,3 +907,11 @@ references:
   name: ElementType
   nameWithType: ArrayApp.ElementType
   fullName: BOOSECoreApp.Core.Variables.ArrayApp.ElementType
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.ElementType
+  commentId: P:BOOSECoreApp.Core.Interfaces.IArrayApp.ElementType
+  parent: BOOSECoreApp.Core.Interfaces.IArrayApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_ElementType
+  name: ElementType
+  nameWithType: IArrayApp.ElementType
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.ElementType

@@ -10,7 +10,8 @@
 
 > :memo: **Note:** The classes below are automatically generated from the BOOSECoreApp XML documentation.
 
-## [Core](api/BOOSECoreApp.Core.yml)
+## Core
+> BOOSECoreApp.Core
 
 ### [Adapters](api/BOOSECoreApp.Core.Adapters.yml)
 - [CanvasGraphicsAdapter](api/BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.yml)
@@ -28,7 +29,7 @@
 - [ParsedLineType](api/BOOSECoreApp.Core.Base.ParsedLineType.yml)]
 - [ParserApp](api/BOOSECoreApp.Core.Base.ParserApp.yml)
 - [StoredProgramApp](api/BOOSECoreApp.Core.Base.StoredProgramApp.yml)
-- [UINotificationEvenetHandler](api/BOOSECoreApp.Core.Base.UINotificationEvenetHandler.yml)
+- [UINotificationEventHandler](api/BOOSECoreApp.Core.Base.UINotificationEventHandler.yml)
 - [UINotificationType](api/BOOSECoreApp.Core.Base.UINotificationType.yml)
 - [VariableAppBase](api/BOOSECoreApp.Core.Base.VariableAppBase.yml)
 - [WrapperApp](api/BOOSECoreApp.Core.Base.WrapperApp.yml)
@@ -64,7 +65,7 @@
 
 ### [Conditionals](api/BOOSECoreApp.Core.Conditionals.yml)
 - [IfApp](api/BOOSECoreApp.Core.Conditionals.IfApp.yml)
-- [IfElseApp](api/BOOSECoreApp.Core.Conditionals.IfElseApp.yml)
+- [IfElseApp](api/BOOSECoreApp.Core.Conditionals.ElseIfApp.yml)
 - [ElseApp](api/BOOSECoreApp.Core.Conditionals.ElseApp.yml)
 - [EndIfApp](api/BOOSECoreApp.Core.Conditionals.EndIfApp.yml)
 - [ForApp](api/BOOSECoreApp.Core.Conditionals.ForApp.yml)
@@ -77,15 +78,20 @@
 - [EndMethodApp](api/BOOSECoreApp.Core.Methods.EndMethodApp.yml)
 - [CallMethodApp](api/BOOSECoreApp.Core.Methods.CallMethodApp.yml)
 
-## [Exceptions](api/BOOSECoreApp.Exceptions.yml)
-- [BooseSyntaxException](api/BOOSECoreApp.Exceptions.BooseSyntaxException.yml)
-- [GlobalExceptionHandler](api/BOOSECoreApp.Exceptions.GlobalExceptionHandler.yml)
+## Exceptions and Exception Handling
+> BOOSECoreApp.Exceptions
 
-## [UI](api/BOOSECoreApp.UI.yml)
+### [Exceptions](api/BOOSECoreApp.Exceptions.yml)
+- [BooseSyntaxException](api/BOOSECoreApp.Exceptions.BooseSyntaxException.yml)
+
+## User Interface
+> BOOSECoreApp.UI
+
+### [UI](api/BOOSECoreApp.UI.yml)
 - [BOOSEApp](api/BOOSECoreApp.BOOSEApp.yml)
 - [InfoAlign](api/BOOSECoreApp.UI.InfoAlign.yml)
 - [InfoPos](api/BOOSECoreApp.UI.InfoPos.yml)
-- [InfoUI](api/BOOSECoreApp.IU.InfoUI.yml)
+- [InfoUI](api/BOOSECoreApp.UI.InfoUI.yml)
 - [AboutDisplayUI](api/BOOSECoreApp.UI.AboutDisplayUI.yml)
 - [SystemInfoUI](api/BOOSECoreApp.UI.SystemInfoUI.yml)
 - [InfoLine](api/BOOSECoreApp.UI.InfoLine.yml)
@@ -96,12 +102,14 @@
 - [EditorThemes](api/BOOSECoreApp.UI.EditorThemes.yml)
 - [UILogger](api/BOOSECoreApp.UI.UILogger.yml)
 
+## Mock Canvas and Graphic Adapter
+> BOOSECoreApp.Core.Mocks
+### [Mocks](api-tests/BOOSECoreApp.Core.Mocks.yml)
+- [MockCanvas](api-tests/BOOSECoreApp.Core.Mocks.MockCanvas.yml)
+- [MockGraphicAdapter](api-tests/BOOSECoreApp.Core.Mocks.MockGraphicAdapter.yml)
+
 ## Unit Tests
-
-### [Mocks](api-tests/BOOSECoreApp.Mocks.yml)
-- [MockCanvas](api-tests/BOOSECoreApp.Mocks.MockCanvas.yml)
-- [MockGraphicAdapter](api-tests/BOOSECoreApp.Mocks.MockGraphicAdapter.yml)]
-
+> BOOSETests
 ### [Command Unit Tests](api-tests/BOOSETests.Commands.yml)
 - [CanvasAppTests](api-tests/BOOSETests.Commands.CanvasAppTests.yml)
 - [CanvasTests](api-tests/BOOSETests.Commands.CanvasTests.yml)
@@ -117,7 +125,7 @@
 
 ### [Conditional Unit Tests](api-tests/BOOSETests.Conditionals.yml)
 - [IfAppTests](api-tests/BOOSETests.Conditionals.IfAppTests.yml)
-- [IfElseAppTests](api-tests/BOOSETests.Conditionals.IfElseAppTests.yml)
+- [ElseIfAppTests](api-tests/BOOSETests.Conditionals.ElseIfAppTests.yml)
 - [ElseAppTests](api-tests/BOOSETests.Conditionals.ElseAppTests.yml)
 - [EndIfAppTests](api-tests/BOOSETests.Conditionals.EndIfAppTests.yml)
 - [ForAppTests](api-tests/BOOSETests.Conditionals.ForAppTests.yml)

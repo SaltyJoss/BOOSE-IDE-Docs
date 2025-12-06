@@ -1,0 +1,367 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp
+  commentId: T:BOOSECoreApp.Core.Interfaces.IArrayApp
+  id: IArrayApp
+  parent: BOOSECoreApp.Core.Interfaces
+  children:
+  - BOOSECoreApp.Core.Interfaces.IArrayApp.CheckIndices(System.Int32,System.Int32)
+  - BOOSECoreApp.Core.Interfaces.IArrayApp.Cols
+  - BOOSECoreApp.Core.Interfaces.IArrayApp.ElementType
+  - BOOSECoreApp.Core.Interfaces.IArrayApp.Rows
+  - BOOSECoreApp.Core.Interfaces.IArrayApp.getValue(System.Int32,System.Int32)
+  - BOOSECoreApp.Core.Interfaces.IArrayApp.setValue(System.Int32,System.Int32,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: IArrayApp
+  nameWithType: IArrayApp
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp
+  type: Interface
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Interfaces/IArrayApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Interface for array variable applications, defining the contract for array operations and properties.
+  remarks: >-
+    This interface is intended to be implemented by classes that manage array variables within the BOOSE IDE,
+
+    providing methods and properties for array manipulation and access.
+
+    Details of the array operations (e.g., getting/setting values, dimensions) are defined in the implementing classes.
+  example: []
+  syntax:
+    content: public interface IArrayApp
+    content.vb: Public Interface IArrayApp
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.CheckIndices(System.Int32,System.Int32)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IArrayApp.CheckIndices(System.Int32,System.Int32)
+  id: CheckIndices(System.Int32,System.Int32)
+  parent: BOOSECoreApp.Core.Interfaces.IArrayApp
+  langs:
+  - csharp
+  - vb
+  name: CheckIndices(int, int)
+  nameWithType: IArrayApp.CheckIndices(int, int)
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.CheckIndices(int, int)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Interfaces/IArrayApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Validates the specified column and row indices to ensure they are within acceptable bounds.
+  example: []
+  syntax:
+    content: void CheckIndices(int col, int row)
+    parameters:
+    - id: col
+      type: System.Int32
+      description: The column index to validate. Must be a non-negative integer
+    - id: row
+      type: System.Int32
+      description: The row index to validate. Must be a non-negative integer
+    content.vb: Sub CheckIndices(col As Integer, row As Integer)
+  overload: BOOSECoreApp.Core.Interfaces.IArrayApp.CheckIndices*
+  nameWithType.vb: IArrayApp.CheckIndices(Integer, Integer)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IArrayApp.CheckIndices(Integer, Integer)
+  name.vb: CheckIndices(Integer, Integer)
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.getValue(System.Int32,System.Int32)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IArrayApp.getValue(System.Int32,System.Int32)
+  id: getValue(System.Int32,System.Int32)
+  parent: BOOSECoreApp.Core.Interfaces.IArrayApp
+  langs:
+  - csharp
+  - vb
+  name: getValue(int, int)
+  nameWithType: IArrayApp.getValue(int, int)
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.getValue(int, int)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Interfaces/IArrayApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Gets the value at the specified column and row in the array.
+  example: []
+  syntax:
+    content: double getValue(int col, int row)
+    parameters:
+    - id: col
+      type: System.Int32
+      description: The column index
+    - id: row
+      type: System.Int32
+      description: The row index
+    return:
+      type: System.Double
+      description: ''
+    content.vb: Function getValue(col As Integer, row As Integer) As Double
+  overload: BOOSECoreApp.Core.Interfaces.IArrayApp.getValue*
+  nameWithType.vb: IArrayApp.getValue(Integer, Integer)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IArrayApp.getValue(Integer, Integer)
+  name.vb: getValue(Integer, Integer)
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.setValue(System.Int32,System.Int32,System.Double)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IArrayApp.setValue(System.Int32,System.Int32,System.Double)
+  id: setValue(System.Int32,System.Int32,System.Double)
+  parent: BOOSECoreApp.Core.Interfaces.IArrayApp
+  langs:
+  - csharp
+  - vb
+  name: setValue(int, int, double)
+  nameWithType: IArrayApp.setValue(int, int, double)
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.setValue(int, int, double)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Interfaces/IArrayApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Sets the value at the specified column and row in the array.
+  example: []
+  syntax:
+    content: void setValue(int col, int row, double value)
+    parameters:
+    - id: col
+      type: System.Int32
+      description: The column index
+    - id: row
+      type: System.Int32
+      description: The row index
+    - id: value
+      type: System.Double
+      description: Value to be set at ColxRow index
+    content.vb: Sub setValue(col As Integer, row As Integer, value As Double)
+  overload: BOOSECoreApp.Core.Interfaces.IArrayApp.setValue*
+  nameWithType.vb: IArrayApp.setValue(Integer, Integer, Double)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IArrayApp.setValue(Integer, Integer, Double)
+  name.vb: setValue(Integer, Integer, Double)
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.Cols
+  commentId: P:BOOSECoreApp.Core.Interfaces.IArrayApp.Cols
+  id: Cols
+  parent: BOOSECoreApp.Core.Interfaces.IArrayApp
+  langs:
+  - csharp
+  - vb
+  name: Cols
+  nameWithType: IArrayApp.Cols
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.Cols
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Interfaces/IArrayApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Number of columns in the array.
+  example: []
+  syntax:
+    content: int Cols { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Cols As Integer
+  overload: BOOSECoreApp.Core.Interfaces.IArrayApp.Cols*
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.Rows
+  commentId: P:BOOSECoreApp.Core.Interfaces.IArrayApp.Rows
+  id: Rows
+  parent: BOOSECoreApp.Core.Interfaces.IArrayApp
+  langs:
+  - csharp
+  - vb
+  name: Rows
+  nameWithType: IArrayApp.Rows
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.Rows
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Interfaces/IArrayApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: Number of rows in the array.
+  example: []
+  syntax:
+    content: int Rows { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Rows As Integer
+  overload: BOOSECoreApp.Core.Interfaces.IArrayApp.Rows*
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.ElementType
+  commentId: P:BOOSECoreApp.Core.Interfaces.IArrayApp.ElementType
+  id: ElementType
+  parent: BOOSECoreApp.Core.Interfaces.IArrayApp
+  langs:
+  - csharp
+  - vb
+  name: ElementType
+  nameWithType: IArrayApp.ElementType
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.ElementType
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Interfaces/IArrayApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Interfaces
+  summary: 'Type of value stored in the array: Int or Real.'
+  example: []
+  syntax:
+    content: ArrayElementType ElementType { get; }
+    parameters: []
+    return:
+      type: BOOSECoreApp.Core.Variables.ArrayElementType
+    content.vb: ReadOnly Property ElementType As ArrayElementType
+  overload: BOOSECoreApp.Core.Interfaces.IArrayApp.ElementType*
+references:
+- uid: BOOSECoreApp.Core.Interfaces
+  commentId: N:BOOSECoreApp.Core.Interfaces
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Interfaces
+  nameWithType: BOOSECoreApp.Core.Interfaces
+  fullName: BOOSECoreApp.Core.Interfaces
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.html
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.CheckIndices*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IArrayApp.CheckIndices
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_CheckIndices_System_Int32_System_Int32_
+  name: CheckIndices
+  nameWithType: IArrayApp.CheckIndices
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.CheckIndices
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.getValue*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IArrayApp.getValue
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_getValue_System_Int32_System_Int32_
+  name: getValue
+  nameWithType: IArrayApp.getValue
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.getValue
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.setValue*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IArrayApp.setValue
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_setValue_System_Int32_System_Int32_System_Double_
+  name: setValue
+  nameWithType: IArrayApp.setValue
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.setValue
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.Cols*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IArrayApp.Cols
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_Cols
+  name: Cols
+  nameWithType: IArrayApp.Cols
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.Cols
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.Rows*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IArrayApp.Rows
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_Rows
+  name: Rows
+  nameWithType: IArrayApp.Rows
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.Rows
+- uid: BOOSECoreApp.Core.Interfaces.IArrayApp.ElementType*
+  commentId: Overload:BOOSECoreApp.Core.Interfaces.IArrayApp.ElementType
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IArrayApp.html#BOOSECoreApp_Core_Interfaces_IArrayApp_ElementType
+  name: ElementType
+  nameWithType: IArrayApp.ElementType
+  fullName: BOOSECoreApp.Core.Interfaces.IArrayApp.ElementType
+- uid: BOOSECoreApp.Core.Variables.ArrayElementType
+  commentId: T:BOOSECoreApp.Core.Variables.ArrayElementType
+  parent: BOOSECoreApp.Core.Variables
+  isExternal: true
+  href: BOOSECoreApp.Core.Variables.ArrayElementType.html
+  name: ArrayElementType
+  nameWithType: ArrayElementType
+  fullName: BOOSECoreApp.Core.Variables.ArrayElementType
+- uid: BOOSECoreApp.Core.Variables
+  commentId: N:BOOSECoreApp.Core.Variables
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Variables
+  nameWithType: BOOSECoreApp.Core.Variables
+  fullName: BOOSECoreApp.Core.Variables
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Variables
+    name: Variables
+    isExternal: true
+    href: BOOSECoreApp.Core.Variables.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Variables
+    name: Variables
+    isExternal: true
+    href: BOOSECoreApp.Core.Variables.html
