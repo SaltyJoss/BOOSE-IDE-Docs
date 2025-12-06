@@ -1,0 +1,1150 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule
+  id: DiagnosticsTelemetryModule
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  children:
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.#ctor
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.AddHeartbeatProperty(System.String,System.String,System.Boolean)
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.DiagnosticsInstrumentationKey
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Dispose
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.ExcludedHeartbeatProperties
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.ExcludedHeartbeatPropertyProviders
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Finalize
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.HeartbeatInterval
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.IsHeartbeatEnabled
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.SetHeartbeatProperty(System.String,System.String,System.Nullable{System.Boolean})
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Severity
+  langs:
+  - csharp
+  - vb
+  name: DiagnosticsTelemetryModule
+  nameWithType: DiagnosticsTelemetryModule
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule
+  type: Class
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  syntax:
+    content: 'public sealed class DiagnosticsTelemetryModule : ITelemetryModule, IHeartbeatPropertyManager, IDisposable'
+    content.vb: Public NotInheritable Class DiagnosticsTelemetryModule Implements ITelemetryModule, IHeartbeatPropertyManager, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.ApplicationInsights.Extensibility.ITelemetryModule
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.#ctor
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.#ctor
+  id: '#ctor'
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule
+  langs:
+  - csharp
+  - vb
+  name: DiagnosticsTelemetryModule()
+  nameWithType: DiagnosticsTelemetryModule.DiagnosticsTelemetryModule()
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.DiagnosticsTelemetryModule()
+  type: Constructor
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  syntax:
+    content: public DiagnosticsTelemetryModule()
+    content.vb: Public Sub New()
+  overload: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.#ctor*
+  nameWithType.vb: DiagnosticsTelemetryModule.New()
+  fullName.vb: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.New()
+  name.vb: New()
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Finalize
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Finalize
+  id: Finalize
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule
+  langs:
+  - csharp
+  - vb
+  name: ~DiagnosticsTelemetryModule()
+  nameWithType: DiagnosticsTelemetryModule.~DiagnosticsTelemetryModule()
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.~DiagnosticsTelemetryModule()
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  syntax:
+    content: protected ~DiagnosticsTelemetryModule()
+    content.vb: 'Protected '
+  overload: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Finalize*
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  id: Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule
+  langs:
+  - csharp
+  - vb
+  name: Initialize(TelemetryConfiguration)
+  nameWithType: DiagnosticsTelemetryModule.Initialize(TelemetryConfiguration)
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  example: []
+  syntax:
+    content: public void Initialize(TelemetryConfiguration configuration)
+    parameters:
+    - id: configuration
+      type: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+    content.vb: Public Sub Initialize(configuration As TelemetryConfiguration)
+  overload: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Initialize*
+  implements:
+  - Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.AddHeartbeatProperty(System.String,System.String,System.Boolean)
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.AddHeartbeatProperty(System.String,System.String,System.Boolean)
+  id: AddHeartbeatProperty(System.String,System.String,System.Boolean)
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule
+  langs:
+  - csharp
+  - vb
+  name: AddHeartbeatProperty(string, string, bool)
+  nameWithType: DiagnosticsTelemetryModule.AddHeartbeatProperty(string, string, bool)
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.AddHeartbeatProperty(string, string, bool)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  example: []
+  syntax:
+    content: public bool AddHeartbeatProperty(string propertyName, string propertyValue, bool isHealthy)
+    parameters:
+    - id: propertyName
+      type: System.String
+    - id: propertyValue
+      type: System.String
+    - id: isHealthy
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Function AddHeartbeatProperty(propertyName As String, propertyValue As String, isHealthy As Boolean) As Boolean
+  overload: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.AddHeartbeatProperty*
+  implements:
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.AddHeartbeatProperty(System.String,System.String,System.Boolean)
+  nameWithType.vb: DiagnosticsTelemetryModule.AddHeartbeatProperty(String, String, Boolean)
+  fullName.vb: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.AddHeartbeatProperty(String, String, Boolean)
+  name.vb: AddHeartbeatProperty(String, String, Boolean)
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.SetHeartbeatProperty(System.String,System.String,System.Nullable{System.Boolean})
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.SetHeartbeatProperty(System.String,System.String,System.Nullable{System.Boolean})
+  id: SetHeartbeatProperty(System.String,System.String,System.Nullable{System.Boolean})
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule
+  langs:
+  - csharp
+  - vb
+  name: SetHeartbeatProperty(string, string, bool?)
+  nameWithType: DiagnosticsTelemetryModule.SetHeartbeatProperty(string, string, bool?)
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.SetHeartbeatProperty(string, string, bool?)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  example: []
+  syntax:
+    content: public bool SetHeartbeatProperty(string propertyName, string propertyValue = null, bool? isHealthy = null)
+    parameters:
+    - id: propertyName
+      type: System.String
+    - id: propertyValue
+      type: System.String
+    - id: isHealthy
+      type: System.Nullable{System.Boolean}
+    return:
+      type: System.Boolean
+    content.vb: Public Function SetHeartbeatProperty(propertyName As String, propertyValue As String = Nothing, isHealthy As Boolean? = Nothing) As Boolean
+  overload: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.SetHeartbeatProperty*
+  implements:
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.SetHeartbeatProperty(System.String,System.String,System.Nullable{System.Boolean})
+  nameWithType.vb: DiagnosticsTelemetryModule.SetHeartbeatProperty(String, String, Boolean?)
+  fullName.vb: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.SetHeartbeatProperty(String, String, Boolean?)
+  name.vb: SetHeartbeatProperty(String, String, Boolean?)
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Dispose
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Dispose
+  id: Dispose
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: DiagnosticsTelemetryModule.Dispose()
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Dispose()
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.IsHeartbeatEnabled
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.IsHeartbeatEnabled
+  id: IsHeartbeatEnabled
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule
+  langs:
+  - csharp
+  - vb
+  name: IsHeartbeatEnabled
+  nameWithType: DiagnosticsTelemetryModule.IsHeartbeatEnabled
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.IsHeartbeatEnabled
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  example: []
+  syntax:
+    content: public bool IsHeartbeatEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsHeartbeatEnabled As Boolean
+  overload: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.IsHeartbeatEnabled*
+  implements:
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.IsHeartbeatEnabled
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.HeartbeatInterval
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.HeartbeatInterval
+  id: HeartbeatInterval
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule
+  langs:
+  - csharp
+  - vb
+  name: HeartbeatInterval
+  nameWithType: DiagnosticsTelemetryModule.HeartbeatInterval
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.HeartbeatInterval
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  example: []
+  syntax:
+    content: public TimeSpan HeartbeatInterval { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property HeartbeatInterval As TimeSpan
+  overload: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.HeartbeatInterval*
+  implements:
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.HeartbeatInterval
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.ExcludedHeartbeatPropertyProviders
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.ExcludedHeartbeatPropertyProviders
+  id: ExcludedHeartbeatPropertyProviders
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule
+  langs:
+  - csharp
+  - vb
+  name: ExcludedHeartbeatPropertyProviders
+  nameWithType: DiagnosticsTelemetryModule.ExcludedHeartbeatPropertyProviders
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.ExcludedHeartbeatPropertyProviders
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  example: []
+  syntax:
+    content: public IList<string> ExcludedHeartbeatPropertyProviders { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.String}
+    content.vb: Public ReadOnly Property ExcludedHeartbeatPropertyProviders As IList(Of String)
+  overload: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.ExcludedHeartbeatPropertyProviders*
+  implements:
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.ExcludedHeartbeatPropertyProviders
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.ExcludedHeartbeatProperties
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.ExcludedHeartbeatProperties
+  id: ExcludedHeartbeatProperties
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule
+  langs:
+  - csharp
+  - vb
+  name: ExcludedHeartbeatProperties
+  nameWithType: DiagnosticsTelemetryModule.ExcludedHeartbeatProperties
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.ExcludedHeartbeatProperties
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  example: []
+  syntax:
+    content: public IList<string> ExcludedHeartbeatProperties { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.String}
+    content.vb: Public ReadOnly Property ExcludedHeartbeatProperties As IList(Of String)
+  overload: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.ExcludedHeartbeatProperties*
+  implements:
+  - Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.ExcludedHeartbeatProperties
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Severity
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Severity
+  id: Severity
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule
+  langs:
+  - csharp
+  - vb
+  name: Severity
+  nameWithType: DiagnosticsTelemetryModule.Severity
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Severity
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  syntax:
+    content: public string Severity { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Severity As String
+  overload: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Severity*
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.DiagnosticsInstrumentationKey
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.DiagnosticsInstrumentationKey
+  id: DiagnosticsInstrumentationKey
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule
+  langs:
+  - csharp
+  - vb
+  name: DiagnosticsInstrumentationKey
+  nameWithType: DiagnosticsTelemetryModule.DiagnosticsInstrumentationKey
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.DiagnosticsInstrumentationKey
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  syntax:
+    content: public string DiagnosticsInstrumentationKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DiagnosticsInstrumentationKey As String
+  overload: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.DiagnosticsInstrumentationKey*
+references:
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  commentId: N:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  nameWithType: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation
+    name: Implementation
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+    name: Tracing
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation
+    name: Implementation
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+    name: Tracing
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.ITelemetryModule
+  parent: Microsoft.ApplicationInsights.Extensibility
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.html
+  name: ITelemetryModule
+  nameWithType: ITelemetryModule
+  fullName: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.html
+  name: IHeartbeatPropertyManager
+  nameWithType: IHeartbeatPropertyManager
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.ApplicationInsights.Extensibility
+  commentId: N:Microsoft.ApplicationInsights.Extensibility
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Extensibility
+  nameWithType: Microsoft.ApplicationInsights.Extensibility
+  fullName: Microsoft.ApplicationInsights.Extensibility
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.html
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.#ctor*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.#ctor
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_DiagnosticsTelemetryModule__ctor
+  name: DiagnosticsTelemetryModule
+  nameWithType: DiagnosticsTelemetryModule.DiagnosticsTelemetryModule
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.DiagnosticsTelemetryModule
+  nameWithType.vb: DiagnosticsTelemetryModule.New
+  fullName.vb: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.New
+  name.vb: New
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Finalize*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Finalize
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_DiagnosticsTelemetryModule_Finalize
+  name: ~DiagnosticsTelemetryModule
+  nameWithType: DiagnosticsTelemetryModule.~DiagnosticsTelemetryModule
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.~DiagnosticsTelemetryModule
+  spec.csharp:
+  - name: "~"
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Finalize*
+    name: DiagnosticsTelemetryModule
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_DiagnosticsTelemetryModule_Finalize
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Initialize*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Initialize
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_DiagnosticsTelemetryModule_Initialize_Microsoft_ApplicationInsights_Extensibility_TelemetryConfiguration_
+  name: Initialize
+  nameWithType: DiagnosticsTelemetryModule.Initialize
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Initialize
+- uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  parent: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_ITelemetryModule_Initialize_Microsoft_ApplicationInsights_Extensibility_TelemetryConfiguration_
+  name: Initialize(TelemetryConfiguration)
+  nameWithType: ITelemetryModule.Initialize(TelemetryConfiguration)
+  fullName: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+    name: Initialize
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_ITelemetryModule_Initialize_Microsoft_ApplicationInsights_Extensibility_TelemetryConfiguration_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+    name: TelemetryConfiguration
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+    name: Initialize
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_ITelemetryModule_Initialize_Microsoft_ApplicationInsights_Extensibility_TelemetryConfiguration_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+    name: TelemetryConfiguration
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.html
+  - name: )
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+  parent: Microsoft.ApplicationInsights.Extensibility
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.html
+  name: TelemetryConfiguration
+  nameWithType: TelemetryConfiguration
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.AddHeartbeatProperty*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.AddHeartbeatProperty
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_DiagnosticsTelemetryModule_AddHeartbeatProperty_System_String_System_String_System_Boolean_
+  name: AddHeartbeatProperty
+  nameWithType: DiagnosticsTelemetryModule.AddHeartbeatProperty
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.AddHeartbeatProperty
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.AddHeartbeatProperty(System.String,System.String,System.Boolean)
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.AddHeartbeatProperty(System.String,System.String,System.Boolean)
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_IHeartbeatPropertyManager_AddHeartbeatProperty_System_String_System_String_System_Boolean_
+  name: AddHeartbeatProperty(string, string, bool)
+  nameWithType: IHeartbeatPropertyManager.AddHeartbeatProperty(string, string, bool)
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.AddHeartbeatProperty(string, string, bool)
+  nameWithType.vb: IHeartbeatPropertyManager.AddHeartbeatProperty(String, String, Boolean)
+  fullName.vb: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.AddHeartbeatProperty(String, String, Boolean)
+  name.vb: AddHeartbeatProperty(String, String, Boolean)
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.AddHeartbeatProperty(System.String,System.String,System.Boolean)
+    name: AddHeartbeatProperty
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_IHeartbeatPropertyManager_AddHeartbeatProperty_System_String_System_String_System_Boolean_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.AddHeartbeatProperty(System.String,System.String,System.Boolean)
+    name: AddHeartbeatProperty
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_IHeartbeatPropertyManager_AddHeartbeatProperty_System_String_System_String_System_Boolean_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.SetHeartbeatProperty*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.SetHeartbeatProperty
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_DiagnosticsTelemetryModule_SetHeartbeatProperty_System_String_System_String_System_Nullable_System_Boolean__
+  name: SetHeartbeatProperty
+  nameWithType: DiagnosticsTelemetryModule.SetHeartbeatProperty
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.SetHeartbeatProperty
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.SetHeartbeatProperty(System.String,System.String,System.Nullable{System.Boolean})
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.SetHeartbeatProperty(System.String,System.String,System.Nullable{System.Boolean})
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_IHeartbeatPropertyManager_SetHeartbeatProperty_System_String_System_String_System_Nullable_System_Boolean__
+  name: SetHeartbeatProperty(string, string, bool?)
+  nameWithType: IHeartbeatPropertyManager.SetHeartbeatProperty(string, string, bool?)
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.SetHeartbeatProperty(string, string, bool?)
+  nameWithType.vb: IHeartbeatPropertyManager.SetHeartbeatProperty(String, String, Boolean?)
+  fullName.vb: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.SetHeartbeatProperty(String, String, Boolean?)
+  name.vb: SetHeartbeatProperty(String, String, Boolean?)
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.SetHeartbeatProperty(System.String,System.String,System.Nullable{System.Boolean})
+    name: SetHeartbeatProperty
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_IHeartbeatPropertyManager_SetHeartbeatProperty_System_String_System_String_System_Nullable_System_Boolean__
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.SetHeartbeatProperty(System.String,System.String,System.Nullable{System.Boolean})
+    name: SetHeartbeatProperty
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_IHeartbeatPropertyManager_SetHeartbeatProperty_System_String_System_String_System_Nullable_System_Boolean__
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: )
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Dispose*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Dispose
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_DiagnosticsTelemetryModule_Dispose
+  name: Dispose
+  nameWithType: DiagnosticsTelemetryModule.Dispose
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.IsHeartbeatEnabled*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.IsHeartbeatEnabled
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_DiagnosticsTelemetryModule_IsHeartbeatEnabled
+  name: IsHeartbeatEnabled
+  nameWithType: DiagnosticsTelemetryModule.IsHeartbeatEnabled
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.IsHeartbeatEnabled
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.IsHeartbeatEnabled
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.IsHeartbeatEnabled
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_IHeartbeatPropertyManager_IsHeartbeatEnabled
+  name: IsHeartbeatEnabled
+  nameWithType: IHeartbeatPropertyManager.IsHeartbeatEnabled
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.IsHeartbeatEnabled
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.HeartbeatInterval*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.HeartbeatInterval
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_DiagnosticsTelemetryModule_HeartbeatInterval
+  name: HeartbeatInterval
+  nameWithType: DiagnosticsTelemetryModule.HeartbeatInterval
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.HeartbeatInterval
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.HeartbeatInterval
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.HeartbeatInterval
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_IHeartbeatPropertyManager_HeartbeatInterval
+  name: HeartbeatInterval
+  nameWithType: IHeartbeatPropertyManager.HeartbeatInterval
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.HeartbeatInterval
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.ExcludedHeartbeatPropertyProviders*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.ExcludedHeartbeatPropertyProviders
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_DiagnosticsTelemetryModule_ExcludedHeartbeatPropertyProviders
+  name: ExcludedHeartbeatPropertyProviders
+  nameWithType: DiagnosticsTelemetryModule.ExcludedHeartbeatPropertyProviders
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.ExcludedHeartbeatPropertyProviders
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.ExcludedHeartbeatPropertyProviders
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.ExcludedHeartbeatPropertyProviders
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_IHeartbeatPropertyManager_ExcludedHeartbeatPropertyProviders
+  name: ExcludedHeartbeatPropertyProviders
+  nameWithType: IHeartbeatPropertyManager.ExcludedHeartbeatPropertyProviders
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.ExcludedHeartbeatPropertyProviders
+- uid: System.Collections.Generic.IList{System.String}
+  commentId: T:System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<string>
+  nameWithType: IList<string>
+  fullName: System.Collections.Generic.IList<string>
+  nameWithType.vb: IList(Of String)
+  fullName.vb: System.Collections.Generic.IList(Of String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.ExcludedHeartbeatProperties*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.ExcludedHeartbeatProperties
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_DiagnosticsTelemetryModule_ExcludedHeartbeatProperties
+  name: ExcludedHeartbeatProperties
+  nameWithType: DiagnosticsTelemetryModule.ExcludedHeartbeatProperties
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.ExcludedHeartbeatProperties
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.ExcludedHeartbeatProperties
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.ExcludedHeartbeatProperties
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_IHeartbeatPropertyManager_ExcludedHeartbeatProperties
+  name: ExcludedHeartbeatProperties
+  nameWithType: IHeartbeatPropertyManager.ExcludedHeartbeatProperties
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.IHeartbeatPropertyManager.ExcludedHeartbeatProperties
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Severity*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Severity
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_DiagnosticsTelemetryModule_Severity
+  name: Severity
+  nameWithType: DiagnosticsTelemetryModule.Severity
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.Severity
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.DiagnosticsInstrumentationKey*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.DiagnosticsInstrumentationKey
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_Implementation_Tracing_DiagnosticsTelemetryModule_DiagnosticsInstrumentationKey
+  name: DiagnosticsInstrumentationKey
+  nameWithType: DiagnosticsTelemetryModule.DiagnosticsInstrumentationKey
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing.DiagnosticsTelemetryModule.DiagnosticsInstrumentationKey

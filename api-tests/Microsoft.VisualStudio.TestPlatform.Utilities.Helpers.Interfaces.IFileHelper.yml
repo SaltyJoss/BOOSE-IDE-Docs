@@ -1,0 +1,983 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  commentId: T:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  id: IFileHelper
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  children:
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CopyFile(System.String,System.String)
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CreateDirectory(System.String)
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Delete(System.String)
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteDirectory(System.String,System.Boolean)
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteEmptyDirectroy(System.String)
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DirectoryExists(System.String)
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.EnumerateFiles(System.String,System.IO.SearchOption,System.String[])
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Exists(System.String)
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetCurrentDirectory
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileAttributes(System.String)
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileLength(System.String)
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileVersion(System.String)
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFiles(System.String,System.String,System.IO.SearchOption)
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFullPath(System.String)
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetStream(System.String,System.IO.FileMode,System.IO.FileAccess)
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetStream(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetTempPath
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.MoveFile(System.String,System.String)
+  - Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.WriteAllTextToFile(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IFileHelper
+  nameWithType: IFileHelper
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  type: Interface
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: public interface IFileHelper
+    content.vb: Public Interface IFileHelper
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CreateDirectory(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CreateDirectory(System.String)
+  id: CreateDirectory(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: CreateDirectory(string)
+  nameWithType: IFileHelper.CreateDirectory(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CreateDirectory(string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: DirectoryInfo CreateDirectory(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.IO.DirectoryInfo
+    content.vb: Function CreateDirectory(path As String) As DirectoryInfo
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CreateDirectory*
+  nameWithType.vb: IFileHelper.CreateDirectory(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CreateDirectory(String)
+  name.vb: CreateDirectory(String)
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetCurrentDirectory
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetCurrentDirectory
+  id: GetCurrentDirectory
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentDirectory()
+  nameWithType: IFileHelper.GetCurrentDirectory()
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetCurrentDirectory()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: string GetCurrentDirectory()
+    return:
+      type: System.String
+    content.vb: Function GetCurrentDirectory() As String
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetCurrentDirectory*
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Exists(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Exists(System.String)
+  id: Exists(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: Exists(string?)
+  nameWithType: IFileHelper.Exists(string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Exists(string?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: bool Exists(string? path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function Exists(path As String) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Exists*
+  nameWithType.vb: IFileHelper.Exists(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Exists(String)
+  name.vb: Exists(String)
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DirectoryExists(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DirectoryExists(System.String)
+  id: DirectoryExists(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: DirectoryExists(string?)
+  nameWithType: IFileHelper.DirectoryExists(string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DirectoryExists(string?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: bool DirectoryExists(string? path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function DirectoryExists(path As String) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DirectoryExists*
+  nameWithType.vb: IFileHelper.DirectoryExists(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DirectoryExists(String)
+  name.vb: DirectoryExists(String)
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetStream(System.String,System.IO.FileMode,System.IO.FileAccess)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetStream(System.String,System.IO.FileMode,System.IO.FileAccess)
+  id: GetStream(System.String,System.IO.FileMode,System.IO.FileAccess)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetStream(string, FileMode, FileAccess)
+  nameWithType: IFileHelper.GetStream(string, FileMode, FileAccess)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetStream(string, System.IO.FileMode, System.IO.FileAccess)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: Stream GetStream(string filePath, FileMode mode, FileAccess access = FileAccess.ReadWrite)
+    parameters:
+    - id: filePath
+      type: System.String
+    - id: mode
+      type: System.IO.FileMode
+    - id: access
+      type: System.IO.FileAccess
+    return:
+      type: System.IO.Stream
+    content.vb: Function GetStream(filePath As String, mode As FileMode, access As FileAccess = FileAccess.ReadWrite) As Stream
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetStream*
+  nameWithType.vb: IFileHelper.GetStream(String, FileMode, FileAccess)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetStream(String, System.IO.FileMode, System.IO.FileAccess)
+  name.vb: GetStream(String, FileMode, FileAccess)
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetStream(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetStream(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  id: GetStream(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetStream(string, FileMode, FileAccess, FileShare)
+  nameWithType: IFileHelper.GetStream(string, FileMode, FileAccess, FileShare)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetStream(string, System.IO.FileMode, System.IO.FileAccess, System.IO.FileShare)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: Stream GetStream(string filePath, FileMode mode, FileAccess access, FileShare share)
+    parameters:
+    - id: filePath
+      type: System.String
+    - id: mode
+      type: System.IO.FileMode
+    - id: access
+      type: System.IO.FileAccess
+    - id: share
+      type: System.IO.FileShare
+    return:
+      type: System.IO.Stream
+    content.vb: Function GetStream(filePath As String, mode As FileMode, access As FileAccess, share As FileShare) As Stream
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetStream*
+  nameWithType.vb: IFileHelper.GetStream(String, FileMode, FileAccess, FileShare)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetStream(String, System.IO.FileMode, System.IO.FileAccess, System.IO.FileShare)
+  name.vb: GetStream(String, FileMode, FileAccess, FileShare)
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.EnumerateFiles(System.String,System.IO.SearchOption,System.String[])
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.EnumerateFiles(System.String,System.IO.SearchOption,System.String[])
+  id: EnumerateFiles(System.String,System.IO.SearchOption,System.String[])
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: EnumerateFiles(string, SearchOption, params string[]?)
+  nameWithType: IFileHelper.EnumerateFiles(string, SearchOption, params string[]?)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.EnumerateFiles(string, System.IO.SearchOption, params string[]?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: IEnumerable<string> EnumerateFiles(string directory, SearchOption searchOption, params string[]? endsWithSearchPatterns)
+    parameters:
+    - id: directory
+      type: System.String
+    - id: searchOption
+      type: System.IO.SearchOption
+    - id: endsWithSearchPatterns
+      type: System.String[]
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Function EnumerateFiles(directory As String, searchOption As SearchOption, ParamArray endsWithSearchPatterns As String()) As IEnumerable(Of String)
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.EnumerateFiles*
+  nameWithType.vb: IFileHelper.EnumerateFiles(String, SearchOption, ParamArray String())
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.EnumerateFiles(String, System.IO.SearchOption, ParamArray String())
+  name.vb: EnumerateFiles(String, SearchOption, ParamArray String())
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileAttributes(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileAttributes(System.String)
+  id: GetFileAttributes(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetFileAttributes(string)
+  nameWithType: IFileHelper.GetFileAttributes(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileAttributes(string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: FileAttributes GetFileAttributes(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.IO.FileAttributes
+    content.vb: Function GetFileAttributes(path As String) As FileAttributes
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileAttributes*
+  nameWithType.vb: IFileHelper.GetFileAttributes(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileAttributes(String)
+  name.vb: GetFileAttributes(String)
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileVersion(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileVersion(System.String)
+  id: GetFileVersion(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetFileVersion(string)
+  nameWithType: IFileHelper.GetFileVersion(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileVersion(string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: Version GetFileVersion(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.Version
+    content.vb: Function GetFileVersion(path As String) As Version
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileVersion*
+  nameWithType.vb: IFileHelper.GetFileVersion(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileVersion(String)
+  name.vb: GetFileVersion(String)
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CopyFile(System.String,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CopyFile(System.String,System.String)
+  id: CopyFile(System.String,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: CopyFile(string, string)
+  nameWithType: IFileHelper.CopyFile(string, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CopyFile(string, string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: void CopyFile(string sourcePath, string destinationPath)
+    parameters:
+    - id: sourcePath
+      type: System.String
+    - id: destinationPath
+      type: System.String
+    content.vb: Sub CopyFile(sourcePath As String, destinationPath As String)
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CopyFile*
+  nameWithType.vb: IFileHelper.CopyFile(String, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CopyFile(String, String)
+  name.vb: CopyFile(String, String)
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.MoveFile(System.String,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.MoveFile(System.String,System.String)
+  id: MoveFile(System.String,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: MoveFile(string, string)
+  nameWithType: IFileHelper.MoveFile(string, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.MoveFile(string, string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: void MoveFile(string sourcePath, string destinationPath)
+    parameters:
+    - id: sourcePath
+      type: System.String
+    - id: destinationPath
+      type: System.String
+    content.vb: Sub MoveFile(sourcePath As String, destinationPath As String)
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.MoveFile*
+  nameWithType.vb: IFileHelper.MoveFile(String, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.MoveFile(String, String)
+  name.vb: MoveFile(String, String)
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.WriteAllTextToFile(System.String,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.WriteAllTextToFile(System.String,System.String)
+  id: WriteAllTextToFile(System.String,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteAllTextToFile(string, string)
+  nameWithType: IFileHelper.WriteAllTextToFile(string, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.WriteAllTextToFile(string, string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: void WriteAllTextToFile(string filePath, string content)
+    parameters:
+    - id: filePath
+      type: System.String
+    - id: content
+      type: System.String
+    content.vb: Sub WriteAllTextToFile(filePath As String, content As String)
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.WriteAllTextToFile*
+  nameWithType.vb: IFileHelper.WriteAllTextToFile(String, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.WriteAllTextToFile(String, String)
+  name.vb: WriteAllTextToFile(String, String)
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFullPath(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFullPath(System.String)
+  id: GetFullPath(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetFullPath(string)
+  nameWithType: IFileHelper.GetFullPath(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFullPath(string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: string GetFullPath(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Function GetFullPath(path As String) As String
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFullPath*
+  nameWithType.vb: IFileHelper.GetFullPath(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFullPath(String)
+  name.vb: GetFullPath(String)
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteEmptyDirectroy(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteEmptyDirectroy(System.String)
+  id: DeleteEmptyDirectroy(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: DeleteEmptyDirectroy(string)
+  nameWithType: IFileHelper.DeleteEmptyDirectroy(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteEmptyDirectroy(string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: void DeleteEmptyDirectroy(string directoryPath)
+    parameters:
+    - id: directoryPath
+      type: System.String
+    content.vb: Sub DeleteEmptyDirectroy(directoryPath As String)
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteEmptyDirectroy*
+  nameWithType.vb: IFileHelper.DeleteEmptyDirectroy(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteEmptyDirectroy(String)
+  name.vb: DeleteEmptyDirectroy(String)
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteDirectory(System.String,System.Boolean)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteDirectory(System.String,System.Boolean)
+  id: DeleteDirectory(System.String,System.Boolean)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: DeleteDirectory(string, bool)
+  nameWithType: IFileHelper.DeleteDirectory(string, bool)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteDirectory(string, bool)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: void DeleteDirectory(string directoryPath, bool recursive)
+    parameters:
+    - id: directoryPath
+      type: System.String
+    - id: recursive
+      type: System.Boolean
+    content.vb: Sub DeleteDirectory(directoryPath As String, recursive As Boolean)
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteDirectory*
+  nameWithType.vb: IFileHelper.DeleteDirectory(String, Boolean)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteDirectory(String, Boolean)
+  name.vb: DeleteDirectory(String, Boolean)
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFiles(System.String,System.String,System.IO.SearchOption)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFiles(System.String,System.String,System.IO.SearchOption)
+  id: GetFiles(System.String,System.String,System.IO.SearchOption)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetFiles(string, string, SearchOption)
+  nameWithType: IFileHelper.GetFiles(string, string, SearchOption)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFiles(string, string, System.IO.SearchOption)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: string[] GetFiles(string path, string searchPattern, SearchOption searchOption)
+    parameters:
+    - id: path
+      type: System.String
+    - id: searchPattern
+      type: System.String
+    - id: searchOption
+      type: System.IO.SearchOption
+    return:
+      type: System.String[]
+    content.vb: Function GetFiles(path As String, searchPattern As String, searchOption As SearchOption) As String()
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFiles*
+  nameWithType.vb: IFileHelper.GetFiles(String, String, SearchOption)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFiles(String, String, System.IO.SearchOption)
+  name.vb: GetFiles(String, String, SearchOption)
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Delete(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Delete(System.String)
+  id: Delete(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: Delete(string)
+  nameWithType: IFileHelper.Delete(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Delete(string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: void Delete(string path)
+    parameters:
+    - id: path
+      type: System.String
+    content.vb: Sub Delete(path As String)
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Delete*
+  nameWithType.vb: IFileHelper.Delete(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Delete(String)
+  name.vb: Delete(String)
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetTempPath
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetTempPath
+  id: GetTempPath
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTempPath()
+  nameWithType: IFileHelper.GetTempPath()
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetTempPath()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: string GetTempPath()
+    return:
+      type: System.String
+    content.vb: Function GetTempPath() As String
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetTempPath*
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileLength(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileLength(System.String)
+  id: GetFileLength(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetFileLength(string)
+  nameWithType: IFileHelper.GetFileLength(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileLength(string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  syntax:
+    content: long GetFileLength(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.Int64
+    content.vb: Function GetFileLength(path As String) As Long
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileLength*
+  nameWithType.vb: IFileHelper.GetFileLength(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileLength(String)
+  name.vb: GetFileLength(String)
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  commentId: N:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  nameWithType: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities
+    name: Utilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers
+    name: Helpers
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities
+    name: Utilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers
+    name: Helpers
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.html
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CreateDirectory*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CreateDirectory
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_CreateDirectory_System_String_
+  name: CreateDirectory
+  nameWithType: IFileHelper.CreateDirectory
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CreateDirectory
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IO.DirectoryInfo
+  commentId: T:System.IO.DirectoryInfo
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.directoryinfo
+  name: DirectoryInfo
+  nameWithType: DirectoryInfo
+  fullName: System.IO.DirectoryInfo
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetCurrentDirectory*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetCurrentDirectory
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_GetCurrentDirectory
+  name: GetCurrentDirectory
+  nameWithType: IFileHelper.GetCurrentDirectory
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetCurrentDirectory
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Exists*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Exists
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_Exists_System_String_
+  name: Exists
+  nameWithType: IFileHelper.Exists
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Exists
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DirectoryExists*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DirectoryExists
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_DirectoryExists_System_String_
+  name: DirectoryExists
+  nameWithType: IFileHelper.DirectoryExists
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DirectoryExists
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetStream*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetStream
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_GetStream_System_String_System_IO_FileMode_System_IO_FileAccess_
+  name: GetStream
+  nameWithType: IFileHelper.GetStream
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetStream
+- uid: System.IO.FileMode
+  commentId: T:System.IO.FileMode
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.filemode
+  name: FileMode
+  nameWithType: FileMode
+  fullName: System.IO.FileMode
+- uid: System.IO.FileAccess
+  commentId: T:System.IO.FileAccess
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.fileaccess
+  name: FileAccess
+  nameWithType: FileAccess
+  fullName: System.IO.FileAccess
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO.FileShare
+  commentId: T:System.IO.FileShare
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.fileshare
+  name: FileShare
+  nameWithType: FileShare
+  fullName: System.IO.FileShare
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.EnumerateFiles*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.EnumerateFiles
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_EnumerateFiles_System_String_System_IO_SearchOption_System_String___
+  name: EnumerateFiles
+  nameWithType: IFileHelper.EnumerateFiles
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.EnumerateFiles
+- uid: System.IO.SearchOption
+  commentId: T:System.IO.SearchOption
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.searchoption
+  name: SearchOption
+  nameWithType: SearchOption
+  fullName: System.IO.SearchOption
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileAttributes*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileAttributes
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_GetFileAttributes_System_String_
+  name: GetFileAttributes
+  nameWithType: IFileHelper.GetFileAttributes
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileAttributes
+- uid: System.IO.FileAttributes
+  commentId: T:System.IO.FileAttributes
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.fileattributes
+  name: FileAttributes
+  nameWithType: FileAttributes
+  fullName: System.IO.FileAttributes
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileVersion*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileVersion
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_GetFileVersion_System_String_
+  name: GetFileVersion
+  nameWithType: IFileHelper.GetFileVersion
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileVersion
+- uid: System.Version
+  commentId: T:System.Version
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.version
+  name: Version
+  nameWithType: Version
+  fullName: System.Version
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CopyFile*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CopyFile
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_CopyFile_System_String_System_String_
+  name: CopyFile
+  nameWithType: IFileHelper.CopyFile
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.CopyFile
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.MoveFile*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.MoveFile
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_MoveFile_System_String_System_String_
+  name: MoveFile
+  nameWithType: IFileHelper.MoveFile
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.MoveFile
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.WriteAllTextToFile*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.WriteAllTextToFile
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_WriteAllTextToFile_System_String_System_String_
+  name: WriteAllTextToFile
+  nameWithType: IFileHelper.WriteAllTextToFile
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.WriteAllTextToFile
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFullPath*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFullPath
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_GetFullPath_System_String_
+  name: GetFullPath
+  nameWithType: IFileHelper.GetFullPath
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFullPath
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteEmptyDirectroy*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteEmptyDirectroy
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_DeleteEmptyDirectroy_System_String_
+  name: DeleteEmptyDirectroy
+  nameWithType: IFileHelper.DeleteEmptyDirectroy
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteEmptyDirectroy
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteDirectory*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteDirectory
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_DeleteDirectory_System_String_System_Boolean_
+  name: DeleteDirectory
+  nameWithType: IFileHelper.DeleteDirectory
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.DeleteDirectory
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFiles*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFiles
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_GetFiles_System_String_System_String_System_IO_SearchOption_
+  name: GetFiles
+  nameWithType: IFileHelper.GetFiles
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFiles
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Delete*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Delete
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_Delete_System_String_
+  name: Delete
+  nameWithType: IFileHelper.Delete
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.Delete
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetTempPath*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetTempPath
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_GetTempPath
+  name: GetTempPath
+  nameWithType: IFileHelper.GetTempPath
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetTempPath
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileLength*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileLength
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.html#Microsoft_VisualStudio_TestPlatform_Utilities_Helpers_Interfaces_IFileHelper_GetFileLength_System_String_
+  name: GetFileLength
+  nameWithType: IFileHelper.GetFileLength
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.Helpers.Interfaces.IFileHelper.GetFileLength
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

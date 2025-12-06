@@ -6,12 +6,11 @@ items:
   parent: BOOSECoreApp.Core.Adapters
   children:
   - BOOSECoreApp.Core.Adapters.VariableAdapterApp.#ctor(BOOSECoreApp.Core.Base.StoredProgramApp)
+  - BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyLogical(System.String,System.Boolean,System.Boolean)
   - BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyOperator(System.String,System.String,System.Object)
   - BOOSECoreApp.Core.Adapters.VariableAdapterApp.CreateVariable(System.String,BOOSECoreApp.Core.Adapters.SoftVariable.VariableType,System.String)
-  - BOOSECoreApp.Core.Adapters.VariableAdapterApp.DecrementVariable(System.String,System.Object)
-  - BOOSECoreApp.Core.Adapters.VariableAdapterApp.GetVariable(System.String)
-  - BOOSECoreApp.Core.Adapters.VariableAdapterApp.IncrementVariable(System.String,System.Object)
-  - BOOSECoreApp.Core.Adapters.VariableAdapterApp.SetVariable(System.String,System.Object)
+  - BOOSECoreApp.Core.Adapters.VariableAdapterApp.ResetAll
+  - BOOSECoreApp.Core.Adapters.VariableAdapterApp.ToBool(System.Object)
   - BOOSECoreApp.Core.Adapters.VariableAdapterApp.UpdateVariable(System.String,BOOSECoreApp.Core.Adapters.VariableAdapterApp.Operator,System.Object)
   langs:
   - csharp
@@ -21,7 +20,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp
   type: Class
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -52,7 +51,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.VariableAdapterApp(BOOSECoreApp.Core.Base.StoredProgramApp)
   type: Constructor
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -73,6 +72,32 @@ items:
   nameWithType.vb: VariableAdapterApp.New(StoredProgramApp)
   fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.New(BOOSECoreApp.Core.Base.StoredProgramApp)
   name.vb: New(StoredProgramApp)
+- uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ResetAll
+  commentId: M:BOOSECoreApp.Core.Adapters.VariableAdapterApp.ResetAll
+  id: ResetAll
+  parent: BOOSECoreApp.Core.Adapters.VariableAdapterApp
+  langs:
+  - csharp
+  - vb
+  name: ResetAll()
+  nameWithType: VariableAdapterApp.ResetAll()
+  fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ResetAll()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Adapters
+  summary: Resets the state of the object by clearing all stored variables.
+  remarks: >-
+    This method removes all entries from the internal collection of variables, 
+                effectively resetting the object to its initial state. Use this method to  clear all previously stored
+                data.
+  example: []
+  syntax:
+    content: public void ResetAll()
+    content.vb: Public Sub ResetAll()
+  overload: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ResetAll*
 - uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.CreateVariable(System.String,BOOSECoreApp.Core.Adapters.SoftVariable.VariableType,System.String)
   commentId: M:BOOSECoreApp.Core.Adapters.VariableAdapterApp.CreateVariable(System.String,BOOSECoreApp.Core.Adapters.SoftVariable.VariableType,System.String)
   id: CreateVariable(System.String,BOOSECoreApp.Core.Adapters.SoftVariable.VariableType,System.String)
@@ -85,7 +110,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.CreateVariable(string, BOOSECoreApp.Core.Adapters.SoftVariable.VariableType, string?)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -112,77 +137,6 @@ items:
   nameWithType.vb: VariableAdapterApp.CreateVariable(String, SoftVariable.VariableType, String)
   fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.CreateVariable(String, BOOSECoreApp.Core.Adapters.SoftVariable.VariableType, String)
   name.vb: CreateVariable(String, VariableType, String)
-- uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.SetVariable(System.String,System.Object)
-  commentId: M:BOOSECoreApp.Core.Adapters.VariableAdapterApp.SetVariable(System.String,System.Object)
-  id: SetVariable(System.String,System.Object)
-  parent: BOOSECoreApp.Core.Adapters.VariableAdapterApp
-  langs:
-  - csharp
-  - vb
-  name: SetVariable(string, object)
-  nameWithType: VariableAdapterApp.SetVariable(string, object)
-  fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.SetVariable(string, object)
-  type: Method
-  source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
-  assemblies:
-  - BOOSECoreApp
-  namespace: BOOSECoreApp.Core.Adapters
-  summary: Retrieves a variable by name.
-  example: []
-  syntax:
-    content: public void SetVariable(string name, object value)
-    parameters:
-    - id: name
-      type: System.String
-      description: Variable name.
-    - id: value
-      type: System.Object
-    content.vb: Public Sub SetVariable(name As String, value As Object)
-  overload: BOOSECoreApp.Core.Adapters.VariableAdapterApp.SetVariable*
-  exceptions:
-  - type: System.InvalidOperationException
-    commentId: T:System.InvalidOperationException
-    description: Thrown if the variable is not declared.
-  nameWithType.vb: VariableAdapterApp.SetVariable(String, Object)
-  fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.SetVariable(String, Object)
-  name.vb: SetVariable(String, Object)
-- uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.GetVariable(System.String)
-  commentId: M:BOOSECoreApp.Core.Adapters.VariableAdapterApp.GetVariable(System.String)
-  id: GetVariable(System.String)
-  parent: BOOSECoreApp.Core.Adapters.VariableAdapterApp
-  langs:
-  - csharp
-  - vb
-  name: GetVariable(string)
-  nameWithType: VariableAdapterApp.GetVariable(string)
-  fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.GetVariable(string)
-  type: Method
-  source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
-  assemblies:
-  - BOOSECoreApp
-  namespace: BOOSECoreApp.Core.Adapters
-  summary: Gets the variable.
-  example: []
-  syntax:
-    content: public SoftVariable GetVariable(string name)
-    parameters:
-    - id: name
-      type: System.String
-      description: The name.
-    return:
-      type: BOOSECoreApp.Core.Adapters.SoftVariable
-      description: ''
-    content.vb: Public Function GetVariable(name As String) As SoftVariable
-  overload: BOOSECoreApp.Core.Adapters.VariableAdapterApp.GetVariable*
-  exceptions:
-  - type: System.InvalidOperationException
-    commentId: T:System.InvalidOperationException
-    description: Variable not declared.
-  nameWithType.vb: VariableAdapterApp.GetVariable(String)
-  fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.GetVariable(String)
-  name.vb: GetVariable(String)
 - uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.UpdateVariable(System.String,BOOSECoreApp.Core.Adapters.VariableAdapterApp.Operator,System.Object)
   commentId: M:BOOSECoreApp.Core.Adapters.VariableAdapterApp.UpdateVariable(System.String,BOOSECoreApp.Core.Adapters.VariableAdapterApp.Operator,System.Object)
   id: UpdateVariable(System.String,BOOSECoreApp.Core.Adapters.VariableAdapterApp.Operator,System.Object)
@@ -195,7 +149,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.UpdateVariable(string, BOOSECoreApp.Core.Adapters.VariableAdapterApp.Operator, object?)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -218,70 +172,6 @@ items:
   nameWithType.vb: VariableAdapterApp.UpdateVariable(String, VariableAdapterApp.Operator, Object)
   fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.UpdateVariable(String, BOOSECoreApp.Core.Adapters.VariableAdapterApp.Operator, Object)
   name.vb: UpdateVariable(String, Operator, Object)
-- uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.IncrementVariable(System.String,System.Object)
-  commentId: M:BOOSECoreApp.Core.Adapters.VariableAdapterApp.IncrementVariable(System.String,System.Object)
-  id: IncrementVariable(System.String,System.Object)
-  parent: BOOSECoreApp.Core.Adapters.VariableAdapterApp
-  langs:
-  - csharp
-  - vb
-  name: IncrementVariable(string, object)
-  nameWithType: VariableAdapterApp.IncrementVariable(string, object)
-  fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.IncrementVariable(string, object)
-  type: Method
-  source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
-  assemblies:
-  - BOOSECoreApp
-  namespace: BOOSECoreApp.Core.Adapters
-  summary: Increments the numeric variable by a given Forward Difference {delta}.
-  example: []
-  syntax:
-    content: public void IncrementVariable(string name, object delta)
-    parameters:
-    - id: name
-      type: System.String
-      description: Variable name..
-    - id: delta
-      type: System.Object
-      description: Change of variable (Forward Difference).
-    content.vb: Public Sub IncrementVariable(name As String, delta As Object)
-  overload: BOOSECoreApp.Core.Adapters.VariableAdapterApp.IncrementVariable*
-  nameWithType.vb: VariableAdapterApp.IncrementVariable(String, Object)
-  fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.IncrementVariable(String, Object)
-  name.vb: IncrementVariable(String, Object)
-- uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.DecrementVariable(System.String,System.Object)
-  commentId: M:BOOSECoreApp.Core.Adapters.VariableAdapterApp.DecrementVariable(System.String,System.Object)
-  id: DecrementVariable(System.String,System.Object)
-  parent: BOOSECoreApp.Core.Adapters.VariableAdapterApp
-  langs:
-  - csharp
-  - vb
-  name: DecrementVariable(string, object)
-  nameWithType: VariableAdapterApp.DecrementVariable(string, object)
-  fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.DecrementVariable(string, object)
-  type: Method
-  source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
-  assemblies:
-  - BOOSECoreApp
-  namespace: BOOSECoreApp.Core.Adapters
-  summary: Decrements the numeric variable by a given Backward Difference {delta}.
-  example: []
-  syntax:
-    content: public void DecrementVariable(string name, object delta)
-    parameters:
-    - id: name
-      type: System.String
-      description: Variable name.
-    - id: delta
-      type: System.Object
-      description: Change of variable (Backward Difference).
-    content.vb: Public Sub DecrementVariable(name As String, delta As Object)
-  overload: BOOSECoreApp.Core.Adapters.VariableAdapterApp.DecrementVariable*
-  nameWithType.vb: VariableAdapterApp.DecrementVariable(String, Object)
-  fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.DecrementVariable(String, Object)
-  name.vb: DecrementVariable(String, Object)
 - uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyOperator(System.String,System.String,System.Object)
   commentId: M:BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyOperator(System.String,System.String,System.Object)
   id: ApplyOperator(System.String,System.String,System.Object)
@@ -294,7 +184,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyOperator(string, string, object?)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -321,6 +211,89 @@ items:
   nameWithType.vb: VariableAdapterApp.ApplyOperator(String, String, Object)
   fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyOperator(String, String, Object)
   name.vb: ApplyOperator(String, String, Object)
+- uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ToBool(System.Object)
+  commentId: M:BOOSECoreApp.Core.Adapters.VariableAdapterApp.ToBool(System.Object)
+  id: ToBool(System.Object)
+  parent: BOOSECoreApp.Core.Adapters.VariableAdapterApp
+  langs:
+  - csharp
+  - vb
+  name: ToBool(object?)
+  nameWithType: VariableAdapterApp.ToBool(object?)
+  fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ToBool(object?)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Adapters
+  summary: Converts the specified object to a boolean value, using common conversion rules.
+  example: []
+  syntax:
+    content: public static bool ToBool(object? value)
+    parameters:
+    - id: value
+      type: System.Object
+      description: >-
+        The object to convert. 
+
+        Can be of type <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref>, <xref href="System.Int32" data-throw-if-not-resolved="false"></xref>, <xref href="System.Double" data-throw-if-not-resolved="false"></xref>,  or a string representation of these types.
+
+        Null or unsupported types are treated as <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>
+    return:
+      type: System.Boolean
+      description: >-
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the object represents a truthy value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>. 
+
+        For numeric types, non-zero values are considered truthy. For strings, values such as "true", "1", or  non-zero numeric strings are considered truthy
+    content.vb: Public Shared Function ToBool(value As Object) As Boolean
+  overload: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ToBool*
+  nameWithType.vb: VariableAdapterApp.ToBool(Object)
+  fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ToBool(Object)
+  name.vb: ToBool(Object)
+- uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyLogical(System.String,System.Boolean,System.Boolean)
+  commentId: M:BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyLogical(System.String,System.Boolean,System.Boolean)
+  id: ApplyLogical(System.String,System.Boolean,System.Boolean)
+  parent: BOOSECoreApp.Core.Adapters.VariableAdapterApp
+  langs:
+  - csharp
+  - vb
+  name: ApplyLogical(string, bool, bool)
+  nameWithType: VariableAdapterApp.ApplyLogical(string, bool, bool)
+  fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyLogical(string, bool, bool)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Adapters
+  summary: Applies a logical operation based on the provided operator string.
+  remarks: Not current supported, idea for expansion
+  example: []
+  syntax:
+    content: public static bool ApplyLogical(string op, bool left, bool right)
+    parameters:
+    - id: op
+      type: System.String
+      description: The logical operator as a string
+    - id: left
+      type: System.Boolean
+      description: The left operand for the logical operation
+    - id: right
+      type: System.Boolean
+      description: The right operand for the logical operation
+    return:
+      type: System.Boolean
+      description: The result of the logical operation as a boolean value
+    content.vb: Public Shared Function ApplyLogical(op As String, left As Boolean, right As Boolean) As Boolean
+  overload: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyLogical*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: sThrown if the provided operator is not supported
+  nameWithType.vb: VariableAdapterApp.ApplyLogical(String, Boolean, Boolean)
+  fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyLogical(String, Boolean, Boolean)
+  name.vb: ApplyLogical(String, Boolean, Boolean)
 references:
 - uid: BOOSECoreApp.Core.Adapters.SoftVariable
   commentId: T:BOOSECoreApp.Core.Adapters.SoftVariable
@@ -674,6 +647,13 @@ references:
   nameWithType.vb: VariableAdapterApp.New
   fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.New
   name.vb: New
+- uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ResetAll*
+  commentId: Overload:BOOSECoreApp.Core.Adapters.VariableAdapterApp.ResetAll
+  isExternal: true
+  href: BOOSECoreApp.Core.Adapters.VariableAdapterApp.html#BOOSECoreApp_Core_Adapters_VariableAdapterApp_ResetAll
+  name: ResetAll
+  nameWithType: VariableAdapterApp.ResetAll
+  fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ResetAll
 - uid: System.InvalidOperationException
   commentId: T:System.InvalidOperationException
   isExternal: true
@@ -727,20 +707,6 @@ references:
     name: VariableType
     isExternal: true
     href: BOOSECoreApp.Core.Adapters.SoftVariable.VariableType.html
-- uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.SetVariable*
-  commentId: Overload:BOOSECoreApp.Core.Adapters.VariableAdapterApp.SetVariable
-  isExternal: true
-  href: BOOSECoreApp.Core.Adapters.VariableAdapterApp.html#BOOSECoreApp_Core_Adapters_VariableAdapterApp_SetVariable_System_String_System_Object_
-  name: SetVariable
-  nameWithType: VariableAdapterApp.SetVariable
-  fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.SetVariable
-- uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.GetVariable*
-  commentId: Overload:BOOSECoreApp.Core.Adapters.VariableAdapterApp.GetVariable
-  isExternal: true
-  href: BOOSECoreApp.Core.Adapters.VariableAdapterApp.html#BOOSECoreApp_Core_Adapters_VariableAdapterApp_GetVariable_System_String_
-  name: GetVariable
-  nameWithType: VariableAdapterApp.GetVariable
-  fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.GetVariable
 - uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.UpdateVariable*
   commentId: Overload:BOOSECoreApp.Core.Adapters.VariableAdapterApp.UpdateVariable
   isExternal: true
@@ -776,20 +742,6 @@ references:
     name: Operator
     isExternal: true
     href: BOOSECoreApp.Core.Adapters.VariableAdapterApp.Operator.html
-- uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.IncrementVariable*
-  commentId: Overload:BOOSECoreApp.Core.Adapters.VariableAdapterApp.IncrementVariable
-  isExternal: true
-  href: BOOSECoreApp.Core.Adapters.VariableAdapterApp.html#BOOSECoreApp_Core_Adapters_VariableAdapterApp_IncrementVariable_System_String_System_Object_
-  name: IncrementVariable
-  nameWithType: VariableAdapterApp.IncrementVariable
-  fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.IncrementVariable
-- uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.DecrementVariable*
-  commentId: Overload:BOOSECoreApp.Core.Adapters.VariableAdapterApp.DecrementVariable
-  isExternal: true
-  href: BOOSECoreApp.Core.Adapters.VariableAdapterApp.html#BOOSECoreApp_Core_Adapters_VariableAdapterApp_DecrementVariable_System_String_System_Object_
-  name: DecrementVariable
-  nameWithType: VariableAdapterApp.DecrementVariable
-  fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.DecrementVariable
 - uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyOperator*
   commentId: Overload:BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyOperator
   isExternal: true
@@ -797,3 +749,57 @@ references:
   name: ApplyOperator
   nameWithType: VariableAdapterApp.ApplyOperator
   fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyOperator
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ToBool*
+  commentId: Overload:BOOSECoreApp.Core.Adapters.VariableAdapterApp.ToBool
+  isExternal: true
+  href: BOOSECoreApp.Core.Adapters.VariableAdapterApp.html#BOOSECoreApp_Core_Adapters_VariableAdapterApp_ToBool_System_Object_
+  name: ToBool
+  nameWithType: VariableAdapterApp.ToBool
+  fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ToBool
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyLogical*
+  commentId: Overload:BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyLogical
+  isExternal: true
+  href: BOOSECoreApp.Core.Adapters.VariableAdapterApp.html#BOOSECoreApp_Core_Adapters_VariableAdapterApp_ApplyLogical_System_String_System_Boolean_System_Boolean_
+  name: ApplyLogical
+  nameWithType: VariableAdapterApp.ApplyLogical
+  fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyLogical

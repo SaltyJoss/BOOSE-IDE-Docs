@@ -1,0 +1,574 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest
+  id: IDiscoveryRequest
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.Abort
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.DiscoverAsync
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.DiscoveryCriteria
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.OnDiscoveredTests
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.OnDiscoveryComplete
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.OnDiscoveryMessage
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.OnDiscoveryStart
+  langs:
+  - csharp
+  - vb
+  name: IDiscoveryRequest
+  nameWithType: IDiscoveryRequest
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest
+  type: Interface
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: 'public interface IDiscoveryRequest : IRequest, IDisposable'
+    content.vb: Public Interface IDiscoveryRequest Inherits IRequest, IDisposable
+  inheritedMembers:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.WaitForCompletion(System.Int32)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.OnRawMessageReceived
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.WaitForCompletion
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.DiscoverAsync
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.DiscoverAsync
+  id: DiscoverAsync
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest
+  langs:
+  - csharp
+  - vb
+  name: DiscoverAsync()
+  nameWithType: IDiscoveryRequest.DiscoverAsync()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.DiscoverAsync()
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: void DiscoverAsync()
+    content.vb: Sub DiscoverAsync()
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.DiscoverAsync*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.Abort
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.Abort
+  id: Abort
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest
+  langs:
+  - csharp
+  - vb
+  name: Abort()
+  nameWithType: IDiscoveryRequest.Abort()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.Abort()
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: void Abort()
+    content.vb: Sub Abort()
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.Abort*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.DiscoveryCriteria
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.DiscoveryCriteria
+  id: DiscoveryCriteria
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest
+  langs:
+  - csharp
+  - vb
+  name: DiscoveryCriteria
+  nameWithType: IDiscoveryRequest.DiscoveryCriteria
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.DiscoveryCriteria
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: DiscoveryCriteria DiscoveryCriteria { get; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+    content.vb: ReadOnly Property DiscoveryCriteria As DiscoveryCriteria
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.DiscoveryCriteria*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.OnDiscoveryStart
+  commentId: E:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.OnDiscoveryStart
+  id: OnDiscoveryStart
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest
+  langs:
+  - csharp
+  - vb
+  name: OnDiscoveryStart
+  nameWithType: IDiscoveryRequest.OnDiscoveryStart
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.OnDiscoveryStart
+  type: Event
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: event EventHandler<DiscoveryStartEventArgs>? OnDiscoveryStart
+    return:
+      type: System.EventHandler{Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs}
+    content.vb: Event OnDiscoveryStart As EventHandler(Of DiscoveryStartEventArgs)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.OnDiscoveryComplete
+  commentId: E:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.OnDiscoveryComplete
+  id: OnDiscoveryComplete
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest
+  langs:
+  - csharp
+  - vb
+  name: OnDiscoveryComplete
+  nameWithType: IDiscoveryRequest.OnDiscoveryComplete
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.OnDiscoveryComplete
+  type: Event
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: event EventHandler<DiscoveryCompleteEventArgs>? OnDiscoveryComplete
+    return:
+      type: System.EventHandler{Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs}
+    content.vb: Event OnDiscoveryComplete As EventHandler(Of DiscoveryCompleteEventArgs)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.OnDiscoveredTests
+  commentId: E:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.OnDiscoveredTests
+  id: OnDiscoveredTests
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest
+  langs:
+  - csharp
+  - vb
+  name: OnDiscoveredTests
+  nameWithType: IDiscoveryRequest.OnDiscoveredTests
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.OnDiscoveredTests
+  type: Event
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: event EventHandler<DiscoveredTestsEventArgs>? OnDiscoveredTests
+    return:
+      type: System.EventHandler{Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs}
+    content.vb: Event OnDiscoveredTests As EventHandler(Of DiscoveredTestsEventArgs)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.OnDiscoveryMessage
+  commentId: E:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.OnDiscoveryMessage
+  id: OnDiscoveryMessage
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest
+  langs:
+  - csharp
+  - vb
+  name: OnDiscoveryMessage
+  nameWithType: IDiscoveryRequest.OnDiscoveryMessage
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.OnDiscoveryMessage
+  type: Event
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: event EventHandler<TestRunMessageEventArgs>? OnDiscoveryMessage
+    return:
+      type: System.EventHandler{Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs}
+    content.vb: Event OnDiscoveryMessage As EventHandler(Of TestRunMessageEventArgs)
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.WaitForCompletion(System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.WaitForCompletion(System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IRequest_WaitForCompletion_System_Int32_
+  name: WaitForCompletion(int)
+  nameWithType: IRequest.WaitForCompletion(int)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.WaitForCompletion(int)
+  nameWithType.vb: IRequest.WaitForCompletion(Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.WaitForCompletion(Integer)
+  name.vb: WaitForCompletion(Integer)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.WaitForCompletion(System.Int32)
+    name: WaitForCompletion
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IRequest_WaitForCompletion_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.WaitForCompletion(System.Int32)
+    name: WaitForCompletion
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IRequest_WaitForCompletion_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.OnRawMessageReceived
+  commentId: E:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.OnRawMessageReceived
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IRequest_OnRawMessageReceived
+  name: OnRawMessageReceived
+  nameWithType: IRequest.OnRawMessageReceived
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.OnRawMessageReceived
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.WaitForCompletion
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.WaitForCompletion(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions
+  definition: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.WaitForCompletion(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest)
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_RequestExtensions_WaitForCompletion_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IRequest_
+  name: WaitForCompletion(IRequest)
+  nameWithType: RequestExtensions.WaitForCompletion(IRequest)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.WaitForCompletion(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.WaitForCompletion(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest)
+    name: WaitForCompletion
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_RequestExtensions_WaitForCompletion_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IRequest_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest
+    name: IRequest
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.WaitForCompletion(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest)
+    name: WaitForCompletion
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_RequestExtensions_WaitForCompletion_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IRequest_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest
+    name: IRequest
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.html
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.html
+  name: IRequest
+  nameWithType: IRequest
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.WaitForCompletion(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.WaitForCompletion(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest)
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_RequestExtensions_WaitForCompletion_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IRequest_
+  name: WaitForCompletion(IRequest)
+  nameWithType: RequestExtensions.WaitForCompletion(IRequest)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.WaitForCompletion(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.WaitForCompletion(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest)
+    name: WaitForCompletion
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_RequestExtensions_WaitForCompletion_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IRequest_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest
+    name: IRequest
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.WaitForCompletion(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest)
+    name: WaitForCompletion
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_RequestExtensions_WaitForCompletion_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IRequest_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest
+    name: IRequest
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequest.html
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions.html
+  name: RequestExtensions
+  nameWithType: RequestExtensions
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.RequestExtensions
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.DiscoverAsync*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.DiscoverAsync
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IDiscoveryRequest_DiscoverAsync
+  name: DiscoverAsync
+  nameWithType: IDiscoveryRequest.DiscoverAsync
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.DiscoverAsync
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.Abort*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.Abort
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IDiscoveryRequest_Abort
+  name: Abort
+  nameWithType: IDiscoveryRequest.Abort
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.Abort
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.DiscoveryCriteria*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.DiscoveryCriteria
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IDiscoveryRequest_DiscoveryCriteria
+  name: DiscoveryCriteria
+  nameWithType: IDiscoveryRequest.DiscoveryCriteria
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IDiscoveryRequest.DiscoveryCriteria
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria.html
+  name: DiscoveryCriteria
+  nameWithType: DiscoveryCriteria
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+- uid: System.EventHandler{Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs}
+  commentId: T:System.EventHandler{Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<DiscoveryStartEventArgs>
+  nameWithType: EventHandler<DiscoveryStartEventArgs>
+  fullName: System.EventHandler<Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs>
+  nameWithType.vb: EventHandler(Of DiscoveryStartEventArgs)
+  fullName.vb: System.EventHandler(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs)
+  name.vb: EventHandler(Of DiscoveryStartEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs
+    name: DiscoveryStartEventArgs
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs
+    name: DiscoveryStartEventArgs
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: System.EventHandler{Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs}
+  commentId: T:System.EventHandler{Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<DiscoveryCompleteEventArgs>
+  nameWithType: EventHandler<DiscoveryCompleteEventArgs>
+  fullName: System.EventHandler<Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs>
+  nameWithType.vb: EventHandler(Of DiscoveryCompleteEventArgs)
+  fullName.vb: System.EventHandler(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs)
+  name.vb: EventHandler(Of DiscoveryCompleteEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs
+    name: DiscoveryCompleteEventArgs
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs
+    name: DiscoveryCompleteEventArgs
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs.html
+  - name: )
+- uid: System.EventHandler{Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs}
+  commentId: T:System.EventHandler{Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<DiscoveredTestsEventArgs>
+  nameWithType: EventHandler<DiscoveredTestsEventArgs>
+  fullName: System.EventHandler<Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs>
+  nameWithType.vb: EventHandler(Of DiscoveredTestsEventArgs)
+  fullName.vb: System.EventHandler(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs)
+  name.vb: EventHandler(Of DiscoveredTestsEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs
+    name: DiscoveredTestsEventArgs
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs
+    name: DiscoveredTestsEventArgs
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs.html
+  - name: )
+- uid: System.EventHandler{Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs}
+  commentId: T:System.EventHandler{Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TestRunMessageEventArgs>
+  nameWithType: EventHandler<TestRunMessageEventArgs>
+  fullName: System.EventHandler<Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs>
+  nameWithType.vb: EventHandler(Of TestRunMessageEventArgs)
+  fullName.vb: System.EventHandler(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs)
+  name.vb: EventHandler(Of TestRunMessageEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs
+    name: TestRunMessageEventArgs
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs
+    name: TestRunMessageEventArgs
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs.html
+  - name: )

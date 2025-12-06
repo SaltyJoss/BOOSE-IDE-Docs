@@ -1,0 +1,414 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler
+  id: ITestCaseEventsHandler
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionEnd
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionStart(System.Collections.Generic.IDictionary{System.String,System.Object})
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestCaseEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestCaseStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestResult(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult)
+  langs:
+  - csharp
+  - vb
+  name: ITestCaseEventsHandler
+  nameWithType: ITestCaseEventsHandler
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler
+  type: Interface
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: public interface ITestCaseEventsHandler
+    content.vb: Public Interface ITestCaseEventsHandler
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestCaseStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestCaseStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase)
+  id: SendTestCaseStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler
+  langs:
+  - csharp
+  - vb
+  name: SendTestCaseStart(TestCase)
+  nameWithType: ITestCaseEventsHandler.SendTestCaseStart(TestCase)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestCaseStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: void SendTestCaseStart(TestCase testCase)
+    parameters:
+    - id: testCase
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    content.vb: Sub SendTestCaseStart(testCase As TestCase)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestCaseStart*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestCaseEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestCaseEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome)
+  id: SendTestCaseEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler
+  langs:
+  - csharp
+  - vb
+  name: SendTestCaseEnd(TestCase, TestOutcome)
+  nameWithType: ITestCaseEventsHandler.SendTestCaseEnd(TestCase, TestOutcome)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestCaseEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase, Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: void SendTestCaseEnd(TestCase testCase, TestOutcome outcome)
+    parameters:
+    - id: testCase
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    - id: outcome
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome
+    content.vb: Sub SendTestCaseEnd(testCase As TestCase, outcome As TestOutcome)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestCaseEnd*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestResult(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestResult(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult)
+  id: SendTestResult(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler
+  langs:
+  - csharp
+  - vb
+  name: SendTestResult(TestResult)
+  nameWithType: ITestCaseEventsHandler.SendTestResult(TestResult)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestResult(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: void SendTestResult(TestResult result)
+    parameters:
+    - id: result
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult
+    content.vb: Sub SendTestResult(result As TestResult)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestResult*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionStart(System.Collections.Generic.IDictionary{System.String,System.Object})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionStart(System.Collections.Generic.IDictionary{System.String,System.Object})
+  id: SendSessionStart(System.Collections.Generic.IDictionary{System.String,System.Object})
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler
+  langs:
+  - csharp
+  - vb
+  name: SendSessionStart(IDictionary<string, object?>)
+  nameWithType: ITestCaseEventsHandler.SendSessionStart(IDictionary<string, object?>)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionStart(System.Collections.Generic.IDictionary<string, object?>)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: void SendSessionStart(IDictionary<string, object?> properties)
+    parameters:
+    - id: properties
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    content.vb: Sub SendSessionStart(properties As IDictionary(Of String, Object))
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionStart*
+  nameWithType.vb: ITestCaseEventsHandler.SendSessionStart(IDictionary(Of String, Object))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionStart(System.Collections.Generic.IDictionary(Of String, Object))
+  name.vb: SendSessionStart(IDictionary(Of String, Object))
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionEnd
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionEnd
+  id: SendSessionEnd
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler
+  langs:
+  - csharp
+  - vb
+  name: SendSessionEnd()
+  nameWithType: ITestCaseEventsHandler.SendSessionEnd()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionEnd()
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: void SendSessionEnd()
+    content.vb: Sub SendSessionEnd()
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionEnd*
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestCaseStart*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestCaseStart
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestCaseEventsHandler_SendTestCaseStart_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase_
+  name: SendTestCaseStart
+  nameWithType: ITestCaseEventsHandler.SendTestCaseStart
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestCaseStart
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html
+  name: TestCase
+  nameWithType: TestCase
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestCaseEnd*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestCaseEnd
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestCaseEventsHandler_SendTestCaseEnd_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestOutcome_
+  name: SendTestCaseEnd
+  nameWithType: ITestCaseEventsHandler.SendTestCaseEnd
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestCaseEnd
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome.html
+  name: TestOutcome
+  nameWithType: TestOutcome
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestResult*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestResult
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestCaseEventsHandler_SendTestResult_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestResult_
+  name: SendTestResult
+  nameWithType: ITestCaseEventsHandler.SendTestResult
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendTestResult
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult.html
+  name: TestResult
+  nameWithType: TestResult
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionStart*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionStart
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestCaseEventsHandler_SendSessionStart_System_Collections_Generic_IDictionary_System_String_System_Object__
+  name: SendSessionStart
+  nameWithType: ITestCaseEventsHandler.SendSessionStart
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionStart
+- uid: System.Collections.Generic.IDictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, object>
+  nameWithType: IDictionary<string, object>
+  fullName: System.Collections.Generic.IDictionary<string, object>
+  nameWithType.vb: IDictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, Object)
+  name.vb: IDictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionEnd*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionEnd
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestCaseEventsHandler_SendSessionEnd
+  name: SendSessionEnd
+  nameWithType: ITestCaseEventsHandler.SendSessionEnd
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.SendSessionEnd

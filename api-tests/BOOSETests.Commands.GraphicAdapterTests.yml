@@ -1,0 +1,918 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSETests.Commands.GraphicAdapterTests
+  commentId: T:BOOSETests.Commands.GraphicAdapterTests
+  id: GraphicAdapterTests
+  parent: BOOSETests.Commands
+  children:
+  - BOOSETests.Commands.GraphicAdapterTests.#ctor
+  - BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_Implements_IGraphicAdapter
+  - BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_WriteText_VariableValue_LogsCorrectCall
+  - BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__CircleCommand_LogsCorrectCall
+  - BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__ClearCommand
+  - BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__DrawToCommand_LogsCorrectCall
+  - BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__MoveToCommand_LogsCorrectCall
+  - BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__RectCommand_LogsCorrectCall
+  - BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__ResetCommand_LogsCorrectCall
+  - BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__SetColourCommand_LogsCorrectCall
+  - BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__SquareCommand_LogsCorrectCall
+  - BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__TriCommand_LogsCorrectCall
+  - BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__WriteTextCommand_String_LogsCorrectCall
+  - BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_LogsCorrectCall
+  - BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_ReturnsNull
+  - BOOSETests.Commands.GraphicAdapterTests.Setup
+  langs:
+  - csharp
+  - vb
+  name: GraphicAdapterTests
+  nameWithType: GraphicAdapterTests
+  fullName: BOOSETests.Commands.GraphicAdapterTests
+  type: Class
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Unit tests for the GraphicAdapter implementations.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public sealed class GraphicAdapterTests
+    content.vb: >-
+      <TestClass>
+
+      Public NotInheritable Class GraphicAdapterTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.GraphicAdapterTests.Setup
+  commentId: M:BOOSETests.Commands.GraphicAdapterTests.Setup
+  id: Setup
+  parent: BOOSETests.Commands.GraphicAdapterTests
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: GraphicAdapterTests.Setup()
+  fullName: BOOSETests.Commands.GraphicAdapterTests.Setup()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test initialisation for GraphicAdapter tests
+  example: []
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void Setup()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub Setup()
+  overload: BOOSETests.Commands.GraphicAdapterTests.Setup*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_Implements_IGraphicAdapter
+  commentId: M:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_Implements_IGraphicAdapter
+  id: MockGraphicAdapter_Implements_IGraphicAdapter
+  parent: BOOSETests.Commands.GraphicAdapterTests
+  langs:
+  - csharp
+  - vb
+  name: MockGraphicAdapter_Implements_IGraphicAdapter()
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter_Implements_IGraphicAdapter()
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_Implements_IGraphicAdapter()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test to ensure MockGraphicAdapter implements IGraphicAdapter interface
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MockGraphicAdapter_Implements_IGraphicAdapter()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MockGraphicAdapter_Implements_IGraphicAdapter()
+  overload: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_Implements_IGraphicAdapter*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__SetColourCommand_LogsCorrectCall
+  commentId: M:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__SetColourCommand_LogsCorrectCall
+  id: MockGraphicAdapter__SetColourCommand_LogsCorrectCall
+  parent: BOOSETests.Commands.GraphicAdapterTests
+  langs:
+  - csharp
+  - vb
+  name: MockGraphicAdapter__SetColourCommand_LogsCorrectCall()
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__SetColourCommand_LogsCorrectCall()
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__SetColourCommand_LogsCorrectCall()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for SetColour() command in MockGraphicAdapter
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MockGraphicAdapter__SetColourCommand_LogsCorrectCall()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MockGraphicAdapter__SetColourCommand_LogsCorrectCall()
+  overload: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__SetColourCommand_LogsCorrectCall*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__MoveToCommand_LogsCorrectCall
+  commentId: M:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__MoveToCommand_LogsCorrectCall
+  id: MockGraphicAdapter__MoveToCommand_LogsCorrectCall
+  parent: BOOSETests.Commands.GraphicAdapterTests
+  langs:
+  - csharp
+  - vb
+  name: MockGraphicAdapter__MoveToCommand_LogsCorrectCall()
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__MoveToCommand_LogsCorrectCall()
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__MoveToCommand_LogsCorrectCall()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for MoveTo() command in MockGraphicAdapter
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MockGraphicAdapter__MoveToCommand_LogsCorrectCall()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MockGraphicAdapter__MoveToCommand_LogsCorrectCall()
+  overload: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__MoveToCommand_LogsCorrectCall*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__DrawToCommand_LogsCorrectCall
+  commentId: M:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__DrawToCommand_LogsCorrectCall
+  id: MockGraphicAdapter__DrawToCommand_LogsCorrectCall
+  parent: BOOSETests.Commands.GraphicAdapterTests
+  langs:
+  - csharp
+  - vb
+  name: MockGraphicAdapter__DrawToCommand_LogsCorrectCall()
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__DrawToCommand_LogsCorrectCall()
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__DrawToCommand_LogsCorrectCall()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for DrawTo() command in MockGraphicAdapter
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MockGraphicAdapter__DrawToCommand_LogsCorrectCall()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MockGraphicAdapter__DrawToCommand_LogsCorrectCall()
+  overload: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__DrawToCommand_LogsCorrectCall*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__ClearCommand
+  commentId: M:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__ClearCommand
+  id: MockGraphicAdapter__ClearCommand
+  parent: BOOSETests.Commands.GraphicAdapterTests
+  langs:
+  - csharp
+  - vb
+  name: MockGraphicAdapter__ClearCommand()
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__ClearCommand()
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__ClearCommand()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for Clear() command in MockGraphicAdapter
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MockGraphicAdapter__ClearCommand()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MockGraphicAdapter__ClearCommand()
+  overload: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__ClearCommand*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__ResetCommand_LogsCorrectCall
+  commentId: M:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__ResetCommand_LogsCorrectCall
+  id: MockGraphicAdapter__ResetCommand_LogsCorrectCall
+  parent: BOOSETests.Commands.GraphicAdapterTests
+  langs:
+  - csharp
+  - vb
+  name: MockGraphicAdapter__ResetCommand_LogsCorrectCall()
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__ResetCommand_LogsCorrectCall()
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__ResetCommand_LogsCorrectCall()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for Reset() command in MockGraphicAdapter
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MockGraphicAdapter__ResetCommand_LogsCorrectCall()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MockGraphicAdapter__ResetCommand_LogsCorrectCall()
+  overload: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__ResetCommand_LogsCorrectCall*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__CircleCommand_LogsCorrectCall
+  commentId: M:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__CircleCommand_LogsCorrectCall
+  id: MockGraphicAdapter__CircleCommand_LogsCorrectCall
+  parent: BOOSETests.Commands.GraphicAdapterTests
+  langs:
+  - csharp
+  - vb
+  name: MockGraphicAdapter__CircleCommand_LogsCorrectCall()
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__CircleCommand_LogsCorrectCall()
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__CircleCommand_LogsCorrectCall()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for Circle() command in MockGraphicAdapter
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MockGraphicAdapter__CircleCommand_LogsCorrectCall()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MockGraphicAdapter__CircleCommand_LogsCorrectCall()
+  overload: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__CircleCommand_LogsCorrectCall*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__TriCommand_LogsCorrectCall
+  commentId: M:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__TriCommand_LogsCorrectCall
+  id: MockGraphicAdapter__TriCommand_LogsCorrectCall
+  parent: BOOSETests.Commands.GraphicAdapterTests
+  langs:
+  - csharp
+  - vb
+  name: MockGraphicAdapter__TriCommand_LogsCorrectCall()
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__TriCommand_LogsCorrectCall()
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__TriCommand_LogsCorrectCall()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for Tri() command in MockGraphicAdapter
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MockGraphicAdapter__TriCommand_LogsCorrectCall()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MockGraphicAdapter__TriCommand_LogsCorrectCall()
+  overload: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__TriCommand_LogsCorrectCall*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__SquareCommand_LogsCorrectCall
+  commentId: M:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__SquareCommand_LogsCorrectCall
+  id: MockGraphicAdapter__SquareCommand_LogsCorrectCall
+  parent: BOOSETests.Commands.GraphicAdapterTests
+  langs:
+  - csharp
+  - vb
+  name: MockGraphicAdapter__SquareCommand_LogsCorrectCall()
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__SquareCommand_LogsCorrectCall()
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__SquareCommand_LogsCorrectCall()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for Rect() command in MockGraphicAdapter
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MockGraphicAdapter__SquareCommand_LogsCorrectCall()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MockGraphicAdapter__SquareCommand_LogsCorrectCall()
+  overload: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__SquareCommand_LogsCorrectCall*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__RectCommand_LogsCorrectCall
+  commentId: M:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__RectCommand_LogsCorrectCall
+  id: MockGraphicAdapter__RectCommand_LogsCorrectCall
+  parent: BOOSETests.Commands.GraphicAdapterTests
+  langs:
+  - csharp
+  - vb
+  name: MockGraphicAdapter__RectCommand_LogsCorrectCall()
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__RectCommand_LogsCorrectCall()
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__RectCommand_LogsCorrectCall()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for Rect() command in MockGraphicAdapter
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MockGraphicAdapter__RectCommand_LogsCorrectCall()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MockGraphicAdapter__RectCommand_LogsCorrectCall()
+  overload: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__RectCommand_LogsCorrectCall*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__WriteTextCommand_String_LogsCorrectCall
+  commentId: M:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__WriteTextCommand_String_LogsCorrectCall
+  id: MockGraphicAdapter__WriteTextCommand_String_LogsCorrectCall
+  parent: BOOSETests.Commands.GraphicAdapterTests
+  langs:
+  - csharp
+  - vb
+  name: MockGraphicAdapter__WriteTextCommand_String_LogsCorrectCall()
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__WriteTextCommand_String_LogsCorrectCall()
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__WriteTextCommand_String_LogsCorrectCall()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for WriteText() command using a string argument in MockGraphicAdapter
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MockGraphicAdapter__WriteTextCommand_String_LogsCorrectCall()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MockGraphicAdapter__WriteTextCommand_String_LogsCorrectCall()
+  overload: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__WriteTextCommand_String_LogsCorrectCall*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_WriteText_VariableValue_LogsCorrectCall
+  commentId: M:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_WriteText_VariableValue_LogsCorrectCall
+  id: MockGraphicAdapter_WriteText_VariableValue_LogsCorrectCall
+  parent: BOOSETests.Commands.GraphicAdapterTests
+  langs:
+  - csharp
+  - vb
+  name: MockGraphicAdapter_WriteText_VariableValue_LogsCorrectCall()
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter_WriteText_VariableValue_LogsCorrectCall()
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_WriteText_VariableValue_LogsCorrectCall()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for WriteText() command using a variable argument in MockGraphicAdapter
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MockGraphicAdapter_WriteText_VariableValue_LogsCorrectCall()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MockGraphicAdapter_WriteText_VariableValue_LogsCorrectCall()
+  overload: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_WriteText_VariableValue_LogsCorrectCall*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_LogsCorrectCall
+  commentId: M:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_LogsCorrectCall
+  id: MockGraphicAdapter_getBitmapCommand_LogsCorrectCall
+  parent: BOOSETests.Commands.GraphicAdapterTests
+  langs:
+  - csharp
+  - vb
+  name: MockGraphicAdapter_getBitmapCommand_LogsCorrectCall()
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_LogsCorrectCall()
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_LogsCorrectCall()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for getBitmap() command in MockGraphicAdapter
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MockGraphicAdapter_getBitmapCommand_LogsCorrectCall()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MockGraphicAdapter_getBitmapCommand_LogsCorrectCall()
+  overload: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_LogsCorrectCall*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_ReturnsNull
+  commentId: M:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_ReturnsNull
+  id: MockGraphicAdapter_getBitmapCommand_ReturnsNull
+  parent: BOOSETests.Commands.GraphicAdapterTests
+  langs:
+  - csharp
+  - vb
+  name: MockGraphicAdapter_getBitmapCommand_ReturnsNull()
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_ReturnsNull()
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_ReturnsNull()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for null result of getBitmap() command in MockGraphicAdapter
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MockGraphicAdapter_getBitmapCommand_ReturnsNull()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MockGraphicAdapter_getBitmapCommand_ReturnsNull()
+  overload: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_ReturnsNull*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.GraphicAdapterTests.#ctor
+  commentId: M:BOOSETests.Commands.GraphicAdapterTests.#ctor
+  id: '#ctor'
+  parent: BOOSETests.Commands.GraphicAdapterTests
+  langs:
+  - csharp
+  - vb
+  name: GraphicAdapterTests()
+  nameWithType: GraphicAdapterTests.GraphicAdapterTests()
+  fullName: BOOSETests.Commands.GraphicAdapterTests.GraphicAdapterTests()
+  type: Constructor
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/GraphicAdapterTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  syntax:
+    content: public GraphicAdapterTests()
+    content.vb: Public Sub New()
+  overload: BOOSETests.Commands.GraphicAdapterTests.#ctor*
+  nameWithType.vb: GraphicAdapterTests.New()
+  fullName.vb: BOOSETests.Commands.GraphicAdapterTests.New()
+  name.vb: New()
+references:
+- uid: BOOSETests.Commands
+  commentId: N:BOOSETests.Commands
+  isExternal: true
+  href: BOOSETests.html
+  name: BOOSETests.Commands
+  nameWithType: BOOSETests.Commands
+  fullName: BOOSETests.Commands
+  spec.csharp:
+  - uid: BOOSETests
+    name: BOOSETests
+    isExternal: true
+    href: BOOSETests.html
+  - name: .
+  - uid: BOOSETests.Commands
+    name: Commands
+    isExternal: true
+    href: BOOSETests.Commands.html
+  spec.vb:
+  - uid: BOOSETests
+    name: BOOSETests
+    isExternal: true
+    href: BOOSETests.html
+  - name: .
+  - uid: BOOSETests.Commands
+    name: Commands
+    isExternal: true
+    href: BOOSETests.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSETests.Commands.GraphicAdapterTests.Setup*
+  commentId: Overload:BOOSETests.Commands.GraphicAdapterTests.Setup
+  isExternal: true
+  href: BOOSETests.Commands.GraphicAdapterTests.html#BOOSETests_Commands_GraphicAdapterTests_Setup
+  name: Setup
+  nameWithType: GraphicAdapterTests.Setup
+  fullName: BOOSETests.Commands.GraphicAdapterTests.Setup
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_Implements_IGraphicAdapter*
+  commentId: Overload:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_Implements_IGraphicAdapter
+  isExternal: true
+  href: BOOSETests.Commands.GraphicAdapterTests.html#BOOSETests_Commands_GraphicAdapterTests_MockGraphicAdapter_Implements_IGraphicAdapter
+  name: MockGraphicAdapter_Implements_IGraphicAdapter
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter_Implements_IGraphicAdapter
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_Implements_IGraphicAdapter
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__SetColourCommand_LogsCorrectCall*
+  commentId: Overload:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__SetColourCommand_LogsCorrectCall
+  isExternal: true
+  href: BOOSETests.Commands.GraphicAdapterTests.html#BOOSETests_Commands_GraphicAdapterTests_MockGraphicAdapter__SetColourCommand_LogsCorrectCall
+  name: MockGraphicAdapter__SetColourCommand_LogsCorrectCall
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__SetColourCommand_LogsCorrectCall
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__SetColourCommand_LogsCorrectCall
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__MoveToCommand_LogsCorrectCall*
+  commentId: Overload:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__MoveToCommand_LogsCorrectCall
+  isExternal: true
+  href: BOOSETests.Commands.GraphicAdapterTests.html#BOOSETests_Commands_GraphicAdapterTests_MockGraphicAdapter__MoveToCommand_LogsCorrectCall
+  name: MockGraphicAdapter__MoveToCommand_LogsCorrectCall
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__MoveToCommand_LogsCorrectCall
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__MoveToCommand_LogsCorrectCall
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__DrawToCommand_LogsCorrectCall*
+  commentId: Overload:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__DrawToCommand_LogsCorrectCall
+  isExternal: true
+  href: BOOSETests.Commands.GraphicAdapterTests.html#BOOSETests_Commands_GraphicAdapterTests_MockGraphicAdapter__DrawToCommand_LogsCorrectCall
+  name: MockGraphicAdapter__DrawToCommand_LogsCorrectCall
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__DrawToCommand_LogsCorrectCall
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__DrawToCommand_LogsCorrectCall
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__ClearCommand*
+  commentId: Overload:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__ClearCommand
+  isExternal: true
+  href: BOOSETests.Commands.GraphicAdapterTests.html#BOOSETests_Commands_GraphicAdapterTests_MockGraphicAdapter__ClearCommand
+  name: MockGraphicAdapter__ClearCommand
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__ClearCommand
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__ClearCommand
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__ResetCommand_LogsCorrectCall*
+  commentId: Overload:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__ResetCommand_LogsCorrectCall
+  isExternal: true
+  href: BOOSETests.Commands.GraphicAdapterTests.html#BOOSETests_Commands_GraphicAdapterTests_MockGraphicAdapter__ResetCommand_LogsCorrectCall
+  name: MockGraphicAdapter__ResetCommand_LogsCorrectCall
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__ResetCommand_LogsCorrectCall
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__ResetCommand_LogsCorrectCall
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__CircleCommand_LogsCorrectCall*
+  commentId: Overload:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__CircleCommand_LogsCorrectCall
+  isExternal: true
+  href: BOOSETests.Commands.GraphicAdapterTests.html#BOOSETests_Commands_GraphicAdapterTests_MockGraphicAdapter__CircleCommand_LogsCorrectCall
+  name: MockGraphicAdapter__CircleCommand_LogsCorrectCall
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__CircleCommand_LogsCorrectCall
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__CircleCommand_LogsCorrectCall
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__TriCommand_LogsCorrectCall*
+  commentId: Overload:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__TriCommand_LogsCorrectCall
+  isExternal: true
+  href: BOOSETests.Commands.GraphicAdapterTests.html#BOOSETests_Commands_GraphicAdapterTests_MockGraphicAdapter__TriCommand_LogsCorrectCall
+  name: MockGraphicAdapter__TriCommand_LogsCorrectCall
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__TriCommand_LogsCorrectCall
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__TriCommand_LogsCorrectCall
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__SquareCommand_LogsCorrectCall*
+  commentId: Overload:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__SquareCommand_LogsCorrectCall
+  isExternal: true
+  href: BOOSETests.Commands.GraphicAdapterTests.html#BOOSETests_Commands_GraphicAdapterTests_MockGraphicAdapter__SquareCommand_LogsCorrectCall
+  name: MockGraphicAdapter__SquareCommand_LogsCorrectCall
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__SquareCommand_LogsCorrectCall
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__SquareCommand_LogsCorrectCall
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__RectCommand_LogsCorrectCall*
+  commentId: Overload:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__RectCommand_LogsCorrectCall
+  isExternal: true
+  href: BOOSETests.Commands.GraphicAdapterTests.html#BOOSETests_Commands_GraphicAdapterTests_MockGraphicAdapter__RectCommand_LogsCorrectCall
+  name: MockGraphicAdapter__RectCommand_LogsCorrectCall
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__RectCommand_LogsCorrectCall
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__RectCommand_LogsCorrectCall
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__WriteTextCommand_String_LogsCorrectCall*
+  commentId: Overload:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__WriteTextCommand_String_LogsCorrectCall
+  isExternal: true
+  href: BOOSETests.Commands.GraphicAdapterTests.html#BOOSETests_Commands_GraphicAdapterTests_MockGraphicAdapter__WriteTextCommand_String_LogsCorrectCall
+  name: MockGraphicAdapter__WriteTextCommand_String_LogsCorrectCall
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter__WriteTextCommand_String_LogsCorrectCall
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter__WriteTextCommand_String_LogsCorrectCall
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_WriteText_VariableValue_LogsCorrectCall*
+  commentId: Overload:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_WriteText_VariableValue_LogsCorrectCall
+  isExternal: true
+  href: BOOSETests.Commands.GraphicAdapterTests.html#BOOSETests_Commands_GraphicAdapterTests_MockGraphicAdapter_WriteText_VariableValue_LogsCorrectCall
+  name: MockGraphicAdapter_WriteText_VariableValue_LogsCorrectCall
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter_WriteText_VariableValue_LogsCorrectCall
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_WriteText_VariableValue_LogsCorrectCall
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_LogsCorrectCall*
+  commentId: Overload:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_LogsCorrectCall
+  isExternal: true
+  href: BOOSETests.Commands.GraphicAdapterTests.html#BOOSETests_Commands_GraphicAdapterTests_MockGraphicAdapter_getBitmapCommand_LogsCorrectCall
+  name: MockGraphicAdapter_getBitmapCommand_LogsCorrectCall
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_LogsCorrectCall
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_LogsCorrectCall
+- uid: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_ReturnsNull*
+  commentId: Overload:BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_ReturnsNull
+  isExternal: true
+  href: BOOSETests.Commands.GraphicAdapterTests.html#BOOSETests_Commands_GraphicAdapterTests_MockGraphicAdapter_getBitmapCommand_ReturnsNull
+  name: MockGraphicAdapter_getBitmapCommand_ReturnsNull
+  nameWithType: GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_ReturnsNull
+  fullName: BOOSETests.Commands.GraphicAdapterTests.MockGraphicAdapter_getBitmapCommand_ReturnsNull
+- uid: BOOSETests.Commands.GraphicAdapterTests.#ctor*
+  commentId: Overload:BOOSETests.Commands.GraphicAdapterTests.#ctor
+  isExternal: true
+  href: BOOSETests.Commands.GraphicAdapterTests.html#BOOSETests_Commands_GraphicAdapterTests__ctor
+  name: GraphicAdapterTests
+  nameWithType: GraphicAdapterTests.GraphicAdapterTests
+  fullName: BOOSETests.Commands.GraphicAdapterTests.GraphicAdapterTests
+  nameWithType.vb: GraphicAdapterTests.New
+  fullName.vb: BOOSETests.Commands.GraphicAdapterTests.New
+  name.vb: New

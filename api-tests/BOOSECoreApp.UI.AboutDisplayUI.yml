@@ -1,0 +1,657 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSECoreApp.UI.AboutDisplayUI
+  commentId: T:BOOSECoreApp.UI.AboutDisplayUI
+  id: AboutDisplayUI
+  parent: BOOSECoreApp.UI
+  children:
+  - BOOSECoreApp.UI.AboutDisplayUI.#ctor(BOOSECoreApp.UI.InfoUI)
+  - BOOSECoreApp.UI.AboutDisplayUI.AboutInfo
+  - BOOSECoreApp.UI.AboutDisplayUI.GetAboutAscii
+  - BOOSECoreApp.UI.AboutDisplayUI.GetAboutLines
+  - BOOSECoreApp.UI.AboutDisplayUI.OriginalAboutBOOSE
+  langs:
+  - csharp
+  - vb
+  name: AboutDisplayUI
+  nameWithType: AboutDisplayUI
+  fullName: BOOSECoreApp.UI.AboutDisplayUI
+  type: Class
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/InfoDisplayUI.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Provides functionality to display detailed information about the BOOSE IDE,  including its version, authors, license, and other metadata.
+  example: []
+  syntax:
+    content: public class AboutDisplayUI
+    content.vb: Public Class AboutDisplayUI
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: BOOSECoreApp.UI.AboutDisplayUI.#ctor(BOOSECoreApp.UI.InfoUI)
+  commentId: M:BOOSECoreApp.UI.AboutDisplayUI.#ctor(BOOSECoreApp.UI.InfoUI)
+  id: '#ctor(BOOSECoreApp.UI.InfoUI)'
+  parent: BOOSECoreApp.UI.AboutDisplayUI
+  langs:
+  - csharp
+  - vb
+  name: AboutDisplayUI(InfoUI)
+  nameWithType: AboutDisplayUI.AboutDisplayUI(InfoUI)
+  fullName: BOOSECoreApp.UI.AboutDisplayUI.AboutDisplayUI(BOOSECoreApp.UI.InfoUI)
+  type: Constructor
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/InfoDisplayUI.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Initializes a new instance of the <xref href="BOOSECoreApp.UI.AboutDisplayUI" data-throw-if-not-resolved="false"></xref> class, configuring the specified <xref href="System.Windows.Forms.RichTextBox" data-throw-if-not-resolved="false"></xref> for debugging purposes.
+  example: []
+  syntax:
+    content: public AboutDisplayUI(InfoUI UIhelper)
+    parameters:
+    - id: UIhelper
+      type: BOOSECoreApp.UI.InfoUI
+      description: The <xref href="BOOSECoreApp.UI.InfoUI" data-throw-if-not-resolved="false"></xref> instance used for displaying information. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Sub New(UIhelper As InfoUI)
+  overload: BOOSECoreApp.UI.AboutDisplayUI.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">UIhelper</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  nameWithType.vb: AboutDisplayUI.New(InfoUI)
+  fullName.vb: BOOSECoreApp.UI.AboutDisplayUI.New(BOOSECoreApp.UI.InfoUI)
+  name.vb: New(InfoUI)
+- uid: BOOSECoreApp.UI.AboutDisplayUI.GetAboutAscii
+  commentId: M:BOOSECoreApp.UI.AboutDisplayUI.GetAboutAscii
+  id: GetAboutAscii
+  parent: BOOSECoreApp.UI.AboutDisplayUI
+  langs:
+  - csharp
+  - vb
+  name: GetAboutAscii()
+  nameWithType: AboutDisplayUI.GetAboutAscii()
+  fullName: BOOSECoreApp.UI.AboutDisplayUI.GetAboutAscii()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/InfoDisplayUI.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Returns a string containing the ASCII art header for BOOSE IDE.
+  example: []
+  syntax:
+    content: public string GetAboutAscii()
+    return:
+      type: System.String
+      description: The original <xref href="System.String" data-throw-if-not-resolved="false"></xref> containing the ASCII art header for BOOSE IDE.
+    content.vb: Public Function GetAboutAscii() As String
+  overload: BOOSECoreApp.UI.AboutDisplayUI.GetAboutAscii*
+- uid: BOOSECoreApp.UI.AboutDisplayUI.AboutInfo
+  commentId: M:BOOSECoreApp.UI.AboutDisplayUI.AboutInfo
+  id: AboutInfo
+  parent: BOOSECoreApp.UI.AboutDisplayUI
+  langs:
+  - csharp
+  - vb
+  name: AboutInfo()
+  nameWithType: AboutDisplayUI.AboutInfo()
+  fullName: BOOSECoreApp.UI.AboutDisplayUI.AboutInfo()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/InfoDisplayUI.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Displays detailed information about the IDE, including its name, version, authors, and license, in a formatted manner within the debug text box.
+  example: []
+  syntax:
+    content: public void AboutInfo()
+    content.vb: Public Sub AboutInfo()
+  overload: BOOSECoreApp.UI.AboutDisplayUI.AboutInfo*
+- uid: BOOSECoreApp.UI.AboutDisplayUI.OriginalAboutBOOSE
+  commentId: M:BOOSECoreApp.UI.AboutDisplayUI.OriginalAboutBOOSE
+  id: OriginalAboutBOOSE
+  parent: BOOSECoreApp.UI.AboutDisplayUI
+  langs:
+  - csharp
+  - vb
+  name: OriginalAboutBOOSE()
+  nameWithType: AboutDisplayUI.OriginalAboutBOOSE()
+  fullName: BOOSECoreApp.UI.AboutDisplayUI.OriginalAboutBOOSE()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/InfoDisplayUI.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Returns a string containing detailed information about BOOSE, including its version, authors, license, and other metadata.
+  example: []
+  syntax:
+    content: public string OriginalAboutBOOSE()
+    return:
+      type: System.String
+      description: The original <xref href="System.String" data-throw-if-not-resolved="false"></xref> containing detailed information about BOOSE.
+    content.vb: Public Function OriginalAboutBOOSE() As String
+  overload: BOOSECoreApp.UI.AboutDisplayUI.OriginalAboutBOOSE*
+- uid: BOOSECoreApp.UI.AboutDisplayUI.GetAboutLines
+  commentId: M:BOOSECoreApp.UI.AboutDisplayUI.GetAboutLines
+  id: GetAboutLines
+  parent: BOOSECoreApp.UI.AboutDisplayUI
+  langs:
+  - csharp
+  - vb
+  name: GetAboutLines()
+  nameWithType: AboutDisplayUI.GetAboutLines()
+  fullName: BOOSECoreApp.UI.AboutDisplayUI.GetAboutLines()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/InfoDisplayUI.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Returns a list of system information lines, each containing a header, informational text, and color.
+  example: []
+  syntax:
+    content: public IReadOnlyList<InfoLine> GetAboutLines()
+    return:
+      type: System.Collections.Generic.IReadOnlyList{BOOSECoreApp.UI.InfoLine}
+      description: A read-only list of <xref href="BOOSECoreApp.UI.InfoLine" data-throw-if-not-resolved="false"></xref> instances representing system information.
+    content.vb: Public Function GetAboutLines() As IReadOnlyList(Of InfoLine)
+  overload: BOOSECoreApp.UI.AboutDisplayUI.GetAboutLines*
+references:
+- uid: BOOSECoreApp.UI
+  commentId: N:BOOSECoreApp.UI
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.UI
+  nameWithType: BOOSECoreApp.UI
+  fullName: BOOSECoreApp.UI
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.UI
+    name: UI
+    isExternal: true
+    href: BOOSECoreApp.UI.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.UI
+    name: UI
+    isExternal: true
+    href: BOOSECoreApp.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSECoreApp.UI.AboutDisplayUI
+  commentId: T:BOOSECoreApp.UI.AboutDisplayUI
+  isExternal: true
+  href: BOOSECoreApp.UI.AboutDisplayUI.html
+  name: AboutDisplayUI
+  nameWithType: AboutDisplayUI
+  fullName: BOOSECoreApp.UI.AboutDisplayUI
+- uid: System.Windows.Forms.RichTextBox
+  commentId: T:System.Windows.Forms.RichTextBox
+  parent: System.Windows.Forms
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.forms.richtextbox
+  name: RichTextBox
+  nameWithType: RichTextBox
+  fullName: System.Windows.Forms.RichTextBox
+- uid: BOOSECoreApp.UI.InfoUI
+  commentId: T:BOOSECoreApp.UI.InfoUI
+  parent: BOOSECoreApp.UI
+  isExternal: true
+  href: BOOSECoreApp.UI.InfoUI.html
+  name: InfoUI
+  nameWithType: InfoUI
+  fullName: BOOSECoreApp.UI.InfoUI
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: BOOSECoreApp.UI.AboutDisplayUI.#ctor*
+  commentId: Overload:BOOSECoreApp.UI.AboutDisplayUI.#ctor
+  isExternal: true
+  href: BOOSECoreApp.UI.AboutDisplayUI.html#BOOSECoreApp_UI_AboutDisplayUI__ctor_BOOSECoreApp_UI_InfoUI_
+  name: AboutDisplayUI
+  nameWithType: AboutDisplayUI.AboutDisplayUI
+  fullName: BOOSECoreApp.UI.AboutDisplayUI.AboutDisplayUI
+  nameWithType.vb: AboutDisplayUI.New
+  fullName.vb: BOOSECoreApp.UI.AboutDisplayUI.New
+  name.vb: New
+- uid: System.Windows.Forms
+  commentId: N:System.Windows.Forms
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Forms
+  nameWithType: System.Windows.Forms
+  fullName: System.Windows.Forms
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Forms
+    name: Forms
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Forms
+    name: Forms
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BOOSECoreApp.UI.AboutDisplayUI.GetAboutAscii*
+  commentId: Overload:BOOSECoreApp.UI.AboutDisplayUI.GetAboutAscii
+  isExternal: true
+  href: BOOSECoreApp.UI.AboutDisplayUI.html#BOOSECoreApp_UI_AboutDisplayUI_GetAboutAscii
+  name: GetAboutAscii
+  nameWithType: AboutDisplayUI.GetAboutAscii
+  fullName: BOOSECoreApp.UI.AboutDisplayUI.GetAboutAscii
+- uid: BOOSECoreApp.UI.AboutDisplayUI.AboutInfo*
+  commentId: Overload:BOOSECoreApp.UI.AboutDisplayUI.AboutInfo
+  isExternal: true
+  href: BOOSECoreApp.UI.AboutDisplayUI.html#BOOSECoreApp_UI_AboutDisplayUI_AboutInfo
+  name: AboutInfo
+  nameWithType: AboutDisplayUI.AboutInfo
+  fullName: BOOSECoreApp.UI.AboutDisplayUI.AboutInfo
+- uid: BOOSECoreApp.UI.AboutDisplayUI.OriginalAboutBOOSE*
+  commentId: Overload:BOOSECoreApp.UI.AboutDisplayUI.OriginalAboutBOOSE
+  isExternal: true
+  href: BOOSECoreApp.UI.AboutDisplayUI.html#BOOSECoreApp_UI_AboutDisplayUI_OriginalAboutBOOSE
+  name: OriginalAboutBOOSE
+  nameWithType: AboutDisplayUI.OriginalAboutBOOSE
+  fullName: BOOSECoreApp.UI.AboutDisplayUI.OriginalAboutBOOSE
+- uid: BOOSECoreApp.UI.InfoLine
+  commentId: T:BOOSECoreApp.UI.InfoLine
+  isExternal: true
+  href: BOOSECoreApp.UI.InfoLine.html
+  name: InfoLine
+  nameWithType: InfoLine
+  fullName: BOOSECoreApp.UI.InfoLine
+- uid: BOOSECoreApp.UI.AboutDisplayUI.GetAboutLines*
+  commentId: Overload:BOOSECoreApp.UI.AboutDisplayUI.GetAboutLines
+  isExternal: true
+  href: BOOSECoreApp.UI.AboutDisplayUI.html#BOOSECoreApp_UI_AboutDisplayUI_GetAboutLines
+  name: GetAboutLines
+  nameWithType: AboutDisplayUI.GetAboutLines
+  fullName: BOOSECoreApp.UI.AboutDisplayUI.GetAboutLines
+- uid: System.Collections.Generic.IReadOnlyList{BOOSECoreApp.UI.InfoLine}
+  commentId: T:System.Collections.Generic.IReadOnlyList{BOOSECoreApp.UI.InfoLine}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<InfoLine>
+  nameWithType: IReadOnlyList<InfoLine>
+  fullName: System.Collections.Generic.IReadOnlyList<BOOSECoreApp.UI.InfoLine>
+  nameWithType.vb: IReadOnlyList(Of InfoLine)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of BOOSECoreApp.UI.InfoLine)
+  name.vb: IReadOnlyList(Of InfoLine)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: BOOSECoreApp.UI.InfoLine
+    name: InfoLine
+    isExternal: true
+    href: BOOSECoreApp.UI.InfoLine.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BOOSECoreApp.UI.InfoLine
+    name: InfoLine
+    isExternal: true
+    href: BOOSECoreApp.UI.InfoLine.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

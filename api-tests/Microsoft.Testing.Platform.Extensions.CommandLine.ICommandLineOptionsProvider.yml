@@ -1,0 +1,574 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider
+  commentId: T:Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider
+  id: ICommandLineOptionsProvider
+  parent: Microsoft.Testing.Platform.Extensions.CommandLine
+  children:
+  - Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.GetCommandLineOptions
+  - Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateCommandLineOptionsAsync(Microsoft.Testing.Platform.CommandLine.ICommandLineOptions)
+  - Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateOptionArgumentsAsync(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption,System.String[])
+  langs:
+  - csharp
+  - vb
+  name: ICommandLineOptionsProvider
+  nameWithType: ICommandLineOptionsProvider
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider
+  type: Interface
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.CommandLine
+  syntax:
+    content: 'public interface ICommandLineOptionsProvider : IExtension'
+    content.vb: Public Interface ICommandLineOptionsProvider Inherits IExtension
+  inheritedMembers:
+  - Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync
+  - Microsoft.Testing.Platform.Extensions.IExtension.Uid
+  - Microsoft.Testing.Platform.Extensions.IExtension.Version
+  - Microsoft.Testing.Platform.Extensions.IExtension.DisplayName
+  - Microsoft.Testing.Platform.Extensions.IExtension.Description
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.GetCommandLineOptions
+  commentId: M:Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.GetCommandLineOptions
+  id: GetCommandLineOptions
+  parent: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider
+  langs:
+  - csharp
+  - vb
+  name: GetCommandLineOptions()
+  nameWithType: ICommandLineOptionsProvider.GetCommandLineOptions()
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.GetCommandLineOptions()
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.CommandLine
+  syntax:
+    content: IReadOnlyCollection<CommandLineOption> GetCommandLineOptions()
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption}
+    content.vb: Function GetCommandLineOptions() As IReadOnlyCollection(Of CommandLineOption)
+  overload: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.GetCommandLineOptions*
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateOptionArgumentsAsync(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption,System.String[])
+  commentId: M:Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateOptionArgumentsAsync(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption,System.String[])
+  id: ValidateOptionArgumentsAsync(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption,System.String[])
+  parent: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider
+  langs:
+  - csharp
+  - vb
+  name: ValidateOptionArgumentsAsync(CommandLineOption, string[])
+  nameWithType: ICommandLineOptionsProvider.ValidateOptionArgumentsAsync(CommandLineOption, string[])
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateOptionArgumentsAsync(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption, string[])
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.CommandLine
+  syntax:
+    content: Task<ValidationResult> ValidateOptionArgumentsAsync(CommandLineOption commandOption, string[] arguments)
+    parameters:
+    - id: commandOption
+      type: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+    - id: arguments
+      type: System.String[]
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Testing.Platform.Extensions.ValidationResult}
+    content.vb: Function ValidateOptionArgumentsAsync(commandOption As CommandLineOption, arguments As String()) As Task(Of ValidationResult)
+  overload: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateOptionArgumentsAsync*
+  nameWithType.vb: ICommandLineOptionsProvider.ValidateOptionArgumentsAsync(CommandLineOption, String())
+  fullName.vb: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateOptionArgumentsAsync(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption, String())
+  name.vb: ValidateOptionArgumentsAsync(CommandLineOption, String())
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateCommandLineOptionsAsync(Microsoft.Testing.Platform.CommandLine.ICommandLineOptions)
+  commentId: M:Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateCommandLineOptionsAsync(Microsoft.Testing.Platform.CommandLine.ICommandLineOptions)
+  id: ValidateCommandLineOptionsAsync(Microsoft.Testing.Platform.CommandLine.ICommandLineOptions)
+  parent: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider
+  langs:
+  - csharp
+  - vb
+  name: ValidateCommandLineOptionsAsync(ICommandLineOptions)
+  nameWithType: ICommandLineOptionsProvider.ValidateCommandLineOptionsAsync(ICommandLineOptions)
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateCommandLineOptionsAsync(Microsoft.Testing.Platform.CommandLine.ICommandLineOptions)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.CommandLine
+  syntax:
+    content: Task<ValidationResult> ValidateCommandLineOptionsAsync(ICommandLineOptions commandLineOptions)
+    parameters:
+    - id: commandLineOptions
+      type: Microsoft.Testing.Platform.CommandLine.ICommandLineOptions
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Testing.Platform.Extensions.ValidationResult}
+    content.vb: Function ValidateCommandLineOptionsAsync(commandLineOptions As ICommandLineOptions) As Task(Of ValidationResult)
+  overload: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateCommandLineOptionsAsync*
+references:
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine
+  commentId: N:Microsoft.Testing.Platform.Extensions.CommandLine
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Extensions.CommandLine
+  nameWithType: Microsoft.Testing.Platform.Extensions.CommandLine
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.CommandLine
+    name: CommandLine
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.CommandLine.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.CommandLine
+    name: CommandLine
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.CommandLine.html
+- uid: Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync
+  commentId: M:Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync
+  parent: Microsoft.Testing.Platform.Extensions.IExtension
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_IsEnabledAsync
+  name: IsEnabledAsync()
+  nameWithType: IExtension.IsEnabledAsync()
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync()
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync
+    name: IsEnabledAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_IsEnabledAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync
+    name: IsEnabledAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_IsEnabledAsync
+  - name: (
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.IExtension.Uid
+  commentId: P:Microsoft.Testing.Platform.Extensions.IExtension.Uid
+  parent: Microsoft.Testing.Platform.Extensions.IExtension
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_Uid
+  name: Uid
+  nameWithType: IExtension.Uid
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension.Uid
+- uid: Microsoft.Testing.Platform.Extensions.IExtension.Version
+  commentId: P:Microsoft.Testing.Platform.Extensions.IExtension.Version
+  parent: Microsoft.Testing.Platform.Extensions.IExtension
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_Version
+  name: Version
+  nameWithType: IExtension.Version
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension.Version
+- uid: Microsoft.Testing.Platform.Extensions.IExtension.DisplayName
+  commentId: P:Microsoft.Testing.Platform.Extensions.IExtension.DisplayName
+  parent: Microsoft.Testing.Platform.Extensions.IExtension
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_DisplayName
+  name: DisplayName
+  nameWithType: IExtension.DisplayName
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension.DisplayName
+- uid: Microsoft.Testing.Platform.Extensions.IExtension.Description
+  commentId: P:Microsoft.Testing.Platform.Extensions.IExtension.Description
+  parent: Microsoft.Testing.Platform.Extensions.IExtension
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_Description
+  name: Description
+  nameWithType: IExtension.Description
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension.Description
+- uid: Microsoft.Testing.Platform.Extensions.IExtension
+  commentId: T:Microsoft.Testing.Platform.Extensions.IExtension
+  parent: Microsoft.Testing.Platform.Extensions
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html
+  name: IExtension
+  nameWithType: IExtension
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension
+- uid: Microsoft.Testing.Platform.Extensions
+  commentId: N:Microsoft.Testing.Platform.Extensions
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Extensions
+  nameWithType: Microsoft.Testing.Platform.Extensions
+  fullName: Microsoft.Testing.Platform.Extensions
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.GetCommandLineOptions*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.GetCommandLineOptions
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.html#Microsoft_Testing_Platform_Extensions_CommandLine_ICommandLineOptionsProvider_GetCommandLineOptions
+  name: GetCommandLineOptions
+  nameWithType: ICommandLineOptionsProvider.GetCommandLineOptions
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.GetCommandLineOptions
+- uid: System.Collections.Generic.IReadOnlyCollection{Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<CommandLineOption>
+  nameWithType: IReadOnlyCollection<CommandLineOption>
+  fullName: System.Collections.Generic.IReadOnlyCollection<Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption>
+  nameWithType.vb: IReadOnlyCollection(Of CommandLineOption)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption)
+  name.vb: IReadOnlyCollection(Of CommandLineOption)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+    name: CommandLineOption
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+    name: CommandLineOption
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateOptionArgumentsAsync*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateOptionArgumentsAsync
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.html#Microsoft_Testing_Platform_Extensions_CommandLine_ICommandLineOptionsProvider_ValidateOptionArgumentsAsync_Microsoft_Testing_Platform_Extensions_CommandLine_CommandLineOption_System_String___
+  name: ValidateOptionArgumentsAsync
+  nameWithType: ICommandLineOptionsProvider.ValidateOptionArgumentsAsync
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateOptionArgumentsAsync
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+  commentId: T:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+  parent: Microsoft.Testing.Platform.Extensions.CommandLine
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.html
+  name: CommandLineOption
+  nameWithType: CommandLineOption
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task{Microsoft.Testing.Platform.Extensions.ValidationResult}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.Testing.Platform.Extensions.ValidationResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ValidationResult>
+  nameWithType: Task<ValidationResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Testing.Platform.Extensions.ValidationResult>
+  nameWithType.vb: Task(Of ValidationResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.Testing.Platform.Extensions.ValidationResult)
+  name.vb: Task(Of ValidationResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Microsoft.Testing.Platform.Extensions.ValidationResult
+    name: ValidationResult
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.ValidationResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.ValidationResult
+    name: ValidationResult
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.ValidationResult.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateCommandLineOptionsAsync*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateCommandLineOptionsAsync
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.html#Microsoft_Testing_Platform_Extensions_CommandLine_ICommandLineOptionsProvider_ValidateCommandLineOptionsAsync_Microsoft_Testing_Platform_CommandLine_ICommandLineOptions_
+  name: ValidateCommandLineOptionsAsync
+  nameWithType: ICommandLineOptionsProvider.ValidateCommandLineOptionsAsync
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.ICommandLineOptionsProvider.ValidateCommandLineOptionsAsync
+- uid: Microsoft.Testing.Platform.CommandLine.ICommandLineOptions
+  commentId: T:Microsoft.Testing.Platform.CommandLine.ICommandLineOptions
+  parent: Microsoft.Testing.Platform.CommandLine
+  isExternal: true
+  href: Microsoft.Testing.Platform.CommandLine.ICommandLineOptions.html
+  name: ICommandLineOptions
+  nameWithType: ICommandLineOptions
+  fullName: Microsoft.Testing.Platform.CommandLine.ICommandLineOptions
+- uid: Microsoft.Testing.Platform.CommandLine
+  commentId: N:Microsoft.Testing.Platform.CommandLine
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.CommandLine
+  nameWithType: Microsoft.Testing.Platform.CommandLine
+  fullName: Microsoft.Testing.Platform.CommandLine
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.CommandLine
+    name: CommandLine
+    isExternal: true
+    href: Microsoft.Testing.Platform.CommandLine.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.CommandLine
+    name: CommandLine
+    isExternal: true
+    href: Microsoft.Testing.Platform.CommandLine.html

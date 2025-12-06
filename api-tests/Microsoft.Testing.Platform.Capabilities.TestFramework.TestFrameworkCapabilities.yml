@@ -1,0 +1,828 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities
+  commentId: T:Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities
+  id: TestFrameworkCapabilities
+  parent: Microsoft.Testing.Platform.Capabilities.TestFramework
+  children:
+  - Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.#ctor(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability[])
+  - Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.#ctor(System.Collections.Generic.IReadOnlyCollection{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability})
+  - Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.Capabilities
+  langs:
+  - csharp
+  - vb
+  name: TestFrameworkCapabilities
+  nameWithType: TestFrameworkCapabilities
+  fullName: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities
+  type: Class
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Capabilities.TestFramework
+  syntax:
+    content: 'public sealed class TestFrameworkCapabilities : ITestFrameworkCapabilities, ICapabilities<ITestFrameworkCapability>'
+    content.vb: Public NotInheritable Class TestFrameworkCapabilities Implements ITestFrameworkCapabilities, ICapabilities(Of ITestFrameworkCapability)
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+  - Microsoft.Testing.Platform.Capabilities.ICapabilities{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.GetCapability``1
+  - Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.HasCapability``1
+- uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.#ctor(System.Collections.Generic.IReadOnlyCollection{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability})
+  commentId: M:Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.#ctor(System.Collections.Generic.IReadOnlyCollection{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability})
+  id: '#ctor(System.Collections.Generic.IReadOnlyCollection{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability})'
+  parent: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities
+  langs:
+  - csharp
+  - vb
+  name: TestFrameworkCapabilities(IReadOnlyCollection<ITestFrameworkCapability>)
+  nameWithType: TestFrameworkCapabilities.TestFrameworkCapabilities(IReadOnlyCollection<ITestFrameworkCapability>)
+  fullName: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.TestFrameworkCapabilities(System.Collections.Generic.IReadOnlyCollection<Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability>)
+  type: Constructor
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Capabilities.TestFramework
+  syntax:
+    content: public TestFrameworkCapabilities(IReadOnlyCollection<ITestFrameworkCapability> capabilities)
+    parameters:
+    - id: capabilities
+      type: System.Collections.Generic.IReadOnlyCollection{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability}
+    content.vb: Public Sub New(capabilities As IReadOnlyCollection(Of ITestFrameworkCapability))
+  overload: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.#ctor*
+  nameWithType.vb: TestFrameworkCapabilities.New(IReadOnlyCollection(Of ITestFrameworkCapability))
+  fullName.vb: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.New(System.Collections.Generic.IReadOnlyCollection(Of Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability))
+  name.vb: New(IReadOnlyCollection(Of ITestFrameworkCapability))
+- uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.#ctor(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability[])
+  commentId: M:Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.#ctor(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability[])
+  id: '#ctor(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability[])'
+  parent: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities
+  langs:
+  - csharp
+  - vb
+  name: TestFrameworkCapabilities(params ITestFrameworkCapability[])
+  nameWithType: TestFrameworkCapabilities.TestFrameworkCapabilities(params ITestFrameworkCapability[])
+  fullName: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.TestFrameworkCapabilities(params Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability[])
+  type: Constructor
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Capabilities.TestFramework
+  syntax:
+    content: public TestFrameworkCapabilities(params ITestFrameworkCapability[] capabilities)
+    parameters:
+    - id: capabilities
+      type: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability[]
+    content.vb: Public Sub New(ParamArray capabilities As ITestFrameworkCapability())
+  overload: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.#ctor*
+  nameWithType.vb: TestFrameworkCapabilities.New(ParamArray ITestFrameworkCapability())
+  fullName.vb: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.New(ParamArray Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability())
+  name.vb: New(ParamArray ITestFrameworkCapability())
+- uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.Capabilities
+  commentId: P:Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.Capabilities
+  id: Capabilities
+  parent: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities
+  langs:
+  - csharp
+  - vb
+  name: Capabilities
+  nameWithType: TestFrameworkCapabilities.Capabilities
+  fullName: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.Capabilities
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Capabilities.TestFramework
+  example: []
+  syntax:
+    content: public IReadOnlyCollection<ITestFrameworkCapability> Capabilities { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability}
+    content.vb: Public ReadOnly Property Capabilities As IReadOnlyCollection(Of ITestFrameworkCapability)
+  overload: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.Capabilities*
+  implements:
+  - Microsoft.Testing.Platform.Capabilities.ICapabilities{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability}.Capabilities
+references:
+- uid: Microsoft.Testing.Platform.Capabilities.TestFramework
+  commentId: N:Microsoft.Testing.Platform.Capabilities.TestFramework
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Capabilities.TestFramework
+  nameWithType: Microsoft.Testing.Platform.Capabilities.TestFramework
+  fullName: Microsoft.Testing.Platform.Capabilities.TestFramework
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Capabilities
+    name: Capabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework
+    name: TestFramework
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Capabilities
+    name: Capabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework
+    name: TestFramework
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+  commentId: T:Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+  parent: Microsoft.Testing.Platform.Capabilities.TestFramework
+  isExternal: true
+  href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.html
+  name: ITestFrameworkCapabilities
+  nameWithType: ITestFrameworkCapabilities
+  fullName: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+- uid: Microsoft.Testing.Platform.Capabilities.ICapabilities{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability}
+  commentId: T:Microsoft.Testing.Platform.Capabilities.ICapabilities{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability}
+  parent: Microsoft.Testing.Platform.Capabilities
+  definition: Microsoft.Testing.Platform.Capabilities.ICapabilities`1
+  href: Microsoft.Testing.Platform.Capabilities.ICapabilities-1.html
+  name: ICapabilities<ITestFrameworkCapability>
+  nameWithType: ICapabilities<ITestFrameworkCapability>
+  fullName: Microsoft.Testing.Platform.Capabilities.ICapabilities<Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability>
+  nameWithType.vb: ICapabilities(Of ITestFrameworkCapability)
+  fullName.vb: Microsoft.Testing.Platform.Capabilities.ICapabilities(Of Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability)
+  name.vb: ICapabilities(Of ITestFrameworkCapability)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Capabilities.ICapabilities`1
+    name: ICapabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.ICapabilities-1.html
+  - name: <
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability
+    name: ITestFrameworkCapability
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Capabilities.ICapabilities`1
+    name: ICapabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.ICapabilities-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability
+    name: ITestFrameworkCapability
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.GetCapability``1
+  commentId: M:Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.GetCapability``1(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  parent: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions
+  definition: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.GetCapability``1(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  href: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.html#Microsoft_Testing_Platform_Capabilities_TestFramework_TestFrameworkCapabilitiesExtensions_GetCapability__1_Microsoft_Testing_Platform_Capabilities_TestFramework_ITestFrameworkCapabilities_
+  name: GetCapability<T>(ITestFrameworkCapabilities)
+  nameWithType: TestFrameworkCapabilitiesExtensions.GetCapability<T>(ITestFrameworkCapabilities)
+  fullName: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.GetCapability<T>(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  nameWithType.vb: TestFrameworkCapabilitiesExtensions.GetCapability(Of T)(ITestFrameworkCapabilities)
+  fullName.vb: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.GetCapability(Of T)(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  name.vb: GetCapability(Of T)(ITestFrameworkCapabilities)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.GetCapability``1(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+    name: GetCapability
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.html#Microsoft_Testing_Platform_Capabilities_TestFramework_TestFrameworkCapabilitiesExtensions_GetCapability__1_Microsoft_Testing_Platform_Capabilities_TestFramework_ITestFrameworkCapabilities_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+    name: ITestFrameworkCapabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.GetCapability``1(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+    name: GetCapability
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.html#Microsoft_Testing_Platform_Capabilities_TestFramework_TestFrameworkCapabilitiesExtensions_GetCapability__1_Microsoft_Testing_Platform_Capabilities_TestFramework_ITestFrameworkCapabilities_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+    name: ITestFrameworkCapabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.html
+  - name: )
+- uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.HasCapability``1
+  commentId: M:Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.HasCapability``1(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  parent: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions
+  definition: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.HasCapability``1(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  href: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.html#Microsoft_Testing_Platform_Capabilities_TestFramework_TestFrameworkCapabilitiesExtensions_HasCapability__1_Microsoft_Testing_Platform_Capabilities_TestFramework_ITestFrameworkCapabilities_
+  name: HasCapability<T>(ITestFrameworkCapabilities)
+  nameWithType: TestFrameworkCapabilitiesExtensions.HasCapability<T>(ITestFrameworkCapabilities)
+  fullName: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.HasCapability<T>(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  nameWithType.vb: TestFrameworkCapabilitiesExtensions.HasCapability(Of T)(ITestFrameworkCapabilities)
+  fullName.vb: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.HasCapability(Of T)(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  name.vb: HasCapability(Of T)(ITestFrameworkCapabilities)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.HasCapability``1(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+    name: HasCapability
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.html#Microsoft_Testing_Platform_Capabilities_TestFramework_TestFrameworkCapabilitiesExtensions_HasCapability__1_Microsoft_Testing_Platform_Capabilities_TestFramework_ITestFrameworkCapabilities_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+    name: ITestFrameworkCapabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.HasCapability``1(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+    name: HasCapability
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.html#Microsoft_Testing_Platform_Capabilities_TestFramework_TestFrameworkCapabilitiesExtensions_HasCapability__1_Microsoft_Testing_Platform_Capabilities_TestFramework_ITestFrameworkCapabilities_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+    name: ITestFrameworkCapabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Testing.Platform.Capabilities.ICapabilities`1
+  commentId: T:Microsoft.Testing.Platform.Capabilities.ICapabilities`1
+  isExternal: true
+  href: Microsoft.Testing.Platform.Capabilities.ICapabilities-1.html
+  name: ICapabilities<TCapability>
+  nameWithType: ICapabilities<TCapability>
+  fullName: Microsoft.Testing.Platform.Capabilities.ICapabilities<TCapability>
+  nameWithType.vb: ICapabilities(Of TCapability)
+  fullName.vb: Microsoft.Testing.Platform.Capabilities.ICapabilities(Of TCapability)
+  name.vb: ICapabilities(Of TCapability)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Capabilities.ICapabilities`1
+    name: ICapabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.ICapabilities-1.html
+  - name: <
+  - name: TCapability
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Capabilities.ICapabilities`1
+    name: ICapabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.ICapabilities-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCapability
+  - name: )
+- uid: Microsoft.Testing.Platform.Capabilities
+  commentId: N:Microsoft.Testing.Platform.Capabilities
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Capabilities
+  nameWithType: Microsoft.Testing.Platform.Capabilities
+  fullName: Microsoft.Testing.Platform.Capabilities
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Capabilities
+    name: Capabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Capabilities
+    name: Capabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.html
+- uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.GetCapability``1(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  commentId: M:Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.GetCapability``1(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.html#Microsoft_Testing_Platform_Capabilities_TestFramework_TestFrameworkCapabilitiesExtensions_GetCapability__1_Microsoft_Testing_Platform_Capabilities_TestFramework_ITestFrameworkCapabilities_
+  name: GetCapability<T>(ITestFrameworkCapabilities)
+  nameWithType: TestFrameworkCapabilitiesExtensions.GetCapability<T>(ITestFrameworkCapabilities)
+  fullName: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.GetCapability<T>(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  nameWithType.vb: TestFrameworkCapabilitiesExtensions.GetCapability(Of T)(ITestFrameworkCapabilities)
+  fullName.vb: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.GetCapability(Of T)(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  name.vb: GetCapability(Of T)(ITestFrameworkCapabilities)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.GetCapability``1(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+    name: GetCapability
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.html#Microsoft_Testing_Platform_Capabilities_TestFramework_TestFrameworkCapabilitiesExtensions_GetCapability__1_Microsoft_Testing_Platform_Capabilities_TestFramework_ITestFrameworkCapabilities_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+    name: ITestFrameworkCapabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.GetCapability``1(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+    name: GetCapability
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.html#Microsoft_Testing_Platform_Capabilities_TestFramework_TestFrameworkCapabilitiesExtensions_GetCapability__1_Microsoft_Testing_Platform_Capabilities_TestFramework_ITestFrameworkCapabilities_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+    name: ITestFrameworkCapabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.html
+  - name: )
+- uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions
+  commentId: T:Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions
+  parent: Microsoft.Testing.Platform.Capabilities.TestFramework
+  isExternal: true
+  href: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.html
+  name: TestFrameworkCapabilitiesExtensions
+  nameWithType: TestFrameworkCapabilitiesExtensions
+  fullName: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions
+- uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.HasCapability``1(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  commentId: M:Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.HasCapability``1(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.html#Microsoft_Testing_Platform_Capabilities_TestFramework_TestFrameworkCapabilitiesExtensions_HasCapability__1_Microsoft_Testing_Platform_Capabilities_TestFramework_ITestFrameworkCapabilities_
+  name: HasCapability<T>(ITestFrameworkCapabilities)
+  nameWithType: TestFrameworkCapabilitiesExtensions.HasCapability<T>(ITestFrameworkCapabilities)
+  fullName: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.HasCapability<T>(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  nameWithType.vb: TestFrameworkCapabilitiesExtensions.HasCapability(Of T)(ITestFrameworkCapabilities)
+  fullName.vb: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.HasCapability(Of T)(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  name.vb: HasCapability(Of T)(ITestFrameworkCapabilities)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.HasCapability``1(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+    name: HasCapability
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.html#Microsoft_Testing_Platform_Capabilities_TestFramework_TestFrameworkCapabilitiesExtensions_HasCapability__1_Microsoft_Testing_Platform_Capabilities_TestFramework_ITestFrameworkCapabilities_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+    name: ITestFrameworkCapabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.HasCapability``1(Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+    name: HasCapability
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilitiesExtensions.html#Microsoft_Testing_Platform_Capabilities_TestFramework_TestFrameworkCapabilitiesExtensions_HasCapability__1_Microsoft_Testing_Platform_Capabilities_TestFramework_ITestFrameworkCapabilities_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+    name: ITestFrameworkCapabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.html
+  - name: )
+- uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.#ctor*
+  commentId: Overload:Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.#ctor
+  isExternal: true
+  href: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.html#Microsoft_Testing_Platform_Capabilities_TestFramework_TestFrameworkCapabilities__ctor_System_Collections_Generic_IReadOnlyCollection_Microsoft_Testing_Platform_Capabilities_TestFramework_ITestFrameworkCapability__
+  name: TestFrameworkCapabilities
+  nameWithType: TestFrameworkCapabilities.TestFrameworkCapabilities
+  fullName: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.TestFrameworkCapabilities
+  nameWithType.vb: TestFrameworkCapabilities.New
+  fullName.vb: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.New
+  name.vb: New
+- uid: System.Collections.Generic.IReadOnlyCollection{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<ITestFrameworkCapability>
+  nameWithType: IReadOnlyCollection<ITestFrameworkCapability>
+  fullName: System.Collections.Generic.IReadOnlyCollection<Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability>
+  nameWithType.vb: IReadOnlyCollection(Of ITestFrameworkCapability)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability)
+  name.vb: IReadOnlyCollection(Of ITestFrameworkCapability)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability
+    name: ITestFrameworkCapability
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability
+    name: ITestFrameworkCapability
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability[]
+  isExternal: true
+  href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability.html
+  name: ITestFrameworkCapability[]
+  nameWithType: ITestFrameworkCapability[]
+  fullName: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability[]
+  nameWithType.vb: ITestFrameworkCapability()
+  fullName.vb: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability()
+  name.vb: ITestFrameworkCapability()
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability
+    name: ITestFrameworkCapability
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability
+    name: ITestFrameworkCapability
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability.html
+  - name: (
+  - name: )
+- uid: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.Capabilities*
+  commentId: Overload:Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.Capabilities
+  isExternal: true
+  href: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.html#Microsoft_Testing_Platform_Capabilities_TestFramework_TestFrameworkCapabilities_Capabilities
+  name: Capabilities
+  nameWithType: TestFrameworkCapabilities.Capabilities
+  fullName: Microsoft.Testing.Platform.Capabilities.TestFramework.TestFrameworkCapabilities.Capabilities
+- uid: Microsoft.Testing.Platform.Capabilities.ICapabilities{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability}.Capabilities
+  commentId: P:Microsoft.Testing.Platform.Capabilities.ICapabilities{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability}.Capabilities
+  parent: Microsoft.Testing.Platform.Capabilities.ICapabilities{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability}
+  definition: Microsoft.Testing.Platform.Capabilities.ICapabilities`1.Capabilities
+  href: Microsoft.Testing.Platform.Capabilities.ICapabilities-1.html#Microsoft_Testing_Platform_Capabilities_ICapabilities_1_Capabilities
+  name: Capabilities
+  nameWithType: ICapabilities<ITestFrameworkCapability>.Capabilities
+  fullName: Microsoft.Testing.Platform.Capabilities.ICapabilities<Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability>.Capabilities
+  nameWithType.vb: ICapabilities(Of ITestFrameworkCapability).Capabilities
+  fullName.vb: Microsoft.Testing.Platform.Capabilities.ICapabilities(Of Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapability).Capabilities
+- uid: Microsoft.Testing.Platform.Capabilities.ICapabilities`1.Capabilities
+  commentId: P:Microsoft.Testing.Platform.Capabilities.ICapabilities`1.Capabilities
+  isExternal: true
+  href: Microsoft.Testing.Platform.Capabilities.ICapabilities-1.html#Microsoft_Testing_Platform_Capabilities_ICapabilities_1_Capabilities
+  name: Capabilities
+  nameWithType: ICapabilities<TCapability>.Capabilities
+  fullName: Microsoft.Testing.Platform.Capabilities.ICapabilities<TCapability>.Capabilities
+  nameWithType.vb: ICapabilities(Of TCapability).Capabilities
+  fullName.vb: Microsoft.Testing.Platform.Capabilities.ICapabilities(Of TCapability).Capabilities

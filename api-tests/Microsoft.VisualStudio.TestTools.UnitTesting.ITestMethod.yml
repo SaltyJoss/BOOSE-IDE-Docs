@@ -1,0 +1,511 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod
+  commentId: T:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod
+  id: ITestMethod
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting
+  children:
+  - Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Arguments
+  - Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAllAttributes(System.Boolean)
+  - Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAttributes``1(System.Boolean)
+  - Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Invoke(System.Object[])
+  - Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.MethodInfo
+  - Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.ParameterTypes
+  - Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.ReturnType
+  - Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.TestClassName
+  - Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.TestMethodName
+  langs:
+  - csharp
+  - vb
+  name: ITestMethod
+  nameWithType: ITestMethod
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod
+  type: Interface
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public interface ITestMethod
+    content.vb: Public Interface ITestMethod
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Invoke(System.Object[])
+  commentId: M:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Invoke(System.Object[])
+  id: Invoke(System.Object[])
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod
+  langs:
+  - csharp
+  - vb
+  name: Invoke(object[]?)
+  nameWithType: ITestMethod.Invoke(object[]?)
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Invoke(object[]?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: TestResult Invoke(object[]? arguments)
+    parameters:
+    - id: arguments
+      type: System.Object[]
+    return:
+      type: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+    content.vb: Function Invoke(arguments As Object()) As TestResult
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Invoke*
+  nameWithType.vb: ITestMethod.Invoke(Object())
+  fullName.vb: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Invoke(Object())
+  name.vb: Invoke(Object())
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAllAttributes(System.Boolean)
+  commentId: M:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAllAttributes(System.Boolean)
+  id: GetAllAttributes(System.Boolean)
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod
+  langs:
+  - csharp
+  - vb
+  name: GetAllAttributes(bool)
+  nameWithType: ITestMethod.GetAllAttributes(bool)
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAllAttributes(bool)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: Attribute[]? GetAllAttributes(bool inherit)
+    parameters:
+    - id: inherit
+      type: System.Boolean
+    return:
+      type: System.Attribute[]
+    content.vb: Function GetAllAttributes(inherit As Boolean) As Attribute()
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAllAttributes*
+  nameWithType.vb: ITestMethod.GetAllAttributes(Boolean)
+  fullName.vb: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAllAttributes(Boolean)
+  name.vb: GetAllAttributes(Boolean)
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAttributes``1(System.Boolean)
+  commentId: M:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAttributes``1(System.Boolean)
+  id: GetAttributes``1(System.Boolean)
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod
+  langs:
+  - csharp
+  - vb
+  name: GetAttributes<TAttributeType>(bool)
+  nameWithType: ITestMethod.GetAttributes<TAttributeType>(bool)
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAttributes<TAttributeType>(bool)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: 'TAttributeType[] GetAttributes<TAttributeType>(bool inherit) where TAttributeType : Attribute'
+    parameters:
+    - id: inherit
+      type: System.Boolean
+    typeParameters:
+    - id: TAttributeType
+    return:
+      type: '{TAttributeType}[]'
+    content.vb: Function GetAttributes(Of TAttributeType As Attribute)(inherit As Boolean) As TAttributeType()
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAttributes*
+  nameWithType.vb: ITestMethod.GetAttributes(Of TAttributeType)(Boolean)
+  fullName.vb: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAttributes(Of TAttributeType)(Boolean)
+  name.vb: GetAttributes(Of TAttributeType)(Boolean)
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.TestMethodName
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.TestMethodName
+  id: TestMethodName
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod
+  langs:
+  - csharp
+  - vb
+  name: TestMethodName
+  nameWithType: ITestMethod.TestMethodName
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.TestMethodName
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: string TestMethodName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TestMethodName As String
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.TestMethodName*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.TestClassName
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.TestClassName
+  id: TestClassName
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod
+  langs:
+  - csharp
+  - vb
+  name: TestClassName
+  nameWithType: ITestMethod.TestClassName
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.TestClassName
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: string TestClassName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TestClassName As String
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.TestClassName*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.ReturnType
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.ReturnType
+  id: ReturnType
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod
+  langs:
+  - csharp
+  - vb
+  name: ReturnType
+  nameWithType: ITestMethod.ReturnType
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.ReturnType
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: Type ReturnType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property ReturnType As Type
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.ReturnType*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Arguments
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Arguments
+  id: Arguments
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod
+  langs:
+  - csharp
+  - vb
+  name: Arguments
+  nameWithType: ITestMethod.Arguments
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Arguments
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: object?[]? Arguments { get; }
+    parameters: []
+    return:
+      type: System.Object[]
+    content.vb: ReadOnly Property Arguments As Object()
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Arguments*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.ParameterTypes
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.ParameterTypes
+  id: ParameterTypes
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod
+  langs:
+  - csharp
+  - vb
+  name: ParameterTypes
+  nameWithType: ITestMethod.ParameterTypes
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.ParameterTypes
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: ParameterInfo[] ParameterTypes { get; }
+    parameters: []
+    return:
+      type: System.Reflection.ParameterInfo[]
+    content.vb: ReadOnly Property ParameterTypes As ParameterInfo()
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.ParameterTypes*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.MethodInfo
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.MethodInfo
+  id: MethodInfo
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod
+  langs:
+  - csharp
+  - vb
+  name: MethodInfo
+  nameWithType: ITestMethod.MethodInfo
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.MethodInfo
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: MethodInfo MethodInfo { get; }
+    parameters: []
+    return:
+      type: System.Reflection.MethodInfo
+    content.vb: ReadOnly Property MethodInfo As MethodInfo
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.MethodInfo*
+references:
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting
+  commentId: N:Microsoft.VisualStudio.TestTools.UnitTesting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.VisualStudio.TestTools.UnitTesting
+  nameWithType: Microsoft.VisualStudio.TestTools.UnitTesting
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools
+    name: TestTools
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools.UnitTesting
+    name: UnitTesting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools
+    name: TestTools
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools.UnitTesting
+    name: UnitTesting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Invoke*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Invoke
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.html#Microsoft_VisualStudio_TestTools_UnitTesting_ITestMethod_Invoke_System_Object___
+  name: Invoke
+  nameWithType: ITestMethod.Invoke
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Invoke
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  commentId: T:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.testresult
+  name: TestResult
+  nameWithType: TestResult
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAllAttributes*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAllAttributes
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.html#Microsoft_VisualStudio_TestTools_UnitTesting_ITestMethod_GetAllAttributes_System_Boolean_
+  name: GetAllAttributes
+  nameWithType: ITestMethod.GetAllAttributes
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAllAttributes
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Attribute[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.attribute
+  name: Attribute[]
+  nameWithType: Attribute[]
+  fullName: System.Attribute[]
+  nameWithType.vb: Attribute()
+  fullName.vb: System.Attribute()
+  name.vb: Attribute()
+  spec.csharp:
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAttributes*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAttributes
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.html#Microsoft_VisualStudio_TestTools_UnitTesting_ITestMethod_GetAttributes__1_System_Boolean_
+  name: GetAttributes
+  nameWithType: ITestMethod.GetAttributes
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.GetAttributes
+- uid: '{TAttributeType}[]'
+  isExternal: true
+  name: TAttributeType[]
+  nameWithType: TAttributeType[]
+  fullName: TAttributeType[]
+  nameWithType.vb: TAttributeType()
+  fullName.vb: TAttributeType()
+  name.vb: TAttributeType()
+  spec.csharp:
+  - name: TAttributeType
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: TAttributeType
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.TestMethodName*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.TestMethodName
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.html#Microsoft_VisualStudio_TestTools_UnitTesting_ITestMethod_TestMethodName
+  name: TestMethodName
+  nameWithType: ITestMethod.TestMethodName
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.TestMethodName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.TestClassName*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.TestClassName
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.html#Microsoft_VisualStudio_TestTools_UnitTesting_ITestMethod_TestClassName
+  name: TestClassName
+  nameWithType: ITestMethod.TestClassName
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.TestClassName
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.ReturnType*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.ReturnType
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.html#Microsoft_VisualStudio_TestTools_UnitTesting_ITestMethod_ReturnType
+  name: ReturnType
+  nameWithType: ITestMethod.ReturnType
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.ReturnType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Arguments*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Arguments
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.html#Microsoft_VisualStudio_TestTools_UnitTesting_ITestMethod_Arguments
+  name: Arguments
+  nameWithType: ITestMethod.Arguments
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.Arguments
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.ParameterTypes*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.ParameterTypes
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.html#Microsoft_VisualStudio_TestTools_UnitTesting_ITestMethod_ParameterTypes
+  name: ParameterTypes
+  nameWithType: ITestMethod.ParameterTypes
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.ParameterTypes
+- uid: System.Reflection.ParameterInfo[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  name: ParameterInfo[]
+  nameWithType: ParameterInfo[]
+  fullName: System.Reflection.ParameterInfo[]
+  nameWithType.vb: ParameterInfo()
+  fullName.vb: System.Reflection.ParameterInfo()
+  name.vb: ParameterInfo()
+  spec.csharp:
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.MethodInfo*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.MethodInfo
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.html#Microsoft_VisualStudio_TestTools_UnitTesting_ITestMethod_MethodInfo
+  name: MethodInfo
+  nameWithType: ITestMethod.MethodInfo
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod.MethodInfo
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection

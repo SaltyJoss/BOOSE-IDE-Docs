@@ -1,0 +1,699 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext
+  id: DiscoveryContext
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery
+  children:
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.#ctor
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.GetTestCaseFilter(System.Collections.Generic.IEnumerable{System.String},System.Func{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty})
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.RunSettings
+  langs:
+  - csharp
+  - vb
+  name: DiscoveryContext
+  nameWithType: DiscoveryContext
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext
+  type: Class
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery
+  syntax:
+    content: 'public class DiscoveryContext : IDiscoveryContext'
+    content.vb: Public Class DiscoveryContext Implements IDiscoveryContext
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Adapter.RunContext
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.GetTestCaseFilter(System.Collections.Generic.IEnumerable{System.String},System.Func{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.GetTestCaseFilter(System.Collections.Generic.IEnumerable{System.String},System.Func{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty})
+  id: GetTestCaseFilter(System.Collections.Generic.IEnumerable{System.String},System.Func{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty})
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext
+  langs:
+  - csharp
+  - vb
+  name: GetTestCaseFilter(IEnumerable<string>?, Func<string, TestProperty?>)
+  nameWithType: DiscoveryContext.GetTestCaseFilter(IEnumerable<string>?, Func<string, TestProperty?>)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.GetTestCaseFilter(System.Collections.Generic.IEnumerable<string>?, System.Func<string, Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty?>)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery
+  syntax:
+    content: public ITestCaseFilterExpression? GetTestCaseFilter(IEnumerable<string>? supportedProperties, Func<string, TestProperty?> propertyProvider)
+    parameters:
+    - id: supportedProperties
+      type: System.Collections.Generic.IEnumerable{System.String}
+    - id: propertyProvider
+      type: System.Func{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty}
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseFilterExpression
+    content.vb: Public Function GetTestCaseFilter(supportedProperties As IEnumerable(Of String), propertyProvider As Func(Of String, TestProperty)) As ITestCaseFilterExpression
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.GetTestCaseFilter*
+  nameWithType.vb: DiscoveryContext.GetTestCaseFilter(IEnumerable(Of String), Func(Of String, TestProperty))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.GetTestCaseFilter(System.Collections.Generic.IEnumerable(Of String), System.Func(Of String, Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty))
+  name.vb: GetTestCaseFilter(IEnumerable(Of String), Func(Of String, TestProperty))
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.#ctor
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.#ctor
+  id: '#ctor'
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext
+  langs:
+  - csharp
+  - vb
+  name: DiscoveryContext()
+  nameWithType: DiscoveryContext.DiscoveryContext()
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.DiscoveryContext()
+  type: Constructor
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery
+  syntax:
+    content: public DiscoveryContext()
+    content.vb: Public Sub New()
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.#ctor*
+  nameWithType.vb: DiscoveryContext.New()
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.New()
+  name.vb: New()
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.RunSettings
+  commentId: P:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.RunSettings
+  id: RunSettings
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext
+  langs:
+  - csharp
+  - vb
+  name: RunSettings
+  nameWithType: DiscoveryContext.RunSettings
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.RunSettings
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery
+  example: []
+  syntax:
+    content: public IRunSettings? RunSettings { get; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunSettings
+    content.vb: Public ReadOnly Property RunSettings As IRunSettings
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.RunSettings*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext.RunSettings
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine
+    name: CrossPlatEngine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery
+    name: Discovery
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine
+    name: CrossPlatEngine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery
+    name: Discovery
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext.html
+  name: IDiscoveryContext
+  nameWithType: IDiscoveryContext
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+    name: Adapter
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+    name: Adapter
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.html
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.GetTestCaseFilter*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.GetTestCaseFilter
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Discovery_DiscoveryContext_GetTestCaseFilter_System_Collections_Generic_IEnumerable_System_String__System_Func_System_String_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty__
+  name: GetTestCaseFilter
+  nameWithType: DiscoveryContext.GetTestCaseFilter
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.GetTestCaseFilter
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Func{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty}
+  commentId: T:System.Func{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<string, TestProperty>
+  nameWithType: Func<string, TestProperty>
+  fullName: System.Func<string, Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty>
+  nameWithType.vb: Func(Of String, TestProperty)
+  fullName.vb: System.Func(Of String, Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty)
+  name.vb: Func(Of String, TestProperty)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseFilterExpression
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseFilterExpression
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseFilterExpression.html
+  name: ITestCaseFilterExpression
+  nameWithType: ITestCaseFilterExpression
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseFilterExpression
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Discovery_DiscoveryContext__ctor
+  name: DiscoveryContext
+  nameWithType: DiscoveryContext.DiscoveryContext
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.DiscoveryContext
+  nameWithType.vb: DiscoveryContext.New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.New
+  name.vb: New
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.RunSettings*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.RunSettings
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Discovery_DiscoveryContext_RunSettings
+  name: RunSettings
+  nameWithType: DiscoveryContext.RunSettings
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Discovery.DiscoveryContext.RunSettings
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext.RunSettings
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext.RunSettings
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Adapter_IDiscoveryContext_RunSettings
+  name: RunSettings
+  nameWithType: IDiscoveryContext.RunSettings
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext.RunSettings
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunSettings
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunSettings
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunSettings.html
+  name: IRunSettings
+  nameWithType: IRunSettings
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunSettings

@@ -1,0 +1,482 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder
+  id: ITestExecutionRecorder
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordAttachments(System.Collections.Generic.IList{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet})
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordResult(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase)
+  langs:
+  - csharp
+  - vb
+  name: ITestExecutionRecorder
+  nameWithType: ITestExecutionRecorder
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder
+  type: Interface
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  syntax:
+    content: 'public interface ITestExecutionRecorder : IMessageLogger'
+    content.vb: Public Interface ITestExecutionRecorder Inherits IMessageLogger
+  inheritedMembers:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger.SendMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordResult(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordResult(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult)
+  id: RecordResult(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder
+  langs:
+  - csharp
+  - vb
+  name: RecordResult(TestResult)
+  nameWithType: ITestExecutionRecorder.RecordResult(TestResult)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordResult(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  syntax:
+    content: void RecordResult(TestResult testResult)
+    parameters:
+    - id: testResult
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult
+    content.vb: Sub RecordResult(testResult As TestResult)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordResult*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase)
+  id: RecordStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder
+  langs:
+  - csharp
+  - vb
+  name: RecordStart(TestCase)
+  nameWithType: ITestExecutionRecorder.RecordStart(TestCase)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  syntax:
+    content: void RecordStart(TestCase testCase)
+    parameters:
+    - id: testCase
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    content.vb: Sub RecordStart(testCase As TestCase)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordStart*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome)
+  id: RecordEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder
+  langs:
+  - csharp
+  - vb
+  name: RecordEnd(TestCase, TestOutcome)
+  nameWithType: ITestExecutionRecorder.RecordEnd(TestCase, TestOutcome)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase, Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  syntax:
+    content: void RecordEnd(TestCase testCase, TestOutcome outcome)
+    parameters:
+    - id: testCase
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    - id: outcome
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome
+    content.vb: Sub RecordEnd(testCase As TestCase, outcome As TestOutcome)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordEnd*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordAttachments(System.Collections.Generic.IList{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordAttachments(System.Collections.Generic.IList{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet})
+  id: RecordAttachments(System.Collections.Generic.IList{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet})
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder
+  langs:
+  - csharp
+  - vb
+  name: RecordAttachments(IList<AttachmentSet>)
+  nameWithType: ITestExecutionRecorder.RecordAttachments(IList<AttachmentSet>)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordAttachments(System.Collections.Generic.IList<Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet>)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  syntax:
+    content: void RecordAttachments(IList<AttachmentSet> attachmentSets)
+    parameters:
+    - id: attachmentSets
+      type: System.Collections.Generic.IList{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet}
+    content.vb: Sub RecordAttachments(attachmentSets As IList(Of AttachmentSet))
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordAttachments*
+  nameWithType.vb: ITestExecutionRecorder.RecordAttachments(IList(Of AttachmentSet))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordAttachments(System.Collections.Generic.IList(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet))
+  name.vb: RecordAttachments(IList(Of AttachmentSet))
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+    name: Adapter
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+    name: Adapter
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger.SendMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger.SendMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_IMessageLogger_SendMessage_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_TestMessageLevel_System_String_
+  name: SendMessage(TestMessageLevel, string)
+  nameWithType: IMessageLogger.SendMessage(TestMessageLevel, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger.SendMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel, string)
+  nameWithType.vb: IMessageLogger.SendMessage(TestMessageLevel, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger.SendMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel, String)
+  name.vb: SendMessage(TestMessageLevel, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger.SendMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+    name: SendMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_IMessageLogger_SendMessage_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_TestMessageLevel_System_String_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel
+    name: TestMessageLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger.SendMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+    name: SendMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_IMessageLogger_SendMessage_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_TestMessageLevel_System_String_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel
+    name: TestMessageLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger.html
+  name: IMessageLogger
+  nameWithType: IMessageLogger
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordResult*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordResult
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Adapter_ITestExecutionRecorder_RecordResult_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestResult_
+  name: RecordResult
+  nameWithType: ITestExecutionRecorder.RecordResult
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordResult
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult.html
+  name: TestResult
+  nameWithType: TestResult
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordStart*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordStart
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Adapter_ITestExecutionRecorder_RecordStart_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase_
+  name: RecordStart
+  nameWithType: ITestExecutionRecorder.RecordStart
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordStart
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html
+  name: TestCase
+  nameWithType: TestCase
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordEnd*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordEnd
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Adapter_ITestExecutionRecorder_RecordEnd_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestOutcome_
+  name: RecordEnd
+  nameWithType: ITestExecutionRecorder.RecordEnd
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordEnd
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome.html
+  name: TestOutcome
+  nameWithType: TestOutcome
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordAttachments*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordAttachments
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Adapter_ITestExecutionRecorder_RecordAttachments_System_Collections_Generic_IList_Microsoft_VisualStudio_TestPlatform_ObjectModel_AttachmentSet__
+  name: RecordAttachments
+  nameWithType: ITestExecutionRecorder.RecordAttachments
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutionRecorder.RecordAttachments
+- uid: System.Collections.Generic.IList{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet}
+  commentId: T:System.Collections.Generic.IList{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<AttachmentSet>
+  nameWithType: IList<AttachmentSet>
+  fullName: System.Collections.Generic.IList<Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet>
+  nameWithType.vb: IList(Of AttachmentSet)
+  fullName.vb: System.Collections.Generic.IList(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet)
+  name.vb: IList(Of AttachmentSet)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet
+    name: AttachmentSet
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet
+    name: AttachmentSet
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet.html
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

@@ -1,0 +1,819 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder
+  commentId: T:Microsoft.Testing.Platform.Builder.ITestApplicationBuilder
+  id: ITestApplicationBuilder
+  parent: Microsoft.Testing.Platform.Builder
+  children:
+  - Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.BuildAsync
+  - Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.CommandLine
+  - Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.RegisterTestFramework(System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities},System.Func{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities,System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework})
+  - Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.TestHost
+  - Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.TestHostControllers
+  langs:
+  - csharp
+  - vb
+  name: ITestApplicationBuilder
+  nameWithType: ITestApplicationBuilder
+  fullName: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder
+  type: Interface
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Builder
+  syntax:
+    content: public interface ITestApplicationBuilder
+    content.vb: Public Interface ITestApplicationBuilder
+  extensionMethods:
+  - Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.AddTreeNodeFilterService(Microsoft.Testing.Platform.Extensions.IExtension)
+- uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.RegisterTestFramework(System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities},System.Func{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities,System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework})
+  commentId: M:Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.RegisterTestFramework(System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities},System.Func{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities,System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework})
+  id: RegisterTestFramework(System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities},System.Func{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities,System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework})
+  parent: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: RegisterTestFramework(Func<IServiceProvider, ITestFrameworkCapabilities>, Func<ITestFrameworkCapabilities, IServiceProvider, ITestFramework>)
+  nameWithType: ITestApplicationBuilder.RegisterTestFramework(Func<IServiceProvider, ITestFrameworkCapabilities>, Func<ITestFrameworkCapabilities, IServiceProvider, ITestFramework>)
+  fullName: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.RegisterTestFramework(System.Func<System.IServiceProvider, Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities>, System.Func<Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities, System.IServiceProvider, Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework>)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Builder
+  syntax:
+    content: ITestApplicationBuilder RegisterTestFramework(Func<IServiceProvider, ITestFrameworkCapabilities> capabilitiesFactory, Func<ITestFrameworkCapabilities, IServiceProvider, ITestFramework> adapterFactory)
+    parameters:
+    - id: capabilitiesFactory
+      type: System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities}
+    - id: adapterFactory
+      type: System.Func{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities,System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework}
+    return:
+      type: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder
+    content.vb: Function RegisterTestFramework(capabilitiesFactory As Func(Of IServiceProvider, ITestFrameworkCapabilities), adapterFactory As Func(Of ITestFrameworkCapabilities, IServiceProvider, ITestFramework)) As ITestApplicationBuilder
+  overload: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.RegisterTestFramework*
+  nameWithType.vb: ITestApplicationBuilder.RegisterTestFramework(Func(Of IServiceProvider, ITestFrameworkCapabilities), Func(Of ITestFrameworkCapabilities, IServiceProvider, ITestFramework))
+  fullName.vb: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.RegisterTestFramework(System.Func(Of System.IServiceProvider, Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities), System.Func(Of Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities, System.IServiceProvider, Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework))
+  name.vb: RegisterTestFramework(Func(Of IServiceProvider, ITestFrameworkCapabilities), Func(Of ITestFrameworkCapabilities, IServiceProvider, ITestFramework))
+- uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.BuildAsync
+  commentId: M:Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.BuildAsync
+  id: BuildAsync
+  parent: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildAsync()
+  nameWithType: ITestApplicationBuilder.BuildAsync()
+  fullName: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.BuildAsync()
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Builder
+  syntax:
+    content: Task<ITestApplication> BuildAsync()
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Testing.Platform.Builder.ITestApplication}
+    content.vb: Function BuildAsync() As Task(Of ITestApplication)
+  overload: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.BuildAsync*
+- uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.TestHost
+  commentId: P:Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.TestHost
+  id: TestHost
+  parent: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: TestHost
+  nameWithType: ITestApplicationBuilder.TestHost
+  fullName: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.TestHost
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Builder
+  syntax:
+    content: ITestHostManager TestHost { get; }
+    parameters: []
+    return:
+      type: Microsoft.Testing.Platform.TestHost.ITestHostManager
+    content.vb: ReadOnly Property TestHost As ITestHostManager
+  overload: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.TestHost*
+- uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.TestHostControllers
+  commentId: P:Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.TestHostControllers
+  id: TestHostControllers
+  parent: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: TestHostControllers
+  nameWithType: ITestApplicationBuilder.TestHostControllers
+  fullName: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.TestHostControllers
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Builder
+  syntax:
+    content: ITestHostControllersManager TestHostControllers { get; }
+    parameters: []
+    return:
+      type: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager
+    content.vb: ReadOnly Property TestHostControllers As ITestHostControllersManager
+  overload: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.TestHostControllers*
+- uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.CommandLine
+  commentId: P:Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.CommandLine
+  id: CommandLine
+  parent: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: CommandLine
+  nameWithType: ITestApplicationBuilder.CommandLine
+  fullName: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.CommandLine
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Builder
+  syntax:
+    content: ICommandLineManager CommandLine { get; }
+    parameters: []
+    return:
+      type: Microsoft.Testing.Platform.CommandLine.ICommandLineManager
+    content.vb: ReadOnly Property CommandLine As ICommandLineManager
+  overload: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.CommandLine*
+references:
+- uid: Microsoft.Testing.Platform.Builder
+  commentId: N:Microsoft.Testing.Platform.Builder
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Builder
+  nameWithType: Microsoft.Testing.Platform.Builder
+  fullName: Microsoft.Testing.Platform.Builder
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Builder
+    name: Builder
+    isExternal: true
+    href: Microsoft.Testing.Platform.Builder.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Builder
+    name: Builder
+    isExternal: true
+    href: Microsoft.Testing.Platform.Builder.html
+- uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.AddTreeNodeFilterService(Microsoft.Testing.Platform.Extensions.IExtension)
+  commentId: M:Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.AddTreeNodeFilterService(Microsoft.Testing.Platform.Builder.ITestApplicationBuilder,Microsoft.Testing.Platform.Extensions.IExtension)
+  parent: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions
+  definition: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.AddTreeNodeFilterService(Microsoft.Testing.Platform.Builder.ITestApplicationBuilder,Microsoft.Testing.Platform.Extensions.IExtension)
+  href: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.html#Microsoft_Testing_Platform_Helpers_TestApplicationBuilderExtensions_AddTreeNodeFilterService_Microsoft_Testing_Platform_Builder_ITestApplicationBuilder_Microsoft_Testing_Platform_Extensions_IExtension_
+  name: AddTreeNodeFilterService(ITestApplicationBuilder, IExtension)
+  nameWithType: TestApplicationBuilderExtensions.AddTreeNodeFilterService(ITestApplicationBuilder, IExtension)
+  fullName: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.AddTreeNodeFilterService(Microsoft.Testing.Platform.Builder.ITestApplicationBuilder, Microsoft.Testing.Platform.Extensions.IExtension)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.AddTreeNodeFilterService(Microsoft.Testing.Platform.Builder.ITestApplicationBuilder,Microsoft.Testing.Platform.Extensions.IExtension)
+    name: AddTreeNodeFilterService
+    isExternal: true
+    href: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.html#Microsoft_Testing_Platform_Helpers_TestApplicationBuilderExtensions_AddTreeNodeFilterService_Microsoft_Testing_Platform_Builder_ITestApplicationBuilder_Microsoft_Testing_Platform_Extensions_IExtension_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder
+    name: ITestApplicationBuilder
+    isExternal: true
+    href: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.IExtension
+    name: IExtension
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.IExtension.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.AddTreeNodeFilterService(Microsoft.Testing.Platform.Builder.ITestApplicationBuilder,Microsoft.Testing.Platform.Extensions.IExtension)
+    name: AddTreeNodeFilterService
+    isExternal: true
+    href: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.html#Microsoft_Testing_Platform_Helpers_TestApplicationBuilderExtensions_AddTreeNodeFilterService_Microsoft_Testing_Platform_Builder_ITestApplicationBuilder_Microsoft_Testing_Platform_Extensions_IExtension_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder
+    name: ITestApplicationBuilder
+    isExternal: true
+    href: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.IExtension
+    name: IExtension
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.IExtension.html
+  - name: )
+- uid: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.AddTreeNodeFilterService(Microsoft.Testing.Platform.Builder.ITestApplicationBuilder,Microsoft.Testing.Platform.Extensions.IExtension)
+  commentId: M:Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.AddTreeNodeFilterService(Microsoft.Testing.Platform.Builder.ITestApplicationBuilder,Microsoft.Testing.Platform.Extensions.IExtension)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.html#Microsoft_Testing_Platform_Helpers_TestApplicationBuilderExtensions_AddTreeNodeFilterService_Microsoft_Testing_Platform_Builder_ITestApplicationBuilder_Microsoft_Testing_Platform_Extensions_IExtension_
+  name: AddTreeNodeFilterService(ITestApplicationBuilder, IExtension)
+  nameWithType: TestApplicationBuilderExtensions.AddTreeNodeFilterService(ITestApplicationBuilder, IExtension)
+  fullName: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.AddTreeNodeFilterService(Microsoft.Testing.Platform.Builder.ITestApplicationBuilder, Microsoft.Testing.Platform.Extensions.IExtension)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.AddTreeNodeFilterService(Microsoft.Testing.Platform.Builder.ITestApplicationBuilder,Microsoft.Testing.Platform.Extensions.IExtension)
+    name: AddTreeNodeFilterService
+    isExternal: true
+    href: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.html#Microsoft_Testing_Platform_Helpers_TestApplicationBuilderExtensions_AddTreeNodeFilterService_Microsoft_Testing_Platform_Builder_ITestApplicationBuilder_Microsoft_Testing_Platform_Extensions_IExtension_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder
+    name: ITestApplicationBuilder
+    isExternal: true
+    href: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.IExtension
+    name: IExtension
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.IExtension.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.AddTreeNodeFilterService(Microsoft.Testing.Platform.Builder.ITestApplicationBuilder,Microsoft.Testing.Platform.Extensions.IExtension)
+    name: AddTreeNodeFilterService
+    isExternal: true
+    href: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.html#Microsoft_Testing_Platform_Helpers_TestApplicationBuilderExtensions_AddTreeNodeFilterService_Microsoft_Testing_Platform_Builder_ITestApplicationBuilder_Microsoft_Testing_Platform_Extensions_IExtension_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder
+    name: ITestApplicationBuilder
+    isExternal: true
+    href: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.IExtension
+    name: IExtension
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.IExtension.html
+  - name: )
+- uid: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions
+  commentId: T:Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions
+  parent: Microsoft.Testing.Platform.Helpers
+  isExternal: true
+  href: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions.html
+  name: TestApplicationBuilderExtensions
+  nameWithType: TestApplicationBuilderExtensions
+  fullName: Microsoft.Testing.Platform.Helpers.TestApplicationBuilderExtensions
+- uid: Microsoft.Testing.Platform.Helpers
+  commentId: N:Microsoft.Testing.Platform.Helpers
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Helpers
+  nameWithType: Microsoft.Testing.Platform.Helpers
+  fullName: Microsoft.Testing.Platform.Helpers
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Helpers
+    name: Helpers
+    isExternal: true
+    href: Microsoft.Testing.Platform.Helpers.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Helpers
+    name: Helpers
+    isExternal: true
+    href: Microsoft.Testing.Platform.Helpers.html
+- uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.RegisterTestFramework*
+  commentId: Overload:Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.RegisterTestFramework
+  isExternal: true
+  href: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.html#Microsoft_Testing_Platform_Builder_ITestApplicationBuilder_RegisterTestFramework_System_Func_System_IServiceProvider_Microsoft_Testing_Platform_Capabilities_TestFramework_ITestFrameworkCapabilities__System_Func_Microsoft_Testing_Platform_Capabilities_TestFramework_ITestFrameworkCapabilities_System_IServiceProvider_Microsoft_Testing_Platform_Extensions_TestFramework_ITestFramework__
+  name: RegisterTestFramework
+  nameWithType: ITestApplicationBuilder.RegisterTestFramework
+  fullName: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.RegisterTestFramework
+- uid: System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities}
+  commentId: T:System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<IServiceProvider, ITestFrameworkCapabilities>
+  nameWithType: Func<IServiceProvider, ITestFrameworkCapabilities>
+  fullName: System.Func<System.IServiceProvider, Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities>
+  nameWithType.vb: Func(Of IServiceProvider, ITestFrameworkCapabilities)
+  fullName.vb: System.Func(Of System.IServiceProvider, Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  name.vb: Func(Of IServiceProvider, ITestFrameworkCapabilities)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+    name: ITestFrameworkCapabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+    name: ITestFrameworkCapabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.html
+  - name: )
+- uid: System.Func{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities,System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework}
+  commentId: T:System.Func{Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities,System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<ITestFrameworkCapabilities, IServiceProvider, ITestFramework>
+  nameWithType: Func<ITestFrameworkCapabilities, IServiceProvider, ITestFramework>
+  fullName: System.Func<Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities, System.IServiceProvider, Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework>
+  nameWithType.vb: Func(Of ITestFrameworkCapabilities, IServiceProvider, ITestFramework)
+  fullName.vb: System.Func(Of Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities, System.IServiceProvider, Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework)
+  name.vb: Func(Of ITestFrameworkCapabilities, IServiceProvider, ITestFramework)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+    name: ITestFrameworkCapabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.html
+  - name: ','
+  - name: " "
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework
+    name: ITestFramework
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+    name: ITestFrameworkCapabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.html
+  - name: ','
+  - name: " "
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework
+    name: ITestFramework
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework.html
+  - name: )
+- uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder
+  commentId: T:Microsoft.Testing.Platform.Builder.ITestApplicationBuilder
+  parent: Microsoft.Testing.Platform.Builder
+  isExternal: true
+  href: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.html
+  name: ITestApplicationBuilder
+  nameWithType: ITestApplicationBuilder
+  fullName: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.BuildAsync*
+  commentId: Overload:Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.BuildAsync
+  isExternal: true
+  href: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.html#Microsoft_Testing_Platform_Builder_ITestApplicationBuilder_BuildAsync
+  name: BuildAsync
+  nameWithType: ITestApplicationBuilder.BuildAsync
+  fullName: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.BuildAsync
+- uid: System.Threading.Tasks.Task{Microsoft.Testing.Platform.Builder.ITestApplication}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.Testing.Platform.Builder.ITestApplication}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ITestApplication>
+  nameWithType: Task<ITestApplication>
+  fullName: System.Threading.Tasks.Task<Microsoft.Testing.Platform.Builder.ITestApplication>
+  nameWithType.vb: Task(Of ITestApplication)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.Testing.Platform.Builder.ITestApplication)
+  name.vb: Task(Of ITestApplication)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Microsoft.Testing.Platform.Builder.ITestApplication
+    name: ITestApplication
+    isExternal: true
+    href: Microsoft.Testing.Platform.Builder.ITestApplication.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Builder.ITestApplication
+    name: ITestApplication
+    isExternal: true
+    href: Microsoft.Testing.Platform.Builder.ITestApplication.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.TestHost*
+  commentId: Overload:Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.TestHost
+  isExternal: true
+  href: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.html#Microsoft_Testing_Platform_Builder_ITestApplicationBuilder_TestHost
+  name: TestHost
+  nameWithType: ITestApplicationBuilder.TestHost
+  fullName: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.TestHost
+- uid: Microsoft.Testing.Platform.TestHost.ITestHostManager
+  commentId: T:Microsoft.Testing.Platform.TestHost.ITestHostManager
+  parent: Microsoft.Testing.Platform.TestHost
+  isExternal: true
+  href: Microsoft.Testing.Platform.TestHost.ITestHostManager.html
+  name: ITestHostManager
+  nameWithType: ITestHostManager
+  fullName: Microsoft.Testing.Platform.TestHost.ITestHostManager
+- uid: Microsoft.Testing.Platform.TestHost
+  commentId: N:Microsoft.Testing.Platform.TestHost
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.TestHost
+  nameWithType: Microsoft.Testing.Platform.TestHost
+  fullName: Microsoft.Testing.Platform.TestHost
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.TestHost
+    name: TestHost
+    isExternal: true
+    href: Microsoft.Testing.Platform.TestHost.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.TestHost
+    name: TestHost
+    isExternal: true
+    href: Microsoft.Testing.Platform.TestHost.html
+- uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.TestHostControllers*
+  commentId: Overload:Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.TestHostControllers
+  isExternal: true
+  href: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.html#Microsoft_Testing_Platform_Builder_ITestApplicationBuilder_TestHostControllers
+  name: TestHostControllers
+  nameWithType: ITestApplicationBuilder.TestHostControllers
+  fullName: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.TestHostControllers
+- uid: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager
+  commentId: T:Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager
+  parent: Microsoft.Testing.Platform.TestHostControllers
+  isExternal: true
+  href: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.html
+  name: ITestHostControllersManager
+  nameWithType: ITestHostControllersManager
+  fullName: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager
+- uid: Microsoft.Testing.Platform.TestHostControllers
+  commentId: N:Microsoft.Testing.Platform.TestHostControllers
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.TestHostControllers
+  nameWithType: Microsoft.Testing.Platform.TestHostControllers
+  fullName: Microsoft.Testing.Platform.TestHostControllers
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.TestHostControllers
+    name: TestHostControllers
+    isExternal: true
+    href: Microsoft.Testing.Platform.TestHostControllers.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.TestHostControllers
+    name: TestHostControllers
+    isExternal: true
+    href: Microsoft.Testing.Platform.TestHostControllers.html
+- uid: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.CommandLine*
+  commentId: Overload:Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.CommandLine
+  isExternal: true
+  href: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.html#Microsoft_Testing_Platform_Builder_ITestApplicationBuilder_CommandLine
+  name: CommandLine
+  nameWithType: ITestApplicationBuilder.CommandLine
+  fullName: Microsoft.Testing.Platform.Builder.ITestApplicationBuilder.CommandLine
+- uid: Microsoft.Testing.Platform.CommandLine.ICommandLineManager
+  commentId: T:Microsoft.Testing.Platform.CommandLine.ICommandLineManager
+  parent: Microsoft.Testing.Platform.CommandLine
+  isExternal: true
+  href: Microsoft.Testing.Platform.CommandLine.ICommandLineManager.html
+  name: ICommandLineManager
+  nameWithType: ICommandLineManager
+  fullName: Microsoft.Testing.Platform.CommandLine.ICommandLineManager
+- uid: Microsoft.Testing.Platform.CommandLine
+  commentId: N:Microsoft.Testing.Platform.CommandLine
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.CommandLine
+  nameWithType: Microsoft.Testing.Platform.CommandLine
+  fullName: Microsoft.Testing.Platform.CommandLine
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.CommandLine
+    name: CommandLine
+    isExternal: true
+    href: Microsoft.Testing.Platform.CommandLine.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.CommandLine
+    name: CommandLine
+    isExternal: true
+    href: Microsoft.Testing.Platform.CommandLine.html

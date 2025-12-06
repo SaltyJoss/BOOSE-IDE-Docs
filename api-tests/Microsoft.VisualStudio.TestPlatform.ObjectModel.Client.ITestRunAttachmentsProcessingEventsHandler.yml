@@ -1,0 +1,378 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler
+  id: ITestRunAttachmentsProcessingEventsHandler
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleProcessedAttachmentsChunk(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet})
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingCompleteEventArgs,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet})
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingProgress(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs)
+  langs:
+  - csharp
+  - vb
+  name: ITestRunAttachmentsProcessingEventsHandler
+  nameWithType: ITestRunAttachmentsProcessingEventsHandler
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler
+  type: Interface
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: 'public interface ITestRunAttachmentsProcessingEventsHandler : ITestMessageEventHandler'
+    content.vb: Public Interface ITestRunAttachmentsProcessingEventsHandler Inherits ITestMessageEventHandler
+  inheritedMembers:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingCompleteEventArgs,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingCompleteEventArgs,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet})
+  id: HandleTestRunAttachmentsProcessingComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingCompleteEventArgs,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet})
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleTestRunAttachmentsProcessingComplete(TestRunAttachmentsProcessingCompleteEventArgs, IEnumerable<AttachmentSet>?)
+  nameWithType: ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingComplete(TestRunAttachmentsProcessingCompleteEventArgs, IEnumerable<AttachmentSet>?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingCompleteEventArgs, System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet>?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: void HandleTestRunAttachmentsProcessingComplete(TestRunAttachmentsProcessingCompleteEventArgs attachmentsProcessingCompleteEventArgs, IEnumerable<AttachmentSet>? lastChunk)
+    parameters:
+    - id: attachmentsProcessingCompleteEventArgs
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingCompleteEventArgs
+    - id: lastChunk
+      type: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet}
+    content.vb: Sub HandleTestRunAttachmentsProcessingComplete(attachmentsProcessingCompleteEventArgs As TestRunAttachmentsProcessingCompleteEventArgs, lastChunk As IEnumerable(Of AttachmentSet))
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingComplete*
+  nameWithType.vb: ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingComplete(TestRunAttachmentsProcessingCompleteEventArgs, IEnumerable(Of AttachmentSet))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingCompleteEventArgs, System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet))
+  name.vb: HandleTestRunAttachmentsProcessingComplete(TestRunAttachmentsProcessingCompleteEventArgs, IEnumerable(Of AttachmentSet))
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleProcessedAttachmentsChunk(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleProcessedAttachmentsChunk(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet})
+  id: HandleProcessedAttachmentsChunk(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet})
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleProcessedAttachmentsChunk(IEnumerable<AttachmentSet>)
+  nameWithType: ITestRunAttachmentsProcessingEventsHandler.HandleProcessedAttachmentsChunk(IEnumerable<AttachmentSet>)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleProcessedAttachmentsChunk(System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet>)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: void HandleProcessedAttachmentsChunk(IEnumerable<AttachmentSet> attachments)
+    parameters:
+    - id: attachments
+      type: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet}
+    content.vb: Sub HandleProcessedAttachmentsChunk(attachments As IEnumerable(Of AttachmentSet))
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleProcessedAttachmentsChunk*
+  nameWithType.vb: ITestRunAttachmentsProcessingEventsHandler.HandleProcessedAttachmentsChunk(IEnumerable(Of AttachmentSet))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleProcessedAttachmentsChunk(System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet))
+  name.vb: HandleProcessedAttachmentsChunk(IEnumerable(Of AttachmentSet))
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingProgress(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingProgress(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs)
+  id: HandleTestRunAttachmentsProcessingProgress(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleTestRunAttachmentsProcessingProgress(TestRunAttachmentsProcessingProgressEventArgs)
+  nameWithType: ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingProgress(TestRunAttachmentsProcessingProgressEventArgs)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingProgress(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: void HandleTestRunAttachmentsProcessingProgress(TestRunAttachmentsProcessingProgressEventArgs AttachmentsProcessingProgressEventArgs)
+    parameters:
+    - id: AttachmentsProcessingProgressEventArgs
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs
+    content.vb: Sub HandleTestRunAttachmentsProcessingProgress(AttachmentsProcessingProgressEventArgs As TestRunAttachmentsProcessingProgressEventArgs)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingProgress*
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleRawMessage_System_String_
+  name: HandleRawMessage(string)
+  nameWithType: ITestMessageEventHandler.HandleRawMessage(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(string)
+  nameWithType.vb: ITestMessageEventHandler.HandleRawMessage(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(String)
+  name.vb: HandleRawMessage(String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(System.String)
+    name: HandleRawMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleRawMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(System.String)
+    name: HandleRawMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleRawMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleLogMessage_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_TestMessageLevel_System_String_
+  name: HandleLogMessage(TestMessageLevel, string)
+  nameWithType: ITestMessageEventHandler.HandleLogMessage(TestMessageLevel, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel, string)
+  nameWithType.vb: ITestMessageEventHandler.HandleLogMessage(TestMessageLevel, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel, String)
+  name.vb: HandleLogMessage(TestMessageLevel, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+    name: HandleLogMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleLogMessage_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_TestMessageLevel_System_String_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel
+    name: TestMessageLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+    name: HandleLogMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleLogMessage_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_TestMessageLevel_System_String_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel
+    name: TestMessageLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html
+  name: ITestMessageEventHandler
+  nameWithType: ITestMessageEventHandler
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingComplete*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingComplete
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestRunAttachmentsProcessingEventsHandler_HandleTestRunAttachmentsProcessingComplete_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_TestRunAttachmentsProcessingCompleteEventArgs_System_Collections_Generic_IEnumerable_Microsoft_VisualStudio_TestPlatform_ObjectModel_AttachmentSet__
+  name: HandleTestRunAttachmentsProcessingComplete
+  nameWithType: ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingComplete
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingComplete
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingCompleteEventArgs
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingCompleteEventArgs
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingCompleteEventArgs.html
+  name: TestRunAttachmentsProcessingCompleteEventArgs
+  nameWithType: TestRunAttachmentsProcessingCompleteEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingCompleteEventArgs
+- uid: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<AttachmentSet>
+  nameWithType: IEnumerable<AttachmentSet>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet>
+  nameWithType.vb: IEnumerable(Of AttachmentSet)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet)
+  name.vb: IEnumerable(Of AttachmentSet)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet
+    name: AttachmentSet
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet
+    name: AttachmentSet
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleProcessedAttachmentsChunk*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleProcessedAttachmentsChunk
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestRunAttachmentsProcessingEventsHandler_HandleProcessedAttachmentsChunk_System_Collections_Generic_IEnumerable_Microsoft_VisualStudio_TestPlatform_ObjectModel_AttachmentSet__
+  name: HandleProcessedAttachmentsChunk
+  nameWithType: ITestRunAttachmentsProcessingEventsHandler.HandleProcessedAttachmentsChunk
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleProcessedAttachmentsChunk
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingProgress*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingProgress
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestRunAttachmentsProcessingEventsHandler_HandleTestRunAttachmentsProcessingProgress_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_TestRunAttachmentsProcessingProgressEventArgs_
+  name: HandleTestRunAttachmentsProcessingProgress
+  nameWithType: ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingProgress
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunAttachmentsProcessingEventsHandler.HandleTestRunAttachmentsProcessingProgress
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.html
+  name: TestRunAttachmentsProcessingProgressEventArgs
+  nameWithType: TestRunAttachmentsProcessingProgressEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs

@@ -1,0 +1,659 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs
+  id: TestRunAttachmentsProcessingProgressEventArgs
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.#ctor(System.Int64,System.Collections.Generic.ICollection{System.Uri},System.Int64,System.Int64)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.AttachmentProcessorsCount
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorIndex
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorProgress
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorUris
+  langs:
+  - csharp
+  - vb
+  name: TestRunAttachmentsProcessingProgressEventArgs
+  nameWithType: TestRunAttachmentsProcessingProgressEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs
+  type: Class
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: >-
+      [DataContract]
+
+      public class TestRunAttachmentsProcessingProgressEventArgs : EventArgs
+    content.vb: >-
+      <DataContract>
+
+      Public Class TestRunAttachmentsProcessingProgressEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.#ctor(System.Int64,System.Collections.Generic.ICollection{System.Uri},System.Int64,System.Int64)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.#ctor(System.Int64,System.Collections.Generic.ICollection{System.Uri},System.Int64,System.Int64)
+  id: '#ctor(System.Int64,System.Collections.Generic.ICollection{System.Uri},System.Int64,System.Int64)'
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs
+  langs:
+  - csharp
+  - vb
+  name: TestRunAttachmentsProcessingProgressEventArgs(long, ICollection<Uri>, long, long)
+  nameWithType: TestRunAttachmentsProcessingProgressEventArgs.TestRunAttachmentsProcessingProgressEventArgs(long, ICollection<Uri>, long, long)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.TestRunAttachmentsProcessingProgressEventArgs(long, System.Collections.Generic.ICollection<System.Uri>, long, long)
+  type: Constructor
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: public TestRunAttachmentsProcessingProgressEventArgs(long currentAttachmentProcessorIndex, ICollection<Uri> currentAttachmentProcessorUris, long currentAttachmentProcessorProgress, long attachmentProcessorsCount)
+    parameters:
+    - id: currentAttachmentProcessorIndex
+      type: System.Int64
+    - id: currentAttachmentProcessorUris
+      type: System.Collections.Generic.ICollection{System.Uri}
+    - id: currentAttachmentProcessorProgress
+      type: System.Int64
+    - id: attachmentProcessorsCount
+      type: System.Int64
+    content.vb: Public Sub New(currentAttachmentProcessorIndex As Long, currentAttachmentProcessorUris As ICollection(Of Uri), currentAttachmentProcessorProgress As Long, attachmentProcessorsCount As Long)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.#ctor*
+  nameWithType.vb: TestRunAttachmentsProcessingProgressEventArgs.New(Long, ICollection(Of Uri), Long, Long)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.New(Long, System.Collections.Generic.ICollection(Of System.Uri), Long, Long)
+  name.vb: New(Long, ICollection(Of Uri), Long, Long)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorIndex
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorIndex
+  id: CurrentAttachmentProcessorIndex
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs
+  langs:
+  - csharp
+  - vb
+  name: CurrentAttachmentProcessorIndex
+  nameWithType: TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorIndex
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorIndex
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: >-
+      [DataMember]
+
+      public long CurrentAttachmentProcessorIndex { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: >-
+      <DataMember>
+
+      Public ReadOnly Property CurrentAttachmentProcessorIndex As Long
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorIndex*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorUris
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorUris
+  id: CurrentAttachmentProcessorUris
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs
+  langs:
+  - csharp
+  - vb
+  name: CurrentAttachmentProcessorUris
+  nameWithType: TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorUris
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorUris
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: >-
+      [DataMember]
+
+      public ICollection<Uri> CurrentAttachmentProcessorUris { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{System.Uri}
+    content.vb: >-
+      <DataMember>
+
+      Public ReadOnly Property CurrentAttachmentProcessorUris As ICollection(Of Uri)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorUris*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorProgress
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorProgress
+  id: CurrentAttachmentProcessorProgress
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs
+  langs:
+  - csharp
+  - vb
+  name: CurrentAttachmentProcessorProgress
+  nameWithType: TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorProgress
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorProgress
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: >-
+      [DataMember]
+
+      public long CurrentAttachmentProcessorProgress { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: >-
+      <DataMember>
+
+      Public ReadOnly Property CurrentAttachmentProcessorProgress As Long
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorProgress*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.AttachmentProcessorsCount
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.AttachmentProcessorsCount
+  id: AttachmentProcessorsCount
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs
+  langs:
+  - csharp
+  - vb
+  name: AttachmentProcessorsCount
+  nameWithType: TestRunAttachmentsProcessingProgressEventArgs.AttachmentProcessorsCount
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.AttachmentProcessorsCount
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: >-
+      [DataMember]
+
+      public long AttachmentProcessorsCount { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: >-
+      <DataMember>
+
+      Public ReadOnly Property AttachmentProcessorsCount As Long
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.AttachmentProcessorsCount*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  commentId: F:System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs.empty
+  name: Empty
+  nameWithType: EventArgs.Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_TestRunAttachmentsProcessingProgressEventArgs__ctor_System_Int64_System_Collections_Generic_ICollection_System_Uri__System_Int64_System_Int64_
+  name: TestRunAttachmentsProcessingProgressEventArgs
+  nameWithType: TestRunAttachmentsProcessingProgressEventArgs.TestRunAttachmentsProcessingProgressEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.TestRunAttachmentsProcessingProgressEventArgs
+  nameWithType.vb: TestRunAttachmentsProcessingProgressEventArgs.New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.New
+  name.vb: New
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Collections.Generic.ICollection{System.Uri}
+  commentId: T:System.Collections.Generic.ICollection{System.Uri}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<Uri>
+  nameWithType: ICollection<Uri>
+  fullName: System.Collections.Generic.ICollection<System.Uri>
+  nameWithType.vb: ICollection(Of Uri)
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Uri)
+  name.vb: ICollection(Of Uri)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorIndex*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorIndex
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_TestRunAttachmentsProcessingProgressEventArgs_CurrentAttachmentProcessorIndex
+  name: CurrentAttachmentProcessorIndex
+  nameWithType: TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorIndex
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorIndex
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorUris*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorUris
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_TestRunAttachmentsProcessingProgressEventArgs_CurrentAttachmentProcessorUris
+  name: CurrentAttachmentProcessorUris
+  nameWithType: TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorUris
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorUris
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorProgress*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorProgress
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_TestRunAttachmentsProcessingProgressEventArgs_CurrentAttachmentProcessorProgress
+  name: CurrentAttachmentProcessorProgress
+  nameWithType: TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorProgress
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.CurrentAttachmentProcessorProgress
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.AttachmentProcessorsCount*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.AttachmentProcessorsCount
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_TestRunAttachmentsProcessingProgressEventArgs_AttachmentProcessorsCount
+  name: AttachmentProcessorsCount
+  nameWithType: TestRunAttachmentsProcessingProgressEventArgs.AttachmentProcessorsCount
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunAttachmentsProcessingProgressEventArgs.AttachmentProcessorsCount

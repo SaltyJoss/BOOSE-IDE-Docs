@@ -152,8 +152,8 @@ items:
   name: BOOSECoreApp
   type: Namespace
   items:
-  - uid: BOOSECoreApp.Form1
-    name: Form1
+  - uid: BOOSECoreApp.BOOSEApp
+    name: BOOSEApp
     type: Class
 - uid: BOOSECoreApp.Core.Adapters
   name: BOOSECoreApp.Core.Adapters
@@ -161,9 +161,6 @@ items:
   items:
   - uid: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter
     name: CanvasGraphicsAdapter
-    type: Class
-  - uid: BOOSECoreApp.Core.Adapters.CommandAdapterApp
-    name: CommandAdapterApp
     type: Class
   - uid: BOOSECoreApp.Core.Adapters.SoftVariable
     name: SoftVariable
@@ -181,6 +178,9 @@ items:
   name: BOOSECoreApp.Core.Base
   type: Namespace
   items:
+  - uid: BOOSECoreApp.Core.Base.CallFrame
+    name: CallFrame
+    type: Class
   - uid: BOOSECoreApp.Core.Base.CanvasApp
     name: CanvasApp
     type: Class
@@ -190,18 +190,27 @@ items:
   - uid: BOOSECoreApp.Core.Base.CommandFactoryApp
     name: CommandFactoryApp
     type: Class
-  - uid: BOOSECoreApp.Core.Base.CommandWrapper
-    name: CommandWrapper
-    type: Class
   - uid: BOOSECoreApp.Core.Base.EvaluationApp
     name: EvaluationApp
     type: Class
+  - uid: BOOSECoreApp.Core.Base.ParsedLine
+    name: ParsedLine
+    type: Class
+  - uid: BOOSECoreApp.Core.Base.ParsedLineType
+    name: ParsedLineType
+    type: Enum
   - uid: BOOSECoreApp.Core.Base.ParserApp
     name: ParserApp
     type: Class
   - uid: BOOSECoreApp.Core.Base.StoredProgramApp
     name: StoredProgramApp
     type: Class
+  - uid: BOOSECoreApp.Core.Base.UINotificationEventHandler
+    name: UINotificationEventHandler
+    type: Delegate
+  - uid: BOOSECoreApp.Core.Base.UINotificationType
+    name: UINotificationType
+    type: Enum
   - uid: BOOSECoreApp.Core.Base.VariableAppBase
     name: VariableAppBase
     type: Class
@@ -212,6 +221,9 @@ items:
   name: BOOSECoreApp.Core.Commands
   type: Namespace
   items:
+  - uid: BOOSECoreApp.Core.Commands.AboutApp
+    name: AboutApp
+    type: Class
   - uid: BOOSECoreApp.Core.Commands.BackgroundColourApp
     name: BackgroundColourApp
     type: Class
@@ -233,11 +245,42 @@ items:
   - uid: BOOSECoreApp.Core.Commands.SquareApp
     name: SquareApp
     type: Class
+  - uid: BOOSECoreApp.Core.Commands.SysInfoApp
+    name: SysInfoApp
+    type: Class
   - uid: BOOSECoreApp.Core.Commands.TriApp
     name: TriApp
     type: Class
   - uid: BOOSECoreApp.Core.Commands.WriteApp
     name: WriteApp
+    type: Class
+- uid: BOOSECoreApp.Core.Conditionals
+  name: BOOSECoreApp.Core.Conditionals
+  type: Namespace
+  items:
+  - uid: BOOSECoreApp.Core.Conditionals.ElseApp
+    name: ElseApp
+    type: Class
+  - uid: BOOSECoreApp.Core.Conditionals.ElseIfApp
+    name: ElseIfApp
+    type: Class
+  - uid: BOOSECoreApp.Core.Conditionals.EndForApp
+    name: EndForApp
+    type: Class
+  - uid: BOOSECoreApp.Core.Conditionals.EndIfApp
+    name: EndIfApp
+    type: Class
+  - uid: BOOSECoreApp.Core.Conditionals.EndWhileApp
+    name: EndWhileApp
+    type: Class
+  - uid: BOOSECoreApp.Core.Conditionals.ForApp
+    name: ForApp
+    type: Class
+  - uid: BOOSECoreApp.Core.Conditionals.IfApp
+    name: IfApp
+    type: Class
+  - uid: BOOSECoreApp.Core.Conditionals.WhileApp
+    name: WhileApp
     type: Class
 - uid: BOOSECoreApp.Core.Interfaces
   name: BOOSECoreApp.Core.Interfaces
@@ -255,20 +298,601 @@ items:
   - uid: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
     name: IStoredProgramApp
     type: Interface
+- uid: BOOSECoreApp.Core.Methods
+  name: BOOSECoreApp.Core.Methods
+  type: Namespace
+  items:
+  - uid: BOOSECoreApp.Core.Methods.CallMethodApp
+    name: CallMethodApp
+    type: Class
+  - uid: BOOSECoreApp.Core.Methods.EndMethodApp
+    name: EndMethodApp
+    type: Class
+  - uid: BOOSECoreApp.Core.Methods.MethodApp
+    name: MethodApp
+    type: Class
 - uid: BOOSECoreApp.Core.Variables
   name: BOOSECoreApp.Core.Variables
   type: Namespace
   items:
+  - uid: BOOSECoreApp.Core.Variables.ArrayApp
+    name: ArrayApp
+    type: Class
+  - uid: BOOSECoreApp.Core.Variables.ArrayElementType
+    name: ArrayElementType
+    type: Enum
   - uid: BOOSECoreApp.Core.Variables.BooleanApp
     name: BooleanApp
-    type: Class
-  - uid: BOOSECoreApp.Core.Variables.CommandParameterValidator
-    name: CommandParameterValidator
     type: Class
   - uid: BOOSECoreApp.Core.Variables.IntApp
     name: IntApp
     type: Class
+  - uid: BOOSECoreApp.Core.Variables.PeekApp
+    name: PeekApp
+    type: Class
+  - uid: BOOSECoreApp.Core.Variables.PokeApp
+    name: PokeApp
+    type: Class
   - uid: BOOSECoreApp.Core.Variables.RealApp
     name: RealApp
+    type: Class
+- uid: BOOSECoreApp.Exceptions
+  name: BOOSECoreApp.Exceptions
+  type: Namespace
+  items:
+  - uid: BOOSECoreApp.Exceptions.BooseSyntaxException
+    name: BooseSyntaxException
+    type: Class
+- uid: BOOSECoreApp.UI
+  name: BOOSECoreApp.UI
+  type: Namespace
+  items:
+  - uid: BOOSECoreApp.UI.AboutDisplayUI
+    name: AboutDisplayUI
+    type: Class
+  - uid: BOOSECoreApp.UI.BooseHighlighting
+    name: BooseHighlighting
+    type: Class
+  - uid: BOOSECoreApp.UI.EditorTheme
+    name: EditorTheme
+    type: Class
+  - uid: BOOSECoreApp.UI.EditorThemes
+    name: EditorThemes
+    type: Class
+  - uid: BOOSECoreApp.UI.InfoAlign
+    name: InfoAlign
+    type: Enum
+  - uid: BOOSECoreApp.UI.InfoLine
+    name: InfoLine
+    type: Struct
+  - uid: BOOSECoreApp.UI.InfoPos
+    name: InfoPos
+    type: Enum
+  - uid: BOOSECoreApp.UI.InfoUI
+    name: InfoUI
+    type: Class
+  - uid: BOOSECoreApp.UI.SystemInfoUI
+    name: SystemInfoUI
+    type: Class
+  - uid: BOOSECoreApp.UI.Token
+    name: Token
+    type: Class
+  - uid: BOOSECoreApp.UI.TokenType
+    name: TokenType
+    type: Enum
+  - uid: BOOSECoreApp.UI.UILogger
+    name: UILogger
+    type: Class
+- uid: Microsoft.CSharp
+  name: Microsoft.CSharp
+  type: Namespace
+  items:
+  - uid: Microsoft.CSharp.CSharpCodeProvider
+    name: CSharpCodeProvider
+    type: Class
+- uid: Microsoft.VisualBasic
+  name: Microsoft.VisualBasic
+  type: Namespace
+  items:
+  - uid: Microsoft.VisualBasic.VBCodeProvider
+    name: VBCodeProvider
+    type: Class
+- uid: System.CodeDom
+  name: System.CodeDom
+  type: Namespace
+  items:
+  - uid: System.CodeDom.CodeArgumentReferenceExpression
+    name: CodeArgumentReferenceExpression
+    type: Class
+  - uid: System.CodeDom.CodeArrayCreateExpression
+    name: CodeArrayCreateExpression
+    type: Class
+  - uid: System.CodeDom.CodeArrayIndexerExpression
+    name: CodeArrayIndexerExpression
+    type: Class
+  - uid: System.CodeDom.CodeAssignStatement
+    name: CodeAssignStatement
+    type: Class
+  - uid: System.CodeDom.CodeAttachEventStatement
+    name: CodeAttachEventStatement
+    type: Class
+  - uid: System.CodeDom.CodeAttributeArgument
+    name: CodeAttributeArgument
+    type: Class
+  - uid: System.CodeDom.CodeAttributeArgumentCollection
+    name: CodeAttributeArgumentCollection
+    type: Class
+  - uid: System.CodeDom.CodeAttributeDeclaration
+    name: CodeAttributeDeclaration
+    type: Class
+  - uid: System.CodeDom.CodeAttributeDeclarationCollection
+    name: CodeAttributeDeclarationCollection
+    type: Class
+  - uid: System.CodeDom.CodeBaseReferenceExpression
+    name: CodeBaseReferenceExpression
+    type: Class
+  - uid: System.CodeDom.CodeBinaryOperatorExpression
+    name: CodeBinaryOperatorExpression
+    type: Class
+  - uid: System.CodeDom.CodeBinaryOperatorType
+    name: CodeBinaryOperatorType
+    type: Enum
+  - uid: System.CodeDom.CodeCastExpression
+    name: CodeCastExpression
+    type: Class
+  - uid: System.CodeDom.CodeCatchClause
+    name: CodeCatchClause
+    type: Class
+  - uid: System.CodeDom.CodeCatchClauseCollection
+    name: CodeCatchClauseCollection
+    type: Class
+  - uid: System.CodeDom.CodeChecksumPragma
+    name: CodeChecksumPragma
+    type: Class
+  - uid: System.CodeDom.CodeComment
+    name: CodeComment
+    type: Class
+  - uid: System.CodeDom.CodeCommentStatement
+    name: CodeCommentStatement
+    type: Class
+  - uid: System.CodeDom.CodeCommentStatementCollection
+    name: CodeCommentStatementCollection
+    type: Class
+  - uid: System.CodeDom.CodeCompileUnit
+    name: CodeCompileUnit
+    type: Class
+  - uid: System.CodeDom.CodeConditionStatement
+    name: CodeConditionStatement
+    type: Class
+  - uid: System.CodeDom.CodeConstructor
+    name: CodeConstructor
+    type: Class
+  - uid: System.CodeDom.CodeDefaultValueExpression
+    name: CodeDefaultValueExpression
+    type: Class
+  - uid: System.CodeDom.CodeDelegateCreateExpression
+    name: CodeDelegateCreateExpression
+    type: Class
+  - uid: System.CodeDom.CodeDelegateInvokeExpression
+    name: CodeDelegateInvokeExpression
+    type: Class
+  - uid: System.CodeDom.CodeDirectionExpression
+    name: CodeDirectionExpression
+    type: Class
+  - uid: System.CodeDom.CodeDirective
+    name: CodeDirective
+    type: Class
+  - uid: System.CodeDom.CodeDirectiveCollection
+    name: CodeDirectiveCollection
+    type: Class
+  - uid: System.CodeDom.CodeEntryPointMethod
+    name: CodeEntryPointMethod
+    type: Class
+  - uid: System.CodeDom.CodeEventReferenceExpression
+    name: CodeEventReferenceExpression
+    type: Class
+  - uid: System.CodeDom.CodeExpression
+    name: CodeExpression
+    type: Class
+  - uid: System.CodeDom.CodeExpressionCollection
+    name: CodeExpressionCollection
+    type: Class
+  - uid: System.CodeDom.CodeExpressionStatement
+    name: CodeExpressionStatement
+    type: Class
+  - uid: System.CodeDom.CodeFieldReferenceExpression
+    name: CodeFieldReferenceExpression
+    type: Class
+  - uid: System.CodeDom.CodeGotoStatement
+    name: CodeGotoStatement
+    type: Class
+  - uid: System.CodeDom.CodeIndexerExpression
+    name: CodeIndexerExpression
+    type: Class
+  - uid: System.CodeDom.CodeIterationStatement
+    name: CodeIterationStatement
+    type: Class
+  - uid: System.CodeDom.CodeLabeledStatement
+    name: CodeLabeledStatement
+    type: Class
+  - uid: System.CodeDom.CodeLinePragma
+    name: CodeLinePragma
+    type: Class
+  - uid: System.CodeDom.CodeMemberEvent
+    name: CodeMemberEvent
+    type: Class
+  - uid: System.CodeDom.CodeMemberField
+    name: CodeMemberField
+    type: Class
+  - uid: System.CodeDom.CodeMemberMethod
+    name: CodeMemberMethod
+    type: Class
+  - uid: System.CodeDom.CodeMemberProperty
+    name: CodeMemberProperty
+    type: Class
+  - uid: System.CodeDom.CodeMethodInvokeExpression
+    name: CodeMethodInvokeExpression
+    type: Class
+  - uid: System.CodeDom.CodeMethodReferenceExpression
+    name: CodeMethodReferenceExpression
+    type: Class
+  - uid: System.CodeDom.CodeMethodReturnStatement
+    name: CodeMethodReturnStatement
+    type: Class
+  - uid: System.CodeDom.CodeNamespace
+    name: CodeNamespace
+    type: Class
+  - uid: System.CodeDom.CodeNamespaceCollection
+    name: CodeNamespaceCollection
+    type: Class
+  - uid: System.CodeDom.CodeNamespaceImport
+    name: CodeNamespaceImport
+    type: Class
+  - uid: System.CodeDom.CodeNamespaceImportCollection
+    name: CodeNamespaceImportCollection
+    type: Class
+  - uid: System.CodeDom.CodeObject
+    name: CodeObject
+    type: Class
+  - uid: System.CodeDom.CodeObjectCreateExpression
+    name: CodeObjectCreateExpression
+    type: Class
+  - uid: System.CodeDom.CodeParameterDeclarationExpression
+    name: CodeParameterDeclarationExpression
+    type: Class
+  - uid: System.CodeDom.CodeParameterDeclarationExpressionCollection
+    name: CodeParameterDeclarationExpressionCollection
+    type: Class
+  - uid: System.CodeDom.CodePrimitiveExpression
+    name: CodePrimitiveExpression
+    type: Class
+  - uid: System.CodeDom.CodePropertyReferenceExpression
+    name: CodePropertyReferenceExpression
+    type: Class
+  - uid: System.CodeDom.CodePropertySetValueReferenceExpression
+    name: CodePropertySetValueReferenceExpression
+    type: Class
+  - uid: System.CodeDom.CodeRegionDirective
+    name: CodeRegionDirective
+    type: Class
+  - uid: System.CodeDom.CodeRegionMode
+    name: CodeRegionMode
+    type: Enum
+  - uid: System.CodeDom.CodeRemoveEventStatement
+    name: CodeRemoveEventStatement
+    type: Class
+  - uid: System.CodeDom.CodeSnippetCompileUnit
+    name: CodeSnippetCompileUnit
+    type: Class
+  - uid: System.CodeDom.CodeSnippetExpression
+    name: CodeSnippetExpression
+    type: Class
+  - uid: System.CodeDom.CodeSnippetStatement
+    name: CodeSnippetStatement
+    type: Class
+  - uid: System.CodeDom.CodeSnippetTypeMember
+    name: CodeSnippetTypeMember
+    type: Class
+  - uid: System.CodeDom.CodeStatement
+    name: CodeStatement
+    type: Class
+  - uid: System.CodeDom.CodeStatementCollection
+    name: CodeStatementCollection
+    type: Class
+  - uid: System.CodeDom.CodeThisReferenceExpression
+    name: CodeThisReferenceExpression
+    type: Class
+  - uid: System.CodeDom.CodeThrowExceptionStatement
+    name: CodeThrowExceptionStatement
+    type: Class
+  - uid: System.CodeDom.CodeTryCatchFinallyStatement
+    name: CodeTryCatchFinallyStatement
+    type: Class
+  - uid: System.CodeDom.CodeTypeConstructor
+    name: CodeTypeConstructor
+    type: Class
+  - uid: System.CodeDom.CodeTypeDeclaration
+    name: CodeTypeDeclaration
+    type: Class
+  - uid: System.CodeDom.CodeTypeDeclarationCollection
+    name: CodeTypeDeclarationCollection
+    type: Class
+  - uid: System.CodeDom.CodeTypeDelegate
+    name: CodeTypeDelegate
+    type: Class
+  - uid: System.CodeDom.CodeTypeMember
+    name: CodeTypeMember
+    type: Class
+  - uid: System.CodeDom.CodeTypeMemberCollection
+    name: CodeTypeMemberCollection
+    type: Class
+  - uid: System.CodeDom.CodeTypeOfExpression
+    name: CodeTypeOfExpression
+    type: Class
+  - uid: System.CodeDom.CodeTypeParameter
+    name: CodeTypeParameter
+    type: Class
+  - uid: System.CodeDom.CodeTypeParameterCollection
+    name: CodeTypeParameterCollection
+    type: Class
+  - uid: System.CodeDom.CodeTypeReference
+    name: CodeTypeReference
+    type: Class
+  - uid: System.CodeDom.CodeTypeReferenceCollection
+    name: CodeTypeReferenceCollection
+    type: Class
+  - uid: System.CodeDom.CodeTypeReferenceExpression
+    name: CodeTypeReferenceExpression
+    type: Class
+  - uid: System.CodeDom.CodeTypeReferenceOptions
+    name: CodeTypeReferenceOptions
+    type: Enum
+  - uid: System.CodeDom.CodeVariableDeclarationStatement
+    name: CodeVariableDeclarationStatement
+    type: Class
+  - uid: System.CodeDom.CodeVariableReferenceExpression
+    name: CodeVariableReferenceExpression
+    type: Class
+  - uid: System.CodeDom.FieldDirection
+    name: FieldDirection
+    type: Enum
+  - uid: System.CodeDom.MemberAttributes
+    name: MemberAttributes
+    type: Enum
+- uid: System.CodeDom.Compiler
+  name: System.CodeDom.Compiler
+  type: Namespace
+  items:
+  - uid: System.CodeDom.Compiler.CodeCompiler
+    name: CodeCompiler
+    type: Class
+  - uid: System.CodeDom.Compiler.CodeDomProvider
+    name: CodeDomProvider
+    type: Class
+  - uid: System.CodeDom.Compiler.CodeGenerator
+    name: CodeGenerator
+    type: Class
+  - uid: System.CodeDom.Compiler.CodeGeneratorOptions
+    name: CodeGeneratorOptions
+    type: Class
+  - uid: System.CodeDom.Compiler.CodeParser
+    name: CodeParser
+    type: Class
+  - uid: System.CodeDom.Compiler.CompilerError
+    name: CompilerError
+    type: Class
+  - uid: System.CodeDom.Compiler.CompilerErrorCollection
+    name: CompilerErrorCollection
+    type: Class
+  - uid: System.CodeDom.Compiler.CompilerInfo
+    name: CompilerInfo
+    type: Class
+  - uid: System.CodeDom.Compiler.CompilerParameters
+    name: CompilerParameters
+    type: Class
+  - uid: System.CodeDom.Compiler.CompilerResults
+    name: CompilerResults
+    type: Class
+  - uid: System.CodeDom.Compiler.Executor
+    name: Executor
+    type: Class
+  - uid: System.CodeDom.Compiler.GeneratorSupport
+    name: GeneratorSupport
+    type: Enum
+  - uid: System.CodeDom.Compiler.ICodeCompiler
+    name: ICodeCompiler
+    type: Interface
+  - uid: System.CodeDom.Compiler.ICodeGenerator
+    name: ICodeGenerator
+    type: Interface
+  - uid: System.CodeDom.Compiler.ICodeParser
+    name: ICodeParser
+    type: Interface
+  - uid: System.CodeDom.Compiler.LanguageOptions
+    name: LanguageOptions
+    type: Enum
+  - uid: System.CodeDom.Compiler.TempFileCollection
+    name: TempFileCollection
+    type: Class
+- uid: System.Management
+  name: System.Management
+  type: Namespace
+  items:
+  - uid: System.Management.AuthenticationLevel
+    name: AuthenticationLevel
+    type: Enum
+  - uid: System.Management.CimType
+    name: CimType
+    type: Enum
+  - uid: System.Management.CodeLanguage
+    name: CodeLanguage
+    type: Enum
+  - uid: System.Management.ComparisonSettings
+    name: ComparisonSettings
+    type: Enum
+  - uid: System.Management.CompletedEventArgs
+    name: CompletedEventArgs
+    type: Class
+  - uid: System.Management.CompletedEventHandler
+    name: CompletedEventHandler
+    type: Delegate
+  - uid: System.Management.ConnectionOptions
+    name: ConnectionOptions
+    type: Class
+  - uid: System.Management.DeleteOptions
+    name: DeleteOptions
+    type: Class
+  - uid: System.Management.EnumerationOptions
+    name: EnumerationOptions
+    type: Class
+  - uid: System.Management.EventArrivedEventArgs
+    name: EventArrivedEventArgs
+    type: Class
+  - uid: System.Management.EventArrivedEventHandler
+    name: EventArrivedEventHandler
+    type: Delegate
+  - uid: System.Management.EventQuery
+    name: EventQuery
+    type: Class
+  - uid: System.Management.EventWatcherOptions
+    name: EventWatcherOptions
+    type: Class
+  - uid: System.Management.ImpersonationLevel
+    name: ImpersonationLevel
+    type: Enum
+  - uid: System.Management.InvokeMethodOptions
+    name: InvokeMethodOptions
+    type: Class
+  - uid: System.Management.ManagementBaseObject
+    name: ManagementBaseObject
+    type: Class
+  - uid: System.Management.ManagementClass
+    name: ManagementClass
+    type: Class
+  - uid: System.Management.ManagementDateTimeConverter
+    name: ManagementDateTimeConverter
+    type: Class
+  - uid: System.Management.ManagementEventArgs
+    name: ManagementEventArgs
+    type: Class
+  - uid: System.Management.ManagementEventWatcher
+    name: ManagementEventWatcher
+    type: Class
+  - uid: System.Management.ManagementException
+    name: ManagementException
+    type: Class
+  - uid: System.Management.ManagementNamedValueCollection
+    name: ManagementNamedValueCollection
+    type: Class
+  - uid: System.Management.ManagementObject
+    name: ManagementObject
+    type: Class
+  - uid: System.Management.ManagementObjectCollection
+    name: ManagementObjectCollection
+    type: Class
+  - uid: System.Management.ManagementObjectCollection.ManagementObjectEnumerator
+    name: ManagementObjectCollection.ManagementObjectEnumerator
+    type: Class
+  - uid: System.Management.ManagementObjectSearcher
+    name: ManagementObjectSearcher
+    type: Class
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    type: Class
+  - uid: System.Management.ManagementOptions
+    name: ManagementOptions
+    type: Class
+  - uid: System.Management.ManagementPath
+    name: ManagementPath
+    type: Class
+  - uid: System.Management.ManagementQuery
+    name: ManagementQuery
+    type: Class
+  - uid: System.Management.ManagementScope
+    name: ManagementScope
+    type: Class
+  - uid: System.Management.ManagementStatus
+    name: ManagementStatus
+    type: Enum
+  - uid: System.Management.MethodData
+    name: MethodData
+    type: Class
+  - uid: System.Management.MethodDataCollection
+    name: MethodDataCollection
+    type: Class
+  - uid: System.Management.MethodDataCollection.MethodDataEnumerator
+    name: MethodDataCollection.MethodDataEnumerator
+    type: Class
+  - uid: System.Management.ObjectGetOptions
+    name: ObjectGetOptions
+    type: Class
+  - uid: System.Management.ObjectPutEventArgs
+    name: ObjectPutEventArgs
+    type: Class
+  - uid: System.Management.ObjectPutEventHandler
+    name: ObjectPutEventHandler
+    type: Delegate
+  - uid: System.Management.ObjectQuery
+    name: ObjectQuery
+    type: Class
+  - uid: System.Management.ObjectReadyEventArgs
+    name: ObjectReadyEventArgs
+    type: Class
+  - uid: System.Management.ObjectReadyEventHandler
+    name: ObjectReadyEventHandler
+    type: Delegate
+  - uid: System.Management.ProgressEventArgs
+    name: ProgressEventArgs
+    type: Class
+  - uid: System.Management.ProgressEventHandler
+    name: ProgressEventHandler
+    type: Delegate
+  - uid: System.Management.PropertyData
+    name: PropertyData
+    type: Class
+  - uid: System.Management.PropertyDataCollection
+    name: PropertyDataCollection
+    type: Class
+  - uid: System.Management.PropertyDataCollection.PropertyDataEnumerator
+    name: PropertyDataCollection.PropertyDataEnumerator
+    type: Class
+  - uid: System.Management.PutOptions
+    name: PutOptions
+    type: Class
+  - uid: System.Management.PutType
+    name: PutType
+    type: Enum
+  - uid: System.Management.QualifierData
+    name: QualifierData
+    type: Class
+  - uid: System.Management.QualifierDataCollection
+    name: QualifierDataCollection
+    type: Class
+  - uid: System.Management.QualifierDataCollection.QualifierDataEnumerator
+    name: QualifierDataCollection.QualifierDataEnumerator
+    type: Class
+  - uid: System.Management.RelatedObjectQuery
+    name: RelatedObjectQuery
+    type: Class
+  - uid: System.Management.RelationshipQuery
+    name: RelationshipQuery
+    type: Class
+  - uid: System.Management.SelectQuery
+    name: SelectQuery
+    type: Class
+  - uid: System.Management.StoppedEventArgs
+    name: StoppedEventArgs
+    type: Class
+  - uid: System.Management.StoppedEventHandler
+    name: StoppedEventHandler
+    type: Delegate
+  - uid: System.Management.TextFormat
+    name: TextFormat
+    type: Enum
+  - uid: System.Management.WqlEventQuery
+    name: WqlEventQuery
+    type: Class
+  - uid: System.Management.WqlObjectQuery
+    name: WqlObjectQuery
     type: Class
 memberLayout: SamePage

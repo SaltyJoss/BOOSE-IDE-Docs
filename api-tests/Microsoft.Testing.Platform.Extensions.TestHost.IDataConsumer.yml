@@ -1,0 +1,433 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer
+  commentId: T:Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer
+  id: IDataConsumer
+  parent: Microsoft.Testing.Platform.Extensions.TestHost
+  children:
+  - Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.ConsumeAsync(Microsoft.Testing.Platform.Extensions.Messages.IDataProducer,Microsoft.Testing.Platform.Extensions.Messages.IData,System.Threading.CancellationToken)
+  - Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.DataTypesConsumed
+  langs:
+  - csharp
+  - vb
+  name: IDataConsumer
+  nameWithType: IDataConsumer
+  fullName: Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer
+  type: Interface
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.TestHost
+  syntax:
+    content: 'public interface IDataConsumer : ITestHostExtension, IExtension'
+    content.vb: Public Interface IDataConsumer Inherits ITestHostExtension, IExtension
+  inheritedMembers:
+  - Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync
+  - Microsoft.Testing.Platform.Extensions.IExtension.Uid
+  - Microsoft.Testing.Platform.Extensions.IExtension.Version
+  - Microsoft.Testing.Platform.Extensions.IExtension.DisplayName
+  - Microsoft.Testing.Platform.Extensions.IExtension.Description
+- uid: Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.ConsumeAsync(Microsoft.Testing.Platform.Extensions.Messages.IDataProducer,Microsoft.Testing.Platform.Extensions.Messages.IData,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.ConsumeAsync(Microsoft.Testing.Platform.Extensions.Messages.IDataProducer,Microsoft.Testing.Platform.Extensions.Messages.IData,System.Threading.CancellationToken)
+  id: ConsumeAsync(Microsoft.Testing.Platform.Extensions.Messages.IDataProducer,Microsoft.Testing.Platform.Extensions.Messages.IData,System.Threading.CancellationToken)
+  parent: Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer
+  langs:
+  - csharp
+  - vb
+  name: ConsumeAsync(IDataProducer, IData, CancellationToken)
+  nameWithType: IDataConsumer.ConsumeAsync(IDataProducer, IData, CancellationToken)
+  fullName: Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.ConsumeAsync(Microsoft.Testing.Platform.Extensions.Messages.IDataProducer, Microsoft.Testing.Platform.Extensions.Messages.IData, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.TestHost
+  syntax:
+    content: Task ConsumeAsync(IDataProducer dataProducer, IData value, CancellationToken cancellationToken)
+    parameters:
+    - id: dataProducer
+      type: Microsoft.Testing.Platform.Extensions.Messages.IDataProducer
+    - id: value
+      type: Microsoft.Testing.Platform.Extensions.Messages.IData
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ConsumeAsync(dataProducer As IDataProducer, value As IData, cancellationToken As CancellationToken) As Task
+  overload: Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.ConsumeAsync*
+- uid: Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.DataTypesConsumed
+  commentId: P:Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.DataTypesConsumed
+  id: DataTypesConsumed
+  parent: Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer
+  langs:
+  - csharp
+  - vb
+  name: DataTypesConsumed
+  nameWithType: IDataConsumer.DataTypesConsumed
+  fullName: Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.DataTypesConsumed
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.TestHost
+  syntax:
+    content: Type[] DataTypesConsumed { get; }
+    parameters: []
+    return:
+      type: System.Type[]
+    content.vb: ReadOnly Property DataTypesConsumed As Type()
+  overload: Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.DataTypesConsumed*
+references:
+- uid: Microsoft.Testing.Platform.Extensions.TestHost
+  commentId: N:Microsoft.Testing.Platform.Extensions.TestHost
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Extensions.TestHost
+  nameWithType: Microsoft.Testing.Platform.Extensions.TestHost
+  fullName: Microsoft.Testing.Platform.Extensions.TestHost
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.TestHost
+    name: TestHost
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.TestHost.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.TestHost
+    name: TestHost
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.TestHost.html
+- uid: Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync
+  commentId: M:Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync
+  parent: Microsoft.Testing.Platform.Extensions.IExtension
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_IsEnabledAsync
+  name: IsEnabledAsync()
+  nameWithType: IExtension.IsEnabledAsync()
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync()
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync
+    name: IsEnabledAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_IsEnabledAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync
+    name: IsEnabledAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_IsEnabledAsync
+  - name: (
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.IExtension.Uid
+  commentId: P:Microsoft.Testing.Platform.Extensions.IExtension.Uid
+  parent: Microsoft.Testing.Platform.Extensions.IExtension
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_Uid
+  name: Uid
+  nameWithType: IExtension.Uid
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension.Uid
+- uid: Microsoft.Testing.Platform.Extensions.IExtension.Version
+  commentId: P:Microsoft.Testing.Platform.Extensions.IExtension.Version
+  parent: Microsoft.Testing.Platform.Extensions.IExtension
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_Version
+  name: Version
+  nameWithType: IExtension.Version
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension.Version
+- uid: Microsoft.Testing.Platform.Extensions.IExtension.DisplayName
+  commentId: P:Microsoft.Testing.Platform.Extensions.IExtension.DisplayName
+  parent: Microsoft.Testing.Platform.Extensions.IExtension
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_DisplayName
+  name: DisplayName
+  nameWithType: IExtension.DisplayName
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension.DisplayName
+- uid: Microsoft.Testing.Platform.Extensions.IExtension.Description
+  commentId: P:Microsoft.Testing.Platform.Extensions.IExtension.Description
+  parent: Microsoft.Testing.Platform.Extensions.IExtension
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_Description
+  name: Description
+  nameWithType: IExtension.Description
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension.Description
+- uid: Microsoft.Testing.Platform.Extensions.IExtension
+  commentId: T:Microsoft.Testing.Platform.Extensions.IExtension
+  parent: Microsoft.Testing.Platform.Extensions
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html
+  name: IExtension
+  nameWithType: IExtension
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension
+- uid: Microsoft.Testing.Platform.Extensions
+  commentId: N:Microsoft.Testing.Platform.Extensions
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Extensions
+  nameWithType: Microsoft.Testing.Platform.Extensions
+  fullName: Microsoft.Testing.Platform.Extensions
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+- uid: Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.ConsumeAsync*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.ConsumeAsync
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.html#Microsoft_Testing_Platform_Extensions_TestHost_IDataConsumer_ConsumeAsync_Microsoft_Testing_Platform_Extensions_Messages_IDataProducer_Microsoft_Testing_Platform_Extensions_Messages_IData_System_Threading_CancellationToken_
+  name: ConsumeAsync
+  nameWithType: IDataConsumer.ConsumeAsync
+  fullName: Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.ConsumeAsync
+- uid: Microsoft.Testing.Platform.Extensions.Messages.IDataProducer
+  commentId: T:Microsoft.Testing.Platform.Extensions.Messages.IDataProducer
+  parent: Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.IDataProducer.html
+  name: IDataProducer
+  nameWithType: IDataProducer
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.IDataProducer
+- uid: Microsoft.Testing.Platform.Extensions.Messages.IData
+  commentId: T:Microsoft.Testing.Platform.Extensions.Messages.IData
+  parent: Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.IData.html
+  name: IData
+  nameWithType: IData
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.IData
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Testing.Platform.Extensions.Messages
+  commentId: N:Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Extensions.Messages
+  nameWithType: Microsoft.Testing.Platform.Extensions.Messages
+  fullName: Microsoft.Testing.Platform.Extensions.Messages
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.Messages
+    name: Messages
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.Messages
+    name: Messages
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.DataTypesConsumed*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.DataTypesConsumed
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.html#Microsoft_Testing_Platform_Extensions_TestHost_IDataConsumer_DataTypesConsumed
+  name: DataTypesConsumed
+  nameWithType: IDataConsumer.DataTypesConsumed
+  fullName: Microsoft.Testing.Platform.Extensions.TestHost.IDataConsumer.DataTypesConsumed
+- uid: System.Type[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: (
+  - name: )

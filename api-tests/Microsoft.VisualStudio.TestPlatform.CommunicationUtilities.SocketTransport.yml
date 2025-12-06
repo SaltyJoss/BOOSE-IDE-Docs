@@ -1,0 +1,697 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport
+  id: SocketTransport
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  children:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.#ctor(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestHostConnectionInfo)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.Dispose
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.Initialize
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.WaitForConnection(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: SocketTransport
+  nameWithType: SocketTransport
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport
+  type: Class
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  syntax:
+    content: 'public sealed class SocketTransport : ITransport, IDisposable'
+    content.vb: Public NotInheritable Class SocketTransport Implements ITransport, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.#ctor(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestHostConnectionInfo)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.#ctor(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestHostConnectionInfo)
+  id: '#ctor(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestHostConnectionInfo)'
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport
+  langs:
+  - csharp
+  - vb
+  name: SocketTransport(ICommunicationManager, TestHostConnectionInfo)
+  nameWithType: SocketTransport.SocketTransport(ICommunicationManager, TestHostConnectionInfo)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.SocketTransport(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager, Microsoft.VisualStudio.TestPlatform.ObjectModel.TestHostConnectionInfo)
+  type: Constructor
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  syntax:
+    content: public SocketTransport(ICommunicationManager communicationManager, TestHostConnectionInfo connectionInfo)
+    parameters:
+    - id: communicationManager
+      type: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+    - id: connectionInfo
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestHostConnectionInfo
+    content.vb: Public Sub New(communicationManager As ICommunicationManager, connectionInfo As TestHostConnectionInfo)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.#ctor*
+  nameWithType.vb: SocketTransport.New(ICommunicationManager, TestHostConnectionInfo)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.New(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager, Microsoft.VisualStudio.TestPlatform.ObjectModel.TestHostConnectionInfo)
+  name.vb: New(ICommunicationManager, TestHostConnectionInfo)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.Initialize
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.Initialize
+  id: Initialize
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: SocketTransport.Initialize()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.Initialize()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public IPEndPoint Initialize()
+    return:
+      type: System.Net.IPEndPoint
+    content.vb: Public Function Initialize() As IPEndPoint
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.Initialize*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.Initialize
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.WaitForConnection(System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.WaitForConnection(System.Int32)
+  id: WaitForConnection(System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport
+  langs:
+  - csharp
+  - vb
+  name: WaitForConnection(int)
+  nameWithType: SocketTransport.WaitForConnection(int)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.WaitForConnection(int)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public bool WaitForConnection(int connectionTimeout)
+    parameters:
+    - id: connectionTimeout
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function WaitForConnection(connectionTimeout As Integer) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.WaitForConnection*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.WaitForConnection(System.Int32)
+  nameWithType.vb: SocketTransport.WaitForConnection(Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.WaitForConnection(Integer)
+  name.vb: WaitForConnection(Integer)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.Dispose
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.Dispose
+  id: Dispose
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: SocketTransport.Dispose()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.Dispose()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.html
+  name: ITransport
+  nameWithType: ITransport
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketTransport__ctor_Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestHostConnectionInfo_
+  name: SocketTransport
+  nameWithType: SocketTransport.SocketTransport
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.SocketTransport
+  nameWithType.vb: SocketTransport.New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.New
+  name.vb: New
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html
+  name: ICommunicationManager
+  nameWithType: ICommunicationManager
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestHostConnectionInfo
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestHostConnectionInfo
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestHostConnectionInfo.html
+  name: TestHostConnectionInfo
+  nameWithType: TestHostConnectionInfo
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestHostConnectionInfo
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.Initialize*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.Initialize
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketTransport_Initialize
+  name: Initialize
+  nameWithType: SocketTransport.Initialize
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.Initialize
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.Initialize
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.Initialize
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITransport_Initialize
+  name: Initialize()
+  nameWithType: ITransport.Initialize()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.Initialize()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.Initialize
+    name: Initialize
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITransport_Initialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.Initialize
+    name: Initialize
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITransport_Initialize
+  - name: (
+  - name: )
+- uid: System.Net.IPEndPoint
+  commentId: T:System.Net.IPEndPoint
+  parent: System.Net
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.ipendpoint
+  name: IPEndPoint
+  nameWithType: IPEndPoint
+  fullName: System.Net.IPEndPoint
+- uid: System.Net
+  commentId: N:System.Net
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net
+  nameWithType: System.Net
+  fullName: System.Net
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.WaitForConnection*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.WaitForConnection
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketTransport_WaitForConnection_System_Int32_
+  name: WaitForConnection
+  nameWithType: SocketTransport.WaitForConnection
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.WaitForConnection
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.WaitForConnection(System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.WaitForConnection(System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITransport_WaitForConnection_System_Int32_
+  name: WaitForConnection(int)
+  nameWithType: ITransport.WaitForConnection(int)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.WaitForConnection(int)
+  nameWithType.vb: ITransport.WaitForConnection(Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.WaitForConnection(Integer)
+  name.vb: WaitForConnection(Integer)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.WaitForConnection(System.Int32)
+    name: WaitForConnection
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITransport_WaitForConnection_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.WaitForConnection(System.Int32)
+    name: WaitForConnection
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITransport.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITransport_WaitForConnection_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.Dispose*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.Dispose
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketTransport_Dispose
+  name: Dispose
+  nameWithType: SocketTransport.Dispose
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketTransport.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

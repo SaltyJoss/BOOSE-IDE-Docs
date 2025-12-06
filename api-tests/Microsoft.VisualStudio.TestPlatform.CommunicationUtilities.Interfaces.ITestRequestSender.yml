@@ -1,0 +1,841 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  id: ITestRequestSender
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  children:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.CheckVersionWithTestHost
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.Close
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.EndSession
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeCommunication
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeDiscovery(System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeExecution(System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.OnClientProcessExit(System.String)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendDiscoveryAbort
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendTestRunAbort
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendTestRunCancel
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.StartTestRun(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithSources,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.StartTestRun(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithTests,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.WaitForRequestHandlerConnection(System.Int32,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ITestRequestSender
+  nameWithType: ITestRequestSender
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  type: Interface
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: 'public interface ITestRequestSender : IDisposable'
+    content.vb: Public Interface ITestRequestSender Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeCommunication
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeCommunication
+  id: InitializeCommunication
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  langs:
+  - csharp
+  - vb
+  name: InitializeCommunication()
+  nameWithType: ITestRequestSender.InitializeCommunication()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeCommunication()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: int InitializeCommunication()
+    return:
+      type: System.Int32
+    content.vb: Function InitializeCommunication() As Integer
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeCommunication*
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.CheckVersionWithTestHost
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.CheckVersionWithTestHost
+  id: CheckVersionWithTestHost
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  langs:
+  - csharp
+  - vb
+  name: CheckVersionWithTestHost()
+  nameWithType: ITestRequestSender.CheckVersionWithTestHost()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.CheckVersionWithTestHost()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: void CheckVersionWithTestHost()
+    content.vb: Sub CheckVersionWithTestHost()
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.CheckVersionWithTestHost*
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.WaitForRequestHandlerConnection(System.Int32,System.Threading.CancellationToken)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.WaitForRequestHandlerConnection(System.Int32,System.Threading.CancellationToken)
+  id: WaitForRequestHandlerConnection(System.Int32,System.Threading.CancellationToken)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  langs:
+  - csharp
+  - vb
+  name: WaitForRequestHandlerConnection(int, CancellationToken)
+  nameWithType: ITestRequestSender.WaitForRequestHandlerConnection(int, CancellationToken)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.WaitForRequestHandlerConnection(int, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: bool WaitForRequestHandlerConnection(int connectionTimeout, CancellationToken cancellationToken)
+    parameters:
+    - id: connectionTimeout
+      type: System.Int32
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Boolean
+    content.vb: Function WaitForRequestHandlerConnection(connectionTimeout As Integer, cancellationToken As CancellationToken) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.WaitForRequestHandlerConnection*
+  nameWithType.vb: ITestRequestSender.WaitForRequestHandlerConnection(Integer, CancellationToken)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.WaitForRequestHandlerConnection(Integer, System.Threading.CancellationToken)
+  name.vb: WaitForRequestHandlerConnection(Integer, CancellationToken)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.Close
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.Close
+  id: Close
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: ITestRequestSender.Close()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.Close()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: void Close()
+    content.vb: Sub Close()
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.Close*
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeDiscovery(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeDiscovery(System.Collections.Generic.IEnumerable{System.String})
+  id: InitializeDiscovery(System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  langs:
+  - csharp
+  - vb
+  name: InitializeDiscovery(IEnumerable<string>)
+  nameWithType: ITestRequestSender.InitializeDiscovery(IEnumerable<string>)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeDiscovery(System.Collections.Generic.IEnumerable<string>)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: void InitializeDiscovery(IEnumerable<string> pathToAdditionalExtensions)
+    parameters:
+    - id: pathToAdditionalExtensions
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Sub InitializeDiscovery(pathToAdditionalExtensions As IEnumerable(Of String))
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeDiscovery*
+  nameWithType.vb: ITestRequestSender.InitializeDiscovery(IEnumerable(Of String))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeDiscovery(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: InitializeDiscovery(IEnumerable(Of String))
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeExecution(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeExecution(System.Collections.Generic.IEnumerable{System.String})
+  id: InitializeExecution(System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  langs:
+  - csharp
+  - vb
+  name: InitializeExecution(IEnumerable<string>)
+  nameWithType: ITestRequestSender.InitializeExecution(IEnumerable<string>)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeExecution(System.Collections.Generic.IEnumerable<string>)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: void InitializeExecution(IEnumerable<string> pathToAdditionalExtensions)
+    parameters:
+    - id: pathToAdditionalExtensions
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Sub InitializeExecution(pathToAdditionalExtensions As IEnumerable(Of String))
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeExecution*
+  nameWithType.vb: ITestRequestSender.InitializeExecution(IEnumerable(Of String))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeExecution(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: InitializeExecution(IEnumerable(Of String))
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  id: DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  langs:
+  - csharp
+  - vb
+  name: DiscoverTests(DiscoveryCriteria, ITestDiscoveryEventsHandler2)
+  nameWithType: ITestRequestSender.DiscoverTests(DiscoveryCriteria, ITestDiscoveryEventsHandler2)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: void DiscoverTests(DiscoveryCriteria discoveryCriteria, ITestDiscoveryEventsHandler2 discoveryEventsHandler)
+    parameters:
+    - id: discoveryCriteria
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+    - id: discoveryEventsHandler
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    content.vb: Sub DiscoverTests(discoveryCriteria As DiscoveryCriteria, discoveryEventsHandler As ITestDiscoveryEventsHandler2)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.DiscoverTests*
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.StartTestRun(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithSources,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.StartTestRun(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithSources,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  id: StartTestRun(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithSources,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  langs:
+  - csharp
+  - vb
+  name: StartTestRun(TestRunCriteriaWithSources, IInternalTestRunEventsHandler)
+  nameWithType: ITestRequestSender.StartTestRun(TestRunCriteriaWithSources, IInternalTestRunEventsHandler)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.StartTestRun(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithSources, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: void StartTestRun(TestRunCriteriaWithSources runCriteria, IInternalTestRunEventsHandler eventHandler)
+    parameters:
+    - id: runCriteria
+      type: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithSources
+    - id: eventHandler
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler
+    content.vb: Sub StartTestRun(runCriteria As TestRunCriteriaWithSources, eventHandler As IInternalTestRunEventsHandler)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.StartTestRun*
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.StartTestRun(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithTests,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.StartTestRun(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithTests,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  id: StartTestRun(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithTests,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  langs:
+  - csharp
+  - vb
+  name: StartTestRun(TestRunCriteriaWithTests, IInternalTestRunEventsHandler)
+  nameWithType: ITestRequestSender.StartTestRun(TestRunCriteriaWithTests, IInternalTestRunEventsHandler)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.StartTestRun(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithTests, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: void StartTestRun(TestRunCriteriaWithTests runCriteria, IInternalTestRunEventsHandler eventHandler)
+    parameters:
+    - id: runCriteria
+      type: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithTests
+    - id: eventHandler
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler
+    content.vb: Sub StartTestRun(runCriteria As TestRunCriteriaWithTests, eventHandler As IInternalTestRunEventsHandler)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.StartTestRun*
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.EndSession
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.EndSession
+  id: EndSession
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  langs:
+  - csharp
+  - vb
+  name: EndSession()
+  nameWithType: ITestRequestSender.EndSession()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.EndSession()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: void EndSession()
+    content.vb: Sub EndSession()
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.EndSession*
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendTestRunCancel
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendTestRunCancel
+  id: SendTestRunCancel
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  langs:
+  - csharp
+  - vb
+  name: SendTestRunCancel()
+  nameWithType: ITestRequestSender.SendTestRunCancel()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendTestRunCancel()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: void SendTestRunCancel()
+    content.vb: Sub SendTestRunCancel()
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendTestRunCancel*
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendTestRunAbort
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendTestRunAbort
+  id: SendTestRunAbort
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  langs:
+  - csharp
+  - vb
+  name: SendTestRunAbort()
+  nameWithType: ITestRequestSender.SendTestRunAbort()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendTestRunAbort()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: void SendTestRunAbort()
+    content.vb: Sub SendTestRunAbort()
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendTestRunAbort*
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendDiscoveryAbort
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendDiscoveryAbort
+  id: SendDiscoveryAbort
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  langs:
+  - csharp
+  - vb
+  name: SendDiscoveryAbort()
+  nameWithType: ITestRequestSender.SendDiscoveryAbort()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendDiscoveryAbort()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: void SendDiscoveryAbort()
+    content.vb: Sub SendDiscoveryAbort()
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendDiscoveryAbort*
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.OnClientProcessExit(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.OnClientProcessExit(System.String)
+  id: OnClientProcessExit(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  langs:
+  - csharp
+  - vb
+  name: OnClientProcessExit(string)
+  nameWithType: ITestRequestSender.OnClientProcessExit(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.OnClientProcessExit(string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: void OnClientProcessExit(string stdError)
+    parameters:
+    - id: stdError
+      type: System.String
+    content.vb: Sub OnClientProcessExit(stdError As String)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.OnClientProcessExit*
+  nameWithType.vb: ITestRequestSender.OnClientProcessExit(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.OnClientProcessExit(String)
+  name.vb: OnClientProcessExit(String)
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeCommunication*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeCommunication
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITestRequestSender_InitializeCommunication
+  name: InitializeCommunication
+  nameWithType: ITestRequestSender.InitializeCommunication
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeCommunication
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.CheckVersionWithTestHost*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.CheckVersionWithTestHost
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITestRequestSender_CheckVersionWithTestHost
+  name: CheckVersionWithTestHost
+  nameWithType: ITestRequestSender.CheckVersionWithTestHost
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.CheckVersionWithTestHost
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.WaitForRequestHandlerConnection*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.WaitForRequestHandlerConnection
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITestRequestSender_WaitForRequestHandlerConnection_System_Int32_System_Threading_CancellationToken_
+  name: WaitForRequestHandlerConnection
+  nameWithType: ITestRequestSender.WaitForRequestHandlerConnection
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.WaitForRequestHandlerConnection
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.Close*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.Close
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITestRequestSender_Close
+  name: Close
+  nameWithType: ITestRequestSender.Close
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.Close
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeDiscovery*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeDiscovery
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITestRequestSender_InitializeDiscovery_System_Collections_Generic_IEnumerable_System_String__
+  name: InitializeDiscovery
+  nameWithType: ITestRequestSender.InitializeDiscovery
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeDiscovery
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeExecution*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeExecution
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITestRequestSender_InitializeExecution_System_Collections_Generic_IEnumerable_System_String__
+  name: InitializeExecution
+  nameWithType: ITestRequestSender.InitializeExecution
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.InitializeExecution
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.DiscoverTests*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.DiscoverTests
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITestRequestSender_DiscoverTests_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_
+  name: DiscoverTests
+  nameWithType: ITestRequestSender.DiscoverTests
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.DiscoverTests
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria.html
+  name: DiscoveryCriteria
+  nameWithType: DiscoveryCriteria
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.html
+  name: ITestDiscoveryEventsHandler2
+  nameWithType: ITestDiscoveryEventsHandler2
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.StartTestRun*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.StartTestRun
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITestRequestSender_StartTestRun_Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_ObjectModel_TestRunCriteriaWithSources_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IInternalTestRunEventsHandler_
+  name: StartTestRun
+  nameWithType: ITestRequestSender.StartTestRun
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.StartTestRun
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithSources
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithSources
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithSources.html
+  name: TestRunCriteriaWithSources
+  nameWithType: TestRunCriteriaWithSources
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithSources
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler.html
+  name: IInternalTestRunEventsHandler
+  nameWithType: IInternalTestRunEventsHandler
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.html
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithTests
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithTests
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithTests.html
+  name: TestRunCriteriaWithTests
+  nameWithType: TestRunCriteriaWithTests
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithTests
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.EndSession*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.EndSession
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITestRequestSender_EndSession
+  name: EndSession
+  nameWithType: ITestRequestSender.EndSession
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.EndSession
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendTestRunCancel*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendTestRunCancel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITestRequestSender_SendTestRunCancel
+  name: SendTestRunCancel
+  nameWithType: ITestRequestSender.SendTestRunCancel
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendTestRunCancel
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendTestRunAbort*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendTestRunAbort
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITestRequestSender_SendTestRunAbort
+  name: SendTestRunAbort
+  nameWithType: ITestRequestSender.SendTestRunAbort
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendTestRunAbort
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendDiscoveryAbort*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendDiscoveryAbort
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITestRequestSender_SendDiscoveryAbort
+  name: SendDiscoveryAbort
+  nameWithType: ITestRequestSender.SendDiscoveryAbort
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.SendDiscoveryAbort
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.OnClientProcessExit*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.OnClientProcessExit
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITestRequestSender_OnClientProcessExit_System_String_
+  name: OnClientProcessExit
+  nameWithType: ITestRequestSender.OnClientProcessExit
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.OnClientProcessExit
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

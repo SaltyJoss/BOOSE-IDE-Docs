@@ -1,0 +1,378 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler
+  commentId: T:Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler
+  id: ITestHostProcessLifetimeHandler
+  parent: Microsoft.Testing.Platform.Extensions.TestHostControllers
+  children:
+  - Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.BeforeTestHostProcessStartAsync(System.Threading.CancellationToken)
+  - Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.OnTestHostProcessExitedAsync(Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessInformation,System.Threading.CancellationToken)
+  - Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.OnTestHostProcessStartedAsync(Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessInformation,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ITestHostProcessLifetimeHandler
+  nameWithType: ITestHostProcessLifetimeHandler
+  fullName: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler
+  type: Interface
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.TestHostControllers
+  syntax:
+    content: 'public interface ITestHostProcessLifetimeHandler : ITestHostControllersExtension, IExtension'
+    content.vb: Public Interface ITestHostProcessLifetimeHandler Inherits ITestHostControllersExtension, IExtension
+  inheritedMembers:
+  - Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync
+  - Microsoft.Testing.Platform.Extensions.IExtension.Uid
+  - Microsoft.Testing.Platform.Extensions.IExtension.Version
+  - Microsoft.Testing.Platform.Extensions.IExtension.DisplayName
+  - Microsoft.Testing.Platform.Extensions.IExtension.Description
+- uid: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.BeforeTestHostProcessStartAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.BeforeTestHostProcessStartAsync(System.Threading.CancellationToken)
+  id: BeforeTestHostProcessStartAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler
+  langs:
+  - csharp
+  - vb
+  name: BeforeTestHostProcessStartAsync(CancellationToken)
+  nameWithType: ITestHostProcessLifetimeHandler.BeforeTestHostProcessStartAsync(CancellationToken)
+  fullName: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.BeforeTestHostProcessStartAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.TestHostControllers
+  syntax:
+    content: Task BeforeTestHostProcessStartAsync(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function BeforeTestHostProcessStartAsync(cancellationToken As CancellationToken) As Task
+  overload: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.BeforeTestHostProcessStartAsync*
+- uid: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.OnTestHostProcessStartedAsync(Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessInformation,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.OnTestHostProcessStartedAsync(Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessInformation,System.Threading.CancellationToken)
+  id: OnTestHostProcessStartedAsync(Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessInformation,System.Threading.CancellationToken)
+  parent: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler
+  langs:
+  - csharp
+  - vb
+  name: OnTestHostProcessStartedAsync(ITestHostProcessInformation, CancellationToken)
+  nameWithType: ITestHostProcessLifetimeHandler.OnTestHostProcessStartedAsync(ITestHostProcessInformation, CancellationToken)
+  fullName: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.OnTestHostProcessStartedAsync(Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessInformation, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.TestHostControllers
+  syntax:
+    content: Task OnTestHostProcessStartedAsync(ITestHostProcessInformation testHostProcessInformation, CancellationToken cancellation)
+    parameters:
+    - id: testHostProcessInformation
+      type: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessInformation
+    - id: cancellation
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function OnTestHostProcessStartedAsync(testHostProcessInformation As ITestHostProcessInformation, cancellation As CancellationToken) As Task
+  overload: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.OnTestHostProcessStartedAsync*
+- uid: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.OnTestHostProcessExitedAsync(Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessInformation,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.OnTestHostProcessExitedAsync(Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessInformation,System.Threading.CancellationToken)
+  id: OnTestHostProcessExitedAsync(Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessInformation,System.Threading.CancellationToken)
+  parent: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler
+  langs:
+  - csharp
+  - vb
+  name: OnTestHostProcessExitedAsync(ITestHostProcessInformation, CancellationToken)
+  nameWithType: ITestHostProcessLifetimeHandler.OnTestHostProcessExitedAsync(ITestHostProcessInformation, CancellationToken)
+  fullName: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.OnTestHostProcessExitedAsync(Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessInformation, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.TestHostControllers
+  syntax:
+    content: Task OnTestHostProcessExitedAsync(ITestHostProcessInformation testHostProcessInformation, CancellationToken cancellation)
+    parameters:
+    - id: testHostProcessInformation
+      type: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessInformation
+    - id: cancellation
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function OnTestHostProcessExitedAsync(testHostProcessInformation As ITestHostProcessInformation, cancellation As CancellationToken) As Task
+  overload: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.OnTestHostProcessExitedAsync*
+references:
+- uid: Microsoft.Testing.Platform.Extensions.TestHostControllers
+  commentId: N:Microsoft.Testing.Platform.Extensions.TestHostControllers
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Extensions.TestHostControllers
+  nameWithType: Microsoft.Testing.Platform.Extensions.TestHostControllers
+  fullName: Microsoft.Testing.Platform.Extensions.TestHostControllers
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.TestHostControllers
+    name: TestHostControllers
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.TestHostControllers.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.TestHostControllers
+    name: TestHostControllers
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.TestHostControllers.html
+- uid: Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync
+  commentId: M:Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync
+  parent: Microsoft.Testing.Platform.Extensions.IExtension
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_IsEnabledAsync
+  name: IsEnabledAsync()
+  nameWithType: IExtension.IsEnabledAsync()
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync()
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync
+    name: IsEnabledAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_IsEnabledAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Extensions.IExtension.IsEnabledAsync
+    name: IsEnabledAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_IsEnabledAsync
+  - name: (
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.IExtension.Uid
+  commentId: P:Microsoft.Testing.Platform.Extensions.IExtension.Uid
+  parent: Microsoft.Testing.Platform.Extensions.IExtension
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_Uid
+  name: Uid
+  nameWithType: IExtension.Uid
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension.Uid
+- uid: Microsoft.Testing.Platform.Extensions.IExtension.Version
+  commentId: P:Microsoft.Testing.Platform.Extensions.IExtension.Version
+  parent: Microsoft.Testing.Platform.Extensions.IExtension
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_Version
+  name: Version
+  nameWithType: IExtension.Version
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension.Version
+- uid: Microsoft.Testing.Platform.Extensions.IExtension.DisplayName
+  commentId: P:Microsoft.Testing.Platform.Extensions.IExtension.DisplayName
+  parent: Microsoft.Testing.Platform.Extensions.IExtension
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_DisplayName
+  name: DisplayName
+  nameWithType: IExtension.DisplayName
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension.DisplayName
+- uid: Microsoft.Testing.Platform.Extensions.IExtension.Description
+  commentId: P:Microsoft.Testing.Platform.Extensions.IExtension.Description
+  parent: Microsoft.Testing.Platform.Extensions.IExtension
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html#Microsoft_Testing_Platform_Extensions_IExtension_Description
+  name: Description
+  nameWithType: IExtension.Description
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension.Description
+- uid: Microsoft.Testing.Platform.Extensions.IExtension
+  commentId: T:Microsoft.Testing.Platform.Extensions.IExtension
+  parent: Microsoft.Testing.Platform.Extensions
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html
+  name: IExtension
+  nameWithType: IExtension
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension
+- uid: Microsoft.Testing.Platform.Extensions
+  commentId: N:Microsoft.Testing.Platform.Extensions
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Extensions
+  nameWithType: Microsoft.Testing.Platform.Extensions
+  fullName: Microsoft.Testing.Platform.Extensions
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+- uid: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.BeforeTestHostProcessStartAsync*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.BeforeTestHostProcessStartAsync
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.html#Microsoft_Testing_Platform_Extensions_TestHostControllers_ITestHostProcessLifetimeHandler_BeforeTestHostProcessStartAsync_System_Threading_CancellationToken_
+  name: BeforeTestHostProcessStartAsync
+  nameWithType: ITestHostProcessLifetimeHandler.BeforeTestHostProcessStartAsync
+  fullName: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.BeforeTestHostProcessStartAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.OnTestHostProcessStartedAsync*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.OnTestHostProcessStartedAsync
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.html#Microsoft_Testing_Platform_Extensions_TestHostControllers_ITestHostProcessLifetimeHandler_OnTestHostProcessStartedAsync_Microsoft_Testing_Platform_Extensions_TestHostControllers_ITestHostProcessInformation_System_Threading_CancellationToken_
+  name: OnTestHostProcessStartedAsync
+  nameWithType: ITestHostProcessLifetimeHandler.OnTestHostProcessStartedAsync
+  fullName: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.OnTestHostProcessStartedAsync
+- uid: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessInformation
+  commentId: T:Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessInformation
+  parent: Microsoft.Testing.Platform.Extensions.TestHostControllers
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessInformation.html
+  name: ITestHostProcessInformation
+  nameWithType: ITestHostProcessInformation
+  fullName: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessInformation
+- uid: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.OnTestHostProcessExitedAsync*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.OnTestHostProcessExitedAsync
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.html#Microsoft_Testing_Platform_Extensions_TestHostControllers_ITestHostProcessLifetimeHandler_OnTestHostProcessExitedAsync_Microsoft_Testing_Platform_Extensions_TestHostControllers_ITestHostProcessInformation_System_Threading_CancellationToken_
+  name: OnTestHostProcessExitedAsync
+  nameWithType: ITestHostProcessLifetimeHandler.OnTestHostProcessExitedAsync
+  fullName: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.OnTestHostProcessExitedAsync

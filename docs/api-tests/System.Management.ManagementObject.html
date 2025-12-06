@@ -1,0 +1,1964 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ManagementObject | BOOSE IDE Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ManagementObject | BOOSE IDE Documentation ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BOOSE IDE Documentation">
+            BOOSE IDE Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="System.Management.ManagementObject">
+
+
+
+  <h1 id="System_Management_ManagementObject" data-uid="System.Management.ManagementObject" class="text-break">
+Class ManagementObject  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="System.html">System</a>.<a class="xref" href="System.Management.html">Management</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>System.Management.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ManagementObject : ManagementBaseObject, IComponent, IDisposable, ISerializable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component">Component</a></div>
+      <div><a class="xref" href="System.Management.ManagementBaseObject.html">ManagementBaseObject</a></div>
+      <div><span class="xref">ManagementObject</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.icomponent">IComponent</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="System.Management.ManagementClass.html">ManagementClass</a></div>
+      <div><a class="xref" href="System.Management.ManagementClass.html">ManagementClass</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_CompareTo_System_Management_ManagementBaseObject_System_Management_ComparisonSettings_">ManagementBaseObject.CompareTo(ManagementBaseObject, ComparisonSettings)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_Equals_System_Object_">ManagementBaseObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetHashCode">ManagementBaseObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetPropertyQualifierValue_System_String_System_String_">ManagementBaseObject.GetPropertyQualifierValue(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetPropertyValue_System_String_">ManagementBaseObject.GetPropertyValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetQualifierValue_System_String_">ManagementBaseObject.GetQualifierValue(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetText_System_Management_TextFormat_">ManagementBaseObject.GetText(TextFormat)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_SetPropertyQualifierValue_System_String_System_String_System_Object_">ManagementBaseObject.SetPropertyQualifierValue(string, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_SetPropertyValue_System_String_System_Object_">ManagementBaseObject.SetPropertyValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_SetQualifierValue_System_String_System_Object_">ManagementBaseObject.SetQualifierValue(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_Item_System_String_">ManagementBaseObject.this[string]</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_Properties">ManagementBaseObject.Properties</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_Qualifiers">ManagementBaseObject.Qualifiers</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_SystemProperties">ManagementBaseObject.SystemProperties</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose(system-boolean)">Component.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.getservice">Component.GetService(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.canraiseevents">Component.CanRaiseEvents</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.events">Component.Events</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.site">Component.Site</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.container">Component.Container</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.designmode">Component.DesignMode</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.disposed">Component.Disposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="System_Management_ManagementObject__ctor_" data-uid="System.Management.ManagementObject.#ctor*"></a>
+
+  <h3 id="System_Management_ManagementObject__ctor" data-uid="System.Management.ManagementObject.#ctor">
+  ManagementObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementObject()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject__ctor_" data-uid="System.Management.ManagementObject.#ctor*"></a>
+
+  <h3 id="System_Management_ManagementObject__ctor_System_Management_ManagementPath_" data-uid="System.Management.ManagementObject.#ctor(System.Management.ManagementPath)">
+  ManagementObject(ManagementPath)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementObject(ManagementPath path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="System.Management.ManagementPath.html">ManagementPath</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject__ctor_" data-uid="System.Management.ManagementObject.#ctor*"></a>
+
+  <h3 id="System_Management_ManagementObject__ctor_System_Management_ManagementPath_System_Management_ObjectGetOptions_" data-uid="System.Management.ManagementObject.#ctor(System.Management.ManagementPath,System.Management.ObjectGetOptions)">
+  ManagementObject(ManagementPath, ObjectGetOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementObject(ManagementPath path, ObjectGetOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="System.Management.ManagementPath.html">ManagementPath</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Management.ObjectGetOptions.html">ObjectGetOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject__ctor_" data-uid="System.Management.ManagementObject.#ctor*"></a>
+
+  <h3 id="System_Management_ManagementObject__ctor_System_Management_ManagementScope_System_Management_ManagementPath_System_Management_ObjectGetOptions_" data-uid="System.Management.ManagementObject.#ctor(System.Management.ManagementScope,System.Management.ManagementPath,System.Management.ObjectGetOptions)">
+  ManagementObject(ManagementScope, ManagementPath, ObjectGetOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementObject(ManagementScope scope, ManagementPath path, ObjectGetOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scope</code> <a class="xref" href="System.Management.ManagementScope.html">ManagementScope</a></dt>
+    <dd></dd>
+    <dt><code>path</code> <a class="xref" href="System.Management.ManagementPath.html">ManagementPath</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Management.ObjectGetOptions.html">ObjectGetOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject__ctor_" data-uid="System.Management.ManagementObject.#ctor*"></a>
+
+  <h3 id="System_Management_ManagementObject__ctor_System_String_" data-uid="System.Management.ManagementObject.#ctor(System.String)">
+  ManagementObject(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementObject(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject__ctor_" data-uid="System.Management.ManagementObject.#ctor*"></a>
+
+  <h3 id="System_Management_ManagementObject__ctor_System_String_System_Management_ObjectGetOptions_" data-uid="System.Management.ManagementObject.#ctor(System.String,System.Management.ObjectGetOptions)">
+  ManagementObject(string, ObjectGetOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementObject(string path, ObjectGetOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Management.ObjectGetOptions.html">ObjectGetOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject__ctor_" data-uid="System.Management.ManagementObject.#ctor*"></a>
+
+  <h3 id="System_Management_ManagementObject__ctor_System_String_System_String_System_Management_ObjectGetOptions_" data-uid="System.Management.ManagementObject.#ctor(System.String,System.String,System.Management.ObjectGetOptions)">
+  ManagementObject(string, string, ObjectGetOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementObject(string scopeString, string pathString, ObjectGetOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scopeString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>pathString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Management.ObjectGetOptions.html">ObjectGetOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="System_Management_ManagementObject_ClassPath_" data-uid="System.Management.ManagementObject.ClassPath*"></a>
+
+  <h3 id="System_Management_ManagementObject_ClassPath" data-uid="System.Management.ManagementObject.ClassPath">
+  ClassPath
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ManagementPath ClassPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementPath.html">ManagementPath</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_Options_" data-uid="System.Management.ManagementObject.Options*"></a>
+
+  <h3 id="System_Management_ManagementObject_Options" data-uid="System.Management.ManagementObject.Options">
+  Options
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectGetOptions Options { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ObjectGetOptions.html">ObjectGetOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_Path_" data-uid="System.Management.ManagementObject.Path*"></a>
+
+  <h3 id="System_Management_ManagementObject_Path" data-uid="System.Management.ManagementObject.Path">
+  Path
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ManagementPath Path { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementPath.html">ManagementPath</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_Scope_" data-uid="System.Management.ManagementObject.Scope*"></a>
+
+  <h3 id="System_Management_ManagementObject_Scope" data-uid="System.Management.ManagementObject.Scope">
+  Scope
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementScope Scope { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementScope.html">ManagementScope</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="System_Management_ManagementObject_Clone_" data-uid="System.Management.ManagementObject.Clone*"></a>
+
+  <h3 id="System_Management_ManagementObject_Clone" data-uid="System.Management.ManagementObject.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_CopyTo_" data-uid="System.Management.ManagementObject.CopyTo*"></a>
+
+  <h3 id="System_Management_ManagementObject_CopyTo_System_Management_ManagementOperationObserver_System_Management_ManagementPath_" data-uid="System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.Management.ManagementPath)">
+  CopyTo(ManagementOperationObserver, ManagementPath)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(ManagementOperationObserver watcher, ManagementPath path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+    <dt><code>path</code> <a class="xref" href="System.Management.ManagementPath.html">ManagementPath</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_CopyTo_" data-uid="System.Management.ManagementObject.CopyTo*"></a>
+
+  <h3 id="System_Management_ManagementObject_CopyTo_System_Management_ManagementOperationObserver_System_Management_ManagementPath_System_Management_PutOptions_" data-uid="System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.Management.ManagementPath,System.Management.PutOptions)">
+  CopyTo(ManagementOperationObserver, ManagementPath, PutOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(ManagementOperationObserver watcher, ManagementPath path, PutOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+    <dt><code>path</code> <a class="xref" href="System.Management.ManagementPath.html">ManagementPath</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Management.PutOptions.html">PutOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_CopyTo_" data-uid="System.Management.ManagementObject.CopyTo*"></a>
+
+  <h3 id="System_Management_ManagementObject_CopyTo_System_Management_ManagementOperationObserver_System_String_" data-uid="System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.String)">
+  CopyTo(ManagementOperationObserver, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(ManagementOperationObserver watcher, string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_CopyTo_" data-uid="System.Management.ManagementObject.CopyTo*"></a>
+
+  <h3 id="System_Management_ManagementObject_CopyTo_System_Management_ManagementOperationObserver_System_String_System_Management_PutOptions_" data-uid="System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.String,System.Management.PutOptions)">
+  CopyTo(ManagementOperationObserver, string, PutOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(ManagementOperationObserver watcher, string path, PutOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Management.PutOptions.html">PutOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_CopyTo_" data-uid="System.Management.ManagementObject.CopyTo*"></a>
+
+  <h3 id="System_Management_ManagementObject_CopyTo_System_Management_ManagementPath_" data-uid="System.Management.ManagementObject.CopyTo(System.Management.ManagementPath)">
+  CopyTo(ManagementPath)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementPath CopyTo(ManagementPath path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="System.Management.ManagementPath.html">ManagementPath</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementPath.html">ManagementPath</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_CopyTo_" data-uid="System.Management.ManagementObject.CopyTo*"></a>
+
+  <h3 id="System_Management_ManagementObject_CopyTo_System_Management_ManagementPath_System_Management_PutOptions_" data-uid="System.Management.ManagementObject.CopyTo(System.Management.ManagementPath,System.Management.PutOptions)">
+  CopyTo(ManagementPath, PutOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementPath CopyTo(ManagementPath path, PutOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="System.Management.ManagementPath.html">ManagementPath</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Management.PutOptions.html">PutOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementPath.html">ManagementPath</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_CopyTo_" data-uid="System.Management.ManagementObject.CopyTo*"></a>
+
+  <h3 id="System_Management_ManagementObject_CopyTo_System_String_" data-uid="System.Management.ManagementObject.CopyTo(System.String)">
+  CopyTo(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementPath CopyTo(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementPath.html">ManagementPath</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_CopyTo_" data-uid="System.Management.ManagementObject.CopyTo*"></a>
+
+  <h3 id="System_Management_ManagementObject_CopyTo_System_String_System_Management_PutOptions_" data-uid="System.Management.ManagementObject.CopyTo(System.String,System.Management.PutOptions)">
+  CopyTo(string, PutOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementPath CopyTo(string path, PutOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Management.PutOptions.html">PutOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementPath.html">ManagementPath</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_Delete_" data-uid="System.Management.ManagementObject.Delete*"></a>
+
+  <h3 id="System_Management_ManagementObject_Delete" data-uid="System.Management.ManagementObject.Delete">
+  Delete()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_Delete_" data-uid="System.Management.ManagementObject.Delete*"></a>
+
+  <h3 id="System_Management_ManagementObject_Delete_System_Management_DeleteOptions_" data-uid="System.Management.ManagementObject.Delete(System.Management.DeleteOptions)">
+  Delete(DeleteOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete(DeleteOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="System.Management.DeleteOptions.html">DeleteOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_Delete_" data-uid="System.Management.ManagementObject.Delete*"></a>
+
+  <h3 id="System_Management_ManagementObject_Delete_System_Management_ManagementOperationObserver_" data-uid="System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver)">
+  Delete(ManagementOperationObserver)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete(ManagementOperationObserver watcher)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_Delete_" data-uid="System.Management.ManagementObject.Delete*"></a>
+
+  <h3 id="System_Management_ManagementObject_Delete_System_Management_ManagementOperationObserver_System_Management_DeleteOptions_" data-uid="System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver,System.Management.DeleteOptions)">
+  Delete(ManagementOperationObserver, DeleteOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete(ManagementOperationObserver watcher, DeleteOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Management.DeleteOptions.html">DeleteOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_Dispose_" data-uid="System.Management.ManagementObject.Dispose*"></a>
+
+  <h3 id="System_Management_ManagementObject_Dispose" data-uid="System.Management.ManagementObject.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_Get_" data-uid="System.Management.ManagementObject.Get*"></a>
+
+  <h3 id="System_Management_ManagementObject_Get" data-uid="System.Management.ManagementObject.Get">
+  Get()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Get()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_Get_" data-uid="System.Management.ManagementObject.Get*"></a>
+
+  <h3 id="System_Management_ManagementObject_Get_System_Management_ManagementOperationObserver_" data-uid="System.Management.ManagementObject.Get(System.Management.ManagementOperationObserver)">
+  Get(ManagementOperationObserver)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Get(ManagementOperationObserver watcher)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_GetMethodParameters_" data-uid="System.Management.ManagementObject.GetMethodParameters*"></a>
+
+  <h3 id="System_Management_ManagementObject_GetMethodParameters_System_String_" data-uid="System.Management.ManagementObject.GetMethodParameters(System.String)">
+  GetMethodParameters(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementBaseObject GetMethodParameters(string methodName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementBaseObject.html">ManagementBaseObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_GetObjectData_" data-uid="System.Management.ManagementObject.GetObjectData*"></a>
+
+  <h3 id="System_Management_ManagementObject_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="System.Management.ManagementObject.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+  GetObjectData(SerializationInfo, StreamingContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>info</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext">StreamingContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_GetRelated_" data-uid="System.Management.ManagementObject.GetRelated*"></a>
+
+  <h3 id="System_Management_ManagementObject_GetRelated" data-uid="System.Management.ManagementObject.GetRelated">
+  GetRelated()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementObjectCollection GetRelated()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementObjectCollection.html">ManagementObjectCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_GetRelated_" data-uid="System.Management.ManagementObject.GetRelated*"></a>
+
+  <h3 id="System_Management_ManagementObject_GetRelated_System_Management_ManagementOperationObserver_" data-uid="System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver)">
+  GetRelated(ManagementOperationObserver)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetRelated(ManagementOperationObserver watcher)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_GetRelated_" data-uid="System.Management.ManagementObject.GetRelated*"></a>
+
+  <h3 id="System_Management_ManagementObject_GetRelated_System_Management_ManagementOperationObserver_System_String_" data-uid="System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String)">
+  GetRelated(ManagementOperationObserver, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetRelated(ManagementOperationObserver watcher, string relatedClass)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+    <dt><code>relatedClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_GetRelated_" data-uid="System.Management.ManagementObject.GetRelated*"></a>
+
+  <h3 id="System_Management_ManagementObject_GetRelated_System_Management_ManagementOperationObserver_System_String_System_String_System_String_System_String_System_String_System_String_System_Boolean_System_Management_EnumerationOptions_" data-uid="System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)">
+  GetRelated(ManagementOperationObserver, string, string, string, string, string, string, bool, EnumerationOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetRelated(ManagementOperationObserver watcher, string relatedClass, string relationshipClass, string relationshipQualifier, string relatedQualifier, string relatedRole, string thisRole, bool classDefinitionsOnly, EnumerationOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+    <dt><code>relatedClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>relationshipClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>relationshipQualifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>relatedQualifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>relatedRole</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>thisRole</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>classDefinitionsOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Management.EnumerationOptions.html">EnumerationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_GetRelated_" data-uid="System.Management.ManagementObject.GetRelated*"></a>
+
+  <h3 id="System_Management_ManagementObject_GetRelated_System_String_" data-uid="System.Management.ManagementObject.GetRelated(System.String)">
+  GetRelated(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementObjectCollection GetRelated(string relatedClass)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>relatedClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementObjectCollection.html">ManagementObjectCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_GetRelated_" data-uid="System.Management.ManagementObject.GetRelated*"></a>
+
+  <h3 id="System_Management_ManagementObject_GetRelated_System_String_System_String_System_String_System_String_System_String_System_String_System_Boolean_System_Management_EnumerationOptions_" data-uid="System.Management.ManagementObject.GetRelated(System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)">
+  GetRelated(string, string, string, string, string, string, bool, EnumerationOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementObjectCollection GetRelated(string relatedClass, string relationshipClass, string relationshipQualifier, string relatedQualifier, string relatedRole, string thisRole, bool classDefinitionsOnly, EnumerationOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>relatedClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>relationshipClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>relationshipQualifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>relatedQualifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>relatedRole</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>thisRole</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>classDefinitionsOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Management.EnumerationOptions.html">EnumerationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementObjectCollection.html">ManagementObjectCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_GetRelationships_" data-uid="System.Management.ManagementObject.GetRelationships*"></a>
+
+  <h3 id="System_Management_ManagementObject_GetRelationships" data-uid="System.Management.ManagementObject.GetRelationships">
+  GetRelationships()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementObjectCollection GetRelationships()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementObjectCollection.html">ManagementObjectCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_GetRelationships_" data-uid="System.Management.ManagementObject.GetRelationships*"></a>
+
+  <h3 id="System_Management_ManagementObject_GetRelationships_System_Management_ManagementOperationObserver_" data-uid="System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver)">
+  GetRelationships(ManagementOperationObserver)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetRelationships(ManagementOperationObserver watcher)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_GetRelationships_" data-uid="System.Management.ManagementObject.GetRelationships*"></a>
+
+  <h3 id="System_Management_ManagementObject_GetRelationships_System_Management_ManagementOperationObserver_System_String_" data-uid="System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver,System.String)">
+  GetRelationships(ManagementOperationObserver, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetRelationships(ManagementOperationObserver watcher, string relationshipClass)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+    <dt><code>relationshipClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_GetRelationships_" data-uid="System.Management.ManagementObject.GetRelationships*"></a>
+
+  <h3 id="System_Management_ManagementObject_GetRelationships_System_Management_ManagementOperationObserver_System_String_System_String_System_String_System_Boolean_System_Management_EnumerationOptions_" data-uid="System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)">
+  GetRelationships(ManagementOperationObserver, string, string, string, bool, EnumerationOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetRelationships(ManagementOperationObserver watcher, string relationshipClass, string relationshipQualifier, string thisRole, bool classDefinitionsOnly, EnumerationOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+    <dt><code>relationshipClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>relationshipQualifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>thisRole</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>classDefinitionsOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Management.EnumerationOptions.html">EnumerationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_GetRelationships_" data-uid="System.Management.ManagementObject.GetRelationships*"></a>
+
+  <h3 id="System_Management_ManagementObject_GetRelationships_System_String_" data-uid="System.Management.ManagementObject.GetRelationships(System.String)">
+  GetRelationships(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementObjectCollection GetRelationships(string relationshipClass)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>relationshipClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementObjectCollection.html">ManagementObjectCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_GetRelationships_" data-uid="System.Management.ManagementObject.GetRelationships*"></a>
+
+  <h3 id="System_Management_ManagementObject_GetRelationships_System_String_System_String_System_String_System_Boolean_System_Management_EnumerationOptions_" data-uid="System.Management.ManagementObject.GetRelationships(System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)">
+  GetRelationships(string, string, string, bool, EnumerationOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementObjectCollection GetRelationships(string relationshipClass, string relationshipQualifier, string thisRole, bool classDefinitionsOnly, EnumerationOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>relationshipClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>relationshipQualifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>thisRole</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>classDefinitionsOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Management.EnumerationOptions.html">EnumerationOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementObjectCollection.html">ManagementObjectCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_InvokeMethod_" data-uid="System.Management.ManagementObject.InvokeMethod*"></a>
+
+  <h3 id="System_Management_ManagementObject_InvokeMethod_System_Management_ManagementOperationObserver_System_String_System_Management_ManagementBaseObject_System_Management_InvokeMethodOptions_" data-uid="System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)">
+  InvokeMethod(ManagementOperationObserver, string, ManagementBaseObject, InvokeMethodOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InvokeMethod(ManagementOperationObserver watcher, string methodName, ManagementBaseObject inParameters, InvokeMethodOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>inParameters</code> <a class="xref" href="System.Management.ManagementBaseObject.html">ManagementBaseObject</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Management.InvokeMethodOptions.html">InvokeMethodOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_InvokeMethod_" data-uid="System.Management.ManagementObject.InvokeMethod*"></a>
+
+  <h3 id="System_Management_ManagementObject_InvokeMethod_System_Management_ManagementOperationObserver_System_String_System_Object___" data-uid="System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Object[])">
+  InvokeMethod(ManagementOperationObserver, string, object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InvokeMethod(ManagementOperationObserver watcher, string methodName, object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_InvokeMethod_" data-uid="System.Management.ManagementObject.InvokeMethod*"></a>
+
+  <h3 id="System_Management_ManagementObject_InvokeMethod_System_String_System_Management_ManagementBaseObject_System_Management_InvokeMethodOptions_" data-uid="System.Management.ManagementObject.InvokeMethod(System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)">
+  InvokeMethod(string, ManagementBaseObject, InvokeMethodOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementBaseObject InvokeMethod(string methodName, ManagementBaseObject inParameters, InvokeMethodOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>inParameters</code> <a class="xref" href="System.Management.ManagementBaseObject.html">ManagementBaseObject</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Management.InvokeMethodOptions.html">InvokeMethodOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementBaseObject.html">ManagementBaseObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_InvokeMethod_" data-uid="System.Management.ManagementObject.InvokeMethod*"></a>
+
+  <h3 id="System_Management_ManagementObject_InvokeMethod_System_String_System_Object___" data-uid="System.Management.ManagementObject.InvokeMethod(System.String,System.Object[])">
+  InvokeMethod(string, object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object InvokeMethod(string methodName, object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_Put_" data-uid="System.Management.ManagementObject.Put*"></a>
+
+  <h3 id="System_Management_ManagementObject_Put" data-uid="System.Management.ManagementObject.Put">
+  Put()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementPath Put()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementPath.html">ManagementPath</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_Put_" data-uid="System.Management.ManagementObject.Put*"></a>
+
+  <h3 id="System_Management_ManagementObject_Put_System_Management_ManagementOperationObserver_" data-uid="System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver)">
+  Put(ManagementOperationObserver)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Put(ManagementOperationObserver watcher)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_Put_" data-uid="System.Management.ManagementObject.Put*"></a>
+
+  <h3 id="System_Management_ManagementObject_Put_System_Management_ManagementOperationObserver_System_Management_PutOptions_" data-uid="System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver,System.Management.PutOptions)">
+  Put(ManagementOperationObserver, PutOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Put(ManagementOperationObserver watcher, PutOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>watcher</code> <a class="xref" href="System.Management.ManagementOperationObserver.html">ManagementOperationObserver</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Management.PutOptions.html">PutOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_Put_" data-uid="System.Management.ManagementObject.Put*"></a>
+
+  <h3 id="System_Management_ManagementObject_Put_System_Management_PutOptions_" data-uid="System.Management.ManagementObject.Put(System.Management.PutOptions)">
+  Put(PutOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManagementPath Put(PutOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="System.Management.PutOptions.html">PutOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Management.ManagementPath.html">ManagementPath</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Management_ManagementObject_ToString_" data-uid="System.Management.ManagementObject.ToString*"></a>
+
+  <h3 id="System_Management_ManagementObject_ToString" data-uid="System.Management.ManagementObject.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

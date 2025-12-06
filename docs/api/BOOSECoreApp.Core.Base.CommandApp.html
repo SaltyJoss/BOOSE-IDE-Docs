@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class CommandApp | BOOSE IDE Documentation ">
       
-      <meta name="description" content="Abstract base class for all application-level BOOSE commands. Implements  and provides a standard lifecycle: Set → CheckParameters → Compile → Execute.">
+      <meta name="description" content="Abstract base class for all application-level BOOSE commands. Provides a standard lifecycle for commands: Set -&amp;gt; CheckParameters -&amp;gt; Compile -&amp;gt; Execute.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="BOOSECoreApp_Core_Base_CommandApp" data-uid="BOOSECoreApp.Core.Base.CommandApp" class="text-break">
-Class CommandApp  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
+Class CommandApp  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,13 +98,13 @@ Class CommandApp  <a class="header-action link-secondary" title="View source" hr
   </div>
 
   <div class="markdown summary"><p>Abstract base class for all application-level BOOSE commands.
-Implements <a class="xref" href="BOOSE.ICommand.html">ICommand</a> and provides a standard lifecycle:
-Set → CheckParameters → Compile → Execute.</p>
+Provides a standard lifecycle for commands:
+Set -&gt; CheckParameters -&gt; Compile -&gt; Execute.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class CommandApp : ICommandApp, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class CommandApp : ICommandApp</code></pre>
   </div>
 
 
@@ -121,23 +121,37 @@ Set → CheckParameters → Compile → Execute.</p>
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a></div>
-      <div><a class="xref" href="BOOSE.ICommand.html">ICommand</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a></div>
     </dd>
   </dl>
 
   <dl class="typelist derived">
     <dt>Derived</dt>
     <dd>
-      <div><a class="xref" href="BOOSECoreApp.Core.Base.EvaluationApp.html">EvaluationApp</a></div>
-      <div><a class="xref" href="BOOSECoreApp.Core.Commands.BackgroundColourApp.html">BackgroundColourApp</a></div>
-      <div><a class="xref" href="BOOSECoreApp.Core.Commands.CircleApp.html">CircleApp</a></div>
-      <div><a class="xref" href="BOOSECoreApp.Core.Commands.DrawToApp.html">DrawToApp</a></div>
-      <div><a class="xref" href="BOOSECoreApp.Core.Commands.MoveToApp.html">MoveToApp</a></div>
-      <div><a class="xref" href="BOOSECoreApp.Core.Commands.PenColourApp.html">PenColourApp</a></div>
-      <div><a class="xref" href="BOOSECoreApp.Core.Commands.RectApp.html">RectApp</a></div>
-      <div><a class="xref" href="BOOSECoreApp.Core.Commands.SquareApp.html">SquareApp</a></div>
-      <div><a class="xref" href="BOOSECoreApp.Core.Commands.TriApp.html">TriApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.EvaluationApp.html">EvaluationApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Commands.AboutApp.html">AboutApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Commands.BackgroundColourApp.html">BackgroundColourApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Commands.CircleApp.html">CircleApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Commands.DrawToApp.html">DrawToApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Commands.MoveToApp.html">MoveToApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Commands.PenColourApp.html">PenColourApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Commands.RectApp.html">RectApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Commands.SquareApp.html">SquareApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Commands.SysInfoApp.html">SysInfoApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Commands.TriApp.html">TriApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Conditionals.ElseApp.html">ElseApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Conditionals.ElseIfApp.html">ElseIfApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Conditionals.EndForApp.html">EndForApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Conditionals.EndIfApp.html">EndIfApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Conditionals.EndWhileApp.html">EndWhileApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Conditionals.ForApp.html">ForApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Conditionals.IfApp.html">IfApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Conditionals.WhileApp.html">WhileApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Methods.CallMethodApp.html">CallMethodApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Methods.EndMethodApp.html">EndMethodApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Methods.MethodApp.html">MethodApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Variables.PeekApp.html">PeekApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Variables.PokeApp.html">PokeApp</a></div>
     </dd>
   </dl>
 
@@ -180,7 +194,7 @@ Set → CheckParameters → Compile → Execute.</p>
 
   <h3 id="BOOSECoreApp_Core_Base_CommandApp__ctor" data-uid="BOOSECoreApp.Core.Base.CommandApp.#ctor">
   CommandApp()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -209,7 +223,7 @@ Set → CheckParameters → Compile → Execute.</p>
 
   <h3 id="BOOSECoreApp_Core_Base_CommandApp__parameters" data-uid="BOOSECoreApp.Core.Base.CommandApp._parameters">
   _parameters
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The parameters for the command, usually parsed from the command string.</p>
@@ -241,43 +255,11 @@ Set → CheckParameters → Compile → Execute.</p>
 </h2>
 
 
-  <a id="BOOSECoreApp_Core_Base_CommandApp_Parameters_" data-uid="BOOSECoreApp.Core.Base.CommandApp.Parameters*"></a>
-
-  <h3 id="BOOSECoreApp_Core_Base_CommandApp_Parameters" data-uid="BOOSECoreApp.Core.Base.CommandApp.Parameters">
-  Parameters
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Backstore for ProgramApp property.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string[] Parameters { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="BOOSECoreApp_Core_Base_CommandApp_ProgramApp_" data-uid="BOOSECoreApp.Core.Base.CommandApp.ProgramApp*"></a>
 
   <h3 id="BOOSECoreApp_Core_Base_CommandApp_ProgramApp" data-uid="BOOSECoreApp.Core.Base.CommandApp.ProgramApp">
   ProgramApp
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Exposes the app-level stored program instance.</p>
@@ -294,7 +276,7 @@ Set → CheckParameters → Compile → Execute.</p>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a></dt>
+    <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a></dt>
     <dd></dd>
   </dl>
 
@@ -313,10 +295,11 @@ Set → CheckParameters → Compile → Execute.</p>
 
   <h3 id="BOOSECoreApp_Core_Base_CommandApp_CheckParameters_System_String___" data-uid="BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])">
   CheckParameters(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Validates the provided parameters to ensure they meet the required conditions.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -326,34 +309,9 @@ Set → CheckParameters → Compile → Execute.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd></dd>
+    <dd><p>An array of strings representing the parameters to validate. Cannot be null, and each element must meet specific validation criteria.</p>
+</dd>
   </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BOOSECoreApp_Core_Base_CommandApp_Compile_" data-uid="BOOSECoreApp.Core.Base.CommandApp.Compile*"></a>
-
-  <h3 id="BOOSECoreApp_Core_Base_CommandApp_Compile" data-uid="BOOSECoreApp.Core.Base.CommandApp.Compile">
-  Compile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void Compile()</code></pre>
-  </div>
-
 
 
 
@@ -370,10 +328,11 @@ Set → CheckParameters → Compile → Execute.</p>
 
   <h3 id="BOOSECoreApp_Core_Base_CommandApp_Execute" data-uid="BOOSECoreApp.Core.Base.CommandApp.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Execute the command.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -394,45 +353,12 @@ Set → CheckParameters → Compile → Execute.</p>
 
   <a id="BOOSECoreApp_Core_Base_CommandApp_Set_" data-uid="BOOSECoreApp.Core.Base.CommandApp.Set*"></a>
 
-  <h3 id="BOOSECoreApp_Core_Base_CommandApp_Set_BOOSE_StoredProgram_System_String_" data-uid="BOOSECoreApp.Core.Base.CommandApp.Set(BOOSE.StoredProgram,System.String)">
-  Set(StoredProgram, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void Set(StoredProgram program, string param)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>program</code> <a class="xref" href="BOOSE.StoredProgram.html">StoredProgram</a></dt>
-    <dd></dd>
-    <dt><code>param</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BOOSECoreApp_Core_Base_CommandApp_Set_" data-uid="BOOSECoreApp.Core.Base.CommandApp.Set*"></a>
-
   <h3 id="BOOSECoreApp_Core_Base_CommandApp_Set_BOOSECoreApp_Core_Base_StoredProgramApp_System_String___" data-uid="BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])">
   Set(StoredProgramApp, string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Assigns the current <a class="xref" href="BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a> context and parses the provided parameters.</p>
+  <div class="markdown level1 summary"><p>Assigns the current <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a> context and parses the provided parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -442,8 +368,8 @@ Set → CheckParameters → Compile → Execute.</p>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>program</code> <a class="xref" href="BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a></dt>
-    <dd><p>The <a class="xref" href="BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a> that owns this command.</p>
+    <dt><code>program</code> <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a></dt>
+    <dd><p>The <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a> that owns this command.</p>
 </dd>
     <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
     <dd><p>The array of string parameters for this command.</p>
@@ -465,7 +391,7 @@ Set → CheckParameters → Compile → Execute.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/CommandApp.cs" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandApp.cs" class="edit-link">Edit this page</a>
         </div>
 
 

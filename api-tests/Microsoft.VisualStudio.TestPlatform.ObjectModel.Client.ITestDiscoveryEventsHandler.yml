@@ -1,0 +1,364 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler
+  id: ITestDiscoveryEventsHandler
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveredTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveryComplete(System.Int64,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase},System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: ITestDiscoveryEventsHandler
+  nameWithType: ITestDiscoveryEventsHandler
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler
+  type: Interface
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: 'public interface ITestDiscoveryEventsHandler : ITestMessageEventHandler'
+    content.vb: Public Interface ITestDiscoveryEventsHandler Inherits ITestMessageEventHandler
+  inheritedMembers:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveryComplete(System.Int64,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase},System.Boolean)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveryComplete(System.Int64,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase},System.Boolean)
+  id: HandleDiscoveryComplete(System.Int64,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase},System.Boolean)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleDiscoveryComplete(long, IEnumerable<TestCase>?, bool)
+  nameWithType: ITestDiscoveryEventsHandler.HandleDiscoveryComplete(long, IEnumerable<TestCase>?, bool)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveryComplete(long, System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase>?, bool)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: void HandleDiscoveryComplete(long totalTests, IEnumerable<TestCase>? lastChunk, bool isAborted)
+    parameters:
+    - id: totalTests
+      type: System.Int64
+    - id: lastChunk
+      type: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+    - id: isAborted
+      type: System.Boolean
+    content.vb: Sub HandleDiscoveryComplete(totalTests As Long, lastChunk As IEnumerable(Of TestCase), isAborted As Boolean)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveryComplete*
+  nameWithType.vb: ITestDiscoveryEventsHandler.HandleDiscoveryComplete(Long, IEnumerable(Of TestCase), Boolean)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveryComplete(Long, System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase), Boolean)
+  name.vb: HandleDiscoveryComplete(Long, IEnumerable(Of TestCase), Boolean)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveredTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveredTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  id: HandleDiscoveredTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleDiscoveredTests(IEnumerable<TestCase>?)
+  nameWithType: ITestDiscoveryEventsHandler.HandleDiscoveredTests(IEnumerable<TestCase>?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveredTests(System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase>?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: void HandleDiscoveredTests(IEnumerable<TestCase>? discoveredTestCases)
+    parameters:
+    - id: discoveredTestCases
+      type: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+    content.vb: Sub HandleDiscoveredTests(discoveredTestCases As IEnumerable(Of TestCase))
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveredTests*
+  nameWithType.vb: ITestDiscoveryEventsHandler.HandleDiscoveredTests(IEnumerable(Of TestCase))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveredTests(System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase))
+  name.vb: HandleDiscoveredTests(IEnumerable(Of TestCase))
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleRawMessage_System_String_
+  name: HandleRawMessage(string)
+  nameWithType: ITestMessageEventHandler.HandleRawMessage(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(string)
+  nameWithType.vb: ITestMessageEventHandler.HandleRawMessage(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(String)
+  name.vb: HandleRawMessage(String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(System.String)
+    name: HandleRawMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleRawMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(System.String)
+    name: HandleRawMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleRawMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleLogMessage_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_TestMessageLevel_System_String_
+  name: HandleLogMessage(TestMessageLevel, string)
+  nameWithType: ITestMessageEventHandler.HandleLogMessage(TestMessageLevel, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel, string)
+  nameWithType.vb: ITestMessageEventHandler.HandleLogMessage(TestMessageLevel, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel, String)
+  name.vb: HandleLogMessage(TestMessageLevel, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+    name: HandleLogMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleLogMessage_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_TestMessageLevel_System_String_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel
+    name: TestMessageLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+    name: HandleLogMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleLogMessage_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_TestMessageLevel_System_String_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel
+    name: TestMessageLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html
+  name: ITestMessageEventHandler
+  nameWithType: ITestMessageEventHandler
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveryComplete*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveryComplete
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler_HandleDiscoveryComplete_System_Int64_System_Collections_Generic_IEnumerable_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase__System_Boolean_
+  name: HandleDiscoveryComplete
+  nameWithType: ITestDiscoveryEventsHandler.HandleDiscoveryComplete
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveryComplete
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TestCase>
+  nameWithType: IEnumerable<TestCase>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase>
+  nameWithType.vb: IEnumerable(Of TestCase)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase)
+  name.vb: IEnumerable(Of TestCase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    name: TestCase
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    name: TestCase
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveredTests*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveredTests
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler_HandleDiscoveredTests_System_Collections_Generic_IEnumerable_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase__
+  name: HandleDiscoveredTests
+  nameWithType: ITestDiscoveryEventsHandler.HandleDiscoveredTests
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler.HandleDiscoveredTests

@@ -1,0 +1,510 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine
+  id: ITestEngine
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetDiscoveryManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExecutionManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCriteria,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExtensionManager
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetLoggerManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetTestSessionManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.StartTestSessionCriteria,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  langs:
+  - csharp
+  - vb
+  name: ITestEngine
+  nameWithType: ITestEngine
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine
+  type: Interface
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: public interface ITestEngine
+    content.vb: Public Interface ITestEngine
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetDiscoveryManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetDiscoveryManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  id: GetDiscoveryManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine
+  langs:
+  - csharp
+  - vb
+  name: GetDiscoveryManager(IRequestData, DiscoveryCriteria, IDictionary<string, SourceDetail>, IWarningLogger)
+  nameWithType: ITestEngine.GetDiscoveryManager(IRequestData, DiscoveryCriteria, IDictionary<string, SourceDetail>, IWarningLogger)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetDiscoveryManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria, System.Collections.Generic.IDictionary<string, Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail>, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: IProxyDiscoveryManager GetDiscoveryManager(IRequestData requestData, DiscoveryCriteria discoveryCriteria, IDictionary<string, SourceDetail> sourceToSourceDetailMap, IWarningLogger warningLogger)
+    parameters:
+    - id: requestData
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+    - id: discoveryCriteria
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+    - id: sourceToSourceDetailMap
+      type: System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail}
+    - id: warningLogger
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+    content.vb: Function GetDiscoveryManager(requestData As IRequestData, discoveryCriteria As DiscoveryCriteria, sourceToSourceDetailMap As IDictionary(Of String, SourceDetail), warningLogger As IWarningLogger) As IProxyDiscoveryManager
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetDiscoveryManager*
+  nameWithType.vb: ITestEngine.GetDiscoveryManager(IRequestData, DiscoveryCriteria, IDictionary(Of String, SourceDetail), IWarningLogger)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetDiscoveryManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria, System.Collections.Generic.IDictionary(Of String, Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail), Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  name.vb: GetDiscoveryManager(IRequestData, DiscoveryCriteria, IDictionary(Of String, SourceDetail), IWarningLogger)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExecutionManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCriteria,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExecutionManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCriteria,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  id: GetExecutionManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCriteria,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine
+  langs:
+  - csharp
+  - vb
+  name: GetExecutionManager(IRequestData, TestRunCriteria, IDictionary<string, SourceDetail>, IWarningLogger)
+  nameWithType: ITestEngine.GetExecutionManager(IRequestData, TestRunCriteria, IDictionary<string, SourceDetail>, IWarningLogger)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExecutionManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCriteria, System.Collections.Generic.IDictionary<string, Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail>, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: IProxyExecutionManager GetExecutionManager(IRequestData requestData, TestRunCriteria testRunCriteria, IDictionary<string, SourceDetail> sourceToSourceDetailMap, IWarningLogger warningLogger)
+    parameters:
+    - id: requestData
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+    - id: testRunCriteria
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCriteria
+    - id: sourceToSourceDetailMap
+      type: System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail}
+    - id: warningLogger
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyExecutionManager
+    content.vb: Function GetExecutionManager(requestData As IRequestData, testRunCriteria As TestRunCriteria, sourceToSourceDetailMap As IDictionary(Of String, SourceDetail), warningLogger As IWarningLogger) As IProxyExecutionManager
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExecutionManager*
+  nameWithType.vb: ITestEngine.GetExecutionManager(IRequestData, TestRunCriteria, IDictionary(Of String, SourceDetail), IWarningLogger)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExecutionManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCriteria, System.Collections.Generic.IDictionary(Of String, Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail), Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  name.vb: GetExecutionManager(IRequestData, TestRunCriteria, IDictionary(Of String, SourceDetail), IWarningLogger)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetTestSessionManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.StartTestSessionCriteria,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetTestSessionManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.StartTestSessionCriteria,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  id: GetTestSessionManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.StartTestSessionCriteria,System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine
+  langs:
+  - csharp
+  - vb
+  name: GetTestSessionManager(IRequestData, StartTestSessionCriteria, IDictionary<string, SourceDetail>, IWarningLogger)
+  nameWithType: ITestEngine.GetTestSessionManager(IRequestData, StartTestSessionCriteria, IDictionary<string, SourceDetail>, IWarningLogger)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetTestSessionManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.StartTestSessionCriteria, System.Collections.Generic.IDictionary<string, Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail>, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: IProxyTestSessionManager? GetTestSessionManager(IRequestData requestData, StartTestSessionCriteria testSessionCriteria, IDictionary<string, SourceDetail> sourceToSourceDetailMap, IWarningLogger warningLogger)
+    parameters:
+    - id: requestData
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+    - id: testSessionCriteria
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.StartTestSessionCriteria
+    - id: sourceToSourceDetailMap
+      type: System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail}
+    - id: warningLogger
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyTestSessionManager
+    content.vb: Function GetTestSessionManager(requestData As IRequestData, testSessionCriteria As StartTestSessionCriteria, sourceToSourceDetailMap As IDictionary(Of String, SourceDetail), warningLogger As IWarningLogger) As IProxyTestSessionManager
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetTestSessionManager*
+  nameWithType.vb: ITestEngine.GetTestSessionManager(IRequestData, StartTestSessionCriteria, IDictionary(Of String, SourceDetail), IWarningLogger)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetTestSessionManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.StartTestSessionCriteria, System.Collections.Generic.IDictionary(Of String, Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail), Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger)
+  name.vb: GetTestSessionManager(IRequestData, StartTestSessionCriteria, IDictionary(Of String, SourceDetail), IWarningLogger)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExtensionManager
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExtensionManager
+  id: GetExtensionManager
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine
+  langs:
+  - csharp
+  - vb
+  name: GetExtensionManager()
+  nameWithType: ITestEngine.GetExtensionManager()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExtensionManager()
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: ITestExtensionManager GetExtensionManager()
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestExtensionManager
+    content.vb: Function GetExtensionManager() As ITestExtensionManager
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExtensionManager*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetLoggerManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetLoggerManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData)
+  id: GetLoggerManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine
+  langs:
+  - csharp
+  - vb
+  name: GetLoggerManager(IRequestData)
+  nameWithType: ITestEngine.GetLoggerManager(IRequestData)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetLoggerManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: ITestLoggerManager GetLoggerManager(IRequestData requestData)
+    parameters:
+    - id: requestData
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager
+    content.vb: Function GetLoggerManager(requestData As IRequestData) As ITestLoggerManager
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetLoggerManager*
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetDiscoveryManager*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetDiscoveryManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestEngine_GetDiscoveryManager_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IRequestData_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_System_Collections_Generic_IDictionary_System_String_Microsoft_VisualStudio_TestPlatform_ObjectModel_SourceDetail__Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IWarningLogger_
+  name: GetDiscoveryManager
+  nameWithType: ITestEngine.GetDiscoveryManager
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetDiscoveryManager
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData.html
+  name: IRequestData
+  nameWithType: IRequestData
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria.html
+  name: DiscoveryCriteria
+  nameWithType: DiscoveryCriteria
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+- uid: System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, SourceDetail>
+  nameWithType: IDictionary<string, SourceDetail>
+  fullName: System.Collections.Generic.IDictionary<string, Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail>
+  nameWithType.vb: IDictionary(Of String, SourceDetail)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail)
+  name.vb: IDictionary(Of String, SourceDetail)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail
+    name: SourceDetail
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.SourceDetail
+    name: SourceDetail
+    isExternal: true
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger.html
+  name: IWarningLogger
+  nameWithType: IWarningLogger
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IWarningLogger
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html
+  name: IProxyDiscoveryManager
+  nameWithType: IProxyDiscoveryManager
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExecutionManager*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExecutionManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestEngine_GetExecutionManager_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IRequestData_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_TestRunCriteria_System_Collections_Generic_IDictionary_System_String_Microsoft_VisualStudio_TestPlatform_ObjectModel_SourceDetail__Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IWarningLogger_
+  name: GetExecutionManager
+  nameWithType: ITestEngine.GetExecutionManager
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExecutionManager
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCriteria
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCriteria
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCriteria.html
+  name: TestRunCriteria
+  nameWithType: TestRunCriteria
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCriteria
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyExecutionManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyExecutionManager
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyExecutionManager.html
+  name: IProxyExecutionManager
+  nameWithType: IProxyExecutionManager
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyExecutionManager
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetTestSessionManager*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetTestSessionManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestEngine_GetTestSessionManager_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IRequestData_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_StartTestSessionCriteria_System_Collections_Generic_IDictionary_System_String_Microsoft_VisualStudio_TestPlatform_ObjectModel_SourceDetail__Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IWarningLogger_
+  name: GetTestSessionManager
+  nameWithType: ITestEngine.GetTestSessionManager
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetTestSessionManager
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.StartTestSessionCriteria
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.StartTestSessionCriteria
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.StartTestSessionCriteria.html
+  name: StartTestSessionCriteria
+  nameWithType: StartTestSessionCriteria
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.StartTestSessionCriteria
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyTestSessionManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyTestSessionManager
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyTestSessionManager.html
+  name: IProxyTestSessionManager
+  nameWithType: IProxyTestSessionManager
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyTestSessionManager
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExtensionManager*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExtensionManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestEngine_GetExtensionManager
+  name: GetExtensionManager
+  nameWithType: ITestEngine.GetExtensionManager
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetExtensionManager
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestExtensionManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestExtensionManager
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestExtensionManager.html
+  name: ITestExtensionManager
+  nameWithType: ITestExtensionManager
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestExtensionManager
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetLoggerManager*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetLoggerManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestEngine_GetLoggerManager_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IRequestData_
+  name: GetLoggerManager
+  nameWithType: ITestEngine.GetLoggerManager
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestEngine.GetLoggerManager
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.html
+  name: ITestLoggerManager
+  nameWithType: ITestLoggerManager
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager

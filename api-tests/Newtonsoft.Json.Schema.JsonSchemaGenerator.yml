@@ -1,0 +1,612 @@
+### YamlMime:ManagedReference
+items:
+- uid: Newtonsoft.Json.Schema.JsonSchemaGenerator
+  commentId: T:Newtonsoft.Json.Schema.JsonSchemaGenerator
+  id: JsonSchemaGenerator
+  parent: Newtonsoft.Json.Schema
+  children:
+  - Newtonsoft.Json.Schema.JsonSchemaGenerator.#ctor
+  - Newtonsoft.Json.Schema.JsonSchemaGenerator.ContractResolver
+  - Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type)
+  - Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type,Newtonsoft.Json.Schema.JsonSchemaResolver)
+  - Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type,Newtonsoft.Json.Schema.JsonSchemaResolver,System.Boolean)
+  - Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type,System.Boolean)
+  - Newtonsoft.Json.Schema.JsonSchemaGenerator.UndefinedSchemaIdHandling
+  langs:
+  - csharp
+  - vb
+  name: JsonSchemaGenerator
+  nameWithType: JsonSchemaGenerator
+  fullName: Newtonsoft.Json.Schema.JsonSchemaGenerator
+  type: Class
+  assemblies:
+  - Newtonsoft.Json
+  namespace: Newtonsoft.Json.Schema
+  syntax:
+    content: >-
+      [Obsolete("JSON Schema validation has been moved to its own package. See https://www.newtonsoft.com/jsonschema for more details.")]
+
+      public class JsonSchemaGenerator
+    content.vb: >-
+      <Obsolete("JSON Schema validation has been moved to its own package. See https://www.newtonsoft.com/jsonschema for more details.")>
+
+      Public Class JsonSchemaGenerator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: JSON Schema validation has been moved to its own package. See https://www.newtonsoft.com/jsonschema for more details.
+- uid: Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type)
+  commentId: M:Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type)
+  id: Generate(System.Type)
+  parent: Newtonsoft.Json.Schema.JsonSchemaGenerator
+  langs:
+  - csharp
+  - vb
+  name: Generate(Type)
+  nameWithType: JsonSchemaGenerator.Generate(Type)
+  fullName: Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type)
+  type: Method
+  assemblies:
+  - Newtonsoft.Json
+  namespace: Newtonsoft.Json.Schema
+  syntax:
+    content: public JsonSchema Generate(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: Newtonsoft.Json.Schema.JsonSchema
+    content.vb: Public Function Generate(type As Type) As JsonSchema
+  overload: Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate*
+- uid: Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type,Newtonsoft.Json.Schema.JsonSchemaResolver)
+  commentId: M:Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type,Newtonsoft.Json.Schema.JsonSchemaResolver)
+  id: Generate(System.Type,Newtonsoft.Json.Schema.JsonSchemaResolver)
+  parent: Newtonsoft.Json.Schema.JsonSchemaGenerator
+  langs:
+  - csharp
+  - vb
+  name: Generate(Type, JsonSchemaResolver)
+  nameWithType: JsonSchemaGenerator.Generate(Type, JsonSchemaResolver)
+  fullName: Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type, Newtonsoft.Json.Schema.JsonSchemaResolver)
+  type: Method
+  assemblies:
+  - Newtonsoft.Json
+  namespace: Newtonsoft.Json.Schema
+  syntax:
+    content: public JsonSchema Generate(Type type, JsonSchemaResolver resolver)
+    parameters:
+    - id: type
+      type: System.Type
+    - id: resolver
+      type: Newtonsoft.Json.Schema.JsonSchemaResolver
+    return:
+      type: Newtonsoft.Json.Schema.JsonSchema
+    content.vb: Public Function Generate(type As Type, resolver As JsonSchemaResolver) As JsonSchema
+  overload: Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate*
+- uid: Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type,System.Boolean)
+  commentId: M:Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type,System.Boolean)
+  id: Generate(System.Type,System.Boolean)
+  parent: Newtonsoft.Json.Schema.JsonSchemaGenerator
+  langs:
+  - csharp
+  - vb
+  name: Generate(Type, bool)
+  nameWithType: JsonSchemaGenerator.Generate(Type, bool)
+  fullName: Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type, bool)
+  type: Method
+  assemblies:
+  - Newtonsoft.Json
+  namespace: Newtonsoft.Json.Schema
+  syntax:
+    content: public JsonSchema Generate(Type type, bool rootSchemaNullable)
+    parameters:
+    - id: type
+      type: System.Type
+    - id: rootSchemaNullable
+      type: System.Boolean
+    return:
+      type: Newtonsoft.Json.Schema.JsonSchema
+    content.vb: Public Function Generate(type As Type, rootSchemaNullable As Boolean) As JsonSchema
+  overload: Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate*
+  nameWithType.vb: JsonSchemaGenerator.Generate(Type, Boolean)
+  fullName.vb: Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type, Boolean)
+  name.vb: Generate(Type, Boolean)
+- uid: Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type,Newtonsoft.Json.Schema.JsonSchemaResolver,System.Boolean)
+  commentId: M:Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type,Newtonsoft.Json.Schema.JsonSchemaResolver,System.Boolean)
+  id: Generate(System.Type,Newtonsoft.Json.Schema.JsonSchemaResolver,System.Boolean)
+  parent: Newtonsoft.Json.Schema.JsonSchemaGenerator
+  langs:
+  - csharp
+  - vb
+  name: Generate(Type, JsonSchemaResolver, bool)
+  nameWithType: JsonSchemaGenerator.Generate(Type, JsonSchemaResolver, bool)
+  fullName: Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type, Newtonsoft.Json.Schema.JsonSchemaResolver, bool)
+  type: Method
+  assemblies:
+  - Newtonsoft.Json
+  namespace: Newtonsoft.Json.Schema
+  syntax:
+    content: public JsonSchema Generate(Type type, JsonSchemaResolver resolver, bool rootSchemaNullable)
+    parameters:
+    - id: type
+      type: System.Type
+    - id: resolver
+      type: Newtonsoft.Json.Schema.JsonSchemaResolver
+    - id: rootSchemaNullable
+      type: System.Boolean
+    return:
+      type: Newtonsoft.Json.Schema.JsonSchema
+    content.vb: Public Function Generate(type As Type, resolver As JsonSchemaResolver, rootSchemaNullable As Boolean) As JsonSchema
+  overload: Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate*
+  nameWithType.vb: JsonSchemaGenerator.Generate(Type, JsonSchemaResolver, Boolean)
+  fullName.vb: Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate(System.Type, Newtonsoft.Json.Schema.JsonSchemaResolver, Boolean)
+  name.vb: Generate(Type, JsonSchemaResolver, Boolean)
+- uid: Newtonsoft.Json.Schema.JsonSchemaGenerator.#ctor
+  commentId: M:Newtonsoft.Json.Schema.JsonSchemaGenerator.#ctor
+  id: '#ctor'
+  parent: Newtonsoft.Json.Schema.JsonSchemaGenerator
+  langs:
+  - csharp
+  - vb
+  name: JsonSchemaGenerator()
+  nameWithType: JsonSchemaGenerator.JsonSchemaGenerator()
+  fullName: Newtonsoft.Json.Schema.JsonSchemaGenerator.JsonSchemaGenerator()
+  type: Constructor
+  assemblies:
+  - Newtonsoft.Json
+  namespace: Newtonsoft.Json.Schema
+  syntax:
+    content: public JsonSchemaGenerator()
+    content.vb: Public Sub New()
+  overload: Newtonsoft.Json.Schema.JsonSchemaGenerator.#ctor*
+  nameWithType.vb: JsonSchemaGenerator.New()
+  fullName.vb: Newtonsoft.Json.Schema.JsonSchemaGenerator.New()
+  name.vb: New()
+- uid: Newtonsoft.Json.Schema.JsonSchemaGenerator.UndefinedSchemaIdHandling
+  commentId: P:Newtonsoft.Json.Schema.JsonSchemaGenerator.UndefinedSchemaIdHandling
+  id: UndefinedSchemaIdHandling
+  parent: Newtonsoft.Json.Schema.JsonSchemaGenerator
+  langs:
+  - csharp
+  - vb
+  name: UndefinedSchemaIdHandling
+  nameWithType: JsonSchemaGenerator.UndefinedSchemaIdHandling
+  fullName: Newtonsoft.Json.Schema.JsonSchemaGenerator.UndefinedSchemaIdHandling
+  type: Property
+  assemblies:
+  - Newtonsoft.Json
+  namespace: Newtonsoft.Json.Schema
+  syntax:
+    content: public UndefinedSchemaIdHandling UndefinedSchemaIdHandling { get; set; }
+    parameters: []
+    return:
+      type: Newtonsoft.Json.Schema.UndefinedSchemaIdHandling
+    content.vb: Public Property UndefinedSchemaIdHandling As UndefinedSchemaIdHandling
+  overload: Newtonsoft.Json.Schema.JsonSchemaGenerator.UndefinedSchemaIdHandling*
+- uid: Newtonsoft.Json.Schema.JsonSchemaGenerator.ContractResolver
+  commentId: P:Newtonsoft.Json.Schema.JsonSchemaGenerator.ContractResolver
+  id: ContractResolver
+  parent: Newtonsoft.Json.Schema.JsonSchemaGenerator
+  langs:
+  - csharp
+  - vb
+  name: ContractResolver
+  nameWithType: JsonSchemaGenerator.ContractResolver
+  fullName: Newtonsoft.Json.Schema.JsonSchemaGenerator.ContractResolver
+  type: Property
+  assemblies:
+  - Newtonsoft.Json
+  namespace: Newtonsoft.Json.Schema
+  syntax:
+    content: public IContractResolver ContractResolver { get; set; }
+    parameters: []
+    return:
+      type: Newtonsoft.Json.Serialization.IContractResolver
+    content.vb: Public Property ContractResolver As IContractResolver
+  overload: Newtonsoft.Json.Schema.JsonSchemaGenerator.ContractResolver*
+references:
+- uid: Newtonsoft.Json.Schema
+  commentId: N:Newtonsoft.Json.Schema
+  isExternal: true
+  href: Newtonsoft.html
+  name: Newtonsoft.Json.Schema
+  nameWithType: Newtonsoft.Json.Schema
+  fullName: Newtonsoft.Json.Schema
+  spec.csharp:
+  - uid: Newtonsoft
+    name: Newtonsoft
+    isExternal: true
+    href: Newtonsoft.html
+  - name: .
+  - uid: Newtonsoft.Json
+    name: Json
+    isExternal: true
+    href: Newtonsoft.Json.html
+  - name: .
+  - uid: Newtonsoft.Json.Schema
+    name: Schema
+    isExternal: true
+    href: Newtonsoft.Json.Schema.html
+  spec.vb:
+  - uid: Newtonsoft
+    name: Newtonsoft
+    isExternal: true
+    href: Newtonsoft.html
+  - name: .
+  - uid: Newtonsoft.Json
+    name: Json
+    isExternal: true
+    href: Newtonsoft.Json.html
+  - name: .
+  - uid: Newtonsoft.Json.Schema
+    name: Schema
+    isExternal: true
+    href: Newtonsoft.Json.Schema.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate*
+  commentId: Overload:Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate
+  isExternal: true
+  href: Newtonsoft.Json.Schema.JsonSchemaGenerator.html#Newtonsoft_Json_Schema_JsonSchemaGenerator_Generate_System_Type_
+  name: Generate
+  nameWithType: JsonSchemaGenerator.Generate
+  fullName: Newtonsoft.Json.Schema.JsonSchemaGenerator.Generate
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Newtonsoft.Json.Schema.JsonSchema
+  commentId: T:Newtonsoft.Json.Schema.JsonSchema
+  parent: Newtonsoft.Json.Schema
+  isExternal: true
+  href: Newtonsoft.Json.Schema.JsonSchema.html
+  name: JsonSchema
+  nameWithType: JsonSchema
+  fullName: Newtonsoft.Json.Schema.JsonSchema
+- uid: Newtonsoft.Json.Schema.JsonSchemaResolver
+  commentId: T:Newtonsoft.Json.Schema.JsonSchemaResolver
+  parent: Newtonsoft.Json.Schema
+  isExternal: true
+  href: Newtonsoft.Json.Schema.JsonSchemaResolver.html
+  name: JsonSchemaResolver
+  nameWithType: JsonSchemaResolver
+  fullName: Newtonsoft.Json.Schema.JsonSchemaResolver
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Newtonsoft.Json.Schema.JsonSchemaGenerator.#ctor*
+  commentId: Overload:Newtonsoft.Json.Schema.JsonSchemaGenerator.#ctor
+  isExternal: true
+  href: Newtonsoft.Json.Schema.JsonSchemaGenerator.html#Newtonsoft_Json_Schema_JsonSchemaGenerator__ctor
+  name: JsonSchemaGenerator
+  nameWithType: JsonSchemaGenerator.JsonSchemaGenerator
+  fullName: Newtonsoft.Json.Schema.JsonSchemaGenerator.JsonSchemaGenerator
+  nameWithType.vb: JsonSchemaGenerator.New
+  fullName.vb: Newtonsoft.Json.Schema.JsonSchemaGenerator.New
+  name.vb: New
+- uid: Newtonsoft.Json.Schema.JsonSchemaGenerator.UndefinedSchemaIdHandling*
+  commentId: Overload:Newtonsoft.Json.Schema.JsonSchemaGenerator.UndefinedSchemaIdHandling
+  isExternal: true
+  href: Newtonsoft.Json.Schema.JsonSchemaGenerator.html#Newtonsoft_Json_Schema_JsonSchemaGenerator_UndefinedSchemaIdHandling
+  name: UndefinedSchemaIdHandling
+  nameWithType: JsonSchemaGenerator.UndefinedSchemaIdHandling
+  fullName: Newtonsoft.Json.Schema.JsonSchemaGenerator.UndefinedSchemaIdHandling
+- uid: Newtonsoft.Json.Schema.UndefinedSchemaIdHandling
+  commentId: T:Newtonsoft.Json.Schema.UndefinedSchemaIdHandling
+  parent: Newtonsoft.Json.Schema
+  isExternal: true
+  href: Newtonsoft.Json.Schema.UndefinedSchemaIdHandling.html
+  name: UndefinedSchemaIdHandling
+  nameWithType: UndefinedSchemaIdHandling
+  fullName: Newtonsoft.Json.Schema.UndefinedSchemaIdHandling
+- uid: Newtonsoft.Json.Schema.JsonSchemaGenerator.ContractResolver*
+  commentId: Overload:Newtonsoft.Json.Schema.JsonSchemaGenerator.ContractResolver
+  isExternal: true
+  href: Newtonsoft.Json.Schema.JsonSchemaGenerator.html#Newtonsoft_Json_Schema_JsonSchemaGenerator_ContractResolver
+  name: ContractResolver
+  nameWithType: JsonSchemaGenerator.ContractResolver
+  fullName: Newtonsoft.Json.Schema.JsonSchemaGenerator.ContractResolver
+- uid: Newtonsoft.Json.Serialization.IContractResolver
+  commentId: T:Newtonsoft.Json.Serialization.IContractResolver
+  parent: Newtonsoft.Json.Serialization
+  isExternal: true
+  href: Newtonsoft.Json.Serialization.IContractResolver.html
+  name: IContractResolver
+  nameWithType: IContractResolver
+  fullName: Newtonsoft.Json.Serialization.IContractResolver
+- uid: Newtonsoft.Json.Serialization
+  commentId: N:Newtonsoft.Json.Serialization
+  isExternal: true
+  href: Newtonsoft.html
+  name: Newtonsoft.Json.Serialization
+  nameWithType: Newtonsoft.Json.Serialization
+  fullName: Newtonsoft.Json.Serialization
+  spec.csharp:
+  - uid: Newtonsoft
+    name: Newtonsoft
+    isExternal: true
+    href: Newtonsoft.html
+  - name: .
+  - uid: Newtonsoft.Json
+    name: Json
+    isExternal: true
+    href: Newtonsoft.Json.html
+  - name: .
+  - uid: Newtonsoft.Json.Serialization
+    name: Serialization
+    isExternal: true
+    href: Newtonsoft.Json.Serialization.html
+  spec.vb:
+  - uid: Newtonsoft
+    name: Newtonsoft
+    isExternal: true
+    href: Newtonsoft.html
+  - name: .
+  - uid: Newtonsoft.Json
+    name: Json
+    isExternal: true
+    href: Newtonsoft.Json.html
+  - name: .
+  - uid: Newtonsoft.Json.Serialization
+    name: Serialization
+    isExternal: true
+    href: Newtonsoft.Json.Serialization.html

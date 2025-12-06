@@ -1,0 +1,652 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs
+  id: TestRunChangedEventArgs
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult},System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.ActiveTests
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.NewTestResults
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.TestRunStatistics
+  langs:
+  - csharp
+  - vb
+  name: TestRunChangedEventArgs
+  nameWithType: TestRunChangedEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs
+  type: Class
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: >-
+      [DataContract]
+
+      public class TestRunChangedEventArgs : EventArgs
+    content.vb: >-
+      <DataContract>
+
+      Public Class TestRunChangedEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult},System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult},System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  id: '#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult},System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})'
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: TestRunChangedEventArgs(ITestRunStatistics?, IEnumerable<TestResult>?, IEnumerable<TestCase>?)
+  nameWithType: TestRunChangedEventArgs.TestRunChangedEventArgs(ITestRunStatistics?, IEnumerable<TestResult>?, IEnumerable<TestCase>?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.TestRunChangedEventArgs(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics?, System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult>?, System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase>?)
+  type: Constructor
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: public TestRunChangedEventArgs(ITestRunStatistics? stats, IEnumerable<TestResult>? newTestResults, IEnumerable<TestCase>? activeTests)
+    parameters:
+    - id: stats
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics
+    - id: newTestResults
+      type: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult}
+    - id: activeTests
+      type: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+    content.vb: Public Sub New(stats As ITestRunStatistics, newTestResults As IEnumerable(Of TestResult), activeTests As IEnumerable(Of TestCase))
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.#ctor*
+  nameWithType.vb: TestRunChangedEventArgs.New(ITestRunStatistics, IEnumerable(Of TestResult), IEnumerable(Of TestCase))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.New(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics, System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult), System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase))
+  name.vb: New(ITestRunStatistics, IEnumerable(Of TestResult), IEnumerable(Of TestCase))
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.NewTestResults
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.NewTestResults
+  id: NewTestResults
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: NewTestResults
+  nameWithType: TestRunChangedEventArgs.NewTestResults
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.NewTestResults
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: >-
+      [DataMember]
+
+      public IEnumerable<TestResult>? NewTestResults { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult}
+    content.vb: >-
+      <DataMember>
+
+      Public ReadOnly Property NewTestResults As IEnumerable(Of TestResult)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.NewTestResults*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.TestRunStatistics
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.TestRunStatistics
+  id: TestRunStatistics
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: TestRunStatistics
+  nameWithType: TestRunChangedEventArgs.TestRunStatistics
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.TestRunStatistics
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: >-
+      [DataMember]
+
+      public ITestRunStatistics? TestRunStatistics { get; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics
+    content.vb: >-
+      <DataMember>
+
+      Public ReadOnly Property TestRunStatistics As ITestRunStatistics
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.TestRunStatistics*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.ActiveTests
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.ActiveTests
+  id: ActiveTests
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: ActiveTests
+  nameWithType: TestRunChangedEventArgs.ActiveTests
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.ActiveTests
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: >-
+      [DataMember]
+
+      public IEnumerable<TestCase>? ActiveTests { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+    content.vb: >-
+      <DataMember>
+
+      Public ReadOnly Property ActiveTests As IEnumerable(Of TestCase)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.ActiveTests*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  commentId: F:System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs.empty
+  name: Empty
+  nameWithType: EventArgs.Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_TestRunChangedEventArgs__ctor_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestRunStatistics_System_Collections_Generic_IEnumerable_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestResult__System_Collections_Generic_IEnumerable_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase__
+  name: TestRunChangedEventArgs
+  nameWithType: TestRunChangedEventArgs.TestRunChangedEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.TestRunChangedEventArgs
+  nameWithType.vb: TestRunChangedEventArgs.New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.New
+  name.vb: New
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.html
+  name: ITestRunStatistics
+  nameWithType: ITestRunStatistics
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics
+- uid: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TestResult>
+  nameWithType: IEnumerable<TestResult>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult>
+  nameWithType.vb: IEnumerable(Of TestResult)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult)
+  name.vb: IEnumerable(Of TestResult)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult
+    name: TestResult
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult
+    name: TestResult
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TestCase>
+  nameWithType: IEnumerable<TestCase>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase>
+  nameWithType.vb: IEnumerable(Of TestCase)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase)
+  name.vb: IEnumerable(Of TestCase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    name: TestCase
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    name: TestCase
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.NewTestResults*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.NewTestResults
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_TestRunChangedEventArgs_NewTestResults
+  name: NewTestResults
+  nameWithType: TestRunChangedEventArgs.NewTestResults
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.NewTestResults
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.TestRunStatistics*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.TestRunStatistics
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_TestRunChangedEventArgs_TestRunStatistics
+  name: TestRunStatistics
+  nameWithType: TestRunChangedEventArgs.TestRunStatistics
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.TestRunStatistics
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.ActiveTests*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.ActiveTests
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_TestRunChangedEventArgs_ActiveTests
+  name: ActiveTests
+  nameWithType: TestRunChangedEventArgs.ActiveTests
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.ActiveTests

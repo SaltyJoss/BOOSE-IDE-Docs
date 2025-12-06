@@ -1,0 +1,365 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel
+  id: ICommunicationChannel
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  children:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.MessageReceived
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.NotifyDataAvailable(System.Threading.CancellationToken)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.Send(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ICommunicationChannel
+  nameWithType: ICommunicationChannel
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel
+  type: Interface
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: 'public interface ICommunicationChannel : IDisposable'
+    content.vb: Public Interface ICommunicationChannel Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.Send(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.Send(System.String)
+  id: Send(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: Send(string)
+  nameWithType: ICommunicationChannel.Send(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.Send(string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: Task Send(string data)
+    parameters:
+    - id: data
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function Send(data As String) As Task
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.Send*
+  nameWithType.vb: ICommunicationChannel.Send(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.Send(String)
+  name.vb: Send(String)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.NotifyDataAvailable(System.Threading.CancellationToken)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.NotifyDataAvailable(System.Threading.CancellationToken)
+  id: NotifyDataAvailable(System.Threading.CancellationToken)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: NotifyDataAvailable(CancellationToken)
+  nameWithType: ICommunicationChannel.NotifyDataAvailable(CancellationToken)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.NotifyDataAvailable(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: Task NotifyDataAvailable(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function NotifyDataAvailable(cancellationToken As CancellationToken) As Task
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.NotifyDataAvailable*
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.MessageReceived
+  commentId: P:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.MessageReceived
+  id: MessageReceived
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: MessageReceived
+  nameWithType: ICommunicationChannel.MessageReceived
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.MessageReceived
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: TrackableEvent<MessageReceivedEventArgs> MessageReceived { get; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent{Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.MessageReceivedEventArgs}
+    content.vb: ReadOnly Property MessageReceived As TrackableEvent(Of MessageReceivedEventArgs)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.MessageReceived*
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.Send*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.Send
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationChannel_Send_System_String_
+  name: Send
+  nameWithType: ICommunicationChannel.Send
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.Send
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.NotifyDataAvailable*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.NotifyDataAvailable
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationChannel_NotifyDataAvailable_System_Threading_CancellationToken_
+  name: NotifyDataAvailable
+  nameWithType: ICommunicationChannel.NotifyDataAvailable
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.NotifyDataAvailable
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.MessageReceived*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.MessageReceived
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationChannel_MessageReceived
+  name: MessageReceived
+  nameWithType: ICommunicationChannel.MessageReceived
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationChannel.MessageReceived
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent{Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.MessageReceivedEventArgs}
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent{Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.MessageReceivedEventArgs}
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  definition: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent-1.html
+  name: TrackableEvent<MessageReceivedEventArgs>
+  nameWithType: TrackableEvent<MessageReceivedEventArgs>
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent<Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.MessageReceivedEventArgs>
+  nameWithType.vb: TrackableEvent(Of MessageReceivedEventArgs)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent(Of Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.MessageReceivedEventArgs)
+  name.vb: TrackableEvent(Of MessageReceivedEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1
+    name: TrackableEvent
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent-1.html
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.MessageReceivedEventArgs
+    name: MessageReceivedEventArgs
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.MessageReceivedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1
+    name: TrackableEvent
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.MessageReceivedEventArgs
+    name: MessageReceivedEventArgs
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.MessageReceivedEventArgs.html
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent-1.html
+  name: TrackableEvent<T>
+  nameWithType: TrackableEvent<T>
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent<T>
+  nameWithType.vb: TrackableEvent(Of T)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent(Of T)
+  name.vb: TrackableEvent(Of T)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1
+    name: TrackableEvent
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1
+    name: TrackableEvent
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

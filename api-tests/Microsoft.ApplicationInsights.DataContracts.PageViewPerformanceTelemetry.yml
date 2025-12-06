@@ -1,0 +1,1578 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  commentId: T:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  id: PageViewPerformanceTelemetry
+  parent: Microsoft.ApplicationInsights.DataContracts
+  children:
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.#ctor
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.#ctor(System.String)
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Context
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.DeepClone
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.DomProcessing
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Duration
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Extension
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Id
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ItemTypeFlag
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Metrics
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Name
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.NetworkConnect
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.PerfTotal
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ProactiveSamplingDecision
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Properties
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ReceivedResponse
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.SentRequest
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Sequence
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.SerializeData(Microsoft.ApplicationInsights.Extensibility.ISerializationWriter)
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Timestamp
+  - Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Url
+  langs:
+  - csharp
+  - vb
+  name: PageViewPerformanceTelemetry
+  nameWithType: PageViewPerformanceTelemetry
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  type: Class
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: 'public sealed class PageViewPerformanceTelemetry : ITelemetry, ISupportProperties, ISupportAdvancedSampling, ISupportSampling'
+    content.vb: Public NotInheritable Class PageViewPerformanceTelemetry Implements ITelemetry, ISupportProperties, ISupportAdvancedSampling, ISupportSampling
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.ApplicationInsights.Channel.ITelemetry
+  - Microsoft.ApplicationInsights.DataContracts.ISupportProperties
+  - Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling
+  - Microsoft.ApplicationInsights.DataContracts.ISupportSampling
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - Microsoft.ApplicationInsights.Channel.ITelemetry.Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.GetEnvelopeName
+  - Microsoft.ApplicationInsights.Channel.ITelemetry.Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.TrySetEnvelopeName(System.String)
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.#ctor
+  commentId: M:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.#ctor
+  id: '#ctor'
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: PageViewPerformanceTelemetry()
+  nameWithType: PageViewPerformanceTelemetry.PageViewPerformanceTelemetry()
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.PageViewPerformanceTelemetry()
+  type: Constructor
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public PageViewPerformanceTelemetry()
+    content.vb: Public Sub New()
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.#ctor*
+  nameWithType.vb: PageViewPerformanceTelemetry.New()
+  fullName.vb: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.New()
+  name.vb: New()
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.#ctor(System.String)
+  commentId: M:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: PageViewPerformanceTelemetry(string)
+  nameWithType: PageViewPerformanceTelemetry.PageViewPerformanceTelemetry(string)
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.PageViewPerformanceTelemetry(string)
+  type: Constructor
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public PageViewPerformanceTelemetry(string pageName)
+    parameters:
+    - id: pageName
+      type: System.String
+    content.vb: Public Sub New(pageName As String)
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.#ctor*
+  nameWithType.vb: PageViewPerformanceTelemetry.New(String)
+  fullName.vb: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.New(String)
+  name.vb: New(String)
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.DeepClone
+  commentId: M:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.DeepClone
+  id: DeepClone
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: DeepClone()
+  nameWithType: PageViewPerformanceTelemetry.DeepClone()
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.DeepClone()
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  example: []
+  syntax:
+    content: public ITelemetry DeepClone()
+    return:
+      type: Microsoft.ApplicationInsights.Channel.ITelemetry
+    content.vb: Public Function DeepClone() As ITelemetry
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.DeepClone*
+  implements:
+  - Microsoft.ApplicationInsights.Channel.ITelemetry.DeepClone
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.SerializeData(Microsoft.ApplicationInsights.Extensibility.ISerializationWriter)
+  commentId: M:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.SerializeData(Microsoft.ApplicationInsights.Extensibility.ISerializationWriter)
+  id: SerializeData(Microsoft.ApplicationInsights.Extensibility.ISerializationWriter)
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: SerializeData(ISerializationWriter)
+  nameWithType: PageViewPerformanceTelemetry.SerializeData(ISerializationWriter)
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.SerializeData(Microsoft.ApplicationInsights.Extensibility.ISerializationWriter)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  example: []
+  syntax:
+    content: public void SerializeData(ISerializationWriter serializationWriter)
+    parameters:
+    - id: serializationWriter
+      type: Microsoft.ApplicationInsights.Extensibility.ISerializationWriter
+    content.vb: Public Sub SerializeData(serializationWriter As ISerializationWriter)
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.SerializeData*
+  implements:
+  - Microsoft.ApplicationInsights.Channel.ITelemetry.SerializeData(Microsoft.ApplicationInsights.Extensibility.ISerializationWriter)
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Timestamp
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Timestamp
+  id: Timestamp
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: Timestamp
+  nameWithType: PageViewPerformanceTelemetry.Timestamp
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Timestamp
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  example: []
+  syntax:
+    content: public DateTimeOffset Timestamp { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property Timestamp As DateTimeOffset
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Timestamp*
+  implements:
+  - Microsoft.ApplicationInsights.Channel.ITelemetry.Timestamp
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Sequence
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Sequence
+  id: Sequence
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: Sequence
+  nameWithType: PageViewPerformanceTelemetry.Sequence
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Sequence
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  example: []
+  syntax:
+    content: public string Sequence { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Sequence As String
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Sequence*
+  implements:
+  - Microsoft.ApplicationInsights.Channel.ITelemetry.Sequence
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Context
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Context
+  id: Context
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: PageViewPerformanceTelemetry.Context
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Context
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  example: []
+  syntax:
+    content: public TelemetryContext Context { get; }
+    parameters: []
+    return:
+      type: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+    content.vb: Public ReadOnly Property Context As TelemetryContext
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Context*
+  implements:
+  - Microsoft.ApplicationInsights.Channel.ITelemetry.Context
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Extension
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Extension
+  id: Extension
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: Extension
+  nameWithType: PageViewPerformanceTelemetry.Extension
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Extension
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  example: []
+  syntax:
+    content: public IExtension Extension { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.ApplicationInsights.Extensibility.IExtension
+    content.vb: Public Property Extension As IExtension
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Extension*
+  implements:
+  - Microsoft.ApplicationInsights.Channel.ITelemetry.Extension
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Id
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Id
+  id: Id
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: PageViewPerformanceTelemetry.Id
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Id
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Id*
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Name
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Name
+  id: Name
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: PageViewPerformanceTelemetry.Name
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Name
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Name*
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Url
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Url
+  id: Url
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: PageViewPerformanceTelemetry.Url
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Url
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public Uri Url { get; set; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Public Property Url As Uri
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Url*
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Duration
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Duration
+  id: Duration
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: PageViewPerformanceTelemetry.Duration
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Duration
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public TimeSpan Duration { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property Duration As TimeSpan
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Duration*
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.DomProcessing
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.DomProcessing
+  id: DomProcessing
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: DomProcessing
+  nameWithType: PageViewPerformanceTelemetry.DomProcessing
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.DomProcessing
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public TimeSpan DomProcessing { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property DomProcessing As TimeSpan
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.DomProcessing*
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.PerfTotal
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.PerfTotal
+  id: PerfTotal
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: PerfTotal
+  nameWithType: PageViewPerformanceTelemetry.PerfTotal
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.PerfTotal
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public TimeSpan PerfTotal { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property PerfTotal As TimeSpan
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.PerfTotal*
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.NetworkConnect
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.NetworkConnect
+  id: NetworkConnect
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: NetworkConnect
+  nameWithType: PageViewPerformanceTelemetry.NetworkConnect
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.NetworkConnect
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public TimeSpan NetworkConnect { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property NetworkConnect As TimeSpan
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.NetworkConnect*
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.SentRequest
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.SentRequest
+  id: SentRequest
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: SentRequest
+  nameWithType: PageViewPerformanceTelemetry.SentRequest
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.SentRequest
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public TimeSpan SentRequest { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property SentRequest As TimeSpan
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.SentRequest*
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ReceivedResponse
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ReceivedResponse
+  id: ReceivedResponse
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: ReceivedResponse
+  nameWithType: PageViewPerformanceTelemetry.ReceivedResponse
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ReceivedResponse
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public TimeSpan ReceivedResponse { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property ReceivedResponse As TimeSpan
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ReceivedResponse*
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Metrics
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Metrics
+  id: Metrics
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: Metrics
+  nameWithType: PageViewPerformanceTelemetry.Metrics
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Metrics
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public IDictionary<string, double> Metrics { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.Double}
+    content.vb: Public ReadOnly Property Metrics As IDictionary(Of String, Double)
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Metrics*
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Properties
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Properties
+  id: Properties
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: PageViewPerformanceTelemetry.Properties
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Properties
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  example: []
+  syntax:
+    content: public IDictionary<string, string> Properties { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    content.vb: Public ReadOnly Property Properties As IDictionary(Of String, String)
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Properties*
+  implements:
+  - Microsoft.ApplicationInsights.DataContracts.ISupportProperties.Properties
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ItemTypeFlag
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ItemTypeFlag
+  id: ItemTypeFlag
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: ItemTypeFlag
+  nameWithType: PageViewPerformanceTelemetry.ItemTypeFlag
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ItemTypeFlag
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  example: []
+  syntax:
+    content: public SamplingTelemetryItemTypes ItemTypeFlag { get; }
+    parameters: []
+    return:
+      type: Microsoft.ApplicationInsights.DataContracts.SamplingTelemetryItemTypes
+    content.vb: Public ReadOnly Property ItemTypeFlag As SamplingTelemetryItemTypes
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ItemTypeFlag*
+  implements:
+  - Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling.ItemTypeFlag
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ProactiveSamplingDecision
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ProactiveSamplingDecision
+  id: ProactiveSamplingDecision
+  parent: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry
+  langs:
+  - csharp
+  - vb
+  name: ProactiveSamplingDecision
+  nameWithType: PageViewPerformanceTelemetry.ProactiveSamplingDecision
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ProactiveSamplingDecision
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  example: []
+  syntax:
+    content: public SamplingDecision ProactiveSamplingDecision { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.ApplicationInsights.DataContracts.SamplingDecision
+    content.vb: Public Property ProactiveSamplingDecision As SamplingDecision
+  overload: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ProactiveSamplingDecision*
+  implements:
+  - Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling.ProactiveSamplingDecision
+references:
+- uid: Microsoft.ApplicationInsights.DataContracts
+  commentId: N:Microsoft.ApplicationInsights.DataContracts
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.DataContracts
+  nameWithType: Microsoft.ApplicationInsights.DataContracts
+  fullName: Microsoft.ApplicationInsights.DataContracts
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.DataContracts
+    name: DataContracts
+    isExternal: true
+    href: Microsoft.ApplicationInsights.DataContracts.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.DataContracts
+    name: DataContracts
+    isExternal: true
+    href: Microsoft.ApplicationInsights.DataContracts.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetry
+  commentId: T:Microsoft.ApplicationInsights.Channel.ITelemetry
+  parent: Microsoft.ApplicationInsights.Channel
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.ITelemetry.html
+  name: ITelemetry
+  nameWithType: ITelemetry
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetry
+- uid: Microsoft.ApplicationInsights.DataContracts.ISupportProperties
+  commentId: T:Microsoft.ApplicationInsights.DataContracts.ISupportProperties
+  parent: Microsoft.ApplicationInsights.DataContracts
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.ISupportProperties.html
+  name: ISupportProperties
+  nameWithType: ISupportProperties
+  fullName: Microsoft.ApplicationInsights.DataContracts.ISupportProperties
+- uid: Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling
+  commentId: T:Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling
+  parent: Microsoft.ApplicationInsights.DataContracts
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling.html
+  name: ISupportAdvancedSampling
+  nameWithType: ISupportAdvancedSampling
+  fullName: Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling
+- uid: Microsoft.ApplicationInsights.DataContracts.ISupportSampling
+  commentId: T:Microsoft.ApplicationInsights.DataContracts.ISupportSampling
+  parent: Microsoft.ApplicationInsights.DataContracts
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.ISupportSampling.html
+  name: ISupportSampling
+  nameWithType: ISupportSampling
+  fullName: Microsoft.ApplicationInsights.DataContracts.ISupportSampling
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetry.Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.GetEnvelopeName
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.GetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions
+  definition: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.GetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.html#Microsoft_ApplicationInsights_Extensibility_Implementation_TelemetryExtensions_GetEnvelopeName_Microsoft_ApplicationInsights_Channel_ITelemetry_
+  name: GetEnvelopeName(ITelemetry)
+  nameWithType: TelemetryExtensions.GetEnvelopeName(ITelemetry)
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.GetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.GetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry)
+    name: GetEnvelopeName
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.html#Microsoft_ApplicationInsights_Extensibility_Implementation_TelemetryExtensions_GetEnvelopeName_Microsoft_ApplicationInsights_Channel_ITelemetry_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Channel.ITelemetry
+    name: ITelemetry
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.ITelemetry.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.GetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry)
+    name: GetEnvelopeName
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.html#Microsoft_ApplicationInsights_Extensibility_Implementation_TelemetryExtensions_GetEnvelopeName_Microsoft_ApplicationInsights_Channel_ITelemetry_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Channel.ITelemetry
+    name: ITelemetry
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.ITelemetry.html
+  - name: )
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetry.Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.TrySetEnvelopeName(System.String)
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.TrySetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry,System.String)
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions
+  definition: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.TrySetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry,System.String)
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.html#Microsoft_ApplicationInsights_Extensibility_Implementation_TelemetryExtensions_TrySetEnvelopeName_Microsoft_ApplicationInsights_Channel_ITelemetry_System_String_
+  name: TrySetEnvelopeName(ITelemetry, string)
+  nameWithType: TelemetryExtensions.TrySetEnvelopeName(ITelemetry, string)
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.TrySetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry, string)
+  nameWithType.vb: TelemetryExtensions.TrySetEnvelopeName(ITelemetry, String)
+  fullName.vb: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.TrySetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry, String)
+  name.vb: TrySetEnvelopeName(ITelemetry, String)
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.TrySetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry,System.String)
+    name: TrySetEnvelopeName
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.html#Microsoft_ApplicationInsights_Extensibility_Implementation_TelemetryExtensions_TrySetEnvelopeName_Microsoft_ApplicationInsights_Channel_ITelemetry_System_String_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Channel.ITelemetry
+    name: ITelemetry
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.ITelemetry.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.TrySetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry,System.String)
+    name: TrySetEnvelopeName
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.html#Microsoft_ApplicationInsights_Extensibility_Implementation_TelemetryExtensions_TrySetEnvelopeName_Microsoft_ApplicationInsights_Channel_ITelemetry_System_String_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Channel.ITelemetry
+    name: ITelemetry
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.ITelemetry.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.ApplicationInsights.Channel
+  commentId: N:Microsoft.ApplicationInsights.Channel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Channel
+  nameWithType: Microsoft.ApplicationInsights.Channel
+  fullName: Microsoft.ApplicationInsights.Channel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Channel
+    name: Channel
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Channel
+    name: Channel
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.html
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.GetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.GetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.html#Microsoft_ApplicationInsights_Extensibility_Implementation_TelemetryExtensions_GetEnvelopeName_Microsoft_ApplicationInsights_Channel_ITelemetry_
+  name: GetEnvelopeName(ITelemetry)
+  nameWithType: TelemetryExtensions.GetEnvelopeName(ITelemetry)
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.GetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.GetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry)
+    name: GetEnvelopeName
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.html#Microsoft_ApplicationInsights_Extensibility_Implementation_TelemetryExtensions_GetEnvelopeName_Microsoft_ApplicationInsights_Channel_ITelemetry_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Channel.ITelemetry
+    name: ITelemetry
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.ITelemetry.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.GetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry)
+    name: GetEnvelopeName
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.html#Microsoft_ApplicationInsights_Extensibility_Implementation_TelemetryExtensions_GetEnvelopeName_Microsoft_ApplicationInsights_Channel_ITelemetry_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Channel.ITelemetry
+    name: ITelemetry
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.ITelemetry.html
+  - name: )
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.html
+  name: TelemetryExtensions
+  nameWithType: TelemetryExtensions
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.TrySetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry,System.String)
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.TrySetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry,System.String)
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.html#Microsoft_ApplicationInsights_Extensibility_Implementation_TelemetryExtensions_TrySetEnvelopeName_Microsoft_ApplicationInsights_Channel_ITelemetry_System_String_
+  name: TrySetEnvelopeName(ITelemetry, string)
+  nameWithType: TelemetryExtensions.TrySetEnvelopeName(ITelemetry, string)
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.TrySetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry, string)
+  nameWithType.vb: TelemetryExtensions.TrySetEnvelopeName(ITelemetry, String)
+  fullName.vb: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.TrySetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry, String)
+  name.vb: TrySetEnvelopeName(ITelemetry, String)
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.TrySetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry,System.String)
+    name: TrySetEnvelopeName
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.html#Microsoft_ApplicationInsights_Extensibility_Implementation_TelemetryExtensions_TrySetEnvelopeName_Microsoft_ApplicationInsights_Channel_ITelemetry_System_String_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Channel.ITelemetry
+    name: ITelemetry
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.ITelemetry.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.TrySetEnvelopeName(Microsoft.ApplicationInsights.Channel.ITelemetry,System.String)
+    name: TrySetEnvelopeName
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryExtensions.html#Microsoft_ApplicationInsights_Extensibility_Implementation_TelemetryExtensions_TrySetEnvelopeName_Microsoft_ApplicationInsights_Channel_ITelemetry_System_String_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Channel.ITelemetry
+    name: ITelemetry
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.ITelemetry.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation
+  commentId: N:Microsoft.ApplicationInsights.Extensibility.Implementation
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Extensibility.Implementation
+  nameWithType: Microsoft.ApplicationInsights.Extensibility.Implementation
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation
+    name: Implementation
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation
+    name: Implementation
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.html
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.#ctor*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.#ctor
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry__ctor
+  name: PageViewPerformanceTelemetry
+  nameWithType: PageViewPerformanceTelemetry.PageViewPerformanceTelemetry
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.PageViewPerformanceTelemetry
+  nameWithType.vb: PageViewPerformanceTelemetry.New
+  fullName.vb: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.DeepClone*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.DeepClone
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_DeepClone
+  name: DeepClone
+  nameWithType: PageViewPerformanceTelemetry.DeepClone
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.DeepClone
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetry.DeepClone
+  commentId: M:Microsoft.ApplicationInsights.Channel.ITelemetry.DeepClone
+  parent: Microsoft.ApplicationInsights.Channel.ITelemetry
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.ITelemetry.html#Microsoft_ApplicationInsights_Channel_ITelemetry_DeepClone
+  name: DeepClone()
+  nameWithType: ITelemetry.DeepClone()
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetry.DeepClone()
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Channel.ITelemetry.DeepClone
+    name: DeepClone
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.ITelemetry.html#Microsoft_ApplicationInsights_Channel_ITelemetry_DeepClone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Channel.ITelemetry.DeepClone
+    name: DeepClone
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.ITelemetry.html#Microsoft_ApplicationInsights_Channel_ITelemetry_DeepClone
+  - name: (
+  - name: )
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.SerializeData*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.SerializeData
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_SerializeData_Microsoft_ApplicationInsights_Extensibility_ISerializationWriter_
+  name: SerializeData
+  nameWithType: PageViewPerformanceTelemetry.SerializeData
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.SerializeData
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetry.SerializeData(Microsoft.ApplicationInsights.Extensibility.ISerializationWriter)
+  commentId: M:Microsoft.ApplicationInsights.Channel.ITelemetry.SerializeData(Microsoft.ApplicationInsights.Extensibility.ISerializationWriter)
+  parent: Microsoft.ApplicationInsights.Channel.ITelemetry
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.ITelemetry.html#Microsoft_ApplicationInsights_Channel_ITelemetry_SerializeData_Microsoft_ApplicationInsights_Extensibility_ISerializationWriter_
+  name: SerializeData(ISerializationWriter)
+  nameWithType: ITelemetry.SerializeData(ISerializationWriter)
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetry.SerializeData(Microsoft.ApplicationInsights.Extensibility.ISerializationWriter)
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Channel.ITelemetry.SerializeData(Microsoft.ApplicationInsights.Extensibility.ISerializationWriter)
+    name: SerializeData
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.ITelemetry.html#Microsoft_ApplicationInsights_Channel_ITelemetry_SerializeData_Microsoft_ApplicationInsights_Extensibility_ISerializationWriter_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Extensibility.ISerializationWriter
+    name: ISerializationWriter
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.ISerializationWriter.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Channel.ITelemetry.SerializeData(Microsoft.ApplicationInsights.Extensibility.ISerializationWriter)
+    name: SerializeData
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.ITelemetry.html#Microsoft_ApplicationInsights_Channel_ITelemetry_SerializeData_Microsoft_ApplicationInsights_Extensibility_ISerializationWriter_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Extensibility.ISerializationWriter
+    name: ISerializationWriter
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.ISerializationWriter.html
+  - name: )
+- uid: Microsoft.ApplicationInsights.Extensibility.ISerializationWriter
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.ISerializationWriter
+  parent: Microsoft.ApplicationInsights.Extensibility
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.ISerializationWriter.html
+  name: ISerializationWriter
+  nameWithType: ISerializationWriter
+  fullName: Microsoft.ApplicationInsights.Extensibility.ISerializationWriter
+- uid: Microsoft.ApplicationInsights.Extensibility
+  commentId: N:Microsoft.ApplicationInsights.Extensibility
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Extensibility
+  nameWithType: Microsoft.ApplicationInsights.Extensibility
+  fullName: Microsoft.ApplicationInsights.Extensibility
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.html
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Timestamp*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Timestamp
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_Timestamp
+  name: Timestamp
+  nameWithType: PageViewPerformanceTelemetry.Timestamp
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Timestamp
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetry.Timestamp
+  commentId: P:Microsoft.ApplicationInsights.Channel.ITelemetry.Timestamp
+  parent: Microsoft.ApplicationInsights.Channel.ITelemetry
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.ITelemetry.html#Microsoft_ApplicationInsights_Channel_ITelemetry_Timestamp
+  name: Timestamp
+  nameWithType: ITelemetry.Timestamp
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetry.Timestamp
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Sequence*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Sequence
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_Sequence
+  name: Sequence
+  nameWithType: PageViewPerformanceTelemetry.Sequence
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Sequence
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetry.Sequence
+  commentId: P:Microsoft.ApplicationInsights.Channel.ITelemetry.Sequence
+  parent: Microsoft.ApplicationInsights.Channel.ITelemetry
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.ITelemetry.html#Microsoft_ApplicationInsights_Channel_ITelemetry_Sequence
+  name: Sequence
+  nameWithType: ITelemetry.Sequence
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetry.Sequence
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Context*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Context
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_Context
+  name: Context
+  nameWithType: PageViewPerformanceTelemetry.Context
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Context
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetry.Context
+  commentId: P:Microsoft.ApplicationInsights.Channel.ITelemetry.Context
+  parent: Microsoft.ApplicationInsights.Channel.ITelemetry
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.ITelemetry.html#Microsoft_ApplicationInsights_Channel_ITelemetry_Context
+  name: Context
+  nameWithType: ITelemetry.Context
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetry.Context
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  commentId: T:Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  parent: Microsoft.ApplicationInsights.DataContracts
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.html
+  name: TelemetryContext
+  nameWithType: TelemetryContext
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Extension*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Extension
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_Extension
+  name: Extension
+  nameWithType: PageViewPerformanceTelemetry.Extension
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Extension
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetry.Extension
+  commentId: P:Microsoft.ApplicationInsights.Channel.ITelemetry.Extension
+  parent: Microsoft.ApplicationInsights.Channel.ITelemetry
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.ITelemetry.html#Microsoft_ApplicationInsights_Channel_ITelemetry_Extension
+  name: Extension
+  nameWithType: ITelemetry.Extension
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetry.Extension
+- uid: Microsoft.ApplicationInsights.Extensibility.IExtension
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.IExtension
+  parent: Microsoft.ApplicationInsights.Extensibility
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.IExtension.html
+  name: IExtension
+  nameWithType: IExtension
+  fullName: Microsoft.ApplicationInsights.Extensibility.IExtension
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Id*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Id
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_Id
+  name: Id
+  nameWithType: PageViewPerformanceTelemetry.Id
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Id
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Name*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Name
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_Name
+  name: Name
+  nameWithType: PageViewPerformanceTelemetry.Name
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Name
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Url*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Url
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_Url
+  name: Url
+  nameWithType: PageViewPerformanceTelemetry.Url
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Url
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Duration*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Duration
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_Duration
+  name: Duration
+  nameWithType: PageViewPerformanceTelemetry.Duration
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Duration
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.DomProcessing*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.DomProcessing
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_DomProcessing
+  name: DomProcessing
+  nameWithType: PageViewPerformanceTelemetry.DomProcessing
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.DomProcessing
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.PerfTotal*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.PerfTotal
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_PerfTotal
+  name: PerfTotal
+  nameWithType: PageViewPerformanceTelemetry.PerfTotal
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.PerfTotal
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.NetworkConnect*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.NetworkConnect
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_NetworkConnect
+  name: NetworkConnect
+  nameWithType: PageViewPerformanceTelemetry.NetworkConnect
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.NetworkConnect
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.SentRequest*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.SentRequest
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_SentRequest
+  name: SentRequest
+  nameWithType: PageViewPerformanceTelemetry.SentRequest
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.SentRequest
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ReceivedResponse*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ReceivedResponse
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_ReceivedResponse
+  name: ReceivedResponse
+  nameWithType: PageViewPerformanceTelemetry.ReceivedResponse
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ReceivedResponse
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Metrics*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Metrics
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_Metrics
+  name: Metrics
+  nameWithType: PageViewPerformanceTelemetry.Metrics
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Metrics
+- uid: System.Collections.Generic.IDictionary{System.String,System.Double}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Double}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, double>
+  nameWithType: IDictionary<string, double>
+  fullName: System.Collections.Generic.IDictionary<string, double>
+  nameWithType.vb: IDictionary(Of String, Double)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, Double)
+  name.vb: IDictionary(Of String, Double)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Properties*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Properties
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_Properties
+  name: Properties
+  nameWithType: PageViewPerformanceTelemetry.Properties
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.Properties
+- uid: Microsoft.ApplicationInsights.DataContracts.ISupportProperties.Properties
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.ISupportProperties.Properties
+  parent: Microsoft.ApplicationInsights.DataContracts.ISupportProperties
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.ISupportProperties.html#Microsoft_ApplicationInsights_DataContracts_ISupportProperties_Properties
+  name: Properties
+  nameWithType: ISupportProperties.Properties
+  fullName: Microsoft.ApplicationInsights.DataContracts.ISupportProperties.Properties
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, string>
+  nameWithType: IDictionary<string, string>
+  fullName: System.Collections.Generic.IDictionary<string, string>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ItemTypeFlag*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ItemTypeFlag
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_ItemTypeFlag
+  name: ItemTypeFlag
+  nameWithType: PageViewPerformanceTelemetry.ItemTypeFlag
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ItemTypeFlag
+- uid: Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling.ItemTypeFlag
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling.ItemTypeFlag
+  parent: Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling.html#Microsoft_ApplicationInsights_DataContracts_ISupportAdvancedSampling_ItemTypeFlag
+  name: ItemTypeFlag
+  nameWithType: ISupportAdvancedSampling.ItemTypeFlag
+  fullName: Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling.ItemTypeFlag
+- uid: Microsoft.ApplicationInsights.DataContracts.SamplingTelemetryItemTypes
+  commentId: T:Microsoft.ApplicationInsights.DataContracts.SamplingTelemetryItemTypes
+  parent: Microsoft.ApplicationInsights.DataContracts
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.SamplingTelemetryItemTypes.html
+  name: SamplingTelemetryItemTypes
+  nameWithType: SamplingTelemetryItemTypes
+  fullName: Microsoft.ApplicationInsights.DataContracts.SamplingTelemetryItemTypes
+- uid: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ProactiveSamplingDecision*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ProactiveSamplingDecision
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.html#Microsoft_ApplicationInsights_DataContracts_PageViewPerformanceTelemetry_ProactiveSamplingDecision
+  name: ProactiveSamplingDecision
+  nameWithType: PageViewPerformanceTelemetry.ProactiveSamplingDecision
+  fullName: Microsoft.ApplicationInsights.DataContracts.PageViewPerformanceTelemetry.ProactiveSamplingDecision
+- uid: Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling.ProactiveSamplingDecision
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling.ProactiveSamplingDecision
+  parent: Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling.html#Microsoft_ApplicationInsights_DataContracts_ISupportAdvancedSampling_ProactiveSamplingDecision
+  name: ProactiveSamplingDecision
+  nameWithType: ISupportAdvancedSampling.ProactiveSamplingDecision
+  fullName: Microsoft.ApplicationInsights.DataContracts.ISupportAdvancedSampling.ProactiveSamplingDecision
+- uid: Microsoft.ApplicationInsights.DataContracts.SamplingDecision
+  commentId: T:Microsoft.ApplicationInsights.DataContracts.SamplingDecision
+  parent: Microsoft.ApplicationInsights.DataContracts
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.SamplingDecision.html
+  name: SamplingDecision
+  nameWithType: SamplingDecision
+  fullName: Microsoft.ApplicationInsights.DataContracts.SamplingDecision

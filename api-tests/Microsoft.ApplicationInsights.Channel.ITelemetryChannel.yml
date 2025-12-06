@@ -1,0 +1,280 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetryChannel
+  commentId: T:Microsoft.ApplicationInsights.Channel.ITelemetryChannel
+  id: ITelemetryChannel
+  parent: Microsoft.ApplicationInsights.Channel
+  children:
+  - Microsoft.ApplicationInsights.Channel.ITelemetryChannel.DeveloperMode
+  - Microsoft.ApplicationInsights.Channel.ITelemetryChannel.EndpointAddress
+  - Microsoft.ApplicationInsights.Channel.ITelemetryChannel.Flush
+  - Microsoft.ApplicationInsights.Channel.ITelemetryChannel.Send(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  langs:
+  - csharp
+  - vb
+  name: ITelemetryChannel
+  nameWithType: ITelemetryChannel
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetryChannel
+  type: Interface
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: 'public interface ITelemetryChannel : IDisposable'
+    content.vb: Public Interface ITelemetryChannel Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.Send(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  commentId: M:Microsoft.ApplicationInsights.Channel.ITelemetryChannel.Send(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  id: Send(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  parent: Microsoft.ApplicationInsights.Channel.ITelemetryChannel
+  langs:
+  - csharp
+  - vb
+  name: Send(ITelemetry)
+  nameWithType: ITelemetryChannel.Send(ITelemetry)
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.Send(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: void Send(ITelemetry item)
+    parameters:
+    - id: item
+      type: Microsoft.ApplicationInsights.Channel.ITelemetry
+    content.vb: Sub Send(item As ITelemetry)
+  overload: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.Send*
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.Flush
+  commentId: M:Microsoft.ApplicationInsights.Channel.ITelemetryChannel.Flush
+  id: Flush
+  parent: Microsoft.ApplicationInsights.Channel.ITelemetryChannel
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: ITelemetryChannel.Flush()
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.Flush()
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: void Flush()
+    content.vb: Sub Flush()
+  overload: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.Flush*
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.DeveloperMode
+  commentId: P:Microsoft.ApplicationInsights.Channel.ITelemetryChannel.DeveloperMode
+  id: DeveloperMode
+  parent: Microsoft.ApplicationInsights.Channel.ITelemetryChannel
+  langs:
+  - csharp
+  - vb
+  name: DeveloperMode
+  nameWithType: ITelemetryChannel.DeveloperMode
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.DeveloperMode
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: bool? DeveloperMode { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Property DeveloperMode As Boolean?
+  overload: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.DeveloperMode*
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.EndpointAddress
+  commentId: P:Microsoft.ApplicationInsights.Channel.ITelemetryChannel.EndpointAddress
+  id: EndpointAddress
+  parent: Microsoft.ApplicationInsights.Channel.ITelemetryChannel
+  langs:
+  - csharp
+  - vb
+  name: EndpointAddress
+  nameWithType: ITelemetryChannel.EndpointAddress
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.EndpointAddress
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: string EndpointAddress { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property EndpointAddress As String
+  overload: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.EndpointAddress*
+references:
+- uid: Microsoft.ApplicationInsights.Channel
+  commentId: N:Microsoft.ApplicationInsights.Channel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Channel
+  nameWithType: Microsoft.ApplicationInsights.Channel
+  fullName: Microsoft.ApplicationInsights.Channel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Channel
+    name: Channel
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Channel
+    name: Channel
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.Send*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.ITelemetryChannel.Send
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.html#Microsoft_ApplicationInsights_Channel_ITelemetryChannel_Send_Microsoft_ApplicationInsights_Channel_ITelemetry_
+  name: Send
+  nameWithType: ITelemetryChannel.Send
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.Send
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetry
+  commentId: T:Microsoft.ApplicationInsights.Channel.ITelemetry
+  parent: Microsoft.ApplicationInsights.Channel
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.ITelemetry.html
+  name: ITelemetry
+  nameWithType: ITelemetry
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetry
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.Flush*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.ITelemetryChannel.Flush
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.html#Microsoft_ApplicationInsights_Channel_ITelemetryChannel_Flush
+  name: Flush
+  nameWithType: ITelemetryChannel.Flush
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.Flush
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.DeveloperMode*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.ITelemetryChannel.DeveloperMode
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.html#Microsoft_ApplicationInsights_Channel_ITelemetryChannel_DeveloperMode
+  name: DeveloperMode
+  nameWithType: ITelemetryChannel.DeveloperMode
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.DeveloperMode
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.EndpointAddress*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.ITelemetryChannel.EndpointAddress
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.html#Microsoft_ApplicationInsights_Channel_ITelemetryChannel_EndpointAddress
+  name: EndpointAddress
+  nameWithType: ITelemetryChannel.EndpointAddress
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.EndpointAddress
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

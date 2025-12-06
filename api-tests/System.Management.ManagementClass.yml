@@ -1,0 +1,3990 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Management.ManagementClass
+  commentId: T:System.Management.ManagementClass
+  id: ManagementClass
+  parent: System.Management
+  children:
+  - System.Management.ManagementClass.#ctor
+  - System.Management.ManagementClass.#ctor(System.Management.ManagementPath)
+  - System.Management.ManagementClass.#ctor(System.Management.ManagementPath,System.Management.ObjectGetOptions)
+  - System.Management.ManagementClass.#ctor(System.Management.ManagementScope,System.Management.ManagementPath,System.Management.ObjectGetOptions)
+  - System.Management.ManagementClass.#ctor(System.String)
+  - System.Management.ManagementClass.#ctor(System.String,System.Management.ObjectGetOptions)
+  - System.Management.ManagementClass.#ctor(System.String,System.String,System.Management.ObjectGetOptions)
+  - System.Management.ManagementClass.Clone
+  - System.Management.ManagementClass.CreateInstance
+  - System.Management.ManagementClass.Derivation
+  - System.Management.ManagementClass.Derive(System.String)
+  - System.Management.ManagementClass.GetInstances
+  - System.Management.ManagementClass.GetInstances(System.Management.EnumerationOptions)
+  - System.Management.ManagementClass.GetInstances(System.Management.ManagementOperationObserver)
+  - System.Management.ManagementClass.GetInstances(System.Management.ManagementOperationObserver,System.Management.EnumerationOptions)
+  - System.Management.ManagementClass.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Management.ManagementClass.GetRelatedClasses
+  - System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver)
+  - System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver,System.String)
+  - System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.String,System.String,System.String,System.Management.EnumerationOptions)
+  - System.Management.ManagementClass.GetRelatedClasses(System.String)
+  - System.Management.ManagementClass.GetRelatedClasses(System.String,System.String,System.String,System.String,System.String,System.String,System.Management.EnumerationOptions)
+  - System.Management.ManagementClass.GetRelationshipClasses
+  - System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver)
+  - System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver,System.String)
+  - System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.Management.EnumerationOptions)
+  - System.Management.ManagementClass.GetRelationshipClasses(System.String)
+  - System.Management.ManagementClass.GetRelationshipClasses(System.String,System.String,System.String,System.Management.EnumerationOptions)
+  - System.Management.ManagementClass.GetStronglyTypedClassCode(System.Boolean,System.Boolean)
+  - System.Management.ManagementClass.GetStronglyTypedClassCode(System.Management.CodeLanguage,System.String,System.String)
+  - System.Management.ManagementClass.GetSubclasses
+  - System.Management.ManagementClass.GetSubclasses(System.Management.EnumerationOptions)
+  - System.Management.ManagementClass.GetSubclasses(System.Management.ManagementOperationObserver)
+  - System.Management.ManagementClass.GetSubclasses(System.Management.ManagementOperationObserver,System.Management.EnumerationOptions)
+  - System.Management.ManagementClass.Methods
+  - System.Management.ManagementClass.Path
+  langs:
+  - csharp
+  - vb
+  name: ManagementClass
+  nameWithType: ManagementClass
+  fullName: System.Management.ManagementClass
+  type: Class
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: 'public class ManagementClass : ManagementObject, IComponent, IDisposable, ISerializable, ICloneable'
+    content.vb: Public Class ManagementClass Inherits ManagementObject Implements IComponent, IDisposable, ISerializable, ICloneable
+  inheritance:
+  - System.Object
+  - System.MarshalByRefObject
+  - System.ComponentModel.Component
+  - System.Management.ManagementBaseObject
+  - System.Management.ManagementObject
+  implements:
+  - System.ComponentModel.IComponent
+  - System.IDisposable
+  - System.Runtime.Serialization.ISerializable
+  - System.ICloneable
+  inheritedMembers:
+  - System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.Management.ManagementPath)
+  - System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.Management.ManagementPath,System.Management.PutOptions)
+  - System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.String)
+  - System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.String,System.Management.PutOptions)
+  - System.Management.ManagementObject.CopyTo(System.Management.ManagementPath)
+  - System.Management.ManagementObject.CopyTo(System.Management.ManagementPath,System.Management.PutOptions)
+  - System.Management.ManagementObject.CopyTo(System.String)
+  - System.Management.ManagementObject.CopyTo(System.String,System.Management.PutOptions)
+  - System.Management.ManagementObject.Delete
+  - System.Management.ManagementObject.Delete(System.Management.DeleteOptions)
+  - System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver)
+  - System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver,System.Management.DeleteOptions)
+  - System.Management.ManagementObject.Dispose
+  - System.Management.ManagementObject.Get
+  - System.Management.ManagementObject.Get(System.Management.ManagementOperationObserver)
+  - System.Management.ManagementObject.GetMethodParameters(System.String)
+  - System.Management.ManagementObject.GetRelated
+  - System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver)
+  - System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String)
+  - System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+  - System.Management.ManagementObject.GetRelated(System.String)
+  - System.Management.ManagementObject.GetRelated(System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+  - System.Management.ManagementObject.GetRelationships
+  - System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver)
+  - System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver,System.String)
+  - System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+  - System.Management.ManagementObject.GetRelationships(System.String)
+  - System.Management.ManagementObject.GetRelationships(System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+  - System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)
+  - System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Object[])
+  - System.Management.ManagementObject.InvokeMethod(System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)
+  - System.Management.ManagementObject.InvokeMethod(System.String,System.Object[])
+  - System.Management.ManagementObject.Put
+  - System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver)
+  - System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver,System.Management.PutOptions)
+  - System.Management.ManagementObject.Put(System.Management.PutOptions)
+  - System.Management.ManagementObject.ToString
+  - System.Management.ManagementObject.ClassPath
+  - System.Management.ManagementObject.Options
+  - System.Management.ManagementObject.Scope
+  - System.Management.ManagementBaseObject.CompareTo(System.Management.ManagementBaseObject,System.Management.ComparisonSettings)
+  - System.Management.ManagementBaseObject.Equals(System.Object)
+  - System.Management.ManagementBaseObject.GetHashCode
+  - System.Management.ManagementBaseObject.GetPropertyQualifierValue(System.String,System.String)
+  - System.Management.ManagementBaseObject.GetPropertyValue(System.String)
+  - System.Management.ManagementBaseObject.GetQualifierValue(System.String)
+  - System.Management.ManagementBaseObject.GetText(System.Management.TextFormat)
+  - System.Management.ManagementBaseObject.SetPropertyQualifierValue(System.String,System.String,System.Object)
+  - System.Management.ManagementBaseObject.SetPropertyValue(System.String,System.Object)
+  - System.Management.ManagementBaseObject.SetQualifierValue(System.String,System.Object)
+  - System.Management.ManagementBaseObject.Item(System.String)
+  - System.Management.ManagementBaseObject.Properties
+  - System.Management.ManagementBaseObject.Qualifiers
+  - System.Management.ManagementBaseObject.SystemProperties
+  - System.ComponentModel.Component.Dispose(System.Boolean)
+  - System.ComponentModel.Component.GetService(System.Type)
+  - System.ComponentModel.Component.CanRaiseEvents
+  - System.ComponentModel.Component.Events
+  - System.ComponentModel.Component.Site
+  - System.ComponentModel.Component.Container
+  - System.ComponentModel.Component.DesignMode
+  - System.ComponentModel.Component.Disposed
+  - System.MarshalByRefObject.GetLifetimeService
+  - System.MarshalByRefObject.InitializeLifetimeService
+  - System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Management.ManagementClass.#ctor
+  commentId: M:System.Management.ManagementClass.#ctor
+  id: '#ctor'
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: ManagementClass()
+  nameWithType: ManagementClass.ManagementClass()
+  fullName: System.Management.ManagementClass.ManagementClass()
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementClass()
+    content.vb: Public Sub New()
+  overload: System.Management.ManagementClass.#ctor*
+  nameWithType.vb: ManagementClass.New()
+  fullName.vb: System.Management.ManagementClass.New()
+  name.vb: New()
+- uid: System.Management.ManagementClass.#ctor(System.Management.ManagementPath)
+  commentId: M:System.Management.ManagementClass.#ctor(System.Management.ManagementPath)
+  id: '#ctor(System.Management.ManagementPath)'
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: ManagementClass(ManagementPath)
+  nameWithType: ManagementClass.ManagementClass(ManagementPath)
+  fullName: System.Management.ManagementClass.ManagementClass(System.Management.ManagementPath)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementClass(ManagementPath path)
+    parameters:
+    - id: path
+      type: System.Management.ManagementPath
+    content.vb: Public Sub New(path As ManagementPath)
+  overload: System.Management.ManagementClass.#ctor*
+  nameWithType.vb: ManagementClass.New(ManagementPath)
+  fullName.vb: System.Management.ManagementClass.New(System.Management.ManagementPath)
+  name.vb: New(ManagementPath)
+- uid: System.Management.ManagementClass.#ctor(System.Management.ManagementPath,System.Management.ObjectGetOptions)
+  commentId: M:System.Management.ManagementClass.#ctor(System.Management.ManagementPath,System.Management.ObjectGetOptions)
+  id: '#ctor(System.Management.ManagementPath,System.Management.ObjectGetOptions)'
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: ManagementClass(ManagementPath, ObjectGetOptions)
+  nameWithType: ManagementClass.ManagementClass(ManagementPath, ObjectGetOptions)
+  fullName: System.Management.ManagementClass.ManagementClass(System.Management.ManagementPath, System.Management.ObjectGetOptions)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementClass(ManagementPath path, ObjectGetOptions options)
+    parameters:
+    - id: path
+      type: System.Management.ManagementPath
+    - id: options
+      type: System.Management.ObjectGetOptions
+    content.vb: Public Sub New(path As ManagementPath, options As ObjectGetOptions)
+  overload: System.Management.ManagementClass.#ctor*
+  nameWithType.vb: ManagementClass.New(ManagementPath, ObjectGetOptions)
+  fullName.vb: System.Management.ManagementClass.New(System.Management.ManagementPath, System.Management.ObjectGetOptions)
+  name.vb: New(ManagementPath, ObjectGetOptions)
+- uid: System.Management.ManagementClass.#ctor(System.Management.ManagementScope,System.Management.ManagementPath,System.Management.ObjectGetOptions)
+  commentId: M:System.Management.ManagementClass.#ctor(System.Management.ManagementScope,System.Management.ManagementPath,System.Management.ObjectGetOptions)
+  id: '#ctor(System.Management.ManagementScope,System.Management.ManagementPath,System.Management.ObjectGetOptions)'
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: ManagementClass(ManagementScope, ManagementPath, ObjectGetOptions)
+  nameWithType: ManagementClass.ManagementClass(ManagementScope, ManagementPath, ObjectGetOptions)
+  fullName: System.Management.ManagementClass.ManagementClass(System.Management.ManagementScope, System.Management.ManagementPath, System.Management.ObjectGetOptions)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementClass(ManagementScope scope, ManagementPath path, ObjectGetOptions options)
+    parameters:
+    - id: scope
+      type: System.Management.ManagementScope
+    - id: path
+      type: System.Management.ManagementPath
+    - id: options
+      type: System.Management.ObjectGetOptions
+    content.vb: Public Sub New(scope As ManagementScope, path As ManagementPath, options As ObjectGetOptions)
+  overload: System.Management.ManagementClass.#ctor*
+  nameWithType.vb: ManagementClass.New(ManagementScope, ManagementPath, ObjectGetOptions)
+  fullName.vb: System.Management.ManagementClass.New(System.Management.ManagementScope, System.Management.ManagementPath, System.Management.ObjectGetOptions)
+  name.vb: New(ManagementScope, ManagementPath, ObjectGetOptions)
+- uid: System.Management.ManagementClass.#ctor(System.String)
+  commentId: M:System.Management.ManagementClass.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: ManagementClass(string)
+  nameWithType: ManagementClass.ManagementClass(string)
+  fullName: System.Management.ManagementClass.ManagementClass(string)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementClass(string path)
+    parameters:
+    - id: path
+      type: System.String
+    content.vb: Public Sub New(path As String)
+  overload: System.Management.ManagementClass.#ctor*
+  nameWithType.vb: ManagementClass.New(String)
+  fullName.vb: System.Management.ManagementClass.New(String)
+  name.vb: New(String)
+- uid: System.Management.ManagementClass.#ctor(System.String,System.Management.ObjectGetOptions)
+  commentId: M:System.Management.ManagementClass.#ctor(System.String,System.Management.ObjectGetOptions)
+  id: '#ctor(System.String,System.Management.ObjectGetOptions)'
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: ManagementClass(string, ObjectGetOptions)
+  nameWithType: ManagementClass.ManagementClass(string, ObjectGetOptions)
+  fullName: System.Management.ManagementClass.ManagementClass(string, System.Management.ObjectGetOptions)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementClass(string path, ObjectGetOptions options)
+    parameters:
+    - id: path
+      type: System.String
+    - id: options
+      type: System.Management.ObjectGetOptions
+    content.vb: Public Sub New(path As String, options As ObjectGetOptions)
+  overload: System.Management.ManagementClass.#ctor*
+  nameWithType.vb: ManagementClass.New(String, ObjectGetOptions)
+  fullName.vb: System.Management.ManagementClass.New(String, System.Management.ObjectGetOptions)
+  name.vb: New(String, ObjectGetOptions)
+- uid: System.Management.ManagementClass.#ctor(System.String,System.String,System.Management.ObjectGetOptions)
+  commentId: M:System.Management.ManagementClass.#ctor(System.String,System.String,System.Management.ObjectGetOptions)
+  id: '#ctor(System.String,System.String,System.Management.ObjectGetOptions)'
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: ManagementClass(string, string, ObjectGetOptions)
+  nameWithType: ManagementClass.ManagementClass(string, string, ObjectGetOptions)
+  fullName: System.Management.ManagementClass.ManagementClass(string, string, System.Management.ObjectGetOptions)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementClass(string scope, string path, ObjectGetOptions options)
+    parameters:
+    - id: scope
+      type: System.String
+    - id: path
+      type: System.String
+    - id: options
+      type: System.Management.ObjectGetOptions
+    content.vb: Public Sub New(scope As String, path As String, options As ObjectGetOptions)
+  overload: System.Management.ManagementClass.#ctor*
+  nameWithType.vb: ManagementClass.New(String, String, ObjectGetOptions)
+  fullName.vb: System.Management.ManagementClass.New(String, String, System.Management.ObjectGetOptions)
+  name.vb: New(String, String, ObjectGetOptions)
+- uid: System.Management.ManagementClass.Clone
+  commentId: M:System.Management.ManagementClass.Clone
+  id: Clone
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: ManagementClass.Clone()
+  fullName: System.Management.ManagementClass.Clone()
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  example: []
+  syntax:
+    content: public override object Clone()
+    return:
+      type: System.Object
+    content.vb: Public Overrides Function Clone() As Object
+  overridden: System.Management.ManagementObject.Clone
+  overload: System.Management.ManagementClass.Clone*
+- uid: System.Management.ManagementClass.CreateInstance
+  commentId: M:System.Management.ManagementClass.CreateInstance
+  id: CreateInstance
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: CreateInstance()
+  nameWithType: ManagementClass.CreateInstance()
+  fullName: System.Management.ManagementClass.CreateInstance()
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObject CreateInstance()
+    return:
+      type: System.Management.ManagementObject
+    content.vb: Public Function CreateInstance() As ManagementObject
+  overload: System.Management.ManagementClass.CreateInstance*
+- uid: System.Management.ManagementClass.Derive(System.String)
+  commentId: M:System.Management.ManagementClass.Derive(System.String)
+  id: Derive(System.String)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: Derive(string)
+  nameWithType: ManagementClass.Derive(string)
+  fullName: System.Management.ManagementClass.Derive(string)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementClass Derive(string newClassName)
+    parameters:
+    - id: newClassName
+      type: System.String
+    return:
+      type: System.Management.ManagementClass
+    content.vb: Public Function Derive(newClassName As String) As ManagementClass
+  overload: System.Management.ManagementClass.Derive*
+  nameWithType.vb: ManagementClass.Derive(String)
+  fullName.vb: System.Management.ManagementClass.Derive(String)
+  name.vb: Derive(String)
+- uid: System.Management.ManagementClass.GetInstances
+  commentId: M:System.Management.ManagementClass.GetInstances
+  id: GetInstances
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetInstances()
+  nameWithType: ManagementClass.GetInstances()
+  fullName: System.Management.ManagementClass.GetInstances()
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectCollection GetInstances()
+    return:
+      type: System.Management.ManagementObjectCollection
+    content.vb: Public Function GetInstances() As ManagementObjectCollection
+  overload: System.Management.ManagementClass.GetInstances*
+- uid: System.Management.ManagementClass.GetInstances(System.Management.EnumerationOptions)
+  commentId: M:System.Management.ManagementClass.GetInstances(System.Management.EnumerationOptions)
+  id: GetInstances(System.Management.EnumerationOptions)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetInstances(EnumerationOptions)
+  nameWithType: ManagementClass.GetInstances(EnumerationOptions)
+  fullName: System.Management.ManagementClass.GetInstances(System.Management.EnumerationOptions)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectCollection GetInstances(EnumerationOptions options)
+    parameters:
+    - id: options
+      type: System.Management.EnumerationOptions
+    return:
+      type: System.Management.ManagementObjectCollection
+    content.vb: Public Function GetInstances(options As EnumerationOptions) As ManagementObjectCollection
+  overload: System.Management.ManagementClass.GetInstances*
+- uid: System.Management.ManagementClass.GetInstances(System.Management.ManagementOperationObserver)
+  commentId: M:System.Management.ManagementClass.GetInstances(System.Management.ManagementOperationObserver)
+  id: GetInstances(System.Management.ManagementOperationObserver)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetInstances(ManagementOperationObserver)
+  nameWithType: ManagementClass.GetInstances(ManagementOperationObserver)
+  fullName: System.Management.ManagementClass.GetInstances(System.Management.ManagementOperationObserver)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public void GetInstances(ManagementOperationObserver watcher)
+    parameters:
+    - id: watcher
+      type: System.Management.ManagementOperationObserver
+    content.vb: Public Sub GetInstances(watcher As ManagementOperationObserver)
+  overload: System.Management.ManagementClass.GetInstances*
+- uid: System.Management.ManagementClass.GetInstances(System.Management.ManagementOperationObserver,System.Management.EnumerationOptions)
+  commentId: M:System.Management.ManagementClass.GetInstances(System.Management.ManagementOperationObserver,System.Management.EnumerationOptions)
+  id: GetInstances(System.Management.ManagementOperationObserver,System.Management.EnumerationOptions)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetInstances(ManagementOperationObserver, EnumerationOptions)
+  nameWithType: ManagementClass.GetInstances(ManagementOperationObserver, EnumerationOptions)
+  fullName: System.Management.ManagementClass.GetInstances(System.Management.ManagementOperationObserver, System.Management.EnumerationOptions)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public void GetInstances(ManagementOperationObserver watcher, EnumerationOptions options)
+    parameters:
+    - id: watcher
+      type: System.Management.ManagementOperationObserver
+    - id: options
+      type: System.Management.EnumerationOptions
+    content.vb: Public Sub GetInstances(watcher As ManagementOperationObserver, options As EnumerationOptions)
+  overload: System.Management.ManagementClass.GetInstances*
+- uid: System.Management.ManagementClass.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Management.ManagementClass.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: ManagementClass.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Management.ManagementClass.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  example: []
+  syntax:
+    content: protected override void GetObjectData(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+    content.vb: Protected Overrides Sub GetObjectData(info As SerializationInfo, context As StreamingContext)
+  overridden: System.Management.ManagementObject.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  overload: System.Management.ManagementClass.GetObjectData*
+- uid: System.Management.ManagementClass.GetRelatedClasses
+  commentId: M:System.Management.ManagementClass.GetRelatedClasses
+  id: GetRelatedClasses
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetRelatedClasses()
+  nameWithType: ManagementClass.GetRelatedClasses()
+  fullName: System.Management.ManagementClass.GetRelatedClasses()
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectCollection GetRelatedClasses()
+    return:
+      type: System.Management.ManagementObjectCollection
+    content.vb: Public Function GetRelatedClasses() As ManagementObjectCollection
+  overload: System.Management.ManagementClass.GetRelatedClasses*
+- uid: System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver)
+  commentId: M:System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver)
+  id: GetRelatedClasses(System.Management.ManagementOperationObserver)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetRelatedClasses(ManagementOperationObserver)
+  nameWithType: ManagementClass.GetRelatedClasses(ManagementOperationObserver)
+  fullName: System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public void GetRelatedClasses(ManagementOperationObserver watcher)
+    parameters:
+    - id: watcher
+      type: System.Management.ManagementOperationObserver
+    content.vb: Public Sub GetRelatedClasses(watcher As ManagementOperationObserver)
+  overload: System.Management.ManagementClass.GetRelatedClasses*
+- uid: System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver,System.String)
+  commentId: M:System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver,System.String)
+  id: GetRelatedClasses(System.Management.ManagementOperationObserver,System.String)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetRelatedClasses(ManagementOperationObserver, string)
+  nameWithType: ManagementClass.GetRelatedClasses(ManagementOperationObserver, string)
+  fullName: System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver, string)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public void GetRelatedClasses(ManagementOperationObserver watcher, string relatedClass)
+    parameters:
+    - id: watcher
+      type: System.Management.ManagementOperationObserver
+    - id: relatedClass
+      type: System.String
+    content.vb: Public Sub GetRelatedClasses(watcher As ManagementOperationObserver, relatedClass As String)
+  overload: System.Management.ManagementClass.GetRelatedClasses*
+  nameWithType.vb: ManagementClass.GetRelatedClasses(ManagementOperationObserver, String)
+  fullName.vb: System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver, String)
+  name.vb: GetRelatedClasses(ManagementOperationObserver, String)
+- uid: System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.String,System.String,System.String,System.Management.EnumerationOptions)
+  commentId: M:System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.String,System.String,System.String,System.Management.EnumerationOptions)
+  id: GetRelatedClasses(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.String,System.String,System.String,System.Management.EnumerationOptions)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetRelatedClasses(ManagementOperationObserver, string, string, string, string, string, string, EnumerationOptions)
+  nameWithType: ManagementClass.GetRelatedClasses(ManagementOperationObserver, string, string, string, string, string, string, EnumerationOptions)
+  fullName: System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver, string, string, string, string, string, string, System.Management.EnumerationOptions)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public void GetRelatedClasses(ManagementOperationObserver watcher, string relatedClass, string relationshipClass, string relationshipQualifier, string relatedQualifier, string relatedRole, string thisRole, EnumerationOptions options)
+    parameters:
+    - id: watcher
+      type: System.Management.ManagementOperationObserver
+    - id: relatedClass
+      type: System.String
+    - id: relationshipClass
+      type: System.String
+    - id: relationshipQualifier
+      type: System.String
+    - id: relatedQualifier
+      type: System.String
+    - id: relatedRole
+      type: System.String
+    - id: thisRole
+      type: System.String
+    - id: options
+      type: System.Management.EnumerationOptions
+    content.vb: Public Sub GetRelatedClasses(watcher As ManagementOperationObserver, relatedClass As String, relationshipClass As String, relationshipQualifier As String, relatedQualifier As String, relatedRole As String, thisRole As String, options As EnumerationOptions)
+  overload: System.Management.ManagementClass.GetRelatedClasses*
+  nameWithType.vb: ManagementClass.GetRelatedClasses(ManagementOperationObserver, String, String, String, String, String, String, EnumerationOptions)
+  fullName.vb: System.Management.ManagementClass.GetRelatedClasses(System.Management.ManagementOperationObserver, String, String, String, String, String, String, System.Management.EnumerationOptions)
+  name.vb: GetRelatedClasses(ManagementOperationObserver, String, String, String, String, String, String, EnumerationOptions)
+- uid: System.Management.ManagementClass.GetRelatedClasses(System.String)
+  commentId: M:System.Management.ManagementClass.GetRelatedClasses(System.String)
+  id: GetRelatedClasses(System.String)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetRelatedClasses(string)
+  nameWithType: ManagementClass.GetRelatedClasses(string)
+  fullName: System.Management.ManagementClass.GetRelatedClasses(string)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectCollection GetRelatedClasses(string relatedClass)
+    parameters:
+    - id: relatedClass
+      type: System.String
+    return:
+      type: System.Management.ManagementObjectCollection
+    content.vb: Public Function GetRelatedClasses(relatedClass As String) As ManagementObjectCollection
+  overload: System.Management.ManagementClass.GetRelatedClasses*
+  nameWithType.vb: ManagementClass.GetRelatedClasses(String)
+  fullName.vb: System.Management.ManagementClass.GetRelatedClasses(String)
+  name.vb: GetRelatedClasses(String)
+- uid: System.Management.ManagementClass.GetRelatedClasses(System.String,System.String,System.String,System.String,System.String,System.String,System.Management.EnumerationOptions)
+  commentId: M:System.Management.ManagementClass.GetRelatedClasses(System.String,System.String,System.String,System.String,System.String,System.String,System.Management.EnumerationOptions)
+  id: GetRelatedClasses(System.String,System.String,System.String,System.String,System.String,System.String,System.Management.EnumerationOptions)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetRelatedClasses(string, string, string, string, string, string, EnumerationOptions)
+  nameWithType: ManagementClass.GetRelatedClasses(string, string, string, string, string, string, EnumerationOptions)
+  fullName: System.Management.ManagementClass.GetRelatedClasses(string, string, string, string, string, string, System.Management.EnumerationOptions)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectCollection GetRelatedClasses(string relatedClass, string relationshipClass, string relationshipQualifier, string relatedQualifier, string relatedRole, string thisRole, EnumerationOptions options)
+    parameters:
+    - id: relatedClass
+      type: System.String
+    - id: relationshipClass
+      type: System.String
+    - id: relationshipQualifier
+      type: System.String
+    - id: relatedQualifier
+      type: System.String
+    - id: relatedRole
+      type: System.String
+    - id: thisRole
+      type: System.String
+    - id: options
+      type: System.Management.EnumerationOptions
+    return:
+      type: System.Management.ManagementObjectCollection
+    content.vb: Public Function GetRelatedClasses(relatedClass As String, relationshipClass As String, relationshipQualifier As String, relatedQualifier As String, relatedRole As String, thisRole As String, options As EnumerationOptions) As ManagementObjectCollection
+  overload: System.Management.ManagementClass.GetRelatedClasses*
+  nameWithType.vb: ManagementClass.GetRelatedClasses(String, String, String, String, String, String, EnumerationOptions)
+  fullName.vb: System.Management.ManagementClass.GetRelatedClasses(String, String, String, String, String, String, System.Management.EnumerationOptions)
+  name.vb: GetRelatedClasses(String, String, String, String, String, String, EnumerationOptions)
+- uid: System.Management.ManagementClass.GetRelationshipClasses
+  commentId: M:System.Management.ManagementClass.GetRelationshipClasses
+  id: GetRelationshipClasses
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetRelationshipClasses()
+  nameWithType: ManagementClass.GetRelationshipClasses()
+  fullName: System.Management.ManagementClass.GetRelationshipClasses()
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectCollection GetRelationshipClasses()
+    return:
+      type: System.Management.ManagementObjectCollection
+    content.vb: Public Function GetRelationshipClasses() As ManagementObjectCollection
+  overload: System.Management.ManagementClass.GetRelationshipClasses*
+- uid: System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver)
+  commentId: M:System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver)
+  id: GetRelationshipClasses(System.Management.ManagementOperationObserver)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetRelationshipClasses(ManagementOperationObserver)
+  nameWithType: ManagementClass.GetRelationshipClasses(ManagementOperationObserver)
+  fullName: System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public void GetRelationshipClasses(ManagementOperationObserver watcher)
+    parameters:
+    - id: watcher
+      type: System.Management.ManagementOperationObserver
+    content.vb: Public Sub GetRelationshipClasses(watcher As ManagementOperationObserver)
+  overload: System.Management.ManagementClass.GetRelationshipClasses*
+- uid: System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver,System.String)
+  commentId: M:System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver,System.String)
+  id: GetRelationshipClasses(System.Management.ManagementOperationObserver,System.String)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetRelationshipClasses(ManagementOperationObserver, string)
+  nameWithType: ManagementClass.GetRelationshipClasses(ManagementOperationObserver, string)
+  fullName: System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver, string)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public void GetRelationshipClasses(ManagementOperationObserver watcher, string relationshipClass)
+    parameters:
+    - id: watcher
+      type: System.Management.ManagementOperationObserver
+    - id: relationshipClass
+      type: System.String
+    content.vb: Public Sub GetRelationshipClasses(watcher As ManagementOperationObserver, relationshipClass As String)
+  overload: System.Management.ManagementClass.GetRelationshipClasses*
+  nameWithType.vb: ManagementClass.GetRelationshipClasses(ManagementOperationObserver, String)
+  fullName.vb: System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver, String)
+  name.vb: GetRelationshipClasses(ManagementOperationObserver, String)
+- uid: System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.Management.EnumerationOptions)
+  commentId: M:System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.Management.EnumerationOptions)
+  id: GetRelationshipClasses(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.Management.EnumerationOptions)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetRelationshipClasses(ManagementOperationObserver, string, string, string, EnumerationOptions)
+  nameWithType: ManagementClass.GetRelationshipClasses(ManagementOperationObserver, string, string, string, EnumerationOptions)
+  fullName: System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver, string, string, string, System.Management.EnumerationOptions)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public void GetRelationshipClasses(ManagementOperationObserver watcher, string relationshipClass, string relationshipQualifier, string thisRole, EnumerationOptions options)
+    parameters:
+    - id: watcher
+      type: System.Management.ManagementOperationObserver
+    - id: relationshipClass
+      type: System.String
+    - id: relationshipQualifier
+      type: System.String
+    - id: thisRole
+      type: System.String
+    - id: options
+      type: System.Management.EnumerationOptions
+    content.vb: Public Sub GetRelationshipClasses(watcher As ManagementOperationObserver, relationshipClass As String, relationshipQualifier As String, thisRole As String, options As EnumerationOptions)
+  overload: System.Management.ManagementClass.GetRelationshipClasses*
+  nameWithType.vb: ManagementClass.GetRelationshipClasses(ManagementOperationObserver, String, String, String, EnumerationOptions)
+  fullName.vb: System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver, String, String, String, System.Management.EnumerationOptions)
+  name.vb: GetRelationshipClasses(ManagementOperationObserver, String, String, String, EnumerationOptions)
+- uid: System.Management.ManagementClass.GetRelationshipClasses(System.String)
+  commentId: M:System.Management.ManagementClass.GetRelationshipClasses(System.String)
+  id: GetRelationshipClasses(System.String)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetRelationshipClasses(string)
+  nameWithType: ManagementClass.GetRelationshipClasses(string)
+  fullName: System.Management.ManagementClass.GetRelationshipClasses(string)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectCollection GetRelationshipClasses(string relationshipClass)
+    parameters:
+    - id: relationshipClass
+      type: System.String
+    return:
+      type: System.Management.ManagementObjectCollection
+    content.vb: Public Function GetRelationshipClasses(relationshipClass As String) As ManagementObjectCollection
+  overload: System.Management.ManagementClass.GetRelationshipClasses*
+  nameWithType.vb: ManagementClass.GetRelationshipClasses(String)
+  fullName.vb: System.Management.ManagementClass.GetRelationshipClasses(String)
+  name.vb: GetRelationshipClasses(String)
+- uid: System.Management.ManagementClass.GetRelationshipClasses(System.String,System.String,System.String,System.Management.EnumerationOptions)
+  commentId: M:System.Management.ManagementClass.GetRelationshipClasses(System.String,System.String,System.String,System.Management.EnumerationOptions)
+  id: GetRelationshipClasses(System.String,System.String,System.String,System.Management.EnumerationOptions)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetRelationshipClasses(string, string, string, EnumerationOptions)
+  nameWithType: ManagementClass.GetRelationshipClasses(string, string, string, EnumerationOptions)
+  fullName: System.Management.ManagementClass.GetRelationshipClasses(string, string, string, System.Management.EnumerationOptions)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectCollection GetRelationshipClasses(string relationshipClass, string relationshipQualifier, string thisRole, EnumerationOptions options)
+    parameters:
+    - id: relationshipClass
+      type: System.String
+    - id: relationshipQualifier
+      type: System.String
+    - id: thisRole
+      type: System.String
+    - id: options
+      type: System.Management.EnumerationOptions
+    return:
+      type: System.Management.ManagementObjectCollection
+    content.vb: Public Function GetRelationshipClasses(relationshipClass As String, relationshipQualifier As String, thisRole As String, options As EnumerationOptions) As ManagementObjectCollection
+  overload: System.Management.ManagementClass.GetRelationshipClasses*
+  nameWithType.vb: ManagementClass.GetRelationshipClasses(String, String, String, EnumerationOptions)
+  fullName.vb: System.Management.ManagementClass.GetRelationshipClasses(String, String, String, System.Management.EnumerationOptions)
+  name.vb: GetRelationshipClasses(String, String, String, EnumerationOptions)
+- uid: System.Management.ManagementClass.GetStronglyTypedClassCode(System.Boolean,System.Boolean)
+  commentId: M:System.Management.ManagementClass.GetStronglyTypedClassCode(System.Boolean,System.Boolean)
+  id: GetStronglyTypedClassCode(System.Boolean,System.Boolean)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetStronglyTypedClassCode(bool, bool)
+  nameWithType: ManagementClass.GetStronglyTypedClassCode(bool, bool)
+  fullName: System.Management.ManagementClass.GetStronglyTypedClassCode(bool, bool)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public CodeTypeDeclaration GetStronglyTypedClassCode(bool includeSystemClassInClassDef, bool systemPropertyClass)
+    parameters:
+    - id: includeSystemClassInClassDef
+      type: System.Boolean
+    - id: systemPropertyClass
+      type: System.Boolean
+    return:
+      type: System.CodeDom.CodeTypeDeclaration
+    content.vb: Public Function GetStronglyTypedClassCode(includeSystemClassInClassDef As Boolean, systemPropertyClass As Boolean) As CodeTypeDeclaration
+  overload: System.Management.ManagementClass.GetStronglyTypedClassCode*
+  nameWithType.vb: ManagementClass.GetStronglyTypedClassCode(Boolean, Boolean)
+  fullName.vb: System.Management.ManagementClass.GetStronglyTypedClassCode(Boolean, Boolean)
+  name.vb: GetStronglyTypedClassCode(Boolean, Boolean)
+- uid: System.Management.ManagementClass.GetStronglyTypedClassCode(System.Management.CodeLanguage,System.String,System.String)
+  commentId: M:System.Management.ManagementClass.GetStronglyTypedClassCode(System.Management.CodeLanguage,System.String,System.String)
+  id: GetStronglyTypedClassCode(System.Management.CodeLanguage,System.String,System.String)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetStronglyTypedClassCode(CodeLanguage, string, string)
+  nameWithType: ManagementClass.GetStronglyTypedClassCode(CodeLanguage, string, string)
+  fullName: System.Management.ManagementClass.GetStronglyTypedClassCode(System.Management.CodeLanguage, string, string)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public bool GetStronglyTypedClassCode(CodeLanguage lang, string filePath, string classNamespace)
+    parameters:
+    - id: lang
+      type: System.Management.CodeLanguage
+    - id: filePath
+      type: System.String
+    - id: classNamespace
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function GetStronglyTypedClassCode(lang As CodeLanguage, filePath As String, classNamespace As String) As Boolean
+  overload: System.Management.ManagementClass.GetStronglyTypedClassCode*
+  nameWithType.vb: ManagementClass.GetStronglyTypedClassCode(CodeLanguage, String, String)
+  fullName.vb: System.Management.ManagementClass.GetStronglyTypedClassCode(System.Management.CodeLanguage, String, String)
+  name.vb: GetStronglyTypedClassCode(CodeLanguage, String, String)
+- uid: System.Management.ManagementClass.GetSubclasses
+  commentId: M:System.Management.ManagementClass.GetSubclasses
+  id: GetSubclasses
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetSubclasses()
+  nameWithType: ManagementClass.GetSubclasses()
+  fullName: System.Management.ManagementClass.GetSubclasses()
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectCollection GetSubclasses()
+    return:
+      type: System.Management.ManagementObjectCollection
+    content.vb: Public Function GetSubclasses() As ManagementObjectCollection
+  overload: System.Management.ManagementClass.GetSubclasses*
+- uid: System.Management.ManagementClass.GetSubclasses(System.Management.EnumerationOptions)
+  commentId: M:System.Management.ManagementClass.GetSubclasses(System.Management.EnumerationOptions)
+  id: GetSubclasses(System.Management.EnumerationOptions)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetSubclasses(EnumerationOptions)
+  nameWithType: ManagementClass.GetSubclasses(EnumerationOptions)
+  fullName: System.Management.ManagementClass.GetSubclasses(System.Management.EnumerationOptions)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectCollection GetSubclasses(EnumerationOptions options)
+    parameters:
+    - id: options
+      type: System.Management.EnumerationOptions
+    return:
+      type: System.Management.ManagementObjectCollection
+    content.vb: Public Function GetSubclasses(options As EnumerationOptions) As ManagementObjectCollection
+  overload: System.Management.ManagementClass.GetSubclasses*
+- uid: System.Management.ManagementClass.GetSubclasses(System.Management.ManagementOperationObserver)
+  commentId: M:System.Management.ManagementClass.GetSubclasses(System.Management.ManagementOperationObserver)
+  id: GetSubclasses(System.Management.ManagementOperationObserver)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetSubclasses(ManagementOperationObserver)
+  nameWithType: ManagementClass.GetSubclasses(ManagementOperationObserver)
+  fullName: System.Management.ManagementClass.GetSubclasses(System.Management.ManagementOperationObserver)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public void GetSubclasses(ManagementOperationObserver watcher)
+    parameters:
+    - id: watcher
+      type: System.Management.ManagementOperationObserver
+    content.vb: Public Sub GetSubclasses(watcher As ManagementOperationObserver)
+  overload: System.Management.ManagementClass.GetSubclasses*
+- uid: System.Management.ManagementClass.GetSubclasses(System.Management.ManagementOperationObserver,System.Management.EnumerationOptions)
+  commentId: M:System.Management.ManagementClass.GetSubclasses(System.Management.ManagementOperationObserver,System.Management.EnumerationOptions)
+  id: GetSubclasses(System.Management.ManagementOperationObserver,System.Management.EnumerationOptions)
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: GetSubclasses(ManagementOperationObserver, EnumerationOptions)
+  nameWithType: ManagementClass.GetSubclasses(ManagementOperationObserver, EnumerationOptions)
+  fullName: System.Management.ManagementClass.GetSubclasses(System.Management.ManagementOperationObserver, System.Management.EnumerationOptions)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public void GetSubclasses(ManagementOperationObserver watcher, EnumerationOptions options)
+    parameters:
+    - id: watcher
+      type: System.Management.ManagementOperationObserver
+    - id: options
+      type: System.Management.EnumerationOptions
+    content.vb: Public Sub GetSubclasses(watcher As ManagementOperationObserver, options As EnumerationOptions)
+  overload: System.Management.ManagementClass.GetSubclasses*
+- uid: System.Management.ManagementClass.Derivation
+  commentId: P:System.Management.ManagementClass.Derivation
+  id: Derivation
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: Derivation
+  nameWithType: ManagementClass.Derivation
+  fullName: System.Management.ManagementClass.Derivation
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public StringCollection Derivation { get; }
+    parameters: []
+    return:
+      type: System.Collections.Specialized.StringCollection
+    content.vb: Public ReadOnly Property Derivation As StringCollection
+  overload: System.Management.ManagementClass.Derivation*
+- uid: System.Management.ManagementClass.Methods
+  commentId: P:System.Management.ManagementClass.Methods
+  id: Methods
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: Methods
+  nameWithType: ManagementClass.Methods
+  fullName: System.Management.ManagementClass.Methods
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public MethodDataCollection Methods { get; }
+    parameters: []
+    return:
+      type: System.Management.MethodDataCollection
+    content.vb: Public ReadOnly Property Methods As MethodDataCollection
+  overload: System.Management.ManagementClass.Methods*
+- uid: System.Management.ManagementClass.Path
+  commentId: P:System.Management.ManagementClass.Path
+  id: Path
+  parent: System.Management.ManagementClass
+  langs:
+  - csharp
+  - vb
+  name: Path
+  nameWithType: ManagementClass.Path
+  fullName: System.Management.ManagementClass.Path
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  example: []
+  syntax:
+    content: public override ManagementPath Path { get; set; }
+    parameters: []
+    return:
+      type: System.Management.ManagementPath
+    content.vb: Public Overrides Property Path As ManagementPath
+  overridden: System.Management.ManagementObject.Path
+  overload: System.Management.ManagementClass.Path*
+references:
+- uid: System.Management
+  commentId: N:System.Management
+  isExternal: true
+  href: System.html
+  name: System.Management
+  nameWithType: System.Management
+  fullName: System.Management
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Management
+    name: Management
+    isExternal: true
+    href: System.Management.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Management
+    name: Management
+    isExternal: true
+    href: System.Management.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.MarshalByRefObject
+  commentId: T:System.MarshalByRefObject
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject
+  name: MarshalByRefObject
+  nameWithType: MarshalByRefObject
+  fullName: System.MarshalByRefObject
+- uid: System.ComponentModel.Component
+  commentId: T:System.ComponentModel.Component
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component
+  name: Component
+  nameWithType: Component
+  fullName: System.ComponentModel.Component
+- uid: System.Management.ManagementBaseObject
+  commentId: T:System.Management.ManagementBaseObject
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ManagementBaseObject.html
+  name: ManagementBaseObject
+  nameWithType: ManagementBaseObject
+  fullName: System.Management.ManagementBaseObject
+- uid: System.Management.ManagementObject
+  commentId: T:System.Management.ManagementObject
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ManagementObject.html
+  name: ManagementObject
+  nameWithType: ManagementObject
+  fullName: System.Management.ManagementObject
+- uid: System.ComponentModel.IComponent
+  commentId: T:System.ComponentModel.IComponent
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.icomponent
+  name: IComponent
+  nameWithType: IComponent
+  fullName: System.ComponentModel.IComponent
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.Management.ManagementPath)
+  commentId: M:System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.Management.ManagementPath)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementOperationObserver_System_Management_ManagementPath_
+  name: CopyTo(ManagementOperationObserver, ManagementPath)
+  nameWithType: ManagementObject.CopyTo(ManagementOperationObserver, ManagementPath)
+  fullName: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver, System.Management.ManagementPath)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.Management.ManagementPath)
+    name: CopyTo
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementOperationObserver_System_Management_ManagementPath_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.ManagementPath
+    name: ManagementPath
+    isExternal: true
+    href: System.Management.ManagementPath.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.Management.ManagementPath)
+    name: CopyTo
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementOperationObserver_System_Management_ManagementPath_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.ManagementPath
+    name: ManagementPath
+    isExternal: true
+    href: System.Management.ManagementPath.html
+  - name: )
+- uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.Management.ManagementPath,System.Management.PutOptions)
+  commentId: M:System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.Management.ManagementPath,System.Management.PutOptions)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementOperationObserver_System_Management_ManagementPath_System_Management_PutOptions_
+  name: CopyTo(ManagementOperationObserver, ManagementPath, PutOptions)
+  nameWithType: ManagementObject.CopyTo(ManagementOperationObserver, ManagementPath, PutOptions)
+  fullName: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver, System.Management.ManagementPath, System.Management.PutOptions)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.Management.ManagementPath,System.Management.PutOptions)
+    name: CopyTo
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementOperationObserver_System_Management_ManagementPath_System_Management_PutOptions_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.ManagementPath
+    name: ManagementPath
+    isExternal: true
+    href: System.Management.ManagementPath.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.PutOptions
+    name: PutOptions
+    isExternal: true
+    href: System.Management.PutOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.Management.ManagementPath,System.Management.PutOptions)
+    name: CopyTo
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementOperationObserver_System_Management_ManagementPath_System_Management_PutOptions_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.ManagementPath
+    name: ManagementPath
+    isExternal: true
+    href: System.Management.ManagementPath.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.PutOptions
+    name: PutOptions
+    isExternal: true
+    href: System.Management.PutOptions.html
+  - name: )
+- uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.String)
+  commentId: M:System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.String)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementOperationObserver_System_String_
+  name: CopyTo(ManagementOperationObserver, string)
+  nameWithType: ManagementObject.CopyTo(ManagementOperationObserver, string)
+  fullName: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver, string)
+  nameWithType.vb: ManagementObject.CopyTo(ManagementOperationObserver, String)
+  fullName.vb: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver, String)
+  name.vb: CopyTo(ManagementOperationObserver, String)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.String)
+    name: CopyTo
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementOperationObserver_System_String_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.String)
+    name: CopyTo
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementOperationObserver_System_String_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.String,System.Management.PutOptions)
+  commentId: M:System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.String,System.Management.PutOptions)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementOperationObserver_System_String_System_Management_PutOptions_
+  name: CopyTo(ManagementOperationObserver, string, PutOptions)
+  nameWithType: ManagementObject.CopyTo(ManagementOperationObserver, string, PutOptions)
+  fullName: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver, string, System.Management.PutOptions)
+  nameWithType.vb: ManagementObject.CopyTo(ManagementOperationObserver, String, PutOptions)
+  fullName.vb: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver, String, System.Management.PutOptions)
+  name.vb: CopyTo(ManagementOperationObserver, String, PutOptions)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.String,System.Management.PutOptions)
+    name: CopyTo
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementOperationObserver_System_String_System_Management_PutOptions_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Management.PutOptions
+    name: PutOptions
+    isExternal: true
+    href: System.Management.PutOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementOperationObserver,System.String,System.Management.PutOptions)
+    name: CopyTo
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementOperationObserver_System_String_System_Management_PutOptions_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Management.PutOptions
+    name: PutOptions
+    isExternal: true
+    href: System.Management.PutOptions.html
+  - name: )
+- uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementPath)
+  commentId: M:System.Management.ManagementObject.CopyTo(System.Management.ManagementPath)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementPath_
+  name: CopyTo(ManagementPath)
+  nameWithType: ManagementObject.CopyTo(ManagementPath)
+  fullName: System.Management.ManagementObject.CopyTo(System.Management.ManagementPath)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementPath)
+    name: CopyTo
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementPath_
+  - name: (
+  - uid: System.Management.ManagementPath
+    name: ManagementPath
+    isExternal: true
+    href: System.Management.ManagementPath.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementPath)
+    name: CopyTo
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementPath_
+  - name: (
+  - uid: System.Management.ManagementPath
+    name: ManagementPath
+    isExternal: true
+    href: System.Management.ManagementPath.html
+  - name: )
+- uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementPath,System.Management.PutOptions)
+  commentId: M:System.Management.ManagementObject.CopyTo(System.Management.ManagementPath,System.Management.PutOptions)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementPath_System_Management_PutOptions_
+  name: CopyTo(ManagementPath, PutOptions)
+  nameWithType: ManagementObject.CopyTo(ManagementPath, PutOptions)
+  fullName: System.Management.ManagementObject.CopyTo(System.Management.ManagementPath, System.Management.PutOptions)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementPath,System.Management.PutOptions)
+    name: CopyTo
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementPath_System_Management_PutOptions_
+  - name: (
+  - uid: System.Management.ManagementPath
+    name: ManagementPath
+    isExternal: true
+    href: System.Management.ManagementPath.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.PutOptions
+    name: PutOptions
+    isExternal: true
+    href: System.Management.PutOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.CopyTo(System.Management.ManagementPath,System.Management.PutOptions)
+    name: CopyTo
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_Management_ManagementPath_System_Management_PutOptions_
+  - name: (
+  - uid: System.Management.ManagementPath
+    name: ManagementPath
+    isExternal: true
+    href: System.Management.ManagementPath.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.PutOptions
+    name: PutOptions
+    isExternal: true
+    href: System.Management.PutOptions.html
+  - name: )
+- uid: System.Management.ManagementObject.CopyTo(System.String)
+  commentId: M:System.Management.ManagementObject.CopyTo(System.String)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_String_
+  name: CopyTo(string)
+  nameWithType: ManagementObject.CopyTo(string)
+  fullName: System.Management.ManagementObject.CopyTo(string)
+  nameWithType.vb: ManagementObject.CopyTo(String)
+  fullName.vb: System.Management.ManagementObject.CopyTo(String)
+  name.vb: CopyTo(String)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.CopyTo(System.String)
+    name: CopyTo
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.CopyTo(System.String)
+    name: CopyTo
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Management.ManagementObject.CopyTo(System.String,System.Management.PutOptions)
+  commentId: M:System.Management.ManagementObject.CopyTo(System.String,System.Management.PutOptions)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_String_System_Management_PutOptions_
+  name: CopyTo(string, PutOptions)
+  nameWithType: ManagementObject.CopyTo(string, PutOptions)
+  fullName: System.Management.ManagementObject.CopyTo(string, System.Management.PutOptions)
+  nameWithType.vb: ManagementObject.CopyTo(String, PutOptions)
+  fullName.vb: System.Management.ManagementObject.CopyTo(String, System.Management.PutOptions)
+  name.vb: CopyTo(String, PutOptions)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.CopyTo(System.String,System.Management.PutOptions)
+    name: CopyTo
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_String_System_Management_PutOptions_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Management.PutOptions
+    name: PutOptions
+    isExternal: true
+    href: System.Management.PutOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.CopyTo(System.String,System.Management.PutOptions)
+    name: CopyTo
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_CopyTo_System_String_System_Management_PutOptions_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Management.PutOptions
+    name: PutOptions
+    isExternal: true
+    href: System.Management.PutOptions.html
+  - name: )
+- uid: System.Management.ManagementObject.Delete
+  commentId: M:System.Management.ManagementObject.Delete
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_Delete
+  name: Delete()
+  nameWithType: ManagementObject.Delete()
+  fullName: System.Management.ManagementObject.Delete()
+  spec.csharp:
+  - uid: System.Management.ManagementObject.Delete
+    name: Delete
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Delete
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.Delete
+    name: Delete
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Delete
+  - name: (
+  - name: )
+- uid: System.Management.ManagementObject.Delete(System.Management.DeleteOptions)
+  commentId: M:System.Management.ManagementObject.Delete(System.Management.DeleteOptions)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_Delete_System_Management_DeleteOptions_
+  name: Delete(DeleteOptions)
+  nameWithType: ManagementObject.Delete(DeleteOptions)
+  fullName: System.Management.ManagementObject.Delete(System.Management.DeleteOptions)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.Delete(System.Management.DeleteOptions)
+    name: Delete
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Delete_System_Management_DeleteOptions_
+  - name: (
+  - uid: System.Management.DeleteOptions
+    name: DeleteOptions
+    isExternal: true
+    href: System.Management.DeleteOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.Delete(System.Management.DeleteOptions)
+    name: Delete
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Delete_System_Management_DeleteOptions_
+  - name: (
+  - uid: System.Management.DeleteOptions
+    name: DeleteOptions
+    isExternal: true
+    href: System.Management.DeleteOptions.html
+  - name: )
+- uid: System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver)
+  commentId: M:System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_Delete_System_Management_ManagementOperationObserver_
+  name: Delete(ManagementOperationObserver)
+  nameWithType: ManagementObject.Delete(ManagementOperationObserver)
+  fullName: System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver)
+    name: Delete
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Delete_System_Management_ManagementOperationObserver_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver)
+    name: Delete
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Delete_System_Management_ManagementOperationObserver_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: )
+- uid: System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver,System.Management.DeleteOptions)
+  commentId: M:System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver,System.Management.DeleteOptions)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_Delete_System_Management_ManagementOperationObserver_System_Management_DeleteOptions_
+  name: Delete(ManagementOperationObserver, DeleteOptions)
+  nameWithType: ManagementObject.Delete(ManagementOperationObserver, DeleteOptions)
+  fullName: System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver, System.Management.DeleteOptions)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver,System.Management.DeleteOptions)
+    name: Delete
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Delete_System_Management_ManagementOperationObserver_System_Management_DeleteOptions_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.DeleteOptions
+    name: DeleteOptions
+    isExternal: true
+    href: System.Management.DeleteOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.Delete(System.Management.ManagementOperationObserver,System.Management.DeleteOptions)
+    name: Delete
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Delete_System_Management_ManagementOperationObserver_System_Management_DeleteOptions_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.DeleteOptions
+    name: DeleteOptions
+    isExternal: true
+    href: System.Management.DeleteOptions.html
+  - name: )
+- uid: System.Management.ManagementObject.Dispose
+  commentId: M:System.Management.ManagementObject.Dispose
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_Dispose
+  name: Dispose()
+  nameWithType: ManagementObject.Dispose()
+  fullName: System.Management.ManagementObject.Dispose()
+  spec.csharp:
+  - uid: System.Management.ManagementObject.Dispose
+    name: Dispose
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.Dispose
+    name: Dispose
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Dispose
+  - name: (
+  - name: )
+- uid: System.Management.ManagementObject.Get
+  commentId: M:System.Management.ManagementObject.Get
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_Get
+  name: Get()
+  nameWithType: ManagementObject.Get()
+  fullName: System.Management.ManagementObject.Get()
+  spec.csharp:
+  - uid: System.Management.ManagementObject.Get
+    name: Get
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Get
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.Get
+    name: Get
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Get
+  - name: (
+  - name: )
+- uid: System.Management.ManagementObject.Get(System.Management.ManagementOperationObserver)
+  commentId: M:System.Management.ManagementObject.Get(System.Management.ManagementOperationObserver)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_Get_System_Management_ManagementOperationObserver_
+  name: Get(ManagementOperationObserver)
+  nameWithType: ManagementObject.Get(ManagementOperationObserver)
+  fullName: System.Management.ManagementObject.Get(System.Management.ManagementOperationObserver)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.Get(System.Management.ManagementOperationObserver)
+    name: Get
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Get_System_Management_ManagementOperationObserver_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.Get(System.Management.ManagementOperationObserver)
+    name: Get
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Get_System_Management_ManagementOperationObserver_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: )
+- uid: System.Management.ManagementObject.GetMethodParameters(System.String)
+  commentId: M:System.Management.ManagementObject.GetMethodParameters(System.String)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetMethodParameters_System_String_
+  name: GetMethodParameters(string)
+  nameWithType: ManagementObject.GetMethodParameters(string)
+  fullName: System.Management.ManagementObject.GetMethodParameters(string)
+  nameWithType.vb: ManagementObject.GetMethodParameters(String)
+  fullName.vb: System.Management.ManagementObject.GetMethodParameters(String)
+  name.vb: GetMethodParameters(String)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.GetMethodParameters(System.String)
+    name: GetMethodParameters
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetMethodParameters_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.GetMethodParameters(System.String)
+    name: GetMethodParameters
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetMethodParameters_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Management.ManagementObject.GetRelated
+  commentId: M:System.Management.ManagementObject.GetRelated
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated
+  name: GetRelated()
+  nameWithType: ManagementObject.GetRelated()
+  fullName: System.Management.ManagementObject.GetRelated()
+  spec.csharp:
+  - uid: System.Management.ManagementObject.GetRelated
+    name: GetRelated
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.GetRelated
+    name: GetRelated
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated
+  - name: (
+  - name: )
+- uid: System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver)
+  commentId: M:System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated_System_Management_ManagementOperationObserver_
+  name: GetRelated(ManagementOperationObserver)
+  nameWithType: ManagementObject.GetRelated(ManagementOperationObserver)
+  fullName: System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver)
+    name: GetRelated
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated_System_Management_ManagementOperationObserver_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver)
+    name: GetRelated
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated_System_Management_ManagementOperationObserver_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: )
+- uid: System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String)
+  commentId: M:System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated_System_Management_ManagementOperationObserver_System_String_
+  name: GetRelated(ManagementOperationObserver, string)
+  nameWithType: ManagementObject.GetRelated(ManagementOperationObserver, string)
+  fullName: System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver, string)
+  nameWithType.vb: ManagementObject.GetRelated(ManagementOperationObserver, String)
+  fullName.vb: System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver, String)
+  name.vb: GetRelated(ManagementOperationObserver, String)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String)
+    name: GetRelated
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated_System_Management_ManagementOperationObserver_System_String_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String)
+    name: GetRelated
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated_System_Management_ManagementOperationObserver_System_String_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+  commentId: M:System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated_System_Management_ManagementOperationObserver_System_String_System_String_System_String_System_String_System_String_System_String_System_Boolean_System_Management_EnumerationOptions_
+  name: GetRelated(ManagementOperationObserver, string, string, string, string, string, string, bool, EnumerationOptions)
+  nameWithType: ManagementObject.GetRelated(ManagementOperationObserver, string, string, string, string, string, string, bool, EnumerationOptions)
+  fullName: System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver, string, string, string, string, string, string, bool, System.Management.EnumerationOptions)
+  nameWithType.vb: ManagementObject.GetRelated(ManagementOperationObserver, String, String, String, String, String, String, Boolean, EnumerationOptions)
+  fullName.vb: System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver, String, String, String, String, String, String, Boolean, System.Management.EnumerationOptions)
+  name.vb: GetRelated(ManagementOperationObserver, String, String, String, String, String, String, Boolean, EnumerationOptions)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+    name: GetRelated
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated_System_Management_ManagementOperationObserver_System_String_System_String_System_String_System_String_System_String_System_String_System_Boolean_System_Management_EnumerationOptions_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Management.EnumerationOptions
+    name: EnumerationOptions
+    isExternal: true
+    href: System.Management.EnumerationOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+    name: GetRelated
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated_System_Management_ManagementOperationObserver_System_String_System_String_System_String_System_String_System_String_System_String_System_Boolean_System_Management_EnumerationOptions_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Management.EnumerationOptions
+    name: EnumerationOptions
+    isExternal: true
+    href: System.Management.EnumerationOptions.html
+  - name: )
+- uid: System.Management.ManagementObject.GetRelated(System.String)
+  commentId: M:System.Management.ManagementObject.GetRelated(System.String)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated_System_String_
+  name: GetRelated(string)
+  nameWithType: ManagementObject.GetRelated(string)
+  fullName: System.Management.ManagementObject.GetRelated(string)
+  nameWithType.vb: ManagementObject.GetRelated(String)
+  fullName.vb: System.Management.ManagementObject.GetRelated(String)
+  name.vb: GetRelated(String)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.GetRelated(System.String)
+    name: GetRelated
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.GetRelated(System.String)
+    name: GetRelated
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Management.ManagementObject.GetRelated(System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+  commentId: M:System.Management.ManagementObject.GetRelated(System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated_System_String_System_String_System_String_System_String_System_String_System_String_System_Boolean_System_Management_EnumerationOptions_
+  name: GetRelated(string, string, string, string, string, string, bool, EnumerationOptions)
+  nameWithType: ManagementObject.GetRelated(string, string, string, string, string, string, bool, EnumerationOptions)
+  fullName: System.Management.ManagementObject.GetRelated(string, string, string, string, string, string, bool, System.Management.EnumerationOptions)
+  nameWithType.vb: ManagementObject.GetRelated(String, String, String, String, String, String, Boolean, EnumerationOptions)
+  fullName.vb: System.Management.ManagementObject.GetRelated(String, String, String, String, String, String, Boolean, System.Management.EnumerationOptions)
+  name.vb: GetRelated(String, String, String, String, String, String, Boolean, EnumerationOptions)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.GetRelated(System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+    name: GetRelated
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated_System_String_System_String_System_String_System_String_System_String_System_String_System_Boolean_System_Management_EnumerationOptions_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Management.EnumerationOptions
+    name: EnumerationOptions
+    isExternal: true
+    href: System.Management.EnumerationOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.GetRelated(System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+    name: GetRelated
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelated_System_String_System_String_System_String_System_String_System_String_System_String_System_Boolean_System_Management_EnumerationOptions_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Management.EnumerationOptions
+    name: EnumerationOptions
+    isExternal: true
+    href: System.Management.EnumerationOptions.html
+  - name: )
+- uid: System.Management.ManagementObject.GetRelationships
+  commentId: M:System.Management.ManagementObject.GetRelationships
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships
+  name: GetRelationships()
+  nameWithType: ManagementObject.GetRelationships()
+  fullName: System.Management.ManagementObject.GetRelationships()
+  spec.csharp:
+  - uid: System.Management.ManagementObject.GetRelationships
+    name: GetRelationships
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.GetRelationships
+    name: GetRelationships
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships
+  - name: (
+  - name: )
+- uid: System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver)
+  commentId: M:System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships_System_Management_ManagementOperationObserver_
+  name: GetRelationships(ManagementOperationObserver)
+  nameWithType: ManagementObject.GetRelationships(ManagementOperationObserver)
+  fullName: System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver)
+    name: GetRelationships
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships_System_Management_ManagementOperationObserver_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver)
+    name: GetRelationships
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships_System_Management_ManagementOperationObserver_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: )
+- uid: System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver,System.String)
+  commentId: M:System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver,System.String)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships_System_Management_ManagementOperationObserver_System_String_
+  name: GetRelationships(ManagementOperationObserver, string)
+  nameWithType: ManagementObject.GetRelationships(ManagementOperationObserver, string)
+  fullName: System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver, string)
+  nameWithType.vb: ManagementObject.GetRelationships(ManagementOperationObserver, String)
+  fullName.vb: System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver, String)
+  name.vb: GetRelationships(ManagementOperationObserver, String)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver,System.String)
+    name: GetRelationships
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships_System_Management_ManagementOperationObserver_System_String_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver,System.String)
+    name: GetRelationships
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships_System_Management_ManagementOperationObserver_System_String_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+  commentId: M:System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships_System_Management_ManagementOperationObserver_System_String_System_String_System_String_System_Boolean_System_Management_EnumerationOptions_
+  name: GetRelationships(ManagementOperationObserver, string, string, string, bool, EnumerationOptions)
+  nameWithType: ManagementObject.GetRelationships(ManagementOperationObserver, string, string, string, bool, EnumerationOptions)
+  fullName: System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver, string, string, string, bool, System.Management.EnumerationOptions)
+  nameWithType.vb: ManagementObject.GetRelationships(ManagementOperationObserver, String, String, String, Boolean, EnumerationOptions)
+  fullName.vb: System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver, String, String, String, Boolean, System.Management.EnumerationOptions)
+  name.vb: GetRelationships(ManagementOperationObserver, String, String, String, Boolean, EnumerationOptions)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+    name: GetRelationships
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships_System_Management_ManagementOperationObserver_System_String_System_String_System_String_System_Boolean_System_Management_EnumerationOptions_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Management.EnumerationOptions
+    name: EnumerationOptions
+    isExternal: true
+    href: System.Management.EnumerationOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.GetRelationships(System.Management.ManagementOperationObserver,System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+    name: GetRelationships
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships_System_Management_ManagementOperationObserver_System_String_System_String_System_String_System_Boolean_System_Management_EnumerationOptions_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Management.EnumerationOptions
+    name: EnumerationOptions
+    isExternal: true
+    href: System.Management.EnumerationOptions.html
+  - name: )
+- uid: System.Management.ManagementObject.GetRelationships(System.String)
+  commentId: M:System.Management.ManagementObject.GetRelationships(System.String)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships_System_String_
+  name: GetRelationships(string)
+  nameWithType: ManagementObject.GetRelationships(string)
+  fullName: System.Management.ManagementObject.GetRelationships(string)
+  nameWithType.vb: ManagementObject.GetRelationships(String)
+  fullName.vb: System.Management.ManagementObject.GetRelationships(String)
+  name.vb: GetRelationships(String)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.GetRelationships(System.String)
+    name: GetRelationships
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.GetRelationships(System.String)
+    name: GetRelationships
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Management.ManagementObject.GetRelationships(System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+  commentId: M:System.Management.ManagementObject.GetRelationships(System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships_System_String_System_String_System_String_System_Boolean_System_Management_EnumerationOptions_
+  name: GetRelationships(string, string, string, bool, EnumerationOptions)
+  nameWithType: ManagementObject.GetRelationships(string, string, string, bool, EnumerationOptions)
+  fullName: System.Management.ManagementObject.GetRelationships(string, string, string, bool, System.Management.EnumerationOptions)
+  nameWithType.vb: ManagementObject.GetRelationships(String, String, String, Boolean, EnumerationOptions)
+  fullName.vb: System.Management.ManagementObject.GetRelationships(String, String, String, Boolean, System.Management.EnumerationOptions)
+  name.vb: GetRelationships(String, String, String, Boolean, EnumerationOptions)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.GetRelationships(System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+    name: GetRelationships
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships_System_String_System_String_System_String_System_Boolean_System_Management_EnumerationOptions_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Management.EnumerationOptions
+    name: EnumerationOptions
+    isExternal: true
+    href: System.Management.EnumerationOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.GetRelationships(System.String,System.String,System.String,System.Boolean,System.Management.EnumerationOptions)
+    name: GetRelationships
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetRelationships_System_String_System_String_System_String_System_Boolean_System_Management_EnumerationOptions_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Management.EnumerationOptions
+    name: EnumerationOptions
+    isExternal: true
+    href: System.Management.EnumerationOptions.html
+  - name: )
+- uid: System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)
+  commentId: M:System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_InvokeMethod_System_Management_ManagementOperationObserver_System_String_System_Management_ManagementBaseObject_System_Management_InvokeMethodOptions_
+  name: InvokeMethod(ManagementOperationObserver, string, ManagementBaseObject, InvokeMethodOptions)
+  nameWithType: ManagementObject.InvokeMethod(ManagementOperationObserver, string, ManagementBaseObject, InvokeMethodOptions)
+  fullName: System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver, string, System.Management.ManagementBaseObject, System.Management.InvokeMethodOptions)
+  nameWithType.vb: ManagementObject.InvokeMethod(ManagementOperationObserver, String, ManagementBaseObject, InvokeMethodOptions)
+  fullName.vb: System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver, String, System.Management.ManagementBaseObject, System.Management.InvokeMethodOptions)
+  name.vb: InvokeMethod(ManagementOperationObserver, String, ManagementBaseObject, InvokeMethodOptions)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)
+    name: InvokeMethod
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_InvokeMethod_System_Management_ManagementOperationObserver_System_String_System_Management_ManagementBaseObject_System_Management_InvokeMethodOptions_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Management.ManagementBaseObject
+    name: ManagementBaseObject
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.InvokeMethodOptions
+    name: InvokeMethodOptions
+    isExternal: true
+    href: System.Management.InvokeMethodOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)
+    name: InvokeMethod
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_InvokeMethod_System_Management_ManagementOperationObserver_System_String_System_Management_ManagementBaseObject_System_Management_InvokeMethodOptions_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Management.ManagementBaseObject
+    name: ManagementBaseObject
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.InvokeMethodOptions
+    name: InvokeMethodOptions
+    isExternal: true
+    href: System.Management.InvokeMethodOptions.html
+  - name: )
+- uid: System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Object[])
+  commentId: M:System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Object[])
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_InvokeMethod_System_Management_ManagementOperationObserver_System_String_System_Object___
+  name: InvokeMethod(ManagementOperationObserver, string, object[])
+  nameWithType: ManagementObject.InvokeMethod(ManagementOperationObserver, string, object[])
+  fullName: System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver, string, object[])
+  nameWithType.vb: ManagementObject.InvokeMethod(ManagementOperationObserver, String, Object())
+  fullName.vb: System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver, String, Object())
+  name.vb: InvokeMethod(ManagementOperationObserver, String, Object())
+  spec.csharp:
+  - uid: System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Object[])
+    name: InvokeMethod
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_InvokeMethod_System_Management_ManagementOperationObserver_System_String_System_Object___
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Object[])
+    name: InvokeMethod
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_InvokeMethod_System_Management_ManagementOperationObserver_System_String_System_Object___
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Management.ManagementObject.InvokeMethod(System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)
+  commentId: M:System.Management.ManagementObject.InvokeMethod(System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_InvokeMethod_System_String_System_Management_ManagementBaseObject_System_Management_InvokeMethodOptions_
+  name: InvokeMethod(string, ManagementBaseObject, InvokeMethodOptions)
+  nameWithType: ManagementObject.InvokeMethod(string, ManagementBaseObject, InvokeMethodOptions)
+  fullName: System.Management.ManagementObject.InvokeMethod(string, System.Management.ManagementBaseObject, System.Management.InvokeMethodOptions)
+  nameWithType.vb: ManagementObject.InvokeMethod(String, ManagementBaseObject, InvokeMethodOptions)
+  fullName.vb: System.Management.ManagementObject.InvokeMethod(String, System.Management.ManagementBaseObject, System.Management.InvokeMethodOptions)
+  name.vb: InvokeMethod(String, ManagementBaseObject, InvokeMethodOptions)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.InvokeMethod(System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)
+    name: InvokeMethod
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_InvokeMethod_System_String_System_Management_ManagementBaseObject_System_Management_InvokeMethodOptions_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Management.ManagementBaseObject
+    name: ManagementBaseObject
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.InvokeMethodOptions
+    name: InvokeMethodOptions
+    isExternal: true
+    href: System.Management.InvokeMethodOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.InvokeMethod(System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)
+    name: InvokeMethod
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_InvokeMethod_System_String_System_Management_ManagementBaseObject_System_Management_InvokeMethodOptions_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Management.ManagementBaseObject
+    name: ManagementBaseObject
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.InvokeMethodOptions
+    name: InvokeMethodOptions
+    isExternal: true
+    href: System.Management.InvokeMethodOptions.html
+  - name: )
+- uid: System.Management.ManagementObject.InvokeMethod(System.String,System.Object[])
+  commentId: M:System.Management.ManagementObject.InvokeMethod(System.String,System.Object[])
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_InvokeMethod_System_String_System_Object___
+  name: InvokeMethod(string, object[])
+  nameWithType: ManagementObject.InvokeMethod(string, object[])
+  fullName: System.Management.ManagementObject.InvokeMethod(string, object[])
+  nameWithType.vb: ManagementObject.InvokeMethod(String, Object())
+  fullName.vb: System.Management.ManagementObject.InvokeMethod(String, Object())
+  name.vb: InvokeMethod(String, Object())
+  spec.csharp:
+  - uid: System.Management.ManagementObject.InvokeMethod(System.String,System.Object[])
+    name: InvokeMethod
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_InvokeMethod_System_String_System_Object___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.InvokeMethod(System.String,System.Object[])
+    name: InvokeMethod
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_InvokeMethod_System_String_System_Object___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Management.ManagementObject.Put
+  commentId: M:System.Management.ManagementObject.Put
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_Put
+  name: Put()
+  nameWithType: ManagementObject.Put()
+  fullName: System.Management.ManagementObject.Put()
+  spec.csharp:
+  - uid: System.Management.ManagementObject.Put
+    name: Put
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Put
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.Put
+    name: Put
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Put
+  - name: (
+  - name: )
+- uid: System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver)
+  commentId: M:System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_Put_System_Management_ManagementOperationObserver_
+  name: Put(ManagementOperationObserver)
+  nameWithType: ManagementObject.Put(ManagementOperationObserver)
+  fullName: System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver)
+    name: Put
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Put_System_Management_ManagementOperationObserver_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver)
+    name: Put
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Put_System_Management_ManagementOperationObserver_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: )
+- uid: System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver,System.Management.PutOptions)
+  commentId: M:System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver,System.Management.PutOptions)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_Put_System_Management_ManagementOperationObserver_System_Management_PutOptions_
+  name: Put(ManagementOperationObserver, PutOptions)
+  nameWithType: ManagementObject.Put(ManagementOperationObserver, PutOptions)
+  fullName: System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver, System.Management.PutOptions)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver,System.Management.PutOptions)
+    name: Put
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Put_System_Management_ManagementOperationObserver_System_Management_PutOptions_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.PutOptions
+    name: PutOptions
+    isExternal: true
+    href: System.Management.PutOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.Put(System.Management.ManagementOperationObserver,System.Management.PutOptions)
+    name: Put
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Put_System_Management_ManagementOperationObserver_System_Management_PutOptions_
+  - name: (
+  - uid: System.Management.ManagementOperationObserver
+    name: ManagementOperationObserver
+    isExternal: true
+    href: System.Management.ManagementOperationObserver.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.PutOptions
+    name: PutOptions
+    isExternal: true
+    href: System.Management.PutOptions.html
+  - name: )
+- uid: System.Management.ManagementObject.Put(System.Management.PutOptions)
+  commentId: M:System.Management.ManagementObject.Put(System.Management.PutOptions)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_Put_System_Management_PutOptions_
+  name: Put(PutOptions)
+  nameWithType: ManagementObject.Put(PutOptions)
+  fullName: System.Management.ManagementObject.Put(System.Management.PutOptions)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.Put(System.Management.PutOptions)
+    name: Put
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Put_System_Management_PutOptions_
+  - name: (
+  - uid: System.Management.PutOptions
+    name: PutOptions
+    isExternal: true
+    href: System.Management.PutOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.Put(System.Management.PutOptions)
+    name: Put
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Put_System_Management_PutOptions_
+  - name: (
+  - uid: System.Management.PutOptions
+    name: PutOptions
+    isExternal: true
+    href: System.Management.PutOptions.html
+  - name: )
+- uid: System.Management.ManagementObject.ToString
+  commentId: M:System.Management.ManagementObject.ToString
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_ToString
+  name: ToString()
+  nameWithType: ManagementObject.ToString()
+  fullName: System.Management.ManagementObject.ToString()
+  spec.csharp:
+  - uid: System.Management.ManagementObject.ToString
+    name: ToString
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.ToString
+    name: ToString
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_ToString
+  - name: (
+  - name: )
+- uid: System.Management.ManagementObject.ClassPath
+  commentId: P:System.Management.ManagementObject.ClassPath
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_ClassPath
+  name: ClassPath
+  nameWithType: ManagementObject.ClassPath
+  fullName: System.Management.ManagementObject.ClassPath
+- uid: System.Management.ManagementObject.Options
+  commentId: P:System.Management.ManagementObject.Options
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_Options
+  name: Options
+  nameWithType: ManagementObject.Options
+  fullName: System.Management.ManagementObject.Options
+- uid: System.Management.ManagementObject.Scope
+  commentId: P:System.Management.ManagementObject.Scope
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_Scope
+  name: Scope
+  nameWithType: ManagementObject.Scope
+  fullName: System.Management.ManagementObject.Scope
+- uid: System.Management.ManagementBaseObject.CompareTo(System.Management.ManagementBaseObject,System.Management.ComparisonSettings)
+  commentId: M:System.Management.ManagementBaseObject.CompareTo(System.Management.ManagementBaseObject,System.Management.ComparisonSettings)
+  parent: System.Management.ManagementBaseObject
+  isExternal: true
+  href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_CompareTo_System_Management_ManagementBaseObject_System_Management_ComparisonSettings_
+  name: CompareTo(ManagementBaseObject, ComparisonSettings)
+  nameWithType: ManagementBaseObject.CompareTo(ManagementBaseObject, ComparisonSettings)
+  fullName: System.Management.ManagementBaseObject.CompareTo(System.Management.ManagementBaseObject, System.Management.ComparisonSettings)
+  spec.csharp:
+  - uid: System.Management.ManagementBaseObject.CompareTo(System.Management.ManagementBaseObject,System.Management.ComparisonSettings)
+    name: CompareTo
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_CompareTo_System_Management_ManagementBaseObject_System_Management_ComparisonSettings_
+  - name: (
+  - uid: System.Management.ManagementBaseObject
+    name: ManagementBaseObject
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.ComparisonSettings
+    name: ComparisonSettings
+    isExternal: true
+    href: System.Management.ComparisonSettings.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementBaseObject.CompareTo(System.Management.ManagementBaseObject,System.Management.ComparisonSettings)
+    name: CompareTo
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_CompareTo_System_Management_ManagementBaseObject_System_Management_ComparisonSettings_
+  - name: (
+  - uid: System.Management.ManagementBaseObject
+    name: ManagementBaseObject
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html
+  - name: ','
+  - name: " "
+  - uid: System.Management.ComparisonSettings
+    name: ComparisonSettings
+    isExternal: true
+    href: System.Management.ComparisonSettings.html
+  - name: )
+- uid: System.Management.ManagementBaseObject.Equals(System.Object)
+  commentId: M:System.Management.ManagementBaseObject.Equals(System.Object)
+  parent: System.Management.ManagementBaseObject
+  isExternal: true
+  href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: ManagementBaseObject.Equals(object)
+  fullName: System.Management.ManagementBaseObject.Equals(object)
+  nameWithType.vb: ManagementBaseObject.Equals(Object)
+  fullName.vb: System.Management.ManagementBaseObject.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Management.ManagementBaseObject.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementBaseObject.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Management.ManagementBaseObject.GetHashCode
+  commentId: M:System.Management.ManagementBaseObject.GetHashCode
+  parent: System.Management.ManagementBaseObject
+  isExternal: true
+  href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetHashCode
+  name: GetHashCode()
+  nameWithType: ManagementBaseObject.GetHashCode()
+  fullName: System.Management.ManagementBaseObject.GetHashCode()
+  spec.csharp:
+  - uid: System.Management.ManagementBaseObject.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementBaseObject.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetHashCode
+  - name: (
+  - name: )
+- uid: System.Management.ManagementBaseObject.GetPropertyQualifierValue(System.String,System.String)
+  commentId: M:System.Management.ManagementBaseObject.GetPropertyQualifierValue(System.String,System.String)
+  parent: System.Management.ManagementBaseObject
+  isExternal: true
+  href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetPropertyQualifierValue_System_String_System_String_
+  name: GetPropertyQualifierValue(string, string)
+  nameWithType: ManagementBaseObject.GetPropertyQualifierValue(string, string)
+  fullName: System.Management.ManagementBaseObject.GetPropertyQualifierValue(string, string)
+  nameWithType.vb: ManagementBaseObject.GetPropertyQualifierValue(String, String)
+  fullName.vb: System.Management.ManagementBaseObject.GetPropertyQualifierValue(String, String)
+  name.vb: GetPropertyQualifierValue(String, String)
+  spec.csharp:
+  - uid: System.Management.ManagementBaseObject.GetPropertyQualifierValue(System.String,System.String)
+    name: GetPropertyQualifierValue
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetPropertyQualifierValue_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementBaseObject.GetPropertyQualifierValue(System.String,System.String)
+    name: GetPropertyQualifierValue
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetPropertyQualifierValue_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Management.ManagementBaseObject.GetPropertyValue(System.String)
+  commentId: M:System.Management.ManagementBaseObject.GetPropertyValue(System.String)
+  parent: System.Management.ManagementBaseObject
+  isExternal: true
+  href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetPropertyValue_System_String_
+  name: GetPropertyValue(string)
+  nameWithType: ManagementBaseObject.GetPropertyValue(string)
+  fullName: System.Management.ManagementBaseObject.GetPropertyValue(string)
+  nameWithType.vb: ManagementBaseObject.GetPropertyValue(String)
+  fullName.vb: System.Management.ManagementBaseObject.GetPropertyValue(String)
+  name.vb: GetPropertyValue(String)
+  spec.csharp:
+  - uid: System.Management.ManagementBaseObject.GetPropertyValue(System.String)
+    name: GetPropertyValue
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetPropertyValue_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementBaseObject.GetPropertyValue(System.String)
+    name: GetPropertyValue
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetPropertyValue_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Management.ManagementBaseObject.GetQualifierValue(System.String)
+  commentId: M:System.Management.ManagementBaseObject.GetQualifierValue(System.String)
+  parent: System.Management.ManagementBaseObject
+  isExternal: true
+  href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetQualifierValue_System_String_
+  name: GetQualifierValue(string)
+  nameWithType: ManagementBaseObject.GetQualifierValue(string)
+  fullName: System.Management.ManagementBaseObject.GetQualifierValue(string)
+  nameWithType.vb: ManagementBaseObject.GetQualifierValue(String)
+  fullName.vb: System.Management.ManagementBaseObject.GetQualifierValue(String)
+  name.vb: GetQualifierValue(String)
+  spec.csharp:
+  - uid: System.Management.ManagementBaseObject.GetQualifierValue(System.String)
+    name: GetQualifierValue
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetQualifierValue_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementBaseObject.GetQualifierValue(System.String)
+    name: GetQualifierValue
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetQualifierValue_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Management.ManagementBaseObject.GetText(System.Management.TextFormat)
+  commentId: M:System.Management.ManagementBaseObject.GetText(System.Management.TextFormat)
+  parent: System.Management.ManagementBaseObject
+  isExternal: true
+  href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetText_System_Management_TextFormat_
+  name: GetText(TextFormat)
+  nameWithType: ManagementBaseObject.GetText(TextFormat)
+  fullName: System.Management.ManagementBaseObject.GetText(System.Management.TextFormat)
+  spec.csharp:
+  - uid: System.Management.ManagementBaseObject.GetText(System.Management.TextFormat)
+    name: GetText
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetText_System_Management_TextFormat_
+  - name: (
+  - uid: System.Management.TextFormat
+    name: TextFormat
+    isExternal: true
+    href: System.Management.TextFormat.html
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementBaseObject.GetText(System.Management.TextFormat)
+    name: GetText
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_GetText_System_Management_TextFormat_
+  - name: (
+  - uid: System.Management.TextFormat
+    name: TextFormat
+    isExternal: true
+    href: System.Management.TextFormat.html
+  - name: )
+- uid: System.Management.ManagementBaseObject.SetPropertyQualifierValue(System.String,System.String,System.Object)
+  commentId: M:System.Management.ManagementBaseObject.SetPropertyQualifierValue(System.String,System.String,System.Object)
+  parent: System.Management.ManagementBaseObject
+  isExternal: true
+  href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_SetPropertyQualifierValue_System_String_System_String_System_Object_
+  name: SetPropertyQualifierValue(string, string, object)
+  nameWithType: ManagementBaseObject.SetPropertyQualifierValue(string, string, object)
+  fullName: System.Management.ManagementBaseObject.SetPropertyQualifierValue(string, string, object)
+  nameWithType.vb: ManagementBaseObject.SetPropertyQualifierValue(String, String, Object)
+  fullName.vb: System.Management.ManagementBaseObject.SetPropertyQualifierValue(String, String, Object)
+  name.vb: SetPropertyQualifierValue(String, String, Object)
+  spec.csharp:
+  - uid: System.Management.ManagementBaseObject.SetPropertyQualifierValue(System.String,System.String,System.Object)
+    name: SetPropertyQualifierValue
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_SetPropertyQualifierValue_System_String_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementBaseObject.SetPropertyQualifierValue(System.String,System.String,System.Object)
+    name: SetPropertyQualifierValue
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_SetPropertyQualifierValue_System_String_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Management.ManagementBaseObject.SetPropertyValue(System.String,System.Object)
+  commentId: M:System.Management.ManagementBaseObject.SetPropertyValue(System.String,System.Object)
+  parent: System.Management.ManagementBaseObject
+  isExternal: true
+  href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_SetPropertyValue_System_String_System_Object_
+  name: SetPropertyValue(string, object)
+  nameWithType: ManagementBaseObject.SetPropertyValue(string, object)
+  fullName: System.Management.ManagementBaseObject.SetPropertyValue(string, object)
+  nameWithType.vb: ManagementBaseObject.SetPropertyValue(String, Object)
+  fullName.vb: System.Management.ManagementBaseObject.SetPropertyValue(String, Object)
+  name.vb: SetPropertyValue(String, Object)
+  spec.csharp:
+  - uid: System.Management.ManagementBaseObject.SetPropertyValue(System.String,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_SetPropertyValue_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementBaseObject.SetPropertyValue(System.String,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_SetPropertyValue_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Management.ManagementBaseObject.SetQualifierValue(System.String,System.Object)
+  commentId: M:System.Management.ManagementBaseObject.SetQualifierValue(System.String,System.Object)
+  parent: System.Management.ManagementBaseObject
+  isExternal: true
+  href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_SetQualifierValue_System_String_System_Object_
+  name: SetQualifierValue(string, object)
+  nameWithType: ManagementBaseObject.SetQualifierValue(string, object)
+  fullName: System.Management.ManagementBaseObject.SetQualifierValue(string, object)
+  nameWithType.vb: ManagementBaseObject.SetQualifierValue(String, Object)
+  fullName.vb: System.Management.ManagementBaseObject.SetQualifierValue(String, Object)
+  name.vb: SetQualifierValue(String, Object)
+  spec.csharp:
+  - uid: System.Management.ManagementBaseObject.SetQualifierValue(System.String,System.Object)
+    name: SetQualifierValue
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_SetQualifierValue_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementBaseObject.SetQualifierValue(System.String,System.Object)
+    name: SetQualifierValue
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_SetQualifierValue_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Management.ManagementBaseObject.Item(System.String)
+  commentId: P:System.Management.ManagementBaseObject.Item(System.String)
+  parent: System.Management.ManagementBaseObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: this[string]
+  nameWithType: ManagementBaseObject.this[string]
+  fullName: System.Management.ManagementBaseObject.this[string]
+  nameWithType.vb: ManagementBaseObject.this[](String)
+  fullName.vb: System.Management.ManagementBaseObject.this[](String)
+  name.vb: this[](String)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ']'
+  spec.vb:
+  - uid: System.Management.ManagementBaseObject.Item(System.String)
+    name: this[]
+    isExternal: true
+    href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_Item_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Management.ManagementBaseObject.Properties
+  commentId: P:System.Management.ManagementBaseObject.Properties
+  parent: System.Management.ManagementBaseObject
+  isExternal: true
+  href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_Properties
+  name: Properties
+  nameWithType: ManagementBaseObject.Properties
+  fullName: System.Management.ManagementBaseObject.Properties
+- uid: System.Management.ManagementBaseObject.Qualifiers
+  commentId: P:System.Management.ManagementBaseObject.Qualifiers
+  parent: System.Management.ManagementBaseObject
+  isExternal: true
+  href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_Qualifiers
+  name: Qualifiers
+  nameWithType: ManagementBaseObject.Qualifiers
+  fullName: System.Management.ManagementBaseObject.Qualifiers
+- uid: System.Management.ManagementBaseObject.SystemProperties
+  commentId: P:System.Management.ManagementBaseObject.SystemProperties
+  parent: System.Management.ManagementBaseObject
+  isExternal: true
+  href: System.Management.ManagementBaseObject.html#System_Management_ManagementBaseObject_SystemProperties
+  name: SystemProperties
+  nameWithType: ManagementBaseObject.SystemProperties
+  fullName: System.Management.ManagementBaseObject.SystemProperties
+- uid: System.ComponentModel.Component.Dispose(System.Boolean)
+  commentId: M:System.ComponentModel.Component.Dispose(System.Boolean)
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose(system-boolean)
+  name: Dispose(bool)
+  nameWithType: Component.Dispose(bool)
+  fullName: System.ComponentModel.Component.Dispose(bool)
+  nameWithType.vb: Component.Dispose(Boolean)
+  fullName.vb: System.ComponentModel.Component.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: System.ComponentModel.Component.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose(system-boolean)
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose(system-boolean)
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.ComponentModel.Component.GetService(System.Type)
+  commentId: M:System.ComponentModel.Component.GetService(System.Type)
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.getservice
+  name: GetService(Type)
+  nameWithType: Component.GetService(Type)
+  fullName: System.ComponentModel.Component.GetService(System.Type)
+  spec.csharp:
+  - uid: System.ComponentModel.Component.GetService(System.Type)
+    name: GetService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.getservice
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.GetService(System.Type)
+    name: GetService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.getservice
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.ComponentModel.Component.CanRaiseEvents
+  commentId: P:System.ComponentModel.Component.CanRaiseEvents
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.canraiseevents
+  name: CanRaiseEvents
+  nameWithType: Component.CanRaiseEvents
+  fullName: System.ComponentModel.Component.CanRaiseEvents
+- uid: System.ComponentModel.Component.Events
+  commentId: P:System.ComponentModel.Component.Events
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.events
+  name: Events
+  nameWithType: Component.Events
+  fullName: System.ComponentModel.Component.Events
+- uid: System.ComponentModel.Component.Site
+  commentId: P:System.ComponentModel.Component.Site
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.site
+  name: Site
+  nameWithType: Component.Site
+  fullName: System.ComponentModel.Component.Site
+- uid: System.ComponentModel.Component.Container
+  commentId: P:System.ComponentModel.Component.Container
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.container
+  name: Container
+  nameWithType: Component.Container
+  fullName: System.ComponentModel.Component.Container
+- uid: System.ComponentModel.Component.DesignMode
+  commentId: P:System.ComponentModel.Component.DesignMode
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.designmode
+  name: DesignMode
+  nameWithType: Component.DesignMode
+  fullName: System.ComponentModel.Component.DesignMode
+- uid: System.ComponentModel.Component.Disposed
+  commentId: E:System.ComponentModel.Component.Disposed
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.disposed
+  name: Disposed
+  nameWithType: Component.Disposed
+  fullName: System.ComponentModel.Component.Disposed
+- uid: System.MarshalByRefObject.GetLifetimeService
+  commentId: M:System.MarshalByRefObject.GetLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  name: GetLifetimeService()
+  nameWithType: MarshalByRefObject.GetLifetimeService()
+  fullName: System.MarshalByRefObject.GetLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  - name: (
+  - name: )
+- uid: System.MarshalByRefObject.InitializeLifetimeService
+  commentId: M:System.MarshalByRefObject.InitializeLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  name: InitializeLifetimeService()
+  nameWithType: MarshalByRefObject.InitializeLifetimeService()
+  fullName: System.MarshalByRefObject.InitializeLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  - name: (
+  - name: )
+- uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  commentId: M:System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  name: MemberwiseClone(bool)
+  nameWithType: MarshalByRefObject.MemberwiseClone(bool)
+  fullName: System.MarshalByRefObject.MemberwiseClone(bool)
+  nameWithType.vb: MarshalByRefObject.MemberwiseClone(Boolean)
+  fullName.vb: System.MarshalByRefObject.MemberwiseClone(Boolean)
+  name.vb: MemberwiseClone(Boolean)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: System.Management.ManagementClass.#ctor*
+  commentId: Overload:System.Management.ManagementClass.#ctor
+  isExternal: true
+  href: System.Management.ManagementClass.html#System_Management_ManagementClass__ctor
+  name: ManagementClass
+  nameWithType: ManagementClass.ManagementClass
+  fullName: System.Management.ManagementClass.ManagementClass
+  nameWithType.vb: ManagementClass.New
+  fullName.vb: System.Management.ManagementClass.New
+  name.vb: New
+- uid: System.Management.ManagementPath
+  commentId: T:System.Management.ManagementPath
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ManagementPath.html
+  name: ManagementPath
+  nameWithType: ManagementPath
+  fullName: System.Management.ManagementPath
+- uid: System.Management.ObjectGetOptions
+  commentId: T:System.Management.ObjectGetOptions
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ObjectGetOptions.html
+  name: ObjectGetOptions
+  nameWithType: ObjectGetOptions
+  fullName: System.Management.ObjectGetOptions
+- uid: System.Management.ManagementScope
+  commentId: T:System.Management.ManagementScope
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ManagementScope.html
+  name: ManagementScope
+  nameWithType: ManagementScope
+  fullName: System.Management.ManagementScope
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Management.ManagementObject.Clone
+  commentId: M:System.Management.ManagementObject.Clone
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_Clone
+  name: Clone()
+  nameWithType: ManagementObject.Clone()
+  fullName: System.Management.ManagementObject.Clone()
+  spec.csharp:
+  - uid: System.Management.ManagementObject.Clone
+    name: Clone
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.Clone
+    name: Clone
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_Clone
+  - name: (
+  - name: )
+- uid: System.Management.ManagementClass.Clone*
+  commentId: Overload:System.Management.ManagementClass.Clone
+  isExternal: true
+  href: System.Management.ManagementClass.html#System_Management_ManagementClass_Clone
+  name: Clone
+  nameWithType: ManagementClass.Clone
+  fullName: System.Management.ManagementClass.Clone
+- uid: System.Management.ManagementClass.CreateInstance*
+  commentId: Overload:System.Management.ManagementClass.CreateInstance
+  isExternal: true
+  href: System.Management.ManagementClass.html#System_Management_ManagementClass_CreateInstance
+  name: CreateInstance
+  nameWithType: ManagementClass.CreateInstance
+  fullName: System.Management.ManagementClass.CreateInstance
+- uid: System.Management.ManagementClass.Derive*
+  commentId: Overload:System.Management.ManagementClass.Derive
+  isExternal: true
+  href: System.Management.ManagementClass.html#System_Management_ManagementClass_Derive_System_String_
+  name: Derive
+  nameWithType: ManagementClass.Derive
+  fullName: System.Management.ManagementClass.Derive
+- uid: System.Management.ManagementClass
+  commentId: T:System.Management.ManagementClass
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ManagementClass.html
+  name: ManagementClass
+  nameWithType: ManagementClass
+  fullName: System.Management.ManagementClass
+- uid: System.Management.ManagementClass.GetInstances*
+  commentId: Overload:System.Management.ManagementClass.GetInstances
+  isExternal: true
+  href: System.Management.ManagementClass.html#System_Management_ManagementClass_GetInstances
+  name: GetInstances
+  nameWithType: ManagementClass.GetInstances
+  fullName: System.Management.ManagementClass.GetInstances
+- uid: System.Management.ManagementObjectCollection
+  commentId: T:System.Management.ManagementObjectCollection
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ManagementObjectCollection.html
+  name: ManagementObjectCollection
+  nameWithType: ManagementObjectCollection
+  fullName: System.Management.ManagementObjectCollection
+- uid: System.Management.EnumerationOptions
+  commentId: T:System.Management.EnumerationOptions
+  parent: System.Management
+  isExternal: true
+  href: System.Management.EnumerationOptions.html
+  name: EnumerationOptions
+  nameWithType: EnumerationOptions
+  fullName: System.Management.EnumerationOptions
+- uid: System.Management.ManagementOperationObserver
+  commentId: T:System.Management.ManagementOperationObserver
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ManagementOperationObserver.html
+  name: ManagementOperationObserver
+  nameWithType: ManagementOperationObserver
+  fullName: System.Management.ManagementOperationObserver
+- uid: System.Management.ManagementObject.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Management.ManagementObject.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: ManagementObject.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Management.ManagementObject.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Management.ManagementObject.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementObject.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: System.Management.ManagementObject.html#System_Management_ManagementObject_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: System.Management.ManagementClass.GetObjectData*
+  commentId: Overload:System.Management.ManagementClass.GetObjectData
+  isExternal: true
+  href: System.Management.ManagementClass.html#System_Management_ManagementClass_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  name: GetObjectData
+  nameWithType: ManagementClass.GetObjectData
+  fullName: System.Management.ManagementClass.GetObjectData
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: System.Management.ManagementClass.GetRelatedClasses*
+  commentId: Overload:System.Management.ManagementClass.GetRelatedClasses
+  isExternal: true
+  href: System.Management.ManagementClass.html#System_Management_ManagementClass_GetRelatedClasses
+  name: GetRelatedClasses
+  nameWithType: ManagementClass.GetRelatedClasses
+  fullName: System.Management.ManagementClass.GetRelatedClasses
+- uid: System.Management.ManagementClass.GetRelationshipClasses*
+  commentId: Overload:System.Management.ManagementClass.GetRelationshipClasses
+  isExternal: true
+  href: System.Management.ManagementClass.html#System_Management_ManagementClass_GetRelationshipClasses
+  name: GetRelationshipClasses
+  nameWithType: ManagementClass.GetRelationshipClasses
+  fullName: System.Management.ManagementClass.GetRelationshipClasses
+- uid: System.Management.ManagementClass.GetStronglyTypedClassCode*
+  commentId: Overload:System.Management.ManagementClass.GetStronglyTypedClassCode
+  isExternal: true
+  href: System.Management.ManagementClass.html#System_Management_ManagementClass_GetStronglyTypedClassCode_System_Boolean_System_Boolean_
+  name: GetStronglyTypedClassCode
+  nameWithType: ManagementClass.GetStronglyTypedClassCode
+  fullName: System.Management.ManagementClass.GetStronglyTypedClassCode
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.CodeDom.CodeTypeDeclaration
+  commentId: T:System.CodeDom.CodeTypeDeclaration
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeTypeDeclaration.html
+  name: CodeTypeDeclaration
+  nameWithType: CodeTypeDeclaration
+  fullName: System.CodeDom.CodeTypeDeclaration
+- uid: System.CodeDom
+  commentId: N:System.CodeDom
+  isExternal: true
+  href: System.html
+  name: System.CodeDom
+  nameWithType: System.CodeDom
+  fullName: System.CodeDom
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.CodeDom
+    name: CodeDom
+    isExternal: true
+    href: System.CodeDom.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.CodeDom
+    name: CodeDom
+    isExternal: true
+    href: System.CodeDom.html
+- uid: System.Management.CodeLanguage
+  commentId: T:System.Management.CodeLanguage
+  parent: System.Management
+  isExternal: true
+  href: System.Management.CodeLanguage.html
+  name: CodeLanguage
+  nameWithType: CodeLanguage
+  fullName: System.Management.CodeLanguage
+- uid: System.Management.ManagementClass.GetSubclasses*
+  commentId: Overload:System.Management.ManagementClass.GetSubclasses
+  isExternal: true
+  href: System.Management.ManagementClass.html#System_Management_ManagementClass_GetSubclasses
+  name: GetSubclasses
+  nameWithType: ManagementClass.GetSubclasses
+  fullName: System.Management.ManagementClass.GetSubclasses
+- uid: System.Management.ManagementClass.Derivation*
+  commentId: Overload:System.Management.ManagementClass.Derivation
+  isExternal: true
+  href: System.Management.ManagementClass.html#System_Management_ManagementClass_Derivation
+  name: Derivation
+  nameWithType: ManagementClass.Derivation
+  fullName: System.Management.ManagementClass.Derivation
+- uid: System.Collections.Specialized.StringCollection
+  commentId: T:System.Collections.Specialized.StringCollection
+  parent: System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.stringcollection
+  name: StringCollection
+  nameWithType: StringCollection
+  fullName: System.Collections.Specialized.StringCollection
+- uid: System.Collections.Specialized
+  commentId: N:System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Specialized
+  nameWithType: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+- uid: System.Management.ManagementClass.Methods*
+  commentId: Overload:System.Management.ManagementClass.Methods
+  isExternal: true
+  href: System.Management.ManagementClass.html#System_Management_ManagementClass_Methods
+  name: Methods
+  nameWithType: ManagementClass.Methods
+  fullName: System.Management.ManagementClass.Methods
+- uid: System.Management.MethodDataCollection
+  commentId: T:System.Management.MethodDataCollection
+  parent: System.Management
+  isExternal: true
+  href: System.Management.MethodDataCollection.html
+  name: MethodDataCollection
+  nameWithType: MethodDataCollection
+  fullName: System.Management.MethodDataCollection
+- uid: System.Management.ManagementObject.Path
+  commentId: P:System.Management.ManagementObject.Path
+  parent: System.Management.ManagementObject
+  isExternal: true
+  href: System.Management.ManagementObject.html#System_Management_ManagementObject_Path
+  name: Path
+  nameWithType: ManagementObject.Path
+  fullName: System.Management.ManagementObject.Path
+- uid: System.Management.ManagementClass.Path*
+  commentId: Overload:System.Management.ManagementClass.Path
+  isExternal: true
+  href: System.Management.ManagementClass.html#System_Management_ManagementClass_Path
+  name: Path
+  nameWithType: ManagementClass.Path
+  fullName: System.Management.ManagementClass.Path

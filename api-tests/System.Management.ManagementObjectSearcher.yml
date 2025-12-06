@@ -1,0 +1,961 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Management.ManagementObjectSearcher
+  commentId: T:System.Management.ManagementObjectSearcher
+  id: ManagementObjectSearcher
+  parent: System.Management
+  children:
+  - System.Management.ManagementObjectSearcher.#ctor
+  - System.Management.ManagementObjectSearcher.#ctor(System.Management.ManagementScope,System.Management.ObjectQuery)
+  - System.Management.ManagementObjectSearcher.#ctor(System.Management.ManagementScope,System.Management.ObjectQuery,System.Management.EnumerationOptions)
+  - System.Management.ManagementObjectSearcher.#ctor(System.Management.ObjectQuery)
+  - System.Management.ManagementObjectSearcher.#ctor(System.String)
+  - System.Management.ManagementObjectSearcher.#ctor(System.String,System.String)
+  - System.Management.ManagementObjectSearcher.#ctor(System.String,System.String,System.Management.EnumerationOptions)
+  - System.Management.ManagementObjectSearcher.Get
+  - System.Management.ManagementObjectSearcher.Get(System.Management.ManagementOperationObserver)
+  - System.Management.ManagementObjectSearcher.Options
+  - System.Management.ManagementObjectSearcher.Query
+  - System.Management.ManagementObjectSearcher.Scope
+  langs:
+  - csharp
+  - vb
+  name: ManagementObjectSearcher
+  nameWithType: ManagementObjectSearcher
+  fullName: System.Management.ManagementObjectSearcher
+  type: Class
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: 'public class ManagementObjectSearcher : Component, IComponent, IDisposable'
+    content.vb: Public Class ManagementObjectSearcher Inherits Component Implements IComponent, IDisposable
+  inheritance:
+  - System.Object
+  - System.MarshalByRefObject
+  - System.ComponentModel.Component
+  implements:
+  - System.ComponentModel.IComponent
+  - System.IDisposable
+  inheritedMembers:
+  - System.ComponentModel.Component.Dispose
+  - System.ComponentModel.Component.Dispose(System.Boolean)
+  - System.ComponentModel.Component.GetService(System.Type)
+  - System.ComponentModel.Component.ToString
+  - System.ComponentModel.Component.CanRaiseEvents
+  - System.ComponentModel.Component.Events
+  - System.ComponentModel.Component.Site
+  - System.ComponentModel.Component.Container
+  - System.ComponentModel.Component.DesignMode
+  - System.ComponentModel.Component.Disposed
+  - System.MarshalByRefObject.GetLifetimeService
+  - System.MarshalByRefObject.InitializeLifetimeService
+  - System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: System.Management.ManagementObjectSearcher.#ctor
+  commentId: M:System.Management.ManagementObjectSearcher.#ctor
+  id: '#ctor'
+  parent: System.Management.ManagementObjectSearcher
+  langs:
+  - csharp
+  - vb
+  name: ManagementObjectSearcher()
+  nameWithType: ManagementObjectSearcher.ManagementObjectSearcher()
+  fullName: System.Management.ManagementObjectSearcher.ManagementObjectSearcher()
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectSearcher()
+    content.vb: Public Sub New()
+  overload: System.Management.ManagementObjectSearcher.#ctor*
+  nameWithType.vb: ManagementObjectSearcher.New()
+  fullName.vb: System.Management.ManagementObjectSearcher.New()
+  name.vb: New()
+- uid: System.Management.ManagementObjectSearcher.#ctor(System.Management.ManagementScope,System.Management.ObjectQuery)
+  commentId: M:System.Management.ManagementObjectSearcher.#ctor(System.Management.ManagementScope,System.Management.ObjectQuery)
+  id: '#ctor(System.Management.ManagementScope,System.Management.ObjectQuery)'
+  parent: System.Management.ManagementObjectSearcher
+  langs:
+  - csharp
+  - vb
+  name: ManagementObjectSearcher(ManagementScope, ObjectQuery)
+  nameWithType: ManagementObjectSearcher.ManagementObjectSearcher(ManagementScope, ObjectQuery)
+  fullName: System.Management.ManagementObjectSearcher.ManagementObjectSearcher(System.Management.ManagementScope, System.Management.ObjectQuery)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectSearcher(ManagementScope scope, ObjectQuery query)
+    parameters:
+    - id: scope
+      type: System.Management.ManagementScope
+    - id: query
+      type: System.Management.ObjectQuery
+    content.vb: Public Sub New(scope As ManagementScope, query As ObjectQuery)
+  overload: System.Management.ManagementObjectSearcher.#ctor*
+  nameWithType.vb: ManagementObjectSearcher.New(ManagementScope, ObjectQuery)
+  fullName.vb: System.Management.ManagementObjectSearcher.New(System.Management.ManagementScope, System.Management.ObjectQuery)
+  name.vb: New(ManagementScope, ObjectQuery)
+- uid: System.Management.ManagementObjectSearcher.#ctor(System.Management.ManagementScope,System.Management.ObjectQuery,System.Management.EnumerationOptions)
+  commentId: M:System.Management.ManagementObjectSearcher.#ctor(System.Management.ManagementScope,System.Management.ObjectQuery,System.Management.EnumerationOptions)
+  id: '#ctor(System.Management.ManagementScope,System.Management.ObjectQuery,System.Management.EnumerationOptions)'
+  parent: System.Management.ManagementObjectSearcher
+  langs:
+  - csharp
+  - vb
+  name: ManagementObjectSearcher(ManagementScope, ObjectQuery, EnumerationOptions)
+  nameWithType: ManagementObjectSearcher.ManagementObjectSearcher(ManagementScope, ObjectQuery, EnumerationOptions)
+  fullName: System.Management.ManagementObjectSearcher.ManagementObjectSearcher(System.Management.ManagementScope, System.Management.ObjectQuery, System.Management.EnumerationOptions)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectSearcher(ManagementScope scope, ObjectQuery query, EnumerationOptions options)
+    parameters:
+    - id: scope
+      type: System.Management.ManagementScope
+    - id: query
+      type: System.Management.ObjectQuery
+    - id: options
+      type: System.Management.EnumerationOptions
+    content.vb: Public Sub New(scope As ManagementScope, query As ObjectQuery, options As EnumerationOptions)
+  overload: System.Management.ManagementObjectSearcher.#ctor*
+  nameWithType.vb: ManagementObjectSearcher.New(ManagementScope, ObjectQuery, EnumerationOptions)
+  fullName.vb: System.Management.ManagementObjectSearcher.New(System.Management.ManagementScope, System.Management.ObjectQuery, System.Management.EnumerationOptions)
+  name.vb: New(ManagementScope, ObjectQuery, EnumerationOptions)
+- uid: System.Management.ManagementObjectSearcher.#ctor(System.Management.ObjectQuery)
+  commentId: M:System.Management.ManagementObjectSearcher.#ctor(System.Management.ObjectQuery)
+  id: '#ctor(System.Management.ObjectQuery)'
+  parent: System.Management.ManagementObjectSearcher
+  langs:
+  - csharp
+  - vb
+  name: ManagementObjectSearcher(ObjectQuery)
+  nameWithType: ManagementObjectSearcher.ManagementObjectSearcher(ObjectQuery)
+  fullName: System.Management.ManagementObjectSearcher.ManagementObjectSearcher(System.Management.ObjectQuery)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectSearcher(ObjectQuery query)
+    parameters:
+    - id: query
+      type: System.Management.ObjectQuery
+    content.vb: Public Sub New(query As ObjectQuery)
+  overload: System.Management.ManagementObjectSearcher.#ctor*
+  nameWithType.vb: ManagementObjectSearcher.New(ObjectQuery)
+  fullName.vb: System.Management.ManagementObjectSearcher.New(System.Management.ObjectQuery)
+  name.vb: New(ObjectQuery)
+- uid: System.Management.ManagementObjectSearcher.#ctor(System.String)
+  commentId: M:System.Management.ManagementObjectSearcher.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Management.ManagementObjectSearcher
+  langs:
+  - csharp
+  - vb
+  name: ManagementObjectSearcher(string)
+  nameWithType: ManagementObjectSearcher.ManagementObjectSearcher(string)
+  fullName: System.Management.ManagementObjectSearcher.ManagementObjectSearcher(string)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectSearcher(string queryString)
+    parameters:
+    - id: queryString
+      type: System.String
+    content.vb: Public Sub New(queryString As String)
+  overload: System.Management.ManagementObjectSearcher.#ctor*
+  nameWithType.vb: ManagementObjectSearcher.New(String)
+  fullName.vb: System.Management.ManagementObjectSearcher.New(String)
+  name.vb: New(String)
+- uid: System.Management.ManagementObjectSearcher.#ctor(System.String,System.String)
+  commentId: M:System.Management.ManagementObjectSearcher.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: System.Management.ManagementObjectSearcher
+  langs:
+  - csharp
+  - vb
+  name: ManagementObjectSearcher(string, string)
+  nameWithType: ManagementObjectSearcher.ManagementObjectSearcher(string, string)
+  fullName: System.Management.ManagementObjectSearcher.ManagementObjectSearcher(string, string)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectSearcher(string scope, string queryString)
+    parameters:
+    - id: scope
+      type: System.String
+    - id: queryString
+      type: System.String
+    content.vb: Public Sub New(scope As String, queryString As String)
+  overload: System.Management.ManagementObjectSearcher.#ctor*
+  nameWithType.vb: ManagementObjectSearcher.New(String, String)
+  fullName.vb: System.Management.ManagementObjectSearcher.New(String, String)
+  name.vb: New(String, String)
+- uid: System.Management.ManagementObjectSearcher.#ctor(System.String,System.String,System.Management.EnumerationOptions)
+  commentId: M:System.Management.ManagementObjectSearcher.#ctor(System.String,System.String,System.Management.EnumerationOptions)
+  id: '#ctor(System.String,System.String,System.Management.EnumerationOptions)'
+  parent: System.Management.ManagementObjectSearcher
+  langs:
+  - csharp
+  - vb
+  name: ManagementObjectSearcher(string, string, EnumerationOptions)
+  nameWithType: ManagementObjectSearcher.ManagementObjectSearcher(string, string, EnumerationOptions)
+  fullName: System.Management.ManagementObjectSearcher.ManagementObjectSearcher(string, string, System.Management.EnumerationOptions)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectSearcher(string scope, string queryString, EnumerationOptions options)
+    parameters:
+    - id: scope
+      type: System.String
+    - id: queryString
+      type: System.String
+    - id: options
+      type: System.Management.EnumerationOptions
+    content.vb: Public Sub New(scope As String, queryString As String, options As EnumerationOptions)
+  overload: System.Management.ManagementObjectSearcher.#ctor*
+  nameWithType.vb: ManagementObjectSearcher.New(String, String, EnumerationOptions)
+  fullName.vb: System.Management.ManagementObjectSearcher.New(String, String, System.Management.EnumerationOptions)
+  name.vb: New(String, String, EnumerationOptions)
+- uid: System.Management.ManagementObjectSearcher.Get
+  commentId: M:System.Management.ManagementObjectSearcher.Get
+  id: Get
+  parent: System.Management.ManagementObjectSearcher
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: ManagementObjectSearcher.Get()
+  fullName: System.Management.ManagementObjectSearcher.Get()
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementObjectCollection Get()
+    return:
+      type: System.Management.ManagementObjectCollection
+    content.vb: Public Function [Get]() As ManagementObjectCollection
+  overload: System.Management.ManagementObjectSearcher.Get*
+- uid: System.Management.ManagementObjectSearcher.Get(System.Management.ManagementOperationObserver)
+  commentId: M:System.Management.ManagementObjectSearcher.Get(System.Management.ManagementOperationObserver)
+  id: Get(System.Management.ManagementOperationObserver)
+  parent: System.Management.ManagementObjectSearcher
+  langs:
+  - csharp
+  - vb
+  name: Get(ManagementOperationObserver)
+  nameWithType: ManagementObjectSearcher.Get(ManagementOperationObserver)
+  fullName: System.Management.ManagementObjectSearcher.Get(System.Management.ManagementOperationObserver)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public void Get(ManagementOperationObserver watcher)
+    parameters:
+    - id: watcher
+      type: System.Management.ManagementOperationObserver
+    content.vb: Public Sub [Get](watcher As ManagementOperationObserver)
+  overload: System.Management.ManagementObjectSearcher.Get*
+- uid: System.Management.ManagementObjectSearcher.Options
+  commentId: P:System.Management.ManagementObjectSearcher.Options
+  id: Options
+  parent: System.Management.ManagementObjectSearcher
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: ManagementObjectSearcher.Options
+  fullName: System.Management.ManagementObjectSearcher.Options
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public EnumerationOptions Options { get; set; }
+    parameters: []
+    return:
+      type: System.Management.EnumerationOptions
+    content.vb: Public Property Options As EnumerationOptions
+  overload: System.Management.ManagementObjectSearcher.Options*
+- uid: System.Management.ManagementObjectSearcher.Query
+  commentId: P:System.Management.ManagementObjectSearcher.Query
+  id: Query
+  parent: System.Management.ManagementObjectSearcher
+  langs:
+  - csharp
+  - vb
+  name: Query
+  nameWithType: ManagementObjectSearcher.Query
+  fullName: System.Management.ManagementObjectSearcher.Query
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ObjectQuery Query { get; set; }
+    parameters: []
+    return:
+      type: System.Management.ObjectQuery
+    content.vb: Public Property Query As ObjectQuery
+  overload: System.Management.ManagementObjectSearcher.Query*
+- uid: System.Management.ManagementObjectSearcher.Scope
+  commentId: P:System.Management.ManagementObjectSearcher.Scope
+  id: Scope
+  parent: System.Management.ManagementObjectSearcher
+  langs:
+  - csharp
+  - vb
+  name: Scope
+  nameWithType: ManagementObjectSearcher.Scope
+  fullName: System.Management.ManagementObjectSearcher.Scope
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public ManagementScope Scope { get; set; }
+    parameters: []
+    return:
+      type: System.Management.ManagementScope
+    content.vb: Public Property Scope As ManagementScope
+  overload: System.Management.ManagementObjectSearcher.Scope*
+references:
+- uid: System.Management
+  commentId: N:System.Management
+  isExternal: true
+  href: System.html
+  name: System.Management
+  nameWithType: System.Management
+  fullName: System.Management
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Management
+    name: Management
+    isExternal: true
+    href: System.Management.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Management
+    name: Management
+    isExternal: true
+    href: System.Management.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.MarshalByRefObject
+  commentId: T:System.MarshalByRefObject
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject
+  name: MarshalByRefObject
+  nameWithType: MarshalByRefObject
+  fullName: System.MarshalByRefObject
+- uid: System.ComponentModel.Component
+  commentId: T:System.ComponentModel.Component
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component
+  name: Component
+  nameWithType: Component
+  fullName: System.ComponentModel.Component
+- uid: System.ComponentModel.IComponent
+  commentId: T:System.ComponentModel.IComponent
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.icomponent
+  name: IComponent
+  nameWithType: IComponent
+  fullName: System.ComponentModel.IComponent
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.ComponentModel.Component.Dispose
+  commentId: M:System.ComponentModel.Component.Dispose
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose
+  name: Dispose()
+  nameWithType: Component.Dispose()
+  fullName: System.ComponentModel.Component.Dispose()
+  spec.csharp:
+  - uid: System.ComponentModel.Component.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose
+  - name: (
+  - name: )
+- uid: System.ComponentModel.Component.Dispose(System.Boolean)
+  commentId: M:System.ComponentModel.Component.Dispose(System.Boolean)
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose(system-boolean)
+  name: Dispose(bool)
+  nameWithType: Component.Dispose(bool)
+  fullName: System.ComponentModel.Component.Dispose(bool)
+  nameWithType.vb: Component.Dispose(Boolean)
+  fullName.vb: System.ComponentModel.Component.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: System.ComponentModel.Component.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose(system-boolean)
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose(system-boolean)
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.ComponentModel.Component.GetService(System.Type)
+  commentId: M:System.ComponentModel.Component.GetService(System.Type)
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.getservice
+  name: GetService(Type)
+  nameWithType: Component.GetService(Type)
+  fullName: System.ComponentModel.Component.GetService(System.Type)
+  spec.csharp:
+  - uid: System.ComponentModel.Component.GetService(System.Type)
+    name: GetService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.getservice
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.GetService(System.Type)
+    name: GetService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.getservice
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.ComponentModel.Component.ToString
+  commentId: M:System.ComponentModel.Component.ToString
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.tostring
+  name: ToString()
+  nameWithType: Component.ToString()
+  fullName: System.ComponentModel.Component.ToString()
+  spec.csharp:
+  - uid: System.ComponentModel.Component.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.tostring
+  - name: (
+  - name: )
+- uid: System.ComponentModel.Component.CanRaiseEvents
+  commentId: P:System.ComponentModel.Component.CanRaiseEvents
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.canraiseevents
+  name: CanRaiseEvents
+  nameWithType: Component.CanRaiseEvents
+  fullName: System.ComponentModel.Component.CanRaiseEvents
+- uid: System.ComponentModel.Component.Events
+  commentId: P:System.ComponentModel.Component.Events
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.events
+  name: Events
+  nameWithType: Component.Events
+  fullName: System.ComponentModel.Component.Events
+- uid: System.ComponentModel.Component.Site
+  commentId: P:System.ComponentModel.Component.Site
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.site
+  name: Site
+  nameWithType: Component.Site
+  fullName: System.ComponentModel.Component.Site
+- uid: System.ComponentModel.Component.Container
+  commentId: P:System.ComponentModel.Component.Container
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.container
+  name: Container
+  nameWithType: Component.Container
+  fullName: System.ComponentModel.Component.Container
+- uid: System.ComponentModel.Component.DesignMode
+  commentId: P:System.ComponentModel.Component.DesignMode
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.designmode
+  name: DesignMode
+  nameWithType: Component.DesignMode
+  fullName: System.ComponentModel.Component.DesignMode
+- uid: System.ComponentModel.Component.Disposed
+  commentId: E:System.ComponentModel.Component.Disposed
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.disposed
+  name: Disposed
+  nameWithType: Component.Disposed
+  fullName: System.ComponentModel.Component.Disposed
+- uid: System.MarshalByRefObject.GetLifetimeService
+  commentId: M:System.MarshalByRefObject.GetLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  name: GetLifetimeService()
+  nameWithType: MarshalByRefObject.GetLifetimeService()
+  fullName: System.MarshalByRefObject.GetLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  - name: (
+  - name: )
+- uid: System.MarshalByRefObject.InitializeLifetimeService
+  commentId: M:System.MarshalByRefObject.InitializeLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  name: InitializeLifetimeService()
+  nameWithType: MarshalByRefObject.InitializeLifetimeService()
+  fullName: System.MarshalByRefObject.InitializeLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  - name: (
+  - name: )
+- uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  commentId: M:System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  name: MemberwiseClone(bool)
+  nameWithType: MarshalByRefObject.MemberwiseClone(bool)
+  fullName: System.MarshalByRefObject.MemberwiseClone(bool)
+  nameWithType.vb: MarshalByRefObject.MemberwiseClone(Boolean)
+  fullName.vb: System.MarshalByRefObject.MemberwiseClone(Boolean)
+  name.vb: MemberwiseClone(Boolean)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: System.Management.ManagementObjectSearcher.#ctor*
+  commentId: Overload:System.Management.ManagementObjectSearcher.#ctor
+  isExternal: true
+  href: System.Management.ManagementObjectSearcher.html#System_Management_ManagementObjectSearcher__ctor
+  name: ManagementObjectSearcher
+  nameWithType: ManagementObjectSearcher.ManagementObjectSearcher
+  fullName: System.Management.ManagementObjectSearcher.ManagementObjectSearcher
+  nameWithType.vb: ManagementObjectSearcher.New
+  fullName.vb: System.Management.ManagementObjectSearcher.New
+  name.vb: New
+- uid: System.Management.ManagementScope
+  commentId: T:System.Management.ManagementScope
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ManagementScope.html
+  name: ManagementScope
+  nameWithType: ManagementScope
+  fullName: System.Management.ManagementScope
+- uid: System.Management.ObjectQuery
+  commentId: T:System.Management.ObjectQuery
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ObjectQuery.html
+  name: ObjectQuery
+  nameWithType: ObjectQuery
+  fullName: System.Management.ObjectQuery
+- uid: System.Management.EnumerationOptions
+  commentId: T:System.Management.EnumerationOptions
+  parent: System.Management
+  isExternal: true
+  href: System.Management.EnumerationOptions.html
+  name: EnumerationOptions
+  nameWithType: EnumerationOptions
+  fullName: System.Management.EnumerationOptions
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Management.ManagementObjectSearcher.Get*
+  commentId: Overload:System.Management.ManagementObjectSearcher.Get
+  isExternal: true
+  href: System.Management.ManagementObjectSearcher.html#System_Management_ManagementObjectSearcher_Get
+  name: Get
+  nameWithType: ManagementObjectSearcher.Get
+  fullName: System.Management.ManagementObjectSearcher.Get
+- uid: System.Management.ManagementObjectCollection
+  commentId: T:System.Management.ManagementObjectCollection
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ManagementObjectCollection.html
+  name: ManagementObjectCollection
+  nameWithType: ManagementObjectCollection
+  fullName: System.Management.ManagementObjectCollection
+- uid: System.Management.ManagementOperationObserver
+  commentId: T:System.Management.ManagementOperationObserver
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ManagementOperationObserver.html
+  name: ManagementOperationObserver
+  nameWithType: ManagementOperationObserver
+  fullName: System.Management.ManagementOperationObserver
+- uid: System.Management.ManagementObjectSearcher.Options*
+  commentId: Overload:System.Management.ManagementObjectSearcher.Options
+  isExternal: true
+  href: System.Management.ManagementObjectSearcher.html#System_Management_ManagementObjectSearcher_Options
+  name: Options
+  nameWithType: ManagementObjectSearcher.Options
+  fullName: System.Management.ManagementObjectSearcher.Options
+- uid: System.Management.ManagementObjectSearcher.Query*
+  commentId: Overload:System.Management.ManagementObjectSearcher.Query
+  isExternal: true
+  href: System.Management.ManagementObjectSearcher.html#System_Management_ManagementObjectSearcher_Query
+  name: Query
+  nameWithType: ManagementObjectSearcher.Query
+  fullName: System.Management.ManagementObjectSearcher.Query
+- uid: System.Management.ManagementObjectSearcher.Scope*
+  commentId: Overload:System.Management.ManagementObjectSearcher.Scope
+  isExternal: true
+  href: System.Management.ManagementObjectSearcher.html#System_Management_ManagementObjectSearcher_Scope
+  name: Scope
+  nameWithType: ManagementObjectSearcher.Scope
+  fullName: System.Management.ManagementObjectSearcher.Scope

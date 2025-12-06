@@ -1,0 +1,999 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+  commentId: T:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+  id: StandardOutputTrxMessage
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  children:
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.#ctor(System.String)
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Deconstruct(System.String@)
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.EqualityContract
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage)
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals(System.Object)
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.GetHashCode
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.PrintMembers(System.Text.StringBuilder)
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.ToString
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.op_Equality(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage,Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.op_Inequality(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage,Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  langs:
+  - csharp
+  - vb
+  name: StandardOutputTrxMessage
+  nameWithType: StandardOutputTrxMessage
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+  type: Class
+  assemblies:
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions
+  namespace: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  syntax:
+    content: 'public sealed record StandardOutputTrxMessage : TrxMessage, IEquatable<TrxMessage>, IEquatable<StandardOutputTrxMessage>'
+    content.vb: Public NotInheritable Class StandardOutputTrxMessage Inherits TrxMessage Implements IEquatable(Of TrxMessage), IEquatable(Of StandardOutputTrxMessage)
+  inheritance:
+  - System.Object
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage
+  implements:
+  - System.IEquatable{Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage}
+  - System.IEquatable{Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage}
+  inheritedMembers:
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Message
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.#ctor(System.String)
+  commentId: M:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+  langs:
+  - csharp
+  - vb
+  name: StandardOutputTrxMessage(string?)
+  nameWithType: StandardOutputTrxMessage.StandardOutputTrxMessage(string?)
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.StandardOutputTrxMessage(string?)
+  type: Constructor
+  assemblies:
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions
+  namespace: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  syntax:
+    content: public StandardOutputTrxMessage(string? Message)
+    parameters:
+    - id: Message
+      type: System.String
+    content.vb: Public Sub New(Message As String)
+  overload: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.#ctor*
+  nameWithType.vb: StandardOutputTrxMessage.New(String)
+  fullName.vb: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.New(String)
+  name.vb: New(String)
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.ToString
+  commentId: M:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.ToString
+  id: ToString
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: StandardOutputTrxMessage.ToString()
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.ToString()
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions
+  namespace: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.ToString
+  overload: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.ToString*
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.PrintMembers(System.Text.StringBuilder)
+  commentId: M:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.PrintMembers(System.Text.StringBuilder)
+  id: PrintMembers(System.Text.StringBuilder)
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+  langs:
+  - csharp
+  - vb
+  name: PrintMembers(StringBuilder)
+  nameWithType: StandardOutputTrxMessage.PrintMembers(StringBuilder)
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.PrintMembers(System.Text.StringBuilder)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions
+  namespace: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  example: []
+  syntax:
+    content: protected override bool PrintMembers(StringBuilder builder)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function PrintMembers(builder As StringBuilder) As Boolean
+  overridden: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.PrintMembers(System.Text.StringBuilder)
+  overload: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.PrintMembers*
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.op_Inequality(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage,Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  commentId: M:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.op_Inequality(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage,Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  id: op_Inequality(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage,Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+  langs:
+  - csharp
+  - vb
+  name: operator !=(StandardOutputTrxMessage?, StandardOutputTrxMessage?)
+  nameWithType: StandardOutputTrxMessage.operator !=(StandardOutputTrxMessage?, StandardOutputTrxMessage?)
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.operator !=(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage?, Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage?)
+  type: Operator
+  assemblies:
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions
+  namespace: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  syntax:
+    content: public static bool operator !=(StandardOutputTrxMessage? left, StandardOutputTrxMessage? right)
+    parameters:
+    - id: left
+      type: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+    - id: right
+      type: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As StandardOutputTrxMessage, right As StandardOutputTrxMessage) As Boolean
+  overload: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.op_Inequality*
+  nameWithType.vb: StandardOutputTrxMessage.<>(StandardOutputTrxMessage, StandardOutputTrxMessage)
+  fullName.vb: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.<>(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage, Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  name.vb: <>(StandardOutputTrxMessage, StandardOutputTrxMessage)
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.op_Equality(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage,Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  commentId: M:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.op_Equality(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage,Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  id: op_Equality(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage,Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+  langs:
+  - csharp
+  - vb
+  name: operator ==(StandardOutputTrxMessage?, StandardOutputTrxMessage?)
+  nameWithType: StandardOutputTrxMessage.operator ==(StandardOutputTrxMessage?, StandardOutputTrxMessage?)
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.operator ==(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage?, Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage?)
+  type: Operator
+  assemblies:
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions
+  namespace: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  syntax:
+    content: public static bool operator ==(StandardOutputTrxMessage? left, StandardOutputTrxMessage? right)
+    parameters:
+    - id: left
+      type: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+    - id: right
+      type: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As StandardOutputTrxMessage, right As StandardOutputTrxMessage) As Boolean
+  overload: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.op_Equality*
+  nameWithType.vb: StandardOutputTrxMessage.=(StandardOutputTrxMessage, StandardOutputTrxMessage)
+  fullName.vb: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.=(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage, Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  name.vb: =(StandardOutputTrxMessage, StandardOutputTrxMessage)
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.GetHashCode
+  commentId: M:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: StandardOutputTrxMessage.GetHashCode()
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.GetHashCode()
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions
+  namespace: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.GetHashCode
+  overload: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.GetHashCode*
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals(System.Object)
+  commentId: M:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: StandardOutputTrxMessage.Equals(object?)
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals(object?)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions
+  namespace: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Equals(System.Object)
+  overload: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals*
+  nameWithType.vb: StandardOutputTrxMessage.Equals(Object)
+  fullName.vb: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage)
+  commentId: M:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage)
+  id: Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage)
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+  langs:
+  - csharp
+  - vb
+  name: Equals(TrxMessage?)
+  nameWithType: StandardOutputTrxMessage.Equals(TrxMessage?)
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage?)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions
+  namespace: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  example: []
+  syntax:
+    content: public override sealed bool Equals(TrxMessage? other)
+    parameters:
+    - id: other
+      type: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage
+    return:
+      type: System.Boolean
+    content.vb: Public NotOverridable Overrides Function Equals(other As TrxMessage) As Boolean
+  overridden: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage)
+  overload: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals*
+  nameWithType.vb: StandardOutputTrxMessage.Equals(TrxMessage)
+  fullName.vb: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage)
+  name.vb: Equals(TrxMessage)
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  commentId: M:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  id: Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+  langs:
+  - csharp
+  - vb
+  name: Equals(StandardOutputTrxMessage?)
+  nameWithType: StandardOutputTrxMessage.Equals(StandardOutputTrxMessage?)
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage?)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions
+  namespace: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  example: []
+  syntax:
+    content: public bool Equals(StandardOutputTrxMessage? other)
+    parameters:
+    - id: other
+      type: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As StandardOutputTrxMessage) As Boolean
+  overload: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage}.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  nameWithType.vb: StandardOutputTrxMessage.Equals(StandardOutputTrxMessage)
+  fullName.vb: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  name.vb: Equals(StandardOutputTrxMessage)
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Deconstruct(System.String@)
+  commentId: M:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Deconstruct(System.String@)
+  id: Deconstruct(System.String@)
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+  langs:
+  - csharp
+  - vb
+  name: Deconstruct(out string?)
+  nameWithType: StandardOutputTrxMessage.Deconstruct(out string?)
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Deconstruct(out string?)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions
+  namespace: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  syntax:
+    content: public void Deconstruct(out string? Message)
+    parameters:
+    - id: Message
+      type: System.String
+    content.vb: Public Sub Deconstruct(Message As String)
+  overload: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Deconstruct*
+  nameWithType.vb: StandardOutputTrxMessage.Deconstruct(String)
+  fullName.vb: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Deconstruct(String)
+  name.vb: Deconstruct(String)
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.EqualityContract
+  commentId: P:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.EqualityContract
+  id: EqualityContract
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+  langs:
+  - csharp
+  - vb
+  name: EqualityContract
+  nameWithType: StandardOutputTrxMessage.EqualityContract
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.EqualityContract
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Extensions.TrxReport.Abstractions
+  namespace: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  example: []
+  syntax:
+    content: protected override Type EqualityContract { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Protected Overrides ReadOnly Property EqualityContract As Type
+  overridden: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.EqualityContract
+  overload: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.EqualityContract*
+references:
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  commentId: N:Microsoft.Testing.Extensions.TrxReport.Abstractions
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  nameWithType: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Extensions.TrxReport
+    name: TrxReport
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.html
+  - name: .
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions
+    name: Abstractions
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Extensions.TrxReport
+    name: TrxReport
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.html
+  - name: .
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions
+    name: Abstractions
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage
+  commentId: T:Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html
+  name: TrxMessage
+  nameWithType: TrxMessage
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage
+- uid: System.IEquatable{Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage}
+  commentId: T:System.IEquatable{Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<TrxMessage>
+  nameWithType: IEquatable<TrxMessage>
+  fullName: System.IEquatable<Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage>
+  nameWithType.vb: IEquatable(Of TrxMessage)
+  fullName.vb: System.IEquatable(Of Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage)
+  name.vb: IEquatable(Of TrxMessage)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage
+    name: TrxMessage
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage
+    name: TrxMessage
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html
+  - name: )
+- uid: System.IEquatable{Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage}
+  commentId: T:System.IEquatable{Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<StandardOutputTrxMessage>
+  nameWithType: IEquatable<StandardOutputTrxMessage>
+  fullName: System.IEquatable<Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage>
+  nameWithType.vb: IEquatable(Of StandardOutputTrxMessage)
+  fullName.vb: System.IEquatable(Of Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  name.vb: IEquatable(Of StandardOutputTrxMessage)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+    name: StandardOutputTrxMessage
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+    name: StandardOutputTrxMessage
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.html
+  - name: )
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Message
+  commentId: P:Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Message
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_Message
+  name: Message
+  nameWithType: TrxMessage.Message
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Message
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.#ctor*
+  commentId: Overload:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.#ctor
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage__ctor_System_String_
+  name: StandardOutputTrxMessage
+  nameWithType: StandardOutputTrxMessage.StandardOutputTrxMessage
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.StandardOutputTrxMessage
+  nameWithType.vb: StandardOutputTrxMessage.New
+  fullName.vb: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.ToString
+  commentId: M:Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.ToString
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_ToString
+  name: ToString()
+  nameWithType: TrxMessage.ToString()
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.ToString()
+  spec.csharp:
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.ToString
+    name: ToString
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.ToString
+    name: ToString
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_ToString
+  - name: (
+  - name: )
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.ToString*
+  commentId: Overload:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.ToString
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_ToString
+  name: ToString
+  nameWithType: StandardOutputTrxMessage.ToString
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.ToString
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.PrintMembers(System.Text.StringBuilder)
+  commentId: M:Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.PrintMembers(System.Text.StringBuilder)
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_PrintMembers_System_Text_StringBuilder_
+  name: PrintMembers(StringBuilder)
+  nameWithType: TrxMessage.PrintMembers(StringBuilder)
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.PrintMembers(System.Text.StringBuilder)
+  spec.csharp:
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.PrintMembers(System.Text.StringBuilder)
+    name: PrintMembers
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_PrintMembers_System_Text_StringBuilder_
+  - name: (
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.PrintMembers(System.Text.StringBuilder)
+    name: PrintMembers
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_PrintMembers_System_Text_StringBuilder_
+  - name: (
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: )
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.PrintMembers*
+  commentId: Overload:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.PrintMembers
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_PrintMembers_System_Text_StringBuilder_
+  name: PrintMembers
+  nameWithType: StandardOutputTrxMessage.PrintMembers
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.PrintMembers
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.op_Inequality*
+  commentId: Overload:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.op_Inequality
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_op_Inequality_Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_
+  name: operator !=
+  nameWithType: StandardOutputTrxMessage.operator !=
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.operator !=
+  nameWithType.vb: StandardOutputTrxMessage.<>
+  fullName.vb: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_op_Inequality_Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+  commentId: T:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.html
+  name: StandardOutputTrxMessage
+  nameWithType: StandardOutputTrxMessage
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.op_Equality*
+  commentId: Overload:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.op_Equality
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_op_Equality_Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_
+  name: operator ==
+  nameWithType: StandardOutputTrxMessage.operator ==
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.operator ==
+  nameWithType.vb: StandardOutputTrxMessage.=
+  fullName.vb: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.op_Equality*
+    name: ==
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_op_Equality_Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.GetHashCode
+  commentId: M:Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.GetHashCode
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_GetHashCode
+  name: GetHashCode()
+  nameWithType: TrxMessage.GetHashCode()
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.GetHashCode()
+  spec.csharp:
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_GetHashCode
+  - name: (
+  - name: )
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.GetHashCode*
+  commentId: Overload:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.GetHashCode
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_GetHashCode
+  name: GetHashCode
+  nameWithType: StandardOutputTrxMessage.GetHashCode
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Equals(System.Object)
+  commentId: M:Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Equals(System.Object)
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: TrxMessage.Equals(object)
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Equals(object)
+  nameWithType.vb: TrxMessage.Equals(Object)
+  fullName.vb: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals*
+  commentId: Overload:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_Equals_System_Object_
+  name: Equals
+  nameWithType: StandardOutputTrxMessage.Equals
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Equals
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage)
+  commentId: M:Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage)
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_Equals_Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_
+  name: Equals(TrxMessage)
+  nameWithType: TrxMessage.Equals(TrxMessage)
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage)
+  spec.csharp:
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage)
+    name: Equals
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_Equals_Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_
+  - name: (
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage
+    name: TrxMessage
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage)
+    name: Equals
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_Equals_Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_
+  - name: (
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage
+    name: TrxMessage
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html
+  - name: )
+- uid: System.IEquatable{Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage}.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  commentId: M:System.IEquatable{Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage}.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  parent: System.IEquatable{Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(StandardOutputTrxMessage)
+  nameWithType: IEquatable<StandardOutputTrxMessage>.Equals(StandardOutputTrxMessage)
+  fullName: System.IEquatable<Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage>.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  nameWithType.vb: IEquatable(Of StandardOutputTrxMessage).Equals(StandardOutputTrxMessage)
+  fullName.vb: System.IEquatable(Of Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage).Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage}.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+    name: StandardOutputTrxMessage
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage}.Equals(Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage
+    name: StandardOutputTrxMessage
+    isExternal: true
+    href: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Deconstruct*
+  commentId: Overload:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Deconstruct
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_Deconstruct_System_String__
+  name: Deconstruct
+  nameWithType: StandardOutputTrxMessage.Deconstruct
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.Deconstruct
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.EqualityContract
+  commentId: P:Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.EqualityContract
+  parent: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_TrxMessage_EqualityContract
+  name: EqualityContract
+  nameWithType: TrxMessage.EqualityContract
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.TrxMessage.EqualityContract
+- uid: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.EqualityContract*
+  commentId: Overload:Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.EqualityContract
+  isExternal: true
+  href: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.html#Microsoft_Testing_Extensions_TrxReport_Abstractions_StandardOutputTrxMessage_EqualityContract
+  name: EqualityContract
+  nameWithType: StandardOutputTrxMessage.EqualityContract
+  fullName: Microsoft.Testing.Extensions.TrxReport.Abstractions.StandardOutputTrxMessage.EqualityContract
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

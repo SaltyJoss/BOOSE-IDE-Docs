@@ -1,0 +1,320 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor
+  id: ITestExecutor
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.Cancel
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.RunTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.RunTests(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle)
+  langs:
+  - csharp
+  - vb
+  name: ITestExecutor
+  nameWithType: ITestExecutor
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor
+  type: Interface
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  syntax:
+    content: public interface ITestExecutor
+    content.vb: Public Interface ITestExecutor
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.RunTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.RunTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle)
+  id: RunTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor
+  langs:
+  - csharp
+  - vb
+  name: RunTests(IEnumerable<TestCase>?, IRunContext?, IFrameworkHandle?)
+  nameWithType: ITestExecutor.RunTests(IEnumerable<TestCase>?, IRunContext?, IFrameworkHandle?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.RunTests(System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase>?, Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext?, Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  syntax:
+    content: void RunTests(IEnumerable<TestCase>? tests, IRunContext? runContext, IFrameworkHandle? frameworkHandle)
+    parameters:
+    - id: tests
+      type: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+    - id: runContext
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext
+    - id: frameworkHandle
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle
+    content.vb: Sub RunTests(tests As IEnumerable(Of TestCase), runContext As IRunContext, frameworkHandle As IFrameworkHandle)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.RunTests*
+  nameWithType.vb: ITestExecutor.RunTests(IEnumerable(Of TestCase), IRunContext, IFrameworkHandle)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.RunTests(System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase), Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext, Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle)
+  name.vb: RunTests(IEnumerable(Of TestCase), IRunContext, IFrameworkHandle)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.RunTests(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.RunTests(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle)
+  id: RunTests(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor
+  langs:
+  - csharp
+  - vb
+  name: RunTests(IEnumerable<string>?, IRunContext?, IFrameworkHandle?)
+  nameWithType: ITestExecutor.RunTests(IEnumerable<string>?, IRunContext?, IFrameworkHandle?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.RunTests(System.Collections.Generic.IEnumerable<string>?, Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext?, Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  syntax:
+    content: void RunTests(IEnumerable<string>? sources, IRunContext? runContext, IFrameworkHandle? frameworkHandle)
+    parameters:
+    - id: sources
+      type: System.Collections.Generic.IEnumerable{System.String}
+    - id: runContext
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext
+    - id: frameworkHandle
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle
+    content.vb: Sub RunTests(sources As IEnumerable(Of String), runContext As IRunContext, frameworkHandle As IFrameworkHandle)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.RunTests*
+  nameWithType.vb: ITestExecutor.RunTests(IEnumerable(Of String), IRunContext, IFrameworkHandle)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.RunTests(System.Collections.Generic.IEnumerable(Of String), Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext, Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle)
+  name.vb: RunTests(IEnumerable(Of String), IRunContext, IFrameworkHandle)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.Cancel
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.Cancel
+  id: Cancel
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor
+  langs:
+  - csharp
+  - vb
+  name: Cancel()
+  nameWithType: ITestExecutor.Cancel()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.Cancel()
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  syntax:
+    content: void Cancel()
+    content.vb: Sub Cancel()
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.Cancel*
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+    name: Adapter
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+    name: Adapter
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.RunTests*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.RunTests
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Adapter_ITestExecutor_RunTests_System_Collections_Generic_IEnumerable_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase__Microsoft_VisualStudio_TestPlatform_ObjectModel_Adapter_IRunContext_Microsoft_VisualStudio_TestPlatform_ObjectModel_Adapter_IFrameworkHandle_
+  name: RunTests
+  nameWithType: ITestExecutor.RunTests
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.RunTests
+- uid: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TestCase>
+  nameWithType: IEnumerable<TestCase>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase>
+  nameWithType.vb: IEnumerable(Of TestCase)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase)
+  name.vb: IEnumerable(Of TestCase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    name: TestCase
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    name: TestCase
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext.html
+  name: IRunContext
+  nameWithType: IRunContext
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IRunContext
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle.html
+  name: IFrameworkHandle
+  nameWithType: IFrameworkHandle
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.Cancel*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.Cancel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Adapter_ITestExecutor_Cancel
+  name: Cancel
+  nameWithType: ITestExecutor.Cancel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor.Cancel

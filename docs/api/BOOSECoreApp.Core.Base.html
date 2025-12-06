@@ -95,53 +95,79 @@
 Classes
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="BOOSECoreApp.Core.Base.CanvasApp.html">CanvasApp</a></dt>
+      <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.CallFrame.html">CallFrame</a></dt>
+      <dd><p>Represents a call frame used for managing function calls and returns within a stored program.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.CanvasApp.html">CanvasApp</a></dt>
       <dd><p>Base class for all drawing operations in the BOOSE framework.
-Implements <a class="xref" href="BOOSE.ICanvas.html">ICanvas</a> and can be inherited for different canvas types.</p>
+Implements <a class="xref" href="../api-tests/BOOSE.ICanvas.html">ICanvas</a> and can be inherited for different canvas types.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BOOSECoreApp.Core.Base.CommandApp.html">CommandApp</a></dt>
+      <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.CommandApp.html">CommandApp</a></dt>
       <dd><p>Abstract base class for all application-level BOOSE commands.
-Implements <a class="xref" href="BOOSE.ICommand.html">ICommand</a> and provides a standard lifecycle:
-Set → CheckParameters → Compile → Execute.</p>
+Provides a standard lifecycle for commands:
+Set -&gt; CheckParameters -&gt; Compile -&gt; Execute.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BOOSECoreApp.Core.Base.CommandFactoryApp.html">CommandFactoryApp</a></dt>
+      <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.CommandFactoryApp.html">CommandFactoryApp</a></dt>
       <dd><p>Factory responsible for creating BOOSE command and variable objects from string identifiers.
-Provides a mapping from command names (e.g., &quot;moveto&quot;, &quot;drawto&quot;) to their corresponding <a class="xref" href="BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a> implementations.</p>
+Provides a mapping from command names (e.g., &quot;moveto&quot;, &quot;drawto&quot;) to their corresponding <a class="xref" href="../api-tests/BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a> implementations.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BOOSECoreApp.Core.Base.CommandWrapper.html">CommandWrapper</a></dt>
-      <dd><p>Wraps a <a class="xref" href="BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a> to make it compatible with BOOSE.Command.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="BOOSECoreApp.Core.Base.EvaluationApp.html">EvaluationApp</a></dt>
+      <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.EvaluationApp.html">EvaluationApp</a></dt>
       <dd><p>Represents a BOOSE command for evaluating expressions and managing variable values.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BOOSECoreApp.Core.Base.ParserApp.html">ParserApp</a></dt>
+      <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.ParsedLine.html">ParsedLine</a></dt>
+      <dd><p>Represents a parsed line of code with its type and content.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.ParserApp.html">ParserApp</a></dt>
       <dd><p>Parses and Interprets BOOSE &quot;source code&quot;, converting the text-based instructions from the IDE to executable commands.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a></dt>
-      <dd><p>Represents a stored program containing a sequence of <a class="xref" href="BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a> objects to be executed on a canvas via <a class="xref" href="BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html">IGraphicAdapter</a>.</p>
+      <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a></dt>
+      <dd><p>Represents a stored program containing a sequence of <a class="xref" href="../api-tests/BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a> objects to be executed on a canvas via <a class="xref" href="../api-tests/BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html">IGraphicAdapter</a>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BOOSECoreApp.Core.Base.VariableAppBase.html">VariableAppBase</a></dt>
-      <dd><p>Provides a base implementation for all variable-type commands (e.g. <code>int</code>, <code>real</code>, <code>bool</code>, and arrays) within the BOOSE IDE.</p>
+      <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.VariableAppBase.html">VariableAppBase</a></dt>
+      <dd><p>Provides a base implementation for all variable-type commands (e.g. <code>int</code>, <code>real</code>, <code>bool</code>, and <code>array</code>) within the BOOSE IDE.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BOOSECoreApp.Core.Base.WrapperApp.html">WrapperApp</a></dt>
-      <dd><p>Adapts <a class="xref" href="BOOSECoreApp.Core.Base.CanvasApp.html">CanvasApp</a> for use by BOOSE commands via <a class="xref" href="BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html">IGraphicAdapter</a>.
+      <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.WrapperApp.html">WrapperApp</a></dt>
+      <dd><p>Adapts <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.CanvasApp.html">CanvasApp</a> for use by BOOSE commands via <a class="xref" href="../api-tests/BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html">IGraphicAdapter</a>.
 Provides a unified interface for drawing operations, allowing commands to execute without directly referencing the canvas implementation.</p>
+</dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.ParsedLineType.html">ParsedLineType</a></dt>
+      <dd><p>Types of parsed lines in the code.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.UINotificationType.html">UINotificationType</a></dt>
+      <dd><p>Defines types of UI notifications that can be triggered by the stored program.</p>
+</dd>
+    </dl>
+    <h3 id="delegates">
+Delegates
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.UINotificationEventHandler.html">UINotificationEventHandler</a></dt>
+      <dd><p>Delegate for handling UI notification events.</p>
 </dd>
     </dl>
 

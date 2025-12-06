@@ -1,0 +1,919 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSETests.Commands.CanvasTests
+  commentId: T:BOOSETests.Commands.CanvasTests
+  id: CanvasTests
+  parent: BOOSETests.Commands
+  children:
+  - BOOSETests.Commands.CanvasTests.#ctor
+  - BOOSETests.Commands.CanvasTests.Setup
+  - BOOSETests.Commands.CanvasTests.Test_CircleCommand
+  - BOOSETests.Commands.CanvasTests.Test_ClearCommand
+  - BOOSETests.Commands.CanvasTests.Test_DrawToCommand
+  - BOOSETests.Commands.CanvasTests.Test_MockCanvas_Implements_ICanvas
+  - BOOSETests.Commands.CanvasTests.Test_MoveToCommand
+  - BOOSETests.Commands.CanvasTests.Test_RectCommand
+  - BOOSETests.Commands.CanvasTests.Test_ResetCommand
+  - BOOSETests.Commands.CanvasTests.Test_SetColourCommand
+  - BOOSETests.Commands.CanvasTests.Test_SetCommand
+  - BOOSETests.Commands.CanvasTests.Test_SquareCommand
+  - BOOSETests.Commands.CanvasTests.Test_TriCommand
+  - BOOSETests.Commands.CanvasTests.Test_WriteCommand_String
+  - BOOSETests.Commands.CanvasTests.Test_getBitmapCommand
+  - BOOSETests.Commands.CanvasTests.Test_getBitmapCommand_ReturnsNull
+  langs:
+  - csharp
+  - vb
+  name: CanvasTests
+  nameWithType: CanvasTests
+  fullName: BOOSETests.Commands.CanvasTests
+  type: Class
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Unit tests for the Canvas implementations.
+  remarks: Checks if the command calls the expected interface method
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public sealed class CanvasTests
+    content.vb: >-
+      <TestClass>
+
+      Public NotInheritable Class CanvasTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasTests.Setup
+  commentId: M:BOOSETests.Commands.CanvasTests.Setup
+  id: Setup
+  parent: BOOSETests.Commands.CanvasTests
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: CanvasTests.Setup()
+  fullName: BOOSETests.Commands.CanvasTests.Setup()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test initialisation for Canvas tests
+  example: []
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void Setup()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub Setup()
+  overload: BOOSETests.Commands.CanvasTests.Setup*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasTests.Test_MockCanvas_Implements_ICanvas
+  commentId: M:BOOSETests.Commands.CanvasTests.Test_MockCanvas_Implements_ICanvas
+  id: Test_MockCanvas_Implements_ICanvas
+  parent: BOOSETests.Commands.CanvasTests
+  langs:
+  - csharp
+  - vb
+  name: Test_MockCanvas_Implements_ICanvas()
+  nameWithType: CanvasTests.Test_MockCanvas_Implements_ICanvas()
+  fullName: BOOSETests.Commands.CanvasTests.Test_MockCanvas_Implements_ICanvas()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test to ensure MockCanvas implements ICanvas
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_MockCanvas_Implements_ICanvas()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_MockCanvas_Implements_ICanvas()
+  overload: BOOSETests.Commands.CanvasTests.Test_MockCanvas_Implements_ICanvas*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasTests.Test_SetCommand
+  commentId: M:BOOSETests.Commands.CanvasTests.Test_SetCommand
+  id: Test_SetCommand
+  parent: BOOSETests.Commands.CanvasTests
+  langs:
+  - csharp
+  - vb
+  name: Test_SetCommand()
+  nameWithType: CanvasTests.Test_SetCommand()
+  fullName: BOOSETests.Commands.CanvasTests.Test_SetCommand()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for Set() command in MockCanvas
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_SetCommand()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_SetCommand()
+  overload: BOOSETests.Commands.CanvasTests.Test_SetCommand*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasTests.Test_SetColourCommand
+  commentId: M:BOOSETests.Commands.CanvasTests.Test_SetColourCommand
+  id: Test_SetColourCommand
+  parent: BOOSETests.Commands.CanvasTests
+  langs:
+  - csharp
+  - vb
+  name: Test_SetColourCommand()
+  nameWithType: CanvasTests.Test_SetColourCommand()
+  fullName: BOOSETests.Commands.CanvasTests.Test_SetColourCommand()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for SetColour() command in MockCanvas
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_SetColourCommand()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_SetColourCommand()
+  overload: BOOSETests.Commands.CanvasTests.Test_SetColourCommand*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasTests.Test_MoveToCommand
+  commentId: M:BOOSETests.Commands.CanvasTests.Test_MoveToCommand
+  id: Test_MoveToCommand
+  parent: BOOSETests.Commands.CanvasTests
+  langs:
+  - csharp
+  - vb
+  name: Test_MoveToCommand()
+  nameWithType: CanvasTests.Test_MoveToCommand()
+  fullName: BOOSETests.Commands.CanvasTests.Test_MoveToCommand()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for MoveTo() command in MockCanvas
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_MoveToCommand()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_MoveToCommand()
+  overload: BOOSETests.Commands.CanvasTests.Test_MoveToCommand*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasTests.Test_DrawToCommand
+  commentId: M:BOOSETests.Commands.CanvasTests.Test_DrawToCommand
+  id: Test_DrawToCommand
+  parent: BOOSETests.Commands.CanvasTests
+  langs:
+  - csharp
+  - vb
+  name: Test_DrawToCommand()
+  nameWithType: CanvasTests.Test_DrawToCommand()
+  fullName: BOOSETests.Commands.CanvasTests.Test_DrawToCommand()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for DrawTo() command in MockCanvas
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_DrawToCommand()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_DrawToCommand()
+  overload: BOOSETests.Commands.CanvasTests.Test_DrawToCommand*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasTests.Test_ClearCommand
+  commentId: M:BOOSETests.Commands.CanvasTests.Test_ClearCommand
+  id: Test_ClearCommand
+  parent: BOOSETests.Commands.CanvasTests
+  langs:
+  - csharp
+  - vb
+  name: Test_ClearCommand()
+  nameWithType: CanvasTests.Test_ClearCommand()
+  fullName: BOOSETests.Commands.CanvasTests.Test_ClearCommand()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for Clear() command in MockCanvas
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_ClearCommand()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_ClearCommand()
+  overload: BOOSETests.Commands.CanvasTests.Test_ClearCommand*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasTests.Test_ResetCommand
+  commentId: M:BOOSETests.Commands.CanvasTests.Test_ResetCommand
+  id: Test_ResetCommand
+  parent: BOOSETests.Commands.CanvasTests
+  langs:
+  - csharp
+  - vb
+  name: Test_ResetCommand()
+  nameWithType: CanvasTests.Test_ResetCommand()
+  fullName: BOOSETests.Commands.CanvasTests.Test_ResetCommand()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for Reset() command in MockCanvas
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_ResetCommand()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_ResetCommand()
+  overload: BOOSETests.Commands.CanvasTests.Test_ResetCommand*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasTests.Test_CircleCommand
+  commentId: M:BOOSETests.Commands.CanvasTests.Test_CircleCommand
+  id: Test_CircleCommand
+  parent: BOOSETests.Commands.CanvasTests
+  langs:
+  - csharp
+  - vb
+  name: Test_CircleCommand()
+  nameWithType: CanvasTests.Test_CircleCommand()
+  fullName: BOOSETests.Commands.CanvasTests.Test_CircleCommand()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for Circle() command in MockCanvas
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_CircleCommand()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_CircleCommand()
+  overload: BOOSETests.Commands.CanvasTests.Test_CircleCommand*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasTests.Test_TriCommand
+  commentId: M:BOOSETests.Commands.CanvasTests.Test_TriCommand
+  id: Test_TriCommand
+  parent: BOOSETests.Commands.CanvasTests
+  langs:
+  - csharp
+  - vb
+  name: Test_TriCommand()
+  nameWithType: CanvasTests.Test_TriCommand()
+  fullName: BOOSETests.Commands.CanvasTests.Test_TriCommand()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for Tri() command in MockCanvas
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_TriCommand()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_TriCommand()
+  overload: BOOSETests.Commands.CanvasTests.Test_TriCommand*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasTests.Test_SquareCommand
+  commentId: M:BOOSETests.Commands.CanvasTests.Test_SquareCommand
+  id: Test_SquareCommand
+  parent: BOOSETests.Commands.CanvasTests
+  langs:
+  - csharp
+  - vb
+  name: Test_SquareCommand()
+  nameWithType: CanvasTests.Test_SquareCommand()
+  fullName: BOOSETests.Commands.CanvasTests.Test_SquareCommand()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for Rect() command in MockCanvas
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_SquareCommand()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_SquareCommand()
+  overload: BOOSETests.Commands.CanvasTests.Test_SquareCommand*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasTests.Test_RectCommand
+  commentId: M:BOOSETests.Commands.CanvasTests.Test_RectCommand
+  id: Test_RectCommand
+  parent: BOOSETests.Commands.CanvasTests
+  langs:
+  - csharp
+  - vb
+  name: Test_RectCommand()
+  nameWithType: CanvasTests.Test_RectCommand()
+  fullName: BOOSETests.Commands.CanvasTests.Test_RectCommand()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for Rect() command in MockCanvas
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_RectCommand()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_RectCommand()
+  overload: BOOSETests.Commands.CanvasTests.Test_RectCommand*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasTests.Test_WriteCommand_String
+  commentId: M:BOOSETests.Commands.CanvasTests.Test_WriteCommand_String
+  id: Test_WriteCommand_String
+  parent: BOOSETests.Commands.CanvasTests
+  langs:
+  - csharp
+  - vb
+  name: Test_WriteCommand_String()
+  nameWithType: CanvasTests.Test_WriteCommand_String()
+  fullName: BOOSETests.Commands.CanvasTests.Test_WriteCommand_String()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for WriteText() command in MockCanvas
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_WriteCommand_String()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_WriteCommand_String()
+  overload: BOOSETests.Commands.CanvasTests.Test_WriteCommand_String*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasTests.Test_getBitmapCommand
+  commentId: M:BOOSETests.Commands.CanvasTests.Test_getBitmapCommand
+  id: Test_getBitmapCommand
+  parent: BOOSETests.Commands.CanvasTests
+  langs:
+  - csharp
+  - vb
+  name: Test_getBitmapCommand()
+  nameWithType: CanvasTests.Test_getBitmapCommand()
+  fullName: BOOSETests.Commands.CanvasTests.Test_getBitmapCommand()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for getBitmap() command in MockCanvas
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_getBitmapCommand()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_getBitmapCommand()
+  overload: BOOSETests.Commands.CanvasTests.Test_getBitmapCommand*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasTests.Test_getBitmapCommand_ReturnsNull
+  commentId: M:BOOSETests.Commands.CanvasTests.Test_getBitmapCommand_ReturnsNull
+  id: Test_getBitmapCommand_ReturnsNull
+  parent: BOOSETests.Commands.CanvasTests
+  langs:
+  - csharp
+  - vb
+  name: Test_getBitmapCommand_ReturnsNull()
+  nameWithType: CanvasTests.Test_getBitmapCommand_ReturnsNull()
+  fullName: BOOSETests.Commands.CanvasTests.Test_getBitmapCommand_ReturnsNull()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Test method for null result of getBitmap() command in MockCanvas
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_getBitmapCommand_ReturnsNull()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_getBitmapCommand_ReturnsNull()
+  overload: BOOSETests.Commands.CanvasTests.Test_getBitmapCommand_ReturnsNull*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasTests.#ctor
+  commentId: M:BOOSETests.Commands.CanvasTests.#ctor
+  id: '#ctor'
+  parent: BOOSETests.Commands.CanvasTests
+  langs:
+  - csharp
+  - vb
+  name: CanvasTests()
+  nameWithType: CanvasTests.CanvasTests()
+  fullName: BOOSETests.Commands.CanvasTests.CanvasTests()
+  type: Constructor
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  syntax:
+    content: public CanvasTests()
+    content.vb: Public Sub New()
+  overload: BOOSETests.Commands.CanvasTests.#ctor*
+  nameWithType.vb: CanvasTests.New()
+  fullName.vb: BOOSETests.Commands.CanvasTests.New()
+  name.vb: New()
+references:
+- uid: BOOSETests.Commands
+  commentId: N:BOOSETests.Commands
+  isExternal: true
+  href: BOOSETests.html
+  name: BOOSETests.Commands
+  nameWithType: BOOSETests.Commands
+  fullName: BOOSETests.Commands
+  spec.csharp:
+  - uid: BOOSETests
+    name: BOOSETests
+    isExternal: true
+    href: BOOSETests.html
+  - name: .
+  - uid: BOOSETests.Commands
+    name: Commands
+    isExternal: true
+    href: BOOSETests.Commands.html
+  spec.vb:
+  - uid: BOOSETests
+    name: BOOSETests
+    isExternal: true
+    href: BOOSETests.html
+  - name: .
+  - uid: BOOSETests.Commands
+    name: Commands
+    isExternal: true
+    href: BOOSETests.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSETests.Commands.CanvasTests.Setup*
+  commentId: Overload:BOOSETests.Commands.CanvasTests.Setup
+  isExternal: true
+  href: BOOSETests.Commands.CanvasTests.html#BOOSETests_Commands_CanvasTests_Setup
+  name: Setup
+  nameWithType: CanvasTests.Setup
+  fullName: BOOSETests.Commands.CanvasTests.Setup
+- uid: BOOSETests.Commands.CanvasTests.Test_MockCanvas_Implements_ICanvas*
+  commentId: Overload:BOOSETests.Commands.CanvasTests.Test_MockCanvas_Implements_ICanvas
+  isExternal: true
+  href: BOOSETests.Commands.CanvasTests.html#BOOSETests_Commands_CanvasTests_Test_MockCanvas_Implements_ICanvas
+  name: Test_MockCanvas_Implements_ICanvas
+  nameWithType: CanvasTests.Test_MockCanvas_Implements_ICanvas
+  fullName: BOOSETests.Commands.CanvasTests.Test_MockCanvas_Implements_ICanvas
+- uid: BOOSETests.Commands.CanvasTests.Test_SetCommand*
+  commentId: Overload:BOOSETests.Commands.CanvasTests.Test_SetCommand
+  isExternal: true
+  href: BOOSETests.Commands.CanvasTests.html#BOOSETests_Commands_CanvasTests_Test_SetCommand
+  name: Test_SetCommand
+  nameWithType: CanvasTests.Test_SetCommand
+  fullName: BOOSETests.Commands.CanvasTests.Test_SetCommand
+- uid: BOOSETests.Commands.CanvasTests.Test_SetColourCommand*
+  commentId: Overload:BOOSETests.Commands.CanvasTests.Test_SetColourCommand
+  isExternal: true
+  href: BOOSETests.Commands.CanvasTests.html#BOOSETests_Commands_CanvasTests_Test_SetColourCommand
+  name: Test_SetColourCommand
+  nameWithType: CanvasTests.Test_SetColourCommand
+  fullName: BOOSETests.Commands.CanvasTests.Test_SetColourCommand
+- uid: BOOSETests.Commands.CanvasTests.Test_MoveToCommand*
+  commentId: Overload:BOOSETests.Commands.CanvasTests.Test_MoveToCommand
+  isExternal: true
+  href: BOOSETests.Commands.CanvasTests.html#BOOSETests_Commands_CanvasTests_Test_MoveToCommand
+  name: Test_MoveToCommand
+  nameWithType: CanvasTests.Test_MoveToCommand
+  fullName: BOOSETests.Commands.CanvasTests.Test_MoveToCommand
+- uid: BOOSETests.Commands.CanvasTests.Test_DrawToCommand*
+  commentId: Overload:BOOSETests.Commands.CanvasTests.Test_DrawToCommand
+  isExternal: true
+  href: BOOSETests.Commands.CanvasTests.html#BOOSETests_Commands_CanvasTests_Test_DrawToCommand
+  name: Test_DrawToCommand
+  nameWithType: CanvasTests.Test_DrawToCommand
+  fullName: BOOSETests.Commands.CanvasTests.Test_DrawToCommand
+- uid: BOOSETests.Commands.CanvasTests.Test_ClearCommand*
+  commentId: Overload:BOOSETests.Commands.CanvasTests.Test_ClearCommand
+  isExternal: true
+  href: BOOSETests.Commands.CanvasTests.html#BOOSETests_Commands_CanvasTests_Test_ClearCommand
+  name: Test_ClearCommand
+  nameWithType: CanvasTests.Test_ClearCommand
+  fullName: BOOSETests.Commands.CanvasTests.Test_ClearCommand
+- uid: BOOSETests.Commands.CanvasTests.Test_ResetCommand*
+  commentId: Overload:BOOSETests.Commands.CanvasTests.Test_ResetCommand
+  isExternal: true
+  href: BOOSETests.Commands.CanvasTests.html#BOOSETests_Commands_CanvasTests_Test_ResetCommand
+  name: Test_ResetCommand
+  nameWithType: CanvasTests.Test_ResetCommand
+  fullName: BOOSETests.Commands.CanvasTests.Test_ResetCommand
+- uid: BOOSETests.Commands.CanvasTests.Test_CircleCommand*
+  commentId: Overload:BOOSETests.Commands.CanvasTests.Test_CircleCommand
+  isExternal: true
+  href: BOOSETests.Commands.CanvasTests.html#BOOSETests_Commands_CanvasTests_Test_CircleCommand
+  name: Test_CircleCommand
+  nameWithType: CanvasTests.Test_CircleCommand
+  fullName: BOOSETests.Commands.CanvasTests.Test_CircleCommand
+- uid: BOOSETests.Commands.CanvasTests.Test_TriCommand*
+  commentId: Overload:BOOSETests.Commands.CanvasTests.Test_TriCommand
+  isExternal: true
+  href: BOOSETests.Commands.CanvasTests.html#BOOSETests_Commands_CanvasTests_Test_TriCommand
+  name: Test_TriCommand
+  nameWithType: CanvasTests.Test_TriCommand
+  fullName: BOOSETests.Commands.CanvasTests.Test_TriCommand
+- uid: BOOSETests.Commands.CanvasTests.Test_SquareCommand*
+  commentId: Overload:BOOSETests.Commands.CanvasTests.Test_SquareCommand
+  isExternal: true
+  href: BOOSETests.Commands.CanvasTests.html#BOOSETests_Commands_CanvasTests_Test_SquareCommand
+  name: Test_SquareCommand
+  nameWithType: CanvasTests.Test_SquareCommand
+  fullName: BOOSETests.Commands.CanvasTests.Test_SquareCommand
+- uid: BOOSETests.Commands.CanvasTests.Test_RectCommand*
+  commentId: Overload:BOOSETests.Commands.CanvasTests.Test_RectCommand
+  isExternal: true
+  href: BOOSETests.Commands.CanvasTests.html#BOOSETests_Commands_CanvasTests_Test_RectCommand
+  name: Test_RectCommand
+  nameWithType: CanvasTests.Test_RectCommand
+  fullName: BOOSETests.Commands.CanvasTests.Test_RectCommand
+- uid: BOOSETests.Commands.CanvasTests.Test_WriteCommand_String*
+  commentId: Overload:BOOSETests.Commands.CanvasTests.Test_WriteCommand_String
+  isExternal: true
+  href: BOOSETests.Commands.CanvasTests.html#BOOSETests_Commands_CanvasTests_Test_WriteCommand_String
+  name: Test_WriteCommand_String
+  nameWithType: CanvasTests.Test_WriteCommand_String
+  fullName: BOOSETests.Commands.CanvasTests.Test_WriteCommand_String
+- uid: BOOSETests.Commands.CanvasTests.Test_getBitmapCommand*
+  commentId: Overload:BOOSETests.Commands.CanvasTests.Test_getBitmapCommand
+  isExternal: true
+  href: BOOSETests.Commands.CanvasTests.html#BOOSETests_Commands_CanvasTests_Test_getBitmapCommand
+  name: Test_getBitmapCommand
+  nameWithType: CanvasTests.Test_getBitmapCommand
+  fullName: BOOSETests.Commands.CanvasTests.Test_getBitmapCommand
+- uid: BOOSETests.Commands.CanvasTests.Test_getBitmapCommand_ReturnsNull*
+  commentId: Overload:BOOSETests.Commands.CanvasTests.Test_getBitmapCommand_ReturnsNull
+  isExternal: true
+  href: BOOSETests.Commands.CanvasTests.html#BOOSETests_Commands_CanvasTests_Test_getBitmapCommand_ReturnsNull
+  name: Test_getBitmapCommand_ReturnsNull
+  nameWithType: CanvasTests.Test_getBitmapCommand_ReturnsNull
+  fullName: BOOSETests.Commands.CanvasTests.Test_getBitmapCommand_ReturnsNull
+- uid: BOOSETests.Commands.CanvasTests.#ctor*
+  commentId: Overload:BOOSETests.Commands.CanvasTests.#ctor
+  isExternal: true
+  href: BOOSETests.Commands.CanvasTests.html#BOOSETests_Commands_CanvasTests__ctor
+  name: CanvasTests
+  nameWithType: CanvasTests.CanvasTests
+  fullName: BOOSETests.Commands.CanvasTests.CanvasTests
+  nameWithType.vb: CanvasTests.New
+  fullName.vb: BOOSETests.Commands.CanvasTests.New
+  name.vb: New

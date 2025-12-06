@@ -1,0 +1,741 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSECoreApp.Core.Methods.CallMethodApp
+  commentId: T:BOOSECoreApp.Core.Methods.CallMethodApp
+  id: CallMethodApp
+  parent: BOOSECoreApp.Core.Methods
+  children:
+  - BOOSECoreApp.Core.Methods.CallMethodApp.#ctor
+  - BOOSECoreApp.Core.Methods.CallMethodApp.ArgsExpr
+  - BOOSECoreApp.Core.Methods.CallMethodApp.CheckParameters(System.String[])
+  - BOOSECoreApp.Core.Methods.CallMethodApp.Execute
+  - BOOSECoreApp.Core.Methods.CallMethodApp.MethodName
+  langs:
+  - csharp
+  - vb
+  name: CallMethodApp
+  nameWithType: CallMethodApp
+  fullName: BOOSECoreApp.Core.Methods.CallMethodApp
+  type: Class
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Methods/CallMethodApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Methods
+  summary: Represents the calls a method with specified arguments.
+  example: []
+  syntax:
+    content: 'public class CallMethodApp : CommandApp, ICommandApp'
+    content.vb: Public Class CallMethodApp Inherits CommandApp Implements ICommandApp
+  inheritance:
+  - System.Object
+  - BOOSECoreApp.Core.Base.CommandApp
+  implements:
+  - BOOSECoreApp.Core.Interfaces.ICommandApp
+  inheritedMembers:
+  - BOOSECoreApp.Core.Base.CommandApp._parameters
+  - BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
+  - BOOSECoreApp.Core.Base.CommandApp.ProgramApp
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: BOOSECoreApp.Core.Methods.CallMethodApp.#ctor
+  commentId: M:BOOSECoreApp.Core.Methods.CallMethodApp.#ctor
+  id: '#ctor'
+  parent: BOOSECoreApp.Core.Methods.CallMethodApp
+  langs:
+  - csharp
+  - vb
+  name: CallMethodApp()
+  nameWithType: CallMethodApp.CallMethodApp()
+  fullName: BOOSECoreApp.Core.Methods.CallMethodApp.CallMethodApp()
+  type: Constructor
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Methods/CallMethodApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Methods
+  summary: Initializes a new instance of the <xref href="BOOSECoreApp.Core.Methods.CallMethodApp" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public CallMethodApp()
+    content.vb: Public Sub New()
+  overload: BOOSECoreApp.Core.Methods.CallMethodApp.#ctor*
+  nameWithType.vb: CallMethodApp.New()
+  fullName.vb: BOOSECoreApp.Core.Methods.CallMethodApp.New()
+  name.vb: New()
+- uid: BOOSECoreApp.Core.Methods.CallMethodApp.CheckParameters(System.String[])
+  commentId: M:BOOSECoreApp.Core.Methods.CallMethodApp.CheckParameters(System.String[])
+  id: CheckParameters(System.String[])
+  parent: BOOSECoreApp.Core.Methods.CallMethodApp
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters(string[])
+  nameWithType: CallMethodApp.CheckParameters(string[])
+  fullName: BOOSECoreApp.Core.Methods.CallMethodApp.CheckParameters(string[])
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Methods/CallMethodApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Methods
+  summary: Validates the provided parameters to ensure they meet the required conditions.
+  example: []
+  syntax:
+    content: public override void CheckParameters(string[] parameters)
+    parameters:
+    - id: parameters
+      type: System.String[]
+      description: An array of strings representing the parameters to validate. Cannot be null, and each element must meet specific validation criteria.
+    content.vb: Public Overrides Sub CheckParameters(parameters As String())
+  overridden: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])
+  overload: BOOSECoreApp.Core.Methods.CallMethodApp.CheckParameters*
+  nameWithType.vb: CallMethodApp.CheckParameters(String())
+  fullName.vb: BOOSECoreApp.Core.Methods.CallMethodApp.CheckParameters(String())
+  name.vb: CheckParameters(String())
+- uid: BOOSECoreApp.Core.Methods.CallMethodApp.Execute
+  commentId: M:BOOSECoreApp.Core.Methods.CallMethodApp.Execute
+  id: Execute
+  parent: BOOSECoreApp.Core.Methods.CallMethodApp
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: CallMethodApp.Execute()
+  fullName: BOOSECoreApp.Core.Methods.CallMethodApp.Execute()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Methods/CallMethodApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Methods
+  summary: Execute the command.
+  example: []
+  syntax:
+    content: public override void Execute()
+    content.vb: Public Overrides Sub Execute()
+  overridden: BOOSECoreApp.Core.Base.CommandApp.Execute
+  overload: BOOSECoreApp.Core.Methods.CallMethodApp.Execute*
+- uid: BOOSECoreApp.Core.Methods.CallMethodApp.MethodName
+  commentId: P:BOOSECoreApp.Core.Methods.CallMethodApp.MethodName
+  id: MethodName
+  parent: BOOSECoreApp.Core.Methods.CallMethodApp
+  langs:
+  - csharp
+  - vb
+  name: MethodName
+  nameWithType: CallMethodApp.MethodName
+  fullName: BOOSECoreApp.Core.Methods.CallMethodApp.MethodName
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Methods/CallMethodApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Methods
+  summary: The name of the method to be called.
+  example: []
+  syntax:
+    content: public string MethodName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MethodName As String
+  overload: BOOSECoreApp.Core.Methods.CallMethodApp.MethodName*
+- uid: BOOSECoreApp.Core.Methods.CallMethodApp.ArgsExpr
+  commentId: P:BOOSECoreApp.Core.Methods.CallMethodApp.ArgsExpr
+  id: ArgsExpr
+  parent: BOOSECoreApp.Core.Methods.CallMethodApp
+  langs:
+  - csharp
+  - vb
+  name: ArgsExpr
+  nameWithType: CallMethodApp.ArgsExpr
+  fullName: BOOSECoreApp.Core.Methods.CallMethodApp.ArgsExpr
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Methods/CallMethodApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Methods
+  summary: The expressions for the arguments to be passed to the method.
+  example: []
+  syntax:
+    content: public string[] ArgsExpr { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property ArgsExpr As String()
+  overload: BOOSECoreApp.Core.Methods.CallMethodApp.ArgsExpr*
+references:
+- uid: BOOSECoreApp.Core.Methods
+  commentId: N:BOOSECoreApp.Core.Methods
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Methods
+  nameWithType: BOOSECoreApp.Core.Methods
+  fullName: BOOSECoreApp.Core.Methods
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Methods
+    name: Methods
+    isExternal: true
+    href: BOOSECoreApp.Core.Methods.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Methods
+    name: Methods
+    isExternal: true
+    href: BOOSECoreApp.Core.Methods.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BOOSECoreApp.Core.Base.CommandApp
+  commentId: T:BOOSECoreApp.Core.Base.CommandApp
+  parent: BOOSECoreApp.Core.Base
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.CommandApp.html
+  name: CommandApp
+  nameWithType: CommandApp
+  fullName: BOOSECoreApp.Core.Base.CommandApp
+- uid: BOOSECoreApp.Core.Interfaces.ICommandApp
+  commentId: T:BOOSECoreApp.Core.Interfaces.ICommandApp
+  parent: BOOSECoreApp.Core.Interfaces
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.ICommandApp.html
+  name: ICommandApp
+  nameWithType: ICommandApp
+  fullName: BOOSECoreApp.Core.Interfaces.ICommandApp
+- uid: BOOSECoreApp.Core.Base.CommandApp._parameters
+  commentId: F:BOOSECoreApp.Core.Base.CommandApp._parameters
+  parent: BOOSECoreApp.Core.Base.CommandApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp__parameters
+  name: _parameters
+  nameWithType: CommandApp._parameters
+  fullName: BOOSECoreApp.Core.Base.CommandApp._parameters
+- uid: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
+  commentId: M:BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
+  parent: BOOSECoreApp.Core.Base.CommandApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Set_BOOSECoreApp_Core_Base_StoredProgramApp_System_String___
+  name: Set(StoredProgramApp, string[])
+  nameWithType: CommandApp.Set(StoredProgramApp, string[])
+  fullName: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp, string[])
+  nameWithType.vb: CommandApp.Set(StoredProgramApp, String())
+  fullName.vb: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp, String())
+  name.vb: Set(StoredProgramApp, String())
+  spec.csharp:
+  - uid: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
+    name: Set
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Set_BOOSECoreApp_Core_Base_StoredProgramApp_System_String___
+  - name: (
+  - uid: BOOSECoreApp.Core.Base.StoredProgramApp
+    name: StoredProgramApp
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.StoredProgramApp.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
+    name: Set
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Set_BOOSECoreApp_Core_Base_StoredProgramApp_System_String___
+  - name: (
+  - uid: BOOSECoreApp.Core.Base.StoredProgramApp
+    name: StoredProgramApp
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.StoredProgramApp.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: BOOSECoreApp.Core.Base.CommandApp.ProgramApp
+  commentId: P:BOOSECoreApp.Core.Base.CommandApp.ProgramApp
+  parent: BOOSECoreApp.Core.Base.CommandApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_ProgramApp
+  name: ProgramApp
+  nameWithType: CommandApp.ProgramApp
+  fullName: BOOSECoreApp.Core.Base.CommandApp.ProgramApp
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSECoreApp.Core.Base
+  commentId: N:BOOSECoreApp.Core.Base
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Base
+  nameWithType: BOOSECoreApp.Core.Base
+  fullName: BOOSECoreApp.Core.Base
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Base
+    name: Base
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Base
+    name: Base
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.html
+- uid: BOOSECoreApp.Core.Interfaces
+  commentId: N:BOOSECoreApp.Core.Interfaces
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Interfaces
+  nameWithType: BOOSECoreApp.Core.Interfaces
+  fullName: BOOSECoreApp.Core.Interfaces
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.html
+- uid: BOOSECoreApp.Core.Methods.CallMethodApp
+  commentId: T:BOOSECoreApp.Core.Methods.CallMethodApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Methods.CallMethodApp.html
+  name: CallMethodApp
+  nameWithType: CallMethodApp
+  fullName: BOOSECoreApp.Core.Methods.CallMethodApp
+- uid: BOOSECoreApp.Core.Methods.CallMethodApp.#ctor*
+  commentId: Overload:BOOSECoreApp.Core.Methods.CallMethodApp.#ctor
+  isExternal: true
+  href: BOOSECoreApp.Core.Methods.CallMethodApp.html#BOOSECoreApp_Core_Methods_CallMethodApp__ctor
+  name: CallMethodApp
+  nameWithType: CallMethodApp.CallMethodApp
+  fullName: BOOSECoreApp.Core.Methods.CallMethodApp.CallMethodApp
+  nameWithType.vb: CallMethodApp.New
+  fullName.vb: BOOSECoreApp.Core.Methods.CallMethodApp.New
+  name.vb: New
+- uid: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])
+  commentId: M:BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])
+  parent: BOOSECoreApp.Core.Base.CommandApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_CheckParameters_System_String___
+  name: CheckParameters(string[])
+  nameWithType: CommandApp.CheckParameters(string[])
+  fullName: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(string[])
+  nameWithType.vb: CommandApp.CheckParameters(String())
+  fullName.vb: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(String())
+  name.vb: CheckParameters(String())
+  spec.csharp:
+  - uid: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])
+    name: CheckParameters
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_CheckParameters_System_String___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])
+    name: CheckParameters
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_CheckParameters_System_String___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: BOOSECoreApp.Core.Methods.CallMethodApp.CheckParameters*
+  commentId: Overload:BOOSECoreApp.Core.Methods.CallMethodApp.CheckParameters
+  isExternal: true
+  href: BOOSECoreApp.Core.Methods.CallMethodApp.html#BOOSECoreApp_Core_Methods_CallMethodApp_CheckParameters_System_String___
+  name: CheckParameters
+  nameWithType: CallMethodApp.CheckParameters
+  fullName: BOOSECoreApp.Core.Methods.CallMethodApp.CheckParameters
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: BOOSECoreApp.Core.Base.CommandApp.Execute
+  commentId: M:BOOSECoreApp.Core.Base.CommandApp.Execute
+  parent: BOOSECoreApp.Core.Base.CommandApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Execute
+  name: Execute()
+  nameWithType: CommandApp.Execute()
+  fullName: BOOSECoreApp.Core.Base.CommandApp.Execute()
+  spec.csharp:
+  - uid: BOOSECoreApp.Core.Base.CommandApp.Execute
+    name: Execute
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Execute
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSECoreApp.Core.Base.CommandApp.Execute
+    name: Execute
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Execute
+  - name: (
+  - name: )
+- uid: BOOSECoreApp.Core.Methods.CallMethodApp.Execute*
+  commentId: Overload:BOOSECoreApp.Core.Methods.CallMethodApp.Execute
+  isExternal: true
+  href: BOOSECoreApp.Core.Methods.CallMethodApp.html#BOOSECoreApp_Core_Methods_CallMethodApp_Execute
+  name: Execute
+  nameWithType: CallMethodApp.Execute
+  fullName: BOOSECoreApp.Core.Methods.CallMethodApp.Execute
+- uid: BOOSECoreApp.Core.Methods.CallMethodApp.MethodName*
+  commentId: Overload:BOOSECoreApp.Core.Methods.CallMethodApp.MethodName
+  isExternal: true
+  href: BOOSECoreApp.Core.Methods.CallMethodApp.html#BOOSECoreApp_Core_Methods_CallMethodApp_MethodName
+  name: MethodName
+  nameWithType: CallMethodApp.MethodName
+  fullName: BOOSECoreApp.Core.Methods.CallMethodApp.MethodName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BOOSECoreApp.Core.Methods.CallMethodApp.ArgsExpr*
+  commentId: Overload:BOOSECoreApp.Core.Methods.CallMethodApp.ArgsExpr
+  isExternal: true
+  href: BOOSECoreApp.Core.Methods.CallMethodApp.html#BOOSECoreApp_Core_Methods_CallMethodApp_ArgsExpr
+  name: ArgsExpr
+  nameWithType: CallMethodApp.ArgsExpr
+  fullName: BOOSECoreApp.Core.Methods.CallMethodApp.ArgsExpr

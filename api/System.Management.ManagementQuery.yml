@@ -1,0 +1,468 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Management.ManagementQuery
+  commentId: T:System.Management.ManagementQuery
+  id: ManagementQuery
+  parent: System.Management
+  children:
+  - System.Management.ManagementQuery.Clone
+  - System.Management.ManagementQuery.ParseQuery(System.String)
+  - System.Management.ManagementQuery.QueryLanguage
+  - System.Management.ManagementQuery.QueryString
+  langs:
+  - csharp
+  - vb
+  name: ManagementQuery
+  nameWithType: ManagementQuery
+  fullName: System.Management.ManagementQuery
+  type: Class
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: >-
+      [TypeConverter(typeof(ManagementQueryConverter))]
+
+      public abstract class ManagementQuery : ICloneable
+    content.vb: >-
+      <TypeConverter(GetType(ManagementQueryConverter))>
+
+      Public MustInherit Class ManagementQuery Implements ICloneable
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - System.Management.EventQuery
+  - System.Management.ObjectQuery
+  implements:
+  - System.ICloneable
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: System.Management.ManagementQuery.Clone
+  commentId: M:System.Management.ManagementQuery.Clone
+  id: Clone
+  parent: System.Management.ManagementQuery
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: ManagementQuery.Clone()
+  fullName: System.Management.ManagementQuery.Clone()
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  example: []
+  syntax:
+    content: public abstract object Clone()
+    return:
+      type: System.Object
+    content.vb: Public MustOverride Function Clone() As Object
+  overload: System.Management.ManagementQuery.Clone*
+  implements:
+  - System.ICloneable.Clone
+- uid: System.Management.ManagementQuery.ParseQuery(System.String)
+  commentId: M:System.Management.ManagementQuery.ParseQuery(System.String)
+  id: ParseQuery(System.String)
+  parent: System.Management.ManagementQuery
+  langs:
+  - csharp
+  - vb
+  name: ParseQuery(string)
+  nameWithType: ManagementQuery.ParseQuery(string)
+  fullName: System.Management.ManagementQuery.ParseQuery(string)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: protected virtual void ParseQuery(string query)
+    parameters:
+    - id: query
+      type: System.String
+    content.vb: Protected Overridable Sub ParseQuery(query As String)
+  overload: System.Management.ManagementQuery.ParseQuery*
+  nameWithType.vb: ManagementQuery.ParseQuery(String)
+  fullName.vb: System.Management.ManagementQuery.ParseQuery(String)
+  name.vb: ParseQuery(String)
+- uid: System.Management.ManagementQuery.QueryLanguage
+  commentId: P:System.Management.ManagementQuery.QueryLanguage
+  id: QueryLanguage
+  parent: System.Management.ManagementQuery
+  langs:
+  - csharp
+  - vb
+  name: QueryLanguage
+  nameWithType: ManagementQuery.QueryLanguage
+  fullName: System.Management.ManagementQuery.QueryLanguage
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public virtual string QueryLanguage { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property QueryLanguage As String
+  overload: System.Management.ManagementQuery.QueryLanguage*
+- uid: System.Management.ManagementQuery.QueryString
+  commentId: P:System.Management.ManagementQuery.QueryString
+  id: QueryString
+  parent: System.Management.ManagementQuery
+  langs:
+  - csharp
+  - vb
+  name: QueryString
+  nameWithType: ManagementQuery.QueryString
+  fullName: System.Management.ManagementQuery.QueryString
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public virtual string QueryString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property QueryString As String
+  overload: System.Management.ManagementQuery.QueryString*
+references:
+- uid: System.Management
+  commentId: N:System.Management
+  isExternal: true
+  href: System.html
+  name: System.Management
+  nameWithType: System.Management
+  fullName: System.Management
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Management
+    name: Management
+    isExternal: true
+    href: System.Management.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Management
+    name: Management
+    isExternal: true
+    href: System.Management.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Management.ManagementQuery.Clone*
+  commentId: Overload:System.Management.ManagementQuery.Clone
+  isExternal: true
+  href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_Clone
+  name: Clone
+  nameWithType: ManagementQuery.Clone
+  fullName: System.Management.ManagementQuery.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+- uid: System.Management.ManagementQuery.ParseQuery*
+  commentId: Overload:System.Management.ManagementQuery.ParseQuery
+  isExternal: true
+  href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_ParseQuery_System_String_
+  name: ParseQuery
+  nameWithType: ManagementQuery.ParseQuery
+  fullName: System.Management.ManagementQuery.ParseQuery
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Management.ManagementQuery.QueryLanguage*
+  commentId: Overload:System.Management.ManagementQuery.QueryLanguage
+  isExternal: true
+  href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_QueryLanguage
+  name: QueryLanguage
+  nameWithType: ManagementQuery.QueryLanguage
+  fullName: System.Management.ManagementQuery.QueryLanguage
+- uid: System.Management.ManagementQuery.QueryString*
+  commentId: Overload:System.Management.ManagementQuery.QueryString
+  isExternal: true
+  href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_QueryString
+  name: QueryString
+  nameWithType: ManagementQuery.QueryString
+  fullName: System.Management.ManagementQuery.QueryString

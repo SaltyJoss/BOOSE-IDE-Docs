@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MSTestSettings | BOOSE IDE Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MSTestSettings | BOOSE IDE Documentation ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BOOSE IDE Documentation">
+            BOOSE IDE Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings">
+
+
+
+  <h1 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings" class="text-break">
+Class MSTestSettings  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.VisualStudio.html">VisualStudio</a>.<a class="xref" href="Microsoft.VisualStudio.TestPlatform.html">TestPlatform</a>.<a class="xref" href="Microsoft.VisualStudio.TestPlatform.MSTest.html">MSTest</a>.<a class="xref" href="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.html">TestAdapter</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MSTestSettings</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MSTestSettings</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings__ctor_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.#ctor*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings__ctor" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.#ctor">
+  MSTestSettings()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MSTestSettings()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_SettingsName" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.SettingsName">
+  SettingsName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string SettingsName = &quot;MSTest&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_SettingsNameAlias" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.SettingsNameAlias">
+  SettingsNameAlias
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string SettingsNameAlias = &quot;MSTestV2&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_CaptureDebugTraces_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.CaptureDebugTraces*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_CaptureDebugTraces" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.CaptureDebugTraces">
+  CaptureDebugTraces
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CaptureDebugTraces { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_ClassCleanupLifecycle_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.ClassCleanupLifecycle*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_ClassCleanupLifecycle" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.ClassCleanupLifecycle">
+  ClassCleanupLifecycle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClassCleanupBehavior? ClassCleanupLifecycle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.classcleanupbehavior">ClassCleanupBehavior</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_CurrentSettings_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.CurrentSettings*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_CurrentSettings" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.CurrentSettings">
+  CurrentSettings
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MSTestSettings CurrentSettings { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.html">MSTestSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_DisableParallelization_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.DisableParallelization*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_DisableParallelization" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.DisableParallelization">
+  DisableParallelization
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DisableParallelization { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_EnableBaseClassTestMethodsFromOtherAssemblies_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.EnableBaseClassTestMethodsFromOtherAssemblies*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_EnableBaseClassTestMethodsFromOtherAssemblies" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.EnableBaseClassTestMethodsFromOtherAssemblies">
+  EnableBaseClassTestMethodsFromOtherAssemblies
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableBaseClassTestMethodsFromOtherAssemblies { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_ForcedLegacyMode_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.ForcedLegacyMode*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_ForcedLegacyMode" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.ForcedLegacyMode">
+  ForcedLegacyMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ForcedLegacyMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_MapInconclusiveToFailed_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.MapInconclusiveToFailed*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_MapInconclusiveToFailed" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.MapInconclusiveToFailed">
+  MapInconclusiveToFailed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MapInconclusiveToFailed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_MapNotRunnableToFailed_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.MapNotRunnableToFailed*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_MapNotRunnableToFailed" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.MapNotRunnableToFailed">
+  MapNotRunnableToFailed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MapNotRunnableToFailed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_ParallelizationScope_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.ParallelizationScope*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_ParallelizationScope" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.ParallelizationScope">
+  ParallelizationScope
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExecutionScope? ParallelizationScope { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.executionscope">ExecutionScope</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_ParallelizationWorkers_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.ParallelizationWorkers*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_ParallelizationWorkers" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.ParallelizationWorkers">
+  ParallelizationWorkers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? ParallelizationWorkers { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_RunConfigurationSettings_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.RunConfigurationSettings*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_RunConfigurationSettings" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.RunConfigurationSettings">
+  RunConfigurationSettings
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RunConfigurationSettings RunConfigurationSettings { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.RunConfigurationSettings.html">RunConfigurationSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_TestSettingsFile_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.TestSettingsFile*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_TestSettingsFile" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.TestSettingsFile">
+  TestSettingsFile
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? TestSettingsFile { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_TestTimeout_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.TestTimeout*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_TestTimeout" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.TestTimeout">
+  TestTimeout
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TestTimeout { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_TreatClassAndAssemblyCleanupWarningsAsErrors_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.TreatClassAndAssemblyCleanupWarningsAsErrors*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_TreatClassAndAssemblyCleanupWarningsAsErrors" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.TreatClassAndAssemblyCleanupWarningsAsErrors">
+  TreatClassAndAssemblyCleanupWarningsAsErrors
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TreatClassAndAssemblyCleanupWarningsAsErrors { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_TreatDiscoveryWarningsAsErrors_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.TreatDiscoveryWarningsAsErrors*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_TreatDiscoveryWarningsAsErrors" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.TreatDiscoveryWarningsAsErrors">
+  TreatDiscoveryWarningsAsErrors
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TreatDiscoveryWarningsAsErrors { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_IsLegacyScenario_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.IsLegacyScenario*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_IsLegacyScenario_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_IMessageLogger_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.IsLegacyScenario(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger)">
+  IsLegacyScenario(IMessageLogger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsLegacyScenario(IMessageLogger logger)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logger</code> <a class="xref" href="Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger.html">IMessageLogger</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_PopulateSettings_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.PopulateSettings*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_PopulateSettings_Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.PopulateSettings(Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings)">
+  PopulateSettings(MSTestSettings)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PopulateSettings(MSTestSettings settings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>settings</code> <a class="xref" href="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.html">MSTestSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_PopulateSettings_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.PopulateSettings*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestSettings_PopulateSettings_Microsoft_VisualStudio_TestPlatform_ObjectModel_Adapter_IDiscoveryContext_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestSettings.PopulateSettings(Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext)">
+  PopulateSettings(IDiscoveryContext?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;this function will be removed in v4.0.0&quot;)]
+public static void PopulateSettings(IDiscoveryContext? context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext.html">IDiscoveryContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,4197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Assert | BOOSE IDE Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Assert | BOOSE IDE Documentation ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BOOSE IDE Documentation">
+            BOOSE IDE Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
+
+
+
+  <h1 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert" class="text-break">
+Class Assert  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft">Microsoft</a>.<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.visualstudio">VisualStudio</a>.<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools">TestTools</a>.<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting">UnitTesting</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.VisualStudio.TestPlatform.TestFramework.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Assert</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Assert</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_That_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.That*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_That" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.That">
+  That
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Assert That { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.html">Assert</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_Decimal_System_Decimal_System_Decimal_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.Decimal,System.Decimal,System.Decimal)">
+  AreEqual(decimal, decimal, decimal)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(decimal expected, decimal actual, decimal delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_Decimal_System_Decimal_System_Decimal_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.Decimal,System.Decimal,System.Decimal,System.String)">
+  AreEqual(decimal, decimal, decimal, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(decimal expected, decimal actual, decimal delta, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_Decimal_System_Decimal_System_Decimal_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.Decimal,System.Decimal,System.Decimal,System.String,System.Object[])">
+  AreEqual(decimal, decimal, decimal, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(decimal expected, decimal actual, decimal delta, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_Double_System_Double_System_Double_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.Double,System.Double,System.Double)">
+  AreEqual(double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(double expected, double actual, double delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_Double_System_Double_System_Double_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.Double,System.Double,System.Double,System.String)">
+  AreEqual(double, double, double, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(double expected, double actual, double delta, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_Double_System_Double_System_Double_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.Double,System.Double,System.Double,System.String,System.Object[])">
+  AreEqual(double, double, double, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(double expected, double actual, double delta, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_Int64_System_Int64_System_Int64_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.Int64,System.Int64,System.Int64)">
+  AreEqual(long, long, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(long expected, long actual, long delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_Int64_System_Int64_System_Int64_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.Int64,System.Int64,System.Int64,System.String)">
+  AreEqual(long, long, long, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(long expected, long actual, long delta, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_Int64_System_Int64_System_Int64_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.Int64,System.Int64,System.Int64,System.String,System.Object[])">
+  AreEqual(long, long, long, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(long expected, long actual, long delta, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_Single_System_Single_System_Single_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.Single,System.Single,System.Single)">
+  AreEqual(float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(float expected, float actual, float delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_Single_System_Single_System_Single_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.Single,System.Single,System.Single,System.String)">
+  AreEqual(float, float, float, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(float expected, float actual, float delta, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_Single_System_Single_System_Single_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.Single,System.Single,System.Single,System.String,System.Object[])">
+  AreEqual(float, float, float, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(float expected, float actual, float delta, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_String_System_String_System_Boolean_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.String,System.String,System.Boolean)">
+  AreEqual(string?, string?, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(string? expected, string? actual, bool ignoreCase)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ignoreCase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_String_System_String_System_Boolean_System_Globalization_CultureInfo_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.String,System.String,System.Boolean,System.Globalization.CultureInfo)">
+  AreEqual(string?, string?, bool, CultureInfo?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(string? expected, string? actual, bool ignoreCase, CultureInfo? culture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ignoreCase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_String_System_String_System_Boolean_System_Globalization_CultureInfo_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.String,System.String,System.Boolean,System.Globalization.CultureInfo,System.String)">
+  AreEqual(string?, string?, bool, CultureInfo?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(string? expected, string? actual, bool ignoreCase, CultureInfo? culture, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ignoreCase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_String_System_String_System_Boolean_System_Globalization_CultureInfo_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.String,System.String,System.Boolean,System.Globalization.CultureInfo,System.String,System.Object[])">
+  AreEqual(string?, string?, bool, CultureInfo?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(string? expected, string? actual, bool ignoreCase, CultureInfo? culture, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ignoreCase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_String_System_String_System_Boolean_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.String,System.String,System.Boolean,System.String)">
+  AreEqual(string?, string?, bool, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(string? expected, string? actual, bool ignoreCase, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ignoreCase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_System_String_System_String_System_Boolean_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(System.String,System.String,System.Boolean,System.String,System.Object[])">
+  AreEqual(string?, string?, bool, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual(string? expected, string? actual, bool ignoreCase, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ignoreCase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual__1_System_IEquatable___0__System_IEquatable___0__" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual``1(System.IEquatable{``0},System.IEquatable{``0})">
+  AreEqual&lt;T&gt;(IEquatable&lt;T&gt;?, IEquatable&lt;T&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual&lt;T&gt;(IEquatable&lt;T&gt;? expected, IEquatable&lt;T&gt;? actual)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual__1_System_IEquatable___0__System_IEquatable___0__System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual``1(System.IEquatable{``0},System.IEquatable{``0},System.String)">
+  AreEqual&lt;T&gt;(IEquatable&lt;T&gt;?, IEquatable&lt;T&gt;?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual&lt;T&gt;(IEquatable&lt;T&gt;? expected, IEquatable&lt;T&gt;? actual, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual__1_System_IEquatable___0__System_IEquatable___0__System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual``1(System.IEquatable{``0},System.IEquatable{``0},System.String,System.Object[])">
+  AreEqual&lt;T&gt;(IEquatable&lt;T&gt;?, IEquatable&lt;T&gt;?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual&lt;T&gt;(IEquatable&lt;T&gt;? expected, IEquatable&lt;T&gt;? actual, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual__1___0___0_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual``1(``0,``0)">
+  AreEqual&lt;T&gt;(T?, T?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual&lt;T&gt;(T? expected, T? actual)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual__1___0___0_System_Collections_Generic_IEqualityComparer___0__" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})">
+  AreEqual&lt;T&gt;(T?, T?, IEqualityComparer&lt;T&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual&lt;T&gt;(T? expected, T? actual, IEqualityComparer&lt;T&gt;? comparer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>comparer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual__1___0___0_System_Collections_Generic_IEqualityComparer___0__System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)">
+  AreEqual&lt;T&gt;(T?, T?, IEqualityComparer&lt;T&gt;?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual&lt;T&gt;(T? expected, T? actual, IEqualityComparer&lt;T&gt;? comparer, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>comparer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual__1___0___0_System_Collections_Generic_IEqualityComparer___0__System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.String,System.Object[])">
+  AreEqual&lt;T&gt;(T?, T?, IEqualityComparer&lt;T&gt;?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual&lt;T&gt;(T? expected, T? actual, IEqualityComparer&lt;T&gt;? comparer, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>comparer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual__1___0___0_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual``1(``0,``0,System.String)">
+  AreEqual&lt;T&gt;(T?, T?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual&lt;T&gt;(T? expected, T? actual, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreEqual__1___0___0_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual``1(``0,``0,System.String,System.Object[])">
+  AreEqual&lt;T&gt;(T?, T?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreEqual&lt;T&gt;(T? expected, T? actual, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_Decimal_System_Decimal_System_Decimal_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.Decimal,System.Decimal,System.Decimal)">
+  AreNotEqual(decimal, decimal, decimal)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(decimal notExpected, decimal actual, decimal delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_Decimal_System_Decimal_System_Decimal_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.Decimal,System.Decimal,System.Decimal,System.String)">
+  AreNotEqual(decimal, decimal, decimal, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(decimal notExpected, decimal actual, decimal delta, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_Decimal_System_Decimal_System_Decimal_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.Decimal,System.Decimal,System.Decimal,System.String,System.Object[])">
+  AreNotEqual(decimal, decimal, decimal, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(decimal notExpected, decimal actual, decimal delta, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_Double_System_Double_System_Double_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.Double,System.Double,System.Double)">
+  AreNotEqual(double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(double notExpected, double actual, double delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_Double_System_Double_System_Double_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.Double,System.Double,System.Double,System.String)">
+  AreNotEqual(double, double, double, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(double notExpected, double actual, double delta, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_Double_System_Double_System_Double_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.Double,System.Double,System.Double,System.String,System.Object[])">
+  AreNotEqual(double, double, double, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(double notExpected, double actual, double delta, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_Int64_System_Int64_System_Int64_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.Int64,System.Int64,System.Int64)">
+  AreNotEqual(long, long, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(long notExpected, long actual, long delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_Int64_System_Int64_System_Int64_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.Int64,System.Int64,System.Int64,System.String)">
+  AreNotEqual(long, long, long, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(long notExpected, long actual, long delta, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_Int64_System_Int64_System_Int64_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.Int64,System.Int64,System.Int64,System.String,System.Object[])">
+  AreNotEqual(long, long, long, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(long notExpected, long actual, long delta, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_Single_System_Single_System_Single_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.Single,System.Single,System.Single)">
+  AreNotEqual(float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(float notExpected, float actual, float delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_Single_System_Single_System_Single_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.Single,System.Single,System.Single,System.String)">
+  AreNotEqual(float, float, float, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(float notExpected, float actual, float delta, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_Single_System_Single_System_Single_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.Single,System.Single,System.Single,System.String,System.Object[])">
+  AreNotEqual(float, float, float, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(float notExpected, float actual, float delta, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_String_System_String_System_Boolean_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.String,System.String,System.Boolean)">
+  AreNotEqual(string?, string?, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(string? notExpected, string? actual, bool ignoreCase)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ignoreCase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_String_System_String_System_Boolean_System_Globalization_CultureInfo_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.String,System.String,System.Boolean,System.Globalization.CultureInfo)">
+  AreNotEqual(string?, string?, bool, CultureInfo?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(string? notExpected, string? actual, bool ignoreCase, CultureInfo? culture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ignoreCase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_String_System_String_System_Boolean_System_Globalization_CultureInfo_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.String,System.String,System.Boolean,System.Globalization.CultureInfo,System.String)">
+  AreNotEqual(string?, string?, bool, CultureInfo?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(string? notExpected, string? actual, bool ignoreCase, CultureInfo? culture, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ignoreCase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_String_System_String_System_Boolean_System_Globalization_CultureInfo_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.String,System.String,System.Boolean,System.Globalization.CultureInfo,System.String,System.Object[])">
+  AreNotEqual(string?, string?, bool, CultureInfo?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(string? notExpected, string? actual, bool ignoreCase, CultureInfo? culture, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ignoreCase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_String_System_String_System_Boolean_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.String,System.String,System.Boolean,System.String)">
+  AreNotEqual(string?, string?, bool, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(string? notExpected, string? actual, bool ignoreCase, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ignoreCase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_System_String_System_String_System_Boolean_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual(System.String,System.String,System.Boolean,System.String,System.Object[])">
+  AreNotEqual(string?, string?, bool, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual(string? notExpected, string? actual, bool ignoreCase, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>actual</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ignoreCase</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual__1___0___0_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual``1(``0,``0)">
+  AreNotEqual&lt;T&gt;(T?, T?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual&lt;T&gt;(T? notExpected, T? actual)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual__1___0___0_System_Collections_Generic_IEqualityComparer___0__" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})">
+  AreNotEqual&lt;T&gt;(T?, T?, IEqualityComparer&lt;T&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual&lt;T&gt;(T? notExpected, T? actual, IEqualityComparer&lt;T&gt;? comparer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>comparer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual__1___0___0_System_Collections_Generic_IEqualityComparer___0__System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)">
+  AreNotEqual&lt;T&gt;(T?, T?, IEqualityComparer&lt;T&gt;?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual&lt;T&gt;(T? notExpected, T? actual, IEqualityComparer&lt;T&gt;? comparer, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>comparer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual__1___0___0_System_Collections_Generic_IEqualityComparer___0__System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.String,System.Object[])">
+  AreNotEqual&lt;T&gt;(T?, T?, IEqualityComparer&lt;T&gt;?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual&lt;T&gt;(T? notExpected, T? actual, IEqualityComparer&lt;T&gt;? comparer, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>comparer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual__1___0___0_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual``1(``0,``0,System.String)">
+  AreNotEqual&lt;T&gt;(T?, T?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual&lt;T&gt;(T? notExpected, T? actual, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotEqual__1___0___0_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotEqual``1(``0,``0,System.String,System.Object[])">
+  AreNotEqual&lt;T&gt;(T?, T?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotEqual&lt;T&gt;(T? notExpected, T? actual, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotSame_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotSame*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotSame__1___0___0_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotSame``1(``0,``0)">
+  AreNotSame&lt;T&gt;(T?, T?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotSame&lt;T&gt;(T? notExpected, T? actual)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotSame_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotSame*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotSame__1___0___0_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotSame``1(``0,``0,System.String)">
+  AreNotSame&lt;T&gt;(T?, T?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotSame&lt;T&gt;(T? notExpected, T? actual, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotSame_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotSame*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreNotSame__1___0___0_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotSame``1(``0,``0,System.String,System.Object[])">
+  AreNotSame&lt;T&gt;(T?, T?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreNotSame&lt;T&gt;(T? notExpected, T? actual, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notExpected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreSame_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSame*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreSame__1___0___0_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSame``1(``0,``0)">
+  AreSame&lt;T&gt;(T?, T?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreSame&lt;T&gt;(T? expected, T? actual)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreSame_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSame*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreSame__1___0___0_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSame``1(``0,``0,System.String)">
+  AreSame&lt;T&gt;(T?, T?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreSame&lt;T&gt;(T? expected, T? actual, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreSame_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSame*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_AreSame__1___0___0_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSame``1(``0,``0,System.String,System.Object[])">
+  AreSame&lt;T&gt;(T?, T?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AreSame&lt;T&gt;(T? expected, T? actual, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expected</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_Equals_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Equals*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_Equals_System_Object_System_Object_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Equals(System.Object,System.Object)">
+  Equals(object?, object?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Equals(object? objA, object? objB)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objA</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>objB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_Fail_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_Fail" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail">
+  Fail()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Fail()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_Fail_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_Fail_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail(System.String)">
+  Fail(string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Fail(string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_Fail_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_Fail_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail(System.String,System.Object[])">
+  Fail(string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Fail(string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_Inconclusive_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_Inconclusive" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive">
+  Inconclusive()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Inconclusive()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_Inconclusive_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_Inconclusive_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive(System.String)">
+  Inconclusive(string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Inconclusive(string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_Inconclusive_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_Inconclusive_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive(System.String,System.Object[])">
+  Inconclusive(string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Inconclusive(string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsFalse_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsFalse_System_Boolean_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse(System.Boolean)">
+  IsFalse(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsFalse(bool condition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsFalse_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsFalse_System_Boolean_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse(System.Boolean,System.String)">
+  IsFalse(bool, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsFalse(bool condition, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsFalse_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsFalse_System_Boolean_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse(System.Boolean,System.String,System.Object[])">
+  IsFalse(bool, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsFalse(bool condition, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsFalse_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsFalse_System_Nullable_System_Boolean__" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse(System.Nullable{System.Boolean})">
+  IsFalse(bool?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsFalse(bool? condition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsFalse_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsFalse_System_Nullable_System_Boolean__System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse(System.Nullable{System.Boolean},System.String)">
+  IsFalse(bool?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsFalse(bool? condition, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsFalse_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsFalse_System_Nullable_System_Boolean__System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse(System.Nullable{System.Boolean},System.String,System.Object[])">
+  IsFalse(bool?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsFalse(bool? condition, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType_System_Object_System_Type_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType(System.Object,System.Type)">
+  IsInstanceOfType(object?, Type?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsInstanceOfType(object? value, Type? expectedType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>expectedType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType_System_Object_System_Type_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType(System.Object,System.Type,System.String)">
+  IsInstanceOfType(object?, Type?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsInstanceOfType(object? value, Type? expectedType, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>expectedType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType_System_Object_System_Type_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType(System.Object,System.Type,System.String,System.Object[])">
+  IsInstanceOfType(object?, Type?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsInstanceOfType(object? value, Type? expectedType, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>expectedType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType__1_System_Object_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType``1(System.Object)">
+  IsInstanceOfType&lt;T&gt;(object?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsInstanceOfType&lt;T&gt;(object? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType__1_System_Object_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType``1(System.Object,System.String)">
+  IsInstanceOfType&lt;T&gt;(object?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsInstanceOfType&lt;T&gt;(object? value, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType__1_System_Object_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType``1(System.Object,System.String,System.Object[])">
+  IsInstanceOfType&lt;T&gt;(object?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsInstanceOfType&lt;T&gt;(object? value, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType__1_System_Object___0__" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType``1(System.Object,``0@)">
+  IsInstanceOfType&lt;T&gt;(object?, out T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsInstanceOfType&lt;T&gt;(object? value, out T instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>instance</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType__1_System_Object___0__System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType``1(System.Object,``0@,System.String)">
+  IsInstanceOfType&lt;T&gt;(object?, out T, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsInstanceOfType&lt;T&gt;(object? value, out T instance, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>instance</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsInstanceOfType__1_System_Object___0__System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType``1(System.Object,``0@,System.String,System.Object[])">
+  IsInstanceOfType&lt;T&gt;(object?, out T, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsInstanceOfType&lt;T&gt;(object? value, out T instance, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>instance</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotInstanceOfType_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotInstanceOfType*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotInstanceOfType_System_Object_System_Type_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotInstanceOfType(System.Object,System.Type)">
+  IsNotInstanceOfType(object?, Type?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNotInstanceOfType(object? value, Type? wrongType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>wrongType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotInstanceOfType_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotInstanceOfType*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotInstanceOfType_System_Object_System_Type_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotInstanceOfType(System.Object,System.Type,System.String)">
+  IsNotInstanceOfType(object?, Type?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNotInstanceOfType(object? value, Type? wrongType, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>wrongType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotInstanceOfType_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotInstanceOfType*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotInstanceOfType_System_Object_System_Type_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotInstanceOfType(System.Object,System.Type,System.String,System.Object[])">
+  IsNotInstanceOfType(object?, Type?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNotInstanceOfType(object? value, Type? wrongType, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>wrongType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotInstanceOfType_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotInstanceOfType*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotInstanceOfType__1_System_Object_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotInstanceOfType``1(System.Object)">
+  IsNotInstanceOfType&lt;T&gt;(object?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNotInstanceOfType&lt;T&gt;(object? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotInstanceOfType_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotInstanceOfType*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotInstanceOfType__1_System_Object_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotInstanceOfType``1(System.Object,System.String)">
+  IsNotInstanceOfType&lt;T&gt;(object?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNotInstanceOfType&lt;T&gt;(object? value, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotInstanceOfType_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotInstanceOfType*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotInstanceOfType__1_System_Object_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotInstanceOfType``1(System.Object,System.String,System.Object[])">
+  IsNotInstanceOfType&lt;T&gt;(object?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNotInstanceOfType&lt;T&gt;(object? value, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotNull_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotNull_System_Object_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull(System.Object)">
+  IsNotNull(object?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNotNull(object? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotNull_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotNull_System_Object_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull(System.Object,System.String)">
+  IsNotNull(object?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNotNull(object? value, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotNull_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNotNull_System_Object_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull(System.Object,System.String,System.Object[])">
+  IsNotNull(object?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNotNull(object? value, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNull_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNull*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNull_System_Object_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNull(System.Object)">
+  IsNull(object?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNull(object? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNull_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNull*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNull_System_Object_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNull(System.Object,System.String)">
+  IsNull(object?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNull(object? value, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNull_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNull*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsNull_System_Object_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNull(System.Object,System.String,System.Object[])">
+  IsNull(object?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsNull(object? value, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsTrue_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsTrue_System_Boolean_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(System.Boolean)">
+  IsTrue(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsTrue(bool condition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsTrue_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsTrue_System_Boolean_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(System.Boolean,System.String)">
+  IsTrue(bool, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsTrue(bool condition, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsTrue_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsTrue_System_Boolean_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(System.Boolean,System.String,System.Object[])">
+  IsTrue(bool, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsTrue(bool condition, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsTrue_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsTrue_System_Nullable_System_Boolean__" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(System.Nullable{System.Boolean})">
+  IsTrue(bool?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsTrue(bool? condition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsTrue_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsTrue_System_Nullable_System_Boolean__System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(System.Nullable{System.Boolean},System.String)">
+  IsTrue(bool?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsTrue(bool? condition, string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsTrue_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_IsTrue_System_Nullable_System_Boolean__System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(System.Nullable{System.Boolean},System.String,System.Object[])">
+  IsTrue(bool?, string?, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IsTrue(bool? condition, string? message, params object?[]? parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ReplaceNullChars_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ReplaceNullChars*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ReplaceNullChars_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ReplaceNullChars(System.String)">
+  ReplaceNullChars(string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string? ReplaceNullChars(string? input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsExceptionAsync_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExceptionAsync*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsExceptionAsync__1_System_Func_System_Threading_Tasks_Task__" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExceptionAsync``1(System.Func{System.Threading.Tasks.Task})">
+  ThrowsExceptionAsync&lt;T&gt;(Func&lt;Task&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;T&gt; ThrowsExceptionAsync&lt;T&gt;(Func&lt;Task&gt; action) where T : Exception</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsExceptionAsync_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExceptionAsync*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsExceptionAsync__1_System_Func_System_Threading_Tasks_Task__System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExceptionAsync``1(System.Func{System.Threading.Tasks.Task},System.String)">
+  ThrowsExceptionAsync&lt;T&gt;(Func&lt;Task&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;T&gt; ThrowsExceptionAsync&lt;T&gt;(Func&lt;Task&gt; action, string message) where T : Exception</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsExceptionAsync_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExceptionAsync*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsExceptionAsync__1_System_Func_System_Threading_Tasks_Task__System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExceptionAsync``1(System.Func{System.Threading.Tasks.Task},System.String,System.Object[])">
+  ThrowsExceptionAsync&lt;T&gt;(Func&lt;Task&gt;, string, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;T&gt; ThrowsExceptionAsync&lt;T&gt;(Func&lt;Task&gt; action, string message, params object?[]? parameters) where T : Exception</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsException_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsException__1_System_Action_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException``1(System.Action)">
+  ThrowsException&lt;T&gt;(Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ThrowsException&lt;T&gt;(Action action) where T : Exception</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsException_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsException__1_System_Action_System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException``1(System.Action,System.String)">
+  ThrowsException&lt;T&gt;(Action, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ThrowsException&lt;T&gt;(Action action, string message) where T : Exception</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsException_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsException__1_System_Action_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException``1(System.Action,System.String,System.Object[])">
+  ThrowsException&lt;T&gt;(Action, string, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ThrowsException&lt;T&gt;(Action action, string message, params object?[]? parameters) where T : Exception</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsException_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsException__1_System_Func_System_Object__" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException``1(System.Func{System.Object})">
+  ThrowsException&lt;T&gt;(Func&lt;object?&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ThrowsException&lt;T&gt;(Func&lt;object?&gt; action) where T : Exception</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsException_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsException__1_System_Func_System_Object__System_String_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException``1(System.Func{System.Object},System.String)">
+  ThrowsException&lt;T&gt;(Func&lt;object?&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ThrowsException&lt;T&gt;(Func&lt;object?&gt; action, string message) where T : Exception</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsException_" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestTools_UnitTesting_Assert_ThrowsException__1_System_Func_System_Object__System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException``1(System.Func{System.Object},System.String,System.Object[])">
+  ThrowsException&lt;T&gt;(Func&lt;object?&gt;, string, params object?[]?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T ThrowsException&lt;T&gt;(Func&lt;object?&gt; action, string message, params object?[]? parameters) where T : Exception</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

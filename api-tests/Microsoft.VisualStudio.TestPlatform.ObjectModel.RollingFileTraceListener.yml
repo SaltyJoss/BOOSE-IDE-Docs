@@ -1,0 +1,1735 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener
+  id: RollingFileTraceListener
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.#ctor(System.String,System.String,System.Int32)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.Dispose(System.Boolean)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.WriteLine(System.String)
+  langs:
+  - csharp
+  - vb
+  name: RollingFileTraceListener
+  nameWithType: RollingFileTraceListener
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener
+  type: Class
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: 'public class RollingFileTraceListener : TextWriterTraceListener, IDisposable'
+    content.vb: Public Class RollingFileTraceListener Inherits TextWriterTraceListener Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.MarshalByRefObject
+  - System.Diagnostics.TraceListener
+  - System.Diagnostics.TextWriterTraceListener
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Diagnostics.TextWriterTraceListener.Close
+  - System.Diagnostics.TextWriterTraceListener.Flush
+  - System.Diagnostics.TextWriterTraceListener.Write(System.String)
+  - System.Diagnostics.TextWriterTraceListener.Writer
+  - System.Diagnostics.TraceListener.Dispose
+  - System.Diagnostics.TraceListener.GetSupportedAttributes
+  - System.Diagnostics.TraceListener.TraceTransfer(System.Diagnostics.TraceEventCache,System.String,System.Int32,System.String,System.Guid)
+  - System.Diagnostics.TraceListener.Fail(System.String)
+  - System.Diagnostics.TraceListener.Fail(System.String,System.String)
+  - System.Diagnostics.TraceListener.Write(System.Object)
+  - System.Diagnostics.TraceListener.Write(System.String,System.String)
+  - System.Diagnostics.TraceListener.Write(System.Object,System.String)
+  - System.Diagnostics.TraceListener.WriteIndent
+  - System.Diagnostics.TraceListener.WriteLine(System.Object)
+  - System.Diagnostics.TraceListener.WriteLine(System.String,System.String)
+  - System.Diagnostics.TraceListener.WriteLine(System.Object,System.String)
+  - System.Diagnostics.TraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)
+  - System.Diagnostics.TraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])
+  - System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32)
+  - System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)
+  - System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])
+  - System.Diagnostics.TraceListener.Attributes
+  - System.Diagnostics.TraceListener.Name
+  - System.Diagnostics.TraceListener.IsThreadSafe
+  - System.Diagnostics.TraceListener.IndentLevel
+  - System.Diagnostics.TraceListener.IndentSize
+  - System.Diagnostics.TraceListener.Filter
+  - System.Diagnostics.TraceListener.NeedIndent
+  - System.Diagnostics.TraceListener.TraceOutputOptions
+  - System.MarshalByRefObject.GetLifetimeService
+  - System.MarshalByRefObject.InitializeLifetimeService
+  - System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.#ctor(System.String,System.String,System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.#ctor(System.String,System.String,System.Int32)
+  id: '#ctor(System.String,System.String,System.Int32)'
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener
+  langs:
+  - csharp
+  - vb
+  name: RollingFileTraceListener(string, string, int)
+  nameWithType: RollingFileTraceListener.RollingFileTraceListener(string, string, int)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.RollingFileTraceListener(string, string, int)
+  type: Constructor
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: public RollingFileTraceListener(string fileName, string name, int rollSizeKB)
+    parameters:
+    - id: fileName
+      type: System.String
+    - id: name
+      type: System.String
+    - id: rollSizeKB
+      type: System.Int32
+    content.vb: Public Sub New(fileName As String, name As String, rollSizeKB As Integer)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.#ctor*
+  nameWithType.vb: RollingFileTraceListener.New(String, String, Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.New(String, String, Integer)
+  name.vb: New(String, String, Integer)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.WriteLine(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.WriteLine(System.String)
+  id: WriteLine(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener
+  langs:
+  - csharp
+  - vb
+  name: WriteLine(string?)
+  nameWithType: RollingFileTraceListener.WriteLine(string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.WriteLine(string?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  example: []
+  syntax:
+    content: public override void WriteLine(string? message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Overrides Sub WriteLine(message As String)
+  overridden: System.Diagnostics.TextWriterTraceListener.WriteLine(System.String)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.WriteLine*
+  nameWithType.vb: RollingFileTraceListener.WriteLine(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.WriteLine(String)
+  name.vb: WriteLine(String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.Dispose(System.Boolean)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: RollingFileTraceListener.Dispose(bool)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.Dispose(bool)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  example: []
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+  overridden: System.Diagnostics.TextWriterTraceListener.Dispose(System.Boolean)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.Dispose*
+  nameWithType.vb: RollingFileTraceListener.Dispose(Boolean)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.MarshalByRefObject
+  commentId: T:System.MarshalByRefObject
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject
+  name: MarshalByRefObject
+  nameWithType: MarshalByRefObject
+  fullName: System.MarshalByRefObject
+- uid: System.Diagnostics.TraceListener
+  commentId: T:System.Diagnostics.TraceListener
+  parent: System.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener
+  name: TraceListener
+  nameWithType: TraceListener
+  fullName: System.Diagnostics.TraceListener
+- uid: System.Diagnostics.TextWriterTraceListener
+  commentId: T:System.Diagnostics.TextWriterTraceListener
+  parent: System.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener
+  name: TextWriterTraceListener
+  nameWithType: TextWriterTraceListener
+  fullName: System.Diagnostics.TextWriterTraceListener
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Diagnostics.TextWriterTraceListener.Close
+  commentId: M:System.Diagnostics.TextWriterTraceListener.Close
+  parent: System.Diagnostics.TextWriterTraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener.close
+  name: Close()
+  nameWithType: TextWriterTraceListener.Close()
+  fullName: System.Diagnostics.TextWriterTraceListener.Close()
+  spec.csharp:
+  - uid: System.Diagnostics.TextWriterTraceListener.Close
+    name: Close
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener.close
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TextWriterTraceListener.Close
+    name: Close
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener.close
+  - name: (
+  - name: )
+- uid: System.Diagnostics.TextWriterTraceListener.Flush
+  commentId: M:System.Diagnostics.TextWriterTraceListener.Flush
+  parent: System.Diagnostics.TextWriterTraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener.flush
+  name: Flush()
+  nameWithType: TextWriterTraceListener.Flush()
+  fullName: System.Diagnostics.TextWriterTraceListener.Flush()
+  spec.csharp:
+  - uid: System.Diagnostics.TextWriterTraceListener.Flush
+    name: Flush
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener.flush
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TextWriterTraceListener.Flush
+    name: Flush
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener.flush
+  - name: (
+  - name: )
+- uid: System.Diagnostics.TextWriterTraceListener.Write(System.String)
+  commentId: M:System.Diagnostics.TextWriterTraceListener.Write(System.String)
+  parent: System.Diagnostics.TextWriterTraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener.write
+  name: Write(string)
+  nameWithType: TextWriterTraceListener.Write(string)
+  fullName: System.Diagnostics.TextWriterTraceListener.Write(string)
+  nameWithType.vb: TextWriterTraceListener.Write(String)
+  fullName.vb: System.Diagnostics.TextWriterTraceListener.Write(String)
+  name.vb: Write(String)
+  spec.csharp:
+  - uid: System.Diagnostics.TextWriterTraceListener.Write(System.String)
+    name: Write
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener.write
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TextWriterTraceListener.Write(System.String)
+    name: Write
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener.write
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Diagnostics.TextWriterTraceListener.Writer
+  commentId: P:System.Diagnostics.TextWriterTraceListener.Writer
+  parent: System.Diagnostics.TextWriterTraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener.writer
+  name: Writer
+  nameWithType: TextWriterTraceListener.Writer
+  fullName: System.Diagnostics.TextWriterTraceListener.Writer
+- uid: System.Diagnostics.TraceListener.Dispose
+  commentId: M:System.Diagnostics.TraceListener.Dispose
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.dispose#system-diagnostics-tracelistener-dispose
+  name: Dispose()
+  nameWithType: TraceListener.Dispose()
+  fullName: System.Diagnostics.TraceListener.Dispose()
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.dispose#system-diagnostics-tracelistener-dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.dispose#system-diagnostics-tracelistener-dispose
+  - name: (
+  - name: )
+- uid: System.Diagnostics.TraceListener.GetSupportedAttributes
+  commentId: M:System.Diagnostics.TraceListener.GetSupportedAttributes
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.getsupportedattributes
+  name: GetSupportedAttributes()
+  nameWithType: TraceListener.GetSupportedAttributes()
+  fullName: System.Diagnostics.TraceListener.GetSupportedAttributes()
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.GetSupportedAttributes
+    name: GetSupportedAttributes
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.getsupportedattributes
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.GetSupportedAttributes
+    name: GetSupportedAttributes
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.getsupportedattributes
+  - name: (
+  - name: )
+- uid: System.Diagnostics.TraceListener.TraceTransfer(System.Diagnostics.TraceEventCache,System.String,System.Int32,System.String,System.Guid)
+  commentId: M:System.Diagnostics.TraceListener.TraceTransfer(System.Diagnostics.TraceEventCache,System.String,System.Int32,System.String,System.Guid)
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.tracetransfer
+  name: TraceTransfer(TraceEventCache, string, int, string, Guid)
+  nameWithType: TraceListener.TraceTransfer(TraceEventCache, string, int, string, Guid)
+  fullName: System.Diagnostics.TraceListener.TraceTransfer(System.Diagnostics.TraceEventCache, string, int, string, System.Guid)
+  nameWithType.vb: TraceListener.TraceTransfer(TraceEventCache, String, Integer, String, Guid)
+  fullName.vb: System.Diagnostics.TraceListener.TraceTransfer(System.Diagnostics.TraceEventCache, String, Integer, String, System.Guid)
+  name.vb: TraceTransfer(TraceEventCache, String, Integer, String, Guid)
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.TraceTransfer(System.Diagnostics.TraceEventCache,System.String,System.Int32,System.String,System.Guid)
+    name: TraceTransfer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.tracetransfer
+  - name: (
+  - uid: System.Diagnostics.TraceEventCache
+    name: TraceEventCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventcache
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.TraceTransfer(System.Diagnostics.TraceEventCache,System.String,System.Int32,System.String,System.Guid)
+    name: TraceTransfer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.tracetransfer
+  - name: (
+  - uid: System.Diagnostics.TraceEventCache
+    name: TraceEventCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventcache
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Diagnostics.TraceListener.Fail(System.String)
+  commentId: M:System.Diagnostics.TraceListener.Fail(System.String)
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.fail#system-diagnostics-tracelistener-fail(system-string)
+  name: Fail(string)
+  nameWithType: TraceListener.Fail(string)
+  fullName: System.Diagnostics.TraceListener.Fail(string)
+  nameWithType.vb: TraceListener.Fail(String)
+  fullName.vb: System.Diagnostics.TraceListener.Fail(String)
+  name.vb: Fail(String)
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.Fail(System.String)
+    name: Fail
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.fail#system-diagnostics-tracelistener-fail(system-string)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.Fail(System.String)
+    name: Fail
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.fail#system-diagnostics-tracelistener-fail(system-string)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Diagnostics.TraceListener.Fail(System.String,System.String)
+  commentId: M:System.Diagnostics.TraceListener.Fail(System.String,System.String)
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.fail#system-diagnostics-tracelistener-fail(system-string-system-string)
+  name: Fail(string, string)
+  nameWithType: TraceListener.Fail(string, string)
+  fullName: System.Diagnostics.TraceListener.Fail(string, string)
+  nameWithType.vb: TraceListener.Fail(String, String)
+  fullName.vb: System.Diagnostics.TraceListener.Fail(String, String)
+  name.vb: Fail(String, String)
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.Fail(System.String,System.String)
+    name: Fail
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.fail#system-diagnostics-tracelistener-fail(system-string-system-string)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.Fail(System.String,System.String)
+    name: Fail
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.fail#system-diagnostics-tracelistener-fail(system-string-system-string)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Diagnostics.TraceListener.Write(System.Object)
+  commentId: M:System.Diagnostics.TraceListener.Write(System.Object)
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.write#system-diagnostics-tracelistener-write(system-object)
+  name: Write(object)
+  nameWithType: TraceListener.Write(object)
+  fullName: System.Diagnostics.TraceListener.Write(object)
+  nameWithType.vb: TraceListener.Write(Object)
+  fullName.vb: System.Diagnostics.TraceListener.Write(Object)
+  name.vb: Write(Object)
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.Write(System.Object)
+    name: Write
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.write#system-diagnostics-tracelistener-write(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.Write(System.Object)
+    name: Write
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.write#system-diagnostics-tracelistener-write(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Diagnostics.TraceListener.Write(System.String,System.String)
+  commentId: M:System.Diagnostics.TraceListener.Write(System.String,System.String)
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.write#system-diagnostics-tracelistener-write(system-string-system-string)
+  name: Write(string, string)
+  nameWithType: TraceListener.Write(string, string)
+  fullName: System.Diagnostics.TraceListener.Write(string, string)
+  nameWithType.vb: TraceListener.Write(String, String)
+  fullName.vb: System.Diagnostics.TraceListener.Write(String, String)
+  name.vb: Write(String, String)
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.Write(System.String,System.String)
+    name: Write
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.write#system-diagnostics-tracelistener-write(system-string-system-string)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.Write(System.String,System.String)
+    name: Write
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.write#system-diagnostics-tracelistener-write(system-string-system-string)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Diagnostics.TraceListener.Write(System.Object,System.String)
+  commentId: M:System.Diagnostics.TraceListener.Write(System.Object,System.String)
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.write#system-diagnostics-tracelistener-write(system-object-system-string)
+  name: Write(object, string)
+  nameWithType: TraceListener.Write(object, string)
+  fullName: System.Diagnostics.TraceListener.Write(object, string)
+  nameWithType.vb: TraceListener.Write(Object, String)
+  fullName.vb: System.Diagnostics.TraceListener.Write(Object, String)
+  name.vb: Write(Object, String)
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.Write(System.Object,System.String)
+    name: Write
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.write#system-diagnostics-tracelistener-write(system-object-system-string)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.Write(System.Object,System.String)
+    name: Write
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.write#system-diagnostics-tracelistener-write(system-object-system-string)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Diagnostics.TraceListener.WriteIndent
+  commentId: M:System.Diagnostics.TraceListener.WriteIndent
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.writeindent
+  name: WriteIndent()
+  nameWithType: TraceListener.WriteIndent()
+  fullName: System.Diagnostics.TraceListener.WriteIndent()
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.WriteIndent
+    name: WriteIndent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.writeindent
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.WriteIndent
+    name: WriteIndent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.writeindent
+  - name: (
+  - name: )
+- uid: System.Diagnostics.TraceListener.WriteLine(System.Object)
+  commentId: M:System.Diagnostics.TraceListener.WriteLine(System.Object)
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.writeline#system-diagnostics-tracelistener-writeline(system-object)
+  name: WriteLine(object)
+  nameWithType: TraceListener.WriteLine(object)
+  fullName: System.Diagnostics.TraceListener.WriteLine(object)
+  nameWithType.vb: TraceListener.WriteLine(Object)
+  fullName.vb: System.Diagnostics.TraceListener.WriteLine(Object)
+  name.vb: WriteLine(Object)
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.WriteLine(System.Object)
+    name: WriteLine
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.writeline#system-diagnostics-tracelistener-writeline(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.WriteLine(System.Object)
+    name: WriteLine
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.writeline#system-diagnostics-tracelistener-writeline(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Diagnostics.TraceListener.WriteLine(System.String,System.String)
+  commentId: M:System.Diagnostics.TraceListener.WriteLine(System.String,System.String)
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.writeline#system-diagnostics-tracelistener-writeline(system-string-system-string)
+  name: WriteLine(string, string)
+  nameWithType: TraceListener.WriteLine(string, string)
+  fullName: System.Diagnostics.TraceListener.WriteLine(string, string)
+  nameWithType.vb: TraceListener.WriteLine(String, String)
+  fullName.vb: System.Diagnostics.TraceListener.WriteLine(String, String)
+  name.vb: WriteLine(String, String)
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.WriteLine(System.String,System.String)
+    name: WriteLine
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.writeline#system-diagnostics-tracelistener-writeline(system-string-system-string)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.WriteLine(System.String,System.String)
+    name: WriteLine
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.writeline#system-diagnostics-tracelistener-writeline(system-string-system-string)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Diagnostics.TraceListener.WriteLine(System.Object,System.String)
+  commentId: M:System.Diagnostics.TraceListener.WriteLine(System.Object,System.String)
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.writeline#system-diagnostics-tracelistener-writeline(system-object-system-string)
+  name: WriteLine(object, string)
+  nameWithType: TraceListener.WriteLine(object, string)
+  fullName: System.Diagnostics.TraceListener.WriteLine(object, string)
+  nameWithType.vb: TraceListener.WriteLine(Object, String)
+  fullName.vb: System.Diagnostics.TraceListener.WriteLine(Object, String)
+  name.vb: WriteLine(Object, String)
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.WriteLine(System.Object,System.String)
+    name: WriteLine
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.writeline#system-diagnostics-tracelistener-writeline(system-object-system-string)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.WriteLine(System.Object,System.String)
+    name: WriteLine
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.writeline#system-diagnostics-tracelistener-writeline(system-object-system-string)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Diagnostics.TraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)
+  commentId: M:System.Diagnostics.TraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.tracedata#system-diagnostics-tracelistener-tracedata(system-diagnostics-traceeventcache-system-string-system-diagnostics-traceeventtype-system-int32-system-object)
+  name: TraceData(TraceEventCache, string, TraceEventType, int, object)
+  nameWithType: TraceListener.TraceData(TraceEventCache, string, TraceEventType, int, object)
+  fullName: System.Diagnostics.TraceListener.TraceData(System.Diagnostics.TraceEventCache, string, System.Diagnostics.TraceEventType, int, object)
+  nameWithType.vb: TraceListener.TraceData(TraceEventCache, String, TraceEventType, Integer, Object)
+  fullName.vb: System.Diagnostics.TraceListener.TraceData(System.Diagnostics.TraceEventCache, String, System.Diagnostics.TraceEventType, Integer, Object)
+  name.vb: TraceData(TraceEventCache, String, TraceEventType, Integer, Object)
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)
+    name: TraceData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.tracedata#system-diagnostics-tracelistener-tracedata(system-diagnostics-traceeventcache-system-string-system-diagnostics-traceeventtype-system-int32-system-object)
+  - name: (
+  - uid: System.Diagnostics.TraceEventCache
+    name: TraceEventCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventcache
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Diagnostics.TraceEventType
+    name: TraceEventType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventtype
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)
+    name: TraceData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.tracedata#system-diagnostics-tracelistener-tracedata(system-diagnostics-traceeventcache-system-string-system-diagnostics-traceeventtype-system-int32-system-object)
+  - name: (
+  - uid: System.Diagnostics.TraceEventCache
+    name: TraceEventCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventcache
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Diagnostics.TraceEventType
+    name: TraceEventType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventtype
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Diagnostics.TraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])
+  commentId: M:System.Diagnostics.TraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.tracedata#system-diagnostics-tracelistener-tracedata(system-diagnostics-traceeventcache-system-string-system-diagnostics-traceeventtype-system-int32-system-object())
+  name: TraceData(TraceEventCache, string, TraceEventType, int, params object[])
+  nameWithType: TraceListener.TraceData(TraceEventCache, string, TraceEventType, int, params object[])
+  fullName: System.Diagnostics.TraceListener.TraceData(System.Diagnostics.TraceEventCache, string, System.Diagnostics.TraceEventType, int, params object[])
+  nameWithType.vb: TraceListener.TraceData(TraceEventCache, String, TraceEventType, Integer, ParamArray Object())
+  fullName.vb: System.Diagnostics.TraceListener.TraceData(System.Diagnostics.TraceEventCache, String, System.Diagnostics.TraceEventType, Integer, ParamArray Object())
+  name.vb: TraceData(TraceEventCache, String, TraceEventType, Integer, ParamArray Object())
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])
+    name: TraceData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.tracedata#system-diagnostics-tracelistener-tracedata(system-diagnostics-traceeventcache-system-string-system-diagnostics-traceeventtype-system-int32-system-object())
+  - name: (
+  - uid: System.Diagnostics.TraceEventCache
+    name: TraceEventCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventcache
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Diagnostics.TraceEventType
+    name: TraceEventType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventtype
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])
+    name: TraceData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.tracedata#system-diagnostics-tracelistener-tracedata(system-diagnostics-traceeventcache-system-string-system-diagnostics-traceeventtype-system-int32-system-object())
+  - name: (
+  - uid: System.Diagnostics.TraceEventCache
+    name: TraceEventCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventcache
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Diagnostics.TraceEventType
+    name: TraceEventType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventtype
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32)
+  commentId: M:System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32)
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.traceevent#system-diagnostics-tracelistener-traceevent(system-diagnostics-traceeventcache-system-string-system-diagnostics-traceeventtype-system-int32)
+  name: TraceEvent(TraceEventCache, string, TraceEventType, int)
+  nameWithType: TraceListener.TraceEvent(TraceEventCache, string, TraceEventType, int)
+  fullName: System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache, string, System.Diagnostics.TraceEventType, int)
+  nameWithType.vb: TraceListener.TraceEvent(TraceEventCache, String, TraceEventType, Integer)
+  fullName.vb: System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache, String, System.Diagnostics.TraceEventType, Integer)
+  name.vb: TraceEvent(TraceEventCache, String, TraceEventType, Integer)
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32)
+    name: TraceEvent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.traceevent#system-diagnostics-tracelistener-traceevent(system-diagnostics-traceeventcache-system-string-system-diagnostics-traceeventtype-system-int32)
+  - name: (
+  - uid: System.Diagnostics.TraceEventCache
+    name: TraceEventCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventcache
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Diagnostics.TraceEventType
+    name: TraceEventType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventtype
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32)
+    name: TraceEvent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.traceevent#system-diagnostics-tracelistener-traceevent(system-diagnostics-traceeventcache-system-string-system-diagnostics-traceeventtype-system-int32)
+  - name: (
+  - uid: System.Diagnostics.TraceEventCache
+    name: TraceEventCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventcache
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Diagnostics.TraceEventType
+    name: TraceEventType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventtype
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)
+  commentId: M:System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.traceevent#system-diagnostics-tracelistener-traceevent(system-diagnostics-traceeventcache-system-string-system-diagnostics-traceeventtype-system-int32-system-string)
+  name: TraceEvent(TraceEventCache, string, TraceEventType, int, string)
+  nameWithType: TraceListener.TraceEvent(TraceEventCache, string, TraceEventType, int, string)
+  fullName: System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache, string, System.Diagnostics.TraceEventType, int, string)
+  nameWithType.vb: TraceListener.TraceEvent(TraceEventCache, String, TraceEventType, Integer, String)
+  fullName.vb: System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache, String, System.Diagnostics.TraceEventType, Integer, String)
+  name.vb: TraceEvent(TraceEventCache, String, TraceEventType, Integer, String)
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)
+    name: TraceEvent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.traceevent#system-diagnostics-tracelistener-traceevent(system-diagnostics-traceeventcache-system-string-system-diagnostics-traceeventtype-system-int32-system-string)
+  - name: (
+  - uid: System.Diagnostics.TraceEventCache
+    name: TraceEventCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventcache
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Diagnostics.TraceEventType
+    name: TraceEventType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventtype
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)
+    name: TraceEvent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.traceevent#system-diagnostics-tracelistener-traceevent(system-diagnostics-traceeventcache-system-string-system-diagnostics-traceeventtype-system-int32-system-string)
+  - name: (
+  - uid: System.Diagnostics.TraceEventCache
+    name: TraceEventCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventcache
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Diagnostics.TraceEventType
+    name: TraceEventType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventtype
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])
+  commentId: M:System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.traceevent#system-diagnostics-tracelistener-traceevent(system-diagnostics-traceeventcache-system-string-system-diagnostics-traceeventtype-system-int32-system-string-system-object())
+  name: TraceEvent(TraceEventCache, string, TraceEventType, int, string, params object[])
+  nameWithType: TraceListener.TraceEvent(TraceEventCache, string, TraceEventType, int, string, params object[])
+  fullName: System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache, string, System.Diagnostics.TraceEventType, int, string, params object[])
+  nameWithType.vb: TraceListener.TraceEvent(TraceEventCache, String, TraceEventType, Integer, String, ParamArray Object())
+  fullName.vb: System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache, String, System.Diagnostics.TraceEventType, Integer, String, ParamArray Object())
+  name.vb: TraceEvent(TraceEventCache, String, TraceEventType, Integer, String, ParamArray Object())
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])
+    name: TraceEvent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.traceevent#system-diagnostics-tracelistener-traceevent(system-diagnostics-traceeventcache-system-string-system-diagnostics-traceeventtype-system-int32-system-string-system-object())
+  - name: (
+  - uid: System.Diagnostics.TraceEventCache
+    name: TraceEventCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventcache
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Diagnostics.TraceEventType
+    name: TraceEventType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventtype
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])
+    name: TraceEvent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.traceevent#system-diagnostics-tracelistener-traceevent(system-diagnostics-traceeventcache-system-string-system-diagnostics-traceeventtype-system-int32-system-string-system-object())
+  - name: (
+  - uid: System.Diagnostics.TraceEventCache
+    name: TraceEventCache
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventcache
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Diagnostics.TraceEventType
+    name: TraceEventType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.traceeventtype
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Diagnostics.TraceListener.Attributes
+  commentId: P:System.Diagnostics.TraceListener.Attributes
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.attributes
+  name: Attributes
+  nameWithType: TraceListener.Attributes
+  fullName: System.Diagnostics.TraceListener.Attributes
+- uid: System.Diagnostics.TraceListener.Name
+  commentId: P:System.Diagnostics.TraceListener.Name
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.name
+  name: Name
+  nameWithType: TraceListener.Name
+  fullName: System.Diagnostics.TraceListener.Name
+- uid: System.Diagnostics.TraceListener.IsThreadSafe
+  commentId: P:System.Diagnostics.TraceListener.IsThreadSafe
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.isthreadsafe
+  name: IsThreadSafe
+  nameWithType: TraceListener.IsThreadSafe
+  fullName: System.Diagnostics.TraceListener.IsThreadSafe
+- uid: System.Diagnostics.TraceListener.IndentLevel
+  commentId: P:System.Diagnostics.TraceListener.IndentLevel
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.indentlevel
+  name: IndentLevel
+  nameWithType: TraceListener.IndentLevel
+  fullName: System.Diagnostics.TraceListener.IndentLevel
+- uid: System.Diagnostics.TraceListener.IndentSize
+  commentId: P:System.Diagnostics.TraceListener.IndentSize
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.indentsize
+  name: IndentSize
+  nameWithType: TraceListener.IndentSize
+  fullName: System.Diagnostics.TraceListener.IndentSize
+- uid: System.Diagnostics.TraceListener.Filter
+  commentId: P:System.Diagnostics.TraceListener.Filter
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.filter
+  name: Filter
+  nameWithType: TraceListener.Filter
+  fullName: System.Diagnostics.TraceListener.Filter
+- uid: System.Diagnostics.TraceListener.NeedIndent
+  commentId: P:System.Diagnostics.TraceListener.NeedIndent
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.needindent
+  name: NeedIndent
+  nameWithType: TraceListener.NeedIndent
+  fullName: System.Diagnostics.TraceListener.NeedIndent
+- uid: System.Diagnostics.TraceListener.TraceOutputOptions
+  commentId: P:System.Diagnostics.TraceListener.TraceOutputOptions
+  parent: System.Diagnostics.TraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelistener.traceoutputoptions
+  name: TraceOutputOptions
+  nameWithType: TraceListener.TraceOutputOptions
+  fullName: System.Diagnostics.TraceListener.TraceOutputOptions
+- uid: System.MarshalByRefObject.GetLifetimeService
+  commentId: M:System.MarshalByRefObject.GetLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  name: GetLifetimeService()
+  nameWithType: MarshalByRefObject.GetLifetimeService()
+  fullName: System.MarshalByRefObject.GetLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  - name: (
+  - name: )
+- uid: System.MarshalByRefObject.InitializeLifetimeService
+  commentId: M:System.MarshalByRefObject.InitializeLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  name: InitializeLifetimeService()
+  nameWithType: MarshalByRefObject.InitializeLifetimeService()
+  fullName: System.MarshalByRefObject.InitializeLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  - name: (
+  - name: )
+- uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  commentId: M:System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  name: MemberwiseClone(bool)
+  nameWithType: MarshalByRefObject.MemberwiseClone(bool)
+  fullName: System.MarshalByRefObject.MemberwiseClone(bool)
+  nameWithType.vb: MarshalByRefObject.MemberwiseClone(Boolean)
+  fullName.vb: System.MarshalByRefObject.MemberwiseClone(Boolean)
+  name.vb: MemberwiseClone(Boolean)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Diagnostics
+  commentId: N:System.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Diagnostics
+  nameWithType: System.Diagnostics
+  fullName: System.Diagnostics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_RollingFileTraceListener__ctor_System_String_System_String_System_Int32_
+  name: RollingFileTraceListener
+  nameWithType: RollingFileTraceListener.RollingFileTraceListener
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.RollingFileTraceListener
+  nameWithType.vb: RollingFileTraceListener.New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Diagnostics.TextWriterTraceListener.WriteLine(System.String)
+  commentId: M:System.Diagnostics.TextWriterTraceListener.WriteLine(System.String)
+  parent: System.Diagnostics.TextWriterTraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener.writeline
+  name: WriteLine(string)
+  nameWithType: TextWriterTraceListener.WriteLine(string)
+  fullName: System.Diagnostics.TextWriterTraceListener.WriteLine(string)
+  nameWithType.vb: TextWriterTraceListener.WriteLine(String)
+  fullName.vb: System.Diagnostics.TextWriterTraceListener.WriteLine(String)
+  name.vb: WriteLine(String)
+  spec.csharp:
+  - uid: System.Diagnostics.TextWriterTraceListener.WriteLine(System.String)
+    name: WriteLine
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener.writeline
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TextWriterTraceListener.WriteLine(System.String)
+    name: WriteLine
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener.writeline
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.WriteLine*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.WriteLine
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_RollingFileTraceListener_WriteLine_System_String_
+  name: WriteLine
+  nameWithType: RollingFileTraceListener.WriteLine
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.WriteLine
+- uid: System.Diagnostics.TextWriterTraceListener.Dispose(System.Boolean)
+  commentId: M:System.Diagnostics.TextWriterTraceListener.Dispose(System.Boolean)
+  parent: System.Diagnostics.TextWriterTraceListener
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener.dispose
+  name: Dispose(bool)
+  nameWithType: TextWriterTraceListener.Dispose(bool)
+  fullName: System.Diagnostics.TextWriterTraceListener.Dispose(bool)
+  nameWithType.vb: TextWriterTraceListener.Dispose(Boolean)
+  fullName.vb: System.Diagnostics.TextWriterTraceListener.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: System.Diagnostics.TextWriterTraceListener.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener.dispose
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Diagnostics.TextWriterTraceListener.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics.textwritertracelistener.dispose
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.Dispose*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.Dispose
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_RollingFileTraceListener_Dispose_System_Boolean_
+  name: Dispose
+  nameWithType: RollingFileTraceListener.Dispose
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.RollingFileTraceListener.Dispose
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

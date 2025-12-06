@@ -1,0 +1,907 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  commentId: T:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  id: TestResult
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting
+  children:
+  - Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.#ctor
+  - Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DatarowIndex
+  - Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DebugTrace
+  - Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DisplayName
+  - Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Duration
+  - Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ExecutionId
+  - Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.InnerResultsCount
+  - Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.LogError
+  - Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.LogOutput
+  - Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Outcome
+  - Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ParentExecId
+  - Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ResultFiles
+  - Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ReturnValue
+  - Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestContextMessages
+  - Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestFailureException
+  langs:
+  - csharp
+  - vb
+  name: TestResult
+  nameWithType: TestResult
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  type: Class
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public class TestResult
+    content.vb: Public Class TestResult
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.#ctor
+  commentId: M:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.#ctor
+  id: '#ctor'
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  langs:
+  - csharp
+  - vb
+  name: TestResult()
+  nameWithType: TestResult.TestResult()
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestResult()
+  type: Constructor
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public TestResult()
+    content.vb: Public Sub New()
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.#ctor*
+  nameWithType.vb: TestResult.New()
+  fullName.vb: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.New()
+  name.vb: New()
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DisplayName
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DisplayName
+  id: DisplayName
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: TestResult.DisplayName
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DisplayName
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public string? DisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DisplayName As String
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DisplayName*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Outcome
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Outcome
+  id: Outcome
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  langs:
+  - csharp
+  - vb
+  name: Outcome
+  nameWithType: TestResult.Outcome
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Outcome
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public UnitTestOutcome Outcome { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestOutcome
+    content.vb: Public Property Outcome As UnitTestOutcome
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Outcome*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestFailureException
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestFailureException
+  id: TestFailureException
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  langs:
+  - csharp
+  - vb
+  name: TestFailureException
+  nameWithType: TestResult.TestFailureException
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestFailureException
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public Exception? TestFailureException { get; set; }
+    parameters: []
+    return:
+      type: System.Exception
+    content.vb: Public Property TestFailureException As Exception
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestFailureException*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.LogOutput
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.LogOutput
+  id: LogOutput
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  langs:
+  - csharp
+  - vb
+  name: LogOutput
+  nameWithType: TestResult.LogOutput
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.LogOutput
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public string? LogOutput { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LogOutput As String
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.LogOutput*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.LogError
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.LogError
+  id: LogError
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  langs:
+  - csharp
+  - vb
+  name: LogError
+  nameWithType: TestResult.LogError
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.LogError
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public string? LogError { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LogError As String
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.LogError*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DebugTrace
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DebugTrace
+  id: DebugTrace
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  langs:
+  - csharp
+  - vb
+  name: DebugTrace
+  nameWithType: TestResult.DebugTrace
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DebugTrace
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public string? DebugTrace { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DebugTrace As String
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DebugTrace*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestContextMessages
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestContextMessages
+  id: TestContextMessages
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  langs:
+  - csharp
+  - vb
+  name: TestContextMessages
+  nameWithType: TestResult.TestContextMessages
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestContextMessages
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public string? TestContextMessages { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TestContextMessages As String
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestContextMessages*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ExecutionId
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ExecutionId
+  id: ExecutionId
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  langs:
+  - csharp
+  - vb
+  name: ExecutionId
+  nameWithType: TestResult.ExecutionId
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ExecutionId
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public Guid ExecutionId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property ExecutionId As Guid
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ExecutionId*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ParentExecId
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ParentExecId
+  id: ParentExecId
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  langs:
+  - csharp
+  - vb
+  name: ParentExecId
+  nameWithType: TestResult.ParentExecId
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ParentExecId
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public Guid ParentExecId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property ParentExecId As Guid
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ParentExecId*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.InnerResultsCount
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.InnerResultsCount
+  id: InnerResultsCount
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  langs:
+  - csharp
+  - vb
+  name: InnerResultsCount
+  nameWithType: TestResult.InnerResultsCount
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.InnerResultsCount
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public int InnerResultsCount { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property InnerResultsCount As Integer
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.InnerResultsCount*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Duration
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Duration
+  id: Duration
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: TestResult.Duration
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Duration
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public TimeSpan Duration { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property Duration As TimeSpan
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Duration*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DatarowIndex
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DatarowIndex
+  id: DatarowIndex
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  langs:
+  - csharp
+  - vb
+  name: DatarowIndex
+  nameWithType: TestResult.DatarowIndex
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DatarowIndex
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public int DatarowIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DatarowIndex As Integer
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DatarowIndex*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ReturnValue
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ReturnValue
+  id: ReturnValue
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  langs:
+  - csharp
+  - vb
+  name: ReturnValue
+  nameWithType: TestResult.ReturnValue
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ReturnValue
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public object? ReturnValue { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property ReturnValue As Object
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ReturnValue*
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ResultFiles
+  commentId: P:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ResultFiles
+  id: ResultFiles
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult
+  langs:
+  - csharp
+  - vb
+  name: ResultFiles
+  nameWithType: TestResult.ResultFiles
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ResultFiles
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting
+  syntax:
+    content: public IList<string>? ResultFiles { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.String}
+    content.vb: Public Property ResultFiles As IList(Of String)
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ResultFiles*
+references:
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting
+  commentId: N:Microsoft.VisualStudio.TestTools.UnitTesting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.VisualStudio.TestTools.UnitTesting
+  nameWithType: Microsoft.VisualStudio.TestTools.UnitTesting
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools
+    name: TestTools
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools.UnitTesting
+    name: UnitTesting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools
+    name: TestTools
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools.UnitTesting
+    name: UnitTesting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestResult__ctor
+  name: TestResult
+  nameWithType: TestResult.TestResult
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestResult
+  nameWithType.vb: TestResult.New
+  fullName.vb: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.New
+  name.vb: New
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DisplayName*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DisplayName
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestResult_DisplayName
+  name: DisplayName
+  nameWithType: TestResult.DisplayName
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DisplayName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Outcome*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Outcome
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestResult_Outcome
+  name: Outcome
+  nameWithType: TestResult.Outcome
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Outcome
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestOutcome
+  commentId: T:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestOutcome
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.unittestoutcome
+  name: UnitTestOutcome
+  nameWithType: UnitTestOutcome
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestOutcome
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestFailureException*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestFailureException
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestResult_TestFailureException
+  name: TestFailureException
+  nameWithType: TestResult.TestFailureException
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestFailureException
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.LogOutput*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.LogOutput
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestResult_LogOutput
+  name: LogOutput
+  nameWithType: TestResult.LogOutput
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.LogOutput
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.LogError*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.LogError
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestResult_LogError
+  name: LogError
+  nameWithType: TestResult.LogError
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.LogError
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DebugTrace*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DebugTrace
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestResult_DebugTrace
+  name: DebugTrace
+  nameWithType: TestResult.DebugTrace
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DebugTrace
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestContextMessages*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestContextMessages
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestResult_TestContextMessages
+  name: TestContextMessages
+  nameWithType: TestResult.TestContextMessages
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.TestContextMessages
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ExecutionId*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ExecutionId
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestResult_ExecutionId
+  name: ExecutionId
+  nameWithType: TestResult.ExecutionId
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ExecutionId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ParentExecId*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ParentExecId
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestResult_ParentExecId
+  name: ParentExecId
+  nameWithType: TestResult.ParentExecId
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ParentExecId
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.InnerResultsCount*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.InnerResultsCount
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestResult_InnerResultsCount
+  name: InnerResultsCount
+  nameWithType: TestResult.InnerResultsCount
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.InnerResultsCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Duration*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Duration
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestResult_Duration
+  name: Duration
+  nameWithType: TestResult.Duration
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.Duration
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DatarowIndex*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DatarowIndex
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestResult_DatarowIndex
+  name: DatarowIndex
+  nameWithType: TestResult.DatarowIndex
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.DatarowIndex
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ReturnValue*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ReturnValue
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestResult_ReturnValue
+  name: ReturnValue
+  nameWithType: TestResult.ReturnValue
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ReturnValue
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ResultFiles*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ResultFiles
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestResult_ResultFiles
+  name: ResultFiles
+  nameWithType: TestResult.ResultFiles
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestResult.ResultFiles
+- uid: System.Collections.Generic.IList{System.String}
+  commentId: T:System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<string>
+  nameWithType: IList<string>
+  fullName: System.Collections.Generic.IList<string>
+  nameWithType.vb: IList(Of String)
+  fullName.vb: System.Collections.Generic.IList(Of String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

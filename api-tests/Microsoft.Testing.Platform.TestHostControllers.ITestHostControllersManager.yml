@@ -1,0 +1,425 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager
+  commentId: T:Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager
+  id: ITestHostControllersManager
+  parent: Microsoft.Testing.Platform.TestHostControllers
+  children:
+  - Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddEnvironmentVariableProvider(System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostEnvironmentVariableProvider})
+  - Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddEnvironmentVariableProvider``1(Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory{``0})
+  - Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddProcessLifetimeHandler(System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler})
+  - Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddProcessLifetimeHandler``1(Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory{``0})
+  langs:
+  - csharp
+  - vb
+  name: ITestHostControllersManager
+  nameWithType: ITestHostControllersManager
+  fullName: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager
+  type: Interface
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.TestHostControllers
+  syntax:
+    content: public interface ITestHostControllersManager
+    content.vb: Public Interface ITestHostControllersManager
+- uid: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddEnvironmentVariableProvider(System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostEnvironmentVariableProvider})
+  commentId: M:Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddEnvironmentVariableProvider(System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostEnvironmentVariableProvider})
+  id: AddEnvironmentVariableProvider(System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostEnvironmentVariableProvider})
+  parent: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager
+  langs:
+  - csharp
+  - vb
+  name: AddEnvironmentVariableProvider(Func<IServiceProvider, ITestHostEnvironmentVariableProvider>)
+  nameWithType: ITestHostControllersManager.AddEnvironmentVariableProvider(Func<IServiceProvider, ITestHostEnvironmentVariableProvider>)
+  fullName: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddEnvironmentVariableProvider(System.Func<System.IServiceProvider, Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostEnvironmentVariableProvider>)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.TestHostControllers
+  syntax:
+    content: void AddEnvironmentVariableProvider(Func<IServiceProvider, ITestHostEnvironmentVariableProvider> environmentVariableProviderFactory)
+    parameters:
+    - id: environmentVariableProviderFactory
+      type: System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostEnvironmentVariableProvider}
+    content.vb: Sub AddEnvironmentVariableProvider(environmentVariableProviderFactory As Func(Of IServiceProvider, ITestHostEnvironmentVariableProvider))
+  overload: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddEnvironmentVariableProvider*
+  nameWithType.vb: ITestHostControllersManager.AddEnvironmentVariableProvider(Func(Of IServiceProvider, ITestHostEnvironmentVariableProvider))
+  fullName.vb: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddEnvironmentVariableProvider(System.Func(Of System.IServiceProvider, Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostEnvironmentVariableProvider))
+  name.vb: AddEnvironmentVariableProvider(Func(Of IServiceProvider, ITestHostEnvironmentVariableProvider))
+- uid: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddEnvironmentVariableProvider``1(Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory{``0})
+  commentId: M:Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddEnvironmentVariableProvider``1(Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory{``0})
+  id: AddEnvironmentVariableProvider``1(Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory{``0})
+  parent: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager
+  langs:
+  - csharp
+  - vb
+  name: AddEnvironmentVariableProvider<T>(CompositeExtensionFactory<T>)
+  nameWithType: ITestHostControllersManager.AddEnvironmentVariableProvider<T>(CompositeExtensionFactory<T>)
+  fullName: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddEnvironmentVariableProvider<T>(Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory<T>)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.TestHostControllers
+  syntax:
+    content: 'void AddEnvironmentVariableProvider<T>(CompositeExtensionFactory<T> compositeServiceFactory) where T : class, ITestHostEnvironmentVariableProvider'
+    parameters:
+    - id: compositeServiceFactory
+      type: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory{{T}}
+    typeParameters:
+    - id: T
+    content.vb: Sub AddEnvironmentVariableProvider(Of T As {Class, ITestHostEnvironmentVariableProvider})(compositeServiceFactory As CompositeExtensionFactory(Of T))
+  overload: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddEnvironmentVariableProvider*
+  nameWithType.vb: ITestHostControllersManager.AddEnvironmentVariableProvider(Of T)(CompositeExtensionFactory(Of T))
+  fullName.vb: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddEnvironmentVariableProvider(Of T)(Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory(Of T))
+  name.vb: AddEnvironmentVariableProvider(Of T)(CompositeExtensionFactory(Of T))
+- uid: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddProcessLifetimeHandler(System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler})
+  commentId: M:Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddProcessLifetimeHandler(System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler})
+  id: AddProcessLifetimeHandler(System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler})
+  parent: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager
+  langs:
+  - csharp
+  - vb
+  name: AddProcessLifetimeHandler(Func<IServiceProvider, ITestHostProcessLifetimeHandler>)
+  nameWithType: ITestHostControllersManager.AddProcessLifetimeHandler(Func<IServiceProvider, ITestHostProcessLifetimeHandler>)
+  fullName: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddProcessLifetimeHandler(System.Func<System.IServiceProvider, Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler>)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.TestHostControllers
+  syntax:
+    content: void AddProcessLifetimeHandler(Func<IServiceProvider, ITestHostProcessLifetimeHandler> lifetimeHandler)
+    parameters:
+    - id: lifetimeHandler
+      type: System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler}
+    content.vb: Sub AddProcessLifetimeHandler(lifetimeHandler As Func(Of IServiceProvider, ITestHostProcessLifetimeHandler))
+  overload: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddProcessLifetimeHandler*
+  nameWithType.vb: ITestHostControllersManager.AddProcessLifetimeHandler(Func(Of IServiceProvider, ITestHostProcessLifetimeHandler))
+  fullName.vb: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddProcessLifetimeHandler(System.Func(Of System.IServiceProvider, Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler))
+  name.vb: AddProcessLifetimeHandler(Func(Of IServiceProvider, ITestHostProcessLifetimeHandler))
+- uid: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddProcessLifetimeHandler``1(Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory{``0})
+  commentId: M:Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddProcessLifetimeHandler``1(Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory{``0})
+  id: AddProcessLifetimeHandler``1(Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory{``0})
+  parent: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager
+  langs:
+  - csharp
+  - vb
+  name: AddProcessLifetimeHandler<T>(CompositeExtensionFactory<T>)
+  nameWithType: ITestHostControllersManager.AddProcessLifetimeHandler<T>(CompositeExtensionFactory<T>)
+  fullName: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddProcessLifetimeHandler<T>(Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory<T>)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.TestHostControllers
+  syntax:
+    content: 'void AddProcessLifetimeHandler<T>(CompositeExtensionFactory<T> compositeServiceFactory) where T : class, ITestHostProcessLifetimeHandler'
+    parameters:
+    - id: compositeServiceFactory
+      type: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory{{T}}
+    typeParameters:
+    - id: T
+    content.vb: Sub AddProcessLifetimeHandler(Of T As {Class, ITestHostProcessLifetimeHandler})(compositeServiceFactory As CompositeExtensionFactory(Of T))
+  overload: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddProcessLifetimeHandler*
+  nameWithType.vb: ITestHostControllersManager.AddProcessLifetimeHandler(Of T)(CompositeExtensionFactory(Of T))
+  fullName.vb: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddProcessLifetimeHandler(Of T)(Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory(Of T))
+  name.vb: AddProcessLifetimeHandler(Of T)(CompositeExtensionFactory(Of T))
+references:
+- uid: Microsoft.Testing.Platform.TestHostControllers
+  commentId: N:Microsoft.Testing.Platform.TestHostControllers
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.TestHostControllers
+  nameWithType: Microsoft.Testing.Platform.TestHostControllers
+  fullName: Microsoft.Testing.Platform.TestHostControllers
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.TestHostControllers
+    name: TestHostControllers
+    isExternal: true
+    href: Microsoft.Testing.Platform.TestHostControllers.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.TestHostControllers
+    name: TestHostControllers
+    isExternal: true
+    href: Microsoft.Testing.Platform.TestHostControllers.html
+- uid: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddEnvironmentVariableProvider*
+  commentId: Overload:Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddEnvironmentVariableProvider
+  isExternal: true
+  href: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.html#Microsoft_Testing_Platform_TestHostControllers_ITestHostControllersManager_AddEnvironmentVariableProvider_System_Func_System_IServiceProvider_Microsoft_Testing_Platform_Extensions_TestHostControllers_ITestHostEnvironmentVariableProvider__
+  name: AddEnvironmentVariableProvider
+  nameWithType: ITestHostControllersManager.AddEnvironmentVariableProvider
+  fullName: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddEnvironmentVariableProvider
+- uid: System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostEnvironmentVariableProvider}
+  commentId: T:System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostEnvironmentVariableProvider}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<IServiceProvider, ITestHostEnvironmentVariableProvider>
+  nameWithType: Func<IServiceProvider, ITestHostEnvironmentVariableProvider>
+  fullName: System.Func<System.IServiceProvider, Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostEnvironmentVariableProvider>
+  nameWithType.vb: Func(Of IServiceProvider, ITestHostEnvironmentVariableProvider)
+  fullName.vb: System.Func(Of System.IServiceProvider, Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostEnvironmentVariableProvider)
+  name.vb: Func(Of IServiceProvider, ITestHostEnvironmentVariableProvider)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostEnvironmentVariableProvider
+    name: ITestHostEnvironmentVariableProvider
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostEnvironmentVariableProvider.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostEnvironmentVariableProvider
+    name: ITestHostEnvironmentVariableProvider
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostEnvironmentVariableProvider.html
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory{{T}}
+  commentId: T:Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory{``0}
+  parent: Microsoft.Testing.Platform.Extensions
+  definition: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory`1
+  href: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory-1.html
+  name: CompositeExtensionFactory<T>
+  nameWithType: CompositeExtensionFactory<T>
+  fullName: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory<T>
+  nameWithType.vb: CompositeExtensionFactory(Of T)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory(Of T)
+  name.vb: CompositeExtensionFactory(Of T)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory`1
+    name: CompositeExtensionFactory
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory`1
+    name: CompositeExtensionFactory
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory`1
+  commentId: T:Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory`1
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory-1.html
+  name: CompositeExtensionFactory<TExtension>
+  nameWithType: CompositeExtensionFactory<TExtension>
+  fullName: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory<TExtension>
+  nameWithType.vb: CompositeExtensionFactory(Of TExtension)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory(Of TExtension)
+  name.vb: CompositeExtensionFactory(Of TExtension)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory`1
+    name: CompositeExtensionFactory
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory-1.html
+  - name: <
+  - name: TExtension
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory`1
+    name: CompositeExtensionFactory
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.CompositeExtensionFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TExtension
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions
+  commentId: N:Microsoft.Testing.Platform.Extensions
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Extensions
+  nameWithType: Microsoft.Testing.Platform.Extensions
+  fullName: Microsoft.Testing.Platform.Extensions
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+- uid: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddProcessLifetimeHandler*
+  commentId: Overload:Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddProcessLifetimeHandler
+  isExternal: true
+  href: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.html#Microsoft_Testing_Platform_TestHostControllers_ITestHostControllersManager_AddProcessLifetimeHandler_System_Func_System_IServiceProvider_Microsoft_Testing_Platform_Extensions_TestHostControllers_ITestHostProcessLifetimeHandler__
+  name: AddProcessLifetimeHandler
+  nameWithType: ITestHostControllersManager.AddProcessLifetimeHandler
+  fullName: Microsoft.Testing.Platform.TestHostControllers.ITestHostControllersManager.AddProcessLifetimeHandler
+- uid: System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler}
+  commentId: T:System.Func{System.IServiceProvider,Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<IServiceProvider, ITestHostProcessLifetimeHandler>
+  nameWithType: Func<IServiceProvider, ITestHostProcessLifetimeHandler>
+  fullName: System.Func<System.IServiceProvider, Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler>
+  nameWithType.vb: Func(Of IServiceProvider, ITestHostProcessLifetimeHandler)
+  fullName.vb: System.Func(Of System.IServiceProvider, Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler)
+  name.vb: Func(Of IServiceProvider, ITestHostProcessLifetimeHandler)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler
+    name: ITestHostProcessLifetimeHandler
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler
+    name: ITestHostProcessLifetimeHandler
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.TestHostControllers.ITestHostProcessLifetimeHandler.html
+  - name: )

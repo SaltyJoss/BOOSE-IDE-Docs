@@ -1,0 +1,1556 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSETests.UI.UILoggerTests
+  commentId: T:BOOSETests.UI.UILoggerTests
+  id: UILoggerTests
+  parent: BOOSETests.UI
+  children:
+  - BOOSETests.UI.UILoggerTests.#ctor
+  - BOOSETests.UI.UILoggerTests.LogDEBUG_ColourTest
+  - BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox
+  - BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox
+  - BOOSETests.UI.UILoggerTests.LogERROR_ColourTest
+  - BOOSETests.UI.UILoggerTests.LogERROR_WritesPrefixAndMessage_DebugTextBox
+  - BOOSETests.UI.UILoggerTests.LogEXCEPTION_ColourTest
+  - BOOSETests.UI.UILoggerTests.LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox
+  - BOOSETests.UI.UILoggerTests.LogFAIL_ColourTest
+  - BOOSETests.UI.UILoggerTests.LogFAIL_WritesPrefixAndMessage_CmdTextBox
+  - BOOSETests.UI.UILoggerTests.LogFATAL_ColourTest
+  - BOOSETests.UI.UILoggerTests.LogFATAL_WritesPrefixAndMessage_DebugTextBox
+  - BOOSETests.UI.UILoggerTests.LogINFO_ColourTest
+  - BOOSETests.UI.UILoggerTests.LogINFO_WritesPrefixAndMessage_DebugTextBox
+  - BOOSETests.UI.UILoggerTests.LogLOOP_ColourTest
+  - BOOSETests.UI.UILoggerTests.LogLOOP_WritesPrefixAndMessage_CmdTextBox
+  - BOOSETests.UI.UILoggerTests.LogOK_ColourTest
+  - BOOSETests.UI.UILoggerTests.LogOK_WritesPrefixAndMessage_CmdTextBox
+  - BOOSETests.UI.UILoggerTests.LogRUNTIME_ColourTest
+  - BOOSETests.UI.UILoggerTests.LogRUNTIME_WritesPrefixAndMessage_CmdTextBox
+  - BOOSETests.UI.UILoggerTests.LogTRACE_Access_ColourTest
+  - BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  - BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  - BOOSETests.UI.UILoggerTests.LogTRACE_Content_ColourTest
+  - BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  - BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  - BOOSETests.UI.UILoggerTests.LogTRACE_Exception_ColourTest
+  - BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  - BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  - BOOSETests.UI.UILoggerTests.LogWARNING_ColourTest
+  - BOOSETests.UI.UILoggerTests.LogWARN_WritesPrefixAndMessage_DebugTextBox
+  - BOOSETests.UI.UILoggerTests.Setup
+  langs:
+  - csharp
+  - vb
+  name: UILoggerTests
+  nameWithType: UILoggerTests
+  fullName: BOOSETests.UI.UILoggerTests
+  type: Class
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Unit tests for the MockBOOSEForm class.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public sealed class UILoggerTests
+    content.vb: >-
+      <TestClass>
+
+      Public NotInheritable Class UILoggerTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.Setup
+  commentId: M:BOOSETests.UI.UILoggerTests.Setup
+  id: Setup
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: UILoggerTests.Setup()
+  fullName: BOOSETests.UI.UILoggerTests.Setup()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void Setup()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub Setup()
+  overload: BOOSETests.UI.UILoggerTests.Setup*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogFATAL_WritesPrefixAndMessage_DebugTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogFATAL_WritesPrefixAndMessage_DebugTextBox
+  id: LogFATAL_WritesPrefixAndMessage_DebugTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogFATAL_WritesPrefixAndMessage_DebugTextBox()
+  nameWithType: UILoggerTests.LogFATAL_WritesPrefixAndMessage_DebugTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogFATAL_WritesPrefixAndMessage_DebugTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogFATAL writes the correct prefix and message to the debug text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogFATAL_WritesPrefixAndMessage_DebugTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogFATAL_WritesPrefixAndMessage_DebugTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogFATAL_WritesPrefixAndMessage_DebugTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogERROR_WritesPrefixAndMessage_DebugTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogERROR_WritesPrefixAndMessage_DebugTextBox
+  id: LogERROR_WritesPrefixAndMessage_DebugTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogERROR_WritesPrefixAndMessage_DebugTextBox()
+  nameWithType: UILoggerTests.LogERROR_WritesPrefixAndMessage_DebugTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogERROR_WritesPrefixAndMessage_DebugTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogERROR writes the correct prefix and message to the debug text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogERROR_WritesPrefixAndMessage_DebugTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogERROR_WritesPrefixAndMessage_DebugTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogERROR_WritesPrefixAndMessage_DebugTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogWARN_WritesPrefixAndMessage_DebugTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogWARN_WritesPrefixAndMessage_DebugTextBox
+  id: LogWARN_WritesPrefixAndMessage_DebugTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogWARN_WritesPrefixAndMessage_DebugTextBox()
+  nameWithType: UILoggerTests.LogWARN_WritesPrefixAndMessage_DebugTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogWARN_WritesPrefixAndMessage_DebugTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogWARN writes the correct prefix and message to the debug text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogWARN_WritesPrefixAndMessage_DebugTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogWARN_WritesPrefixAndMessage_DebugTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogWARN_WritesPrefixAndMessage_DebugTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogOK_WritesPrefixAndMessage_CmdTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogOK_WritesPrefixAndMessage_CmdTextBox
+  id: LogOK_WritesPrefixAndMessage_CmdTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogOK_WritesPrefixAndMessage_CmdTextBox()
+  nameWithType: UILoggerTests.LogOK_WritesPrefixAndMessage_CmdTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogOK_WritesPrefixAndMessage_CmdTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogOK writes the correct prefix and message to the command text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogOK_WritesPrefixAndMessage_CmdTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogOK_WritesPrefixAndMessage_CmdTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogOK_WritesPrefixAndMessage_CmdTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogFAIL_WritesPrefixAndMessage_CmdTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogFAIL_WritesPrefixAndMessage_CmdTextBox
+  id: LogFAIL_WritesPrefixAndMessage_CmdTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogFAIL_WritesPrefixAndMessage_CmdTextBox()
+  nameWithType: UILoggerTests.LogFAIL_WritesPrefixAndMessage_CmdTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogFAIL_WritesPrefixAndMessage_CmdTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogFAIL writes the correct prefix and message to the command text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogFAIL_WritesPrefixAndMessage_CmdTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogFAIL_WritesPrefixAndMessage_CmdTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogFAIL_WritesPrefixAndMessage_CmdTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogRUNTIME_WritesPrefixAndMessage_CmdTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogRUNTIME_WritesPrefixAndMessage_CmdTextBox
+  id: LogRUNTIME_WritesPrefixAndMessage_CmdTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogRUNTIME_WritesPrefixAndMessage_CmdTextBox()
+  nameWithType: UILoggerTests.LogRUNTIME_WritesPrefixAndMessage_CmdTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogRUNTIME_WritesPrefixAndMessage_CmdTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogRUNTIME writes the correct prefix and message to the command text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogRUNTIME_WritesPrefixAndMessage_CmdTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogRUNTIME_WritesPrefixAndMessage_CmdTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogRUNTIME_WritesPrefixAndMessage_CmdTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogINFO_WritesPrefixAndMessage_DebugTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogINFO_WritesPrefixAndMessage_DebugTextBox
+  id: LogINFO_WritesPrefixAndMessage_DebugTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogINFO_WritesPrefixAndMessage_DebugTextBox()
+  nameWithType: UILoggerTests.LogINFO_WritesPrefixAndMessage_DebugTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogINFO_WritesPrefixAndMessage_DebugTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogINFO writes the correct prefix and message to the debug text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogINFO_WritesPrefixAndMessage_DebugTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogINFO_WritesPrefixAndMessage_DebugTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogINFO_WritesPrefixAndMessage_DebugTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox
+  id: LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox()
+  nameWithType: UILoggerTests.LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogDEBUG does not write to the debug text box when DebugMode is disabled.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox
+  id: LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox()
+  nameWithType: UILoggerTests.LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogDEBUG writes the correct prefix and message to the debug text box when DebugMode is enabled.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  id: LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+  nameWithType: UILoggerTests.LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogTRACE_Content does not write to the trace text box when TraceMode is disabled.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  id: LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+  nameWithType: UILoggerTests.LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogTRACE_Content writes the correct prefix and message to the trace text box when TraceMode is enabled.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  id: LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+  nameWithType: UILoggerTests.LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogTRACE_Access does not write to the trace text box when TraceMode is disabled.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  id: LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+  nameWithType: UILoggerTests.LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogTRACE_Access writes the correct prefix and message to the trace text box when TraceMode is enabled.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  id: LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+  nameWithType: UILoggerTests.LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogTRACE_Exception does not write to the trace text box when TraceMode is disabled.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  id: LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+  nameWithType: UILoggerTests.LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogTRACE_Exception writes the correct prefix and message to the trace text box when TraceMode is enabled.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox
+  id: LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox()
+  nameWithType: UILoggerTests.LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogEXCEPTION writes the correct prefix and message to the debug text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogLOOP_WritesPrefixAndMessage_CmdTextBox
+  commentId: M:BOOSETests.UI.UILoggerTests.LogLOOP_WritesPrefixAndMessage_CmdTextBox
+  id: LogLOOP_WritesPrefixAndMessage_CmdTextBox
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogLOOP_WritesPrefixAndMessage_CmdTextBox()
+  nameWithType: UILoggerTests.LogLOOP_WritesPrefixAndMessage_CmdTextBox()
+  fullName: BOOSETests.UI.UILoggerTests.LogLOOP_WritesPrefixAndMessage_CmdTextBox()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogLOOP writes the correct prefix and message to the command text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogLOOP_WritesPrefixAndMessage_CmdTextBox()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogLOOP_WritesPrefixAndMessage_CmdTextBox()
+  overload: BOOSETests.UI.UILoggerTests.LogLOOP_WritesPrefixAndMessage_CmdTextBox*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogFATAL_ColourTest
+  commentId: M:BOOSETests.UI.UILoggerTests.LogFATAL_ColourTest
+  id: LogFATAL_ColourTest
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogFATAL_ColourTest()
+  nameWithType: UILoggerTests.LogFATAL_ColourTest()
+  fullName: BOOSETests.UI.UILoggerTests.LogFATAL_ColourTest()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogFATAL applies the correct colour formatting to the debug text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogFATAL_ColourTest()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogFATAL_ColourTest()
+  overload: BOOSETests.UI.UILoggerTests.LogFATAL_ColourTest*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogERROR_ColourTest
+  commentId: M:BOOSETests.UI.UILoggerTests.LogERROR_ColourTest
+  id: LogERROR_ColourTest
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogERROR_ColourTest()
+  nameWithType: UILoggerTests.LogERROR_ColourTest()
+  fullName: BOOSETests.UI.UILoggerTests.LogERROR_ColourTest()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogERROR applies the correct colour formatting to the debug text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogERROR_ColourTest()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogERROR_ColourTest()
+  overload: BOOSETests.UI.UILoggerTests.LogERROR_ColourTest*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogWARNING_ColourTest
+  commentId: M:BOOSETests.UI.UILoggerTests.LogWARNING_ColourTest
+  id: LogWARNING_ColourTest
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogWARNING_ColourTest()
+  nameWithType: UILoggerTests.LogWARNING_ColourTest()
+  fullName: BOOSETests.UI.UILoggerTests.LogWARNING_ColourTest()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogWARN applies the correct colour formatting to the debug text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogWARNING_ColourTest()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogWARNING_ColourTest()
+  overload: BOOSETests.UI.UILoggerTests.LogWARNING_ColourTest*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogOK_ColourTest
+  commentId: M:BOOSETests.UI.UILoggerTests.LogOK_ColourTest
+  id: LogOK_ColourTest
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogOK_ColourTest()
+  nameWithType: UILoggerTests.LogOK_ColourTest()
+  fullName: BOOSETests.UI.UILoggerTests.LogOK_ColourTest()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogOK applies the correct colour formatting to the command text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogOK_ColourTest()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogOK_ColourTest()
+  overload: BOOSETests.UI.UILoggerTests.LogOK_ColourTest*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogFAIL_ColourTest
+  commentId: M:BOOSETests.UI.UILoggerTests.LogFAIL_ColourTest
+  id: LogFAIL_ColourTest
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogFAIL_ColourTest()
+  nameWithType: UILoggerTests.LogFAIL_ColourTest()
+  fullName: BOOSETests.UI.UILoggerTests.LogFAIL_ColourTest()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogFAIL applies the correct colour formatting to the command text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogFAIL_ColourTest()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogFAIL_ColourTest()
+  overload: BOOSETests.UI.UILoggerTests.LogFAIL_ColourTest*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogRUNTIME_ColourTest
+  commentId: M:BOOSETests.UI.UILoggerTests.LogRUNTIME_ColourTest
+  id: LogRUNTIME_ColourTest
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogRUNTIME_ColourTest()
+  nameWithType: UILoggerTests.LogRUNTIME_ColourTest()
+  fullName: BOOSETests.UI.UILoggerTests.LogRUNTIME_ColourTest()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogRUNTIME applies the correct colour formatting to the command text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogRUNTIME_ColourTest()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogRUNTIME_ColourTest()
+  overload: BOOSETests.UI.UILoggerTests.LogRUNTIME_ColourTest*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogINFO_ColourTest
+  commentId: M:BOOSETests.UI.UILoggerTests.LogINFO_ColourTest
+  id: LogINFO_ColourTest
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogINFO_ColourTest()
+  nameWithType: UILoggerTests.LogINFO_ColourTest()
+  fullName: BOOSETests.UI.UILoggerTests.LogINFO_ColourTest()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogINFO applies the correct colour formatting to the debug text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogINFO_ColourTest()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogINFO_ColourTest()
+  overload: BOOSETests.UI.UILoggerTests.LogINFO_ColourTest*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogDEBUG_ColourTest
+  commentId: M:BOOSETests.UI.UILoggerTests.LogDEBUG_ColourTest
+  id: LogDEBUG_ColourTest
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogDEBUG_ColourTest()
+  nameWithType: UILoggerTests.LogDEBUG_ColourTest()
+  fullName: BOOSETests.UI.UILoggerTests.LogDEBUG_ColourTest()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogDEBUG applies the correct colour formatting to the debug text box when DebugMode is enabled.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogDEBUG_ColourTest()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogDEBUG_ColourTest()
+  overload: BOOSETests.UI.UILoggerTests.LogDEBUG_ColourTest*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Content_ColourTest
+  commentId: M:BOOSETests.UI.UILoggerTests.LogTRACE_Content_ColourTest
+  id: LogTRACE_Content_ColourTest
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogTRACE_Content_ColourTest()
+  nameWithType: UILoggerTests.LogTRACE_Content_ColourTest()
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Content_ColourTest()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogTRACE_Content applies the correct colour formatting to the trace text box when TraceMode is enabled.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogTRACE_Content_ColourTest()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogTRACE_Content_ColourTest()
+  overload: BOOSETests.UI.UILoggerTests.LogTRACE_Content_ColourTest*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Access_ColourTest
+  commentId: M:BOOSETests.UI.UILoggerTests.LogTRACE_Access_ColourTest
+  id: LogTRACE_Access_ColourTest
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogTRACE_Access_ColourTest()
+  nameWithType: UILoggerTests.LogTRACE_Access_ColourTest()
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Access_ColourTest()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogTRACE_Access applies the correct colour formatting to the trace text box when TraceMode is enabled.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogTRACE_Access_ColourTest()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogTRACE_Access_ColourTest()
+  overload: BOOSETests.UI.UILoggerTests.LogTRACE_Access_ColourTest*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_ColourTest
+  commentId: M:BOOSETests.UI.UILoggerTests.LogTRACE_Exception_ColourTest
+  id: LogTRACE_Exception_ColourTest
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogTRACE_Exception_ColourTest()
+  nameWithType: UILoggerTests.LogTRACE_Exception_ColourTest()
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_ColourTest()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogTRACE_Exception applies the correct colour formatting to the trace text box when TraceMode is enabled.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogTRACE_Exception_ColourTest()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogTRACE_Exception_ColourTest()
+  overload: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_ColourTest*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogEXCEPTION_ColourTest
+  commentId: M:BOOSETests.UI.UILoggerTests.LogEXCEPTION_ColourTest
+  id: LogEXCEPTION_ColourTest
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogEXCEPTION_ColourTest()
+  nameWithType: UILoggerTests.LogEXCEPTION_ColourTest()
+  fullName: BOOSETests.UI.UILoggerTests.LogEXCEPTION_ColourTest()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogEXCEPTION applies the correct colour formatting to the debug text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogEXCEPTION_ColourTest()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogEXCEPTION_ColourTest()
+  overload: BOOSETests.UI.UILoggerTests.LogEXCEPTION_ColourTest*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.LogLOOP_ColourTest
+  commentId: M:BOOSETests.UI.UILoggerTests.LogLOOP_ColourTest
+  id: LogLOOP_ColourTest
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: LogLOOP_ColourTest()
+  nameWithType: UILoggerTests.LogLOOP_ColourTest()
+  fullName: BOOSETests.UI.UILoggerTests.LogLOOP_ColourTest()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  summary: Tests that LogLOOP applies the correct colour formatting to the command text box.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void LogLOOP_ColourTest()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub LogLOOP_ColourTest()
+  overload: BOOSETests.UI.UILoggerTests.LogLOOP_ColourTest*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.UI.UILoggerTests.#ctor
+  commentId: M:BOOSETests.UI.UILoggerTests.#ctor
+  id: '#ctor'
+  parent: BOOSETests.UI.UILoggerTests
+  langs:
+  - csharp
+  - vb
+  name: UILoggerTests()
+  nameWithType: UILoggerTests.UILoggerTests()
+  fullName: BOOSETests.UI.UILoggerTests.UILoggerTests()
+  type: Constructor
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.UI
+  syntax:
+    content: public UILoggerTests()
+    content.vb: Public Sub New()
+  overload: BOOSETests.UI.UILoggerTests.#ctor*
+  nameWithType.vb: UILoggerTests.New()
+  fullName.vb: BOOSETests.UI.UILoggerTests.New()
+  name.vb: New()
+references:
+- uid: BOOSETests.UI
+  commentId: N:BOOSETests.UI
+  isExternal: true
+  href: BOOSETests.html
+  name: BOOSETests.UI
+  nameWithType: BOOSETests.UI
+  fullName: BOOSETests.UI
+  spec.csharp:
+  - uid: BOOSETests
+    name: BOOSETests
+    isExternal: true
+    href: BOOSETests.html
+  - name: .
+  - uid: BOOSETests.UI
+    name: UI
+    isExternal: true
+    href: BOOSETests.UI.html
+  spec.vb:
+  - uid: BOOSETests
+    name: BOOSETests
+    isExternal: true
+    href: BOOSETests.html
+  - name: .
+  - uid: BOOSETests.UI
+    name: UI
+    isExternal: true
+    href: BOOSETests.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSETests.UI.UILoggerTests.Setup*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.Setup
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_Setup
+  name: Setup
+  nameWithType: UILoggerTests.Setup
+  fullName: BOOSETests.UI.UILoggerTests.Setup
+- uid: BOOSETests.UI.UILoggerTests.LogFATAL_WritesPrefixAndMessage_DebugTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogFATAL_WritesPrefixAndMessage_DebugTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogFATAL_WritesPrefixAndMessage_DebugTextBox
+  name: LogFATAL_WritesPrefixAndMessage_DebugTextBox
+  nameWithType: UILoggerTests.LogFATAL_WritesPrefixAndMessage_DebugTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogFATAL_WritesPrefixAndMessage_DebugTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogERROR_WritesPrefixAndMessage_DebugTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogERROR_WritesPrefixAndMessage_DebugTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogERROR_WritesPrefixAndMessage_DebugTextBox
+  name: LogERROR_WritesPrefixAndMessage_DebugTextBox
+  nameWithType: UILoggerTests.LogERROR_WritesPrefixAndMessage_DebugTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogERROR_WritesPrefixAndMessage_DebugTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogWARN_WritesPrefixAndMessage_DebugTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogWARN_WritesPrefixAndMessage_DebugTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogWARN_WritesPrefixAndMessage_DebugTextBox
+  name: LogWARN_WritesPrefixAndMessage_DebugTextBox
+  nameWithType: UILoggerTests.LogWARN_WritesPrefixAndMessage_DebugTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogWARN_WritesPrefixAndMessage_DebugTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogOK_WritesPrefixAndMessage_CmdTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogOK_WritesPrefixAndMessage_CmdTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogOK_WritesPrefixAndMessage_CmdTextBox
+  name: LogOK_WritesPrefixAndMessage_CmdTextBox
+  nameWithType: UILoggerTests.LogOK_WritesPrefixAndMessage_CmdTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogOK_WritesPrefixAndMessage_CmdTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogFAIL_WritesPrefixAndMessage_CmdTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogFAIL_WritesPrefixAndMessage_CmdTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogFAIL_WritesPrefixAndMessage_CmdTextBox
+  name: LogFAIL_WritesPrefixAndMessage_CmdTextBox
+  nameWithType: UILoggerTests.LogFAIL_WritesPrefixAndMessage_CmdTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogFAIL_WritesPrefixAndMessage_CmdTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogRUNTIME_WritesPrefixAndMessage_CmdTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogRUNTIME_WritesPrefixAndMessage_CmdTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogRUNTIME_WritesPrefixAndMessage_CmdTextBox
+  name: LogRUNTIME_WritesPrefixAndMessage_CmdTextBox
+  nameWithType: UILoggerTests.LogRUNTIME_WritesPrefixAndMessage_CmdTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogRUNTIME_WritesPrefixAndMessage_CmdTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogINFO_WritesPrefixAndMessage_DebugTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogINFO_WritesPrefixAndMessage_DebugTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogINFO_WritesPrefixAndMessage_DebugTextBox
+  name: LogINFO_WritesPrefixAndMessage_DebugTextBox
+  nameWithType: UILoggerTests.LogINFO_WritesPrefixAndMessage_DebugTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogINFO_WritesPrefixAndMessage_DebugTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox
+  name: LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox
+  nameWithType: UILoggerTests.LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox
+  name: LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox
+  nameWithType: UILoggerTests.LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  name: LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  nameWithType: UILoggerTests.LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  name: LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  nameWithType: UILoggerTests.LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  name: LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  nameWithType: UILoggerTests.LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  name: LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  nameWithType: UILoggerTests.LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  name: LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  nameWithType: UILoggerTests.LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  name: LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  nameWithType: UILoggerTests.LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox
+  name: LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox
+  nameWithType: UILoggerTests.LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogLOOP_WritesPrefixAndMessage_CmdTextBox*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogLOOP_WritesPrefixAndMessage_CmdTextBox
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogLOOP_WritesPrefixAndMessage_CmdTextBox
+  name: LogLOOP_WritesPrefixAndMessage_CmdTextBox
+  nameWithType: UILoggerTests.LogLOOP_WritesPrefixAndMessage_CmdTextBox
+  fullName: BOOSETests.UI.UILoggerTests.LogLOOP_WritesPrefixAndMessage_CmdTextBox
+- uid: BOOSETests.UI.UILoggerTests.LogFATAL_ColourTest*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogFATAL_ColourTest
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogFATAL_ColourTest
+  name: LogFATAL_ColourTest
+  nameWithType: UILoggerTests.LogFATAL_ColourTest
+  fullName: BOOSETests.UI.UILoggerTests.LogFATAL_ColourTest
+- uid: BOOSETests.UI.UILoggerTests.LogERROR_ColourTest*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogERROR_ColourTest
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogERROR_ColourTest
+  name: LogERROR_ColourTest
+  nameWithType: UILoggerTests.LogERROR_ColourTest
+  fullName: BOOSETests.UI.UILoggerTests.LogERROR_ColourTest
+- uid: BOOSETests.UI.UILoggerTests.LogWARNING_ColourTest*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogWARNING_ColourTest
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogWARNING_ColourTest
+  name: LogWARNING_ColourTest
+  nameWithType: UILoggerTests.LogWARNING_ColourTest
+  fullName: BOOSETests.UI.UILoggerTests.LogWARNING_ColourTest
+- uid: BOOSETests.UI.UILoggerTests.LogOK_ColourTest*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogOK_ColourTest
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogOK_ColourTest
+  name: LogOK_ColourTest
+  nameWithType: UILoggerTests.LogOK_ColourTest
+  fullName: BOOSETests.UI.UILoggerTests.LogOK_ColourTest
+- uid: BOOSETests.UI.UILoggerTests.LogFAIL_ColourTest*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogFAIL_ColourTest
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogFAIL_ColourTest
+  name: LogFAIL_ColourTest
+  nameWithType: UILoggerTests.LogFAIL_ColourTest
+  fullName: BOOSETests.UI.UILoggerTests.LogFAIL_ColourTest
+- uid: BOOSETests.UI.UILoggerTests.LogRUNTIME_ColourTest*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogRUNTIME_ColourTest
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogRUNTIME_ColourTest
+  name: LogRUNTIME_ColourTest
+  nameWithType: UILoggerTests.LogRUNTIME_ColourTest
+  fullName: BOOSETests.UI.UILoggerTests.LogRUNTIME_ColourTest
+- uid: BOOSETests.UI.UILoggerTests.LogINFO_ColourTest*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogINFO_ColourTest
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogINFO_ColourTest
+  name: LogINFO_ColourTest
+  nameWithType: UILoggerTests.LogINFO_ColourTest
+  fullName: BOOSETests.UI.UILoggerTests.LogINFO_ColourTest
+- uid: BOOSETests.UI.UILoggerTests.LogDEBUG_ColourTest*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogDEBUG_ColourTest
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogDEBUG_ColourTest
+  name: LogDEBUG_ColourTest
+  nameWithType: UILoggerTests.LogDEBUG_ColourTest
+  fullName: BOOSETests.UI.UILoggerTests.LogDEBUG_ColourTest
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Content_ColourTest*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogTRACE_Content_ColourTest
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogTRACE_Content_ColourTest
+  name: LogTRACE_Content_ColourTest
+  nameWithType: UILoggerTests.LogTRACE_Content_ColourTest
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Content_ColourTest
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Access_ColourTest*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogTRACE_Access_ColourTest
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogTRACE_Access_ColourTest
+  name: LogTRACE_Access_ColourTest
+  nameWithType: UILoggerTests.LogTRACE_Access_ColourTest
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Access_ColourTest
+- uid: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_ColourTest*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogTRACE_Exception_ColourTest
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogTRACE_Exception_ColourTest
+  name: LogTRACE_Exception_ColourTest
+  nameWithType: UILoggerTests.LogTRACE_Exception_ColourTest
+  fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_ColourTest
+- uid: BOOSETests.UI.UILoggerTests.LogEXCEPTION_ColourTest*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogEXCEPTION_ColourTest
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogEXCEPTION_ColourTest
+  name: LogEXCEPTION_ColourTest
+  nameWithType: UILoggerTests.LogEXCEPTION_ColourTest
+  fullName: BOOSETests.UI.UILoggerTests.LogEXCEPTION_ColourTest
+- uid: BOOSETests.UI.UILoggerTests.LogLOOP_ColourTest*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.LogLOOP_ColourTest
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests_LogLOOP_ColourTest
+  name: LogLOOP_ColourTest
+  nameWithType: UILoggerTests.LogLOOP_ColourTest
+  fullName: BOOSETests.UI.UILoggerTests.LogLOOP_ColourTest
+- uid: BOOSETests.UI.UILoggerTests.#ctor*
+  commentId: Overload:BOOSETests.UI.UILoggerTests.#ctor
+  isExternal: true
+  href: BOOSETests.UI.UILoggerTests.html#BOOSETests_UI_UILoggerTests__ctor
+  name: UILoggerTests
+  nameWithType: UILoggerTests.UILoggerTests
+  fullName: BOOSETests.UI.UILoggerTests.UILoggerTests
+  nameWithType.vb: UILoggerTests.New
+  fullName.vb: BOOSETests.UI.UILoggerTests.New
+  name.vb: New

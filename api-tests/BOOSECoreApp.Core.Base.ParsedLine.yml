@@ -1,0 +1,602 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSECoreApp.Core.Base.ParsedLine
+  commentId: T:BOOSECoreApp.Core.Base.ParsedLine
+  id: ParsedLine
+  parent: BOOSECoreApp.Core.Base
+  children:
+  - BOOSECoreApp.Core.Base.ParsedLine.#ctor
+  - BOOSECoreApp.Core.Base.ParsedLine.Keyword
+  - BOOSECoreApp.Core.Base.ParsedLine.LineNumber
+  - BOOSECoreApp.Core.Base.ParsedLine.LineType
+  - BOOSECoreApp.Core.Base.ParsedLine.Name
+  - BOOSECoreApp.Core.Base.ParsedLine.RawText
+  - BOOSECoreApp.Core.Base.ParsedLine.SourceIndex
+  - BOOSECoreApp.Core.Base.ParsedLine.Tokens
+  langs:
+  - csharp
+  - vb
+  name: ParsedLine
+  nameWithType: ParsedLine
+  fullName: BOOSECoreApp.Core.Base.ParsedLine
+  type: Class
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents a parsed line of code with its type and content.
+  example: []
+  syntax:
+    content: public sealed class ParsedLine
+    content.vb: Public NotInheritable Class ParsedLine
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: BOOSECoreApp.Core.Base.ParsedLine.#ctor
+  commentId: M:BOOSECoreApp.Core.Base.ParsedLine.#ctor
+  id: '#ctor'
+  parent: BOOSECoreApp.Core.Base.ParsedLine
+  langs:
+  - csharp
+  - vb
+  name: ParsedLine()
+  nameWithType: ParsedLine.ParsedLine()
+  fullName: BOOSECoreApp.Core.Base.ParsedLine.ParsedLine()
+  type: Constructor
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  syntax:
+    content: public ParsedLine()
+    content.vb: Public Sub New()
+  overload: BOOSECoreApp.Core.Base.ParsedLine.#ctor*
+  nameWithType.vb: ParsedLine.New()
+  fullName.vb: BOOSECoreApp.Core.Base.ParsedLine.New()
+  name.vb: New()
+- uid: BOOSECoreApp.Core.Base.ParsedLine.LineType
+  commentId: P:BOOSECoreApp.Core.Base.ParsedLine.LineType
+  id: LineType
+  parent: BOOSECoreApp.Core.Base.ParsedLine
+  langs:
+  - csharp
+  - vb
+  name: LineType
+  nameWithType: ParsedLine.LineType
+  fullName: BOOSECoreApp.Core.Base.ParsedLine.LineType
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: The type of the parsed line.
+  example: []
+  syntax:
+    content: public ParsedLineType LineType { get; init; }
+    parameters: []
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+    content.vb: Public Property LineType As ParsedLineType
+  overload: BOOSECoreApp.Core.Base.ParsedLine.LineType*
+- uid: BOOSECoreApp.Core.Base.ParsedLine.RawText
+  commentId: P:BOOSECoreApp.Core.Base.ParsedLine.RawText
+  id: RawText
+  parent: BOOSECoreApp.Core.Base.ParsedLine
+  langs:
+  - csharp
+  - vb
+  name: RawText
+  nameWithType: ParsedLine.RawText
+  fullName: BOOSECoreApp.Core.Base.ParsedLine.RawText
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: The raw text of the parsed line.
+  example: []
+  syntax:
+    content: public string? RawText { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RawText As String
+  overload: BOOSECoreApp.Core.Base.ParsedLine.RawText*
+- uid: BOOSECoreApp.Core.Base.ParsedLine.Keyword
+  commentId: P:BOOSECoreApp.Core.Base.ParsedLine.Keyword
+  id: Keyword
+  parent: BOOSECoreApp.Core.Base.ParsedLine
+  langs:
+  - csharp
+  - vb
+  name: Keyword
+  nameWithType: ParsedLine.Keyword
+  fullName: BOOSECoreApp.Core.Base.ParsedLine.Keyword
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: The keyword associated with the parsed line, if applicable.
+  example: []
+  syntax:
+    content: public string? Keyword { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Keyword As String
+  overload: BOOSECoreApp.Core.Base.ParsedLine.Keyword*
+- uid: BOOSECoreApp.Core.Base.ParsedLine.Name
+  commentId: P:BOOSECoreApp.Core.Base.ParsedLine.Name
+  id: Name
+  parent: BOOSECoreApp.Core.Base.ParsedLine
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ParsedLine.Name
+  fullName: BOOSECoreApp.Core.Base.ParsedLine.Name
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: The name associated with the parsed line, if applicable.
+  example: []
+  syntax:
+    content: public string? Name { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: BOOSECoreApp.Core.Base.ParsedLine.Name*
+- uid: BOOSECoreApp.Core.Base.ParsedLine.Tokens
+  commentId: P:BOOSECoreApp.Core.Base.ParsedLine.Tokens
+  id: Tokens
+  parent: BOOSECoreApp.Core.Base.ParsedLine
+  langs:
+  - csharp
+  - vb
+  name: Tokens
+  nameWithType: ParsedLine.Tokens
+  fullName: BOOSECoreApp.Core.Base.ParsedLine.Tokens
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: The tokens extracted from the parsed line.
+  example: []
+  syntax:
+    content: public string[] Tokens { get; init; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property Tokens As String()
+  overload: BOOSECoreApp.Core.Base.ParsedLine.Tokens*
+- uid: BOOSECoreApp.Core.Base.ParsedLine.SourceIndex
+  commentId: P:BOOSECoreApp.Core.Base.ParsedLine.SourceIndex
+  id: SourceIndex
+  parent: BOOSECoreApp.Core.Base.ParsedLine
+  langs:
+  - csharp
+  - vb
+  name: SourceIndex
+  nameWithType: ParsedLine.SourceIndex
+  fullName: BOOSECoreApp.Core.Base.ParsedLine.SourceIndex
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: The index of the line in the source code.
+  example: []
+  syntax:
+    content: public int SourceIndex { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SourceIndex As Integer
+  overload: BOOSECoreApp.Core.Base.ParsedLine.SourceIndex*
+- uid: BOOSECoreApp.Core.Base.ParsedLine.LineNumber
+  commentId: P:BOOSECoreApp.Core.Base.ParsedLine.LineNumber
+  id: LineNumber
+  parent: BOOSECoreApp.Core.Base.ParsedLine
+  langs:
+  - csharp
+  - vb
+  name: LineNumber
+  nameWithType: ParsedLine.LineNumber
+  fullName: BOOSECoreApp.Core.Base.ParsedLine.LineNumber
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: The line number in the source code (1-based index).
+  example: []
+  syntax:
+    content: public int LineNumber { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property LineNumber As Integer
+  overload: BOOSECoreApp.Core.Base.ParsedLine.LineNumber*
+references:
+- uid: BOOSECoreApp.Core.Base
+  commentId: N:BOOSECoreApp.Core.Base
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Base
+  nameWithType: BOOSECoreApp.Core.Base
+  fullName: BOOSECoreApp.Core.Base
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Base
+    name: Base
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Base
+    name: Base
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSECoreApp.Core.Base.ParsedLine.#ctor*
+  commentId: Overload:BOOSECoreApp.Core.Base.ParsedLine.#ctor
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.ParsedLine.html#BOOSECoreApp_Core_Base_ParsedLine__ctor
+  name: ParsedLine
+  nameWithType: ParsedLine.ParsedLine
+  fullName: BOOSECoreApp.Core.Base.ParsedLine.ParsedLine
+  nameWithType.vb: ParsedLine.New
+  fullName.vb: BOOSECoreApp.Core.Base.ParsedLine.New
+  name.vb: New
+- uid: BOOSECoreApp.Core.Base.ParsedLine.LineType*
+  commentId: Overload:BOOSECoreApp.Core.Base.ParsedLine.LineType
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.ParsedLine.html#BOOSECoreApp_Core_Base_ParsedLine_LineType
+  name: LineType
+  nameWithType: ParsedLine.LineType
+  fullName: BOOSECoreApp.Core.Base.ParsedLine.LineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType
+  commentId: T:BOOSECoreApp.Core.Base.ParsedLineType
+  parent: BOOSECoreApp.Core.Base
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.ParsedLineType.html
+  name: ParsedLineType
+  nameWithType: ParsedLineType
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLine.RawText*
+  commentId: Overload:BOOSECoreApp.Core.Base.ParsedLine.RawText
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.ParsedLine.html#BOOSECoreApp_Core_Base_ParsedLine_RawText
+  name: RawText
+  nameWithType: ParsedLine.RawText
+  fullName: BOOSECoreApp.Core.Base.ParsedLine.RawText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BOOSECoreApp.Core.Base.ParsedLine.Keyword*
+  commentId: Overload:BOOSECoreApp.Core.Base.ParsedLine.Keyword
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.ParsedLine.html#BOOSECoreApp_Core_Base_ParsedLine_Keyword
+  name: Keyword
+  nameWithType: ParsedLine.Keyword
+  fullName: BOOSECoreApp.Core.Base.ParsedLine.Keyword
+- uid: BOOSECoreApp.Core.Base.ParsedLine.Name*
+  commentId: Overload:BOOSECoreApp.Core.Base.ParsedLine.Name
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.ParsedLine.html#BOOSECoreApp_Core_Base_ParsedLine_Name
+  name: Name
+  nameWithType: ParsedLine.Name
+  fullName: BOOSECoreApp.Core.Base.ParsedLine.Name
+- uid: BOOSECoreApp.Core.Base.ParsedLine.Tokens*
+  commentId: Overload:BOOSECoreApp.Core.Base.ParsedLine.Tokens
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.ParsedLine.html#BOOSECoreApp_Core_Base_ParsedLine_Tokens
+  name: Tokens
+  nameWithType: ParsedLine.Tokens
+  fullName: BOOSECoreApp.Core.Base.ParsedLine.Tokens
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: BOOSECoreApp.Core.Base.ParsedLine.SourceIndex*
+  commentId: Overload:BOOSECoreApp.Core.Base.ParsedLine.SourceIndex
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.ParsedLine.html#BOOSECoreApp_Core_Base_ParsedLine_SourceIndex
+  name: SourceIndex
+  nameWithType: ParsedLine.SourceIndex
+  fullName: BOOSECoreApp.Core.Base.ParsedLine.SourceIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: BOOSECoreApp.Core.Base.ParsedLine.LineNumber*
+  commentId: Overload:BOOSECoreApp.Core.Base.ParsedLine.LineNumber
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.ParsedLine.html#BOOSECoreApp_Core_Base_ParsedLine_LineNumber
+  name: LineNumber
+  nameWithType: ParsedLine.LineNumber
+  fullName: BOOSECoreApp.Core.Base.ParsedLine.LineNumber

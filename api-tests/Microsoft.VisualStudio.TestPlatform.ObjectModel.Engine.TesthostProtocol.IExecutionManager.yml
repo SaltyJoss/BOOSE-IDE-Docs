@@ -1,0 +1,718 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager
+  id: IExecutionManager
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Cancel(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Initialize(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.StartTestRun(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.IEnumerable{System.String}},System.String,System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.StartTestRun(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase},System.String,System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  langs:
+  - csharp
+  - vb
+  name: IExecutionManager
+  nameWithType: IExecutionManager
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager
+  type: Interface
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  syntax:
+    content: public interface IExecutionManager
+    content.vb: Public Interface IExecutionManager
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Initialize(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Initialize(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler)
+  id: Initialize(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager
+  langs:
+  - csharp
+  - vb
+  name: Initialize(IEnumerable<string>, ITestMessageEventHandler?)
+  nameWithType: IExecutionManager.Initialize(IEnumerable<string>, ITestMessageEventHandler?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Initialize(System.Collections.Generic.IEnumerable<string>, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  syntax:
+    content: void Initialize(IEnumerable<string> pathToAdditionalExtensions, ITestMessageEventHandler? testMessageEventsHandler)
+    parameters:
+    - id: pathToAdditionalExtensions
+      type: System.Collections.Generic.IEnumerable{System.String}
+    - id: testMessageEventsHandler
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+    content.vb: Sub Initialize(pathToAdditionalExtensions As IEnumerable(Of String), testMessageEventsHandler As ITestMessageEventHandler)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Initialize*
+  nameWithType.vb: IExecutionManager.Initialize(IEnumerable(Of String), ITestMessageEventHandler)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Initialize(System.Collections.Generic.IEnumerable(Of String), Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler)
+  name.vb: Initialize(IEnumerable(Of String), ITestMessageEventHandler)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.StartTestRun(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.IEnumerable{System.String}},System.String,System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.StartTestRun(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.IEnumerable{System.String}},System.String,System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  id: StartTestRun(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.IEnumerable{System.String}},System.String,System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager
+  langs:
+  - csharp
+  - vb
+  name: StartTestRun(Dictionary<string, IEnumerable<string>>, string?, string?, TestExecutionContext, ITestCaseEventsHandler?, IInternalTestRunEventsHandler)
+  nameWithType: IExecutionManager.StartTestRun(Dictionary<string, IEnumerable<string>>, string?, string?, TestExecutionContext, ITestCaseEventsHandler?, IInternalTestRunEventsHandler)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.StartTestRun(System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>, string?, string?, Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext, Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler?, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  syntax:
+    content: void StartTestRun(Dictionary<string, IEnumerable<string>> adapterSourceMap, string? package, string? runSettings, TestExecutionContext testExecutionContext, ITestCaseEventsHandler? testCaseEvents, IInternalTestRunEventsHandler eventHandler)
+    parameters:
+    - id: adapterSourceMap
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.IEnumerable{System.String}}
+    - id: package
+      type: System.String
+    - id: runSettings
+      type: System.String
+    - id: testExecutionContext
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+    - id: testCaseEvents
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler
+    - id: eventHandler
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler
+    content.vb: Sub StartTestRun(adapterSourceMap As Dictionary(Of String, IEnumerable(Of String)), package As String, runSettings As String, testExecutionContext As TestExecutionContext, testCaseEvents As ITestCaseEventsHandler, eventHandler As IInternalTestRunEventsHandler)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.StartTestRun*
+  nameWithType.vb: IExecutionManager.StartTestRun(Dictionary(Of String, IEnumerable(Of String)), String, String, TestExecutionContext, ITestCaseEventsHandler, IInternalTestRunEventsHandler)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.StartTestRun(System.Collections.Generic.Dictionary(Of String, System.Collections.Generic.IEnumerable(Of String)), String, String, Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext, Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  name.vb: StartTestRun(Dictionary(Of String, IEnumerable(Of String)), String, String, TestExecutionContext, ITestCaseEventsHandler, IInternalTestRunEventsHandler)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.StartTestRun(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase},System.String,System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.StartTestRun(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase},System.String,System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  id: StartTestRun(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase},System.String,System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager
+  langs:
+  - csharp
+  - vb
+  name: StartTestRun(IEnumerable<TestCase>, string?, string?, TestExecutionContext, ITestCaseEventsHandler?, IInternalTestRunEventsHandler)
+  nameWithType: IExecutionManager.StartTestRun(IEnumerable<TestCase>, string?, string?, TestExecutionContext, ITestCaseEventsHandler?, IInternalTestRunEventsHandler)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.StartTestRun(System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase>, string?, string?, Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext, Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler?, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  syntax:
+    content: void StartTestRun(IEnumerable<TestCase> tests, string? package, string? runSettings, TestExecutionContext testExecutionContext, ITestCaseEventsHandler? testCaseEvents, IInternalTestRunEventsHandler eventHandler)
+    parameters:
+    - id: tests
+      type: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+    - id: package
+      type: System.String
+    - id: runSettings
+      type: System.String
+    - id: testExecutionContext
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+    - id: testCaseEvents
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler
+    - id: eventHandler
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler
+    content.vb: Sub StartTestRun(tests As IEnumerable(Of TestCase), package As String, runSettings As String, testExecutionContext As TestExecutionContext, testCaseEvents As ITestCaseEventsHandler, eventHandler As IInternalTestRunEventsHandler)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.StartTestRun*
+  nameWithType.vb: IExecutionManager.StartTestRun(IEnumerable(Of TestCase), String, String, TestExecutionContext, ITestCaseEventsHandler, IInternalTestRunEventsHandler)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.StartTestRun(System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase), String, String, Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext, Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  name.vb: StartTestRun(IEnumerable(Of TestCase), String, String, TestExecutionContext, ITestCaseEventsHandler, IInternalTestRunEventsHandler)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Cancel(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Cancel(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  id: Cancel(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager
+  langs:
+  - csharp
+  - vb
+  name: Cancel(IInternalTestRunEventsHandler)
+  nameWithType: IExecutionManager.Cancel(IInternalTestRunEventsHandler)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Cancel(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  syntax:
+    content: void Cancel(IInternalTestRunEventsHandler testRunEventsHandler)
+    parameters:
+    - id: testRunEventsHandler
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler
+    content.vb: Sub Cancel(testRunEventsHandler As IInternalTestRunEventsHandler)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Cancel*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  id: Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager
+  langs:
+  - csharp
+  - vb
+  name: Abort(IInternalTestRunEventsHandler)
+  nameWithType: IExecutionManager.Abort(IInternalTestRunEventsHandler)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  syntax:
+    content: void Abort(IInternalTestRunEventsHandler testRunEventsHandler)
+    parameters:
+    - id: testRunEventsHandler
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler
+    content.vb: Sub Abort(testRunEventsHandler As IInternalTestRunEventsHandler)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Abort*
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+    name: TesthostProtocol
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+    name: TesthostProtocol
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Initialize*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Initialize
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_TesthostProtocol_IExecutionManager_Initialize_System_Collections_Generic_IEnumerable_System_String__Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_
+  name: Initialize
+  nameWithType: IExecutionManager.Initialize
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Initialize
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html
+  name: ITestMessageEventHandler
+  nameWithType: ITestMessageEventHandler
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.StartTestRun*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.StartTestRun
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_TesthostProtocol_IExecutionManager_StartTestRun_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_IEnumerable_System_String___System_String_System_String_Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ClientProtocol_TestExecutionContext_Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestCaseEventsHandler_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IInternalTestRunEventsHandler_
+  name: StartTestRun
+  nameWithType: IExecutionManager.StartTestRun
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.StartTestRun
+- uid: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.IEnumerable{System.String}}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.IEnumerable{System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, IEnumerable<string>>
+  nameWithType: Dictionary<string, IEnumerable<string>>
+  fullName: System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>
+  nameWithType.vb: Dictionary(Of String, IEnumerable(Of String))
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, System.Collections.Generic.IEnumerable(Of String))
+  name.vb: Dictionary(Of String, IEnumerable(Of String))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.html
+  name: TestExecutionContext
+  nameWithType: TestExecutionContext
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler.html
+  name: ITestCaseEventsHandler
+  nameWithType: ITestCaseEventsHandler
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestCaseEventsHandler
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler.html
+  name: IInternalTestRunEventsHandler
+  nameWithType: IInternalTestRunEventsHandler
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+    name: ClientProtocol
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+    name: ClientProtocol
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+- uid: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TestCase>
+  nameWithType: IEnumerable<TestCase>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase>
+  nameWithType.vb: IEnumerable(Of TestCase)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase)
+  name.vb: IEnumerable(Of TestCase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    name: TestCase
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    name: TestCase
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Cancel*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Cancel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_TesthostProtocol_IExecutionManager_Cancel_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IInternalTestRunEventsHandler_
+  name: Cancel
+  nameWithType: IExecutionManager.Cancel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Cancel
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Abort*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Abort
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_TesthostProtocol_IExecutionManager_Abort_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IInternalTestRunEventsHandler_
+  name: Abort
+  nameWithType: IExecutionManager.Abort
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IExecutionManager.Abort

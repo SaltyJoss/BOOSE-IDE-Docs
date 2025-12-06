@@ -1,0 +1,294 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint
+  id: ICommunicationEndPoint
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  children:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Connected
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Disconnected
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Start(System.String)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Stop
+  langs:
+  - csharp
+  - vb
+  name: ICommunicationEndPoint
+  nameWithType: ICommunicationEndPoint
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint
+  type: Interface
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: public interface ICommunicationEndPoint
+    content.vb: Public Interface ICommunicationEndPoint
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Start(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Start(System.String)
+  id: Start(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint
+  langs:
+  - csharp
+  - vb
+  name: Start(string)
+  nameWithType: ICommunicationEndPoint.Start(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Start(string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: string? Start(string endPoint)
+    parameters:
+    - id: endPoint
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Function Start(endPoint As String) As String
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Start*
+  nameWithType.vb: ICommunicationEndPoint.Start(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Start(String)
+  name.vb: Start(String)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Stop
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Stop
+  id: Stop
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: ICommunicationEndPoint.Stop()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Stop()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: void Stop()
+    content.vb: Sub [Stop]()
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Stop*
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Connected
+  commentId: E:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Connected
+  id: Connected
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint
+  langs:
+  - csharp
+  - vb
+  name: Connected
+  nameWithType: ICommunicationEndPoint.Connected
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Connected
+  type: Event
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: event EventHandler<ConnectedEventArgs> Connected
+    return:
+      type: System.EventHandler{Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ConnectedEventArgs}
+    content.vb: Event Connected As EventHandler(Of ConnectedEventArgs)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Disconnected
+  commentId: E:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Disconnected
+  id: Disconnected
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint
+  langs:
+  - csharp
+  - vb
+  name: Disconnected
+  nameWithType: ICommunicationEndPoint.Disconnected
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Disconnected
+  type: Event
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: event EventHandler<DisconnectedEventArgs> Disconnected
+    return:
+      type: System.EventHandler{Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.DisconnectedEventArgs}
+    content.vb: Event Disconnected As EventHandler(Of DisconnectedEventArgs)
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Start*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Start
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationEndPoint_Start_System_String_
+  name: Start
+  nameWithType: ICommunicationEndPoint.Start
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Start
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Stop*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Stop
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationEndPoint_Stop
+  name: Stop
+  nameWithType: ICommunicationEndPoint.Stop
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationEndPoint.Stop
+- uid: System.EventHandler{Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ConnectedEventArgs}
+  commentId: T:System.EventHandler{Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ConnectedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<ConnectedEventArgs>
+  nameWithType: EventHandler<ConnectedEventArgs>
+  fullName: System.EventHandler<Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ConnectedEventArgs>
+  nameWithType.vb: EventHandler(Of ConnectedEventArgs)
+  fullName.vb: System.EventHandler(Of Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ConnectedEventArgs)
+  name.vb: EventHandler(Of ConnectedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ConnectedEventArgs
+    name: ConnectedEventArgs
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ConnectedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ConnectedEventArgs
+    name: ConnectedEventArgs
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ConnectedEventArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: System.EventHandler{Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.DisconnectedEventArgs}
+  commentId: T:System.EventHandler{Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.DisconnectedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<DisconnectedEventArgs>
+  nameWithType: EventHandler<DisconnectedEventArgs>
+  fullName: System.EventHandler<Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.DisconnectedEventArgs>
+  nameWithType.vb: EventHandler(Of DisconnectedEventArgs)
+  fullName.vb: System.EventHandler(Of Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.DisconnectedEventArgs)
+  name.vb: EventHandler(Of DisconnectedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.DisconnectedEventArgs
+    name: DisconnectedEventArgs
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.DisconnectedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.DisconnectedEventArgs
+    name: DisconnectedEventArgs
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.DisconnectedEventArgs.html
+  - name: )

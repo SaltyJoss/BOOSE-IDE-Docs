@@ -1,0 +1,641 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1
+  id: TrackableEvent`1
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  children:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.#ctor
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Notify(System.Object,`0,System.String)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Subscribe(System.EventHandler{`0})
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Unsubscribe(System.EventHandler{`0})
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.WaitForSubscriber(System.Int32,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: TrackableEvent<T>
+  nameWithType: TrackableEvent<T>
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent<T>
+  type: Class
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: public class TrackableEvent<T>
+    typeParameters:
+    - id: T
+    content.vb: Public Class TrackableEvent(Of T)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  nameWithType.vb: TrackableEvent(Of T)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent(Of T)
+  name.vb: TrackableEvent(Of T)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.#ctor
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.#ctor
+  id: '#ctor'
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1
+  langs:
+  - csharp
+  - vb
+  name: TrackableEvent()
+  nameWithType: TrackableEvent<T>.TrackableEvent()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent<T>.TrackableEvent()
+  type: Constructor
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: public TrackableEvent()
+    content.vb: Public Sub New()
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.#ctor*
+  nameWithType.vb: TrackableEvent(Of T).New()
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent(Of T).New()
+  name.vb: New()
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Notify(System.Object,`0,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Notify(System.Object,`0,System.String)
+  id: Notify(System.Object,`0,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1
+  langs:
+  - csharp
+  - vb
+  name: Notify(object, T, string)
+  nameWithType: TrackableEvent<T>.Notify(object, T, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent<T>.Notify(object, T, string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: public virtual void Notify(object sender, T eventArgs, string traceDisplayName)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: eventArgs
+      type: '{T}'
+    - id: traceDisplayName
+      type: System.String
+    content.vb: Public Overridable Sub Notify(sender As Object, eventArgs As T, traceDisplayName As String)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Notify*
+  nameWithType.vb: TrackableEvent(Of T).Notify(Object, T, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent(Of T).Notify(Object, T, String)
+  name.vb: Notify(Object, T, String)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.WaitForSubscriber(System.Int32,System.Threading.CancellationToken)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.WaitForSubscriber(System.Int32,System.Threading.CancellationToken)
+  id: WaitForSubscriber(System.Int32,System.Threading.CancellationToken)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1
+  langs:
+  - csharp
+  - vb
+  name: WaitForSubscriber(int, CancellationToken)
+  nameWithType: TrackableEvent<T>.WaitForSubscriber(int, CancellationToken)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent<T>.WaitForSubscriber(int, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: public virtual bool WaitForSubscriber(int timeoutMilliseconds, CancellationToken cancellationToken)
+    parameters:
+    - id: timeoutMilliseconds
+      type: System.Int32
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function WaitForSubscriber(timeoutMilliseconds As Integer, cancellationToken As CancellationToken) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.WaitForSubscriber*
+  nameWithType.vb: TrackableEvent(Of T).WaitForSubscriber(Integer, CancellationToken)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent(Of T).WaitForSubscriber(Integer, System.Threading.CancellationToken)
+  name.vb: WaitForSubscriber(Integer, CancellationToken)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Subscribe(System.EventHandler{`0})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Subscribe(System.EventHandler{`0})
+  id: Subscribe(System.EventHandler{`0})
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(EventHandler<T>?)
+  nameWithType: TrackableEvent<T>.Subscribe(EventHandler<T>?)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent<T>.Subscribe(System.EventHandler<T>?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: public virtual void Subscribe(EventHandler<T>? eventHandler)
+    parameters:
+    - id: eventHandler
+      type: System.EventHandler{{T}}
+    content.vb: Public Overridable Sub Subscribe(eventHandler As EventHandler(Of T))
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Subscribe*
+  nameWithType.vb: TrackableEvent(Of T).Subscribe(EventHandler(Of T))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent(Of T).Subscribe(System.EventHandler(Of T))
+  name.vb: Subscribe(EventHandler(Of T))
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Unsubscribe(System.EventHandler{`0})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Unsubscribe(System.EventHandler{`0})
+  id: Unsubscribe(System.EventHandler{`0})
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1
+  langs:
+  - csharp
+  - vb
+  name: Unsubscribe(EventHandler<T>?)
+  nameWithType: TrackableEvent<T>.Unsubscribe(EventHandler<T>?)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent<T>.Unsubscribe(System.EventHandler<T>?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: public virtual void Unsubscribe(EventHandler<T>? eventHandler)
+    parameters:
+    - id: eventHandler
+      type: System.EventHandler{{T}}
+    content.vb: Public Overridable Sub Unsubscribe(eventHandler As EventHandler(Of T))
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Unsubscribe*
+  nameWithType.vb: TrackableEvent(Of T).Unsubscribe(EventHandler(Of T))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent(Of T).Unsubscribe(System.EventHandler(Of T))
+  name.vb: Unsubscribe(EventHandler(Of T))
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent-1.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_TrackableEvent_1__ctor
+  name: TrackableEvent
+  nameWithType: TrackableEvent<T>.TrackableEvent
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent<T>.TrackableEvent
+  nameWithType.vb: TrackableEvent(Of T).New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent(Of T).New
+  name.vb: New
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Notify*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Notify
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent-1.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_TrackableEvent_1_Notify_System_Object__0_System_String_
+  name: Notify
+  nameWithType: TrackableEvent<T>.Notify
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent<T>.Notify
+  nameWithType.vb: TrackableEvent(Of T).Notify
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent(Of T).Notify
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.WaitForSubscriber*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.WaitForSubscriber
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent-1.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_TrackableEvent_1_WaitForSubscriber_System_Int32_System_Threading_CancellationToken_
+  name: WaitForSubscriber
+  nameWithType: TrackableEvent<T>.WaitForSubscriber
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent<T>.WaitForSubscriber
+  nameWithType.vb: TrackableEvent(Of T).WaitForSubscriber
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent(Of T).WaitForSubscriber
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Subscribe*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Subscribe
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent-1.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_TrackableEvent_1_Subscribe_System_EventHandler__0__
+  name: Subscribe
+  nameWithType: TrackableEvent<T>.Subscribe
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent<T>.Subscribe
+  nameWithType.vb: TrackableEvent(Of T).Subscribe
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent(Of T).Subscribe
+- uid: System.EventHandler{{T}}
+  commentId: T:System.EventHandler{`0}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<T>
+  nameWithType: EventHandler<T>
+  fullName: System.EventHandler<T>
+  nameWithType.vb: EventHandler(Of T)
+  fullName.vb: System.EventHandler(Of T)
+  name.vb: EventHandler(Of T)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Unsubscribe*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent`1.Unsubscribe
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent-1.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_TrackableEvent_1_Unsubscribe_System_EventHandler__0__
+  name: Unsubscribe
+  nameWithType: TrackableEvent<T>.Unsubscribe
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent<T>.Unsubscribe
+  nameWithType.vb: TrackableEvent(Of T).Unsubscribe
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.TrackableEvent(Of T).Unsubscribe

@@ -89,7 +89,7 @@
 
 
   <h1 id="BOOSECoreApp_Core_Base_ParserApp" data-uid="BOOSECoreApp.Core.Base.ParserApp" class="text-break">
-Class ParserApp  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/ParserApp.cs"><i class="bi bi-code-slash"></i></a>
+Class ParserApp  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -149,7 +149,7 @@ Class ParserApp  <a class="header-action link-secondary" title="View source" hre
 
   <h2 id="BOOSECoreApp_Core_Base_ParserApp_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>
-<a class="xref" href="BOOSECoreApp.Core.Base.ParserApp.html">ParserApp</a> class tokenises and validates BOOSE commands ("Source Code") before execution.
+<a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.ParserApp.html">ParserApp</a> class tokenises and validates BOOSE commands ("Source Code") before execution.
 It fully supports multi-line programs, command assignments, variable assingments.
 It also handles both parsing AND exception handling.
 </p>
@@ -166,32 +166,23 @@ Empty Lines are skipped entirely.
 
   <a id="BOOSECoreApp_Core_Base_ParserApp__ctor_" data-uid="BOOSECoreApp.Core.Base.ParserApp.#ctor*"></a>
 
-  <h3 id="BOOSECoreApp_Core_Base_ParserApp__ctor_BOOSECoreApp_Core_Base_CommandFactoryApp_BOOSECoreApp_Core_Base_StoredProgramApp_BOOSECoreApp_Core_Interfaces_IGraphicAdapter_BOOSECoreApp_Core_Adapters_VariableAdapterApp_" data-uid="BOOSECoreApp.Core.Base.ParserApp.#ctor(BOOSECoreApp.Core.Base.CommandFactoryApp,BOOSECoreApp.Core.Base.StoredProgramApp,BOOSECoreApp.Core.Interfaces.IGraphicAdapter,BOOSECoreApp.Core.Adapters.VariableAdapterApp)">
-  ParserApp(CommandFactoryApp, StoredProgramApp, IGraphicAdapter, VariableAdapterApp)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/ParserApp.cs"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSECoreApp_Core_Base_ParserApp__ctor_BOOSECoreApp_Core_Base_StoredProgramApp_" data-uid="BOOSECoreApp.Core.Base.ParserApp.#ctor(BOOSECoreApp.Core.Base.StoredProgramApp)">
+  ParserApp(StoredProgramApp)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initialises a new instance of the <a class="xref" href="BOOSECoreApp.Core.Base.ParserApp.html">ParserApp</a> class.</p>
+  <div class="markdown level1 summary"><p>Initialises a new instance of the <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.ParserApp.html">ParserApp</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ParserApp(CommandFactoryApp factory, StoredProgramApp program, IGraphicAdapter grphicAdapter, VariableAdapterApp varAdapter)</code></pre>
+    <pre><code class="lang-csharp hljs">public ParserApp(StoredProgramApp program)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>factory</code> <a class="xref" href="BOOSECoreApp.Core.Base.CommandFactoryApp.html">CommandFactoryApp</a></dt>
-    <dd><p>The command factory used to instantiate command objects.</p>
-</dd>
-    <dt><code>program</code> <a class="xref" href="BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a></dt>
+    <dt><code>program</code> <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a></dt>
     <dd><p>The current stored program context.</p>
-</dd>
-    <dt><code>grphicAdapter</code> <a class="xref" href="BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html">IGraphicAdapter</a></dt>
-    <dd><p>The graphics adapter used for drawing operations.</p>
-</dd>
-    <dt><code>varAdapter</code> <a class="xref" href="BOOSECoreApp.Core.Adapters.VariableAdapterApp.html">VariableAdapterApp</a></dt>
-    <dd><p>The variable adapter responsible for variable creation and manipulation.</p>
 </dd>
   </dl>
 
@@ -206,7 +197,7 @@ Empty Lines are skipped entirely.
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
-    <dd><p>Thrown when <code class="paramref">factory</code>, <code class="paramref">program</code>, or <code class="paramref">varAdapter</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+    <dd><p>Thrown if the provided program is null.</p>
 </dd>
   </dl>
 
@@ -218,26 +209,23 @@ Empty Lines are skipped entirely.
 
   <a id="BOOSECoreApp_Core_Base_ParserApp_ParseCode_" data-uid="BOOSECoreApp.Core.Base.ParserApp.ParseCode*"></a>
 
-  <h3 id="BOOSECoreApp_Core_Base_ParserApp_ParseCode_System_String_BOOSECoreApp_Core_Interfaces_IGraphicAdapter_" data-uid="BOOSECoreApp.Core.Base.ParserApp.ParseCode(System.String,BOOSECoreApp.Core.Interfaces.IGraphicAdapter)">
-  ParseCode(string, IGraphicAdapter)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/ParserApp.cs"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSECoreApp_Core_Base_ParserApp_ParseCode_System_String_" data-uid="BOOSECoreApp.Core.Base.ParserApp.ParseCode(System.String)">
+  ParseCode(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Parses the BOOSE code string and populates the <a class="xref" href="BOOSECoreApp.Core.Interfaces.IStoredProgramApp.html">IStoredProgramApp</a> with the corresponding commands.</p>
+  <div class="markdown level1 summary"><p>Parses the provided code and builds the program representation using the specified graphic adapter.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ParseCode(string code, IGraphicAdapter grphicAdapter)</code></pre>
+    <pre><code class="lang-csharp hljs">public void ParseCode(string code)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>code</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>The source code to be parsed.</p>
-</dd>
-    <dt><code>grphicAdapter</code> <a class="xref" href="BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html">IGraphicAdapter</a></dt>
-    <dd><p>The graphic adapter used to execute commands on a canvas.</p>
 </dd>
   </dl>
 
@@ -248,9 +236,9 @@ Empty Lines are skipped entirely.
 
 
 
-  <h4 class="section" id="BOOSECoreApp_Core_Base_ParserApp_ParseCode_System_String_BOOSECoreApp_Core_Interfaces_IGraphicAdapter__remarks">Remarks</h4>
+  <h4 class="section" id="BOOSECoreApp_Core_Base_ParserApp_ParseCode_System_String__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>Handles variable declerations, assignments, and operator expressions.
-Parsing errors and evaluation issues are caught and logged using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.diagnostics.debug">Debug</a>, preventing application termination.</p>
+Parsing errors and evaluation issues are caught and logged using <span class="xref">BOOSECoreApp.Exceptions.GlobalExceptionHandler</span> methods, AND <a class="xref" href="../api-tests/BOOSECoreApp.Exceptions.BooseSyntaxException.html">BooseSyntaxException</a>&quot; exceptions -&gt; the later allows syntax error highlighting!/&gt;</p>
 </div>
 
 
@@ -260,7 +248,7 @@ Parsing errors and evaluation issues are caught and logged using <a class="xref"
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/ParserApp.cs" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs" class="edit-link">Edit this page</a>
         </div>
 
 

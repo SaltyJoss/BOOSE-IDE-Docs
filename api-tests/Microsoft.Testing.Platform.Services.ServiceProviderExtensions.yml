@@ -1,0 +1,882 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions
+  commentId: T:Microsoft.Testing.Platform.Services.ServiceProviderExtensions
+  id: ServiceProviderExtensions
+  parent: Microsoft.Testing.Platform.Services
+  children:
+  - Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetClientInfo(System.IServiceProvider)
+  - Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetCommandLineOptions(System.IServiceProvider)
+  - Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetConfiguration(System.IServiceProvider)
+  - Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetLoggerFactory(System.IServiceProvider)
+  - Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetMessageBus(System.IServiceProvider)
+  - Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetOutputDevice(System.IServiceProvider)
+  - Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetRequiredService``1(System.IServiceProvider)
+  - Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetService``1(System.IServiceProvider)
+  langs:
+  - csharp
+  - vb
+  name: ServiceProviderExtensions
+  nameWithType: ServiceProviderExtensions
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions
+  type: Class
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Services
+  syntax:
+    content: public static class ServiceProviderExtensions
+    content.vb: Public Module ServiceProviderExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetRequiredService``1(System.IServiceProvider)
+  commentId: M:Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetRequiredService``1(System.IServiceProvider)
+  id: GetRequiredService``1(System.IServiceProvider)
+  isExtensionMethod: true
+  parent: Microsoft.Testing.Platform.Services.ServiceProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetRequiredService<TService>(IServiceProvider)
+  nameWithType: ServiceProviderExtensions.GetRequiredService<TService>(IServiceProvider)
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetRequiredService<TService>(System.IServiceProvider)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Services
+  syntax:
+    content: 'public static TService GetRequiredService<TService>(this IServiceProvider provider) where TService : notnull'
+    parameters:
+    - id: provider
+      type: System.IServiceProvider
+    typeParameters:
+    - id: TService
+    return:
+      type: '{TService}'
+    content.vb: Public Shared Function GetRequiredService(Of TService)(provider As IServiceProvider) As TService
+  overload: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetRequiredService*
+  nameWithType.vb: ServiceProviderExtensions.GetRequiredService(Of TService)(IServiceProvider)
+  fullName.vb: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetRequiredService(Of TService)(System.IServiceProvider)
+  name.vb: GetRequiredService(Of TService)(IServiceProvider)
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetService``1(System.IServiceProvider)
+  commentId: M:Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetService``1(System.IServiceProvider)
+  id: GetService``1(System.IServiceProvider)
+  isExtensionMethod: true
+  parent: Microsoft.Testing.Platform.Services.ServiceProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetService<TService>(IServiceProvider)
+  nameWithType: ServiceProviderExtensions.GetService<TService>(IServiceProvider)
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetService<TService>(System.IServiceProvider)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Services
+  syntax:
+    content: 'public static TService? GetService<TService>(this IServiceProvider provider) where TService : class'
+    parameters:
+    - id: provider
+      type: System.IServiceProvider
+    typeParameters:
+    - id: TService
+    return:
+      type: '{TService}'
+    content.vb: Public Shared Function GetService(Of TService As Class)(provider As IServiceProvider) As TService
+  overload: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetService*
+  nameWithType.vb: ServiceProviderExtensions.GetService(Of TService)(IServiceProvider)
+  fullName.vb: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetService(Of TService)(System.IServiceProvider)
+  name.vb: GetService(Of TService)(IServiceProvider)
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetMessageBus(System.IServiceProvider)
+  commentId: M:Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetMessageBus(System.IServiceProvider)
+  id: GetMessageBus(System.IServiceProvider)
+  isExtensionMethod: true
+  parent: Microsoft.Testing.Platform.Services.ServiceProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMessageBus(IServiceProvider)
+  nameWithType: ServiceProviderExtensions.GetMessageBus(IServiceProvider)
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetMessageBus(System.IServiceProvider)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Services
+  syntax:
+    content: public static IMessageBus GetMessageBus(this IServiceProvider serviceProvider)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+    return:
+      type: Microsoft.Testing.Platform.Messages.IMessageBus
+    content.vb: Public Shared Function GetMessageBus(serviceProvider As IServiceProvider) As IMessageBus
+  overload: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetMessageBus*
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetConfiguration(System.IServiceProvider)
+  commentId: M:Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetConfiguration(System.IServiceProvider)
+  id: GetConfiguration(System.IServiceProvider)
+  isExtensionMethod: true
+  parent: Microsoft.Testing.Platform.Services.ServiceProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetConfiguration(IServiceProvider)
+  nameWithType: ServiceProviderExtensions.GetConfiguration(IServiceProvider)
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetConfiguration(System.IServiceProvider)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Services
+  syntax:
+    content: public static IConfiguration GetConfiguration(this IServiceProvider serviceProvider)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+    return:
+      type: Microsoft.Testing.Platform.Configurations.IConfiguration
+    content.vb: Public Shared Function GetConfiguration(serviceProvider As IServiceProvider) As IConfiguration
+  overload: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetConfiguration*
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetCommandLineOptions(System.IServiceProvider)
+  commentId: M:Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetCommandLineOptions(System.IServiceProvider)
+  id: GetCommandLineOptions(System.IServiceProvider)
+  isExtensionMethod: true
+  parent: Microsoft.Testing.Platform.Services.ServiceProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetCommandLineOptions(IServiceProvider)
+  nameWithType: ServiceProviderExtensions.GetCommandLineOptions(IServiceProvider)
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetCommandLineOptions(System.IServiceProvider)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Services
+  syntax:
+    content: public static ICommandLineOptions GetCommandLineOptions(this IServiceProvider serviceProvider)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+    return:
+      type: Microsoft.Testing.Platform.CommandLine.ICommandLineOptions
+    content.vb: Public Shared Function GetCommandLineOptions(serviceProvider As IServiceProvider) As ICommandLineOptions
+  overload: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetCommandLineOptions*
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetLoggerFactory(System.IServiceProvider)
+  commentId: M:Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetLoggerFactory(System.IServiceProvider)
+  id: GetLoggerFactory(System.IServiceProvider)
+  isExtensionMethod: true
+  parent: Microsoft.Testing.Platform.Services.ServiceProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetLoggerFactory(IServiceProvider)
+  nameWithType: ServiceProviderExtensions.GetLoggerFactory(IServiceProvider)
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetLoggerFactory(System.IServiceProvider)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Services
+  syntax:
+    content: public static ILoggerFactory GetLoggerFactory(this IServiceProvider serviceProvider)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+    return:
+      type: Microsoft.Testing.Platform.Logging.ILoggerFactory
+    content.vb: Public Shared Function GetLoggerFactory(serviceProvider As IServiceProvider) As ILoggerFactory
+  overload: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetLoggerFactory*
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetOutputDevice(System.IServiceProvider)
+  commentId: M:Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetOutputDevice(System.IServiceProvider)
+  id: GetOutputDevice(System.IServiceProvider)
+  isExtensionMethod: true
+  parent: Microsoft.Testing.Platform.Services.ServiceProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetOutputDevice(IServiceProvider)
+  nameWithType: ServiceProviderExtensions.GetOutputDevice(IServiceProvider)
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetOutputDevice(System.IServiceProvider)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Services
+  syntax:
+    content: public static IOutputDevice GetOutputDevice(this IServiceProvider serviceProvider)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+    return:
+      type: Microsoft.Testing.Platform.OutputDevice.IOutputDevice
+    content.vb: Public Shared Function GetOutputDevice(serviceProvider As IServiceProvider) As IOutputDevice
+  overload: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetOutputDevice*
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetClientInfo(System.IServiceProvider)
+  commentId: M:Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetClientInfo(System.IServiceProvider)
+  id: GetClientInfo(System.IServiceProvider)
+  isExtensionMethod: true
+  parent: Microsoft.Testing.Platform.Services.ServiceProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetClientInfo(IServiceProvider)
+  nameWithType: ServiceProviderExtensions.GetClientInfo(IServiceProvider)
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetClientInfo(System.IServiceProvider)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Services
+  syntax:
+    content: public static IClientInfo GetClientInfo(this IServiceProvider serviceProvider)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+    return:
+      type: Microsoft.Testing.Platform.Services.IClientInfo
+    content.vb: Public Shared Function GetClientInfo(serviceProvider As IServiceProvider) As IClientInfo
+  overload: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetClientInfo*
+references:
+- uid: Microsoft.Testing.Platform.Services
+  commentId: N:Microsoft.Testing.Platform.Services
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Services
+  nameWithType: Microsoft.Testing.Platform.Services
+  fullName: Microsoft.Testing.Platform.Services
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Services
+    name: Services
+    isExternal: true
+    href: Microsoft.Testing.Platform.Services.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Services
+    name: Services
+    isExternal: true
+    href: Microsoft.Testing.Platform.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetRequiredService*
+  commentId: Overload:Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetRequiredService
+  isExternal: true
+  href: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.html#Microsoft_Testing_Platform_Services_ServiceProviderExtensions_GetRequiredService__1_System_IServiceProvider_
+  name: GetRequiredService
+  nameWithType: ServiceProviderExtensions.GetRequiredService
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetRequiredService
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: '{TService}'
+  commentId: '!:TService'
+  definition: TService
+  name: TService
+  nameWithType: TService
+  fullName: TService
+- uid: TService
+  name: TService
+  nameWithType: TService
+  fullName: TService
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetService*
+  commentId: Overload:Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetService
+  isExternal: true
+  href: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.html#Microsoft_Testing_Platform_Services_ServiceProviderExtensions_GetService__1_System_IServiceProvider_
+  name: GetService
+  nameWithType: ServiceProviderExtensions.GetService
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetService
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetMessageBus*
+  commentId: Overload:Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetMessageBus
+  isExternal: true
+  href: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.html#Microsoft_Testing_Platform_Services_ServiceProviderExtensions_GetMessageBus_System_IServiceProvider_
+  name: GetMessageBus
+  nameWithType: ServiceProviderExtensions.GetMessageBus
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetMessageBus
+- uid: Microsoft.Testing.Platform.Messages.IMessageBus
+  commentId: T:Microsoft.Testing.Platform.Messages.IMessageBus
+  parent: Microsoft.Testing.Platform.Messages
+  isExternal: true
+  href: Microsoft.Testing.Platform.Messages.IMessageBus.html
+  name: IMessageBus
+  nameWithType: IMessageBus
+  fullName: Microsoft.Testing.Platform.Messages.IMessageBus
+- uid: Microsoft.Testing.Platform.Messages
+  commentId: N:Microsoft.Testing.Platform.Messages
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Messages
+  nameWithType: Microsoft.Testing.Platform.Messages
+  fullName: Microsoft.Testing.Platform.Messages
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Messages
+    name: Messages
+    isExternal: true
+    href: Microsoft.Testing.Platform.Messages.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Messages
+    name: Messages
+    isExternal: true
+    href: Microsoft.Testing.Platform.Messages.html
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetConfiguration*
+  commentId: Overload:Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetConfiguration
+  isExternal: true
+  href: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.html#Microsoft_Testing_Platform_Services_ServiceProviderExtensions_GetConfiguration_System_IServiceProvider_
+  name: GetConfiguration
+  nameWithType: ServiceProviderExtensions.GetConfiguration
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetConfiguration
+- uid: Microsoft.Testing.Platform.Configurations.IConfiguration
+  commentId: T:Microsoft.Testing.Platform.Configurations.IConfiguration
+  parent: Microsoft.Testing.Platform.Configurations
+  isExternal: true
+  href: Microsoft.Testing.Platform.Configurations.IConfiguration.html
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Testing.Platform.Configurations.IConfiguration
+- uid: Microsoft.Testing.Platform.Configurations
+  commentId: N:Microsoft.Testing.Platform.Configurations
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Configurations
+  nameWithType: Microsoft.Testing.Platform.Configurations
+  fullName: Microsoft.Testing.Platform.Configurations
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Configurations
+    name: Configurations
+    isExternal: true
+    href: Microsoft.Testing.Platform.Configurations.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Configurations
+    name: Configurations
+    isExternal: true
+    href: Microsoft.Testing.Platform.Configurations.html
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetCommandLineOptions*
+  commentId: Overload:Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetCommandLineOptions
+  isExternal: true
+  href: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.html#Microsoft_Testing_Platform_Services_ServiceProviderExtensions_GetCommandLineOptions_System_IServiceProvider_
+  name: GetCommandLineOptions
+  nameWithType: ServiceProviderExtensions.GetCommandLineOptions
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetCommandLineOptions
+- uid: Microsoft.Testing.Platform.CommandLine.ICommandLineOptions
+  commentId: T:Microsoft.Testing.Platform.CommandLine.ICommandLineOptions
+  parent: Microsoft.Testing.Platform.CommandLine
+  isExternal: true
+  href: Microsoft.Testing.Platform.CommandLine.ICommandLineOptions.html
+  name: ICommandLineOptions
+  nameWithType: ICommandLineOptions
+  fullName: Microsoft.Testing.Platform.CommandLine.ICommandLineOptions
+- uid: Microsoft.Testing.Platform.CommandLine
+  commentId: N:Microsoft.Testing.Platform.CommandLine
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.CommandLine
+  nameWithType: Microsoft.Testing.Platform.CommandLine
+  fullName: Microsoft.Testing.Platform.CommandLine
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.CommandLine
+    name: CommandLine
+    isExternal: true
+    href: Microsoft.Testing.Platform.CommandLine.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.CommandLine
+    name: CommandLine
+    isExternal: true
+    href: Microsoft.Testing.Platform.CommandLine.html
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetLoggerFactory*
+  commentId: Overload:Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetLoggerFactory
+  isExternal: true
+  href: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.html#Microsoft_Testing_Platform_Services_ServiceProviderExtensions_GetLoggerFactory_System_IServiceProvider_
+  name: GetLoggerFactory
+  nameWithType: ServiceProviderExtensions.GetLoggerFactory
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetLoggerFactory
+- uid: Microsoft.Testing.Platform.Logging.ILoggerFactory
+  commentId: T:Microsoft.Testing.Platform.Logging.ILoggerFactory
+  parent: Microsoft.Testing.Platform.Logging
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.ILoggerFactory.html
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: Microsoft.Testing.Platform.Logging.ILoggerFactory
+- uid: Microsoft.Testing.Platform.Logging
+  commentId: N:Microsoft.Testing.Platform.Logging
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Logging
+  nameWithType: Microsoft.Testing.Platform.Logging
+  fullName: Microsoft.Testing.Platform.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.html
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetOutputDevice*
+  commentId: Overload:Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetOutputDevice
+  isExternal: true
+  href: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.html#Microsoft_Testing_Platform_Services_ServiceProviderExtensions_GetOutputDevice_System_IServiceProvider_
+  name: GetOutputDevice
+  nameWithType: ServiceProviderExtensions.GetOutputDevice
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetOutputDevice
+- uid: Microsoft.Testing.Platform.OutputDevice.IOutputDevice
+  commentId: T:Microsoft.Testing.Platform.OutputDevice.IOutputDevice
+  parent: Microsoft.Testing.Platform.OutputDevice
+  isExternal: true
+  href: Microsoft.Testing.Platform.OutputDevice.IOutputDevice.html
+  name: IOutputDevice
+  nameWithType: IOutputDevice
+  fullName: Microsoft.Testing.Platform.OutputDevice.IOutputDevice
+- uid: Microsoft.Testing.Platform.OutputDevice
+  commentId: N:Microsoft.Testing.Platform.OutputDevice
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.OutputDevice
+  nameWithType: Microsoft.Testing.Platform.OutputDevice
+  fullName: Microsoft.Testing.Platform.OutputDevice
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.OutputDevice
+    name: OutputDevice
+    isExternal: true
+    href: Microsoft.Testing.Platform.OutputDevice.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.OutputDevice
+    name: OutputDevice
+    isExternal: true
+    href: Microsoft.Testing.Platform.OutputDevice.html
+- uid: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetClientInfo*
+  commentId: Overload:Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetClientInfo
+  isExternal: true
+  href: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.html#Microsoft_Testing_Platform_Services_ServiceProviderExtensions_GetClientInfo_System_IServiceProvider_
+  name: GetClientInfo
+  nameWithType: ServiceProviderExtensions.GetClientInfo
+  fullName: Microsoft.Testing.Platform.Services.ServiceProviderExtensions.GetClientInfo
+- uid: Microsoft.Testing.Platform.Services.IClientInfo
+  commentId: T:Microsoft.Testing.Platform.Services.IClientInfo
+  parent: Microsoft.Testing.Platform.Services
+  isExternal: true
+  href: Microsoft.Testing.Platform.Services.IClientInfo.html
+  name: IClientInfo
+  nameWithType: IClientInfo
+  fullName: Microsoft.Testing.Platform.Services.IClientInfo

@@ -1,0 +1,1715 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  id: SocketCommunicationManager
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  children:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.#ctor
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.AcceptClientAsync
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.DeserializePayload``1(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.HostServer(System.Net.IPEndPoint)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveMessage
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveMessageAsync(System.Threading.CancellationToken)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveRawMessage
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveRawMessageAsync(System.Threading.CancellationToken)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage(System.String)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage(System.String,System.Object)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage(System.String,System.Object,System.Int32)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendRawMessage(System.String)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SetupClientAsync(System.Net.IPEndPoint)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.StopClient
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.StopServer
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForClientConnection(System.Int32)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForServerConnection(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: SocketCommunicationManager
+  nameWithType: SocketCommunicationManager
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  type: Class
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  syntax:
+    content: 'public class SocketCommunicationManager : ICommunicationManager'
+    content.vb: Public Class SocketCommunicationManager Implements ICommunicationManager
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.#ctor
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.#ctor
+  id: '#ctor'
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: SocketCommunicationManager()
+  nameWithType: SocketCommunicationManager.SocketCommunicationManager()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SocketCommunicationManager()
+  type: Constructor
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  syntax:
+    content: public SocketCommunicationManager()
+    content.vb: Public Sub New()
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.#ctor*
+  nameWithType.vb: SocketCommunicationManager.New()
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.New()
+  name.vb: New()
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.HostServer(System.Net.IPEndPoint)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.HostServer(System.Net.IPEndPoint)
+  id: HostServer(System.Net.IPEndPoint)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: HostServer(IPEndPoint)
+  nameWithType: SocketCommunicationManager.HostServer(IPEndPoint)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.HostServer(System.Net.IPEndPoint)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public IPEndPoint HostServer(IPEndPoint endpoint)
+    parameters:
+    - id: endpoint
+      type: System.Net.IPEndPoint
+    return:
+      type: System.Net.IPEndPoint
+    content.vb: Public Function HostServer(endpoint As IPEndPoint) As IPEndPoint
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.HostServer*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.HostServer(System.Net.IPEndPoint)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.AcceptClientAsync
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.AcceptClientAsync
+  id: AcceptClientAsync
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: AcceptClientAsync()
+  nameWithType: SocketCommunicationManager.AcceptClientAsync()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.AcceptClientAsync()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public Task AcceptClientAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function AcceptClientAsync() As Task
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.AcceptClientAsync*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.AcceptClientAsync
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForClientConnection(System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForClientConnection(System.Int32)
+  id: WaitForClientConnection(System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: WaitForClientConnection(int)
+  nameWithType: SocketCommunicationManager.WaitForClientConnection(int)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForClientConnection(int)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public bool WaitForClientConnection(int clientConnectionTimeout)
+    parameters:
+    - id: clientConnectionTimeout
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function WaitForClientConnection(clientConnectionTimeout As Integer) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForClientConnection*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.WaitForClientConnection(System.Int32)
+  nameWithType.vb: SocketCommunicationManager.WaitForClientConnection(Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForClientConnection(Integer)
+  name.vb: WaitForClientConnection(Integer)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.StopServer
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.StopServer
+  id: StopServer
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: StopServer()
+  nameWithType: SocketCommunicationManager.StopServer()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.StopServer()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public void StopServer()
+    content.vb: Public Sub StopServer()
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.StopServer*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.StopServer
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SetupClientAsync(System.Net.IPEndPoint)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SetupClientAsync(System.Net.IPEndPoint)
+  id: SetupClientAsync(System.Net.IPEndPoint)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: SetupClientAsync(IPEndPoint)
+  nameWithType: SocketCommunicationManager.SetupClientAsync(IPEndPoint)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SetupClientAsync(System.Net.IPEndPoint)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public Task SetupClientAsync(IPEndPoint endpoint)
+    parameters:
+    - id: endpoint
+      type: System.Net.IPEndPoint
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SetupClientAsync(endpoint As IPEndPoint) As Task
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SetupClientAsync*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SetupClientAsync(System.Net.IPEndPoint)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForServerConnection(System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForServerConnection(System.Int32)
+  id: WaitForServerConnection(System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: WaitForServerConnection(int)
+  nameWithType: SocketCommunicationManager.WaitForServerConnection(int)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForServerConnection(int)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public bool WaitForServerConnection(int connectionTimeout)
+    parameters:
+    - id: connectionTimeout
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function WaitForServerConnection(connectionTimeout As Integer) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForServerConnection*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.WaitForServerConnection(System.Int32)
+  nameWithType.vb: SocketCommunicationManager.WaitForServerConnection(Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForServerConnection(Integer)
+  name.vb: WaitForServerConnection(Integer)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.StopClient
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.StopClient
+  id: StopClient
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: StopClient()
+  nameWithType: SocketCommunicationManager.StopClient()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.StopClient()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public void StopClient()
+    content.vb: Public Sub StopClient()
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.StopClient*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.StopClient
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage(System.String)
+  id: SendMessage(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: SendMessage(string)
+  nameWithType: SocketCommunicationManager.SendMessage(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage(string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public void SendMessage(string messageType)
+    parameters:
+    - id: messageType
+      type: System.String
+    content.vb: Public Sub SendMessage(messageType As String)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(System.String)
+  nameWithType.vb: SocketCommunicationManager.SendMessage(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage(String)
+  name.vb: SendMessage(String)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage(System.String,System.Object)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage(System.String,System.Object)
+  id: SendMessage(System.String,System.Object)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: SendMessage(string, object)
+  nameWithType: SocketCommunicationManager.SendMessage(string, object)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage(string, object)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public void SendMessage(string messageType, object payload)
+    parameters:
+    - id: messageType
+      type: System.String
+    - id: payload
+      type: System.Object
+    content.vb: Public Sub SendMessage(messageType As String, payload As Object)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(System.String,System.Object)
+  nameWithType.vb: SocketCommunicationManager.SendMessage(String, Object)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage(String, Object)
+  name.vb: SendMessage(String, Object)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage(System.String,System.Object,System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage(System.String,System.Object,System.Int32)
+  id: SendMessage(System.String,System.Object,System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: SendMessage(string, object, int)
+  nameWithType: SocketCommunicationManager.SendMessage(string, object, int)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage(string, object, int)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public void SendMessage(string messageType, object payload, int version)
+    parameters:
+    - id: messageType
+      type: System.String
+    - id: payload
+      type: System.Object
+    - id: version
+      type: System.Int32
+    content.vb: Public Sub SendMessage(messageType As String, payload As Object, version As Integer)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(System.String,System.Object,System.Int32)
+  nameWithType.vb: SocketCommunicationManager.SendMessage(String, Object, Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage(String, Object, Integer)
+  name.vb: SendMessage(String, Object, Integer)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendRawMessage(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendRawMessage(System.String)
+  id: SendRawMessage(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: SendRawMessage(string)
+  nameWithType: SocketCommunicationManager.SendRawMessage(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendRawMessage(string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public void SendRawMessage(string rawMessage)
+    parameters:
+    - id: rawMessage
+      type: System.String
+    content.vb: Public Sub SendRawMessage(rawMessage As String)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendRawMessage*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendRawMessage(System.String)
+  nameWithType.vb: SocketCommunicationManager.SendRawMessage(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendRawMessage(String)
+  name.vb: SendRawMessage(String)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveMessage
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveMessage
+  id: ReceiveMessage
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: ReceiveMessage()
+  nameWithType: SocketCommunicationManager.ReceiveMessage()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveMessage()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public Message? ReceiveMessage()
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message
+    content.vb: Public Function ReceiveMessage() As Message
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveMessage*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveMessage
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveMessageAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveMessageAsync(System.Threading.CancellationToken)
+  id: ReceiveMessageAsync(System.Threading.CancellationToken)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: ReceiveMessageAsync(CancellationToken)
+  nameWithType: SocketCommunicationManager.ReceiveMessageAsync(CancellationToken)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveMessageAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public Task<Message?> ReceiveMessageAsync(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message}
+    content.vb: Public Function ReceiveMessageAsync(cancellationToken As CancellationToken) As Task(Of Message)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveMessageAsync*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveMessageAsync(System.Threading.CancellationToken)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveRawMessage
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveRawMessage
+  id: ReceiveRawMessage
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: ReceiveRawMessage()
+  nameWithType: SocketCommunicationManager.ReceiveRawMessage()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveRawMessage()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public string? ReceiveRawMessage()
+    return:
+      type: System.String
+    content.vb: Public Function ReceiveRawMessage() As String
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveRawMessage*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveRawMessage
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveRawMessageAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveRawMessageAsync(System.Threading.CancellationToken)
+  id: ReceiveRawMessageAsync(System.Threading.CancellationToken)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: ReceiveRawMessageAsync(CancellationToken)
+  nameWithType: SocketCommunicationManager.ReceiveRawMessageAsync(CancellationToken)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveRawMessageAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public Task<string?> ReceiveRawMessageAsync(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Public Function ReceiveRawMessageAsync(cancellationToken As CancellationToken) As Task(Of String)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveRawMessageAsync*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveRawMessageAsync(System.Threading.CancellationToken)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.DeserializePayload``1(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.DeserializePayload``1(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  id: DeserializePayload``1(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: DeserializePayload<T>(Message)
+  nameWithType: SocketCommunicationManager.DeserializePayload<T>(Message)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.DeserializePayload<T>(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public T? DeserializePayload<T>(Message message)
+    parameters:
+    - id: message
+      type: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function DeserializePayload(Of T)(message As Message) As T
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.DeserializePayload*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.DeserializePayload``1(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  nameWithType.vb: SocketCommunicationManager.DeserializePayload(Of T)(Message)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.DeserializePayload(Of T)(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  name.vb: DeserializePayload(Of T)(Message)
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html
+  name: ICommunicationManager
+  nameWithType: ICommunicationManager
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketCommunicationManager__ctor
+  name: SocketCommunicationManager
+  nameWithType: SocketCommunicationManager.SocketCommunicationManager
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SocketCommunicationManager
+  nameWithType.vb: SocketCommunicationManager.New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.New
+  name.vb: New
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.HostServer*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.HostServer
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketCommunicationManager_HostServer_System_Net_IPEndPoint_
+  name: HostServer
+  nameWithType: SocketCommunicationManager.HostServer
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.HostServer
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.HostServer(System.Net.IPEndPoint)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.HostServer(System.Net.IPEndPoint)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_HostServer_System_Net_IPEndPoint_
+  name: HostServer(IPEndPoint)
+  nameWithType: ICommunicationManager.HostServer(IPEndPoint)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.HostServer(System.Net.IPEndPoint)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.HostServer(System.Net.IPEndPoint)
+    name: HostServer
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_HostServer_System_Net_IPEndPoint_
+  - name: (
+  - uid: System.Net.IPEndPoint
+    name: IPEndPoint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.ipendpoint
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.HostServer(System.Net.IPEndPoint)
+    name: HostServer
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_HostServer_System_Net_IPEndPoint_
+  - name: (
+  - uid: System.Net.IPEndPoint
+    name: IPEndPoint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.ipendpoint
+  - name: )
+- uid: System.Net.IPEndPoint
+  commentId: T:System.Net.IPEndPoint
+  parent: System.Net
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.ipendpoint
+  name: IPEndPoint
+  nameWithType: IPEndPoint
+  fullName: System.Net.IPEndPoint
+- uid: System.Net
+  commentId: N:System.Net
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net
+  nameWithType: System.Net
+  fullName: System.Net
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.AcceptClientAsync*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.AcceptClientAsync
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketCommunicationManager_AcceptClientAsync
+  name: AcceptClientAsync
+  nameWithType: SocketCommunicationManager.AcceptClientAsync
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.AcceptClientAsync
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.AcceptClientAsync
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.AcceptClientAsync
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_AcceptClientAsync
+  name: AcceptClientAsync()
+  nameWithType: ICommunicationManager.AcceptClientAsync()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.AcceptClientAsync()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.AcceptClientAsync
+    name: AcceptClientAsync
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_AcceptClientAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.AcceptClientAsync
+    name: AcceptClientAsync
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_AcceptClientAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForClientConnection*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForClientConnection
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketCommunicationManager_WaitForClientConnection_System_Int32_
+  name: WaitForClientConnection
+  nameWithType: SocketCommunicationManager.WaitForClientConnection
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForClientConnection
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.WaitForClientConnection(System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.WaitForClientConnection(System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_WaitForClientConnection_System_Int32_
+  name: WaitForClientConnection(int)
+  nameWithType: ICommunicationManager.WaitForClientConnection(int)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.WaitForClientConnection(int)
+  nameWithType.vb: ICommunicationManager.WaitForClientConnection(Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.WaitForClientConnection(Integer)
+  name.vb: WaitForClientConnection(Integer)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.WaitForClientConnection(System.Int32)
+    name: WaitForClientConnection
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_WaitForClientConnection_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.WaitForClientConnection(System.Int32)
+    name: WaitForClientConnection
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_WaitForClientConnection_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.StopServer*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.StopServer
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketCommunicationManager_StopServer
+  name: StopServer
+  nameWithType: SocketCommunicationManager.StopServer
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.StopServer
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.StopServer
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.StopServer
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_StopServer
+  name: StopServer()
+  nameWithType: ICommunicationManager.StopServer()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.StopServer()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.StopServer
+    name: StopServer
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_StopServer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.StopServer
+    name: StopServer
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_StopServer
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SetupClientAsync*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SetupClientAsync
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketCommunicationManager_SetupClientAsync_System_Net_IPEndPoint_
+  name: SetupClientAsync
+  nameWithType: SocketCommunicationManager.SetupClientAsync
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SetupClientAsync
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SetupClientAsync(System.Net.IPEndPoint)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SetupClientAsync(System.Net.IPEndPoint)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_SetupClientAsync_System_Net_IPEndPoint_
+  name: SetupClientAsync(IPEndPoint)
+  nameWithType: ICommunicationManager.SetupClientAsync(IPEndPoint)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SetupClientAsync(System.Net.IPEndPoint)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SetupClientAsync(System.Net.IPEndPoint)
+    name: SetupClientAsync
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_SetupClientAsync_System_Net_IPEndPoint_
+  - name: (
+  - uid: System.Net.IPEndPoint
+    name: IPEndPoint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.ipendpoint
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SetupClientAsync(System.Net.IPEndPoint)
+    name: SetupClientAsync
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_SetupClientAsync_System_Net_IPEndPoint_
+  - name: (
+  - uid: System.Net.IPEndPoint
+    name: IPEndPoint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.ipendpoint
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForServerConnection*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForServerConnection
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketCommunicationManager_WaitForServerConnection_System_Int32_
+  name: WaitForServerConnection
+  nameWithType: SocketCommunicationManager.WaitForServerConnection
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.WaitForServerConnection
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.WaitForServerConnection(System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.WaitForServerConnection(System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_WaitForServerConnection_System_Int32_
+  name: WaitForServerConnection(int)
+  nameWithType: ICommunicationManager.WaitForServerConnection(int)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.WaitForServerConnection(int)
+  nameWithType.vb: ICommunicationManager.WaitForServerConnection(Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.WaitForServerConnection(Integer)
+  name.vb: WaitForServerConnection(Integer)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.WaitForServerConnection(System.Int32)
+    name: WaitForServerConnection
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_WaitForServerConnection_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.WaitForServerConnection(System.Int32)
+    name: WaitForServerConnection
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_WaitForServerConnection_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.StopClient*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.StopClient
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketCommunicationManager_StopClient
+  name: StopClient
+  nameWithType: SocketCommunicationManager.StopClient
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.StopClient
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.StopClient
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.StopClient
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_StopClient
+  name: StopClient()
+  nameWithType: ICommunicationManager.StopClient()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.StopClient()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.StopClient
+    name: StopClient
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_StopClient
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.StopClient
+    name: StopClient
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_StopClient
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketCommunicationManager_SendMessage_System_String_
+  name: SendMessage
+  nameWithType: SocketCommunicationManager.SendMessage
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendMessage
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_SendMessage_System_String_
+  name: SendMessage(string)
+  nameWithType: ICommunicationManager.SendMessage(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(string)
+  nameWithType.vb: ICommunicationManager.SendMessage(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(String)
+  name.vb: SendMessage(String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(System.String)
+    name: SendMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_SendMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(System.String)
+    name: SendMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_SendMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(System.String,System.Object)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(System.String,System.Object)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_SendMessage_System_String_System_Object_
+  name: SendMessage(string, object)
+  nameWithType: ICommunicationManager.SendMessage(string, object)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(string, object)
+  nameWithType.vb: ICommunicationManager.SendMessage(String, Object)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(String, Object)
+  name.vb: SendMessage(String, Object)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(System.String,System.Object)
+    name: SendMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_SendMessage_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(System.String,System.Object)
+    name: SendMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_SendMessage_System_String_System_Object_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(System.String,System.Object,System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(System.String,System.Object,System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_SendMessage_System_String_System_Object_System_Int32_
+  name: SendMessage(string, object, int)
+  nameWithType: ICommunicationManager.SendMessage(string, object, int)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(string, object, int)
+  nameWithType.vb: ICommunicationManager.SendMessage(String, Object, Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(String, Object, Integer)
+  name.vb: SendMessage(String, Object, Integer)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(System.String,System.Object,System.Int32)
+    name: SendMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_SendMessage_System_String_System_Object_System_Int32_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendMessage(System.String,System.Object,System.Int32)
+    name: SendMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_SendMessage_System_String_System_Object_System_Int32_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendRawMessage*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendRawMessage
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketCommunicationManager_SendRawMessage_System_String_
+  name: SendRawMessage
+  nameWithType: SocketCommunicationManager.SendRawMessage
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.SendRawMessage
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendRawMessage(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendRawMessage(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_SendRawMessage_System_String_
+  name: SendRawMessage(string)
+  nameWithType: ICommunicationManager.SendRawMessage(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendRawMessage(string)
+  nameWithType.vb: ICommunicationManager.SendRawMessage(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendRawMessage(String)
+  name.vb: SendRawMessage(String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendRawMessage(System.String)
+    name: SendRawMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_SendRawMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.SendRawMessage(System.String)
+    name: SendRawMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_SendRawMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveMessage*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveMessage
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketCommunicationManager_ReceiveMessage
+  name: ReceiveMessage
+  nameWithType: SocketCommunicationManager.ReceiveMessage
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveMessage
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveMessage
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveMessage
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_ReceiveMessage
+  name: ReceiveMessage()
+  nameWithType: ICommunicationManager.ReceiveMessage()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveMessage()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveMessage
+    name: ReceiveMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_ReceiveMessage
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveMessage
+    name: ReceiveMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_ReceiveMessage
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message.html
+  name: Message
+  nameWithType: Message
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveMessageAsync*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveMessageAsync
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketCommunicationManager_ReceiveMessageAsync_System_Threading_CancellationToken_
+  name: ReceiveMessageAsync
+  nameWithType: SocketCommunicationManager.ReceiveMessageAsync
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveMessageAsync
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveMessageAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveMessageAsync(System.Threading.CancellationToken)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_ReceiveMessageAsync_System_Threading_CancellationToken_
+  name: ReceiveMessageAsync(CancellationToken)
+  nameWithType: ICommunicationManager.ReceiveMessageAsync(CancellationToken)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveMessageAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveMessageAsync(System.Threading.CancellationToken)
+    name: ReceiveMessageAsync
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_ReceiveMessageAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveMessageAsync(System.Threading.CancellationToken)
+    name: ReceiveMessageAsync
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_ReceiveMessageAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Message>
+  nameWithType: Task<Message>
+  fullName: System.Threading.Tasks.Task<Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message>
+  nameWithType.vb: Task(Of Message)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  name.vb: Task(Of Message)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message
+    name: Message
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message
+    name: Message
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message.html
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveRawMessage*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveRawMessage
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketCommunicationManager_ReceiveRawMessage
+  name: ReceiveRawMessage
+  nameWithType: SocketCommunicationManager.ReceiveRawMessage
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveRawMessage
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveRawMessage
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveRawMessage
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_ReceiveRawMessage
+  name: ReceiveRawMessage()
+  nameWithType: ICommunicationManager.ReceiveRawMessage()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveRawMessage()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveRawMessage
+    name: ReceiveRawMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_ReceiveRawMessage
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveRawMessage
+    name: ReceiveRawMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_ReceiveRawMessage
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveRawMessageAsync*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveRawMessageAsync
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketCommunicationManager_ReceiveRawMessageAsync_System_Threading_CancellationToken_
+  name: ReceiveRawMessageAsync
+  nameWithType: SocketCommunicationManager.ReceiveRawMessageAsync
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.ReceiveRawMessageAsync
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveRawMessageAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveRawMessageAsync(System.Threading.CancellationToken)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_ReceiveRawMessageAsync_System_Threading_CancellationToken_
+  name: ReceiveRawMessageAsync(CancellationToken)
+  nameWithType: ICommunicationManager.ReceiveRawMessageAsync(CancellationToken)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveRawMessageAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveRawMessageAsync(System.Threading.CancellationToken)
+    name: ReceiveRawMessageAsync
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_ReceiveRawMessageAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.ReceiveRawMessageAsync(System.Threading.CancellationToken)
+    name: ReceiveRawMessageAsync
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_ReceiveRawMessageAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.DeserializePayload*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.DeserializePayload
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_SocketCommunicationManager_DeserializePayload__1_Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Message_
+  name: DeserializePayload
+  nameWithType: SocketCommunicationManager.DeserializePayload
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.SocketCommunicationManager.DeserializePayload
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.DeserializePayload``1(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.DeserializePayload``1(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_DeserializePayload__1_Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Message_
+  name: DeserializePayload<T>(Message)
+  nameWithType: ICommunicationManager.DeserializePayload<T>(Message)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.DeserializePayload<T>(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  nameWithType.vb: ICommunicationManager.DeserializePayload(Of T)(Message)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.DeserializePayload(Of T)(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  name.vb: DeserializePayload(Of T)(Message)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.DeserializePayload``1(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+    name: DeserializePayload
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_DeserializePayload__1_Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Message_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message
+    name: Message
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.DeserializePayload``1(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+    name: DeserializePayload
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ICommunicationManager_DeserializePayload__1_Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Message_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message
+    name: Message
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message.html
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

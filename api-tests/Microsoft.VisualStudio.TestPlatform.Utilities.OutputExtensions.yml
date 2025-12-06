@@ -1,0 +1,574 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions
+  commentId: T:Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions
+  id: OutputExtensions
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities
+  children:
+  - Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Error(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.Boolean,System.String,System.Object[])
+  - Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Information(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.Boolean,System.ConsoleColor,System.String,System.Object[])
+  - Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Information(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.Boolean,System.String,System.Object[])
+  - Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Warning(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.Boolean,System.String,System.Object[])
+  - Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Write(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.String,Microsoft.VisualStudio.TestPlatform.Utilities.OutputLevel,System.ConsoleColor)
+  langs:
+  - csharp
+  - vb
+  name: OutputExtensions
+  nameWithType: OutputExtensions
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions
+  type: Class
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities
+  syntax:
+    content: public static class OutputExtensions
+    content.vb: Public Module OutputExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Error(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.Boolean,System.String,System.Object[])
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Error(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.Boolean,System.String,System.Object[])
+  id: Error(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.Boolean,System.String,System.Object[])
+  isExtensionMethod: true
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions
+  langs:
+  - csharp
+  - vb
+  name: Error(IOutput, bool, string, params object?[]?)
+  nameWithType: OutputExtensions.Error(IOutput, bool, string, params object?[]?)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Error(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput, bool, string, params object?[]?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities
+  syntax:
+    content: public static void Error(this IOutput output, bool appendPrefix, string format, params object?[]? args)
+    parameters:
+    - id: output
+      type: Microsoft.VisualStudio.TestPlatform.Utilities.IOutput
+    - id: appendPrefix
+      type: System.Boolean
+    - id: format
+      type: System.String
+    - id: args
+      type: System.Object[]
+    content.vb: Public Shared Sub [Error](output As IOutput, appendPrefix As Boolean, format As String, ParamArray args As Object())
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Error*
+  nameWithType.vb: OutputExtensions.Error(IOutput, Boolean, String, ParamArray Object())
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Error(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput, Boolean, String, ParamArray Object())
+  name.vb: Error(IOutput, Boolean, String, ParamArray Object())
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Warning(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.Boolean,System.String,System.Object[])
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Warning(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.Boolean,System.String,System.Object[])
+  id: Warning(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.Boolean,System.String,System.Object[])
+  isExtensionMethod: true
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions
+  langs:
+  - csharp
+  - vb
+  name: Warning(IOutput, bool, string, params object?[]?)
+  nameWithType: OutputExtensions.Warning(IOutput, bool, string, params object?[]?)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Warning(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput, bool, string, params object?[]?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities
+  syntax:
+    content: public static void Warning(this IOutput output, bool appendPrefix, string format, params object?[]? args)
+    parameters:
+    - id: output
+      type: Microsoft.VisualStudio.TestPlatform.Utilities.IOutput
+    - id: appendPrefix
+      type: System.Boolean
+    - id: format
+      type: System.String
+    - id: args
+      type: System.Object[]
+    content.vb: Public Shared Sub Warning(output As IOutput, appendPrefix As Boolean, format As String, ParamArray args As Object())
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Warning*
+  nameWithType.vb: OutputExtensions.Warning(IOutput, Boolean, String, ParamArray Object())
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Warning(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput, Boolean, String, ParamArray Object())
+  name.vb: Warning(IOutput, Boolean, String, ParamArray Object())
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Information(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.Boolean,System.String,System.Object[])
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Information(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.Boolean,System.String,System.Object[])
+  id: Information(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.Boolean,System.String,System.Object[])
+  isExtensionMethod: true
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions
+  langs:
+  - csharp
+  - vb
+  name: Information(IOutput, bool, string, params object?[]?)
+  nameWithType: OutputExtensions.Information(IOutput, bool, string, params object?[]?)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Information(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput, bool, string, params object?[]?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities
+  syntax:
+    content: public static void Information(this IOutput output, bool appendPrefix, string format, params object?[]? args)
+    parameters:
+    - id: output
+      type: Microsoft.VisualStudio.TestPlatform.Utilities.IOutput
+    - id: appendPrefix
+      type: System.Boolean
+    - id: format
+      type: System.String
+    - id: args
+      type: System.Object[]
+    content.vb: Public Shared Sub Information(output As IOutput, appendPrefix As Boolean, format As String, ParamArray args As Object())
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Information*
+  nameWithType.vb: OutputExtensions.Information(IOutput, Boolean, String, ParamArray Object())
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Information(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput, Boolean, String, ParamArray Object())
+  name.vb: Information(IOutput, Boolean, String, ParamArray Object())
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Information(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.Boolean,System.ConsoleColor,System.String,System.Object[])
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Information(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.Boolean,System.ConsoleColor,System.String,System.Object[])
+  id: Information(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.Boolean,System.ConsoleColor,System.String,System.Object[])
+  isExtensionMethod: true
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions
+  langs:
+  - csharp
+  - vb
+  name: Information(IOutput, bool, ConsoleColor, string, params object?[]?)
+  nameWithType: OutputExtensions.Information(IOutput, bool, ConsoleColor, string, params object?[]?)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Information(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput, bool, System.ConsoleColor, string, params object?[]?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities
+  syntax:
+    content: public static void Information(this IOutput output, bool appendPrefix, ConsoleColor foregroundColor, string format, params object?[]? args)
+    parameters:
+    - id: output
+      type: Microsoft.VisualStudio.TestPlatform.Utilities.IOutput
+    - id: appendPrefix
+      type: System.Boolean
+    - id: foregroundColor
+      type: System.ConsoleColor
+    - id: format
+      type: System.String
+    - id: args
+      type: System.Object[]
+    content.vb: Public Shared Sub Information(output As IOutput, appendPrefix As Boolean, foregroundColor As ConsoleColor, format As String, ParamArray args As Object())
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Information*
+  nameWithType.vb: OutputExtensions.Information(IOutput, Boolean, ConsoleColor, String, ParamArray Object())
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Information(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput, Boolean, System.ConsoleColor, String, ParamArray Object())
+  name.vb: Information(IOutput, Boolean, ConsoleColor, String, ParamArray Object())
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Write(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.String,Microsoft.VisualStudio.TestPlatform.Utilities.OutputLevel,System.ConsoleColor)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Write(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.String,Microsoft.VisualStudio.TestPlatform.Utilities.OutputLevel,System.ConsoleColor)
+  id: Write(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput,System.String,Microsoft.VisualStudio.TestPlatform.Utilities.OutputLevel,System.ConsoleColor)
+  isExtensionMethod: true
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions
+  langs:
+  - csharp
+  - vb
+  name: Write(IOutput, string, OutputLevel, ConsoleColor)
+  nameWithType: OutputExtensions.Write(IOutput, string, OutputLevel, ConsoleColor)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Write(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput, string, Microsoft.VisualStudio.TestPlatform.Utilities.OutputLevel, System.ConsoleColor)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities
+  syntax:
+    content: public static void Write(this IOutput output, string message, OutputLevel level, ConsoleColor foregroundColor)
+    parameters:
+    - id: output
+      type: Microsoft.VisualStudio.TestPlatform.Utilities.IOutput
+    - id: message
+      type: System.String
+    - id: level
+      type: Microsoft.VisualStudio.TestPlatform.Utilities.OutputLevel
+    - id: foregroundColor
+      type: System.ConsoleColor
+    content.vb: Public Shared Sub Write(output As IOutput, message As String, level As OutputLevel, foregroundColor As ConsoleColor)
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Write*
+  nameWithType.vb: OutputExtensions.Write(IOutput, String, OutputLevel, ConsoleColor)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Write(Microsoft.VisualStudio.TestPlatform.Utilities.IOutput, String, Microsoft.VisualStudio.TestPlatform.Utilities.OutputLevel, System.ConsoleColor)
+  name.vb: Write(IOutput, String, OutputLevel, ConsoleColor)
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities
+  commentId: N:Microsoft.VisualStudio.TestPlatform.Utilities
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.Utilities
+  nameWithType: Microsoft.VisualStudio.TestPlatform.Utilities
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities
+    name: Utilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities
+    name: Utilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Error*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Error
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.html#Microsoft_VisualStudio_TestPlatform_Utilities_OutputExtensions_Error_Microsoft_VisualStudio_TestPlatform_Utilities_IOutput_System_Boolean_System_String_System_Object___
+  name: Error
+  nameWithType: OutputExtensions.Error
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Error
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.IOutput
+  commentId: T:Microsoft.VisualStudio.TestPlatform.Utilities.IOutput
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.IOutput.html
+  name: IOutput
+  nameWithType: IOutput
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.IOutput
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Warning*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Warning
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.html#Microsoft_VisualStudio_TestPlatform_Utilities_OutputExtensions_Warning_Microsoft_VisualStudio_TestPlatform_Utilities_IOutput_System_Boolean_System_String_System_Object___
+  name: Warning
+  nameWithType: OutputExtensions.Warning
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Warning
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Information*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Information
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.html#Microsoft_VisualStudio_TestPlatform_Utilities_OutputExtensions_Information_Microsoft_VisualStudio_TestPlatform_Utilities_IOutput_System_Boolean_System_String_System_Object___
+  name: Information
+  nameWithType: OutputExtensions.Information
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Information
+- uid: System.ConsoleColor
+  commentId: T:System.ConsoleColor
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.consolecolor
+  name: ConsoleColor
+  nameWithType: ConsoleColor
+  fullName: System.ConsoleColor
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Write*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Write
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.html#Microsoft_VisualStudio_TestPlatform_Utilities_OutputExtensions_Write_Microsoft_VisualStudio_TestPlatform_Utilities_IOutput_System_String_Microsoft_VisualStudio_TestPlatform_Utilities_OutputLevel_System_ConsoleColor_
+  name: Write
+  nameWithType: OutputExtensions.Write
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.OutputExtensions.Write
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.OutputLevel
+  commentId: T:Microsoft.VisualStudio.TestPlatform.Utilities.OutputLevel
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.OutputLevel.html
+  name: OutputLevel
+  nameWithType: OutputLevel
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.OutputLevel

@@ -1,0 +1,3723 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CodeGenerator | BOOSE IDE Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CodeGenerator | BOOSE IDE Documentation ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BOOSE IDE Documentation">
+            BOOSE IDE Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="System.CodeDom.Compiler.CodeGenerator">
+
+
+
+  <h1 id="System_CodeDom_Compiler_CodeGenerator" data-uid="System.CodeDom.Compiler.CodeGenerator" class="text-break">
+Class CodeGenerator  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="System.html">System</a>.<a class="xref" href="System.CodeDom.html">CodeDom</a>.<a class="xref" href="System.CodeDom.Compiler.html">Compiler</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>System.CodeDom.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CodeGenerator : ICodeGenerator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CodeGenerator</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="../api-tests/System.CodeDom.Compiler.ICodeGenerator.html">ICodeGenerator</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="../api-tests/System.CodeDom.Compiler.CodeCompiler.html">CodeCompiler</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator__ctor_" data-uid="System.CodeDom.Compiler.CodeGenerator.#ctor*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator__ctor" data-uid="System.CodeDom.Compiler.CodeGenerator.#ctor">
+  CodeGenerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CodeGenerator()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_CurrentClass_" data-uid="System.CodeDom.Compiler.CodeGenerator.CurrentClass*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_CurrentClass" data-uid="System.CodeDom.Compiler.CodeGenerator.CurrentClass">
+  CurrentClass
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CodeTypeDeclaration CurrentClass { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/System.CodeDom.CodeTypeDeclaration.html">CodeTypeDeclaration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_CurrentMember_" data-uid="System.CodeDom.Compiler.CodeGenerator.CurrentMember*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_CurrentMember" data-uid="System.CodeDom.Compiler.CodeGenerator.CurrentMember">
+  CurrentMember
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CodeTypeMember CurrentMember { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/System.CodeDom.CodeTypeMember.html">CodeTypeMember</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_CurrentMemberName_" data-uid="System.CodeDom.Compiler.CodeGenerator.CurrentMemberName*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_CurrentMemberName" data-uid="System.CodeDom.Compiler.CodeGenerator.CurrentMemberName">
+  CurrentMemberName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string CurrentMemberName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_CurrentTypeName_" data-uid="System.CodeDom.Compiler.CodeGenerator.CurrentTypeName*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_CurrentTypeName" data-uid="System.CodeDom.Compiler.CodeGenerator.CurrentTypeName">
+  CurrentTypeName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string CurrentTypeName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_Indent_" data-uid="System.CodeDom.Compiler.CodeGenerator.Indent*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_Indent" data-uid="System.CodeDom.Compiler.CodeGenerator.Indent">
+  Indent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int Indent { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_IsCurrentClass_" data-uid="System.CodeDom.Compiler.CodeGenerator.IsCurrentClass*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_IsCurrentClass" data-uid="System.CodeDom.Compiler.CodeGenerator.IsCurrentClass">
+  IsCurrentClass
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsCurrentClass { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_IsCurrentDelegate_" data-uid="System.CodeDom.Compiler.CodeGenerator.IsCurrentDelegate*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_IsCurrentDelegate" data-uid="System.CodeDom.Compiler.CodeGenerator.IsCurrentDelegate">
+  IsCurrentDelegate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsCurrentDelegate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_IsCurrentEnum_" data-uid="System.CodeDom.Compiler.CodeGenerator.IsCurrentEnum*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_IsCurrentEnum" data-uid="System.CodeDom.Compiler.CodeGenerator.IsCurrentEnum">
+  IsCurrentEnum
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsCurrentEnum { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_IsCurrentInterface_" data-uid="System.CodeDom.Compiler.CodeGenerator.IsCurrentInterface*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_IsCurrentInterface" data-uid="System.CodeDom.Compiler.CodeGenerator.IsCurrentInterface">
+  IsCurrentInterface
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsCurrentInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_IsCurrentStruct_" data-uid="System.CodeDom.Compiler.CodeGenerator.IsCurrentStruct*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_IsCurrentStruct" data-uid="System.CodeDom.Compiler.CodeGenerator.IsCurrentStruct">
+  IsCurrentStruct
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsCurrentStruct { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_NullToken_" data-uid="System.CodeDom.Compiler.CodeGenerator.NullToken*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_NullToken" data-uid="System.CodeDom.Compiler.CodeGenerator.NullToken">
+  NullToken
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string NullToken { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_Options_" data-uid="System.CodeDom.Compiler.CodeGenerator.Options*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_Options" data-uid="System.CodeDom.Compiler.CodeGenerator.Options">
+  Options
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CodeGeneratorOptions Options { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/System.CodeDom.Compiler.CodeGeneratorOptions.html">CodeGeneratorOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_Output_" data-uid="System.CodeDom.Compiler.CodeGenerator.Output*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_Output" data-uid="System.CodeDom.Compiler.CodeGenerator.Output">
+  Output
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextWriter Output { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_ContinueOnNewLine_" data-uid="System.CodeDom.Compiler.CodeGenerator.ContinueOnNewLine*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_ContinueOnNewLine_System_String_" data-uid="System.CodeDom.Compiler.CodeGenerator.ContinueOnNewLine(System.String)">
+  ContinueOnNewLine(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ContinueOnNewLine(string st)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>st</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_CreateEscapedIdentifier_" data-uid="System.CodeDom.Compiler.CodeGenerator.CreateEscapedIdentifier*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_CreateEscapedIdentifier_System_String_" data-uid="System.CodeDom.Compiler.CodeGenerator.CreateEscapedIdentifier(System.String)">
+  CreateEscapedIdentifier(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string CreateEscapedIdentifier(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_CreateValidIdentifier_" data-uid="System.CodeDom.Compiler.CodeGenerator.CreateValidIdentifier*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_CreateValidIdentifier_System_String_" data-uid="System.CodeDom.Compiler.CodeGenerator.CreateValidIdentifier(System.String)">
+  CreateValidIdentifier(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string CreateValidIdentifier(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateArgumentReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateArgumentReferenceExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateArgumentReferenceExpression_System_CodeDom_CodeArgumentReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateArgumentReferenceExpression(System.CodeDom.CodeArgumentReferenceExpression)">
+  GenerateArgumentReferenceExpression(CodeArgumentReferenceExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateArgumentReferenceExpression(CodeArgumentReferenceExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeArgumentReferenceExpression.html">CodeArgumentReferenceExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateArrayCreateExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateArrayCreateExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateArrayCreateExpression_System_CodeDom_CodeArrayCreateExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateArrayCreateExpression(System.CodeDom.CodeArrayCreateExpression)">
+  GenerateArrayCreateExpression(CodeArrayCreateExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateArrayCreateExpression(CodeArrayCreateExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeArrayCreateExpression.html">CodeArrayCreateExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateArrayIndexerExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateArrayIndexerExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateArrayIndexerExpression_System_CodeDom_CodeArrayIndexerExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateArrayIndexerExpression(System.CodeDom.CodeArrayIndexerExpression)">
+  GenerateArrayIndexerExpression(CodeArrayIndexerExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateArrayIndexerExpression(CodeArrayIndexerExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeArrayIndexerExpression.html">CodeArrayIndexerExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateAssignStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateAssignStatement*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateAssignStatement_System_CodeDom_CodeAssignStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateAssignStatement(System.CodeDom.CodeAssignStatement)">
+  GenerateAssignStatement(CodeAssignStatement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateAssignStatement(CodeAssignStatement e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeAssignStatement.html">CodeAssignStatement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateAttachEventStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateAttachEventStatement*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateAttachEventStatement_System_CodeDom_CodeAttachEventStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateAttachEventStatement(System.CodeDom.CodeAttachEventStatement)">
+  GenerateAttachEventStatement(CodeAttachEventStatement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateAttachEventStatement(CodeAttachEventStatement e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeAttachEventStatement.html">CodeAttachEventStatement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateAttributeDeclarationsEnd_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateAttributeDeclarationsEnd*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateAttributeDeclarationsEnd_System_CodeDom_CodeAttributeDeclarationCollection_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateAttributeDeclarationsEnd(System.CodeDom.CodeAttributeDeclarationCollection)">
+  GenerateAttributeDeclarationsEnd(CodeAttributeDeclarationCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateAttributeDeclarationsEnd(CodeAttributeDeclarationCollection attributes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributes</code> <a class="xref" href="../api-tests/System.CodeDom.CodeAttributeDeclarationCollection.html">CodeAttributeDeclarationCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateAttributeDeclarationsStart_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateAttributeDeclarationsStart*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateAttributeDeclarationsStart_System_CodeDom_CodeAttributeDeclarationCollection_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateAttributeDeclarationsStart(System.CodeDom.CodeAttributeDeclarationCollection)">
+  GenerateAttributeDeclarationsStart(CodeAttributeDeclarationCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateAttributeDeclarationsStart(CodeAttributeDeclarationCollection attributes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributes</code> <a class="xref" href="../api-tests/System.CodeDom.CodeAttributeDeclarationCollection.html">CodeAttributeDeclarationCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateBaseReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateBaseReferenceExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateBaseReferenceExpression_System_CodeDom_CodeBaseReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateBaseReferenceExpression(System.CodeDom.CodeBaseReferenceExpression)">
+  GenerateBaseReferenceExpression(CodeBaseReferenceExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateBaseReferenceExpression(CodeBaseReferenceExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeBaseReferenceExpression.html">CodeBaseReferenceExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateBinaryOperatorExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateBinaryOperatorExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateBinaryOperatorExpression_System_CodeDom_CodeBinaryOperatorExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateBinaryOperatorExpression(System.CodeDom.CodeBinaryOperatorExpression)">
+  GenerateBinaryOperatorExpression(CodeBinaryOperatorExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateBinaryOperatorExpression(CodeBinaryOperatorExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeBinaryOperatorExpression.html">CodeBinaryOperatorExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateCastExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateCastExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateCastExpression_System_CodeDom_CodeCastExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateCastExpression(System.CodeDom.CodeCastExpression)">
+  GenerateCastExpression(CodeCastExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateCastExpression(CodeCastExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeCastExpression.html">CodeCastExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateCodeFromMember_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateCodeFromMember*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateCodeFromMember_System_CodeDom_CodeTypeMember_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateCodeFromMember(System.CodeDom.CodeTypeMember,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)">
+  GenerateCodeFromMember(CodeTypeMember, TextWriter, CodeGeneratorOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GenerateCodeFromMember(CodeTypeMember member, TextWriter writer, CodeGeneratorOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>member</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeMember.html">CodeTypeMember</a></dt>
+    <dd></dd>
+    <dt><code>writer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="../api-tests/System.CodeDom.Compiler.CodeGeneratorOptions.html">CodeGeneratorOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateComment_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateComment*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateComment_System_CodeDom_CodeComment_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateComment(System.CodeDom.CodeComment)">
+  GenerateComment(CodeComment)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateComment(CodeComment e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeComment.html">CodeComment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateCommentStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateCommentStatement*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateCommentStatement_System_CodeDom_CodeCommentStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateCommentStatement(System.CodeDom.CodeCommentStatement)">
+  GenerateCommentStatement(CodeCommentStatement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateCommentStatement(CodeCommentStatement e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeCommentStatement.html">CodeCommentStatement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateCommentStatements_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateCommentStatements*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateCommentStatements_System_CodeDom_CodeCommentStatementCollection_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateCommentStatements(System.CodeDom.CodeCommentStatementCollection)">
+  GenerateCommentStatements(CodeCommentStatementCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateCommentStatements(CodeCommentStatementCollection e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeCommentStatementCollection.html">CodeCommentStatementCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateCompileUnit_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateCompileUnit*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateCompileUnit_System_CodeDom_CodeCompileUnit_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateCompileUnit(System.CodeDom.CodeCompileUnit)">
+  GenerateCompileUnit(CodeCompileUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateCompileUnit(CodeCompileUnit e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeCompileUnit.html">CodeCompileUnit</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateCompileUnitEnd_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateCompileUnitEnd*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateCompileUnitEnd_System_CodeDom_CodeCompileUnit_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateCompileUnitEnd(System.CodeDom.CodeCompileUnit)">
+  GenerateCompileUnitEnd(CodeCompileUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateCompileUnitEnd(CodeCompileUnit e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeCompileUnit.html">CodeCompileUnit</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateCompileUnitStart_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateCompileUnitStart*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateCompileUnitStart_System_CodeDom_CodeCompileUnit_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateCompileUnitStart(System.CodeDom.CodeCompileUnit)">
+  GenerateCompileUnitStart(CodeCompileUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateCompileUnitStart(CodeCompileUnit e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeCompileUnit.html">CodeCompileUnit</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateConditionStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateConditionStatement*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateConditionStatement_System_CodeDom_CodeConditionStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateConditionStatement(System.CodeDom.CodeConditionStatement)">
+  GenerateConditionStatement(CodeConditionStatement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateConditionStatement(CodeConditionStatement e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeConditionStatement.html">CodeConditionStatement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateConstructor_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateConstructor*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateConstructor_System_CodeDom_CodeConstructor_System_CodeDom_CodeTypeDeclaration_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateConstructor(System.CodeDom.CodeConstructor,System.CodeDom.CodeTypeDeclaration)">
+  GenerateConstructor(CodeConstructor, CodeTypeDeclaration)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateConstructor(CodeConstructor e, CodeTypeDeclaration c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeConstructor.html">CodeConstructor</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeDeclaration.html">CodeTypeDeclaration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateDecimalValue_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateDecimalValue*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateDecimalValue_System_Decimal_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateDecimalValue(System.Decimal)">
+  GenerateDecimalValue(decimal)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateDecimalValue(decimal d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateDefaultValueExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateDefaultValueExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateDefaultValueExpression_System_CodeDom_CodeDefaultValueExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateDefaultValueExpression(System.CodeDom.CodeDefaultValueExpression)">
+  GenerateDefaultValueExpression(CodeDefaultValueExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateDefaultValueExpression(CodeDefaultValueExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeDefaultValueExpression.html">CodeDefaultValueExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateDelegateCreateExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateDelegateCreateExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateDelegateCreateExpression_System_CodeDom_CodeDelegateCreateExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateDelegateCreateExpression(System.CodeDom.CodeDelegateCreateExpression)">
+  GenerateDelegateCreateExpression(CodeDelegateCreateExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateDelegateCreateExpression(CodeDelegateCreateExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeDelegateCreateExpression.html">CodeDelegateCreateExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateDelegateInvokeExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateDelegateInvokeExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateDelegateInvokeExpression_System_CodeDom_CodeDelegateInvokeExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateDelegateInvokeExpression(System.CodeDom.CodeDelegateInvokeExpression)">
+  GenerateDelegateInvokeExpression(CodeDelegateInvokeExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateDelegateInvokeExpression(CodeDelegateInvokeExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeDelegateInvokeExpression.html">CodeDelegateInvokeExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateDirectionExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateDirectionExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateDirectionExpression_System_CodeDom_CodeDirectionExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateDirectionExpression(System.CodeDom.CodeDirectionExpression)">
+  GenerateDirectionExpression(CodeDirectionExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateDirectionExpression(CodeDirectionExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeDirectionExpression.html">CodeDirectionExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateDirectives_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateDirectives*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateDirectives_System_CodeDom_CodeDirectiveCollection_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateDirectives(System.CodeDom.CodeDirectiveCollection)">
+  GenerateDirectives(CodeDirectiveCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateDirectives(CodeDirectiveCollection directives)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>directives</code> <a class="xref" href="../api-tests/System.CodeDom.CodeDirectiveCollection.html">CodeDirectiveCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateDoubleValue_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateDoubleValue*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateDoubleValue_System_Double_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateDoubleValue(System.Double)">
+  GenerateDoubleValue(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateDoubleValue(double d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateEntryPointMethod_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateEntryPointMethod*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateEntryPointMethod_System_CodeDom_CodeEntryPointMethod_System_CodeDom_CodeTypeDeclaration_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateEntryPointMethod(System.CodeDom.CodeEntryPointMethod,System.CodeDom.CodeTypeDeclaration)">
+  GenerateEntryPointMethod(CodeEntryPointMethod, CodeTypeDeclaration)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateEntryPointMethod(CodeEntryPointMethod e, CodeTypeDeclaration c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeEntryPointMethod.html">CodeEntryPointMethod</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeDeclaration.html">CodeTypeDeclaration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateEvent_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateEvent*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateEvent_System_CodeDom_CodeMemberEvent_System_CodeDom_CodeTypeDeclaration_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateEvent(System.CodeDom.CodeMemberEvent,System.CodeDom.CodeTypeDeclaration)">
+  GenerateEvent(CodeMemberEvent, CodeTypeDeclaration)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateEvent(CodeMemberEvent e, CodeTypeDeclaration c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeMemberEvent.html">CodeMemberEvent</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeDeclaration.html">CodeTypeDeclaration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateEventReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateEventReferenceExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateEventReferenceExpression_System_CodeDom_CodeEventReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateEventReferenceExpression(System.CodeDom.CodeEventReferenceExpression)">
+  GenerateEventReferenceExpression(CodeEventReferenceExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateEventReferenceExpression(CodeEventReferenceExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeEventReferenceExpression.html">CodeEventReferenceExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateExpression_System_CodeDom_CodeExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateExpression(System.CodeDom.CodeExpression)">
+  GenerateExpression(CodeExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GenerateExpression(CodeExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeExpression.html">CodeExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateExpressionStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateExpressionStatement*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateExpressionStatement_System_CodeDom_CodeExpressionStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateExpressionStatement(System.CodeDom.CodeExpressionStatement)">
+  GenerateExpressionStatement(CodeExpressionStatement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateExpressionStatement(CodeExpressionStatement e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeExpressionStatement.html">CodeExpressionStatement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateField_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateField*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateField_System_CodeDom_CodeMemberField_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateField(System.CodeDom.CodeMemberField)">
+  GenerateField(CodeMemberField)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateField(CodeMemberField e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeMemberField.html">CodeMemberField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateFieldReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateFieldReferenceExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateFieldReferenceExpression_System_CodeDom_CodeFieldReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateFieldReferenceExpression(System.CodeDom.CodeFieldReferenceExpression)">
+  GenerateFieldReferenceExpression(CodeFieldReferenceExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateFieldReferenceExpression(CodeFieldReferenceExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeFieldReferenceExpression.html">CodeFieldReferenceExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateGotoStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateGotoStatement*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateGotoStatement_System_CodeDom_CodeGotoStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateGotoStatement(System.CodeDom.CodeGotoStatement)">
+  GenerateGotoStatement(CodeGotoStatement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateGotoStatement(CodeGotoStatement e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeGotoStatement.html">CodeGotoStatement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateIndexerExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateIndexerExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateIndexerExpression_System_CodeDom_CodeIndexerExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateIndexerExpression(System.CodeDom.CodeIndexerExpression)">
+  GenerateIndexerExpression(CodeIndexerExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateIndexerExpression(CodeIndexerExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeIndexerExpression.html">CodeIndexerExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateIterationStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateIterationStatement*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateIterationStatement_System_CodeDom_CodeIterationStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateIterationStatement(System.CodeDom.CodeIterationStatement)">
+  GenerateIterationStatement(CodeIterationStatement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateIterationStatement(CodeIterationStatement e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeIterationStatement.html">CodeIterationStatement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateLabeledStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateLabeledStatement*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateLabeledStatement_System_CodeDom_CodeLabeledStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateLabeledStatement(System.CodeDom.CodeLabeledStatement)">
+  GenerateLabeledStatement(CodeLabeledStatement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateLabeledStatement(CodeLabeledStatement e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeLabeledStatement.html">CodeLabeledStatement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateLinePragmaEnd_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateLinePragmaEnd*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateLinePragmaEnd_System_CodeDom_CodeLinePragma_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateLinePragmaEnd(System.CodeDom.CodeLinePragma)">
+  GenerateLinePragmaEnd(CodeLinePragma)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateLinePragmaEnd(CodeLinePragma e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeLinePragma.html">CodeLinePragma</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateLinePragmaStart_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateLinePragmaStart*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateLinePragmaStart_System_CodeDom_CodeLinePragma_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateLinePragmaStart(System.CodeDom.CodeLinePragma)">
+  GenerateLinePragmaStart(CodeLinePragma)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateLinePragmaStart(CodeLinePragma e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeLinePragma.html">CodeLinePragma</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateMethod_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateMethod*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateMethod_System_CodeDom_CodeMemberMethod_System_CodeDom_CodeTypeDeclaration_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateMethod(System.CodeDom.CodeMemberMethod,System.CodeDom.CodeTypeDeclaration)">
+  GenerateMethod(CodeMemberMethod, CodeTypeDeclaration)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateMethod(CodeMemberMethod e, CodeTypeDeclaration c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeMemberMethod.html">CodeMemberMethod</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeDeclaration.html">CodeTypeDeclaration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateMethodInvokeExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateMethodInvokeExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateMethodInvokeExpression_System_CodeDom_CodeMethodInvokeExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateMethodInvokeExpression(System.CodeDom.CodeMethodInvokeExpression)">
+  GenerateMethodInvokeExpression(CodeMethodInvokeExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateMethodInvokeExpression(CodeMethodInvokeExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeMethodInvokeExpression.html">CodeMethodInvokeExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateMethodReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateMethodReferenceExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateMethodReferenceExpression_System_CodeDom_CodeMethodReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateMethodReferenceExpression(System.CodeDom.CodeMethodReferenceExpression)">
+  GenerateMethodReferenceExpression(CodeMethodReferenceExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateMethodReferenceExpression(CodeMethodReferenceExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeMethodReferenceExpression.html">CodeMethodReferenceExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateMethodReturnStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateMethodReturnStatement*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateMethodReturnStatement_System_CodeDom_CodeMethodReturnStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateMethodReturnStatement(System.CodeDom.CodeMethodReturnStatement)">
+  GenerateMethodReturnStatement(CodeMethodReturnStatement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateMethodReturnStatement(CodeMethodReturnStatement e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeMethodReturnStatement.html">CodeMethodReturnStatement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateNamespace_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateNamespace*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateNamespace_System_CodeDom_CodeNamespace_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateNamespace(System.CodeDom.CodeNamespace)">
+  GenerateNamespace(CodeNamespace)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateNamespace(CodeNamespace e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeNamespace.html">CodeNamespace</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateNamespaceEnd_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateNamespaceEnd*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateNamespaceEnd_System_CodeDom_CodeNamespace_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateNamespaceEnd(System.CodeDom.CodeNamespace)">
+  GenerateNamespaceEnd(CodeNamespace)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateNamespaceEnd(CodeNamespace e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeNamespace.html">CodeNamespace</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateNamespaceImport_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateNamespaceImport*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateNamespaceImport_System_CodeDom_CodeNamespaceImport_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateNamespaceImport(System.CodeDom.CodeNamespaceImport)">
+  GenerateNamespaceImport(CodeNamespaceImport)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateNamespaceImport(CodeNamespaceImport e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeNamespaceImport.html">CodeNamespaceImport</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateNamespaceImports_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateNamespaceImports*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateNamespaceImports_System_CodeDom_CodeNamespace_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateNamespaceImports(System.CodeDom.CodeNamespace)">
+  GenerateNamespaceImports(CodeNamespace)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GenerateNamespaceImports(CodeNamespace e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeNamespace.html">CodeNamespace</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateNamespaceStart_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateNamespaceStart*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateNamespaceStart_System_CodeDom_CodeNamespace_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateNamespaceStart(System.CodeDom.CodeNamespace)">
+  GenerateNamespaceStart(CodeNamespace)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateNamespaceStart(CodeNamespace e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeNamespace.html">CodeNamespace</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateNamespaces_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateNamespaces*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateNamespaces_System_CodeDom_CodeCompileUnit_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateNamespaces(System.CodeDom.CodeCompileUnit)">
+  GenerateNamespaces(CodeCompileUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GenerateNamespaces(CodeCompileUnit e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeCompileUnit.html">CodeCompileUnit</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateObjectCreateExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateObjectCreateExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateObjectCreateExpression_System_CodeDom_CodeObjectCreateExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateObjectCreateExpression(System.CodeDom.CodeObjectCreateExpression)">
+  GenerateObjectCreateExpression(CodeObjectCreateExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateObjectCreateExpression(CodeObjectCreateExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeObjectCreateExpression.html">CodeObjectCreateExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateParameterDeclarationExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateParameterDeclarationExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateParameterDeclarationExpression_System_CodeDom_CodeParameterDeclarationExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateParameterDeclarationExpression(System.CodeDom.CodeParameterDeclarationExpression)">
+  GenerateParameterDeclarationExpression(CodeParameterDeclarationExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateParameterDeclarationExpression(CodeParameterDeclarationExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeParameterDeclarationExpression.html">CodeParameterDeclarationExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GeneratePrimitiveExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GeneratePrimitiveExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GeneratePrimitiveExpression_System_CodeDom_CodePrimitiveExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GeneratePrimitiveExpression(System.CodeDom.CodePrimitiveExpression)">
+  GeneratePrimitiveExpression(CodePrimitiveExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GeneratePrimitiveExpression(CodePrimitiveExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodePrimitiveExpression.html">CodePrimitiveExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateProperty_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateProperty*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateProperty_System_CodeDom_CodeMemberProperty_System_CodeDom_CodeTypeDeclaration_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateProperty(System.CodeDom.CodeMemberProperty,System.CodeDom.CodeTypeDeclaration)">
+  GenerateProperty(CodeMemberProperty, CodeTypeDeclaration)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateProperty(CodeMemberProperty e, CodeTypeDeclaration c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeMemberProperty.html">CodeMemberProperty</a></dt>
+    <dd></dd>
+    <dt><code>c</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeDeclaration.html">CodeTypeDeclaration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GeneratePropertyReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GeneratePropertyReferenceExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GeneratePropertyReferenceExpression_System_CodeDom_CodePropertyReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GeneratePropertyReferenceExpression(System.CodeDom.CodePropertyReferenceExpression)">
+  GeneratePropertyReferenceExpression(CodePropertyReferenceExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GeneratePropertyReferenceExpression(CodePropertyReferenceExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodePropertyReferenceExpression.html">CodePropertyReferenceExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GeneratePropertySetValueReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GeneratePropertySetValueReferenceExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GeneratePropertySetValueReferenceExpression_System_CodeDom_CodePropertySetValueReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GeneratePropertySetValueReferenceExpression(System.CodeDom.CodePropertySetValueReferenceExpression)">
+  GeneratePropertySetValueReferenceExpression(CodePropertySetValueReferenceExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GeneratePropertySetValueReferenceExpression(CodePropertySetValueReferenceExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodePropertySetValueReferenceExpression.html">CodePropertySetValueReferenceExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateRemoveEventStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateRemoveEventStatement*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateRemoveEventStatement_System_CodeDom_CodeRemoveEventStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateRemoveEventStatement(System.CodeDom.CodeRemoveEventStatement)">
+  GenerateRemoveEventStatement(CodeRemoveEventStatement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateRemoveEventStatement(CodeRemoveEventStatement e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeRemoveEventStatement.html">CodeRemoveEventStatement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateSingleFloatValue_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateSingleFloatValue*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateSingleFloatValue_System_Single_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateSingleFloatValue(System.Single)">
+  GenerateSingleFloatValue(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateSingleFloatValue(float s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateSnippetCompileUnit_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateSnippetCompileUnit*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateSnippetCompileUnit_System_CodeDom_CodeSnippetCompileUnit_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateSnippetCompileUnit(System.CodeDom.CodeSnippetCompileUnit)">
+  GenerateSnippetCompileUnit(CodeSnippetCompileUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateSnippetCompileUnit(CodeSnippetCompileUnit e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeSnippetCompileUnit.html">CodeSnippetCompileUnit</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateSnippetExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateSnippetExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateSnippetExpression_System_CodeDom_CodeSnippetExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateSnippetExpression(System.CodeDom.CodeSnippetExpression)">
+  GenerateSnippetExpression(CodeSnippetExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateSnippetExpression(CodeSnippetExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeSnippetExpression.html">CodeSnippetExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateSnippetMember_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateSnippetMember*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateSnippetMember_System_CodeDom_CodeSnippetTypeMember_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateSnippetMember(System.CodeDom.CodeSnippetTypeMember)">
+  GenerateSnippetMember(CodeSnippetTypeMember)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateSnippetMember(CodeSnippetTypeMember e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeSnippetTypeMember.html">CodeSnippetTypeMember</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateSnippetStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateSnippetStatement*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateSnippetStatement_System_CodeDom_CodeSnippetStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateSnippetStatement(System.CodeDom.CodeSnippetStatement)">
+  GenerateSnippetStatement(CodeSnippetStatement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateSnippetStatement(CodeSnippetStatement e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeSnippetStatement.html">CodeSnippetStatement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateStatement*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateStatement_System_CodeDom_CodeStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateStatement(System.CodeDom.CodeStatement)">
+  GenerateStatement(CodeStatement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GenerateStatement(CodeStatement e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeStatement.html">CodeStatement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateStatements_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateStatements*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateStatements_System_CodeDom_CodeStatementCollection_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateStatements(System.CodeDom.CodeStatementCollection)">
+  GenerateStatements(CodeStatementCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GenerateStatements(CodeStatementCollection stmts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stmts</code> <a class="xref" href="../api-tests/System.CodeDom.CodeStatementCollection.html">CodeStatementCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateThisReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateThisReferenceExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateThisReferenceExpression_System_CodeDom_CodeThisReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateThisReferenceExpression(System.CodeDom.CodeThisReferenceExpression)">
+  GenerateThisReferenceExpression(CodeThisReferenceExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateThisReferenceExpression(CodeThisReferenceExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeThisReferenceExpression.html">CodeThisReferenceExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateThrowExceptionStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateThrowExceptionStatement*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateThrowExceptionStatement_System_CodeDom_CodeThrowExceptionStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateThrowExceptionStatement(System.CodeDom.CodeThrowExceptionStatement)">
+  GenerateThrowExceptionStatement(CodeThrowExceptionStatement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateThrowExceptionStatement(CodeThrowExceptionStatement e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeThrowExceptionStatement.html">CodeThrowExceptionStatement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateTryCatchFinallyStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateTryCatchFinallyStatement*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateTryCatchFinallyStatement_System_CodeDom_CodeTryCatchFinallyStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateTryCatchFinallyStatement(System.CodeDom.CodeTryCatchFinallyStatement)">
+  GenerateTryCatchFinallyStatement(CodeTryCatchFinallyStatement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateTryCatchFinallyStatement(CodeTryCatchFinallyStatement e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTryCatchFinallyStatement.html">CodeTryCatchFinallyStatement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateTypeConstructor_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateTypeConstructor*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateTypeConstructor_System_CodeDom_CodeTypeConstructor_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateTypeConstructor(System.CodeDom.CodeTypeConstructor)">
+  GenerateTypeConstructor(CodeTypeConstructor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateTypeConstructor(CodeTypeConstructor e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeConstructor.html">CodeTypeConstructor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateTypeEnd_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateTypeEnd*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateTypeEnd_System_CodeDom_CodeTypeDeclaration_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateTypeEnd(System.CodeDom.CodeTypeDeclaration)">
+  GenerateTypeEnd(CodeTypeDeclaration)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateTypeEnd(CodeTypeDeclaration e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeDeclaration.html">CodeTypeDeclaration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateTypeOfExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateTypeOfExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateTypeOfExpression_System_CodeDom_CodeTypeOfExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateTypeOfExpression(System.CodeDom.CodeTypeOfExpression)">
+  GenerateTypeOfExpression(CodeTypeOfExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateTypeOfExpression(CodeTypeOfExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeOfExpression.html">CodeTypeOfExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateTypeReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateTypeReferenceExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateTypeReferenceExpression_System_CodeDom_CodeTypeReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateTypeReferenceExpression(System.CodeDom.CodeTypeReferenceExpression)">
+  GenerateTypeReferenceExpression(CodeTypeReferenceExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GenerateTypeReferenceExpression(CodeTypeReferenceExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeReferenceExpression.html">CodeTypeReferenceExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateTypeStart_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateTypeStart*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateTypeStart_System_CodeDom_CodeTypeDeclaration_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateTypeStart(System.CodeDom.CodeTypeDeclaration)">
+  GenerateTypeStart(CodeTypeDeclaration)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateTypeStart(CodeTypeDeclaration e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeDeclaration.html">CodeTypeDeclaration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateTypes_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateTypes*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateTypes_System_CodeDom_CodeNamespace_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateTypes(System.CodeDom.CodeNamespace)">
+  GenerateTypes(CodeNamespace)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GenerateTypes(CodeNamespace e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeNamespace.html">CodeNamespace</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateVariableDeclarationStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateVariableDeclarationStatement*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateVariableDeclarationStatement_System_CodeDom_CodeVariableDeclarationStatement_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateVariableDeclarationStatement(System.CodeDom.CodeVariableDeclarationStatement)">
+  GenerateVariableDeclarationStatement(CodeVariableDeclarationStatement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateVariableDeclarationStatement(CodeVariableDeclarationStatement e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeVariableDeclarationStatement.html">CodeVariableDeclarationStatement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GenerateVariableReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateVariableReferenceExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GenerateVariableReferenceExpression_System_CodeDom_CodeVariableReferenceExpression_" data-uid="System.CodeDom.Compiler.CodeGenerator.GenerateVariableReferenceExpression(System.CodeDom.CodeVariableReferenceExpression)">
+  GenerateVariableReferenceExpression(CodeVariableReferenceExpression)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void GenerateVariableReferenceExpression(CodeVariableReferenceExpression e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeVariableReferenceExpression.html">CodeVariableReferenceExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_GetTypeOutput_" data-uid="System.CodeDom.Compiler.CodeGenerator.GetTypeOutput*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_GetTypeOutput_System_CodeDom_CodeTypeReference_" data-uid="System.CodeDom.Compiler.CodeGenerator.GetTypeOutput(System.CodeDom.CodeTypeReference)">
+  GetTypeOutput(CodeTypeReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string GetTypeOutput(CodeTypeReference value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeReference.html">CodeTypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_IsValidIdentifier_" data-uid="System.CodeDom.Compiler.CodeGenerator.IsValidIdentifier*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_IsValidIdentifier_System_String_" data-uid="System.CodeDom.Compiler.CodeGenerator.IsValidIdentifier(System.String)">
+  IsValidIdentifier(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool IsValidIdentifier(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_IsValidLanguageIndependentIdentifier_" data-uid="System.CodeDom.Compiler.CodeGenerator.IsValidLanguageIndependentIdentifier*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_IsValidLanguageIndependentIdentifier_System_String_" data-uid="System.CodeDom.Compiler.CodeGenerator.IsValidLanguageIndependentIdentifier(System.String)">
+  IsValidLanguageIndependentIdentifier(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidLanguageIndependentIdentifier(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_OutputAttributeArgument_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputAttributeArgument*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_OutputAttributeArgument_System_CodeDom_CodeAttributeArgument_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputAttributeArgument(System.CodeDom.CodeAttributeArgument)">
+  OutputAttributeArgument(CodeAttributeArgument)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OutputAttributeArgument(CodeAttributeArgument arg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg</code> <a class="xref" href="../api-tests/System.CodeDom.CodeAttributeArgument.html">CodeAttributeArgument</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_OutputAttributeDeclarations_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputAttributeDeclarations*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_OutputAttributeDeclarations_System_CodeDom_CodeAttributeDeclarationCollection_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputAttributeDeclarations(System.CodeDom.CodeAttributeDeclarationCollection)">
+  OutputAttributeDeclarations(CodeAttributeDeclarationCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OutputAttributeDeclarations(CodeAttributeDeclarationCollection attributes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributes</code> <a class="xref" href="../api-tests/System.CodeDom.CodeAttributeDeclarationCollection.html">CodeAttributeDeclarationCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_OutputDirection_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputDirection*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_OutputDirection_System_CodeDom_FieldDirection_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputDirection(System.CodeDom.FieldDirection)">
+  OutputDirection(FieldDirection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OutputDirection(FieldDirection dir)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dir</code> <a class="xref" href="../api-tests/System.CodeDom.FieldDirection.html">FieldDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_OutputExpressionList_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputExpressionList*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_OutputExpressionList_System_CodeDom_CodeExpressionCollection_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputExpressionList(System.CodeDom.CodeExpressionCollection)">
+  OutputExpressionList(CodeExpressionCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OutputExpressionList(CodeExpressionCollection expressions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expressions</code> <a class="xref" href="../api-tests/System.CodeDom.CodeExpressionCollection.html">CodeExpressionCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_OutputExpressionList_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputExpressionList*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_OutputExpressionList_System_CodeDom_CodeExpressionCollection_System_Boolean_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputExpressionList(System.CodeDom.CodeExpressionCollection,System.Boolean)">
+  OutputExpressionList(CodeExpressionCollection, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OutputExpressionList(CodeExpressionCollection expressions, bool newlineBetweenItems)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expressions</code> <a class="xref" href="../api-tests/System.CodeDom.CodeExpressionCollection.html">CodeExpressionCollection</a></dt>
+    <dd></dd>
+    <dt><code>newlineBetweenItems</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_OutputFieldScopeModifier_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputFieldScopeModifier*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_OutputFieldScopeModifier_System_CodeDom_MemberAttributes_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputFieldScopeModifier(System.CodeDom.MemberAttributes)">
+  OutputFieldScopeModifier(MemberAttributes)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OutputFieldScopeModifier(MemberAttributes attributes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributes</code> <a class="xref" href="../api-tests/System.CodeDom.MemberAttributes.html">MemberAttributes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_OutputIdentifier_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputIdentifier*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_OutputIdentifier_System_String_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputIdentifier(System.String)">
+  OutputIdentifier(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OutputIdentifier(string ident)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ident</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_OutputMemberAccessModifier_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputMemberAccessModifier*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_OutputMemberAccessModifier_System_CodeDom_MemberAttributes_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputMemberAccessModifier(System.CodeDom.MemberAttributes)">
+  OutputMemberAccessModifier(MemberAttributes)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OutputMemberAccessModifier(MemberAttributes attributes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributes</code> <a class="xref" href="../api-tests/System.CodeDom.MemberAttributes.html">MemberAttributes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_OutputMemberScopeModifier_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputMemberScopeModifier*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_OutputMemberScopeModifier_System_CodeDom_MemberAttributes_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputMemberScopeModifier(System.CodeDom.MemberAttributes)">
+  OutputMemberScopeModifier(MemberAttributes)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OutputMemberScopeModifier(MemberAttributes attributes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributes</code> <a class="xref" href="../api-tests/System.CodeDom.MemberAttributes.html">MemberAttributes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_OutputOperator_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputOperator*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_OutputOperator_System_CodeDom_CodeBinaryOperatorType_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputOperator(System.CodeDom.CodeBinaryOperatorType)">
+  OutputOperator(CodeBinaryOperatorType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OutputOperator(CodeBinaryOperatorType op)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>op</code> <a class="xref" href="../api-tests/System.CodeDom.CodeBinaryOperatorType.html">CodeBinaryOperatorType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_OutputParameters_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputParameters*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_OutputParameters_System_CodeDom_CodeParameterDeclarationExpressionCollection_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputParameters(System.CodeDom.CodeParameterDeclarationExpressionCollection)">
+  OutputParameters(CodeParameterDeclarationExpressionCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OutputParameters(CodeParameterDeclarationExpressionCollection parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parameters</code> <a class="xref" href="../api-tests/System.CodeDom.CodeParameterDeclarationExpressionCollection.html">CodeParameterDeclarationExpressionCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_OutputType_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputType*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_OutputType_System_CodeDom_CodeTypeReference_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputType(System.CodeDom.CodeTypeReference)">
+  OutputType(CodeTypeReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void OutputType(CodeTypeReference typeRef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>typeRef</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeReference.html">CodeTypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_OutputTypeAttributes_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputTypeAttributes*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_OutputTypeAttributes_System_Reflection_TypeAttributes_System_Boolean_System_Boolean_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputTypeAttributes(System.Reflection.TypeAttributes,System.Boolean,System.Boolean)">
+  OutputTypeAttributes(TypeAttributes, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OutputTypeAttributes(TypeAttributes attributes, bool isStruct, bool isEnum)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.typeattributes">TypeAttributes</a></dt>
+    <dd></dd>
+    <dt><code>isStruct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isEnum</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_OutputTypeNamePair_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputTypeNamePair*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_OutputTypeNamePair_System_CodeDom_CodeTypeReference_System_String_" data-uid="System.CodeDom.Compiler.CodeGenerator.OutputTypeNamePair(System.CodeDom.CodeTypeReference,System.String)">
+  OutputTypeNamePair(CodeTypeReference, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OutputTypeNamePair(CodeTypeReference typeRef, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>typeRef</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeReference.html">CodeTypeReference</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_QuoteSnippetString_" data-uid="System.CodeDom.Compiler.CodeGenerator.QuoteSnippetString*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_QuoteSnippetString_System_String_" data-uid="System.CodeDom.Compiler.CodeGenerator.QuoteSnippetString(System.String)">
+  QuoteSnippetString(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string QuoteSnippetString(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_Supports_" data-uid="System.CodeDom.Compiler.CodeGenerator.Supports*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_Supports_System_CodeDom_Compiler_GeneratorSupport_" data-uid="System.CodeDom.Compiler.CodeGenerator.Supports(System.CodeDom.Compiler.GeneratorSupport)">
+  Supports(GeneratorSupport)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool Supports(GeneratorSupport support)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>support</code> <a class="xref" href="../api-tests/System.CodeDom.Compiler.GeneratorSupport.html">GeneratorSupport</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_ValidateIdentifier_" data-uid="System.CodeDom.Compiler.CodeGenerator.ValidateIdentifier*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_ValidateIdentifier_System_String_" data-uid="System.CodeDom.Compiler.CodeGenerator.ValidateIdentifier(System.String)">
+  ValidateIdentifier(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ValidateIdentifier(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeGenerator_ValidateIdentifiers_" data-uid="System.CodeDom.Compiler.CodeGenerator.ValidateIdentifiers*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeGenerator_ValidateIdentifiers_System_CodeDom_CodeObject_" data-uid="System.CodeDom.Compiler.CodeGenerator.ValidateIdentifiers(System.CodeDom.CodeObject)">
+  ValidateIdentifiers(CodeObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ValidateIdentifiers(CodeObject e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <a class="xref" href="../api-tests/System.CodeDom.CodeObject.html">CodeObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

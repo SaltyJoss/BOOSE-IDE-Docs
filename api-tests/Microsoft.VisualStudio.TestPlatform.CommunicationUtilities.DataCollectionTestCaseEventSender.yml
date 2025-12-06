@@ -1,0 +1,1096 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+  id: DataCollectionTestCaseEventSender
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  children:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.#ctor
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.#ctor(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager,Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Close
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Create
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.InitializeCommunication(System.Int32)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Instance
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestCaseEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestCaseStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestSessionEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.WaitForRequestSenderConnection(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: DataCollectionTestCaseEventSender
+  nameWithType: DataCollectionTestCaseEventSender
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+  type: Class
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  syntax:
+    content: 'public class DataCollectionTestCaseEventSender : IDataCollectionTestCaseEventSender'
+    content.vb: Public Class DataCollectionTestCaseEventSender Implements IDataCollectionTestCaseEventSender
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.#ctor
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.#ctor
+  id: '#ctor'
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+  langs:
+  - csharp
+  - vb
+  name: DataCollectionTestCaseEventSender()
+  nameWithType: DataCollectionTestCaseEventSender.DataCollectionTestCaseEventSender()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.DataCollectionTestCaseEventSender()
+  type: Constructor
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  syntax:
+    content: protected DataCollectionTestCaseEventSender()
+    content.vb: Protected Sub New()
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.#ctor*
+  nameWithType.vb: DataCollectionTestCaseEventSender.New()
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.New()
+  name.vb: New()
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.#ctor(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager,Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.#ctor(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager,Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer)
+  id: '#ctor(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager,Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer)'
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+  langs:
+  - csharp
+  - vb
+  name: DataCollectionTestCaseEventSender(ICommunicationManager, IDataSerializer)
+  nameWithType: DataCollectionTestCaseEventSender.DataCollectionTestCaseEventSender(ICommunicationManager, IDataSerializer)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.DataCollectionTestCaseEventSender(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager, Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer)
+  type: Constructor
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  syntax:
+    content: protected DataCollectionTestCaseEventSender(ICommunicationManager communicationManager, IDataSerializer dataSerializer)
+    parameters:
+    - id: communicationManager
+      type: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+    - id: dataSerializer
+      type: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer
+    content.vb: Protected Sub New(communicationManager As ICommunicationManager, dataSerializer As IDataSerializer)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.#ctor*
+  nameWithType.vb: DataCollectionTestCaseEventSender.New(ICommunicationManager, IDataSerializer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.New(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager, Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer)
+  name.vb: New(ICommunicationManager, IDataSerializer)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Create
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Create
+  id: Create
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+  langs:
+  - csharp
+  - vb
+  name: Create()
+  nameWithType: DataCollectionTestCaseEventSender.Create()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Create()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  syntax:
+    content: public static DataCollectionTestCaseEventSender Create()
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+    content.vb: Public Shared Function Create() As DataCollectionTestCaseEventSender
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Create*
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.InitializeCommunication(System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.InitializeCommunication(System.Int32)
+  id: InitializeCommunication(System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+  langs:
+  - csharp
+  - vb
+  name: InitializeCommunication(int)
+  nameWithType: DataCollectionTestCaseEventSender.InitializeCommunication(int)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.InitializeCommunication(int)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public void InitializeCommunication(int port)
+    parameters:
+    - id: port
+      type: System.Int32
+    content.vb: Public Sub InitializeCommunication(port As Integer)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.InitializeCommunication*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.InitializeCommunication(System.Int32)
+  nameWithType.vb: DataCollectionTestCaseEventSender.InitializeCommunication(Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.InitializeCommunication(Integer)
+  name.vb: InitializeCommunication(Integer)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.WaitForRequestSenderConnection(System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.WaitForRequestSenderConnection(System.Int32)
+  id: WaitForRequestSenderConnection(System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+  langs:
+  - csharp
+  - vb
+  name: WaitForRequestSenderConnection(int)
+  nameWithType: DataCollectionTestCaseEventSender.WaitForRequestSenderConnection(int)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.WaitForRequestSenderConnection(int)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public bool WaitForRequestSenderConnection(int connectionTimeout)
+    parameters:
+    - id: connectionTimeout
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function WaitForRequestSenderConnection(connectionTimeout As Integer) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.WaitForRequestSenderConnection*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.WaitForRequestSenderConnection(System.Int32)
+  nameWithType.vb: DataCollectionTestCaseEventSender.WaitForRequestSenderConnection(Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.WaitForRequestSenderConnection(Integer)
+  name.vb: WaitForRequestSenderConnection(Integer)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Close
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Close
+  id: Close
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: DataCollectionTestCaseEventSender.Close()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Close()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close()
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Close*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.Close
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestCaseStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestCaseStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs)
+  id: SendTestCaseStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+  langs:
+  - csharp
+  - vb
+  name: SendTestCaseStart(TestCaseStartEventArgs)
+  nameWithType: DataCollectionTestCaseEventSender.SendTestCaseStart(TestCaseStartEventArgs)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestCaseStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public void SendTestCaseStart(TestCaseStartEventArgs e)
+    parameters:
+    - id: e
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs
+    content.vb: Public Sub SendTestCaseStart(e As TestCaseStartEventArgs)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestCaseStart*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestCaseStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestCaseEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestCaseEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs)
+  id: SendTestCaseEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+  langs:
+  - csharp
+  - vb
+  name: SendTestCaseEnd(TestCaseEndEventArgs)
+  nameWithType: DataCollectionTestCaseEventSender.SendTestCaseEnd(TestCaseEndEventArgs)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestCaseEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public Collection<AttachmentSet>? SendTestCaseEnd(TestCaseEndEventArgs e)
+    parameters:
+    - id: e
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs
+    return:
+      type: System.Collections.ObjectModel.Collection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet}
+    content.vb: Public Function SendTestCaseEnd(e As TestCaseEndEventArgs) As Collection(Of AttachmentSet)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestCaseEnd*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestCaseEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestSessionEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestSessionEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs)
+  id: SendTestSessionEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+  langs:
+  - csharp
+  - vb
+  name: SendTestSessionEnd(SessionEndEventArgs)
+  nameWithType: DataCollectionTestCaseEventSender.SendTestSessionEnd(SessionEndEventArgs)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestSessionEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  example: []
+  syntax:
+    content: public void SendTestSessionEnd(SessionEndEventArgs e)
+    parameters:
+    - id: e
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs
+    content.vb: Public Sub SendTestSessionEnd(e As SessionEndEventArgs)
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestSessionEnd*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestSessionEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Instance
+  commentId: P:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Instance
+  id: Instance
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: DataCollectionTestCaseEventSender.Instance
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Instance
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  syntax:
+    content: public static DataCollectionTestCaseEventSender? Instance { get; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+    content.vb: Public Shared ReadOnly Property Instance As DataCollectionTestCaseEventSender
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Instance*
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html
+  name: IDataCollectionTestCaseEventSender
+  nameWithType: IDataCollectionTestCaseEventSender
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_DataCollectionTestCaseEventSender__ctor
+  name: DataCollectionTestCaseEventSender
+  nameWithType: DataCollectionTestCaseEventSender.DataCollectionTestCaseEventSender
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.DataCollectionTestCaseEventSender
+  nameWithType.vb: DataCollectionTestCaseEventSender.New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.New
+  name.vb: New
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager.html
+  name: ICommunicationManager
+  nameWithType: ICommunicationManager
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ICommunicationManager
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.html
+  name: IDataSerializer
+  nameWithType: IDataSerializer
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Create*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Create
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_DataCollectionTestCaseEventSender_Create
+  name: Create
+  nameWithType: DataCollectionTestCaseEventSender.Create
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Create
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.html
+  name: DataCollectionTestCaseEventSender
+  nameWithType: DataCollectionTestCaseEventSender
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.InitializeCommunication*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.InitializeCommunication
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_DataCollectionTestCaseEventSender_InitializeCommunication_System_Int32_
+  name: InitializeCommunication
+  nameWithType: DataCollectionTestCaseEventSender.InitializeCommunication
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.InitializeCommunication
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.InitializeCommunication(System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.InitializeCommunication(System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_InitializeCommunication_System_Int32_
+  name: InitializeCommunication(int)
+  nameWithType: IDataCollectionTestCaseEventSender.InitializeCommunication(int)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.InitializeCommunication(int)
+  nameWithType.vb: IDataCollectionTestCaseEventSender.InitializeCommunication(Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.InitializeCommunication(Integer)
+  name.vb: InitializeCommunication(Integer)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.InitializeCommunication(System.Int32)
+    name: InitializeCommunication
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_InitializeCommunication_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.InitializeCommunication(System.Int32)
+    name: InitializeCommunication
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_InitializeCommunication_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.WaitForRequestSenderConnection*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.WaitForRequestSenderConnection
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_DataCollectionTestCaseEventSender_WaitForRequestSenderConnection_System_Int32_
+  name: WaitForRequestSenderConnection
+  nameWithType: DataCollectionTestCaseEventSender.WaitForRequestSenderConnection
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.WaitForRequestSenderConnection
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.WaitForRequestSenderConnection(System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.WaitForRequestSenderConnection(System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_WaitForRequestSenderConnection_System_Int32_
+  name: WaitForRequestSenderConnection(int)
+  nameWithType: IDataCollectionTestCaseEventSender.WaitForRequestSenderConnection(int)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.WaitForRequestSenderConnection(int)
+  nameWithType.vb: IDataCollectionTestCaseEventSender.WaitForRequestSenderConnection(Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.WaitForRequestSenderConnection(Integer)
+  name.vb: WaitForRequestSenderConnection(Integer)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.WaitForRequestSenderConnection(System.Int32)
+    name: WaitForRequestSenderConnection
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_WaitForRequestSenderConnection_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.WaitForRequestSenderConnection(System.Int32)
+    name: WaitForRequestSenderConnection
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_WaitForRequestSenderConnection_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Close*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Close
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_DataCollectionTestCaseEventSender_Close
+  name: Close
+  nameWithType: DataCollectionTestCaseEventSender.Close
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Close
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.Close
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.Close
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_Close
+  name: Close()
+  nameWithType: IDataCollectionTestCaseEventSender.Close()
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.Close()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.Close
+    name: Close
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_Close
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.Close
+    name: Close
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_Close
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestCaseStart*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestCaseStart
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_DataCollectionTestCaseEventSender_SendTestCaseStart_Microsoft_VisualStudio_TestPlatform_ObjectModel_DataCollection_TestCaseStartEventArgs_
+  name: SendTestCaseStart
+  nameWithType: DataCollectionTestCaseEventSender.SendTestCaseStart
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestCaseStart
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestCaseStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestCaseStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_SendTestCaseStart_Microsoft_VisualStudio_TestPlatform_ObjectModel_DataCollection_TestCaseStartEventArgs_
+  name: SendTestCaseStart(TestCaseStartEventArgs)
+  nameWithType: IDataCollectionTestCaseEventSender.SendTestCaseStart(TestCaseStartEventArgs)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestCaseStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestCaseStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs)
+    name: SendTestCaseStart
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_SendTestCaseStart_Microsoft_VisualStudio_TestPlatform_ObjectModel_DataCollection_TestCaseStartEventArgs_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs
+    name: TestCaseStartEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestCaseStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs)
+    name: SendTestCaseStart
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_SendTestCaseStart_Microsoft_VisualStudio_TestPlatform_ObjectModel_DataCollection_TestCaseStartEventArgs_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs
+    name: TestCaseStartEventArgs
+    isExternal: true
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs.html
+  name: TestCaseStartEventArgs
+  nameWithType: TestCaseStartEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseStartEventArgs
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+    name: DataCollection
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+    name: DataCollection
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.html
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestCaseEnd*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestCaseEnd
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_DataCollectionTestCaseEventSender_SendTestCaseEnd_Microsoft_VisualStudio_TestPlatform_ObjectModel_DataCollection_TestCaseEndEventArgs_
+  name: SendTestCaseEnd
+  nameWithType: DataCollectionTestCaseEventSender.SendTestCaseEnd
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestCaseEnd
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestCaseEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestCaseEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_SendTestCaseEnd_Microsoft_VisualStudio_TestPlatform_ObjectModel_DataCollection_TestCaseEndEventArgs_
+  name: SendTestCaseEnd(TestCaseEndEventArgs)
+  nameWithType: IDataCollectionTestCaseEventSender.SendTestCaseEnd(TestCaseEndEventArgs)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestCaseEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestCaseEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs)
+    name: SendTestCaseEnd
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_SendTestCaseEnd_Microsoft_VisualStudio_TestPlatform_ObjectModel_DataCollection_TestCaseEndEventArgs_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs
+    name: TestCaseEndEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestCaseEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs)
+    name: SendTestCaseEnd
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_SendTestCaseEnd_Microsoft_VisualStudio_TestPlatform_ObjectModel_DataCollection_TestCaseEndEventArgs_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs
+    name: TestCaseEndEventArgs
+    isExternal: true
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs.html
+  name: TestCaseEndEventArgs
+  nameWithType: TestCaseEndEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.TestCaseEndEventArgs
+- uid: System.Collections.ObjectModel.Collection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet}
+  commentId: T:System.Collections.ObjectModel.Collection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.Collection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1
+  name: Collection<AttachmentSet>
+  nameWithType: Collection<AttachmentSet>
+  fullName: System.Collections.ObjectModel.Collection<Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet>
+  nameWithType.vb: Collection(Of AttachmentSet)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet)
+  name.vb: Collection(Of AttachmentSet)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet
+    name: AttachmentSet
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet
+    name: AttachmentSet
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet.html
+  - name: )
+- uid: System.Collections.ObjectModel.Collection`1
+  commentId: T:System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1
+  name: Collection<T>
+  nameWithType: Collection<T>
+  fullName: System.Collections.ObjectModel.Collection<T>
+  nameWithType.vb: Collection(Of T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T)
+  name.vb: Collection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestSessionEnd*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestSessionEnd
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_DataCollectionTestCaseEventSender_SendTestSessionEnd_Microsoft_VisualStudio_TestPlatform_ObjectModel_DataCollection_SessionEndEventArgs_
+  name: SendTestSessionEnd
+  nameWithType: DataCollectionTestCaseEventSender.SendTestSessionEnd
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.SendTestSessionEnd
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestSessionEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestSessionEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_SendTestSessionEnd_Microsoft_VisualStudio_TestPlatform_ObjectModel_DataCollection_SessionEndEventArgs_
+  name: SendTestSessionEnd(SessionEndEventArgs)
+  nameWithType: IDataCollectionTestCaseEventSender.SendTestSessionEnd(SessionEndEventArgs)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestSessionEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestSessionEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs)
+    name: SendTestSessionEnd
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_SendTestSessionEnd_Microsoft_VisualStudio_TestPlatform_ObjectModel_DataCollection_SessionEndEventArgs_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs
+    name: SessionEndEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.SendTestSessionEnd(Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs)
+    name: SendTestSessionEnd
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataCollectionTestCaseEventSender_SendTestSessionEnd_Microsoft_VisualStudio_TestPlatform_ObjectModel_DataCollection_SessionEndEventArgs_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs
+    name: SessionEndEventArgs
+    isExternal: true
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs.html
+  name: SessionEndEventArgs
+  nameWithType: SessionEndEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.SessionEndEventArgs
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Instance*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Instance
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_DataCollectionTestCaseEventSender_Instance
+  name: Instance
+  nameWithType: DataCollectionTestCaseEventSender.Instance
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.DataCollectionTestCaseEventSender.Instance

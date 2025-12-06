@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TestContextImplementation | BOOSE IDE Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TestContextImplementation | BOOSE IDE Documentation ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BOOSE IDE Documentation">
+            BOOSE IDE Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation">
+
+
+
+  <h1 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation" class="text-break">
+Class TestContextImplementation  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.VisualStudio.html">VisualStudio</a>.<a class="xref" href="Microsoft.VisualStudio.TestPlatform.html">TestPlatform</a>.<a class="xref" href="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.html">MSTestAdapter</a>.<a class="xref" href="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.html">PlatformServices</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TestContextImplementation : TestContext, ITestContext</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.html">TestContext</a></div>
+      <div><span class="xref">TestContextImplementation</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.ITestContext.html">ITestContext</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestContext_CancellationTokenSource">TestContext.CancellationTokenSource</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestContext_TestDir">TestContext.TestDir</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestContext_TestDeploymentDir">TestContext.TestDeploymentDir</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestContext_TestLogsDir">TestContext.TestLogsDir</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestContext_ManagedType">TestContext.ManagedType</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestContext_ManagedMethod">TestContext.ManagedMethod</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation__ctor_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.#ctor*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation__ctor_Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_Interface_ObjectModel_ITestMethod_System_IO_StringWriter_System_Collections_Generic_IDictionary_System_String_System_Object__" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.#ctor(Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.ObjectModel.ITestMethod,System.IO.StringWriter,System.Collections.Generic.IDictionary{System.String,System.Object})">
+  TestContextImplementation(ITestMethod, StringWriter, IDictionary&lt;string, object?&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TestContextImplementation(ITestMethod testMethod, StringWriter stringWriter, IDictionary&lt;string, object?&gt; properties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>testMethod</code> <a class="xref" href="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.ObjectModel.ITestMethod.html">ITestMethod</a></dt>
+    <dd></dd>
+    <dt><code>stringWriter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stringwriter">StringWriter</a></dt>
+    <dd></dd>
+    <dt><code>properties</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_Context_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.Context*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_Context" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.Context">
+  Context
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TestContext Context { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.html">TestContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_CurrentTestOutcome_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.CurrentTestOutcome*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_CurrentTestOutcome" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.CurrentTestOutcome">
+  CurrentTestOutcome
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current test outcome.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override UnitTestOutcome CurrentTestOutcome { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestOutcome.html">UnitTestOutcome</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_DeploymentDirectory_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.DeploymentDirectory*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_DeploymentDirectory" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.DeploymentDirectory">
+  DeploymentDirectory
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets directory for files deployed for the test run. Typically a subdirectory of <a class="xref" href="Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestContext_TestRunDirectory">TestRunDirectory</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string? DeploymentDirectory { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_FullyQualifiedTestClassName_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.FullyQualifiedTestClassName*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_FullyQualifiedTestClassName" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.FullyQualifiedTestClassName">
+  FullyQualifiedTestClassName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Fully-qualified name of the class containing the test method currently being executed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string FullyQualifiedTestClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_FullyQualifiedTestClassName_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This property can be useful in attributes derived from ExpectedExceptionBaseAttribute.
+Those attributes have access to the test context, and provide messages that are included
+in the test results. Users can benefit from messages that include the fully-qualified
+class name in addition to the name of the test method currently being executed.</p>
+</div>
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_Properties_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.Properties*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_Properties" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.Properties">
+  Properties
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets test properties for a test.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IDictionary Properties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.idictionary">IDictionary</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_ResultsDirectory_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.ResultsDirectory*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_ResultsDirectory" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.ResultsDirectory">
+  ResultsDirectory
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets base directory for results from the test run. Typically a subdirectory of <a class="xref" href="Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestContext_TestRunDirectory">TestRunDirectory</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string? ResultsDirectory { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_TestName_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.TestName*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_TestName" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.TestName">
+  TestName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the name of the test method currently being executed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string TestName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_TestResultsDirectory_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.TestResultsDirectory*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_TestResultsDirectory" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.TestResultsDirectory">
+  TestResultsDirectory
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets directory for test result files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string? TestResultsDirectory { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_TestRunDirectory_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.TestRunDirectory*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_TestRunDirectory" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.TestRunDirectory">
+  TestRunDirectory
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets base directory for the test run, under which deployed files and result files are stored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string? TestRunDirectory { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_TestRunResultsDirectory_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.TestRunResultsDirectory*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_TestRunResultsDirectory" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.TestRunResultsDirectory">
+  TestRunResultsDirectory
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets directory for test run result files. Typically a subdirectory of <a class="xref" href="Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.html#Microsoft_VisualStudio_TestTools_UnitTesting_TestContext_ResultsDirectory">ResultsDirectory</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string? TestRunResultsDirectory { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_AddProperty_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.AddProperty*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_AddProperty_System_String_System_String_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.AddProperty(System.String,System.String)">
+  AddProperty(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddProperty(string propertyName, string propertyValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>propertyValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_AddResultFile_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.AddResultFile*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_AddResultFile_System_String_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.AddResultFile(System.String)">
+  AddResultFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a file name to the list in TestResult.ResultFileNames.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddResultFile(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file Name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_ClearDiagnosticMessages_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.ClearDiagnosticMessages*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_ClearDiagnosticMessages" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.ClearDiagnosticMessages">
+  ClearDiagnosticMessages()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearDiagnosticMessages()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_GetDiagnosticMessages_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.GetDiagnosticMessages*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_GetDiagnosticMessages" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.GetDiagnosticMessages">
+  GetDiagnosticMessages()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetDiagnosticMessages()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_GetResultFiles_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.GetResultFiles*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_GetResultFiles" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.GetResultFiles">
+  GetResultFiles()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;string&gt;? GetResultFiles()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_SetDataConnection_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.SetDataConnection*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_SetDataConnection_System_Object_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.SetDataConnection(System.Object)">
+  SetDataConnection(object?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDataConnection(object? dbConnection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dbConnection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_SetDataRow_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.SetDataRow*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_SetDataRow_System_Object_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.SetDataRow(System.Object)">
+  SetDataRow(object?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDataRow(object? dataRow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dataRow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_SetOutcome_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.SetOutcome*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_SetOutcome_Microsoft_VisualStudio_TestTools_UnitTesting_UnitTestOutcome_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.SetOutcome(Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestOutcome)">
+  SetOutcome(UnitTestOutcome)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOutcome(UnitTestOutcome outcome)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outcome</code> <a class="xref" href="Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestOutcome.html">UnitTestOutcome</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_TryGetPropertyValue_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.TryGetPropertyValue*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_TryGetPropertyValue_System_String_System_Object__" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.TryGetPropertyValue(System.String,System.Object@)">
+  TryGetPropertyValue(string, out object?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetPropertyValue(string propertyName, out object? propertyValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>propertyValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_Write_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.Write*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_Write_System_String_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.Write(System.String)">
+  Write(string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Used to write trace messages while the test is running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Write(string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>formatted message string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_Write_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.Write*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_Write_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.Write(System.String,System.Object[])">
+  Write(string, params object?[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Used to write trace messages while the test is running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Write(string format, params object?[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>format string.</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>the arguments.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_WriteLine_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.WriteLine*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_WriteLine_System_String_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.WriteLine(System.String)">
+  WriteLine(string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Used to write trace messages while the test is running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteLine(string? message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>formatted message string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_WriteLine_" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.WriteLine*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_MSTestAdapter_PlatformServices_TestContextImplementation_WriteLine_System_String_System_Object___" data-uid="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.TestContextImplementation.WriteLine(System.String,System.Object[])">
+  WriteLine(string, params object?[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Used to write trace messages while the test is running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteLine(string format, params object?[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>format string.</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>the arguments.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

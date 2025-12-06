@@ -1,0 +1,835 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.CodeDom.CodeTypeDeclaration
+  commentId: T:System.CodeDom.CodeTypeDeclaration
+  id: CodeTypeDeclaration
+  parent: System.CodeDom
+  children:
+  - System.CodeDom.CodeTypeDeclaration.#ctor
+  - System.CodeDom.CodeTypeDeclaration.#ctor(System.String)
+  - System.CodeDom.CodeTypeDeclaration.BaseTypes
+  - System.CodeDom.CodeTypeDeclaration.IsClass
+  - System.CodeDom.CodeTypeDeclaration.IsEnum
+  - System.CodeDom.CodeTypeDeclaration.IsInterface
+  - System.CodeDom.CodeTypeDeclaration.IsPartial
+  - System.CodeDom.CodeTypeDeclaration.IsStruct
+  - System.CodeDom.CodeTypeDeclaration.Members
+  - System.CodeDom.CodeTypeDeclaration.PopulateBaseTypes
+  - System.CodeDom.CodeTypeDeclaration.PopulateMembers
+  - System.CodeDom.CodeTypeDeclaration.TypeAttributes
+  - System.CodeDom.CodeTypeDeclaration.TypeParameters
+  langs:
+  - csharp
+  - vb
+  name: CodeTypeDeclaration
+  nameWithType: CodeTypeDeclaration
+  fullName: System.CodeDom.CodeTypeDeclaration
+  type: Class
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom
+  syntax:
+    content: 'public class CodeTypeDeclaration : CodeTypeMember'
+    content.vb: Public Class CodeTypeDeclaration Inherits CodeTypeMember
+  inheritance:
+  - System.Object
+  - System.CodeDom.CodeObject
+  - System.CodeDom.CodeTypeMember
+  derivedClasses:
+  - System.CodeDom.CodeTypeDelegate
+  - System.CodeDom.CodeTypeDelegate
+  inheritedMembers:
+  - System.CodeDom.CodeTypeMember.Name
+  - System.CodeDom.CodeTypeMember.Attributes
+  - System.CodeDom.CodeTypeMember.CustomAttributes
+  - System.CodeDom.CodeTypeMember.LinePragma
+  - System.CodeDom.CodeTypeMember.Comments
+  - System.CodeDom.CodeTypeMember.StartDirectives
+  - System.CodeDom.CodeTypeMember.EndDirectives
+  - System.CodeDom.CodeObject.UserData
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: System.CodeDom.CodeTypeDeclaration.#ctor
+  commentId: M:System.CodeDom.CodeTypeDeclaration.#ctor
+  id: '#ctor'
+  parent: System.CodeDom.CodeTypeDeclaration
+  langs:
+  - csharp
+  - vb
+  name: CodeTypeDeclaration()
+  nameWithType: CodeTypeDeclaration.CodeTypeDeclaration()
+  fullName: System.CodeDom.CodeTypeDeclaration.CodeTypeDeclaration()
+  type: Constructor
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom
+  syntax:
+    content: public CodeTypeDeclaration()
+    content.vb: Public Sub New()
+  overload: System.CodeDom.CodeTypeDeclaration.#ctor*
+  nameWithType.vb: CodeTypeDeclaration.New()
+  fullName.vb: System.CodeDom.CodeTypeDeclaration.New()
+  name.vb: New()
+- uid: System.CodeDom.CodeTypeDeclaration.#ctor(System.String)
+  commentId: M:System.CodeDom.CodeTypeDeclaration.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.CodeDom.CodeTypeDeclaration
+  langs:
+  - csharp
+  - vb
+  name: CodeTypeDeclaration(string)
+  nameWithType: CodeTypeDeclaration.CodeTypeDeclaration(string)
+  fullName: System.CodeDom.CodeTypeDeclaration.CodeTypeDeclaration(string)
+  type: Constructor
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom
+  syntax:
+    content: public CodeTypeDeclaration(string name)
+    parameters:
+    - id: name
+      type: System.String
+    content.vb: Public Sub New(name As String)
+  overload: System.CodeDom.CodeTypeDeclaration.#ctor*
+  nameWithType.vb: CodeTypeDeclaration.New(String)
+  fullName.vb: System.CodeDom.CodeTypeDeclaration.New(String)
+  name.vb: New(String)
+- uid: System.CodeDom.CodeTypeDeclaration.TypeAttributes
+  commentId: P:System.CodeDom.CodeTypeDeclaration.TypeAttributes
+  id: TypeAttributes
+  parent: System.CodeDom.CodeTypeDeclaration
+  langs:
+  - csharp
+  - vb
+  name: TypeAttributes
+  nameWithType: CodeTypeDeclaration.TypeAttributes
+  fullName: System.CodeDom.CodeTypeDeclaration.TypeAttributes
+  type: Property
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom
+  syntax:
+    content: public TypeAttributes TypeAttributes { get; set; }
+    parameters: []
+    return:
+      type: System.Reflection.TypeAttributes
+    content.vb: Public Property TypeAttributes As TypeAttributes
+  overload: System.CodeDom.CodeTypeDeclaration.TypeAttributes*
+- uid: System.CodeDom.CodeTypeDeclaration.BaseTypes
+  commentId: P:System.CodeDom.CodeTypeDeclaration.BaseTypes
+  id: BaseTypes
+  parent: System.CodeDom.CodeTypeDeclaration
+  langs:
+  - csharp
+  - vb
+  name: BaseTypes
+  nameWithType: CodeTypeDeclaration.BaseTypes
+  fullName: System.CodeDom.CodeTypeDeclaration.BaseTypes
+  type: Property
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom
+  syntax:
+    content: public CodeTypeReferenceCollection BaseTypes { get; }
+    parameters: []
+    return:
+      type: System.CodeDom.CodeTypeReferenceCollection
+    content.vb: Public ReadOnly Property BaseTypes As CodeTypeReferenceCollection
+  overload: System.CodeDom.CodeTypeDeclaration.BaseTypes*
+- uid: System.CodeDom.CodeTypeDeclaration.IsClass
+  commentId: P:System.CodeDom.CodeTypeDeclaration.IsClass
+  id: IsClass
+  parent: System.CodeDom.CodeTypeDeclaration
+  langs:
+  - csharp
+  - vb
+  name: IsClass
+  nameWithType: CodeTypeDeclaration.IsClass
+  fullName: System.CodeDom.CodeTypeDeclaration.IsClass
+  type: Property
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom
+  syntax:
+    content: public bool IsClass { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsClass As Boolean
+  overload: System.CodeDom.CodeTypeDeclaration.IsClass*
+- uid: System.CodeDom.CodeTypeDeclaration.IsStruct
+  commentId: P:System.CodeDom.CodeTypeDeclaration.IsStruct
+  id: IsStruct
+  parent: System.CodeDom.CodeTypeDeclaration
+  langs:
+  - csharp
+  - vb
+  name: IsStruct
+  nameWithType: CodeTypeDeclaration.IsStruct
+  fullName: System.CodeDom.CodeTypeDeclaration.IsStruct
+  type: Property
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom
+  syntax:
+    content: public bool IsStruct { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsStruct As Boolean
+  overload: System.CodeDom.CodeTypeDeclaration.IsStruct*
+- uid: System.CodeDom.CodeTypeDeclaration.IsEnum
+  commentId: P:System.CodeDom.CodeTypeDeclaration.IsEnum
+  id: IsEnum
+  parent: System.CodeDom.CodeTypeDeclaration
+  langs:
+  - csharp
+  - vb
+  name: IsEnum
+  nameWithType: CodeTypeDeclaration.IsEnum
+  fullName: System.CodeDom.CodeTypeDeclaration.IsEnum
+  type: Property
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom
+  syntax:
+    content: public bool IsEnum { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsEnum As Boolean
+  overload: System.CodeDom.CodeTypeDeclaration.IsEnum*
+- uid: System.CodeDom.CodeTypeDeclaration.IsInterface
+  commentId: P:System.CodeDom.CodeTypeDeclaration.IsInterface
+  id: IsInterface
+  parent: System.CodeDom.CodeTypeDeclaration
+  langs:
+  - csharp
+  - vb
+  name: IsInterface
+  nameWithType: CodeTypeDeclaration.IsInterface
+  fullName: System.CodeDom.CodeTypeDeclaration.IsInterface
+  type: Property
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom
+  syntax:
+    content: public bool IsInterface { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsInterface As Boolean
+  overload: System.CodeDom.CodeTypeDeclaration.IsInterface*
+- uid: System.CodeDom.CodeTypeDeclaration.IsPartial
+  commentId: P:System.CodeDom.CodeTypeDeclaration.IsPartial
+  id: IsPartial
+  parent: System.CodeDom.CodeTypeDeclaration
+  langs:
+  - csharp
+  - vb
+  name: IsPartial
+  nameWithType: CodeTypeDeclaration.IsPartial
+  fullName: System.CodeDom.CodeTypeDeclaration.IsPartial
+  type: Property
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom
+  syntax:
+    content: public bool IsPartial { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsPartial As Boolean
+  overload: System.CodeDom.CodeTypeDeclaration.IsPartial*
+- uid: System.CodeDom.CodeTypeDeclaration.Members
+  commentId: P:System.CodeDom.CodeTypeDeclaration.Members
+  id: Members
+  parent: System.CodeDom.CodeTypeDeclaration
+  langs:
+  - csharp
+  - vb
+  name: Members
+  nameWithType: CodeTypeDeclaration.Members
+  fullName: System.CodeDom.CodeTypeDeclaration.Members
+  type: Property
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom
+  syntax:
+    content: public CodeTypeMemberCollection Members { get; }
+    parameters: []
+    return:
+      type: System.CodeDom.CodeTypeMemberCollection
+    content.vb: Public ReadOnly Property Members As CodeTypeMemberCollection
+  overload: System.CodeDom.CodeTypeDeclaration.Members*
+- uid: System.CodeDom.CodeTypeDeclaration.TypeParameters
+  commentId: P:System.CodeDom.CodeTypeDeclaration.TypeParameters
+  id: TypeParameters
+  parent: System.CodeDom.CodeTypeDeclaration
+  langs:
+  - csharp
+  - vb
+  name: TypeParameters
+  nameWithType: CodeTypeDeclaration.TypeParameters
+  fullName: System.CodeDom.CodeTypeDeclaration.TypeParameters
+  type: Property
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom
+  syntax:
+    content: public CodeTypeParameterCollection TypeParameters { get; }
+    parameters: []
+    return:
+      type: System.CodeDom.CodeTypeParameterCollection
+    content.vb: Public ReadOnly Property TypeParameters As CodeTypeParameterCollection
+  overload: System.CodeDom.CodeTypeDeclaration.TypeParameters*
+- uid: System.CodeDom.CodeTypeDeclaration.PopulateBaseTypes
+  commentId: E:System.CodeDom.CodeTypeDeclaration.PopulateBaseTypes
+  id: PopulateBaseTypes
+  parent: System.CodeDom.CodeTypeDeclaration
+  langs:
+  - csharp
+  - vb
+  name: PopulateBaseTypes
+  nameWithType: CodeTypeDeclaration.PopulateBaseTypes
+  fullName: System.CodeDom.CodeTypeDeclaration.PopulateBaseTypes
+  type: Event
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom
+  syntax:
+    content: public event EventHandler PopulateBaseTypes
+    return:
+      type: System.EventHandler
+    content.vb: Public Event PopulateBaseTypes As EventHandler
+- uid: System.CodeDom.CodeTypeDeclaration.PopulateMembers
+  commentId: E:System.CodeDom.CodeTypeDeclaration.PopulateMembers
+  id: PopulateMembers
+  parent: System.CodeDom.CodeTypeDeclaration
+  langs:
+  - csharp
+  - vb
+  name: PopulateMembers
+  nameWithType: CodeTypeDeclaration.PopulateMembers
+  fullName: System.CodeDom.CodeTypeDeclaration.PopulateMembers
+  type: Event
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom
+  syntax:
+    content: public event EventHandler PopulateMembers
+    return:
+      type: System.EventHandler
+    content.vb: Public Event PopulateMembers As EventHandler
+references:
+- uid: System.CodeDom
+  commentId: N:System.CodeDom
+  isExternal: true
+  href: System.html
+  name: System.CodeDom
+  nameWithType: System.CodeDom
+  fullName: System.CodeDom
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.CodeDom
+    name: CodeDom
+    isExternal: true
+    href: System.CodeDom.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.CodeDom
+    name: CodeDom
+    isExternal: true
+    href: System.CodeDom.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.CodeDom.CodeObject
+  commentId: T:System.CodeDom.CodeObject
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeObject.html
+  name: CodeObject
+  nameWithType: CodeObject
+  fullName: System.CodeDom.CodeObject
+- uid: System.CodeDom.CodeTypeMember
+  commentId: T:System.CodeDom.CodeTypeMember
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeTypeMember.html
+  name: CodeTypeMember
+  nameWithType: CodeTypeMember
+  fullName: System.CodeDom.CodeTypeMember
+- uid: System.CodeDom.CodeTypeMember.Name
+  commentId: P:System.CodeDom.CodeTypeMember.Name
+  parent: System.CodeDom.CodeTypeMember
+  isExternal: true
+  href: System.CodeDom.CodeTypeMember.html#System_CodeDom_CodeTypeMember_Name
+  name: Name
+  nameWithType: CodeTypeMember.Name
+  fullName: System.CodeDom.CodeTypeMember.Name
+- uid: System.CodeDom.CodeTypeMember.Attributes
+  commentId: P:System.CodeDom.CodeTypeMember.Attributes
+  parent: System.CodeDom.CodeTypeMember
+  isExternal: true
+  href: System.CodeDom.CodeTypeMember.html#System_CodeDom_CodeTypeMember_Attributes
+  name: Attributes
+  nameWithType: CodeTypeMember.Attributes
+  fullName: System.CodeDom.CodeTypeMember.Attributes
+- uid: System.CodeDom.CodeTypeMember.CustomAttributes
+  commentId: P:System.CodeDom.CodeTypeMember.CustomAttributes
+  parent: System.CodeDom.CodeTypeMember
+  isExternal: true
+  href: System.CodeDom.CodeTypeMember.html#System_CodeDom_CodeTypeMember_CustomAttributes
+  name: CustomAttributes
+  nameWithType: CodeTypeMember.CustomAttributes
+  fullName: System.CodeDom.CodeTypeMember.CustomAttributes
+- uid: System.CodeDom.CodeTypeMember.LinePragma
+  commentId: P:System.CodeDom.CodeTypeMember.LinePragma
+  parent: System.CodeDom.CodeTypeMember
+  isExternal: true
+  href: System.CodeDom.CodeTypeMember.html#System_CodeDom_CodeTypeMember_LinePragma
+  name: LinePragma
+  nameWithType: CodeTypeMember.LinePragma
+  fullName: System.CodeDom.CodeTypeMember.LinePragma
+- uid: System.CodeDom.CodeTypeMember.Comments
+  commentId: P:System.CodeDom.CodeTypeMember.Comments
+  parent: System.CodeDom.CodeTypeMember
+  isExternal: true
+  href: System.CodeDom.CodeTypeMember.html#System_CodeDom_CodeTypeMember_Comments
+  name: Comments
+  nameWithType: CodeTypeMember.Comments
+  fullName: System.CodeDom.CodeTypeMember.Comments
+- uid: System.CodeDom.CodeTypeMember.StartDirectives
+  commentId: P:System.CodeDom.CodeTypeMember.StartDirectives
+  parent: System.CodeDom.CodeTypeMember
+  isExternal: true
+  href: System.CodeDom.CodeTypeMember.html#System_CodeDom_CodeTypeMember_StartDirectives
+  name: StartDirectives
+  nameWithType: CodeTypeMember.StartDirectives
+  fullName: System.CodeDom.CodeTypeMember.StartDirectives
+- uid: System.CodeDom.CodeTypeMember.EndDirectives
+  commentId: P:System.CodeDom.CodeTypeMember.EndDirectives
+  parent: System.CodeDom.CodeTypeMember
+  isExternal: true
+  href: System.CodeDom.CodeTypeMember.html#System_CodeDom_CodeTypeMember_EndDirectives
+  name: EndDirectives
+  nameWithType: CodeTypeMember.EndDirectives
+  fullName: System.CodeDom.CodeTypeMember.EndDirectives
+- uid: System.CodeDom.CodeObject.UserData
+  commentId: P:System.CodeDom.CodeObject.UserData
+  parent: System.CodeDom.CodeObject
+  isExternal: true
+  href: System.CodeDom.CodeObject.html#System_CodeDom_CodeObject_UserData
+  name: UserData
+  nameWithType: CodeObject.UserData
+  fullName: System.CodeDom.CodeObject.UserData
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.CodeDom.CodeTypeDeclaration.#ctor*
+  commentId: Overload:System.CodeDom.CodeTypeDeclaration.#ctor
+  isExternal: true
+  href: System.CodeDom.CodeTypeDeclaration.html#System_CodeDom_CodeTypeDeclaration__ctor
+  name: CodeTypeDeclaration
+  nameWithType: CodeTypeDeclaration.CodeTypeDeclaration
+  fullName: System.CodeDom.CodeTypeDeclaration.CodeTypeDeclaration
+  nameWithType.vb: CodeTypeDeclaration.New
+  fullName.vb: System.CodeDom.CodeTypeDeclaration.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.CodeDom.CodeTypeDeclaration.TypeAttributes*
+  commentId: Overload:System.CodeDom.CodeTypeDeclaration.TypeAttributes
+  isExternal: true
+  href: System.CodeDom.CodeTypeDeclaration.html#System_CodeDom_CodeTypeDeclaration_TypeAttributes
+  name: TypeAttributes
+  nameWithType: CodeTypeDeclaration.TypeAttributes
+  fullName: System.CodeDom.CodeTypeDeclaration.TypeAttributes
+- uid: System.Reflection.TypeAttributes
+  commentId: T:System.Reflection.TypeAttributes
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.typeattributes
+  name: TypeAttributes
+  nameWithType: TypeAttributes
+  fullName: System.Reflection.TypeAttributes
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: System.CodeDom.CodeTypeDeclaration.BaseTypes*
+  commentId: Overload:System.CodeDom.CodeTypeDeclaration.BaseTypes
+  isExternal: true
+  href: System.CodeDom.CodeTypeDeclaration.html#System_CodeDom_CodeTypeDeclaration_BaseTypes
+  name: BaseTypes
+  nameWithType: CodeTypeDeclaration.BaseTypes
+  fullName: System.CodeDom.CodeTypeDeclaration.BaseTypes
+- uid: System.CodeDom.CodeTypeReferenceCollection
+  commentId: T:System.CodeDom.CodeTypeReferenceCollection
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeTypeReferenceCollection.html
+  name: CodeTypeReferenceCollection
+  nameWithType: CodeTypeReferenceCollection
+  fullName: System.CodeDom.CodeTypeReferenceCollection
+- uid: System.CodeDom.CodeTypeDeclaration.IsClass*
+  commentId: Overload:System.CodeDom.CodeTypeDeclaration.IsClass
+  isExternal: true
+  href: System.CodeDom.CodeTypeDeclaration.html#System_CodeDom_CodeTypeDeclaration_IsClass
+  name: IsClass
+  nameWithType: CodeTypeDeclaration.IsClass
+  fullName: System.CodeDom.CodeTypeDeclaration.IsClass
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.CodeDom.CodeTypeDeclaration.IsStruct*
+  commentId: Overload:System.CodeDom.CodeTypeDeclaration.IsStruct
+  isExternal: true
+  href: System.CodeDom.CodeTypeDeclaration.html#System_CodeDom_CodeTypeDeclaration_IsStruct
+  name: IsStruct
+  nameWithType: CodeTypeDeclaration.IsStruct
+  fullName: System.CodeDom.CodeTypeDeclaration.IsStruct
+- uid: System.CodeDom.CodeTypeDeclaration.IsEnum*
+  commentId: Overload:System.CodeDom.CodeTypeDeclaration.IsEnum
+  isExternal: true
+  href: System.CodeDom.CodeTypeDeclaration.html#System_CodeDom_CodeTypeDeclaration_IsEnum
+  name: IsEnum
+  nameWithType: CodeTypeDeclaration.IsEnum
+  fullName: System.CodeDom.CodeTypeDeclaration.IsEnum
+- uid: System.CodeDom.CodeTypeDeclaration.IsInterface*
+  commentId: Overload:System.CodeDom.CodeTypeDeclaration.IsInterface
+  isExternal: true
+  href: System.CodeDom.CodeTypeDeclaration.html#System_CodeDom_CodeTypeDeclaration_IsInterface
+  name: IsInterface
+  nameWithType: CodeTypeDeclaration.IsInterface
+  fullName: System.CodeDom.CodeTypeDeclaration.IsInterface
+- uid: System.CodeDom.CodeTypeDeclaration.IsPartial*
+  commentId: Overload:System.CodeDom.CodeTypeDeclaration.IsPartial
+  isExternal: true
+  href: System.CodeDom.CodeTypeDeclaration.html#System_CodeDom_CodeTypeDeclaration_IsPartial
+  name: IsPartial
+  nameWithType: CodeTypeDeclaration.IsPartial
+  fullName: System.CodeDom.CodeTypeDeclaration.IsPartial
+- uid: System.CodeDom.CodeTypeDeclaration.Members*
+  commentId: Overload:System.CodeDom.CodeTypeDeclaration.Members
+  isExternal: true
+  href: System.CodeDom.CodeTypeDeclaration.html#System_CodeDom_CodeTypeDeclaration_Members
+  name: Members
+  nameWithType: CodeTypeDeclaration.Members
+  fullName: System.CodeDom.CodeTypeDeclaration.Members
+- uid: System.CodeDom.CodeTypeMemberCollection
+  commentId: T:System.CodeDom.CodeTypeMemberCollection
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeTypeMemberCollection.html
+  name: CodeTypeMemberCollection
+  nameWithType: CodeTypeMemberCollection
+  fullName: System.CodeDom.CodeTypeMemberCollection
+- uid: System.CodeDom.CodeTypeDeclaration.TypeParameters*
+  commentId: Overload:System.CodeDom.CodeTypeDeclaration.TypeParameters
+  isExternal: true
+  href: System.CodeDom.CodeTypeDeclaration.html#System_CodeDom_CodeTypeDeclaration_TypeParameters
+  name: TypeParameters
+  nameWithType: CodeTypeDeclaration.TypeParameters
+  fullName: System.CodeDom.CodeTypeDeclaration.TypeParameters
+- uid: System.CodeDom.CodeTypeParameterCollection
+  commentId: T:System.CodeDom.CodeTypeParameterCollection
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeTypeParameterCollection.html
+  name: CodeTypeParameterCollection
+  nameWithType: CodeTypeParameterCollection
+  fullName: System.CodeDom.CodeTypeParameterCollection
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler

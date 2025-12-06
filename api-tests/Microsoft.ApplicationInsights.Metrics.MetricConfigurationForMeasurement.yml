@@ -1,0 +1,622 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement
+  commentId: T:Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement
+  id: MetricConfigurationForMeasurement
+  parent: Microsoft.ApplicationInsights.Metrics
+  children:
+  - Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.#ctor(System.Int32,System.Collections.Generic.IEnumerable{System.Int32},Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement)
+  - Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.#ctor(System.Int32,System.Int32,Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement)
+  langs:
+  - csharp
+  - vb
+  name: MetricConfigurationForMeasurement
+  nameWithType: MetricConfigurationForMeasurement
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement
+  type: Class
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics
+  syntax:
+    content: 'public sealed class MetricConfigurationForMeasurement : MetricConfiguration, IEquatable<MetricConfiguration>'
+    content.vb: Public NotInheritable Class MetricConfigurationForMeasurement Inherits MetricConfiguration Implements IEquatable(Of MetricConfiguration)
+  inheritance:
+  - System.Object
+  - Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+  implements:
+  - System.IEquatable{Microsoft.ApplicationInsights.Metrics.MetricConfiguration}
+  inheritedMembers:
+  - Microsoft.ApplicationInsights.Metrics.MetricConfiguration.GetValuesPerDimensionLimit(System.Int32)
+  - Microsoft.ApplicationInsights.Metrics.MetricConfiguration.Equals(System.Object)
+  - Microsoft.ApplicationInsights.Metrics.MetricConfiguration.Equals(Microsoft.ApplicationInsights.Metrics.MetricConfiguration)
+  - Microsoft.ApplicationInsights.Metrics.MetricConfiguration.GetHashCode
+  - Microsoft.ApplicationInsights.Metrics.MetricConfiguration.SeriesCountLimit
+  - Microsoft.ApplicationInsights.Metrics.MetricConfiguration.SeriesConfig
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.#ctor(System.Int32,System.Int32,Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.#ctor(System.Int32,System.Int32,Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement)
+  id: '#ctor(System.Int32,System.Int32,Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement)'
+  parent: Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement
+  langs:
+  - csharp
+  - vb
+  name: MetricConfigurationForMeasurement(int, int, MetricSeriesConfigurationForMeasurement)
+  nameWithType: MetricConfigurationForMeasurement.MetricConfigurationForMeasurement(int, int, MetricSeriesConfigurationForMeasurement)
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.MetricConfigurationForMeasurement(int, int, Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement)
+  type: Constructor
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics
+  syntax:
+    content: public MetricConfigurationForMeasurement(int seriesCountLimit, int valuesPerDimensionLimit, MetricSeriesConfigurationForMeasurement seriesConfig)
+    parameters:
+    - id: seriesCountLimit
+      type: System.Int32
+    - id: valuesPerDimensionLimit
+      type: System.Int32
+    - id: seriesConfig
+      type: Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement
+    content.vb: Public Sub New(seriesCountLimit As Integer, valuesPerDimensionLimit As Integer, seriesConfig As MetricSeriesConfigurationForMeasurement)
+  overload: Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.#ctor*
+  nameWithType.vb: MetricConfigurationForMeasurement.New(Integer, Integer, MetricSeriesConfigurationForMeasurement)
+  fullName.vb: Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.New(Integer, Integer, Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement)
+  name.vb: New(Integer, Integer, MetricSeriesConfigurationForMeasurement)
+- uid: Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.#ctor(System.Int32,System.Collections.Generic.IEnumerable{System.Int32},Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.#ctor(System.Int32,System.Collections.Generic.IEnumerable{System.Int32},Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement)
+  id: '#ctor(System.Int32,System.Collections.Generic.IEnumerable{System.Int32},Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement)'
+  parent: Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement
+  langs:
+  - csharp
+  - vb
+  name: MetricConfigurationForMeasurement(int, IEnumerable<int>, MetricSeriesConfigurationForMeasurement)
+  nameWithType: MetricConfigurationForMeasurement.MetricConfigurationForMeasurement(int, IEnumerable<int>, MetricSeriesConfigurationForMeasurement)
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.MetricConfigurationForMeasurement(int, System.Collections.Generic.IEnumerable<int>, Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement)
+  type: Constructor
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics
+  syntax:
+    content: public MetricConfigurationForMeasurement(int seriesCountLimit, IEnumerable<int> valuesPerDimensionLimits, MetricSeriesConfigurationForMeasurement seriesConfig)
+    parameters:
+    - id: seriesCountLimit
+      type: System.Int32
+    - id: valuesPerDimensionLimits
+      type: System.Collections.Generic.IEnumerable{System.Int32}
+    - id: seriesConfig
+      type: Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement
+    content.vb: Public Sub New(seriesCountLimit As Integer, valuesPerDimensionLimits As IEnumerable(Of Integer), seriesConfig As MetricSeriesConfigurationForMeasurement)
+  overload: Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.#ctor*
+  nameWithType.vb: MetricConfigurationForMeasurement.New(Integer, IEnumerable(Of Integer), MetricSeriesConfigurationForMeasurement)
+  fullName.vb: Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.New(Integer, System.Collections.Generic.IEnumerable(Of Integer), Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement)
+  name.vb: New(Integer, IEnumerable(Of Integer), MetricSeriesConfigurationForMeasurement)
+references:
+- uid: Microsoft.ApplicationInsights.Metrics
+  commentId: N:Microsoft.ApplicationInsights.Metrics
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Metrics
+  nameWithType: Microsoft.ApplicationInsights.Metrics
+  fullName: Microsoft.ApplicationInsights.Metrics
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Metrics
+    name: Metrics
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Metrics
+    name: Metrics
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+  commentId: T:Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+  parent: Microsoft.ApplicationInsights.Metrics
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html
+  name: MetricConfiguration
+  nameWithType: MetricConfiguration
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+- uid: System.IEquatable{Microsoft.ApplicationInsights.Metrics.MetricConfiguration}
+  commentId: T:System.IEquatable{Microsoft.ApplicationInsights.Metrics.MetricConfiguration}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<MetricConfiguration>
+  nameWithType: IEquatable<MetricConfiguration>
+  fullName: System.IEquatable<Microsoft.ApplicationInsights.Metrics.MetricConfiguration>
+  nameWithType.vb: IEquatable(Of MetricConfiguration)
+  fullName.vb: System.IEquatable(Of Microsoft.ApplicationInsights.Metrics.MetricConfiguration)
+  name.vb: IEquatable(Of MetricConfiguration)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+    name: MetricConfiguration
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+    name: MetricConfiguration
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html
+  - name: )
+- uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.GetValuesPerDimensionLimit(System.Int32)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.MetricConfiguration.GetValuesPerDimensionLimit(System.Int32)
+  parent: Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html#Microsoft_ApplicationInsights_Metrics_MetricConfiguration_GetValuesPerDimensionLimit_System_Int32_
+  name: GetValuesPerDimensionLimit(int)
+  nameWithType: MetricConfiguration.GetValuesPerDimensionLimit(int)
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.GetValuesPerDimensionLimit(int)
+  nameWithType.vb: MetricConfiguration.GetValuesPerDimensionLimit(Integer)
+  fullName.vb: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.GetValuesPerDimensionLimit(Integer)
+  name.vb: GetValuesPerDimensionLimit(Integer)
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.GetValuesPerDimensionLimit(System.Int32)
+    name: GetValuesPerDimensionLimit
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html#Microsoft_ApplicationInsights_Metrics_MetricConfiguration_GetValuesPerDimensionLimit_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.GetValuesPerDimensionLimit(System.Int32)
+    name: GetValuesPerDimensionLimit
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html#Microsoft_ApplicationInsights_Metrics_MetricConfiguration_GetValuesPerDimensionLimit_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.Equals(System.Object)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.MetricConfiguration.Equals(System.Object)
+  parent: Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html#Microsoft_ApplicationInsights_Metrics_MetricConfiguration_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: MetricConfiguration.Equals(object)
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.Equals(object)
+  nameWithType.vb: MetricConfiguration.Equals(Object)
+  fullName.vb: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html#Microsoft_ApplicationInsights_Metrics_MetricConfiguration_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html#Microsoft_ApplicationInsights_Metrics_MetricConfiguration_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.Equals(Microsoft.ApplicationInsights.Metrics.MetricConfiguration)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.MetricConfiguration.Equals(Microsoft.ApplicationInsights.Metrics.MetricConfiguration)
+  parent: Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html#Microsoft_ApplicationInsights_Metrics_MetricConfiguration_Equals_Microsoft_ApplicationInsights_Metrics_MetricConfiguration_
+  name: Equals(MetricConfiguration)
+  nameWithType: MetricConfiguration.Equals(MetricConfiguration)
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.Equals(Microsoft.ApplicationInsights.Metrics.MetricConfiguration)
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.Equals(Microsoft.ApplicationInsights.Metrics.MetricConfiguration)
+    name: Equals
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html#Microsoft_ApplicationInsights_Metrics_MetricConfiguration_Equals_Microsoft_ApplicationInsights_Metrics_MetricConfiguration_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+    name: MetricConfiguration
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.Equals(Microsoft.ApplicationInsights.Metrics.MetricConfiguration)
+    name: Equals
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html#Microsoft_ApplicationInsights_Metrics_MetricConfiguration_Equals_Microsoft_ApplicationInsights_Metrics_MetricConfiguration_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+    name: MetricConfiguration
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html
+  - name: )
+- uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.GetHashCode
+  commentId: M:Microsoft.ApplicationInsights.Metrics.MetricConfiguration.GetHashCode
+  parent: Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html#Microsoft_ApplicationInsights_Metrics_MetricConfiguration_GetHashCode
+  name: GetHashCode()
+  nameWithType: MetricConfiguration.GetHashCode()
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.GetHashCode()
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html#Microsoft_ApplicationInsights_Metrics_MetricConfiguration_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html#Microsoft_ApplicationInsights_Metrics_MetricConfiguration_GetHashCode
+  - name: (
+  - name: )
+- uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.SeriesCountLimit
+  commentId: P:Microsoft.ApplicationInsights.Metrics.MetricConfiguration.SeriesCountLimit
+  parent: Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html#Microsoft_ApplicationInsights_Metrics_MetricConfiguration_SeriesCountLimit
+  name: SeriesCountLimit
+  nameWithType: MetricConfiguration.SeriesCountLimit
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.SeriesCountLimit
+- uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.SeriesConfig
+  commentId: P:Microsoft.ApplicationInsights.Metrics.MetricConfiguration.SeriesConfig
+  parent: Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html#Microsoft_ApplicationInsights_Metrics_MetricConfiguration_SeriesConfig
+  name: SeriesConfig
+  nameWithType: MetricConfiguration.SeriesConfig
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.SeriesConfig
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.#ctor*
+  commentId: Overload:Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.#ctor
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.html#Microsoft_ApplicationInsights_Metrics_MetricConfigurationForMeasurement__ctor_System_Int32_System_Int32_Microsoft_ApplicationInsights_Metrics_MetricSeriesConfigurationForMeasurement_
+  name: MetricConfigurationForMeasurement
+  nameWithType: MetricConfigurationForMeasurement.MetricConfigurationForMeasurement
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.MetricConfigurationForMeasurement
+  nameWithType.vb: MetricConfigurationForMeasurement.New
+  fullName.vb: Microsoft.ApplicationInsights.Metrics.MetricConfigurationForMeasurement.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement
+  commentId: T:Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement
+  parent: Microsoft.ApplicationInsights.Metrics
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement.html
+  name: MetricSeriesConfigurationForMeasurement
+  nameWithType: MetricSeriesConfigurationForMeasurement
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement
+- uid: System.Collections.Generic.IEnumerable{System.Int32}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<int>
+  nameWithType: IEnumerable<int>
+  fullName: System.Collections.Generic.IEnumerable<int>
+  nameWithType.vb: IEnumerable(Of Integer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Integer)
+  name.vb: IEnumerable(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

@@ -1,0 +1,1175 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  commentId: T:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  id: TimeoutTestNodeStateProperty
+  parent: Microsoft.Testing.Platform.Extensions.Messages
+  children:
+  - Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.#ctor
+  - Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.#ctor(System.Exception,System.String)
+  - Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.#ctor(System.String)
+  - Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.EqualityContract
+  - Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty)
+  - Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  - Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals(System.Object)
+  - Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Exception
+  - Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.GetHashCode
+  - Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.PrintMembers(System.Text.StringBuilder)
+  - Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Timeout
+  - Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.ToString
+  - Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.op_Equality(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty,Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  - Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.op_Inequality(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty,Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  langs:
+  - csharp
+  - vb
+  name: TimeoutTestNodeStateProperty
+  nameWithType: TimeoutTestNodeStateProperty
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  type: Class
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  syntax:
+    content: 'public sealed record TimeoutTestNodeStateProperty : TestNodeStateProperty, IProperty, IEquatable<TestNodeStateProperty>, IEquatable<TimeoutTestNodeStateProperty>'
+    content.vb: Public NotInheritable Class TimeoutTestNodeStateProperty Inherits TestNodeStateProperty Implements IProperty, IEquatable(Of TestNodeStateProperty), IEquatable(Of TimeoutTestNodeStateProperty)
+  inheritance:
+  - System.Object
+  - Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+  implements:
+  - Microsoft.Testing.Platform.Extensions.Messages.IProperty
+  - System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty}
+  - System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty}
+  inheritedMembers:
+  - Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Deconstruct(System.String@)
+  - Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Explanation
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.#ctor
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.#ctor
+  id: '#ctor'
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  langs:
+  - csharp
+  - vb
+  name: TimeoutTestNodeStateProperty()
+  nameWithType: TimeoutTestNodeStateProperty.TimeoutTestNodeStateProperty()
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.TimeoutTestNodeStateProperty()
+  type: Constructor
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  syntax:
+    content: public TimeoutTestNodeStateProperty()
+    content.vb: Public Sub New()
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.#ctor*
+  nameWithType.vb: TimeoutTestNodeStateProperty.New()
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.New()
+  name.vb: New()
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.#ctor(System.String)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  langs:
+  - csharp
+  - vb
+  name: TimeoutTestNodeStateProperty(string)
+  nameWithType: TimeoutTestNodeStateProperty.TimeoutTestNodeStateProperty(string)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.TimeoutTestNodeStateProperty(string)
+  type: Constructor
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  syntax:
+    content: public TimeoutTestNodeStateProperty(string explanation)
+    parameters:
+    - id: explanation
+      type: System.String
+    content.vb: Public Sub New(explanation As String)
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.#ctor*
+  nameWithType.vb: TimeoutTestNodeStateProperty.New(String)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.New(String)
+  name.vb: New(String)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.#ctor(System.Exception,System.String)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.#ctor(System.Exception,System.String)
+  id: '#ctor(System.Exception,System.String)'
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  langs:
+  - csharp
+  - vb
+  name: TimeoutTestNodeStateProperty(Exception, string?)
+  nameWithType: TimeoutTestNodeStateProperty.TimeoutTestNodeStateProperty(Exception, string?)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.TimeoutTestNodeStateProperty(System.Exception, string?)
+  type: Constructor
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  syntax:
+    content: public TimeoutTestNodeStateProperty(Exception exception, string? explanation = null)
+    parameters:
+    - id: exception
+      type: System.Exception
+    - id: explanation
+      type: System.String
+    content.vb: Public Sub New(exception As Exception, explanation As String = Nothing)
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.#ctor*
+  nameWithType.vb: TimeoutTestNodeStateProperty.New(Exception, String)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.New(System.Exception, String)
+  name.vb: New(Exception, String)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.ToString
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.ToString
+  id: ToString
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: TimeoutTestNodeStateProperty.ToString()
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.ToString()
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.ToString
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.ToString*
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.PrintMembers(System.Text.StringBuilder)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.PrintMembers(System.Text.StringBuilder)
+  id: PrintMembers(System.Text.StringBuilder)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  langs:
+  - csharp
+  - vb
+  name: PrintMembers(StringBuilder)
+  nameWithType: TimeoutTestNodeStateProperty.PrintMembers(StringBuilder)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.PrintMembers(System.Text.StringBuilder)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: protected override bool PrintMembers(StringBuilder builder)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function PrintMembers(builder As StringBuilder) As Boolean
+  overridden: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.PrintMembers(System.Text.StringBuilder)
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.PrintMembers*
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.op_Inequality(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty,Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.op_Inequality(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty,Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  id: op_Inequality(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty,Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  langs:
+  - csharp
+  - vb
+  name: operator !=(TimeoutTestNodeStateProperty?, TimeoutTestNodeStateProperty?)
+  nameWithType: TimeoutTestNodeStateProperty.operator !=(TimeoutTestNodeStateProperty?, TimeoutTestNodeStateProperty?)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.operator !=(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty?, Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty?)
+  type: Operator
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  syntax:
+    content: public static bool operator !=(TimeoutTestNodeStateProperty? left, TimeoutTestNodeStateProperty? right)
+    parameters:
+    - id: left
+      type: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+    - id: right
+      type: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As TimeoutTestNodeStateProperty, right As TimeoutTestNodeStateProperty) As Boolean
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.op_Inequality*
+  nameWithType.vb: TimeoutTestNodeStateProperty.<>(TimeoutTestNodeStateProperty, TimeoutTestNodeStateProperty)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.<>(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty, Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  name.vb: <>(TimeoutTestNodeStateProperty, TimeoutTestNodeStateProperty)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.op_Equality(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty,Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.op_Equality(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty,Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  id: op_Equality(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty,Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  langs:
+  - csharp
+  - vb
+  name: operator ==(TimeoutTestNodeStateProperty?, TimeoutTestNodeStateProperty?)
+  nameWithType: TimeoutTestNodeStateProperty.operator ==(TimeoutTestNodeStateProperty?, TimeoutTestNodeStateProperty?)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.operator ==(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty?, Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty?)
+  type: Operator
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  syntax:
+    content: public static bool operator ==(TimeoutTestNodeStateProperty? left, TimeoutTestNodeStateProperty? right)
+    parameters:
+    - id: left
+      type: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+    - id: right
+      type: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As TimeoutTestNodeStateProperty, right As TimeoutTestNodeStateProperty) As Boolean
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.op_Equality*
+  nameWithType.vb: TimeoutTestNodeStateProperty.=(TimeoutTestNodeStateProperty, TimeoutTestNodeStateProperty)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.=(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty, Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  name.vb: =(TimeoutTestNodeStateProperty, TimeoutTestNodeStateProperty)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.GetHashCode
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: TimeoutTestNodeStateProperty.GetHashCode()
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.GetHashCode()
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.GetHashCode
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.GetHashCode*
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals(System.Object)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: TimeoutTestNodeStateProperty.Equals(object?)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals(object?)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Equals(System.Object)
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals*
+  nameWithType.vb: TimeoutTestNodeStateProperty.Equals(Object)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty)
+  id: Equals(Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  langs:
+  - csharp
+  - vb
+  name: Equals(TestNodeStateProperty?)
+  nameWithType: TimeoutTestNodeStateProperty.Equals(TestNodeStateProperty?)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty?)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: public override sealed bool Equals(TestNodeStateProperty? other)
+    parameters:
+    - id: other
+      type: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+    return:
+      type: System.Boolean
+    content.vb: Public NotOverridable Overrides Function Equals(other As TestNodeStateProperty) As Boolean
+  overridden: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty)
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals*
+  nameWithType.vb: TimeoutTestNodeStateProperty.Equals(TestNodeStateProperty)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty)
+  name.vb: Equals(TestNodeStateProperty)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  id: Equals(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  langs:
+  - csharp
+  - vb
+  name: Equals(TimeoutTestNodeStateProperty?)
+  nameWithType: TimeoutTestNodeStateProperty.Equals(TimeoutTestNodeStateProperty?)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty?)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: public bool Equals(TimeoutTestNodeStateProperty? other)
+    parameters:
+    - id: other
+      type: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As TimeoutTestNodeStateProperty) As Boolean
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty}.Equals(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  nameWithType.vb: TimeoutTestNodeStateProperty.Equals(TimeoutTestNodeStateProperty)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  name.vb: Equals(TimeoutTestNodeStateProperty)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.EqualityContract
+  commentId: P:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.EqualityContract
+  id: EqualityContract
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  langs:
+  - csharp
+  - vb
+  name: EqualityContract
+  nameWithType: TimeoutTestNodeStateProperty.EqualityContract
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.EqualityContract
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: protected override Type EqualityContract { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Protected Overrides ReadOnly Property EqualityContract As Type
+  overridden: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.EqualityContract
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.EqualityContract*
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Exception
+  commentId: P:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Exception
+  id: Exception
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  langs:
+  - csharp
+  - vb
+  name: Exception
+  nameWithType: TimeoutTestNodeStateProperty.Exception
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Exception
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  syntax:
+    content: public Exception? Exception { get; }
+    parameters: []
+    return:
+      type: System.Exception
+    content.vb: Public ReadOnly Property Exception As Exception
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Exception*
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Timeout
+  commentId: P:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Timeout
+  id: Timeout
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  langs:
+  - csharp
+  - vb
+  name: Timeout
+  nameWithType: TimeoutTestNodeStateProperty.Timeout
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Timeout
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  syntax:
+    content: public TimeSpan? Timeout { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.TimeSpan}
+    content.vb: Public Property Timeout As TimeSpan?
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Timeout*
+references:
+- uid: Microsoft.Testing.Platform.Extensions.Messages
+  commentId: N:Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Extensions.Messages
+  nameWithType: Microsoft.Testing.Platform.Extensions.Messages
+  fullName: Microsoft.Testing.Platform.Extensions.Messages
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.Messages
+    name: Messages
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.Messages
+    name: Messages
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+  commentId: T:Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+  parent: Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html
+  name: TestNodeStateProperty
+  nameWithType: TestNodeStateProperty
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+- uid: Microsoft.Testing.Platform.Extensions.Messages.IProperty
+  commentId: T:Microsoft.Testing.Platform.Extensions.Messages.IProperty
+  parent: Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.IProperty.html
+  name: IProperty
+  nameWithType: IProperty
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.IProperty
+- uid: System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty}
+  commentId: T:System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<TestNodeStateProperty>
+  nameWithType: IEquatable<TestNodeStateProperty>
+  fullName: System.IEquatable<Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty>
+  nameWithType.vb: IEquatable(Of TestNodeStateProperty)
+  fullName.vb: System.IEquatable(Of Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty)
+  name.vb: IEquatable(Of TestNodeStateProperty)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+    name: TestNodeStateProperty
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+    name: TestNodeStateProperty
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html
+  - name: )
+- uid: System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty}
+  commentId: T:System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<TimeoutTestNodeStateProperty>
+  nameWithType: IEquatable<TimeoutTestNodeStateProperty>
+  fullName: System.IEquatable<Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty>
+  nameWithType.vb: IEquatable(Of TimeoutTestNodeStateProperty)
+  fullName.vb: System.IEquatable(Of Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  name.vb: IEquatable(Of TimeoutTestNodeStateProperty)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+    name: TimeoutTestNodeStateProperty
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+    name: TimeoutTestNodeStateProperty
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Deconstruct(System.String@)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Deconstruct(System.String@)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_Deconstruct_System_String__
+  name: Deconstruct(out string)
+  nameWithType: TestNodeStateProperty.Deconstruct(out string)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Deconstruct(out string)
+  nameWithType.vb: TestNodeStateProperty.Deconstruct(String)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Deconstruct(String)
+  name.vb: Deconstruct(String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Deconstruct(System.String@)
+    name: Deconstruct
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_Deconstruct_System_String__
+  - name: (
+  - name: out
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Deconstruct(System.String@)
+    name: Deconstruct
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_Deconstruct_System_String__
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Explanation
+  commentId: P:Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Explanation
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_Explanation
+  name: Explanation
+  nameWithType: TestNodeStateProperty.Explanation
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Explanation
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.#ctor*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.#ctor
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty__ctor
+  name: TimeoutTestNodeStateProperty
+  nameWithType: TimeoutTestNodeStateProperty.TimeoutTestNodeStateProperty
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.TimeoutTestNodeStateProperty
+  nameWithType.vb: TimeoutTestNodeStateProperty.New
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.ToString
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.ToString
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_ToString
+  name: ToString()
+  nameWithType: TestNodeStateProperty.ToString()
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.ToString()
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.ToString
+    name: ToString
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.ToString
+    name: ToString
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_ToString
+  - name: (
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.ToString*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.ToString
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_ToString
+  name: ToString
+  nameWithType: TimeoutTestNodeStateProperty.ToString
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.ToString
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.PrintMembers(System.Text.StringBuilder)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.PrintMembers(System.Text.StringBuilder)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_PrintMembers_System_Text_StringBuilder_
+  name: PrintMembers(StringBuilder)
+  nameWithType: TestNodeStateProperty.PrintMembers(StringBuilder)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.PrintMembers(System.Text.StringBuilder)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.PrintMembers(System.Text.StringBuilder)
+    name: PrintMembers
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_PrintMembers_System_Text_StringBuilder_
+  - name: (
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.PrintMembers(System.Text.StringBuilder)
+    name: PrintMembers
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_PrintMembers_System_Text_StringBuilder_
+  - name: (
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.PrintMembers*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.PrintMembers
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_PrintMembers_System_Text_StringBuilder_
+  name: PrintMembers
+  nameWithType: TimeoutTestNodeStateProperty.PrintMembers
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.PrintMembers
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.op_Inequality*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.op_Inequality
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_op_Inequality_Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_
+  name: operator !=
+  nameWithType: TimeoutTestNodeStateProperty.operator !=
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.operator !=
+  nameWithType.vb: TimeoutTestNodeStateProperty.<>
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_op_Inequality_Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  commentId: T:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+  parent: Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html
+  name: TimeoutTestNodeStateProperty
+  nameWithType: TimeoutTestNodeStateProperty
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.op_Equality*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.op_Equality
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_op_Equality_Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_
+  name: operator ==
+  nameWithType: TimeoutTestNodeStateProperty.operator ==
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.operator ==
+  nameWithType.vb: TimeoutTestNodeStateProperty.=
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.op_Equality*
+    name: ==
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_op_Equality_Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.GetHashCode
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.GetHashCode
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_GetHashCode
+  name: GetHashCode()
+  nameWithType: TestNodeStateProperty.GetHashCode()
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.GetHashCode()
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_GetHashCode
+  - name: (
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.GetHashCode*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.GetHashCode
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_GetHashCode
+  name: GetHashCode
+  nameWithType: TimeoutTestNodeStateProperty.GetHashCode
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Equals(System.Object)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Equals(System.Object)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: TestNodeStateProperty.Equals(object)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Equals(object)
+  nameWithType.vb: TestNodeStateProperty.Equals(Object)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_Equals_System_Object_
+  name: Equals
+  nameWithType: TimeoutTestNodeStateProperty.Equals
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Equals
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_Equals_Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_
+  name: Equals(TestNodeStateProperty)
+  nameWithType: TestNodeStateProperty.Equals(TestNodeStateProperty)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty)
+    name: Equals
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_Equals_Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+    name: TestNodeStateProperty
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty)
+    name: Equals
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_Equals_Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+    name: TestNodeStateProperty
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html
+  - name: )
+- uid: System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty}.Equals(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  commentId: M:System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty}.Equals(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  parent: System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(TimeoutTestNodeStateProperty)
+  nameWithType: IEquatable<TimeoutTestNodeStateProperty>.Equals(TimeoutTestNodeStateProperty)
+  fullName: System.IEquatable<Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty>.Equals(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  nameWithType.vb: IEquatable(Of TimeoutTestNodeStateProperty).Equals(TimeoutTestNodeStateProperty)
+  fullName.vb: System.IEquatable(Of Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty).Equals(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty}.Equals(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+    name: TimeoutTestNodeStateProperty
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty}.Equals(Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty
+    name: TimeoutTestNodeStateProperty
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.EqualityContract
+  commentId: P:Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.EqualityContract
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestNodeStateProperty_EqualityContract
+  name: EqualityContract
+  nameWithType: TestNodeStateProperty.EqualityContract
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestNodeStateProperty.EqualityContract
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.EqualityContract*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.EqualityContract
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_EqualityContract
+  name: EqualityContract
+  nameWithType: TimeoutTestNodeStateProperty.EqualityContract
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.EqualityContract
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Exception*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Exception
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_Exception
+  name: Exception
+  nameWithType: TimeoutTestNodeStateProperty.Exception
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Exception
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Timeout*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Timeout
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TimeoutTestNodeStateProperty_Timeout
+  name: Timeout
+  nameWithType: TimeoutTestNodeStateProperty.Timeout
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TimeoutTestNodeStateProperty.Timeout
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan?
+  nameWithType: TimeSpan?
+  fullName: System.TimeSpan?
+  spec.csharp:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  spec.vb:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UILoggerTests | BOOSE IDE Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UILoggerTests | BOOSE IDE Documentation ">
+      
+      <meta name="description" content="Unit tests for the MockBOOSEForm class.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BOOSE IDE Documentation">
+            BOOSE IDE Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="BOOSETests.UI.UILoggerTests">
+
+
+
+  <h1 id="BOOSETests_UI_UILoggerTests" data-uid="BOOSETests.UI.UILoggerTests" class="text-break">
+Class UILoggerTests  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BOOSETests.html">BOOSETests</a>.<a class="xref" href="BOOSETests.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BOOSETests.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Unit tests for the MockBOOSEForm class.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestClass]
+public sealed class UILoggerTests</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UILoggerTests</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="BOOSETests_UI_UILoggerTests__ctor_" data-uid="BOOSETests.UI.UILoggerTests.#ctor*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests__ctor" data-uid="BOOSETests.UI.UILoggerTests.#ctor">
+  UILoggerTests()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UILoggerTests()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogDEBUG_ColourTest_" data-uid="BOOSETests.UI.UILoggerTests.LogDEBUG_ColourTest*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogDEBUG_ColourTest" data-uid="BOOSETests.UI.UILoggerTests.LogDEBUG_ColourTest">
+  LogDEBUG_ColourTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogDEBUG applies the correct colour formatting to the debug text box when DebugMode is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogDEBUG_ColourTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox">
+  LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogDEBUG does not write to the debug text box when DebugMode is disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox">
+  LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogDEBUG writes the correct prefix and message to the debug text box when DebugMode is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogERROR_ColourTest_" data-uid="BOOSETests.UI.UILoggerTests.LogERROR_ColourTest*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogERROR_ColourTest" data-uid="BOOSETests.UI.UILoggerTests.LogERROR_ColourTest">
+  LogERROR_ColourTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogERROR applies the correct colour formatting to the debug text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogERROR_ColourTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogERROR_WritesPrefixAndMessage_DebugTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogERROR_WritesPrefixAndMessage_DebugTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogERROR_WritesPrefixAndMessage_DebugTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogERROR_WritesPrefixAndMessage_DebugTextBox">
+  LogERROR_WritesPrefixAndMessage_DebugTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogERROR writes the correct prefix and message to the debug text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogERROR_WritesPrefixAndMessage_DebugTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogEXCEPTION_ColourTest_" data-uid="BOOSETests.UI.UILoggerTests.LogEXCEPTION_ColourTest*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogEXCEPTION_ColourTest" data-uid="BOOSETests.UI.UILoggerTests.LogEXCEPTION_ColourTest">
+  LogEXCEPTION_ColourTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogEXCEPTION applies the correct colour formatting to the debug text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogEXCEPTION_ColourTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox">
+  LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogEXCEPTION writes the correct prefix and message to the debug text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogFAIL_ColourTest_" data-uid="BOOSETests.UI.UILoggerTests.LogFAIL_ColourTest*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogFAIL_ColourTest" data-uid="BOOSETests.UI.UILoggerTests.LogFAIL_ColourTest">
+  LogFAIL_ColourTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogFAIL applies the correct colour formatting to the command text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogFAIL_ColourTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogFAIL_WritesPrefixAndMessage_CmdTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogFAIL_WritesPrefixAndMessage_CmdTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogFAIL_WritesPrefixAndMessage_CmdTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogFAIL_WritesPrefixAndMessage_CmdTextBox">
+  LogFAIL_WritesPrefixAndMessage_CmdTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogFAIL writes the correct prefix and message to the command text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogFAIL_WritesPrefixAndMessage_CmdTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogFATAL_ColourTest_" data-uid="BOOSETests.UI.UILoggerTests.LogFATAL_ColourTest*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogFATAL_ColourTest" data-uid="BOOSETests.UI.UILoggerTests.LogFATAL_ColourTest">
+  LogFATAL_ColourTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogFATAL applies the correct colour formatting to the debug text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogFATAL_ColourTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogFATAL_WritesPrefixAndMessage_DebugTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogFATAL_WritesPrefixAndMessage_DebugTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogFATAL_WritesPrefixAndMessage_DebugTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogFATAL_WritesPrefixAndMessage_DebugTextBox">
+  LogFATAL_WritesPrefixAndMessage_DebugTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogFATAL writes the correct prefix and message to the debug text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogFATAL_WritesPrefixAndMessage_DebugTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogINFO_ColourTest_" data-uid="BOOSETests.UI.UILoggerTests.LogINFO_ColourTest*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogINFO_ColourTest" data-uid="BOOSETests.UI.UILoggerTests.LogINFO_ColourTest">
+  LogINFO_ColourTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogINFO applies the correct colour formatting to the debug text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogINFO_ColourTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogINFO_WritesPrefixAndMessage_DebugTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogINFO_WritesPrefixAndMessage_DebugTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogINFO_WritesPrefixAndMessage_DebugTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogINFO_WritesPrefixAndMessage_DebugTextBox">
+  LogINFO_WritesPrefixAndMessage_DebugTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogINFO writes the correct prefix and message to the debug text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogINFO_WritesPrefixAndMessage_DebugTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogLOOP_ColourTest_" data-uid="BOOSETests.UI.UILoggerTests.LogLOOP_ColourTest*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogLOOP_ColourTest" data-uid="BOOSETests.UI.UILoggerTests.LogLOOP_ColourTest">
+  LogLOOP_ColourTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogLOOP applies the correct colour formatting to the command text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogLOOP_ColourTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogLOOP_WritesPrefixAndMessage_CmdTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogLOOP_WritesPrefixAndMessage_CmdTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogLOOP_WritesPrefixAndMessage_CmdTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogLOOP_WritesPrefixAndMessage_CmdTextBox">
+  LogLOOP_WritesPrefixAndMessage_CmdTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogLOOP writes the correct prefix and message to the command text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogLOOP_WritesPrefixAndMessage_CmdTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogOK_ColourTest_" data-uid="BOOSETests.UI.UILoggerTests.LogOK_ColourTest*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogOK_ColourTest" data-uid="BOOSETests.UI.UILoggerTests.LogOK_ColourTest">
+  LogOK_ColourTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogOK applies the correct colour formatting to the command text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogOK_ColourTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogOK_WritesPrefixAndMessage_CmdTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogOK_WritesPrefixAndMessage_CmdTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogOK_WritesPrefixAndMessage_CmdTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogOK_WritesPrefixAndMessage_CmdTextBox">
+  LogOK_WritesPrefixAndMessage_CmdTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogOK writes the correct prefix and message to the command text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogOK_WritesPrefixAndMessage_CmdTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogRUNTIME_ColourTest_" data-uid="BOOSETests.UI.UILoggerTests.LogRUNTIME_ColourTest*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogRUNTIME_ColourTest" data-uid="BOOSETests.UI.UILoggerTests.LogRUNTIME_ColourTest">
+  LogRUNTIME_ColourTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogRUNTIME applies the correct colour formatting to the command text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogRUNTIME_ColourTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogRUNTIME_WritesPrefixAndMessage_CmdTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogRUNTIME_WritesPrefixAndMessage_CmdTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogRUNTIME_WritesPrefixAndMessage_CmdTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogRUNTIME_WritesPrefixAndMessage_CmdTextBox">
+  LogRUNTIME_WritesPrefixAndMessage_CmdTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogRUNTIME writes the correct prefix and message to the command text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogRUNTIME_WritesPrefixAndMessage_CmdTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogTRACE_Access_ColourTest_" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Access_ColourTest*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogTRACE_Access_ColourTest" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Access_ColourTest">
+  LogTRACE_Access_ColourTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogTRACE_Access applies the correct colour formatting to the trace text box when TraceMode is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogTRACE_Access_ColourTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox">
+  LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogTRACE_Access does not write to the trace text box when TraceMode is disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox">
+  LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogTRACE_Access writes the correct prefix and message to the trace text box when TraceMode is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogTRACE_Content_ColourTest_" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Content_ColourTest*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogTRACE_Content_ColourTest" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Content_ColourTest">
+  LogTRACE_Content_ColourTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogTRACE_Content applies the correct colour formatting to the trace text box when TraceMode is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogTRACE_Content_ColourTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox">
+  LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogTRACE_Content does not write to the trace text box when TraceMode is disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox">
+  LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogTRACE_Content writes the correct prefix and message to the trace text box when TraceMode is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogTRACE_Exception_ColourTest_" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Exception_ColourTest*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogTRACE_Exception_ColourTest" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Exception_ColourTest">
+  LogTRACE_Exception_ColourTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogTRACE_Exception applies the correct colour formatting to the trace text box when TraceMode is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogTRACE_Exception_ColourTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox">
+  LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogTRACE_Exception does not write to the trace text box when TraceMode is disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox">
+  LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogTRACE_Exception writes the correct prefix and message to the trace text box when TraceMode is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogWARNING_ColourTest_" data-uid="BOOSETests.UI.UILoggerTests.LogWARNING_ColourTest*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogWARNING_ColourTest" data-uid="BOOSETests.UI.UILoggerTests.LogWARNING_ColourTest">
+  LogWARNING_ColourTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogWARN applies the correct colour formatting to the debug text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogWARNING_ColourTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_LogWARN_WritesPrefixAndMessage_DebugTextBox_" data-uid="BOOSETests.UI.UILoggerTests.LogWARN_WritesPrefixAndMessage_DebugTextBox*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_LogWARN_WritesPrefixAndMessage_DebugTextBox" data-uid="BOOSETests.UI.UILoggerTests.LogWARN_WritesPrefixAndMessage_DebugTextBox">
+  LogWARN_WritesPrefixAndMessage_DebugTextBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that LogWARN writes the correct prefix and message to the debug text box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void LogWARN_WritesPrefixAndMessage_DebugTextBox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSETests_UI_UILoggerTests_Setup_" data-uid="BOOSETests.UI.UILoggerTests.Setup*"></a>
+
+  <h3 id="BOOSETests_UI_UILoggerTests_Setup" data-uid="BOOSETests.UI.UILoggerTests.Setup">
+  Setup()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestInitialize]
+public void Setup()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

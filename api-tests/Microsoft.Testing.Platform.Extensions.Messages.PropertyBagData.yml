@@ -1,0 +1,532 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData
+  commentId: T:Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData
+  id: PropertyBagData
+  parent: Microsoft.Testing.Platform.Extensions.Messages
+  children:
+  - Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.#ctor(System.String,System.String)
+  - Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.Description
+  - Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.DisplayName
+  - Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.Properties
+  - Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.ToString
+  langs:
+  - csharp
+  - vb
+  name: PropertyBagData
+  nameWithType: PropertyBagData
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData
+  type: Class
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  syntax:
+    content: 'public abstract class PropertyBagData : IData'
+    content.vb: Public MustInherit Class PropertyBagData Implements IData
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Microsoft.Testing.Platform.Extensions.Messages.DataWithSessionUid
+  - Microsoft.Testing.Platform.Extensions.Messages.FileArtifact
+  implements:
+  - Microsoft.Testing.Platform.Extensions.Messages.IData
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.#ctor(System.String,System.String)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData
+  langs:
+  - csharp
+  - vb
+  name: PropertyBagData(string, string?)
+  nameWithType: PropertyBagData.PropertyBagData(string, string?)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.PropertyBagData(string, string?)
+  type: Constructor
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  syntax:
+    content: protected PropertyBagData(string displayName, string? description)
+    parameters:
+    - id: displayName
+      type: System.String
+    - id: description
+      type: System.String
+    content.vb: Protected Sub New(displayName As String, description As String)
+  overload: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.#ctor*
+  nameWithType.vb: PropertyBagData.New(String, String)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.New(String, String)
+  name.vb: New(String, String)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.ToString
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.ToString
+  id: ToString
+  parent: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: PropertyBagData.ToString()
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.ToString()
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.ToString*
+- uid: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.Properties
+  commentId: P:Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.Properties
+  id: Properties
+  parent: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: PropertyBagData.Properties
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.Properties
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  syntax:
+    content: public PropertyBag Properties { get; }
+    parameters: []
+    return:
+      type: Microsoft.Testing.Platform.Extensions.Messages.PropertyBag
+    content.vb: Public ReadOnly Property Properties As PropertyBag
+  overload: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.Properties*
+- uid: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.DisplayName
+  commentId: P:Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.DisplayName
+  id: DisplayName
+  parent: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: PropertyBagData.DisplayName
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.DisplayName
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: public string DisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DisplayName As String
+  overload: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.DisplayName*
+  implements:
+  - Microsoft.Testing.Platform.Extensions.Messages.IData.DisplayName
+- uid: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.Description
+  commentId: P:Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.Description
+  id: Description
+  parent: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: PropertyBagData.Description
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.Description
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: public string? Description { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Description As String
+  overload: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.Description*
+  implements:
+  - Microsoft.Testing.Platform.Extensions.Messages.IData.Description
+references:
+- uid: Microsoft.Testing.Platform.Extensions.Messages
+  commentId: N:Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Extensions.Messages
+  nameWithType: Microsoft.Testing.Platform.Extensions.Messages
+  fullName: Microsoft.Testing.Platform.Extensions.Messages
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.Messages
+    name: Messages
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.Messages
+    name: Messages
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Testing.Platform.Extensions.Messages.IData
+  commentId: T:Microsoft.Testing.Platform.Extensions.Messages.IData
+  parent: Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.IData.html
+  name: IData
+  nameWithType: IData
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.IData
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.#ctor*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.#ctor
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.html#Microsoft_Testing_Platform_Extensions_Messages_PropertyBagData__ctor_System_String_System_String_
+  name: PropertyBagData
+  nameWithType: PropertyBagData.PropertyBagData
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.PropertyBagData
+  nameWithType.vb: PropertyBagData.New
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.ToString*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.ToString
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.html#Microsoft_Testing_Platform_Extensions_Messages_PropertyBagData_ToString
+  name: ToString
+  nameWithType: PropertyBagData.ToString
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.ToString
+- uid: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.Properties*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.Properties
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.html#Microsoft_Testing_Platform_Extensions_Messages_PropertyBagData_Properties
+  name: Properties
+  nameWithType: PropertyBagData.Properties
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.Properties
+- uid: Microsoft.Testing.Platform.Extensions.Messages.PropertyBag
+  commentId: T:Microsoft.Testing.Platform.Extensions.Messages.PropertyBag
+  parent: Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.PropertyBag.html
+  name: PropertyBag
+  nameWithType: PropertyBag
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.PropertyBag
+- uid: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.DisplayName*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.DisplayName
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.html#Microsoft_Testing_Platform_Extensions_Messages_PropertyBagData_DisplayName
+  name: DisplayName
+  nameWithType: PropertyBagData.DisplayName
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.DisplayName
+- uid: Microsoft.Testing.Platform.Extensions.Messages.IData.DisplayName
+  commentId: P:Microsoft.Testing.Platform.Extensions.Messages.IData.DisplayName
+  parent: Microsoft.Testing.Platform.Extensions.Messages.IData
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.IData.html#Microsoft_Testing_Platform_Extensions_Messages_IData_DisplayName
+  name: DisplayName
+  nameWithType: IData.DisplayName
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.IData.DisplayName
+- uid: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.Description*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.Description
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.html#Microsoft_Testing_Platform_Extensions_Messages_PropertyBagData_Description
+  name: Description
+  nameWithType: PropertyBagData.Description
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.PropertyBagData.Description
+- uid: Microsoft.Testing.Platform.Extensions.Messages.IData.Description
+  commentId: P:Microsoft.Testing.Platform.Extensions.Messages.IData.Description
+  parent: Microsoft.Testing.Platform.Extensions.Messages.IData
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.IData.html#Microsoft_Testing_Platform_Extensions_Messages_IData_Description
+  name: Description
+  nameWithType: IData.Description
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.IData.Description

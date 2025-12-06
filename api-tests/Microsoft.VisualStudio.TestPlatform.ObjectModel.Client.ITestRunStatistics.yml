@@ -1,0 +1,364 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics
+  id: ITestRunStatistics
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.ExecutedTests
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.Item(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.Stats
+  langs:
+  - csharp
+  - vb
+  name: ITestRunStatistics
+  nameWithType: ITestRunStatistics
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics
+  type: Interface
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: public interface ITestRunStatistics
+    content.vb: Public Interface ITestRunStatistics
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.Item(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome)
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.Item(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome)
+  id: Item(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics
+  langs:
+  - csharp
+  - vb
+  name: this[TestOutcome]
+  nameWithType: ITestRunStatistics.this[TestOutcome]
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.this[Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome]
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: long this[TestOutcome testOutcome] { get; }
+    parameters:
+    - id: testOutcome
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Default Property this[](testOutcome As TestOutcome) As Long
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.Item*
+  nameWithType.vb: ITestRunStatistics.this[](TestOutcome)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.this[](Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome)
+  name.vb: this[](TestOutcome)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.Stats
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.Stats
+  id: Stats
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics
+  langs:
+  - csharp
+  - vb
+  name: Stats
+  nameWithType: ITestRunStatistics.Stats
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.Stats
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: IDictionary<TestOutcome, long>? Stats { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome,System.Int64}
+    content.vb: ReadOnly Property Stats As IDictionary(Of TestOutcome, Long)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.Stats*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.ExecutedTests
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.ExecutedTests
+  id: ExecutedTests
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics
+  langs:
+  - csharp
+  - vb
+  name: ExecutedTests
+  nameWithType: ITestRunStatistics.ExecutedTests
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.ExecutedTests
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  syntax:
+    content: long ExecutedTests { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property ExecutedTests As Long
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.ExecutedTests*
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.Item*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.Item
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestRunStatistics_Item_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestOutcome_
+  name: this
+  nameWithType: ITestRunStatistics.this
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.this
+  nameWithType.vb: ITestRunStatistics.this[]
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.this[]
+  name.vb: this[]
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome.html
+  name: TestOutcome
+  nameWithType: TestOutcome
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.Stats*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.Stats
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestRunStatistics_Stats
+  name: Stats
+  nameWithType: ITestRunStatistics.Stats
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.Stats
+- uid: System.Collections.Generic.IDictionary{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome,System.Int64}
+  commentId: T:System.Collections.Generic.IDictionary{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome,System.Int64}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TestOutcome, long>
+  nameWithType: IDictionary<TestOutcome, long>
+  fullName: System.Collections.Generic.IDictionary<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome, long>
+  nameWithType.vb: IDictionary(Of TestOutcome, Long)
+  fullName.vb: System.Collections.Generic.IDictionary(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome, Long)
+  name.vb: IDictionary(Of TestOutcome, Long)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome
+    name: TestOutcome
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome
+    name: TestOutcome
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestOutcome.html
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.ExecutedTests*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.ExecutedTests
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestRunStatistics_ExecutedTests
+  name: ExecutedTests
+  nameWithType: ITestRunStatistics.ExecutedTests
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestRunStatistics.ExecutedTests

@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CodeDomProvider | BOOSE IDE Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CodeDomProvider | BOOSE IDE Documentation ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BOOSE IDE Documentation">
+            BOOSE IDE Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="System.CodeDom.Compiler.CodeDomProvider">
+
+
+
+  <h1 id="System_CodeDom_Compiler_CodeDomProvider" data-uid="System.CodeDom.Compiler.CodeDomProvider" class="text-break">
+Class CodeDomProvider  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="System.html">System</a>.<a class="xref" href="System.CodeDom.html">CodeDom</a>.<a class="xref" href="System.CodeDom.Compiler.html">Compiler</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>System.CodeDom.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CodeDomProvider : Component, IComponent, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject">MarshalByRefObject</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component">Component</a></div>
+      <div><span class="xref">CodeDomProvider</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.icomponent">IComponent</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="../api-tests/Microsoft.CSharp.CSharpCodeProvider.html">CSharpCodeProvider</a></div>
+      <div><a class="xref" href="../api-tests/Microsoft.VisualBasic.VBCodeProvider.html">VBCodeProvider</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose">Component.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose(system-boolean)">Component.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.getservice">Component.GetService(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.tostring">Component.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.canraiseevents">Component.CanRaiseEvents</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.events">Component.Events</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.site">Component.Site</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.container">Component.Container</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.designmode">Component.DesignMode</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.component.disposed">Component.Disposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice">MarshalByRefObject.GetLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice">MarshalByRefObject.InitializeLifetimeService()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone">MarshalByRefObject.MemberwiseClone(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider__ctor_" data-uid="System.CodeDom.Compiler.CodeDomProvider.#ctor*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider__ctor" data-uid="System.CodeDom.Compiler.CodeDomProvider.#ctor">
+  CodeDomProvider()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CodeDomProvider()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_FileExtension_" data-uid="System.CodeDom.Compiler.CodeDomProvider.FileExtension*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_FileExtension" data-uid="System.CodeDom.Compiler.CodeDomProvider.FileExtension">
+  FileExtension
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FileExtension { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_LanguageOptions_" data-uid="System.CodeDom.Compiler.CodeDomProvider.LanguageOptions*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_LanguageOptions" data-uid="System.CodeDom.Compiler.CodeDomProvider.LanguageOptions">
+  LanguageOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual LanguageOptions LanguageOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/System.CodeDom.Compiler.LanguageOptions.html">LanguageOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_CompileAssemblyFromDom_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_CompileAssemblyFromDom_System_CodeDom_Compiler_CompilerParameters_System_CodeDom_CodeCompileUnit___" data-uid="System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom(System.CodeDom.Compiler.CompilerParameters,System.CodeDom.CodeCompileUnit[])">
+  CompileAssemblyFromDom(CompilerParameters, params CodeCompileUnit[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual CompilerResults CompileAssemblyFromDom(CompilerParameters options, params CodeCompileUnit[] compilationUnits)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="../api-tests/System.CodeDom.Compiler.CompilerParameters.html">CompilerParameters</a></dt>
+    <dd></dd>
+    <dt><code>compilationUnits</code> <a class="xref" href="System.CodeDom.CodeCompileUnit.html">CodeCompileUnit</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/System.CodeDom.Compiler.CompilerResults.html">CompilerResults</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_CompileAssemblyFromFile_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_CompileAssemblyFromFile_System_CodeDom_Compiler_CompilerParameters_System_String___" data-uid="System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile(System.CodeDom.Compiler.CompilerParameters,System.String[])">
+  CompileAssemblyFromFile(CompilerParameters, params string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual CompilerResults CompileAssemblyFromFile(CompilerParameters options, params string[] fileNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="../api-tests/System.CodeDom.Compiler.CompilerParameters.html">CompilerParameters</a></dt>
+    <dd></dd>
+    <dt><code>fileNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/System.CodeDom.Compiler.CompilerResults.html">CompilerResults</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_CompileAssemblyFromSource_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_CompileAssemblyFromSource_System_CodeDom_Compiler_CompilerParameters_System_String___" data-uid="System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource(System.CodeDom.Compiler.CompilerParameters,System.String[])">
+  CompileAssemblyFromSource(CompilerParameters, params string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual CompilerResults CompileAssemblyFromSource(CompilerParameters options, params string[] sources)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="../api-tests/System.CodeDom.Compiler.CompilerParameters.html">CompilerParameters</a></dt>
+    <dd></dd>
+    <dt><code>sources</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/System.CodeDom.Compiler.CompilerResults.html">CompilerResults</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_CreateCompiler_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateCompiler*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_CreateCompiler" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateCompiler">
+  CreateCompiler()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;ICodeCompiler has been deprecated. Use the methods directly on the CodeDomProvider class instead. Classes inheriting from CodeDomProvider must still implement this interface, and should suppress this warning or also mark this method as obsolete.&quot;)]
+public abstract ICodeCompiler CreateCompiler()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/System.CodeDom.Compiler.ICodeCompiler.html">ICodeCompiler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_CreateEscapedIdentifier_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateEscapedIdentifier*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_CreateEscapedIdentifier_System_String_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateEscapedIdentifier(System.String)">
+  CreateEscapedIdentifier(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string CreateEscapedIdentifier(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_CreateGenerator_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_CreateGenerator" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator">
+  CreateGenerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;ICodeGenerator has been deprecated. Use the methods directly on the CodeDomProvider class instead. Classes inheriting from CodeDomProvider must still implement this interface, and should suppress this warning or also mark this method as obsolete.&quot;)]
+public abstract ICodeGenerator CreateGenerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/System.CodeDom.Compiler.ICodeGenerator.html">ICodeGenerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_CreateGenerator_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_CreateGenerator_System_IO_TextWriter_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator(System.IO.TextWriter)">
+  CreateGenerator(TextWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ICodeGenerator CreateGenerator(TextWriter output)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/System.CodeDom.Compiler.ICodeGenerator.html">ICodeGenerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_CreateGenerator_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_CreateGenerator_System_String_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateGenerator(System.String)">
+  CreateGenerator(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ICodeGenerator CreateGenerator(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/System.CodeDom.Compiler.ICodeGenerator.html">ICodeGenerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_CreateParser_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateParser*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_CreateParser" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateParser">
+  CreateParser()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;ICodeParser has been deprecated. Use the methods directly on the CodeDomProvider class instead. Classes inheriting from CodeDomProvider must still implement this interface, and should suppress this warning or also mark this method as obsolete.&quot;)]
+public virtual ICodeParser CreateParser()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/System.CodeDom.Compiler.ICodeParser.html">ICodeParser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_CreateProvider_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateProvider*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_CreateProvider_System_String_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String)">
+  CreateProvider(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CodeDomProvider CreateProvider(string language)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>language</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/System.CodeDom.Compiler.CodeDomProvider.html">CodeDomProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_CreateProvider_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateProvider*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_CreateProvider_System_String_System_Collections_Generic_IDictionary_System_String_System_String__" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+  CreateProvider(string, IDictionary&lt;string, string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CodeDomProvider CreateProvider(string language, IDictionary&lt;string, string&gt; providerOptions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>language</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>providerOptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/System.CodeDom.Compiler.CodeDomProvider.html">CodeDomProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_CreateValidIdentifier_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateValidIdentifier*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_CreateValidIdentifier_System_String_" data-uid="System.CodeDom.Compiler.CodeDomProvider.CreateValidIdentifier(System.String)">
+  CreateValidIdentifier(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string CreateValidIdentifier(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromCompileUnit_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromCompileUnit*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromCompileUnit_System_CodeDom_CodeCompileUnit_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromCompileUnit(System.CodeDom.CodeCompileUnit,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)">
+  GenerateCodeFromCompileUnit(CodeCompileUnit, TextWriter, CodeGeneratorOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GenerateCodeFromCompileUnit(CodeCompileUnit compileUnit, TextWriter writer, CodeGeneratorOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compileUnit</code> <a class="xref" href="../api-tests/System.CodeDom.CodeCompileUnit.html">CodeCompileUnit</a></dt>
+    <dd></dd>
+    <dt><code>writer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="../api-tests/System.CodeDom.Compiler.CodeGeneratorOptions.html">CodeGeneratorOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromExpression_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromExpression*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromExpression_System_CodeDom_CodeExpression_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromExpression(System.CodeDom.CodeExpression,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)">
+  GenerateCodeFromExpression(CodeExpression, TextWriter, CodeGeneratorOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GenerateCodeFromExpression(CodeExpression expression, TextWriter writer, CodeGeneratorOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expression</code> <a class="xref" href="../api-tests/System.CodeDom.CodeExpression.html">CodeExpression</a></dt>
+    <dd></dd>
+    <dt><code>writer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="../api-tests/System.CodeDom.Compiler.CodeGeneratorOptions.html">CodeGeneratorOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromMember_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromMember*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromMember_System_CodeDom_CodeTypeMember_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromMember(System.CodeDom.CodeTypeMember,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)">
+  GenerateCodeFromMember(CodeTypeMember, TextWriter, CodeGeneratorOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GenerateCodeFromMember(CodeTypeMember member, TextWriter writer, CodeGeneratorOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>member</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeMember.html">CodeTypeMember</a></dt>
+    <dd></dd>
+    <dt><code>writer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="../api-tests/System.CodeDom.Compiler.CodeGeneratorOptions.html">CodeGeneratorOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromNamespace_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromNamespace*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromNamespace_System_CodeDom_CodeNamespace_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromNamespace(System.CodeDom.CodeNamespace,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)">
+  GenerateCodeFromNamespace(CodeNamespace, TextWriter, CodeGeneratorOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GenerateCodeFromNamespace(CodeNamespace codeNamespace, TextWriter writer, CodeGeneratorOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>codeNamespace</code> <a class="xref" href="../api-tests/System.CodeDom.CodeNamespace.html">CodeNamespace</a></dt>
+    <dd></dd>
+    <dt><code>writer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="../api-tests/System.CodeDom.Compiler.CodeGeneratorOptions.html">CodeGeneratorOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromStatement_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromStatement*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromStatement_System_CodeDom_CodeStatement_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromStatement(System.CodeDom.CodeStatement,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)">
+  GenerateCodeFromStatement(CodeStatement, TextWriter, CodeGeneratorOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GenerateCodeFromStatement(CodeStatement statement, TextWriter writer, CodeGeneratorOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>statement</code> <a class="xref" href="../api-tests/System.CodeDom.CodeStatement.html">CodeStatement</a></dt>
+    <dd></dd>
+    <dt><code>writer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="../api-tests/System.CodeDom.Compiler.CodeGeneratorOptions.html">CodeGeneratorOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromType_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromType*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromType_System_CodeDom_CodeTypeDeclaration_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromType(System.CodeDom.CodeTypeDeclaration,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)">
+  GenerateCodeFromType(CodeTypeDeclaration, TextWriter, CodeGeneratorOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GenerateCodeFromType(CodeTypeDeclaration codeType, TextWriter writer, CodeGeneratorOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>codeType</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeDeclaration.html">CodeTypeDeclaration</a></dt>
+    <dd></dd>
+    <dt><code>writer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="../api-tests/System.CodeDom.Compiler.CodeGeneratorOptions.html">CodeGeneratorOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_GetAllCompilerInfo_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_GetAllCompilerInfo" data-uid="System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo">
+  GetAllCompilerInfo()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CompilerInfo[] GetAllCompilerInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.CodeDom.Compiler.CompilerInfo.html">CompilerInfo</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_GetCompilerInfo_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_GetCompilerInfo_System_String_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo(System.String)">
+  GetCompilerInfo(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CompilerInfo GetCompilerInfo(string language)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>language</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/System.CodeDom.Compiler.CompilerInfo.html">CompilerInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_GetConverter_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GetConverter*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_GetConverter_System_Type_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GetConverter(System.Type)">
+  GetConverter(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TypeConverter GetConverter(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.typeconverter">TypeConverter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_GetLanguageFromExtension_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_GetLanguageFromExtension_System_String_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension(System.String)">
+  GetLanguageFromExtension(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetLanguageFromExtension(string extension)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>extension</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_GetTypeOutput_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GetTypeOutput*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_GetTypeOutput_System_CodeDom_CodeTypeReference_" data-uid="System.CodeDom.Compiler.CodeDomProvider.GetTypeOutput(System.CodeDom.CodeTypeReference)">
+  GetTypeOutput(CodeTypeReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetTypeOutput(CodeTypeReference type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="../api-tests/System.CodeDom.CodeTypeReference.html">CodeTypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_IsDefinedExtension_" data-uid="System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_IsDefinedExtension_System_String_" data-uid="System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension(System.String)">
+  IsDefinedExtension(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsDefinedExtension(string extension)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>extension</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_IsDefinedLanguage_" data-uid="System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_IsDefinedLanguage_System_String_" data-uid="System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage(System.String)">
+  IsDefinedLanguage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsDefinedLanguage(string language)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>language</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_IsValidIdentifier_" data-uid="System.CodeDom.Compiler.CodeDomProvider.IsValidIdentifier*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_IsValidIdentifier_System_String_" data-uid="System.CodeDom.Compiler.CodeDomProvider.IsValidIdentifier(System.String)">
+  IsValidIdentifier(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsValidIdentifier(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_Parse_" data-uid="System.CodeDom.Compiler.CodeDomProvider.Parse*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_Parse_System_IO_TextReader_" data-uid="System.CodeDom.Compiler.CodeDomProvider.Parse(System.IO.TextReader)">
+  Parse(TextReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual CodeCompileUnit Parse(TextReader codeStream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>codeStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textreader">TextReader</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/System.CodeDom.CodeCompileUnit.html">CodeCompileUnit</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_CodeDom_Compiler_CodeDomProvider_Supports_" data-uid="System.CodeDom.Compiler.CodeDomProvider.Supports*"></a>
+
+  <h3 id="System_CodeDom_Compiler_CodeDomProvider_Supports_System_CodeDom_Compiler_GeneratorSupport_" data-uid="System.CodeDom.Compiler.CodeDomProvider.Supports(System.CodeDom.Compiler.GeneratorSupport)">
+  Supports(GeneratorSupport)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Supports(GeneratorSupport generatorSupport)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>generatorSupport</code> <a class="xref" href="../api-tests/System.CodeDom.Compiler.GeneratorSupport.html">GeneratorSupport</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

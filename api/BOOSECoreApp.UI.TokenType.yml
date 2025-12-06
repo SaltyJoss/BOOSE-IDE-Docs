@@ -1,0 +1,436 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSECoreApp.UI.TokenType
+  commentId: T:BOOSECoreApp.UI.TokenType
+  id: TokenType
+  parent: BOOSECoreApp.UI
+  children:
+  - BOOSECoreApp.UI.TokenType.CharLiteral
+  - BOOSECoreApp.UI.TokenType.Comment
+  - BOOSECoreApp.UI.TokenType.Directive
+  - BOOSECoreApp.UI.TokenType.Error
+  - BOOSECoreApp.UI.TokenType.FunctionName
+  - BOOSECoreApp.UI.TokenType.Identifier
+  - BOOSECoreApp.UI.TokenType.Keyword
+  - BOOSECoreApp.UI.TokenType.Label
+  - BOOSECoreApp.UI.TokenType.Number
+  - BOOSECoreApp.UI.TokenType.Operator
+  - BOOSECoreApp.UI.TokenType.Preprocessor
+  - BOOSECoreApp.UI.TokenType.Punctuation
+  - BOOSECoreApp.UI.TokenType.String
+  - BOOSECoreApp.UI.TokenType.TypeName
+  - BOOSECoreApp.UI.TokenType.Unknown
+  - BOOSECoreApp.UI.TokenType.Whitespace
+  langs:
+  - csharp
+  - vb
+  name: TokenType
+  nameWithType: TokenType
+  fullName: BOOSECoreApp.UI.TokenType
+  type: Enum
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Lexical token categories used for syntax highlighting and basic analysis.
+  remarks: >-
+    This enumeration defines various types of lexical tokens that can be identified in source code.
+
+    Created with general programming language constructs in mind, these token types can be used for syntax highlighting,
+
+    But my assignment doesnt really cover this, so its mostly just a placeholder for now.
+  example: []
+  syntax:
+    content: public enum TokenType
+    content.vb: Public Enum TokenType
+- uid: BOOSECoreApp.UI.TokenType.Unknown
+  commentId: F:BOOSECoreApp.UI.TokenType.Unknown
+  id: Unknown
+  parent: BOOSECoreApp.UI.TokenType
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: TokenType.Unknown
+  fullName: BOOSECoreApp.UI.TokenType.Unknown
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Unknown or unclassified token type.
+  example: []
+  syntax:
+    content: Unknown = 0
+    return:
+      type: BOOSECoreApp.UI.TokenType
+- uid: BOOSECoreApp.UI.TokenType.Whitespace
+  commentId: F:BOOSECoreApp.UI.TokenType.Whitespace
+  id: Whitespace
+  parent: BOOSECoreApp.UI.TokenType
+  langs:
+  - csharp
+  - vb
+  name: Whitespace
+  nameWithType: TokenType.Whitespace
+  fullName: BOOSECoreApp.UI.TokenType.Whitespace
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: End of file token type.
+  example: []
+  syntax:
+    content: Whitespace = 1
+    return:
+      type: BOOSECoreApp.UI.TokenType
+- uid: BOOSECoreApp.UI.TokenType.Comment
+  commentId: F:BOOSECoreApp.UI.TokenType.Comment
+  id: Comment
+  parent: BOOSECoreApp.UI.TokenType
+  langs:
+  - csharp
+  - vb
+  name: Comment
+  nameWithType: TokenType.Comment
+  fullName: BOOSECoreApp.UI.TokenType.Comment
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Comment token type.
+  example: []
+  syntax:
+    content: Comment = 2
+    return:
+      type: BOOSECoreApp.UI.TokenType
+- uid: BOOSECoreApp.UI.TokenType.Keyword
+  commentId: F:BOOSECoreApp.UI.TokenType.Keyword
+  id: Keyword
+  parent: BOOSECoreApp.UI.TokenType
+  langs:
+  - csharp
+  - vb
+  name: Keyword
+  nameWithType: TokenType.Keyword
+  fullName: BOOSECoreApp.UI.TokenType.Keyword
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Keyword token type.
+  example: []
+  syntax:
+    content: Keyword = 3
+    return:
+      type: BOOSECoreApp.UI.TokenType
+- uid: BOOSECoreApp.UI.TokenType.TypeName
+  commentId: F:BOOSECoreApp.UI.TokenType.TypeName
+  id: TypeName
+  parent: BOOSECoreApp.UI.TokenType
+  langs:
+  - csharp
+  - vb
+  name: TypeName
+  nameWithType: TokenType.TypeName
+  fullName: BOOSECoreApp.UI.TokenType.TypeName
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Type name token type.
+  example: []
+  syntax:
+    content: TypeName = 4
+    return:
+      type: BOOSECoreApp.UI.TokenType
+- uid: BOOSECoreApp.UI.TokenType.Identifier
+  commentId: F:BOOSECoreApp.UI.TokenType.Identifier
+  id: Identifier
+  parent: BOOSECoreApp.UI.TokenType
+  langs:
+  - csharp
+  - vb
+  name: Identifier
+  nameWithType: TokenType.Identifier
+  fullName: BOOSECoreApp.UI.TokenType.Identifier
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Identifier token type.
+  example: []
+  syntax:
+    content: Identifier = 5
+    return:
+      type: BOOSECoreApp.UI.TokenType
+- uid: BOOSECoreApp.UI.TokenType.FunctionName
+  commentId: F:BOOSECoreApp.UI.TokenType.FunctionName
+  id: FunctionName
+  parent: BOOSECoreApp.UI.TokenType
+  langs:
+  - csharp
+  - vb
+  name: FunctionName
+  nameWithType: TokenType.FunctionName
+  fullName: BOOSECoreApp.UI.TokenType.FunctionName
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Function name token type.
+  example: []
+  syntax:
+    content: FunctionName = 6
+    return:
+      type: BOOSECoreApp.UI.TokenType
+- uid: BOOSECoreApp.UI.TokenType.Label
+  commentId: F:BOOSECoreApp.UI.TokenType.Label
+  id: Label
+  parent: BOOSECoreApp.UI.TokenType
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: TokenType.Label
+  fullName: BOOSECoreApp.UI.TokenType.Label
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Label token type.
+  example: []
+  syntax:
+    content: Label = 7
+    return:
+      type: BOOSECoreApp.UI.TokenType
+- uid: BOOSECoreApp.UI.TokenType.Number
+  commentId: F:BOOSECoreApp.UI.TokenType.Number
+  id: Number
+  parent: BOOSECoreApp.UI.TokenType
+  langs:
+  - csharp
+  - vb
+  name: Number
+  nameWithType: TokenType.Number
+  fullName: BOOSECoreApp.UI.TokenType.Number
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Numeric literal token type.
+  example: []
+  syntax:
+    content: Number = 8
+    return:
+      type: BOOSECoreApp.UI.TokenType
+- uid: BOOSECoreApp.UI.TokenType.String
+  commentId: F:BOOSECoreApp.UI.TokenType.String
+  id: String
+  parent: BOOSECoreApp.UI.TokenType
+  langs:
+  - csharp
+  - vb
+  name: String
+  nameWithType: TokenType.String
+  fullName: BOOSECoreApp.UI.TokenType.String
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: String literal token type.
+  example: []
+  syntax:
+    content: String = 9
+    return:
+      type: BOOSECoreApp.UI.TokenType
+- uid: BOOSECoreApp.UI.TokenType.CharLiteral
+  commentId: F:BOOSECoreApp.UI.TokenType.CharLiteral
+  id: CharLiteral
+  parent: BOOSECoreApp.UI.TokenType
+  langs:
+  - csharp
+  - vb
+  name: CharLiteral
+  nameWithType: TokenType.CharLiteral
+  fullName: BOOSECoreApp.UI.TokenType.CharLiteral
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Character literal token type.
+  example: []
+  syntax:
+    content: CharLiteral = 10
+    return:
+      type: BOOSECoreApp.UI.TokenType
+- uid: BOOSECoreApp.UI.TokenType.Operator
+  commentId: F:BOOSECoreApp.UI.TokenType.Operator
+  id: Operator
+  parent: BOOSECoreApp.UI.TokenType
+  langs:
+  - csharp
+  - vb
+  name: Operator
+  nameWithType: TokenType.Operator
+  fullName: BOOSECoreApp.UI.TokenType.Operator
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Operator token type.
+  example: []
+  syntax:
+    content: Operator = 11
+    return:
+      type: BOOSECoreApp.UI.TokenType
+- uid: BOOSECoreApp.UI.TokenType.Punctuation
+  commentId: F:BOOSECoreApp.UI.TokenType.Punctuation
+  id: Punctuation
+  parent: BOOSECoreApp.UI.TokenType
+  langs:
+  - csharp
+  - vb
+  name: Punctuation
+  nameWithType: TokenType.Punctuation
+  fullName: BOOSECoreApp.UI.TokenType.Punctuation
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Punctuation token type.
+  example: []
+  syntax:
+    content: Punctuation = 12
+    return:
+      type: BOOSECoreApp.UI.TokenType
+- uid: BOOSECoreApp.UI.TokenType.Preprocessor
+  commentId: F:BOOSECoreApp.UI.TokenType.Preprocessor
+  id: Preprocessor
+  parent: BOOSECoreApp.UI.TokenType
+  langs:
+  - csharp
+  - vb
+  name: Preprocessor
+  nameWithType: TokenType.Preprocessor
+  fullName: BOOSECoreApp.UI.TokenType.Preprocessor
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Preprocessor token type.
+  remarks: Is not needed, added for the sake of expanability
+  example: []
+  syntax:
+    content: Preprocessor = 13
+    return:
+      type: BOOSECoreApp.UI.TokenType
+- uid: BOOSECoreApp.UI.TokenType.Directive
+  commentId: F:BOOSECoreApp.UI.TokenType.Directive
+  id: Directive
+  parent: BOOSECoreApp.UI.TokenType
+  langs:
+  - csharp
+  - vb
+  name: Directive
+  nameWithType: TokenType.Directive
+  fullName: BOOSECoreApp.UI.TokenType.Directive
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Directive token type.
+  remarks: Is not needed, added for the sake of expanability
+  example: []
+  syntax:
+    content: Directive = 14
+    return:
+      type: BOOSECoreApp.UI.TokenType
+- uid: BOOSECoreApp.UI.TokenType.Error
+  commentId: F:BOOSECoreApp.UI.TokenType.Error
+  id: Error
+  parent: BOOSECoreApp.UI.TokenType
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: TokenType.Error
+  fullName: BOOSECoreApp.UI.TokenType.Error
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Error token type.
+  example: []
+  syntax:
+    content: Error = 15
+    return:
+      type: BOOSECoreApp.UI.TokenType
+references:
+- uid: BOOSECoreApp.UI
+  commentId: N:BOOSECoreApp.UI
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.UI
+  nameWithType: BOOSECoreApp.UI
+  fullName: BOOSECoreApp.UI
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.UI
+    name: UI
+    isExternal: true
+    href: BOOSECoreApp.UI.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.UI
+    name: UI
+    isExternal: true
+    href: BOOSECoreApp.UI.html
+- uid: BOOSECoreApp.UI.TokenType
+  commentId: T:BOOSECoreApp.UI.TokenType
+  parent: BOOSECoreApp.UI
+  isExternal: true
+  href: BOOSECoreApp.UI.TokenType.html
+  name: TokenType
+  nameWithType: TokenType
+  fullName: BOOSECoreApp.UI.TokenType

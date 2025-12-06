@@ -1,0 +1,1912 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  id: TestCase
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.#ctor
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.#ctor(System.String,System.Uri,System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.CodeFilePath
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.DisplayName
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ExecutorUri
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.FullyQualifiedName
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Id
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.LineNumber
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.LocalExtensionData
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Properties
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedGetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedSetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Source
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ToString
+  langs:
+  - csharp
+  - vb
+  name: TestCase
+  nameWithType: TestCase
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  type: Class
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: >-
+      [DataContract]
+
+      public sealed class TestCase : TestObject
+    content.vb: >-
+      <DataContract>
+
+      Public NotInheritable Class TestCase Inherits TestObject
+  inheritance:
+  - System.Object
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  inheritedMembers:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetProperties
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.CacheLazyValuesOnSerializing(System.Runtime.Serialization.StreamingContext)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,{T})
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,{T})
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{{T}})
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.RemovePropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,{T},System.Globalization.CultureInfo)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,{T},System.Globalization.CultureInfo)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{{T}},System.Globalization.CultureInfo)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.Traits
+  - System.Object.GetType
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.#ctor
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.#ctor
+  id: '#ctor'
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  langs:
+  - csharp
+  - vb
+  name: TestCase()
+  nameWithType: TestCase.TestCase()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.TestCase()
+  type: Constructor
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: public TestCase()
+    content.vb: Public Sub New()
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.#ctor*
+  nameWithType.vb: TestCase.New()
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.New()
+  name.vb: New()
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.#ctor(System.String,System.Uri,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.#ctor(System.String,System.Uri,System.String)
+  id: '#ctor(System.String,System.Uri,System.String)'
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  langs:
+  - csharp
+  - vb
+  name: TestCase(string, Uri, string)
+  nameWithType: TestCase.TestCase(string, Uri, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.TestCase(string, System.Uri, string)
+  type: Constructor
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: public TestCase(string fullyQualifiedName, Uri executorUri, string source)
+    parameters:
+    - id: fullyQualifiedName
+      type: System.String
+    - id: executorUri
+      type: System.Uri
+    - id: source
+      type: System.String
+    content.vb: Public Sub New(fullyQualifiedName As String, executorUri As Uri, source As String)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.#ctor*
+  nameWithType.vb: TestCase.New(String, Uri, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.New(String, System.Uri, String)
+  name.vb: New(String, Uri, String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedGetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedGetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  id: ProtectedGetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  langs:
+  - csharp
+  - vb
+  name: ProtectedGetPropertyValue(TestProperty, object?)
+  nameWithType: TestCase.ProtectedGetPropertyValue(TestProperty, object?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedGetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, object?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  example: []
+  syntax:
+    content: protected override object? ProtectedGetPropertyValue(TestProperty property, object? defaultValue)
+    parameters:
+    - id: property
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    - id: defaultValue
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Protected Overrides Function ProtectedGetPropertyValue([property] As TestProperty, defaultValue As Object) As Object
+  overridden: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.ProtectedGetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedGetPropertyValue*
+  nameWithType.vb: TestCase.ProtectedGetPropertyValue(TestProperty, Object)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedGetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, Object)
+  name.vb: ProtectedGetPropertyValue(TestProperty, Object)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedSetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedSetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  id: ProtectedSetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  langs:
+  - csharp
+  - vb
+  name: ProtectedSetPropertyValue(TestProperty, object?)
+  nameWithType: TestCase.ProtectedSetPropertyValue(TestProperty, object?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedSetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, object?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  example: []
+  syntax:
+    content: protected override void ProtectedSetPropertyValue(TestProperty property, object? value)
+    parameters:
+    - id: property
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    - id: value
+      type: System.Object
+    content.vb: Protected Overrides Sub ProtectedSetPropertyValue([property] As TestProperty, value As Object)
+  overridden: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.ProtectedSetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedSetPropertyValue*
+  nameWithType.vb: TestCase.ProtectedSetPropertyValue(TestProperty, Object)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedSetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, Object)
+  name.vb: ProtectedSetPropertyValue(TestProperty, Object)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ToString
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ToString
+  id: ToString
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: TestCase.ToString()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ToString()
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ToString*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.LocalExtensionData
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.LocalExtensionData
+  id: LocalExtensionData
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  langs:
+  - csharp
+  - vb
+  name: LocalExtensionData
+  nameWithType: TestCase.LocalExtensionData
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.LocalExtensionData
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: public object? LocalExtensionData { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property LocalExtensionData As Object
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.LocalExtensionData*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Id
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Id
+  id: Id
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: TestCase.Id
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Id
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: >-
+      [DataMember]
+
+      public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <DataMember>
+
+      Public Property Id As Guid
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Id*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.FullyQualifiedName
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.FullyQualifiedName
+  id: FullyQualifiedName
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  langs:
+  - csharp
+  - vb
+  name: FullyQualifiedName
+  nameWithType: TestCase.FullyQualifiedName
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.FullyQualifiedName
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: >-
+      [DataMember]
+
+      public string FullyQualifiedName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      Public Property FullyQualifiedName As String
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.FullyQualifiedName*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.DisplayName
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.DisplayName
+  id: DisplayName
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: TestCase.DisplayName
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.DisplayName
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: >-
+      [DataMember]
+
+      public string DisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      Public Property DisplayName As String
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.DisplayName*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ExecutorUri
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ExecutorUri
+  id: ExecutorUri
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  langs:
+  - csharp
+  - vb
+  name: ExecutorUri
+  nameWithType: TestCase.ExecutorUri
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ExecutorUri
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: >-
+      [DataMember]
+
+      public Uri ExecutorUri { get; set; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: >-
+      <DataMember>
+
+      Public Property ExecutorUri As Uri
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ExecutorUri*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Source
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Source
+  id: Source
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: TestCase.Source
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Source
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: >-
+      [DataMember]
+
+      public string Source { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      Public Property Source As String
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Source*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.CodeFilePath
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.CodeFilePath
+  id: CodeFilePath
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  langs:
+  - csharp
+  - vb
+  name: CodeFilePath
+  nameWithType: TestCase.CodeFilePath
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.CodeFilePath
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: >-
+      [DataMember]
+
+      public string? CodeFilePath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      Public Property CodeFilePath As String
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.CodeFilePath*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.LineNumber
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.LineNumber
+  id: LineNumber
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  langs:
+  - csharp
+  - vb
+  name: LineNumber
+  nameWithType: TestCase.LineNumber
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.LineNumber
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: >-
+      [DataMember]
+
+      public int LineNumber { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember>
+
+      Public Property LineNumber As Integer
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.LineNumber*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Properties
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Properties
+  id: Properties
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: TestCase.Properties
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Properties
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  example: []
+  syntax:
+    content: public override IEnumerable<TestProperty> Properties { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty}
+    content.vb: Public Overrides ReadOnly Property Properties As IEnumerable(Of TestProperty)
+  overridden: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.Properties
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Properties*
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html
+  name: TestObject
+  nameWithType: TestObject
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetProperties
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetProperties
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetProperties
+  name: GetProperties()
+  nameWithType: TestObject.GetProperties()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetProperties()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetProperties
+    name: GetProperties
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetProperties
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetProperties
+    name: GetProperties
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetProperties
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.CacheLazyValuesOnSerializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.CacheLazyValuesOnSerializing(System.Runtime.Serialization.StreamingContext)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_CacheLazyValuesOnSerializing_System_Runtime_Serialization_StreamingContext_
+  name: CacheLazyValuesOnSerializing(StreamingContext)
+  nameWithType: TestObject.CacheLazyValuesOnSerializing(StreamingContext)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.CacheLazyValuesOnSerializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.CacheLazyValuesOnSerializing(System.Runtime.Serialization.StreamingContext)
+    name: CacheLazyValuesOnSerializing
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_CacheLazyValuesOnSerializing_System_Runtime_Serialization_StreamingContext_
+  - name: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.CacheLazyValuesOnSerializing(System.Runtime.Serialization.StreamingContext)
+    name: CacheLazyValuesOnSerializing
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_CacheLazyValuesOnSerializing_System_Runtime_Serialization_StreamingContext_
+  - name: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetPropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_
+  name: GetPropertyValue(TestProperty)
+  nameWithType: TestObject.GetPropertyValue(TestProperty)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty)
+    name: GetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetPropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty)
+    name: GetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetPropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,{T})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  definition: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0)
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_
+  name: GetPropertyValue<T>(TestProperty, T)
+  nameWithType: TestObject.GetPropertyValue<T>(TestProperty, T)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue<T>(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, T)
+  nameWithType.vb: TestObject.GetPropertyValue(Of T)(TestProperty, T)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue(Of T)(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, T)
+  name.vb: GetPropertyValue(Of T)(TestProperty, T)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0)
+    name: GetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0)
+    name: GetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,{T})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  definition: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0)
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_
+  name: SetPropertyValue<T>(TestProperty, T)
+  nameWithType: TestObject.SetPropertyValue<T>(TestProperty, T)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue<T>(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, T)
+  nameWithType.vb: TestObject.SetPropertyValue(Of T)(TestProperty, T)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue(Of T)(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, T)
+  name.vb: SetPropertyValue(Of T)(TestProperty, T)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0)
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0)
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{{T}})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{``0})
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  definition: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{``0})
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_Microsoft_VisualStudio_TestPlatform_ObjectModel_LazyPropertyValue___0__
+  name: SetPropertyValue<T>(TestProperty, LazyPropertyValue<T>)
+  nameWithType: TestObject.SetPropertyValue<T>(TestProperty, LazyPropertyValue<T>)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue<T>(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue<T>)
+  nameWithType.vb: TestObject.SetPropertyValue(Of T)(TestProperty, LazyPropertyValue(Of T))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue(Of T)(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue(Of T))
+  name.vb: SetPropertyValue(Of T)(TestProperty, LazyPropertyValue(Of T))
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{``0})
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_Microsoft_VisualStudio_TestPlatform_ObjectModel_LazyPropertyValue___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue`1
+    name: LazyPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{``0})
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_Microsoft_VisualStudio_TestPlatform_ObjectModel_LazyPropertyValue___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue`1
+    name: LazyPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_System_Object_
+  name: SetPropertyValue(TestProperty, object)
+  nameWithType: TestObject.SetPropertyValue(TestProperty, object)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, object)
+  nameWithType.vb: TestObject.SetPropertyValue(TestProperty, Object)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, Object)
+  name.vb: SetPropertyValue(TestProperty, Object)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_System_Object_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_System_Object_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.RemovePropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.RemovePropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_RemovePropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_
+  name: RemovePropertyValue(TestProperty)
+  nameWithType: TestObject.RemovePropertyValue(TestProperty)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.RemovePropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.RemovePropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty)
+    name: RemovePropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_RemovePropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.RemovePropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty)
+    name: RemovePropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_RemovePropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,{T},System.Globalization.CultureInfo)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0,System.Globalization.CultureInfo)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  definition: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0,System.Globalization.CultureInfo)
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_System_Globalization_CultureInfo_
+  name: GetPropertyValue<T>(TestProperty, T, CultureInfo)
+  nameWithType: TestObject.GetPropertyValue<T>(TestProperty, T, CultureInfo)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue<T>(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, T, System.Globalization.CultureInfo)
+  nameWithType.vb: TestObject.GetPropertyValue(Of T)(TestProperty, T, CultureInfo)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue(Of T)(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, T, System.Globalization.CultureInfo)
+  name.vb: GetPropertyValue(Of T)(TestProperty, T, CultureInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0,System.Globalization.CultureInfo)
+    name: GetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_System_Globalization_CultureInfo_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0,System.Globalization.CultureInfo)
+    name: GetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_System_Globalization_CultureInfo_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,{T},System.Globalization.CultureInfo)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0,System.Globalization.CultureInfo)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  definition: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0,System.Globalization.CultureInfo)
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_System_Globalization_CultureInfo_
+  name: SetPropertyValue<T>(TestProperty, T, CultureInfo)
+  nameWithType: TestObject.SetPropertyValue<T>(TestProperty, T, CultureInfo)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue<T>(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, T, System.Globalization.CultureInfo)
+  nameWithType.vb: TestObject.SetPropertyValue(Of T)(TestProperty, T, CultureInfo)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue(Of T)(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, T, System.Globalization.CultureInfo)
+  name.vb: SetPropertyValue(Of T)(TestProperty, T, CultureInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0,System.Globalization.CultureInfo)
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_System_Globalization_CultureInfo_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0,System.Globalization.CultureInfo)
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_System_Globalization_CultureInfo_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{{T}},System.Globalization.CultureInfo)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{``0},System.Globalization.CultureInfo)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  definition: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{``0},System.Globalization.CultureInfo)
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_Microsoft_VisualStudio_TestPlatform_ObjectModel_LazyPropertyValue___0__System_Globalization_CultureInfo_
+  name: SetPropertyValue<T>(TestProperty, LazyPropertyValue<T>, CultureInfo)
+  nameWithType: TestObject.SetPropertyValue<T>(TestProperty, LazyPropertyValue<T>, CultureInfo)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue<T>(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue<T>, System.Globalization.CultureInfo)
+  nameWithType.vb: TestObject.SetPropertyValue(Of T)(TestProperty, LazyPropertyValue(Of T), CultureInfo)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue(Of T)(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue(Of T), System.Globalization.CultureInfo)
+  name.vb: SetPropertyValue(Of T)(TestProperty, LazyPropertyValue(Of T), CultureInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{``0},System.Globalization.CultureInfo)
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_Microsoft_VisualStudio_TestPlatform_ObjectModel_LazyPropertyValue___0__System_Globalization_CultureInfo_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue`1
+    name: LazyPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{``0},System.Globalization.CultureInfo)
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_Microsoft_VisualStudio_TestPlatform_ObjectModel_LazyPropertyValue___0__System_Globalization_CultureInfo_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue`1
+    name: LazyPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.Traits
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.Traits
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_Traits
+  name: Traits
+  nameWithType: TestObject.Traits
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.Traits
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0)
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_
+  name: GetPropertyValue<T>(TestProperty, T)
+  nameWithType: TestObject.GetPropertyValue<T>(TestProperty, T)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue<T>(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, T)
+  nameWithType.vb: TestObject.GetPropertyValue(Of T)(TestProperty, T)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue(Of T)(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, T)
+  name.vb: GetPropertyValue(Of T)(TestProperty, T)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0)
+    name: GetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0)
+    name: GetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0)
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_
+  name: SetPropertyValue<T>(TestProperty, T)
+  nameWithType: TestObject.SetPropertyValue<T>(TestProperty, T)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue<T>(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, T)
+  nameWithType.vb: TestObject.SetPropertyValue(Of T)(TestProperty, T)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue(Of T)(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, T)
+  name.vb: SetPropertyValue(Of T)(TestProperty, T)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0)
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0)
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{``0})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{``0})
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_Microsoft_VisualStudio_TestPlatform_ObjectModel_LazyPropertyValue___0__
+  name: SetPropertyValue<T>(TestProperty, LazyPropertyValue<T>)
+  nameWithType: TestObject.SetPropertyValue<T>(TestProperty, LazyPropertyValue<T>)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue<T>(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue<T>)
+  nameWithType.vb: TestObject.SetPropertyValue(Of T)(TestProperty, LazyPropertyValue(Of T))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue(Of T)(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue(Of T))
+  name.vb: SetPropertyValue(Of T)(TestProperty, LazyPropertyValue(Of T))
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{``0})
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_Microsoft_VisualStudio_TestPlatform_ObjectModel_LazyPropertyValue___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue`1
+    name: LazyPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{``0})
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_Microsoft_VisualStudio_TestPlatform_ObjectModel_LazyPropertyValue___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue`1
+    name: LazyPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0,System.Globalization.CultureInfo)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0,System.Globalization.CultureInfo)
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_System_Globalization_CultureInfo_
+  name: GetPropertyValue<T>(TestProperty, T, CultureInfo)
+  nameWithType: TestObject.GetPropertyValue<T>(TestProperty, T, CultureInfo)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue<T>(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, T, System.Globalization.CultureInfo)
+  nameWithType.vb: TestObject.GetPropertyValue(Of T)(TestProperty, T, CultureInfo)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue(Of T)(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, T, System.Globalization.CultureInfo)
+  name.vb: GetPropertyValue(Of T)(TestProperty, T, CultureInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0,System.Globalization.CultureInfo)
+    name: GetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_System_Globalization_CultureInfo_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.GetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0,System.Globalization.CultureInfo)
+    name: GetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_GetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_System_Globalization_CultureInfo_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0,System.Globalization.CultureInfo)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0,System.Globalization.CultureInfo)
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_System_Globalization_CultureInfo_
+  name: SetPropertyValue<T>(TestProperty, T, CultureInfo)
+  nameWithType: TestObject.SetPropertyValue<T>(TestProperty, T, CultureInfo)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue<T>(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, T, System.Globalization.CultureInfo)
+  nameWithType.vb: TestObject.SetPropertyValue(Of T)(TestProperty, T, CultureInfo)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue(Of T)(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, T, System.Globalization.CultureInfo)
+  name.vb: SetPropertyValue(Of T)(TestProperty, T, CultureInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0,System.Globalization.CultureInfo)
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_System_Globalization_CultureInfo_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,``0,System.Globalization.CultureInfo)
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty___0_System_Globalization_CultureInfo_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{``0},System.Globalization.CultureInfo)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{``0},System.Globalization.CultureInfo)
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_Microsoft_VisualStudio_TestPlatform_ObjectModel_LazyPropertyValue___0__System_Globalization_CultureInfo_
+  name: SetPropertyValue<T>(TestProperty, LazyPropertyValue<T>, CultureInfo)
+  nameWithType: TestObject.SetPropertyValue<T>(TestProperty, LazyPropertyValue<T>, CultureInfo)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue<T>(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue<T>, System.Globalization.CultureInfo)
+  nameWithType.vb: TestObject.SetPropertyValue(Of T)(TestProperty, LazyPropertyValue(Of T), CultureInfo)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue(Of T)(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue(Of T), System.Globalization.CultureInfo)
+  name.vb: SetPropertyValue(Of T)(TestProperty, LazyPropertyValue(Of T), CultureInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{``0},System.Globalization.CultureInfo)
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_Microsoft_VisualStudio_TestPlatform_ObjectModel_LazyPropertyValue___0__System_Globalization_CultureInfo_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue`1
+    name: LazyPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.SetPropertyValue``1(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue{``0},System.Globalization.CultureInfo)
+    name: SetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_SetPropertyValue__1_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_Microsoft_VisualStudio_TestPlatform_ObjectModel_LazyPropertyValue___0__System_Globalization_CultureInfo_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue`1
+    name: LazyPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.LazyPropertyValue-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase__ctor
+  name: TestCase
+  nameWithType: TestCase.TestCase
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.TestCase
+  nameWithType.vb: TestCase.New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.ProtectedGetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.ProtectedGetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_ProtectedGetPropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_System_Object_
+  name: ProtectedGetPropertyValue(TestProperty, object)
+  nameWithType: TestObject.ProtectedGetPropertyValue(TestProperty, object)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.ProtectedGetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, object)
+  nameWithType.vb: TestObject.ProtectedGetPropertyValue(TestProperty, Object)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.ProtectedGetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, Object)
+  name.vb: ProtectedGetPropertyValue(TestProperty, Object)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.ProtectedGetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+    name: ProtectedGetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_ProtectedGetPropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_System_Object_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.ProtectedGetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+    name: ProtectedGetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_ProtectedGetPropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_System_Object_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedGetPropertyValue*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedGetPropertyValue
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase_ProtectedGetPropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_System_Object_
+  name: ProtectedGetPropertyValue
+  nameWithType: TestCase.ProtectedGetPropertyValue
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedGetPropertyValue
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  name: TestProperty
+  nameWithType: TestProperty
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.ProtectedSetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.ProtectedSetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_ProtectedSetPropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_System_Object_
+  name: ProtectedSetPropertyValue(TestProperty, object)
+  nameWithType: TestObject.ProtectedSetPropertyValue(TestProperty, object)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.ProtectedSetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, object)
+  nameWithType.vb: TestObject.ProtectedSetPropertyValue(TestProperty, Object)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.ProtectedSetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty, Object)
+  name.vb: ProtectedSetPropertyValue(TestProperty, Object)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.ProtectedSetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+    name: ProtectedSetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_ProtectedSetPropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_System_Object_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.ProtectedSetPropertyValue(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty,System.Object)
+    name: ProtectedSetPropertyValue
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_ProtectedSetPropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_System_Object_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedSetPropertyValue*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedSetPropertyValue
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase_ProtectedSetPropertyValue_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProperty_System_Object_
+  name: ProtectedSetPropertyValue
+  nameWithType: TestCase.ProtectedSetPropertyValue
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ProtectedSetPropertyValue
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ToString*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ToString
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase_ToString
+  name: ToString
+  nameWithType: TestCase.ToString
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ToString
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.LocalExtensionData*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.LocalExtensionData
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase_LocalExtensionData
+  name: LocalExtensionData
+  nameWithType: TestCase.LocalExtensionData
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.LocalExtensionData
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Id*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Id
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase_Id
+  name: Id
+  nameWithType: TestCase.Id
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.FullyQualifiedName*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.FullyQualifiedName
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase_FullyQualifiedName
+  name: FullyQualifiedName
+  nameWithType: TestCase.FullyQualifiedName
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.FullyQualifiedName
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.DisplayName*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.DisplayName
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase_DisplayName
+  name: DisplayName
+  nameWithType: TestCase.DisplayName
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.DisplayName
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ExecutorUri*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ExecutorUri
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase_ExecutorUri
+  name: ExecutorUri
+  nameWithType: TestCase.ExecutorUri
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.ExecutorUri
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Source*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Source
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase_Source
+  name: Source
+  nameWithType: TestCase.Source
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Source
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.CodeFilePath*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.CodeFilePath
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase_CodeFilePath
+  name: CodeFilePath
+  nameWithType: TestCase.CodeFilePath
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.CodeFilePath
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.LineNumber*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.LineNumber
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase_LineNumber
+  name: LineNumber
+  nameWithType: TestCase.LineNumber
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.LineNumber
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.Properties
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.Properties
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestObject_Properties
+  name: Properties
+  nameWithType: TestObject.Properties
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestObject.Properties
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Properties*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Properties
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase_Properties
+  name: Properties
+  nameWithType: TestCase.Properties
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.Properties
+- uid: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TestProperty>
+  nameWithType: IEnumerable<TestProperty>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty>
+  nameWithType.vb: IEnumerable(Of TestProperty)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty)
+  name.vb: IEnumerable(Of TestProperty)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty
+    name: TestProperty
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProperty.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

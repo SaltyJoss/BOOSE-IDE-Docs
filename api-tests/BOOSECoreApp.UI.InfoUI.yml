@@ -1,0 +1,618 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSECoreApp.UI.InfoUI
+  commentId: T:BOOSECoreApp.UI.InfoUI
+  id: InfoUI
+  parent: BOOSECoreApp.UI
+  children:
+  - BOOSECoreApp.UI.InfoUI.#ctor(System.Windows.Forms.RichTextBox)
+  - BOOSECoreApp.UI.InfoUI.DisplayHeader(System.String)
+  - BOOSECoreApp.UI.InfoUI.DisplayInfo(System.String,System.String,System.Drawing.Color,BOOSECoreApp.UI.InfoAlign,BOOSECoreApp.UI.InfoPos)
+  - BOOSECoreApp.UI.InfoUI.GetHeaderColour(System.Char)
+  langs:
+  - csharp
+  - vb
+  name: InfoUI
+  nameWithType: InfoUI
+  fullName: BOOSECoreApp.UI.InfoUI
+  type: Class
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/InfoDisplayUI.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Provides helper methods for formatting and displaying ASCII art and informational text in a <xref href="System.Windows.Forms.RichTextBox" data-throw-if-not-resolved="false"></xref> control.
+  example: []
+  syntax:
+    content: public class InfoUI
+    content.vb: Public Class InfoUI
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: BOOSECoreApp.UI.InfoUI.#ctor(System.Windows.Forms.RichTextBox)
+  commentId: M:BOOSECoreApp.UI.InfoUI.#ctor(System.Windows.Forms.RichTextBox)
+  id: '#ctor(System.Windows.Forms.RichTextBox)'
+  parent: BOOSECoreApp.UI.InfoUI
+  langs:
+  - csharp
+  - vb
+  name: InfoUI(RichTextBox)
+  nameWithType: InfoUI.InfoUI(RichTextBox)
+  fullName: BOOSECoreApp.UI.InfoUI.InfoUI(System.Windows.Forms.RichTextBox)
+  type: Constructor
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/InfoDisplayUI.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Initializes a new instance of the <xref href="BOOSECoreApp.UI.InfoUI" data-throw-if-not-resolved="false"></xref> class, configuring the specified <xref href="System.Windows.Forms.RichTextBox" data-throw-if-not-resolved="false"></xref> for displaying debug information.
+  remarks: The <xref href="System.Windows.Forms.RichTextBox" data-throw-if-not-resolved="false"></xref> is configured with specific settings for debug output, including enabling word wrapping, disabling URL detection, setting a default zoom factor, and applying a specific font configuration.
+  example: []
+  syntax:
+    content: public InfoUI(RichTextBox box)
+    parameters:
+    - id: box
+      type: System.Windows.Forms.RichTextBox
+      description: The <xref href="System.Windows.Forms.RichTextBox" data-throw-if-not-resolved="false"></xref> control to be used for displaying debug information. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Sub New(box As RichTextBox)
+  overload: BOOSECoreApp.UI.InfoUI.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">box</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  nameWithType.vb: InfoUI.New(RichTextBox)
+  fullName.vb: BOOSECoreApp.UI.InfoUI.New(System.Windows.Forms.RichTextBox)
+  name.vb: New(RichTextBox)
+- uid: BOOSECoreApp.UI.InfoUI.DisplayHeader(System.String)
+  commentId: M:BOOSECoreApp.UI.InfoUI.DisplayHeader(System.String)
+  id: DisplayHeader(System.String)
+  parent: BOOSECoreApp.UI.InfoUI
+  langs:
+  - csharp
+  - vb
+  name: DisplayHeader(string)
+  nameWithType: InfoUI.DisplayHeader(string)
+  fullName: BOOSECoreApp.UI.InfoUI.DisplayHeader(string)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/InfoDisplayUI.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Displays the ASCII art header in the configured <xref href="System.Windows.Forms.RichTextBox" data-throw-if-not-resolved="false"></xref>.
+  remarks: This method formats and appends the ASCII art header to the <xref href="System.Windows.Forms.RichTextBox" data-throw-if-not-resolved="false"></xref> using the predefined header string.
+  example: []
+  syntax:
+    content: public void DisplayHeader(string ASCII)
+    parameters:
+    - id: ASCII
+      type: System.String
+    content.vb: Public Sub DisplayHeader(ASCII As String)
+  overload: BOOSECoreApp.UI.InfoUI.DisplayHeader*
+  nameWithType.vb: InfoUI.DisplayHeader(String)
+  fullName.vb: BOOSECoreApp.UI.InfoUI.DisplayHeader(String)
+  name.vb: DisplayHeader(String)
+- uid: BOOSECoreApp.UI.InfoUI.DisplayInfo(System.String,System.String,System.Drawing.Color,BOOSECoreApp.UI.InfoAlign,BOOSECoreApp.UI.InfoPos)
+  commentId: M:BOOSECoreApp.UI.InfoUI.DisplayInfo(System.String,System.String,System.Drawing.Color,BOOSECoreApp.UI.InfoAlign,BOOSECoreApp.UI.InfoPos)
+  id: DisplayInfo(System.String,System.String,System.Drawing.Color,BOOSECoreApp.UI.InfoAlign,BOOSECoreApp.UI.InfoPos)
+  parent: BOOSECoreApp.UI.InfoUI
+  langs:
+  - csharp
+  - vb
+  name: DisplayInfo(string, string, Color, InfoAlign, InfoPos)
+  nameWithType: InfoUI.DisplayInfo(string, string, Color, InfoAlign, InfoPos)
+  fullName: BOOSECoreApp.UI.InfoUI.DisplayInfo(string, string, System.Drawing.Color, BOOSECoreApp.UI.InfoAlign, BOOSECoreApp.UI.InfoPos)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/InfoDisplayUI.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Displays informational text with a specified header and formatting options.
+  remarks: This method appends the specified header and informational text to the configured <xref href="System.Windows.Forms.RichTextBox" data-throw-if-not-resolved="false"></xref>, applying the specified color and formatting options.
+  example: []
+  syntax:
+    content: public void DisplayInfo(string header, string info, Color headerCol, InfoAlign align = InfoAlign.Center, InfoPos pos = InfoPos.Middle)
+    parameters:
+    - id: header
+      type: System.String
+      description: The header text to be displayed.
+    - id: info
+      type: System.String
+      description: The informational text to be displayed.
+    - id: headerCol
+      type: System.Drawing.Color
+      description: The color to be used for the header text.
+    - id: align
+      type: BOOSECoreApp.UI.InfoAlign
+      description: The horizontal alignment for the text. Default is <xref href="BOOSECoreApp.UI.InfoAlign.Center" data-throw-if-not-resolved="false"></xref>.
+    - id: pos
+      type: BOOSECoreApp.UI.InfoPos
+      description: The vertical position for the text. Default is <xref href="BOOSECoreApp.UI.InfoPos.Middle" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub DisplayInfo(header As String, info As String, headerCol As Color, align As InfoAlign = InfoAlign.Center, pos As InfoPos = InfoPos.Middle)
+  overload: BOOSECoreApp.UI.InfoUI.DisplayInfo*
+  nameWithType.vb: InfoUI.DisplayInfo(String, String, Color, InfoAlign, InfoPos)
+  fullName.vb: BOOSECoreApp.UI.InfoUI.DisplayInfo(String, String, System.Drawing.Color, BOOSECoreApp.UI.InfoAlign, BOOSECoreApp.UI.InfoPos)
+  name.vb: DisplayInfo(String, String, Color, InfoAlign, InfoPos)
+- uid: BOOSECoreApp.UI.InfoUI.GetHeaderColour(System.Char)
+  commentId: M:BOOSECoreApp.UI.InfoUI.GetHeaderColour(System.Char)
+  id: GetHeaderColour(System.Char)
+  parent: BOOSECoreApp.UI.InfoUI
+  langs:
+  - csharp
+  - vb
+  name: GetHeaderColour(char)
+  nameWithType: InfoUI.GetHeaderColour(char)
+  fullName: BOOSECoreApp.UI.InfoUI.GetHeaderColour(char)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/InfoDisplayUI.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Gets the color associated with a specific ASCII character used in the header.
+  example: []
+  syntax:
+    content: public Color GetHeaderColour(char c)
+    parameters:
+    - id: c
+      type: System.Char
+      description: The ASCII character for which to get the color.
+    return:
+      type: System.Drawing.Color
+      description: The <xref href="System.Drawing.Color" data-throw-if-not-resolved="false"></xref> associated with the specified character.
+    content.vb: Public Function GetHeaderColour(c As Char) As Color
+  overload: BOOSECoreApp.UI.InfoUI.GetHeaderColour*
+  nameWithType.vb: InfoUI.GetHeaderColour(Char)
+  fullName.vb: BOOSECoreApp.UI.InfoUI.GetHeaderColour(Char)
+  name.vb: GetHeaderColour(Char)
+references:
+- uid: System.Windows.Forms.RichTextBox
+  commentId: T:System.Windows.Forms.RichTextBox
+  parent: System.Windows.Forms
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.forms.richtextbox
+  name: RichTextBox
+  nameWithType: RichTextBox
+  fullName: System.Windows.Forms.RichTextBox
+- uid: BOOSECoreApp.UI
+  commentId: N:BOOSECoreApp.UI
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.UI
+  nameWithType: BOOSECoreApp.UI
+  fullName: BOOSECoreApp.UI
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.UI
+    name: UI
+    isExternal: true
+    href: BOOSECoreApp.UI.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.UI
+    name: UI
+    isExternal: true
+    href: BOOSECoreApp.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Windows.Forms
+  commentId: N:System.Windows.Forms
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Forms
+  nameWithType: System.Windows.Forms
+  fullName: System.Windows.Forms
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Forms
+    name: Forms
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Forms
+    name: Forms
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSECoreApp.UI.InfoUI
+  commentId: T:BOOSECoreApp.UI.InfoUI
+  parent: BOOSECoreApp.UI
+  isExternal: true
+  href: BOOSECoreApp.UI.InfoUI.html
+  name: InfoUI
+  nameWithType: InfoUI
+  fullName: BOOSECoreApp.UI.InfoUI
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: BOOSECoreApp.UI.InfoUI.#ctor*
+  commentId: Overload:BOOSECoreApp.UI.InfoUI.#ctor
+  isExternal: true
+  href: BOOSECoreApp.UI.InfoUI.html#BOOSECoreApp_UI_InfoUI__ctor_System_Windows_Forms_RichTextBox_
+  name: InfoUI
+  nameWithType: InfoUI.InfoUI
+  fullName: BOOSECoreApp.UI.InfoUI.InfoUI
+  nameWithType.vb: InfoUI.New
+  fullName.vb: BOOSECoreApp.UI.InfoUI.New
+  name.vb: New
+- uid: BOOSECoreApp.UI.InfoUI.DisplayHeader*
+  commentId: Overload:BOOSECoreApp.UI.InfoUI.DisplayHeader
+  isExternal: true
+  href: BOOSECoreApp.UI.InfoUI.html#BOOSECoreApp_UI_InfoUI_DisplayHeader_System_String_
+  name: DisplayHeader
+  nameWithType: InfoUI.DisplayHeader
+  fullName: BOOSECoreApp.UI.InfoUI.DisplayHeader
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BOOSECoreApp.UI.InfoAlign.Center
+  commentId: F:BOOSECoreApp.UI.InfoAlign.Center
+  isExternal: true
+  href: BOOSECoreApp.UI.InfoAlign.html#BOOSECoreApp_UI_InfoAlign_Center
+  name: Center
+  nameWithType: InfoAlign.Center
+  fullName: BOOSECoreApp.UI.InfoAlign.Center
+- uid: BOOSECoreApp.UI.InfoPos.Middle
+  commentId: F:BOOSECoreApp.UI.InfoPos.Middle
+  isExternal: true
+  href: BOOSECoreApp.UI.InfoPos.html#BOOSECoreApp_UI_InfoPos_Middle
+  name: Middle
+  nameWithType: InfoPos.Middle
+  fullName: BOOSECoreApp.UI.InfoPos.Middle
+- uid: BOOSECoreApp.UI.InfoUI.DisplayInfo*
+  commentId: Overload:BOOSECoreApp.UI.InfoUI.DisplayInfo
+  isExternal: true
+  href: BOOSECoreApp.UI.InfoUI.html#BOOSECoreApp_UI_InfoUI_DisplayInfo_System_String_System_String_System_Drawing_Color_BOOSECoreApp_UI_InfoAlign_BOOSECoreApp_UI_InfoPos_
+  name: DisplayInfo
+  nameWithType: InfoUI.DisplayInfo
+  fullName: BOOSECoreApp.UI.InfoUI.DisplayInfo
+- uid: System.Drawing.Color
+  commentId: T:System.Drawing.Color
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  name: Color
+  nameWithType: Color
+  fullName: System.Drawing.Color
+- uid: BOOSECoreApp.UI.InfoAlign
+  commentId: T:BOOSECoreApp.UI.InfoAlign
+  parent: BOOSECoreApp.UI
+  isExternal: true
+  href: BOOSECoreApp.UI.InfoAlign.html
+  name: InfoAlign
+  nameWithType: InfoAlign
+  fullName: BOOSECoreApp.UI.InfoAlign
+- uid: BOOSECoreApp.UI.InfoPos
+  commentId: T:BOOSECoreApp.UI.InfoPos
+  parent: BOOSECoreApp.UI
+  isExternal: true
+  href: BOOSECoreApp.UI.InfoPos.html
+  name: InfoPos
+  nameWithType: InfoPos
+  fullName: BOOSECoreApp.UI.InfoPos
+- uid: System.Drawing
+  commentId: N:System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Drawing
+  nameWithType: System.Drawing
+  fullName: System.Drawing
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+- uid: BOOSECoreApp.UI.InfoUI.GetHeaderColour*
+  commentId: Overload:BOOSECoreApp.UI.InfoUI.GetHeaderColour
+  isExternal: true
+  href: BOOSECoreApp.UI.InfoUI.html#BOOSECoreApp_UI_InfoUI_GetHeaderColour_System_Char_
+  name: GetHeaderColour
+  nameWithType: InfoUI.GetHeaderColour
+  fullName: BOOSECoreApp.UI.InfoUI.GetHeaderColour
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char

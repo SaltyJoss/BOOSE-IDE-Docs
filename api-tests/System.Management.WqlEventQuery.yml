@@ -1,0 +1,1042 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Management.WqlEventQuery
+  commentId: T:System.Management.WqlEventQuery
+  id: WqlEventQuery
+  parent: System.Management
+  children:
+  - System.Management.WqlEventQuery.#ctor
+  - System.Management.WqlEventQuery.#ctor(System.String)
+  - System.Management.WqlEventQuery.#ctor(System.String,System.String)
+  - System.Management.WqlEventQuery.#ctor(System.String,System.String,System.TimeSpan)
+  - System.Management.WqlEventQuery.#ctor(System.String,System.String,System.TimeSpan,System.String[])
+  - System.Management.WqlEventQuery.#ctor(System.String,System.TimeSpan)
+  - System.Management.WqlEventQuery.#ctor(System.String,System.TimeSpan,System.String)
+  - System.Management.WqlEventQuery.#ctor(System.String,System.TimeSpan,System.String,System.TimeSpan,System.String[],System.String)
+  - System.Management.WqlEventQuery.BuildQuery
+  - System.Management.WqlEventQuery.Clone
+  - System.Management.WqlEventQuery.Condition
+  - System.Management.WqlEventQuery.EventClassName
+  - System.Management.WqlEventQuery.GroupByPropertyList
+  - System.Management.WqlEventQuery.GroupWithinInterval
+  - System.Management.WqlEventQuery.HavingCondition
+  - System.Management.WqlEventQuery.ParseQuery(System.String)
+  - System.Management.WqlEventQuery.QueryLanguage
+  - System.Management.WqlEventQuery.QueryString
+  - System.Management.WqlEventQuery.WithinInterval
+  langs:
+  - csharp
+  - vb
+  name: WqlEventQuery
+  nameWithType: WqlEventQuery
+  fullName: System.Management.WqlEventQuery
+  type: Class
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: 'public class WqlEventQuery : EventQuery, ICloneable'
+    content.vb: Public Class WqlEventQuery Inherits EventQuery Implements ICloneable
+  inheritance:
+  - System.Object
+  - System.Management.ManagementQuery
+  - System.Management.EventQuery
+  implements:
+  - System.ICloneable
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: System.Management.WqlEventQuery.#ctor
+  commentId: M:System.Management.WqlEventQuery.#ctor
+  id: '#ctor'
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: WqlEventQuery()
+  nameWithType: WqlEventQuery.WqlEventQuery()
+  fullName: System.Management.WqlEventQuery.WqlEventQuery()
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public WqlEventQuery()
+    content.vb: Public Sub New()
+  overload: System.Management.WqlEventQuery.#ctor*
+  nameWithType.vb: WqlEventQuery.New()
+  fullName.vb: System.Management.WqlEventQuery.New()
+  name.vb: New()
+- uid: System.Management.WqlEventQuery.#ctor(System.String)
+  commentId: M:System.Management.WqlEventQuery.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: WqlEventQuery(string)
+  nameWithType: WqlEventQuery.WqlEventQuery(string)
+  fullName: System.Management.WqlEventQuery.WqlEventQuery(string)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public WqlEventQuery(string queryOrEventClassName)
+    parameters:
+    - id: queryOrEventClassName
+      type: System.String
+    content.vb: Public Sub New(queryOrEventClassName As String)
+  overload: System.Management.WqlEventQuery.#ctor*
+  nameWithType.vb: WqlEventQuery.New(String)
+  fullName.vb: System.Management.WqlEventQuery.New(String)
+  name.vb: New(String)
+- uid: System.Management.WqlEventQuery.#ctor(System.String,System.String)
+  commentId: M:System.Management.WqlEventQuery.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: WqlEventQuery(string, string)
+  nameWithType: WqlEventQuery.WqlEventQuery(string, string)
+  fullName: System.Management.WqlEventQuery.WqlEventQuery(string, string)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public WqlEventQuery(string eventClassName, string condition)
+    parameters:
+    - id: eventClassName
+      type: System.String
+    - id: condition
+      type: System.String
+    content.vb: Public Sub New(eventClassName As String, condition As String)
+  overload: System.Management.WqlEventQuery.#ctor*
+  nameWithType.vb: WqlEventQuery.New(String, String)
+  fullName.vb: System.Management.WqlEventQuery.New(String, String)
+  name.vb: New(String, String)
+- uid: System.Management.WqlEventQuery.#ctor(System.String,System.String,System.TimeSpan)
+  commentId: M:System.Management.WqlEventQuery.#ctor(System.String,System.String,System.TimeSpan)
+  id: '#ctor(System.String,System.String,System.TimeSpan)'
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: WqlEventQuery(string, string, TimeSpan)
+  nameWithType: WqlEventQuery.WqlEventQuery(string, string, TimeSpan)
+  fullName: System.Management.WqlEventQuery.WqlEventQuery(string, string, System.TimeSpan)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public WqlEventQuery(string eventClassName, string condition, TimeSpan groupWithinInterval)
+    parameters:
+    - id: eventClassName
+      type: System.String
+    - id: condition
+      type: System.String
+    - id: groupWithinInterval
+      type: System.TimeSpan
+    content.vb: Public Sub New(eventClassName As String, condition As String, groupWithinInterval As TimeSpan)
+  overload: System.Management.WqlEventQuery.#ctor*
+  nameWithType.vb: WqlEventQuery.New(String, String, TimeSpan)
+  fullName.vb: System.Management.WqlEventQuery.New(String, String, System.TimeSpan)
+  name.vb: New(String, String, TimeSpan)
+- uid: System.Management.WqlEventQuery.#ctor(System.String,System.String,System.TimeSpan,System.String[])
+  commentId: M:System.Management.WqlEventQuery.#ctor(System.String,System.String,System.TimeSpan,System.String[])
+  id: '#ctor(System.String,System.String,System.TimeSpan,System.String[])'
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: WqlEventQuery(string, string, TimeSpan, string[])
+  nameWithType: WqlEventQuery.WqlEventQuery(string, string, TimeSpan, string[])
+  fullName: System.Management.WqlEventQuery.WqlEventQuery(string, string, System.TimeSpan, string[])
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public WqlEventQuery(string eventClassName, string condition, TimeSpan groupWithinInterval, string[] groupByPropertyList)
+    parameters:
+    - id: eventClassName
+      type: System.String
+    - id: condition
+      type: System.String
+    - id: groupWithinInterval
+      type: System.TimeSpan
+    - id: groupByPropertyList
+      type: System.String[]
+    content.vb: Public Sub New(eventClassName As String, condition As String, groupWithinInterval As TimeSpan, groupByPropertyList As String())
+  overload: System.Management.WqlEventQuery.#ctor*
+  nameWithType.vb: WqlEventQuery.New(String, String, TimeSpan, String())
+  fullName.vb: System.Management.WqlEventQuery.New(String, String, System.TimeSpan, String())
+  name.vb: New(String, String, TimeSpan, String())
+- uid: System.Management.WqlEventQuery.#ctor(System.String,System.TimeSpan)
+  commentId: M:System.Management.WqlEventQuery.#ctor(System.String,System.TimeSpan)
+  id: '#ctor(System.String,System.TimeSpan)'
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: WqlEventQuery(string, TimeSpan)
+  nameWithType: WqlEventQuery.WqlEventQuery(string, TimeSpan)
+  fullName: System.Management.WqlEventQuery.WqlEventQuery(string, System.TimeSpan)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public WqlEventQuery(string eventClassName, TimeSpan withinInterval)
+    parameters:
+    - id: eventClassName
+      type: System.String
+    - id: withinInterval
+      type: System.TimeSpan
+    content.vb: Public Sub New(eventClassName As String, withinInterval As TimeSpan)
+  overload: System.Management.WqlEventQuery.#ctor*
+  nameWithType.vb: WqlEventQuery.New(String, TimeSpan)
+  fullName.vb: System.Management.WqlEventQuery.New(String, System.TimeSpan)
+  name.vb: New(String, TimeSpan)
+- uid: System.Management.WqlEventQuery.#ctor(System.String,System.TimeSpan,System.String)
+  commentId: M:System.Management.WqlEventQuery.#ctor(System.String,System.TimeSpan,System.String)
+  id: '#ctor(System.String,System.TimeSpan,System.String)'
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: WqlEventQuery(string, TimeSpan, string)
+  nameWithType: WqlEventQuery.WqlEventQuery(string, TimeSpan, string)
+  fullName: System.Management.WqlEventQuery.WqlEventQuery(string, System.TimeSpan, string)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public WqlEventQuery(string eventClassName, TimeSpan withinInterval, string condition)
+    parameters:
+    - id: eventClassName
+      type: System.String
+    - id: withinInterval
+      type: System.TimeSpan
+    - id: condition
+      type: System.String
+    content.vb: Public Sub New(eventClassName As String, withinInterval As TimeSpan, condition As String)
+  overload: System.Management.WqlEventQuery.#ctor*
+  nameWithType.vb: WqlEventQuery.New(String, TimeSpan, String)
+  fullName.vb: System.Management.WqlEventQuery.New(String, System.TimeSpan, String)
+  name.vb: New(String, TimeSpan, String)
+- uid: System.Management.WqlEventQuery.#ctor(System.String,System.TimeSpan,System.String,System.TimeSpan,System.String[],System.String)
+  commentId: M:System.Management.WqlEventQuery.#ctor(System.String,System.TimeSpan,System.String,System.TimeSpan,System.String[],System.String)
+  id: '#ctor(System.String,System.TimeSpan,System.String,System.TimeSpan,System.String[],System.String)'
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: WqlEventQuery(string, TimeSpan, string, TimeSpan, string[], string)
+  nameWithType: WqlEventQuery.WqlEventQuery(string, TimeSpan, string, TimeSpan, string[], string)
+  fullName: System.Management.WqlEventQuery.WqlEventQuery(string, System.TimeSpan, string, System.TimeSpan, string[], string)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public WqlEventQuery(string eventClassName, TimeSpan withinInterval, string condition, TimeSpan groupWithinInterval, string[] groupByPropertyList, string havingCondition)
+    parameters:
+    - id: eventClassName
+      type: System.String
+    - id: withinInterval
+      type: System.TimeSpan
+    - id: condition
+      type: System.String
+    - id: groupWithinInterval
+      type: System.TimeSpan
+    - id: groupByPropertyList
+      type: System.String[]
+    - id: havingCondition
+      type: System.String
+    content.vb: Public Sub New(eventClassName As String, withinInterval As TimeSpan, condition As String, groupWithinInterval As TimeSpan, groupByPropertyList As String(), havingCondition As String)
+  overload: System.Management.WqlEventQuery.#ctor*
+  nameWithType.vb: WqlEventQuery.New(String, TimeSpan, String, TimeSpan, String(), String)
+  fullName.vb: System.Management.WqlEventQuery.New(String, System.TimeSpan, String, System.TimeSpan, String(), String)
+  name.vb: New(String, TimeSpan, String, TimeSpan, String(), String)
+- uid: System.Management.WqlEventQuery.BuildQuery
+  commentId: M:System.Management.WqlEventQuery.BuildQuery
+  id: BuildQuery
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: BuildQuery()
+  nameWithType: WqlEventQuery.BuildQuery()
+  fullName: System.Management.WqlEventQuery.BuildQuery()
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: protected void BuildQuery()
+    content.vb: Protected Sub BuildQuery()
+  overload: System.Management.WqlEventQuery.BuildQuery*
+- uid: System.Management.WqlEventQuery.Clone
+  commentId: M:System.Management.WqlEventQuery.Clone
+  id: Clone
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: WqlEventQuery.Clone()
+  fullName: System.Management.WqlEventQuery.Clone()
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  example: []
+  syntax:
+    content: public override object Clone()
+    return:
+      type: System.Object
+    content.vb: Public Overrides Function Clone() As Object
+  overridden: System.Management.EventQuery.Clone
+  overload: System.Management.WqlEventQuery.Clone*
+- uid: System.Management.WqlEventQuery.ParseQuery(System.String)
+  commentId: M:System.Management.WqlEventQuery.ParseQuery(System.String)
+  id: ParseQuery(System.String)
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: ParseQuery(string)
+  nameWithType: WqlEventQuery.ParseQuery(string)
+  fullName: System.Management.WqlEventQuery.ParseQuery(string)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  example: []
+  syntax:
+    content: protected override void ParseQuery(string query)
+    parameters:
+    - id: query
+      type: System.String
+    content.vb: Protected Overrides Sub ParseQuery(query As String)
+  overridden: System.Management.ManagementQuery.ParseQuery(System.String)
+  overload: System.Management.WqlEventQuery.ParseQuery*
+  nameWithType.vb: WqlEventQuery.ParseQuery(String)
+  fullName.vb: System.Management.WqlEventQuery.ParseQuery(String)
+  name.vb: ParseQuery(String)
+- uid: System.Management.WqlEventQuery.Condition
+  commentId: P:System.Management.WqlEventQuery.Condition
+  id: Condition
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: Condition
+  nameWithType: WqlEventQuery.Condition
+  fullName: System.Management.WqlEventQuery.Condition
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public string Condition { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Condition As String
+  overload: System.Management.WqlEventQuery.Condition*
+- uid: System.Management.WqlEventQuery.EventClassName
+  commentId: P:System.Management.WqlEventQuery.EventClassName
+  id: EventClassName
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: EventClassName
+  nameWithType: WqlEventQuery.EventClassName
+  fullName: System.Management.WqlEventQuery.EventClassName
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public string EventClassName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EventClassName As String
+  overload: System.Management.WqlEventQuery.EventClassName*
+- uid: System.Management.WqlEventQuery.GroupByPropertyList
+  commentId: P:System.Management.WqlEventQuery.GroupByPropertyList
+  id: GroupByPropertyList
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: GroupByPropertyList
+  nameWithType: WqlEventQuery.GroupByPropertyList
+  fullName: System.Management.WqlEventQuery.GroupByPropertyList
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public StringCollection GroupByPropertyList { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Specialized.StringCollection
+    content.vb: Public Property GroupByPropertyList As StringCollection
+  overload: System.Management.WqlEventQuery.GroupByPropertyList*
+- uid: System.Management.WqlEventQuery.GroupWithinInterval
+  commentId: P:System.Management.WqlEventQuery.GroupWithinInterval
+  id: GroupWithinInterval
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: GroupWithinInterval
+  nameWithType: WqlEventQuery.GroupWithinInterval
+  fullName: System.Management.WqlEventQuery.GroupWithinInterval
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public TimeSpan GroupWithinInterval { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property GroupWithinInterval As TimeSpan
+  overload: System.Management.WqlEventQuery.GroupWithinInterval*
+- uid: System.Management.WqlEventQuery.HavingCondition
+  commentId: P:System.Management.WqlEventQuery.HavingCondition
+  id: HavingCondition
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: HavingCondition
+  nameWithType: WqlEventQuery.HavingCondition
+  fullName: System.Management.WqlEventQuery.HavingCondition
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public string HavingCondition { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property HavingCondition As String
+  overload: System.Management.WqlEventQuery.HavingCondition*
+- uid: System.Management.WqlEventQuery.QueryLanguage
+  commentId: P:System.Management.WqlEventQuery.QueryLanguage
+  id: QueryLanguage
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: QueryLanguage
+  nameWithType: WqlEventQuery.QueryLanguage
+  fullName: System.Management.WqlEventQuery.QueryLanguage
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  example: []
+  syntax:
+    content: public override string QueryLanguage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides Property QueryLanguage As String
+  overridden: System.Management.ManagementQuery.QueryLanguage
+  overload: System.Management.WqlEventQuery.QueryLanguage*
+- uid: System.Management.WqlEventQuery.QueryString
+  commentId: P:System.Management.WqlEventQuery.QueryString
+  id: QueryString
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: QueryString
+  nameWithType: WqlEventQuery.QueryString
+  fullName: System.Management.WqlEventQuery.QueryString
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  example: []
+  syntax:
+    content: public override string QueryString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides Property QueryString As String
+  overridden: System.Management.ManagementQuery.QueryString
+  overload: System.Management.WqlEventQuery.QueryString*
+- uid: System.Management.WqlEventQuery.WithinInterval
+  commentId: P:System.Management.WqlEventQuery.WithinInterval
+  id: WithinInterval
+  parent: System.Management.WqlEventQuery
+  langs:
+  - csharp
+  - vb
+  name: WithinInterval
+  nameWithType: WqlEventQuery.WithinInterval
+  fullName: System.Management.WqlEventQuery.WithinInterval
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public TimeSpan WithinInterval { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property WithinInterval As TimeSpan
+  overload: System.Management.WqlEventQuery.WithinInterval*
+references:
+- uid: System.Management
+  commentId: N:System.Management
+  isExternal: true
+  href: System.html
+  name: System.Management
+  nameWithType: System.Management
+  fullName: System.Management
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Management
+    name: Management
+    isExternal: true
+    href: System.Management.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Management
+    name: Management
+    isExternal: true
+    href: System.Management.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Management.ManagementQuery
+  commentId: T:System.Management.ManagementQuery
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ManagementQuery.html
+  name: ManagementQuery
+  nameWithType: ManagementQuery
+  fullName: System.Management.ManagementQuery
+- uid: System.Management.EventQuery
+  commentId: T:System.Management.EventQuery
+  parent: System.Management
+  isExternal: true
+  href: System.Management.EventQuery.html
+  name: EventQuery
+  nameWithType: EventQuery
+  fullName: System.Management.EventQuery
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Management.WqlEventQuery.#ctor*
+  commentId: Overload:System.Management.WqlEventQuery.#ctor
+  isExternal: true
+  href: System.Management.WqlEventQuery.html#System_Management_WqlEventQuery__ctor
+  name: WqlEventQuery
+  nameWithType: WqlEventQuery.WqlEventQuery
+  fullName: System.Management.WqlEventQuery.WqlEventQuery
+  nameWithType.vb: WqlEventQuery.New
+  fullName.vb: System.Management.WqlEventQuery.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Management.WqlEventQuery.BuildQuery*
+  commentId: Overload:System.Management.WqlEventQuery.BuildQuery
+  isExternal: true
+  href: System.Management.WqlEventQuery.html#System_Management_WqlEventQuery_BuildQuery
+  name: BuildQuery
+  nameWithType: WqlEventQuery.BuildQuery
+  fullName: System.Management.WqlEventQuery.BuildQuery
+- uid: System.Management.EventQuery.Clone
+  commentId: M:System.Management.EventQuery.Clone
+  parent: System.Management.EventQuery
+  isExternal: true
+  href: System.Management.EventQuery.html#System_Management_EventQuery_Clone
+  name: Clone()
+  nameWithType: EventQuery.Clone()
+  fullName: System.Management.EventQuery.Clone()
+  spec.csharp:
+  - uid: System.Management.EventQuery.Clone
+    name: Clone
+    isExternal: true
+    href: System.Management.EventQuery.html#System_Management_EventQuery_Clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Management.EventQuery.Clone
+    name: Clone
+    isExternal: true
+    href: System.Management.EventQuery.html#System_Management_EventQuery_Clone
+  - name: (
+  - name: )
+- uid: System.Management.WqlEventQuery.Clone*
+  commentId: Overload:System.Management.WqlEventQuery.Clone
+  isExternal: true
+  href: System.Management.WqlEventQuery.html#System_Management_WqlEventQuery_Clone
+  name: Clone
+  nameWithType: WqlEventQuery.Clone
+  fullName: System.Management.WqlEventQuery.Clone
+- uid: System.Management.ManagementQuery.ParseQuery(System.String)
+  commentId: M:System.Management.ManagementQuery.ParseQuery(System.String)
+  parent: System.Management.ManagementQuery
+  isExternal: true
+  href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_ParseQuery_System_String_
+  name: ParseQuery(string)
+  nameWithType: ManagementQuery.ParseQuery(string)
+  fullName: System.Management.ManagementQuery.ParseQuery(string)
+  nameWithType.vb: ManagementQuery.ParseQuery(String)
+  fullName.vb: System.Management.ManagementQuery.ParseQuery(String)
+  name.vb: ParseQuery(String)
+  spec.csharp:
+  - uid: System.Management.ManagementQuery.ParseQuery(System.String)
+    name: ParseQuery
+    isExternal: true
+    href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_ParseQuery_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementQuery.ParseQuery(System.String)
+    name: ParseQuery
+    isExternal: true
+    href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_ParseQuery_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Management.WqlEventQuery.ParseQuery*
+  commentId: Overload:System.Management.WqlEventQuery.ParseQuery
+  isExternal: true
+  href: System.Management.WqlEventQuery.html#System_Management_WqlEventQuery_ParseQuery_System_String_
+  name: ParseQuery
+  nameWithType: WqlEventQuery.ParseQuery
+  fullName: System.Management.WqlEventQuery.ParseQuery
+- uid: System.Management.WqlEventQuery.Condition*
+  commentId: Overload:System.Management.WqlEventQuery.Condition
+  isExternal: true
+  href: System.Management.WqlEventQuery.html#System_Management_WqlEventQuery_Condition
+  name: Condition
+  nameWithType: WqlEventQuery.Condition
+  fullName: System.Management.WqlEventQuery.Condition
+- uid: System.Management.WqlEventQuery.EventClassName*
+  commentId: Overload:System.Management.WqlEventQuery.EventClassName
+  isExternal: true
+  href: System.Management.WqlEventQuery.html#System_Management_WqlEventQuery_EventClassName
+  name: EventClassName
+  nameWithType: WqlEventQuery.EventClassName
+  fullName: System.Management.WqlEventQuery.EventClassName
+- uid: System.Management.WqlEventQuery.GroupByPropertyList*
+  commentId: Overload:System.Management.WqlEventQuery.GroupByPropertyList
+  isExternal: true
+  href: System.Management.WqlEventQuery.html#System_Management_WqlEventQuery_GroupByPropertyList
+  name: GroupByPropertyList
+  nameWithType: WqlEventQuery.GroupByPropertyList
+  fullName: System.Management.WqlEventQuery.GroupByPropertyList
+- uid: System.Collections.Specialized.StringCollection
+  commentId: T:System.Collections.Specialized.StringCollection
+  parent: System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.stringcollection
+  name: StringCollection
+  nameWithType: StringCollection
+  fullName: System.Collections.Specialized.StringCollection
+- uid: System.Collections.Specialized
+  commentId: N:System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Specialized
+  nameWithType: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+- uid: System.Management.WqlEventQuery.GroupWithinInterval*
+  commentId: Overload:System.Management.WqlEventQuery.GroupWithinInterval
+  isExternal: true
+  href: System.Management.WqlEventQuery.html#System_Management_WqlEventQuery_GroupWithinInterval
+  name: GroupWithinInterval
+  nameWithType: WqlEventQuery.GroupWithinInterval
+  fullName: System.Management.WqlEventQuery.GroupWithinInterval
+- uid: System.Management.WqlEventQuery.HavingCondition*
+  commentId: Overload:System.Management.WqlEventQuery.HavingCondition
+  isExternal: true
+  href: System.Management.WqlEventQuery.html#System_Management_WqlEventQuery_HavingCondition
+  name: HavingCondition
+  nameWithType: WqlEventQuery.HavingCondition
+  fullName: System.Management.WqlEventQuery.HavingCondition
+- uid: System.Management.ManagementQuery.QueryLanguage
+  commentId: P:System.Management.ManagementQuery.QueryLanguage
+  parent: System.Management.ManagementQuery
+  isExternal: true
+  href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_QueryLanguage
+  name: QueryLanguage
+  nameWithType: ManagementQuery.QueryLanguage
+  fullName: System.Management.ManagementQuery.QueryLanguage
+- uid: System.Management.WqlEventQuery.QueryLanguage*
+  commentId: Overload:System.Management.WqlEventQuery.QueryLanguage
+  isExternal: true
+  href: System.Management.WqlEventQuery.html#System_Management_WqlEventQuery_QueryLanguage
+  name: QueryLanguage
+  nameWithType: WqlEventQuery.QueryLanguage
+  fullName: System.Management.WqlEventQuery.QueryLanguage
+- uid: System.Management.ManagementQuery.QueryString
+  commentId: P:System.Management.ManagementQuery.QueryString
+  parent: System.Management.ManagementQuery
+  isExternal: true
+  href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_QueryString
+  name: QueryString
+  nameWithType: ManagementQuery.QueryString
+  fullName: System.Management.ManagementQuery.QueryString
+- uid: System.Management.WqlEventQuery.QueryString*
+  commentId: Overload:System.Management.WqlEventQuery.QueryString
+  isExternal: true
+  href: System.Management.WqlEventQuery.html#System_Management_WqlEventQuery_QueryString
+  name: QueryString
+  nameWithType: WqlEventQuery.QueryString
+  fullName: System.Management.WqlEventQuery.QueryString
+- uid: System.Management.WqlEventQuery.WithinInterval*
+  commentId: Overload:System.Management.WqlEventQuery.WithinInterval
+  isExternal: true
+  href: System.Management.WqlEventQuery.html#System_Management_WqlEventQuery_WithinInterval
+  name: WithinInterval
+  nameWithType: WqlEventQuery.WithinInterval
+  fullName: System.Management.WqlEventQuery.WithinInterval

@@ -1,0 +1,863 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.TelemetrySink
+  id: TelemetrySink
+  parent: Microsoft.ApplicationInsights.Extensibility
+  children:
+  - Microsoft.ApplicationInsights.Extensibility.TelemetrySink.#ctor
+  - Microsoft.ApplicationInsights.Extensibility.TelemetrySink.#ctor(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration,Microsoft.ApplicationInsights.Channel.ITelemetryChannel)
+  - Microsoft.ApplicationInsights.Extensibility.TelemetrySink.DefaultSinkName
+  - Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Dispose
+  - Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  - Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Name
+  - Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Process(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  - Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryChannel
+  - Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryProcessorChainBuilder
+  - Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryProcessors
+  langs:
+  - csharp
+  - vb
+  name: TelemetrySink
+  nameWithType: TelemetrySink
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink
+  type: Class
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: 'public sealed class TelemetrySink : IDisposable, ITelemetryModule'
+    content.vb: Public NotInheritable Class TelemetrySink Implements IDisposable, ITelemetryModule
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  - Microsoft.ApplicationInsights.Extensibility.ITelemetryModule
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.DefaultSinkName
+  commentId: F:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.DefaultSinkName
+  id: DefaultSinkName
+  parent: Microsoft.ApplicationInsights.Extensibility.TelemetrySink
+  langs:
+  - csharp
+  - vb
+  name: DefaultSinkName
+  nameWithType: TelemetrySink.DefaultSinkName
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.DefaultSinkName
+  type: Field
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public static readonly string DefaultSinkName
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly DefaultSinkName As String
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.#ctor(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration,Microsoft.ApplicationInsights.Channel.ITelemetryChannel)
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.#ctor(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration,Microsoft.ApplicationInsights.Channel.ITelemetryChannel)
+  id: '#ctor(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration,Microsoft.ApplicationInsights.Channel.ITelemetryChannel)'
+  parent: Microsoft.ApplicationInsights.Extensibility.TelemetrySink
+  langs:
+  - csharp
+  - vb
+  name: TelemetrySink(TelemetryConfiguration, ITelemetryChannel)
+  nameWithType: TelemetrySink.TelemetrySink(TelemetryConfiguration, ITelemetryChannel)
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetrySink(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration, Microsoft.ApplicationInsights.Channel.ITelemetryChannel)
+  type: Constructor
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public TelemetrySink(TelemetryConfiguration telemetryConfiguration, ITelemetryChannel telemetryChannel = null)
+    parameters:
+    - id: telemetryConfiguration
+      type: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+    - id: telemetryChannel
+      type: Microsoft.ApplicationInsights.Channel.ITelemetryChannel
+    content.vb: Public Sub New(telemetryConfiguration As TelemetryConfiguration, telemetryChannel As ITelemetryChannel = Nothing)
+  overload: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.#ctor*
+  nameWithType.vb: TelemetrySink.New(TelemetryConfiguration, ITelemetryChannel)
+  fullName.vb: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.New(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration, Microsoft.ApplicationInsights.Channel.ITelemetryChannel)
+  name.vb: New(TelemetryConfiguration, ITelemetryChannel)
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.#ctor
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.#ctor
+  id: '#ctor'
+  parent: Microsoft.ApplicationInsights.Extensibility.TelemetrySink
+  langs:
+  - csharp
+  - vb
+  name: TelemetrySink()
+  nameWithType: TelemetrySink.TelemetrySink()
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetrySink()
+  type: Constructor
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public TelemetrySink()
+    content.vb: Public Sub New()
+  overload: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.#ctor*
+  nameWithType.vb: TelemetrySink.New()
+  fullName.vb: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.New()
+  name.vb: New()
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Dispose
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Dispose
+  id: Dispose
+  parent: Microsoft.ApplicationInsights.Extensibility.TelemetrySink
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: TelemetrySink.Dispose()
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Dispose()
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  id: Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  parent: Microsoft.ApplicationInsights.Extensibility.TelemetrySink
+  langs:
+  - csharp
+  - vb
+  name: Initialize(TelemetryConfiguration)
+  nameWithType: TelemetrySink.Initialize(TelemetryConfiguration)
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  example: []
+  syntax:
+    content: public void Initialize(TelemetryConfiguration configuration)
+    parameters:
+    - id: configuration
+      type: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+    content.vb: Public Sub Initialize(configuration As TelemetryConfiguration)
+  overload: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Initialize*
+  implements:
+  - Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Process(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Process(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  id: Process(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  parent: Microsoft.ApplicationInsights.Extensibility.TelemetrySink
+  langs:
+  - csharp
+  - vb
+  name: Process(ITelemetry)
+  nameWithType: TelemetrySink.Process(ITelemetry)
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Process(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public void Process(ITelemetry item)
+    parameters:
+    - id: item
+      type: Microsoft.ApplicationInsights.Channel.ITelemetry
+    content.vb: Public Sub Process(item As ITelemetry)
+  overload: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Process*
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryProcessorChainBuilder
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryProcessorChainBuilder
+  id: TelemetryProcessorChainBuilder
+  parent: Microsoft.ApplicationInsights.Extensibility.TelemetrySink
+  langs:
+  - csharp
+  - vb
+  name: TelemetryProcessorChainBuilder
+  nameWithType: TelemetrySink.TelemetryProcessorChainBuilder
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryProcessorChainBuilder
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public TelemetryProcessorChainBuilder TelemetryProcessorChainBuilder { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryProcessorChainBuilder
+    content.vb: Public Property TelemetryProcessorChainBuilder As TelemetryProcessorChainBuilder
+  overload: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryProcessorChainBuilder*
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryChannel
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryChannel
+  id: TelemetryChannel
+  parent: Microsoft.ApplicationInsights.Extensibility.TelemetrySink
+  langs:
+  - csharp
+  - vb
+  name: TelemetryChannel
+  nameWithType: TelemetrySink.TelemetryChannel
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryChannel
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public ITelemetryChannel TelemetryChannel { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.ApplicationInsights.Channel.ITelemetryChannel
+    content.vb: Public Property TelemetryChannel As ITelemetryChannel
+  overload: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryChannel*
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Name
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Name
+  id: Name
+  parent: Microsoft.ApplicationInsights.Extensibility.TelemetrySink
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: TelemetrySink.Name
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Name
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Name*
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryProcessors
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryProcessors
+  id: TelemetryProcessors
+  parent: Microsoft.ApplicationInsights.Extensibility.TelemetrySink
+  langs:
+  - csharp
+  - vb
+  name: TelemetryProcessors
+  nameWithType: TelemetrySink.TelemetryProcessors
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryProcessors
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public ReadOnlyCollection<ITelemetryProcessor> TelemetryProcessors { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor}
+    content.vb: Public ReadOnly Property TelemetryProcessors As ReadOnlyCollection(Of ITelemetryProcessor)
+  overload: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryProcessors*
+references:
+- uid: Microsoft.ApplicationInsights.Extensibility
+  commentId: N:Microsoft.ApplicationInsights.Extensibility
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Extensibility
+  nameWithType: Microsoft.ApplicationInsights.Extensibility
+  fullName: Microsoft.ApplicationInsights.Extensibility
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.ITelemetryModule
+  parent: Microsoft.ApplicationInsights.Extensibility
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.html
+  name: ITelemetryModule
+  nameWithType: ITelemetryModule
+  fullName: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.#ctor*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.#ctor
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.html#Microsoft_ApplicationInsights_Extensibility_TelemetrySink__ctor_Microsoft_ApplicationInsights_Extensibility_TelemetryConfiguration_Microsoft_ApplicationInsights_Channel_ITelemetryChannel_
+  name: TelemetrySink
+  nameWithType: TelemetrySink.TelemetrySink
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetrySink
+  nameWithType.vb: TelemetrySink.New
+  fullName.vb: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.New
+  name.vb: New
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+  parent: Microsoft.ApplicationInsights.Extensibility
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.html
+  name: TelemetryConfiguration
+  nameWithType: TelemetryConfiguration
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetryChannel
+  commentId: T:Microsoft.ApplicationInsights.Channel.ITelemetryChannel
+  parent: Microsoft.ApplicationInsights.Channel
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.ITelemetryChannel.html
+  name: ITelemetryChannel
+  nameWithType: ITelemetryChannel
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetryChannel
+- uid: Microsoft.ApplicationInsights.Channel
+  commentId: N:Microsoft.ApplicationInsights.Channel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Channel
+  nameWithType: Microsoft.ApplicationInsights.Channel
+  fullName: Microsoft.ApplicationInsights.Channel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Channel
+    name: Channel
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Channel
+    name: Channel
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.html
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Dispose*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Dispose
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.html#Microsoft_ApplicationInsights_Extensibility_TelemetrySink_Dispose
+  name: Dispose
+  nameWithType: TelemetrySink.Dispose
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Initialize*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Initialize
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.html#Microsoft_ApplicationInsights_Extensibility_TelemetrySink_Initialize_Microsoft_ApplicationInsights_Extensibility_TelemetryConfiguration_
+  name: Initialize
+  nameWithType: TelemetrySink.Initialize
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Initialize
+- uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  parent: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_ITelemetryModule_Initialize_Microsoft_ApplicationInsights_Extensibility_TelemetryConfiguration_
+  name: Initialize(TelemetryConfiguration)
+  nameWithType: ITelemetryModule.Initialize(TelemetryConfiguration)
+  fullName: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+    name: Initialize
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_ITelemetryModule_Initialize_Microsoft_ApplicationInsights_Extensibility_TelemetryConfiguration_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+    name: TelemetryConfiguration
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+    name: Initialize
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_ITelemetryModule_Initialize_Microsoft_ApplicationInsights_Extensibility_TelemetryConfiguration_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+    name: TelemetryConfiguration
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.html
+  - name: )
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Process*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Process
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.html#Microsoft_ApplicationInsights_Extensibility_TelemetrySink_Process_Microsoft_ApplicationInsights_Channel_ITelemetry_
+  name: Process
+  nameWithType: TelemetrySink.Process
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Process
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetry
+  commentId: T:Microsoft.ApplicationInsights.Channel.ITelemetry
+  parent: Microsoft.ApplicationInsights.Channel
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.ITelemetry.html
+  name: ITelemetry
+  nameWithType: ITelemetry
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetry
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryProcessorChainBuilder*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryProcessorChainBuilder
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.html#Microsoft_ApplicationInsights_Extensibility_TelemetrySink_TelemetryProcessorChainBuilder
+  name: TelemetryProcessorChainBuilder
+  nameWithType: TelemetrySink.TelemetryProcessorChainBuilder
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryProcessorChainBuilder
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryProcessorChainBuilder
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryProcessorChainBuilder
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryProcessorChainBuilder.html
+  name: TelemetryProcessorChainBuilder
+  nameWithType: TelemetryProcessorChainBuilder
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryProcessorChainBuilder
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation
+  commentId: N:Microsoft.ApplicationInsights.Extensibility.Implementation
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Extensibility.Implementation
+  nameWithType: Microsoft.ApplicationInsights.Extensibility.Implementation
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation
+    name: Implementation
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation
+    name: Implementation
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.html
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryChannel*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryChannel
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.html#Microsoft_ApplicationInsights_Extensibility_TelemetrySink_TelemetryChannel
+  name: TelemetryChannel
+  nameWithType: TelemetrySink.TelemetryChannel
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryChannel
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Name*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Name
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.html#Microsoft_ApplicationInsights_Extensibility_TelemetrySink_Name
+  name: Name
+  nameWithType: TelemetrySink.Name
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.Name
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryProcessors*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryProcessors
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.html#Microsoft_ApplicationInsights_Extensibility_TelemetrySink_TelemetryProcessors
+  name: TelemetryProcessors
+  nameWithType: TelemetrySink.TelemetryProcessors
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetrySink.TelemetryProcessors
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor}
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection{Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  name: ReadOnlyCollection<ITelemetryProcessor>
+  nameWithType: ReadOnlyCollection<ITelemetryProcessor>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor>
+  nameWithType.vb: ReadOnlyCollection(Of ITelemetryProcessor)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor)
+  name.vb: ReadOnlyCollection(Of ITelemetryProcessor)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  - name: <
+  - uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor
+    name: ITelemetryProcessor
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor
+    name: ITelemetryProcessor
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor.html
+  - name: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  name: ReadOnlyCollection<T>
+  nameWithType: ReadOnlyCollection<T>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  nameWithType.vb: ReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  name.vb: ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel

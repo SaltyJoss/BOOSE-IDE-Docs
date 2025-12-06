@@ -1,0 +1,722 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+  commentId: T:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+  id: CommandLineOption
+  parent: Microsoft.Testing.Platform.Extensions.CommandLine
+  children:
+  - Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.#ctor(System.String,System.String,Microsoft.Testing.Platform.Extensions.CommandLine.ArgumentArity,System.Boolean)
+  - Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Arity
+  - Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Description
+  - Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Equals(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption)
+  - Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Equals(System.Object)
+  - Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.GetHashCode
+  - Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.IsHidden
+  - Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Name
+  langs:
+  - csharp
+  - vb
+  name: CommandLineOption
+  nameWithType: CommandLineOption
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+  type: Class
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.CommandLine
+  syntax:
+    content: 'public sealed class CommandLineOption : IEquatable<CommandLineOption>'
+    content.vb: Public NotInheritable Class CommandLineOption Implements IEquatable(Of CommandLineOption)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.#ctor(System.String,System.String,Microsoft.Testing.Platform.Extensions.CommandLine.ArgumentArity,System.Boolean)
+  commentId: M:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.#ctor(System.String,System.String,Microsoft.Testing.Platform.Extensions.CommandLine.ArgumentArity,System.Boolean)
+  id: '#ctor(System.String,System.String,Microsoft.Testing.Platform.Extensions.CommandLine.ArgumentArity,System.Boolean)'
+  parent: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+  langs:
+  - csharp
+  - vb
+  name: CommandLineOption(string, string, ArgumentArity, bool)
+  nameWithType: CommandLineOption.CommandLineOption(string, string, ArgumentArity, bool)
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.CommandLineOption(string, string, Microsoft.Testing.Platform.Extensions.CommandLine.ArgumentArity, bool)
+  type: Constructor
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.CommandLine
+  syntax:
+    content: public CommandLineOption(string name, string description, ArgumentArity arity, bool isHidden)
+    parameters:
+    - id: name
+      type: System.String
+    - id: description
+      type: System.String
+    - id: arity
+      type: Microsoft.Testing.Platform.Extensions.CommandLine.ArgumentArity
+    - id: isHidden
+      type: System.Boolean
+    content.vb: Public Sub New(name As String, description As String, arity As ArgumentArity, isHidden As Boolean)
+  overload: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.#ctor*
+  nameWithType.vb: CommandLineOption.New(String, String, ArgumentArity, Boolean)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.New(String, String, Microsoft.Testing.Platform.Extensions.CommandLine.ArgumentArity, Boolean)
+  name.vb: New(String, String, ArgumentArity, Boolean)
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Equals(System.Object)
+  commentId: M:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: CommandLineOption.Equals(object?)
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Equals(object?)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.CommandLine
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Equals*
+  nameWithType.vb: CommandLineOption.Equals(Object)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Equals(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption)
+  commentId: M:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Equals(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption)
+  id: Equals(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption)
+  parent: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+  langs:
+  - csharp
+  - vb
+  name: Equals(CommandLineOption?)
+  nameWithType: CommandLineOption.Equals(CommandLineOption?)
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Equals(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption?)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.CommandLine
+  example: []
+  syntax:
+    content: public bool Equals(CommandLineOption? other)
+    parameters:
+    - id: other
+      type: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As CommandLineOption) As Boolean
+  overload: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption}.Equals(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption)
+  nameWithType.vb: CommandLineOption.Equals(CommandLineOption)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Equals(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption)
+  name.vb: Equals(CommandLineOption)
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.GetHashCode
+  commentId: M:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: CommandLineOption.GetHashCode()
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.GetHashCode()
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.CommandLine
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.GetHashCode*
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Name
+  commentId: P:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Name
+  id: Name
+  parent: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: CommandLineOption.Name
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Name
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.CommandLine
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Name*
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Description
+  commentId: P:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Description
+  id: Description
+  parent: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: CommandLineOption.Description
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Description
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.CommandLine
+  syntax:
+    content: public string Description { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Description As String
+  overload: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Description*
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Arity
+  commentId: P:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Arity
+  id: Arity
+  parent: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+  langs:
+  - csharp
+  - vb
+  name: Arity
+  nameWithType: CommandLineOption.Arity
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Arity
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.CommandLine
+  syntax:
+    content: public ArgumentArity Arity { get; }
+    parameters: []
+    return:
+      type: Microsoft.Testing.Platform.Extensions.CommandLine.ArgumentArity
+    content.vb: Public ReadOnly Property Arity As ArgumentArity
+  overload: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Arity*
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.IsHidden
+  commentId: P:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.IsHidden
+  id: IsHidden
+  parent: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+  langs:
+  - csharp
+  - vb
+  name: IsHidden
+  nameWithType: CommandLineOption.IsHidden
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.IsHidden
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.CommandLine
+  syntax:
+    content: public bool IsHidden { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsHidden As Boolean
+  overload: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.IsHidden*
+references:
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine
+  commentId: N:Microsoft.Testing.Platform.Extensions.CommandLine
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Extensions.CommandLine
+  nameWithType: Microsoft.Testing.Platform.Extensions.CommandLine
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.CommandLine
+    name: CommandLine
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.CommandLine.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.CommandLine
+    name: CommandLine
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.CommandLine.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption}
+  commentId: T:System.IEquatable{Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<CommandLineOption>
+  nameWithType: IEquatable<CommandLineOption>
+  fullName: System.IEquatable<Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption>
+  nameWithType.vb: IEquatable(Of CommandLineOption)
+  fullName.vb: System.IEquatable(Of Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption)
+  name.vb: IEquatable(Of CommandLineOption)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+    name: CommandLineOption
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+    name: CommandLineOption
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.#ctor*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.#ctor
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.html#Microsoft_Testing_Platform_Extensions_CommandLine_CommandLineOption__ctor_System_String_System_String_Microsoft_Testing_Platform_Extensions_CommandLine_ArgumentArity_System_Boolean_
+  name: CommandLineOption
+  nameWithType: CommandLineOption.CommandLineOption
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.CommandLineOption
+  nameWithType.vb: CommandLineOption.New
+  fullName.vb: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.ArgumentArity
+  commentId: T:Microsoft.Testing.Platform.Extensions.CommandLine.ArgumentArity
+  parent: Microsoft.Testing.Platform.Extensions.CommandLine
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.CommandLine.ArgumentArity.html
+  name: ArgumentArity
+  nameWithType: ArgumentArity
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.ArgumentArity
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Equals*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Equals
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.html#Microsoft_Testing_Platform_Extensions_CommandLine_CommandLineOption_Equals_System_Object_
+  name: Equals
+  nameWithType: CommandLineOption.Equals
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Equals
+- uid: System.IEquatable{Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption}.Equals(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption)
+  commentId: M:System.IEquatable{Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption}.Equals(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption)
+  parent: System.IEquatable{Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(CommandLineOption)
+  nameWithType: IEquatable<CommandLineOption>.Equals(CommandLineOption)
+  fullName: System.IEquatable<Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption>.Equals(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption)
+  nameWithType.vb: IEquatable(Of CommandLineOption).Equals(CommandLineOption)
+  fullName.vb: System.IEquatable(Of Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption).Equals(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption}.Equals(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+    name: CommandLineOption
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption}.Equals(Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+    name: CommandLineOption
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.html
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+  commentId: T:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+  parent: Microsoft.Testing.Platform.Extensions.CommandLine
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.html
+  name: CommandLineOption
+  nameWithType: CommandLineOption
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.GetHashCode*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.GetHashCode
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.html#Microsoft_Testing_Platform_Extensions_CommandLine_CommandLineOption_GetHashCode
+  name: GetHashCode
+  nameWithType: CommandLineOption.GetHashCode
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Name*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Name
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.html#Microsoft_Testing_Platform_Extensions_CommandLine_CommandLineOption_Name
+  name: Name
+  nameWithType: CommandLineOption.Name
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Name
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Description*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Description
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.html#Microsoft_Testing_Platform_Extensions_CommandLine_CommandLineOption_Description
+  name: Description
+  nameWithType: CommandLineOption.Description
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Description
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Arity*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Arity
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.html#Microsoft_Testing_Platform_Extensions_CommandLine_CommandLineOption_Arity
+  name: Arity
+  nameWithType: CommandLineOption.Arity
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.Arity
+- uid: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.IsHidden*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.IsHidden
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.html#Microsoft_Testing_Platform_Extensions_CommandLine_CommandLineOption_IsHidden
+  name: IsHidden
+  nameWithType: CommandLineOption.IsHidden
+  fullName: Microsoft.Testing.Platform.Extensions.CommandLine.CommandLineOption.IsHidden

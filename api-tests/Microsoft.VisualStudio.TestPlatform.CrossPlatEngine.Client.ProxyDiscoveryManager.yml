@@ -1,0 +1,1809 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+  id: ProxyDiscoveryManager
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  children:
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender,Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider)
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestSessionInfo,System.Func{System.String,Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager,Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager})
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Abort
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Close
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveredTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleRawMessage(System.String)
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Initialize(System.Boolean)
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2,System.Boolean)
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.UpdateTestProcessStartInfo(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo)
+  langs:
+  - csharp
+  - vb
+  name: ProxyDiscoveryManager
+  nameWithType: ProxyDiscoveryManager
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+  type: Class
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: 'public class ProxyDiscoveryManager : IProxyDiscoveryManager, IBaseProxy, ITestDiscoveryEventsHandler2, ITestMessageEventHandler'
+    content.vb: Public Class ProxyDiscoveryManager Implements IProxyDiscoveryManager, IBaseProxy, ITestDiscoveryEventsHandler2, ITestMessageEventHandler
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestSessionInfo,System.Func{System.String,Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager,Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestSessionInfo,System.Func{System.String,Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager,Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager})
+  id: '#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestSessionInfo,System.Func{System.String,Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager,Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager})'
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: ProxyDiscoveryManager(TestSessionInfo, Func<string, ProxyDiscoveryManager, ProxyOperationManager>)
+  nameWithType: ProxyDiscoveryManager.ProxyDiscoveryManager(TestSessionInfo, Func<string, ProxyDiscoveryManager, ProxyOperationManager>)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.ProxyDiscoveryManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestSessionInfo, System.Func<string, Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager, Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager>)
+  type: Constructor
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: public ProxyDiscoveryManager(TestSessionInfo testSessionInfo, Func<string, ProxyDiscoveryManager, ProxyOperationManager> proxyOperationManagerCreator)
+    parameters:
+    - id: testSessionInfo
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestSessionInfo
+    - id: proxyOperationManagerCreator
+      type: System.Func{System.String,Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager,Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager}
+    content.vb: Public Sub New(testSessionInfo As TestSessionInfo, proxyOperationManagerCreator As Func(Of String, ProxyDiscoveryManager, ProxyOperationManager))
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.#ctor*
+  nameWithType.vb: ProxyDiscoveryManager.New(TestSessionInfo, Func(Of String, ProxyDiscoveryManager, ProxyOperationManager))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.New(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestSessionInfo, System.Func(Of String, Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager, Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager))
+  name.vb: New(TestSessionInfo, Func(Of String, ProxyDiscoveryManager, ProxyOperationManager))
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender,Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender,Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider)
+  id: '#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender,Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider)'
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: ProxyDiscoveryManager(IRequestData, ITestRequestSender, ITestRuntimeProvider)
+  nameWithType: ProxyDiscoveryManager.ProxyDiscoveryManager(IRequestData, ITestRequestSender, ITestRuntimeProvider)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.ProxyDiscoveryManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData, Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender, Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider)
+  type: Constructor
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: public ProxyDiscoveryManager(IRequestData requestData, ITestRequestSender testRequestSender, ITestRuntimeProvider testHostManager)
+    parameters:
+    - id: requestData
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+    - id: testRequestSender
+      type: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+    - id: testHostManager
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider
+    content.vb: Public Sub New(requestData As IRequestData, testRequestSender As ITestRequestSender, testHostManager As ITestRuntimeProvider)
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.#ctor*
+  nameWithType.vb: ProxyDiscoveryManager.New(IRequestData, ITestRequestSender, ITestRuntimeProvider)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.New(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData, Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender, Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider)
+  name.vb: New(IRequestData, ITestRequestSender, ITestRuntimeProvider)
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Initialize(System.Boolean)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Initialize(System.Boolean)
+  id: Initialize(System.Boolean)
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: Initialize(bool)
+  nameWithType: ProxyDiscoveryManager.Initialize(bool)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Initialize(bool)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  example: []
+  syntax:
+    content: public void Initialize(bool skipDefaultAdapters)
+    parameters:
+    - id: skipDefaultAdapters
+      type: System.Boolean
+    content.vb: Public Sub Initialize(skipDefaultAdapters As Boolean)
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Initialize*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Initialize(System.Boolean)
+  nameWithType.vb: ProxyDiscoveryManager.Initialize(Boolean)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Initialize(Boolean)
+  name.vb: Initialize(Boolean)
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2,System.Boolean)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2,System.Boolean)
+  id: InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2,System.Boolean)
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: InitializeDiscovery(DiscoveryCriteria, ITestDiscoveryEventsHandler2, bool)
+  nameWithType: ProxyDiscoveryManager.InitializeDiscovery(DiscoveryCriteria, ITestDiscoveryEventsHandler2, bool)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2, bool)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  example: []
+  syntax:
+    content: public void InitializeDiscovery(DiscoveryCriteria discoveryCriteria, ITestDiscoveryEventsHandler2 eventHandler, bool skipDefaultAdapters)
+    parameters:
+    - id: discoveryCriteria
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+    - id: eventHandler
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    - id: skipDefaultAdapters
+      type: System.Boolean
+    content.vb: Public Sub InitializeDiscovery(discoveryCriteria As DiscoveryCriteria, eventHandler As ITestDiscoveryEventsHandler2, skipDefaultAdapters As Boolean)
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.InitializeDiscovery*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2,System.Boolean)
+  nameWithType.vb: ProxyDiscoveryManager.InitializeDiscovery(DiscoveryCriteria, ITestDiscoveryEventsHandler2, Boolean)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2, Boolean)
+  name.vb: InitializeDiscovery(DiscoveryCriteria, ITestDiscoveryEventsHandler2, Boolean)
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  id: DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: DiscoverTests(DiscoveryCriteria, ITestDiscoveryEventsHandler2)
+  nameWithType: ProxyDiscoveryManager.DiscoverTests(DiscoveryCriteria, ITestDiscoveryEventsHandler2)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  example: []
+  syntax:
+    content: public void DiscoverTests(DiscoveryCriteria discoveryCriteria, ITestDiscoveryEventsHandler2 eventHandler)
+    parameters:
+    - id: discoveryCriteria
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+    - id: eventHandler
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    content.vb: Public Sub DiscoverTests(discoveryCriteria As DiscoveryCriteria, eventHandler As ITestDiscoveryEventsHandler2)
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.DiscoverTests*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Abort
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Abort
+  id: Abort
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: Abort()
+  nameWithType: ProxyDiscoveryManager.Abort()
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Abort()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  example: []
+  syntax:
+    content: public void Abort()
+    content.vb: Public Sub Abort()
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Abort*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  id: Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: Abort(ITestDiscoveryEventsHandler2)
+  nameWithType: ProxyDiscoveryManager.Abort(ITestDiscoveryEventsHandler2)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  example: []
+  syntax:
+    content: public void Abort(ITestDiscoveryEventsHandler2 eventHandler)
+    parameters:
+    - id: eventHandler
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    content.vb: Public Sub Abort(eventHandler As ITestDiscoveryEventsHandler2)
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Abort*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Close
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Close
+  id: Close
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: ProxyDiscoveryManager.Close()
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Close()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  example: []
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close()
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Close*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Close
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  id: HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: HandleDiscoveryComplete(DiscoveryCompleteEventArgs, IEnumerable<TestCase>?)
+  nameWithType: ProxyDiscoveryManager.HandleDiscoveryComplete(DiscoveryCompleteEventArgs, IEnumerable<TestCase>?)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs, System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase>?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  example: []
+  syntax:
+    content: public void HandleDiscoveryComplete(DiscoveryCompleteEventArgs discoveryCompleteEventArgs, IEnumerable<TestCase>? lastChunk)
+    parameters:
+    - id: discoveryCompleteEventArgs
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs
+    - id: lastChunk
+      type: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+    content.vb: Public Sub HandleDiscoveryComplete(discoveryCompleteEventArgs As DiscoveryCompleteEventArgs, lastChunk As IEnumerable(Of TestCase))
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveryComplete*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  nameWithType.vb: ProxyDiscoveryManager.HandleDiscoveryComplete(DiscoveryCompleteEventArgs, IEnumerable(Of TestCase))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs, System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase))
+  name.vb: HandleDiscoveryComplete(DiscoveryCompleteEventArgs, IEnumerable(Of TestCase))
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveredTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveredTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  id: HandleDiscoveredTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: HandleDiscoveredTests(IEnumerable<TestCase>?)
+  nameWithType: ProxyDiscoveryManager.HandleDiscoveredTests(IEnumerable<TestCase>?)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveredTests(System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase>?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  example: []
+  syntax:
+    content: public void HandleDiscoveredTests(IEnumerable<TestCase>? discoveredTestCases)
+    parameters:
+    - id: discoveredTestCases
+      type: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+    content.vb: Public Sub HandleDiscoveredTests(discoveredTestCases As IEnumerable(Of TestCase))
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveredTests*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.HandleDiscoveredTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  nameWithType.vb: ProxyDiscoveryManager.HandleDiscoveredTests(IEnumerable(Of TestCase))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveredTests(System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase))
+  name.vb: HandleDiscoveredTests(IEnumerable(Of TestCase))
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleRawMessage(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleRawMessage(System.String)
+  id: HandleRawMessage(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: HandleRawMessage(string)
+  nameWithType: ProxyDiscoveryManager.HandleRawMessage(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleRawMessage(string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  example: []
+  syntax:
+    content: public void HandleRawMessage(string rawMessage)
+    parameters:
+    - id: rawMessage
+      type: System.String
+    content.vb: Public Sub HandleRawMessage(rawMessage As String)
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleRawMessage*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(System.String)
+  nameWithType.vb: ProxyDiscoveryManager.HandleRawMessage(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleRawMessage(String)
+  name.vb: HandleRawMessage(String)
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+  id: HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: HandleLogMessage(TestMessageLevel, string?)
+  nameWithType: ProxyDiscoveryManager.HandleLogMessage(TestMessageLevel, string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel, string?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  example: []
+  syntax:
+    content: public void HandleLogMessage(TestMessageLevel level, string? message)
+    parameters:
+    - id: level
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel
+    - id: message
+      type: System.String
+    content.vb: Public Sub HandleLogMessage(level As TestMessageLevel, message As String)
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleLogMessage*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+  nameWithType.vb: ProxyDiscoveryManager.HandleLogMessage(TestMessageLevel, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel, String)
+  name.vb: HandleLogMessage(TestMessageLevel, String)
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.UpdateTestProcessStartInfo(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.UpdateTestProcessStartInfo(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo)
+  id: UpdateTestProcessStartInfo(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo)
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateTestProcessStartInfo(TestProcessStartInfo)
+  nameWithType: ProxyDiscoveryManager.UpdateTestProcessStartInfo(TestProcessStartInfo)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.UpdateTestProcessStartInfo(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  example: []
+  syntax:
+    content: public virtual TestProcessStartInfo UpdateTestProcessStartInfo(TestProcessStartInfo testProcessStartInfo)
+    parameters:
+    - id: testProcessStartInfo
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo
+    content.vb: Public Overridable Function UpdateTestProcessStartInfo(testProcessStartInfo As TestProcessStartInfo) As TestProcessStartInfo
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.UpdateTestProcessStartInfo*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy.UpdateTestProcessStartInfo(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo)
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine
+    name: CrossPlatEngine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine
+    name: CrossPlatEngine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html
+  name: IProxyDiscoveryManager
+  nameWithType: IProxyDiscoveryManager
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy.html
+  name: IBaseProxy
+  nameWithType: IBaseProxy
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.html
+  name: ITestDiscoveryEventsHandler2
+  nameWithType: ITestDiscoveryEventsHandler2
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html
+  name: ITestMessageEventHandler
+  nameWithType: ITestMessageEventHandler
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyDiscoveryManager__ctor_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_TestSessionInfo_System_Func_System_String_Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyDiscoveryManager_Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyOperationManager__
+  name: ProxyDiscoveryManager
+  nameWithType: ProxyDiscoveryManager.ProxyDiscoveryManager
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.ProxyDiscoveryManager
+  nameWithType.vb: ProxyDiscoveryManager.New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.New
+  name.vb: New
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestSessionInfo
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestSessionInfo
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestSessionInfo.html
+  name: TestSessionInfo
+  nameWithType: TestSessionInfo
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestSessionInfo
+- uid: System.Func{System.String,Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager,Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager}
+  commentId: T:System.Func{System.String,Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager,Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<string, ProxyDiscoveryManager, ProxyOperationManager>
+  nameWithType: Func<string, ProxyDiscoveryManager, ProxyOperationManager>
+  fullName: System.Func<string, Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager, Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager>
+  nameWithType.vb: Func(Of String, ProxyDiscoveryManager, ProxyOperationManager)
+  fullName.vb: System.Func(Of String, Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager, Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager)
+  name.vb: Func(Of String, ProxyDiscoveryManager, ProxyOperationManager)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+    name: ProxyDiscoveryManager
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+    name: ProxyOperationManager
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager
+    name: ProxyDiscoveryManager
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+    name: ProxyOperationManager
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.html
+  - name: )
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData.html
+  name: IRequestData
+  nameWithType: IRequestData
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.html
+  name: ITestRequestSender
+  nameWithType: ITestRequestSender
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider.html
+  name: ITestRuntimeProvider
+  nameWithType: ITestRuntimeProvider
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Host
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host
+    name: Host
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host
+    name: Host
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.html
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Initialize*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Initialize
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyDiscoveryManager_Initialize_System_Boolean_
+  name: Initialize
+  nameWithType: ProxyDiscoveryManager.Initialize
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Initialize
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Initialize(System.Boolean)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Initialize(System.Boolean)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Initialize_System_Boolean_
+  name: Initialize(bool)
+  nameWithType: IProxyDiscoveryManager.Initialize(bool)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Initialize(bool)
+  nameWithType.vb: IProxyDiscoveryManager.Initialize(Boolean)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Initialize(Boolean)
+  name.vb: Initialize(Boolean)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Initialize(System.Boolean)
+    name: Initialize
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Initialize_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Initialize(System.Boolean)
+    name: Initialize
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Initialize_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.InitializeDiscovery*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.InitializeDiscovery
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyDiscoveryManager_InitializeDiscovery_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_System_Boolean_
+  name: InitializeDiscovery
+  nameWithType: ProxyDiscoveryManager.InitializeDiscovery
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.InitializeDiscovery
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2,System.Boolean)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2,System.Boolean)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_InitializeDiscovery_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_System_Boolean_
+  name: InitializeDiscovery(DiscoveryCriteria, ITestDiscoveryEventsHandler2, bool)
+  nameWithType: IProxyDiscoveryManager.InitializeDiscovery(DiscoveryCriteria, ITestDiscoveryEventsHandler2, bool)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2, bool)
+  nameWithType.vb: IProxyDiscoveryManager.InitializeDiscovery(DiscoveryCriteria, ITestDiscoveryEventsHandler2, Boolean)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2, Boolean)
+  name.vb: InitializeDiscovery(DiscoveryCriteria, ITestDiscoveryEventsHandler2, Boolean)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2,System.Boolean)
+    name: InitializeDiscovery
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_InitializeDiscovery_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_System_Boolean_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+    name: DiscoveryCriteria
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    name: ITestDiscoveryEventsHandler2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2,System.Boolean)
+    name: InitializeDiscovery
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_InitializeDiscovery_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_System_Boolean_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+    name: DiscoveryCriteria
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    name: ITestDiscoveryEventsHandler2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria.html
+  name: DiscoveryCriteria
+  nameWithType: DiscoveryCriteria
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.DiscoverTests*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.DiscoverTests
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyDiscoveryManager_DiscoverTests_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_
+  name: DiscoverTests
+  nameWithType: ProxyDiscoveryManager.DiscoverTests
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.DiscoverTests
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_DiscoverTests_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_
+  name: DiscoverTests(DiscoveryCriteria, ITestDiscoveryEventsHandler2)
+  nameWithType: IProxyDiscoveryManager.DiscoverTests(DiscoveryCriteria, ITestDiscoveryEventsHandler2)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+    name: DiscoverTests
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_DiscoverTests_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+    name: DiscoveryCriteria
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    name: ITestDiscoveryEventsHandler2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+    name: DiscoverTests
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_DiscoverTests_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+    name: DiscoveryCriteria
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    name: ITestDiscoveryEventsHandler2
+    isExternal: true
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Abort*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Abort
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyDiscoveryManager_Abort
+  name: Abort
+  nameWithType: ProxyDiscoveryManager.Abort
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Abort
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Abort
+  name: Abort()
+  nameWithType: IProxyDiscoveryManager.Abort()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort
+    name: Abort
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Abort
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort
+    name: Abort
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Abort
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Abort_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_
+  name: Abort(ITestDiscoveryEventsHandler2)
+  nameWithType: IProxyDiscoveryManager.Abort(ITestDiscoveryEventsHandler2)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+    name: Abort
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Abort_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    name: ITestDiscoveryEventsHandler2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+    name: Abort
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Abort_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    name: ITestDiscoveryEventsHandler2
+    isExternal: true
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Close*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Close
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyDiscoveryManager_Close
+  name: Close
+  nameWithType: ProxyDiscoveryManager.Close
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.Close
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Close
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Close
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Close
+  name: Close()
+  nameWithType: IProxyDiscoveryManager.Close()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Close()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Close
+    name: Close
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Close
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Close
+    name: Close
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Close
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveryComplete*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveryComplete
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyDiscoveryManager_HandleDiscoveryComplete_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCompleteEventArgs_System_Collections_Generic_IEnumerable_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase__
+  name: HandleDiscoveryComplete
+  nameWithType: ProxyDiscoveryManager.HandleDiscoveryComplete
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveryComplete
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: HandleDiscoveryComplete(DiscoveryCompleteEventArgs, IEnumerable<TestCase>)
+  nameWithType: ITestDiscoveryEventsHandler2.HandleDiscoveryComplete(DiscoveryCompleteEventArgs, IEnumerable<TestCase>)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs, System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase>)
+  nameWithType.vb: ITestDiscoveryEventsHandler2.HandleDiscoveryComplete(DiscoveryCompleteEventArgs, IEnumerable(Of TestCase))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs, System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase))
+  name.vb: HandleDiscoveryComplete(DiscoveryCompleteEventArgs, IEnumerable(Of TestCase))
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+    name: HandleDiscoveryComplete
+    isExternal: true
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs
+    name: DiscoveryCompleteEventArgs
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    name: TestCase
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+    name: HandleDiscoveryComplete
+    isExternal: true
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs
+    name: DiscoveryCompleteEventArgs
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    name: TestCase
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs.html
+  name: DiscoveryCompleteEventArgs
+  nameWithType: DiscoveryCompleteEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs
+- uid: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TestCase>
+  nameWithType: IEnumerable<TestCase>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase>
+  nameWithType.vb: IEnumerable(Of TestCase)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase)
+  name.vb: IEnumerable(Of TestCase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    name: TestCase
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    name: TestCase
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveredTests*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveredTests
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyDiscoveryManager_HandleDiscoveredTests_System_Collections_Generic_IEnumerable_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase__
+  name: HandleDiscoveredTests
+  nameWithType: ProxyDiscoveryManager.HandleDiscoveredTests
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleDiscoveredTests
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.HandleDiscoveredTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.HandleDiscoveredTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: HandleDiscoveredTests(IEnumerable<TestCase>)
+  nameWithType: ITestDiscoveryEventsHandler2.HandleDiscoveredTests(IEnumerable<TestCase>)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.HandleDiscoveredTests(System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase>)
+  nameWithType.vb: ITestDiscoveryEventsHandler2.HandleDiscoveredTests(IEnumerable(Of TestCase))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.HandleDiscoveredTests(System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase))
+  name.vb: HandleDiscoveredTests(IEnumerable(Of TestCase))
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.HandleDiscoveredTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+    name: HandleDiscoveredTests
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    name: TestCase
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.HandleDiscoveredTests(System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase})
+    name: HandleDiscoveredTests
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    name: TestCase
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleRawMessage*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleRawMessage
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyDiscoveryManager_HandleRawMessage_System_String_
+  name: HandleRawMessage
+  nameWithType: ProxyDiscoveryManager.HandleRawMessage
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleRawMessage
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleRawMessage_System_String_
+  name: HandleRawMessage(string)
+  nameWithType: ITestMessageEventHandler.HandleRawMessage(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(string)
+  nameWithType.vb: ITestMessageEventHandler.HandleRawMessage(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(String)
+  name.vb: HandleRawMessage(String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(System.String)
+    name: HandleRawMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleRawMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleRawMessage(System.String)
+    name: HandleRawMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleRawMessage_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleLogMessage*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleLogMessage
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyDiscoveryManager_HandleLogMessage_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_TestMessageLevel_System_String_
+  name: HandleLogMessage
+  nameWithType: ProxyDiscoveryManager.HandleLogMessage
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.HandleLogMessage
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleLogMessage_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_TestMessageLevel_System_String_
+  name: HandleLogMessage(TestMessageLevel, string)
+  nameWithType: ITestMessageEventHandler.HandleLogMessage(TestMessageLevel, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel, string)
+  nameWithType.vb: ITestMessageEventHandler.HandleLogMessage(TestMessageLevel, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel, String)
+  name.vb: HandleLogMessage(TestMessageLevel, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+    name: HandleLogMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleLogMessage_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_TestMessageLevel_System_String_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel
+    name: TestMessageLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.HandleLogMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String)
+    name: HandleLogMessage
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_HandleLogMessage_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_TestMessageLevel_System_String_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel
+    name: TestMessageLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel.html
+  name: TestMessageLevel
+  nameWithType: TestMessageLevel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.html
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.UpdateTestProcessStartInfo*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.UpdateTestProcessStartInfo
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyDiscoveryManager_UpdateTestProcessStartInfo_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProcessStartInfo_
+  name: UpdateTestProcessStartInfo
+  nameWithType: ProxyDiscoveryManager.UpdateTestProcessStartInfo
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyDiscoveryManager.UpdateTestProcessStartInfo
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy.UpdateTestProcessStartInfo(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy.UpdateTestProcessStartInfo(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy
+  isExternal: true
+  name: UpdateTestProcessStartInfo(TestProcessStartInfo)
+  nameWithType: IBaseProxy.UpdateTestProcessStartInfo(TestProcessStartInfo)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy.UpdateTestProcessStartInfo(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy.UpdateTestProcessStartInfo(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo)
+    name: UpdateTestProcessStartInfo
+    isExternal: true
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo
+    name: TestProcessStartInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy.UpdateTestProcessStartInfo(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo)
+    name: UpdateTestProcessStartInfo
+    isExternal: true
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo
+    name: TestProcessStartInfo
+    isExternal: true
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo.html
+  name: TestProcessStartInfo
+  nameWithType: TestProcessStartInfo
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html

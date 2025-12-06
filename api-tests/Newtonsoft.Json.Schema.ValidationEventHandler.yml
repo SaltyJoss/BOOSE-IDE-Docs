@@ -1,0 +1,600 @@
+### YamlMime:ManagedReference
+items:
+- uid: Newtonsoft.Json.Schema.ValidationEventHandler
+  commentId: T:Newtonsoft.Json.Schema.ValidationEventHandler
+  id: ValidationEventHandler
+  parent: Newtonsoft.Json.Schema
+  children:
+  - Newtonsoft.Json.Schema.ValidationEventHandler.#ctor(System.Object,System.IntPtr)
+  - Newtonsoft.Json.Schema.ValidationEventHandler.BeginInvoke(System.Object,Newtonsoft.Json.Schema.ValidationEventArgs,System.AsyncCallback,System.Object)
+  - Newtonsoft.Json.Schema.ValidationEventHandler.EndInvoke(System.IAsyncResult)
+  - Newtonsoft.Json.Schema.ValidationEventHandler.Invoke(System.Object,Newtonsoft.Json.Schema.ValidationEventArgs)
+  langs:
+  - csharp
+  - vb
+  name: ValidationEventHandler
+  nameWithType: ValidationEventHandler
+  fullName: Newtonsoft.Json.Schema.ValidationEventHandler
+  type: Delegate
+  assemblies:
+  - Newtonsoft.Json
+  namespace: Newtonsoft.Json.Schema
+  syntax:
+    content: >-
+      [Obsolete("JSON Schema validation has been moved to its own package. See https://www.newtonsoft.com/jsonschema for more details.")]
+
+      public delegate void ValidationEventHandler(object sender, ValidationEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: Newtonsoft.Json.Schema.ValidationEventArgs
+    content.vb: >-
+      <Obsolete("JSON Schema validation has been moved to its own package. See https://www.newtonsoft.com/jsonschema for more details.")>
+
+      Public Delegate Sub ValidationEventHandler(sender As Object, e As ValidationEventArgs)
+  extensionMethods:
+  - System.Delegate.Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Object,System.EventArgs,System.String)
+  - System.Delegate.Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Object,System.Object,System.String)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: JSON Schema validation has been moved to its own package. See https://www.newtonsoft.com/jsonschema for more details.
+- uid: Newtonsoft.Json.Schema.ValidationEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:Newtonsoft.Json.Schema.ValidationEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: Newtonsoft.Json.Schema.ValidationEventHandler
+  langs:
+  - csharp
+  - vb
+  name: ValidationEventHandler(object, IntPtr)
+  nameWithType: ValidationEventHandler.ValidationEventHandler(object, IntPtr)
+  fullName: Newtonsoft.Json.Schema.ValidationEventHandler.ValidationEventHandler(object, System.IntPtr)
+  type: Constructor
+  assemblies:
+  - Newtonsoft.Json
+  namespace: Newtonsoft.Json.Schema
+  syntax:
+    content: public ValidationEventHandler(object @object, IntPtr method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: Newtonsoft.Json.Schema.ValidationEventHandler.#ctor*
+  nameWithType.vb: ValidationEventHandler.New(Object, IntPtr)
+  fullName.vb: Newtonsoft.Json.Schema.ValidationEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: Newtonsoft.Json.Schema.ValidationEventHandler.Invoke(System.Object,Newtonsoft.Json.Schema.ValidationEventArgs)
+  commentId: M:Newtonsoft.Json.Schema.ValidationEventHandler.Invoke(System.Object,Newtonsoft.Json.Schema.ValidationEventArgs)
+  id: Invoke(System.Object,Newtonsoft.Json.Schema.ValidationEventArgs)
+  parent: Newtonsoft.Json.Schema.ValidationEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(object, ValidationEventArgs)
+  nameWithType: ValidationEventHandler.Invoke(object, ValidationEventArgs)
+  fullName: Newtonsoft.Json.Schema.ValidationEventHandler.Invoke(object, Newtonsoft.Json.Schema.ValidationEventArgs)
+  type: Method
+  assemblies:
+  - Newtonsoft.Json
+  namespace: Newtonsoft.Json.Schema
+  syntax:
+    content: public virtual void Invoke(object sender, ValidationEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: Newtonsoft.Json.Schema.ValidationEventArgs
+    content.vb: Public Overridable Sub Invoke(sender As Object, e As ValidationEventArgs)
+  overload: Newtonsoft.Json.Schema.ValidationEventHandler.Invoke*
+  nameWithType.vb: ValidationEventHandler.Invoke(Object, ValidationEventArgs)
+  fullName.vb: Newtonsoft.Json.Schema.ValidationEventHandler.Invoke(Object, Newtonsoft.Json.Schema.ValidationEventArgs)
+  name.vb: Invoke(Object, ValidationEventArgs)
+- uid: Newtonsoft.Json.Schema.ValidationEventHandler.BeginInvoke(System.Object,Newtonsoft.Json.Schema.ValidationEventArgs,System.AsyncCallback,System.Object)
+  commentId: M:Newtonsoft.Json.Schema.ValidationEventHandler.BeginInvoke(System.Object,Newtonsoft.Json.Schema.ValidationEventArgs,System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.Object,Newtonsoft.Json.Schema.ValidationEventArgs,System.AsyncCallback,System.Object)
+  parent: Newtonsoft.Json.Schema.ValidationEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(object, ValidationEventArgs, AsyncCallback, object)
+  nameWithType: ValidationEventHandler.BeginInvoke(object, ValidationEventArgs, AsyncCallback, object)
+  fullName: Newtonsoft.Json.Schema.ValidationEventHandler.BeginInvoke(object, Newtonsoft.Json.Schema.ValidationEventArgs, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - Newtonsoft.Json
+  namespace: Newtonsoft.Json.Schema
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(object sender, ValidationEventArgs e, AsyncCallback callback, object @object)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: Newtonsoft.Json.Schema.ValidationEventArgs
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(sender As Object, e As ValidationEventArgs, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: Newtonsoft.Json.Schema.ValidationEventHandler.BeginInvoke*
+  nameWithType.vb: ValidationEventHandler.BeginInvoke(Object, ValidationEventArgs, AsyncCallback, Object)
+  fullName.vb: Newtonsoft.Json.Schema.ValidationEventHandler.BeginInvoke(Object, Newtonsoft.Json.Schema.ValidationEventArgs, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(Object, ValidationEventArgs, AsyncCallback, Object)
+- uid: Newtonsoft.Json.Schema.ValidationEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:Newtonsoft.Json.Schema.ValidationEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: Newtonsoft.Json.Schema.ValidationEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: ValidationEventHandler.EndInvoke(IAsyncResult)
+  fullName: Newtonsoft.Json.Schema.ValidationEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - Newtonsoft.Json
+  namespace: Newtonsoft.Json.Schema
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: Newtonsoft.Json.Schema.ValidationEventHandler.EndInvoke*
+references:
+- uid: Newtonsoft.Json.Schema
+  commentId: N:Newtonsoft.Json.Schema
+  isExternal: true
+  href: Newtonsoft.html
+  name: Newtonsoft.Json.Schema
+  nameWithType: Newtonsoft.Json.Schema
+  fullName: Newtonsoft.Json.Schema
+  spec.csharp:
+  - uid: Newtonsoft
+    name: Newtonsoft
+    isExternal: true
+    href: Newtonsoft.html
+  - name: .
+  - uid: Newtonsoft.Json
+    name: Json
+    isExternal: true
+    href: Newtonsoft.Json.html
+  - name: .
+  - uid: Newtonsoft.Json.Schema
+    name: Schema
+    isExternal: true
+    href: Newtonsoft.Json.Schema.html
+  spec.vb:
+  - uid: Newtonsoft
+    name: Newtonsoft
+    isExternal: true
+    href: Newtonsoft.html
+  - name: .
+  - uid: Newtonsoft.Json
+    name: Json
+    isExternal: true
+    href: Newtonsoft.Json.html
+  - name: .
+  - uid: Newtonsoft.Json.Schema
+    name: Schema
+    isExternal: true
+    href: Newtonsoft.Json.Schema.html
+- uid: System.Delegate.Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Object,System.EventArgs,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities
+  definition: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  name: SafeInvoke(Delegate, object, EventArgs, string)
+  nameWithType: MulticastDelegateUtilities.SafeInvoke(Delegate, object, EventArgs, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, object, System.EventArgs, string)
+  nameWithType.vb: MulticastDelegateUtilities.SafeInvoke(Delegate, Object, EventArgs, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, Object, System.EventArgs, String)
+  name.vb: SafeInvoke(Delegate, Object, EventArgs, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Delegate.Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Object,System.Object,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities
+  definition: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  name: SafeInvoke(Delegate, object, object, string)
+  nameWithType: MulticastDelegateUtilities.SafeInvoke(Delegate, object, object, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, object, object, string)
+  nameWithType.vb: MulticastDelegateUtilities.SafeInvoke(Delegate, Object, Object, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, Object, Object, String)
+  name.vb: SafeInvoke(Delegate, Object, Object, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Newtonsoft.Json.Schema.ValidationEventArgs
+  commentId: T:Newtonsoft.Json.Schema.ValidationEventArgs
+  parent: Newtonsoft.Json.Schema
+  isExternal: true
+  href: Newtonsoft.Json.Schema.ValidationEventArgs.html
+  name: ValidationEventArgs
+  nameWithType: ValidationEventArgs
+  fullName: Newtonsoft.Json.Schema.ValidationEventArgs
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  name: SafeInvoke(Delegate, object, EventArgs, string)
+  nameWithType: MulticastDelegateUtilities.SafeInvoke(Delegate, object, EventArgs, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, object, System.EventArgs, string)
+  nameWithType.vb: MulticastDelegateUtilities.SafeInvoke(Delegate, Object, EventArgs, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, Object, System.EventArgs, String)
+  name.vb: SafeInvoke(Delegate, Object, EventArgs, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities
+  commentId: T:Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html
+  name: MulticastDelegateUtilities
+  nameWithType: MulticastDelegateUtilities
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  name: SafeInvoke(Delegate, object, object, string)
+  nameWithType: MulticastDelegateUtilities.SafeInvoke(Delegate, object, object, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, object, object, string)
+  nameWithType.vb: MulticastDelegateUtilities.SafeInvoke(Delegate, Object, Object, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, Object, Object, String)
+  name.vb: SafeInvoke(Delegate, Object, Object, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities
+  commentId: N:Microsoft.VisualStudio.TestPlatform.Utilities
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.Utilities
+  nameWithType: Microsoft.VisualStudio.TestPlatform.Utilities
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities
+    name: Utilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities
+    name: Utilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.html
+- uid: Newtonsoft.Json.Schema.ValidationEventHandler.#ctor*
+  commentId: Overload:Newtonsoft.Json.Schema.ValidationEventHandler.#ctor
+  isExternal: true
+  href: Newtonsoft.Json.Schema.ValidationEventHandler.html#Newtonsoft_Json_Schema_ValidationEventHandler__ctor_System_Object_System_IntPtr_
+  name: ValidationEventHandler
+  nameWithType: ValidationEventHandler.ValidationEventHandler
+  fullName: Newtonsoft.Json.Schema.ValidationEventHandler.ValidationEventHandler
+  nameWithType.vb: ValidationEventHandler.New
+  fullName.vb: Newtonsoft.Json.Schema.ValidationEventHandler.New
+  name.vb: New
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Newtonsoft.Json.Schema.ValidationEventHandler.Invoke*
+  commentId: Overload:Newtonsoft.Json.Schema.ValidationEventHandler.Invoke
+  isExternal: true
+  href: Newtonsoft.Json.Schema.ValidationEventHandler.html#Newtonsoft_Json_Schema_ValidationEventHandler_Invoke_System_Object_Newtonsoft_Json_Schema_ValidationEventArgs_
+  name: Invoke
+  nameWithType: ValidationEventHandler.Invoke
+  fullName: Newtonsoft.Json.Schema.ValidationEventHandler.Invoke
+- uid: Newtonsoft.Json.Schema.ValidationEventHandler.BeginInvoke*
+  commentId: Overload:Newtonsoft.Json.Schema.ValidationEventHandler.BeginInvoke
+  isExternal: true
+  href: Newtonsoft.Json.Schema.ValidationEventHandler.html#Newtonsoft_Json_Schema_ValidationEventHandler_BeginInvoke_System_Object_Newtonsoft_Json_Schema_ValidationEventArgs_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: ValidationEventHandler.BeginInvoke
+  fullName: Newtonsoft.Json.Schema.ValidationEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Newtonsoft.Json.Schema.ValidationEventHandler.EndInvoke*
+  commentId: Overload:Newtonsoft.Json.Schema.ValidationEventHandler.EndInvoke
+  isExternal: true
+  href: Newtonsoft.Json.Schema.ValidationEventHandler.html#Newtonsoft_Json_Schema_ValidationEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: ValidationEventHandler.EndInvoke
+  fullName: Newtonsoft.Json.Schema.ValidationEventHandler.EndInvoke

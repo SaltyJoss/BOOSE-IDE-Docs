@@ -1,0 +1,649 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler
+  commentId: T:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler
+  id: AssemblyResolveEventHandler
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  children:
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.#ctor(System.Object,System.IntPtr)
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.BeginInvoke(System.Object,Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs,System.AsyncCallback,System.Object)
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.EndInvoke(System.IAsyncResult)
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.Invoke(System.Object,Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs)
+  langs:
+  - csharp
+  - vb
+  name: AssemblyResolveEventHandler
+  nameWithType: AssemblyResolveEventHandler
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler
+  type: Delegate
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: public delegate Assembly? AssemblyResolveEventHandler(object? sender, AssemblyResolveEventArgs? args)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: args
+      type: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs
+    return:
+      type: System.Reflection.Assembly
+    content.vb: Public Delegate Function AssemblyResolveEventHandler(sender As Object, args As AssemblyResolveEventArgs) As Assembly
+  extensionMethods:
+  - System.Delegate.Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Object,System.EventArgs,System.String)
+  - System.Delegate.Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Object,System.Object,System.String)
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler
+  langs:
+  - csharp
+  - vb
+  name: AssemblyResolveEventHandler(object, IntPtr)
+  nameWithType: AssemblyResolveEventHandler.AssemblyResolveEventHandler(object, IntPtr)
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.AssemblyResolveEventHandler(object, System.IntPtr)
+  type: Constructor
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: public AssemblyResolveEventHandler(object @object, IntPtr method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.#ctor*
+  nameWithType.vb: AssemblyResolveEventHandler.New(Object, IntPtr)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.Invoke(System.Object,Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.Invoke(System.Object,Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs)
+  id: Invoke(System.Object,Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs)
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(object?, AssemblyResolveEventArgs?)
+  nameWithType: AssemblyResolveEventHandler.Invoke(object?, AssemblyResolveEventArgs?)
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.Invoke(object?, Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: public virtual Assembly? Invoke(object? sender, AssemblyResolveEventArgs? args)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: args
+      type: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs
+    return:
+      type: System.Reflection.Assembly
+    content.vb: Public Overridable Function Invoke(sender As Object, args As AssemblyResolveEventArgs) As Assembly
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.Invoke*
+  nameWithType.vb: AssemblyResolveEventHandler.Invoke(Object, AssemblyResolveEventArgs)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.Invoke(Object, Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs)
+  name.vb: Invoke(Object, AssemblyResolveEventArgs)
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.BeginInvoke(System.Object,Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs,System.AsyncCallback,System.Object)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.BeginInvoke(System.Object,Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs,System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.Object,Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs,System.AsyncCallback,System.Object)
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(object?, AssemblyResolveEventArgs?, AsyncCallback, object)
+  nameWithType: AssemblyResolveEventHandler.BeginInvoke(object?, AssemblyResolveEventArgs?, AsyncCallback, object)
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.BeginInvoke(object?, Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs?, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(object? sender, AssemblyResolveEventArgs? args, AsyncCallback callback, object @object)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: args
+      type: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(sender As Object, args As AssemblyResolveEventArgs, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.BeginInvoke*
+  nameWithType.vb: AssemblyResolveEventHandler.BeginInvoke(Object, AssemblyResolveEventArgs, AsyncCallback, Object)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.BeginInvoke(Object, Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(Object, AssemblyResolveEventArgs, AsyncCallback, Object)
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: AssemblyResolveEventHandler.EndInvoke(IAsyncResult)
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: public virtual Assembly? EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    return:
+      type: System.Reflection.Assembly
+    content.vb: Public Overridable Function EndInvoke(result As IAsyncResult) As Assembly
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.EndInvoke*
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  commentId: N:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  nameWithType: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+    name: PlatformAbstractions
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+    name: PlatformAbstractions
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.html
+- uid: System.Delegate.Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Object,System.EventArgs,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities
+  definition: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  name: SafeInvoke(Delegate, object, EventArgs, string)
+  nameWithType: MulticastDelegateUtilities.SafeInvoke(Delegate, object, EventArgs, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, object, System.EventArgs, string)
+  nameWithType.vb: MulticastDelegateUtilities.SafeInvoke(Delegate, Object, EventArgs, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, Object, System.EventArgs, String)
+  name.vb: SafeInvoke(Delegate, Object, EventArgs, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Delegate.Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Object,System.Object,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities
+  definition: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  name: SafeInvoke(Delegate, object, object, string)
+  nameWithType: MulticastDelegateUtilities.SafeInvoke(Delegate, object, object, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, object, object, string)
+  nameWithType.vb: MulticastDelegateUtilities.SafeInvoke(Delegate, Object, Object, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, Object, Object, String)
+  name.vb: SafeInvoke(Delegate, Object, Object, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs
+  commentId: T:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs.html
+  name: AssemblyResolveEventArgs
+  nameWithType: AssemblyResolveEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventArgs
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  name: SafeInvoke(Delegate, object, EventArgs, string)
+  nameWithType: MulticastDelegateUtilities.SafeInvoke(Delegate, object, EventArgs, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, object, System.EventArgs, string)
+  nameWithType.vb: MulticastDelegateUtilities.SafeInvoke(Delegate, Object, EventArgs, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, Object, System.EventArgs, String)
+  name.vb: SafeInvoke(Delegate, Object, EventArgs, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities
+  commentId: T:Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html
+  name: MulticastDelegateUtilities
+  nameWithType: MulticastDelegateUtilities
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  name: SafeInvoke(Delegate, object, object, string)
+  nameWithType: MulticastDelegateUtilities.SafeInvoke(Delegate, object, object, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, object, object, string)
+  nameWithType.vb: MulticastDelegateUtilities.SafeInvoke(Delegate, Object, Object, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, Object, Object, String)
+  name.vb: SafeInvoke(Delegate, Object, Object, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities
+  commentId: N:Microsoft.VisualStudio.TestPlatform.Utilities
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.Utilities
+  nameWithType: Microsoft.VisualStudio.TestPlatform.Utilities
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities
+    name: Utilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities
+    name: Utilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.html
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_AssemblyResolveEventHandler__ctor_System_Object_System_IntPtr_
+  name: AssemblyResolveEventHandler
+  nameWithType: AssemblyResolveEventHandler.AssemblyResolveEventHandler
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.AssemblyResolveEventHandler
+  nameWithType.vb: AssemblyResolveEventHandler.New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.New
+  name.vb: New
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.Invoke*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.Invoke
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_AssemblyResolveEventHandler_Invoke_System_Object_Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_AssemblyResolveEventArgs_
+  name: Invoke
+  nameWithType: AssemblyResolveEventHandler.Invoke
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.Invoke
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.BeginInvoke*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.BeginInvoke
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_AssemblyResolveEventHandler_BeginInvoke_System_Object_Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_AssemblyResolveEventArgs_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: AssemblyResolveEventHandler.BeginInvoke
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.EndInvoke*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.EndInvoke
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_AssemblyResolveEventHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: AssemblyResolveEventHandler.EndInvoke
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.AssemblyResolveEventHandler.EndInvoke

@@ -1,0 +1,406 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator
+  commentId: T:Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator
+  id: IMetricSeriesAggregator
+  parent: Microsoft.ApplicationInsights.Metrics.Extensibility
+  children:
+  - Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.CompleteAggregation(System.DateTimeOffset)
+  - Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.CreateAggregateUnsafe(System.DateTimeOffset)
+  - Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.DataSeries
+  - Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.Reset(System.DateTimeOffset)
+  - Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.Reset(System.DateTimeOffset,Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricValueFilter)
+  - Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TrackValue(System.Double)
+  - Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TrackValue(System.Object)
+  - Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TryRecycle
+  langs:
+  - csharp
+  - vb
+  name: IMetricSeriesAggregator
+  nameWithType: IMetricSeriesAggregator
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator
+  type: Interface
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics.Extensibility
+  syntax:
+    content: public interface IMetricSeriesAggregator
+    content.vb: Public Interface IMetricSeriesAggregator
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TryRecycle
+  commentId: M:Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TryRecycle
+  id: TryRecycle
+  parent: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator
+  langs:
+  - csharp
+  - vb
+  name: TryRecycle()
+  nameWithType: IMetricSeriesAggregator.TryRecycle()
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TryRecycle()
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics.Extensibility
+  syntax:
+    content: bool TryRecycle()
+    return:
+      type: System.Boolean
+    content.vb: Function TryRecycle() As Boolean
+  overload: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TryRecycle*
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.Reset(System.DateTimeOffset,Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricValueFilter)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.Reset(System.DateTimeOffset,Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricValueFilter)
+  id: Reset(System.DateTimeOffset,Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricValueFilter)
+  parent: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator
+  langs:
+  - csharp
+  - vb
+  name: Reset(DateTimeOffset, IMetricValueFilter)
+  nameWithType: IMetricSeriesAggregator.Reset(DateTimeOffset, IMetricValueFilter)
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.Reset(System.DateTimeOffset, Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricValueFilter)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics.Extensibility
+  syntax:
+    content: void Reset(DateTimeOffset periodStart, IMetricValueFilter valueFilter)
+    parameters:
+    - id: periodStart
+      type: System.DateTimeOffset
+    - id: valueFilter
+      type: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricValueFilter
+    content.vb: Sub Reset(periodStart As DateTimeOffset, valueFilter As IMetricValueFilter)
+  overload: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.Reset*
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.Reset(System.DateTimeOffset)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.Reset(System.DateTimeOffset)
+  id: Reset(System.DateTimeOffset)
+  parent: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator
+  langs:
+  - csharp
+  - vb
+  name: Reset(DateTimeOffset)
+  nameWithType: IMetricSeriesAggregator.Reset(DateTimeOffset)
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.Reset(System.DateTimeOffset)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics.Extensibility
+  syntax:
+    content: void Reset(DateTimeOffset periodStart)
+    parameters:
+    - id: periodStart
+      type: System.DateTimeOffset
+    content.vb: Sub Reset(periodStart As DateTimeOffset)
+  overload: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.Reset*
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.CompleteAggregation(System.DateTimeOffset)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.CompleteAggregation(System.DateTimeOffset)
+  id: CompleteAggregation(System.DateTimeOffset)
+  parent: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator
+  langs:
+  - csharp
+  - vb
+  name: CompleteAggregation(DateTimeOffset)
+  nameWithType: IMetricSeriesAggregator.CompleteAggregation(DateTimeOffset)
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.CompleteAggregation(System.DateTimeOffset)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics.Extensibility
+  syntax:
+    content: MetricAggregate CompleteAggregation(DateTimeOffset periodEnd)
+    parameters:
+    - id: periodEnd
+      type: System.DateTimeOffset
+    return:
+      type: Microsoft.ApplicationInsights.Metrics.MetricAggregate
+    content.vb: Function CompleteAggregation(periodEnd As DateTimeOffset) As MetricAggregate
+  overload: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.CompleteAggregation*
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.CreateAggregateUnsafe(System.DateTimeOffset)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.CreateAggregateUnsafe(System.DateTimeOffset)
+  id: CreateAggregateUnsafe(System.DateTimeOffset)
+  parent: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator
+  langs:
+  - csharp
+  - vb
+  name: CreateAggregateUnsafe(DateTimeOffset)
+  nameWithType: IMetricSeriesAggregator.CreateAggregateUnsafe(DateTimeOffset)
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.CreateAggregateUnsafe(System.DateTimeOffset)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics.Extensibility
+  syntax:
+    content: MetricAggregate CreateAggregateUnsafe(DateTimeOffset periodEnd)
+    parameters:
+    - id: periodEnd
+      type: System.DateTimeOffset
+    return:
+      type: Microsoft.ApplicationInsights.Metrics.MetricAggregate
+    content.vb: Function CreateAggregateUnsafe(periodEnd As DateTimeOffset) As MetricAggregate
+  overload: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.CreateAggregateUnsafe*
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TrackValue(System.Double)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TrackValue(System.Double)
+  id: TrackValue(System.Double)
+  parent: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator
+  langs:
+  - csharp
+  - vb
+  name: TrackValue(double)
+  nameWithType: IMetricSeriesAggregator.TrackValue(double)
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TrackValue(double)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics.Extensibility
+  syntax:
+    content: void TrackValue(double metricValue)
+    parameters:
+    - id: metricValue
+      type: System.Double
+    content.vb: Sub TrackValue(metricValue As Double)
+  overload: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TrackValue*
+  nameWithType.vb: IMetricSeriesAggregator.TrackValue(Double)
+  fullName.vb: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TrackValue(Double)
+  name.vb: TrackValue(Double)
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TrackValue(System.Object)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TrackValue(System.Object)
+  id: TrackValue(System.Object)
+  parent: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator
+  langs:
+  - csharp
+  - vb
+  name: TrackValue(object)
+  nameWithType: IMetricSeriesAggregator.TrackValue(object)
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TrackValue(object)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics.Extensibility
+  syntax:
+    content: void TrackValue(object metricValue)
+    parameters:
+    - id: metricValue
+      type: System.Object
+    content.vb: Sub TrackValue(metricValue As Object)
+  overload: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TrackValue*
+  nameWithType.vb: IMetricSeriesAggregator.TrackValue(Object)
+  fullName.vb: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TrackValue(Object)
+  name.vb: TrackValue(Object)
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.DataSeries
+  commentId: P:Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.DataSeries
+  id: DataSeries
+  parent: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator
+  langs:
+  - csharp
+  - vb
+  name: DataSeries
+  nameWithType: IMetricSeriesAggregator.DataSeries
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.DataSeries
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics.Extensibility
+  syntax:
+    content: MetricSeries DataSeries { get; }
+    parameters: []
+    return:
+      type: Microsoft.ApplicationInsights.Metrics.MetricSeries
+    content.vb: ReadOnly Property DataSeries As MetricSeries
+  overload: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.DataSeries*
+references:
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility
+  commentId: N:Microsoft.ApplicationInsights.Metrics.Extensibility
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Metrics.Extensibility
+  nameWithType: Microsoft.ApplicationInsights.Metrics.Extensibility
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Metrics
+    name: Metrics
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Metrics.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.Extensibility.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Metrics
+    name: Metrics
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Metrics.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.Extensibility.html
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TryRecycle*
+  commentId: Overload:Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TryRecycle
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.html#Microsoft_ApplicationInsights_Metrics_Extensibility_IMetricSeriesAggregator_TryRecycle
+  name: TryRecycle
+  nameWithType: IMetricSeriesAggregator.TryRecycle
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TryRecycle
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.Reset*
+  commentId: Overload:Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.Reset
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.html#Microsoft_ApplicationInsights_Metrics_Extensibility_IMetricSeriesAggregator_Reset_System_DateTimeOffset_Microsoft_ApplicationInsights_Metrics_Extensibility_IMetricValueFilter_
+  name: Reset
+  nameWithType: IMetricSeriesAggregator.Reset
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.Reset
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricValueFilter
+  commentId: T:Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricValueFilter
+  parent: Microsoft.ApplicationInsights.Metrics.Extensibility
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricValueFilter.html
+  name: IMetricValueFilter
+  nameWithType: IMetricValueFilter
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricValueFilter
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.CompleteAggregation*
+  commentId: Overload:Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.CompleteAggregation
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.html#Microsoft_ApplicationInsights_Metrics_Extensibility_IMetricSeriesAggregator_CompleteAggregation_System_DateTimeOffset_
+  name: CompleteAggregation
+  nameWithType: IMetricSeriesAggregator.CompleteAggregation
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.CompleteAggregation
+- uid: Microsoft.ApplicationInsights.Metrics.MetricAggregate
+  commentId: T:Microsoft.ApplicationInsights.Metrics.MetricAggregate
+  parent: Microsoft.ApplicationInsights.Metrics
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricAggregate.html
+  name: MetricAggregate
+  nameWithType: MetricAggregate
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricAggregate
+- uid: Microsoft.ApplicationInsights.Metrics
+  commentId: N:Microsoft.ApplicationInsights.Metrics
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Metrics
+  nameWithType: Microsoft.ApplicationInsights.Metrics
+  fullName: Microsoft.ApplicationInsights.Metrics
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Metrics
+    name: Metrics
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Metrics
+    name: Metrics
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.html
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.CreateAggregateUnsafe*
+  commentId: Overload:Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.CreateAggregateUnsafe
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.html#Microsoft_ApplicationInsights_Metrics_Extensibility_IMetricSeriesAggregator_CreateAggregateUnsafe_System_DateTimeOffset_
+  name: CreateAggregateUnsafe
+  nameWithType: IMetricSeriesAggregator.CreateAggregateUnsafe
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.CreateAggregateUnsafe
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TrackValue*
+  commentId: Overload:Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TrackValue
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.html#Microsoft_ApplicationInsights_Metrics_Extensibility_IMetricSeriesAggregator_TrackValue_System_Double_
+  name: TrackValue
+  nameWithType: IMetricSeriesAggregator.TrackValue
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.TrackValue
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.DataSeries*
+  commentId: Overload:Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.DataSeries
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.html#Microsoft_ApplicationInsights_Metrics_Extensibility_IMetricSeriesAggregator_DataSeries
+  name: DataSeries
+  nameWithType: IMetricSeriesAggregator.DataSeries
+  fullName: Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator.DataSeries
+- uid: Microsoft.ApplicationInsights.Metrics.MetricSeries
+  commentId: T:Microsoft.ApplicationInsights.Metrics.MetricSeries
+  parent: Microsoft.ApplicationInsights.Metrics
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricSeries.html
+  name: MetricSeries
+  nameWithType: MetricSeries
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricSeries

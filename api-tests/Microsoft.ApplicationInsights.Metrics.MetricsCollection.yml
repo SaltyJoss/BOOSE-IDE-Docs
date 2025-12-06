@@ -1,0 +1,1353 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection
+  commentId: T:Microsoft.ApplicationInsights.Metrics.MetricsCollection
+  id: MetricsCollection
+  parent: Microsoft.ApplicationInsights.Metrics
+  children:
+  - Microsoft.ApplicationInsights.Metrics.MetricsCollection.Clear
+  - Microsoft.ApplicationInsights.Metrics.MetricsCollection.Contains(Microsoft.ApplicationInsights.Metric)
+  - Microsoft.ApplicationInsights.Metrics.MetricsCollection.Contains(Microsoft.ApplicationInsights.Metrics.MetricIdentifier)
+  - Microsoft.ApplicationInsights.Metrics.MetricsCollection.CopyTo(Microsoft.ApplicationInsights.Metric[],System.Int32)
+  - Microsoft.ApplicationInsights.Metrics.MetricsCollection.Count
+  - Microsoft.ApplicationInsights.Metrics.MetricsCollection.GetEnumerator
+  - Microsoft.ApplicationInsights.Metrics.MetricsCollection.GetOrCreate(Microsoft.ApplicationInsights.Metrics.MetricIdentifier,Microsoft.ApplicationInsights.Metrics.MetricConfiguration)
+  - Microsoft.ApplicationInsights.Metrics.MetricsCollection.IsReadOnly
+  - Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove(Microsoft.ApplicationInsights.Metric)
+  - Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove(Microsoft.ApplicationInsights.Metrics.MetricIdentifier)
+  - Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove(Microsoft.ApplicationInsights.Metrics.MetricIdentifier,Microsoft.ApplicationInsights.Metric@)
+  - Microsoft.ApplicationInsights.Metrics.MetricsCollection.TryGet(Microsoft.ApplicationInsights.Metrics.MetricIdentifier,Microsoft.ApplicationInsights.Metric@)
+  langs:
+  - csharp
+  - vb
+  name: MetricsCollection
+  nameWithType: MetricsCollection
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection
+  type: Class
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics
+  syntax:
+    content: 'public sealed class MetricsCollection : ICollection<Metric>, IEnumerable<Metric>, IEnumerable'
+    content.vb: Public NotInheritable Class MetricsCollection Implements ICollection(Of Metric), IEnumerable(Of Metric), IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}
+  - System.Collections.Generic.IEnumerable{Microsoft.ApplicationInsights.Metric}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.GetOrCreate(Microsoft.ApplicationInsights.Metrics.MetricIdentifier,Microsoft.ApplicationInsights.Metrics.MetricConfiguration)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.MetricsCollection.GetOrCreate(Microsoft.ApplicationInsights.Metrics.MetricIdentifier,Microsoft.ApplicationInsights.Metrics.MetricConfiguration)
+  id: GetOrCreate(Microsoft.ApplicationInsights.Metrics.MetricIdentifier,Microsoft.ApplicationInsights.Metrics.MetricConfiguration)
+  parent: Microsoft.ApplicationInsights.Metrics.MetricsCollection
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreate(MetricIdentifier, MetricConfiguration)
+  nameWithType: MetricsCollection.GetOrCreate(MetricIdentifier, MetricConfiguration)
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.GetOrCreate(Microsoft.ApplicationInsights.Metrics.MetricIdentifier, Microsoft.ApplicationInsights.Metrics.MetricConfiguration)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics
+  syntax:
+    content: public Metric GetOrCreate(MetricIdentifier metricIdentifier, MetricConfiguration metricConfiguration)
+    parameters:
+    - id: metricIdentifier
+      type: Microsoft.ApplicationInsights.Metrics.MetricIdentifier
+    - id: metricConfiguration
+      type: Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+    return:
+      type: Microsoft.ApplicationInsights.Metric
+    content.vb: Public Function GetOrCreate(metricIdentifier As MetricIdentifier, metricConfiguration As MetricConfiguration) As Metric
+  overload: Microsoft.ApplicationInsights.Metrics.MetricsCollection.GetOrCreate*
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.TryGet(Microsoft.ApplicationInsights.Metrics.MetricIdentifier,Microsoft.ApplicationInsights.Metric@)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.MetricsCollection.TryGet(Microsoft.ApplicationInsights.Metrics.MetricIdentifier,Microsoft.ApplicationInsights.Metric@)
+  id: TryGet(Microsoft.ApplicationInsights.Metrics.MetricIdentifier,Microsoft.ApplicationInsights.Metric@)
+  parent: Microsoft.ApplicationInsights.Metrics.MetricsCollection
+  langs:
+  - csharp
+  - vb
+  name: TryGet(MetricIdentifier, out Metric)
+  nameWithType: MetricsCollection.TryGet(MetricIdentifier, out Metric)
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.TryGet(Microsoft.ApplicationInsights.Metrics.MetricIdentifier, out Microsoft.ApplicationInsights.Metric)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics
+  syntax:
+    content: public bool TryGet(MetricIdentifier metricIdentifier, out Metric metric)
+    parameters:
+    - id: metricIdentifier
+      type: Microsoft.ApplicationInsights.Metrics.MetricIdentifier
+    - id: metric
+      type: Microsoft.ApplicationInsights.Metric
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGet(metricIdentifier As MetricIdentifier, metric As Metric) As Boolean
+  overload: Microsoft.ApplicationInsights.Metrics.MetricsCollection.TryGet*
+  nameWithType.vb: MetricsCollection.TryGet(MetricIdentifier, Metric)
+  fullName.vb: Microsoft.ApplicationInsights.Metrics.MetricsCollection.TryGet(Microsoft.ApplicationInsights.Metrics.MetricIdentifier, Microsoft.ApplicationInsights.Metric)
+  name.vb: TryGet(MetricIdentifier, Metric)
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Clear
+  commentId: M:Microsoft.ApplicationInsights.Metrics.MetricsCollection.Clear
+  id: Clear
+  parent: Microsoft.ApplicationInsights.Metrics.MetricsCollection
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: MetricsCollection.Clear()
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Clear()
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Clear*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Clear
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Contains(Microsoft.ApplicationInsights.Metric)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.MetricsCollection.Contains(Microsoft.ApplicationInsights.Metric)
+  id: Contains(Microsoft.ApplicationInsights.Metric)
+  parent: Microsoft.ApplicationInsights.Metrics.MetricsCollection
+  langs:
+  - csharp
+  - vb
+  name: Contains(Metric)
+  nameWithType: MetricsCollection.Contains(Metric)
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Contains(Microsoft.ApplicationInsights.Metric)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics
+  example: []
+  syntax:
+    content: public bool Contains(Metric metric)
+    parameters:
+    - id: metric
+      type: Microsoft.ApplicationInsights.Metric
+    return:
+      type: System.Boolean
+    content.vb: Public Function Contains(metric As Metric) As Boolean
+  overload: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Contains*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Contains(Microsoft.ApplicationInsights.Metric)
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Contains(Microsoft.ApplicationInsights.Metrics.MetricIdentifier)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.MetricsCollection.Contains(Microsoft.ApplicationInsights.Metrics.MetricIdentifier)
+  id: Contains(Microsoft.ApplicationInsights.Metrics.MetricIdentifier)
+  parent: Microsoft.ApplicationInsights.Metrics.MetricsCollection
+  langs:
+  - csharp
+  - vb
+  name: Contains(MetricIdentifier)
+  nameWithType: MetricsCollection.Contains(MetricIdentifier)
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Contains(Microsoft.ApplicationInsights.Metrics.MetricIdentifier)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics
+  syntax:
+    content: public bool Contains(MetricIdentifier metricIdentifier)
+    parameters:
+    - id: metricIdentifier
+      type: Microsoft.ApplicationInsights.Metrics.MetricIdentifier
+    return:
+      type: System.Boolean
+    content.vb: Public Function Contains(metricIdentifier As MetricIdentifier) As Boolean
+  overload: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Contains*
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.CopyTo(Microsoft.ApplicationInsights.Metric[],System.Int32)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.MetricsCollection.CopyTo(Microsoft.ApplicationInsights.Metric[],System.Int32)
+  id: CopyTo(Microsoft.ApplicationInsights.Metric[],System.Int32)
+  parent: Microsoft.ApplicationInsights.Metrics.MetricsCollection
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(Metric[], int)
+  nameWithType: MetricsCollection.CopyTo(Metric[], int)
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.CopyTo(Microsoft.ApplicationInsights.Metric[], int)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics
+  example: []
+  syntax:
+    content: public void CopyTo(Metric[] array, int arrayIndex)
+    parameters:
+    - id: array
+      type: Microsoft.ApplicationInsights.Metric[]
+    - id: arrayIndex
+      type: System.Int32
+    content.vb: Public Sub CopyTo(array As Metric(), arrayIndex As Integer)
+  overload: Microsoft.ApplicationInsights.Metrics.MetricsCollection.CopyTo*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.CopyTo(Microsoft.ApplicationInsights.Metric[],System.Int32)
+  nameWithType.vb: MetricsCollection.CopyTo(Metric(), Integer)
+  fullName.vb: Microsoft.ApplicationInsights.Metrics.MetricsCollection.CopyTo(Microsoft.ApplicationInsights.Metric(), Integer)
+  name.vb: CopyTo(Metric(), Integer)
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove(Microsoft.ApplicationInsights.Metric)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove(Microsoft.ApplicationInsights.Metric)
+  id: Remove(Microsoft.ApplicationInsights.Metric)
+  parent: Microsoft.ApplicationInsights.Metrics.MetricsCollection
+  langs:
+  - csharp
+  - vb
+  name: Remove(Metric)
+  nameWithType: MetricsCollection.Remove(Metric)
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove(Microsoft.ApplicationInsights.Metric)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics
+  example: []
+  syntax:
+    content: public bool Remove(Metric metric)
+    parameters:
+    - id: metric
+      type: Microsoft.ApplicationInsights.Metric
+    return:
+      type: System.Boolean
+    content.vb: Public Function Remove(metric As Metric) As Boolean
+  overload: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Remove(Microsoft.ApplicationInsights.Metric)
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove(Microsoft.ApplicationInsights.Metrics.MetricIdentifier)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove(Microsoft.ApplicationInsights.Metrics.MetricIdentifier)
+  id: Remove(Microsoft.ApplicationInsights.Metrics.MetricIdentifier)
+  parent: Microsoft.ApplicationInsights.Metrics.MetricsCollection
+  langs:
+  - csharp
+  - vb
+  name: Remove(MetricIdentifier)
+  nameWithType: MetricsCollection.Remove(MetricIdentifier)
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove(Microsoft.ApplicationInsights.Metrics.MetricIdentifier)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics
+  syntax:
+    content: public bool Remove(MetricIdentifier metricIdentifier)
+    parameters:
+    - id: metricIdentifier
+      type: Microsoft.ApplicationInsights.Metrics.MetricIdentifier
+    return:
+      type: System.Boolean
+    content.vb: Public Function Remove(metricIdentifier As MetricIdentifier) As Boolean
+  overload: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove*
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove(Microsoft.ApplicationInsights.Metrics.MetricIdentifier,Microsoft.ApplicationInsights.Metric@)
+  commentId: M:Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove(Microsoft.ApplicationInsights.Metrics.MetricIdentifier,Microsoft.ApplicationInsights.Metric@)
+  id: Remove(Microsoft.ApplicationInsights.Metrics.MetricIdentifier,Microsoft.ApplicationInsights.Metric@)
+  parent: Microsoft.ApplicationInsights.Metrics.MetricsCollection
+  langs:
+  - csharp
+  - vb
+  name: Remove(MetricIdentifier, out Metric)
+  nameWithType: MetricsCollection.Remove(MetricIdentifier, out Metric)
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove(Microsoft.ApplicationInsights.Metrics.MetricIdentifier, out Microsoft.ApplicationInsights.Metric)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics
+  syntax:
+    content: public bool Remove(MetricIdentifier metricIdentifier, out Metric removedMetric)
+    parameters:
+    - id: metricIdentifier
+      type: Microsoft.ApplicationInsights.Metrics.MetricIdentifier
+    - id: removedMetric
+      type: Microsoft.ApplicationInsights.Metric
+    return:
+      type: System.Boolean
+    content.vb: Public Function Remove(metricIdentifier As MetricIdentifier, removedMetric As Metric) As Boolean
+  overload: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove*
+  nameWithType.vb: MetricsCollection.Remove(MetricIdentifier, Metric)
+  fullName.vb: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove(Microsoft.ApplicationInsights.Metrics.MetricIdentifier, Microsoft.ApplicationInsights.Metric)
+  name.vb: Remove(MetricIdentifier, Metric)
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.GetEnumerator
+  commentId: M:Microsoft.ApplicationInsights.Metrics.MetricsCollection.GetEnumerator
+  id: GetEnumerator
+  parent: Microsoft.ApplicationInsights.Metrics.MetricsCollection
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: MetricsCollection.GetEnumerator()
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.GetEnumerator()
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics
+  example: []
+  syntax:
+    content: public IEnumerator<Metric> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{Microsoft.ApplicationInsights.Metric}
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of Metric)
+  overload: Microsoft.ApplicationInsights.Metrics.MetricsCollection.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{Microsoft.ApplicationInsights.Metric}.GetEnumerator
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Count
+  commentId: P:Microsoft.ApplicationInsights.Metrics.MetricsCollection.Count
+  id: Count
+  parent: Microsoft.ApplicationInsights.Metrics.MetricsCollection
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: MetricsCollection.Count
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Count
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Count*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Count
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.IsReadOnly
+  commentId: P:Microsoft.ApplicationInsights.Metrics.MetricsCollection.IsReadOnly
+  id: IsReadOnly
+  parent: Microsoft.ApplicationInsights.Metrics.MetricsCollection
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: MetricsCollection.IsReadOnly
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.IsReadOnly
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Metrics
+  example: []
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: Microsoft.ApplicationInsights.Metrics.MetricsCollection.IsReadOnly*
+  implements:
+  - System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.IsReadOnly
+references:
+- uid: Microsoft.ApplicationInsights.Metrics
+  commentId: N:Microsoft.ApplicationInsights.Metrics
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Metrics
+  nameWithType: Microsoft.ApplicationInsights.Metrics
+  fullName: Microsoft.ApplicationInsights.Metrics
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Metrics
+    name: Metrics
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Metrics
+    name: Metrics
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metrics.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}
+  commentId: T:System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<Metric>
+  nameWithType: ICollection<Metric>
+  fullName: System.Collections.Generic.ICollection<Microsoft.ApplicationInsights.Metric>
+  nameWithType.vb: ICollection(Of Metric)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.ApplicationInsights.Metric)
+  name.vb: ICollection(Of Metric)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: Microsoft.ApplicationInsights.Metric
+    name: Metric
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metric.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.ApplicationInsights.Metric
+    name: Metric
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metric.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Microsoft.ApplicationInsights.Metric}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.ApplicationInsights.Metric}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Metric>
+  nameWithType: IEnumerable<Metric>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.ApplicationInsights.Metric>
+  nameWithType.vb: IEnumerable(Of Metric)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.ApplicationInsights.Metric)
+  name.vb: IEnumerable(Of Metric)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.ApplicationInsights.Metric
+    name: Metric
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metric.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.ApplicationInsights.Metric
+    name: Metric
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metric.html
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.GetOrCreate*
+  commentId: Overload:Microsoft.ApplicationInsights.Metrics.MetricsCollection.GetOrCreate
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricsCollection.html#Microsoft_ApplicationInsights_Metrics_MetricsCollection_GetOrCreate_Microsoft_ApplicationInsights_Metrics_MetricIdentifier_Microsoft_ApplicationInsights_Metrics_MetricConfiguration_
+  name: GetOrCreate
+  nameWithType: MetricsCollection.GetOrCreate
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.GetOrCreate
+- uid: Microsoft.ApplicationInsights.Metrics.MetricIdentifier
+  commentId: T:Microsoft.ApplicationInsights.Metrics.MetricIdentifier
+  parent: Microsoft.ApplicationInsights.Metrics
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricIdentifier.html
+  name: MetricIdentifier
+  nameWithType: MetricIdentifier
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricIdentifier
+- uid: Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+  commentId: T:Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+  parent: Microsoft.ApplicationInsights.Metrics
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricConfiguration.html
+  name: MetricConfiguration
+  nameWithType: MetricConfiguration
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricConfiguration
+- uid: Microsoft.ApplicationInsights.Metric
+  commentId: T:Microsoft.ApplicationInsights.Metric
+  parent: Microsoft.ApplicationInsights
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metric.html
+  name: Metric
+  nameWithType: Metric
+  fullName: Microsoft.ApplicationInsights.Metric
+- uid: Microsoft.ApplicationInsights
+  commentId: N:Microsoft.ApplicationInsights
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights
+  nameWithType: Microsoft.ApplicationInsights
+  fullName: Microsoft.ApplicationInsights
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.TryGet*
+  commentId: Overload:Microsoft.ApplicationInsights.Metrics.MetricsCollection.TryGet
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricsCollection.html#Microsoft_ApplicationInsights_Metrics_MetricsCollection_TryGet_Microsoft_ApplicationInsights_Metrics_MetricIdentifier_Microsoft_ApplicationInsights_Metric__
+  name: TryGet
+  nameWithType: MetricsCollection.TryGet
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.TryGet
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Clear*
+  commentId: Overload:Microsoft.ApplicationInsights.Metrics.MetricsCollection.Clear
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricsCollection.html#Microsoft_ApplicationInsights_Metrics_MetricsCollection_Clear
+  name: Clear
+  nameWithType: MetricsCollection.Clear
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Clear
+- uid: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Clear
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Clear
+  parent: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  name: Clear()
+  nameWithType: ICollection<Metric>.Clear()
+  fullName: System.Collections.Generic.ICollection<Microsoft.ApplicationInsights.Metric>.Clear()
+  nameWithType.vb: ICollection(Of Metric).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.ApplicationInsights.Metric).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear
+  - name: (
+  - name: )
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Contains*
+  commentId: Overload:Microsoft.ApplicationInsights.Metrics.MetricsCollection.Contains
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricsCollection.html#Microsoft_ApplicationInsights_Metrics_MetricsCollection_Contains_Microsoft_ApplicationInsights_Metric_
+  name: Contains
+  nameWithType: MetricsCollection.Contains
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Contains
+- uid: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Contains(Microsoft.ApplicationInsights.Metric)
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Contains(Microsoft.ApplicationInsights.Metric)
+  parent: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  name: Contains(Metric)
+  nameWithType: ICollection<Metric>.Contains(Metric)
+  fullName: System.Collections.Generic.ICollection<Microsoft.ApplicationInsights.Metric>.Contains(Microsoft.ApplicationInsights.Metric)
+  nameWithType.vb: ICollection(Of Metric).Contains(Metric)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.ApplicationInsights.Metric).Contains(Microsoft.ApplicationInsights.Metric)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Contains(Microsoft.ApplicationInsights.Metric)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Metric
+    name: Metric
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metric.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Contains(Microsoft.ApplicationInsights.Metric)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Metric
+    name: Metric
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metric.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.CopyTo*
+  commentId: Overload:Microsoft.ApplicationInsights.Metrics.MetricsCollection.CopyTo
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricsCollection.html#Microsoft_ApplicationInsights_Metrics_MetricsCollection_CopyTo_Microsoft_ApplicationInsights_Metric___System_Int32_
+  name: CopyTo
+  nameWithType: MetricsCollection.CopyTo
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.CopyTo
+- uid: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.CopyTo(Microsoft.ApplicationInsights.Metric[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.CopyTo(Microsoft.ApplicationInsights.Metric[],System.Int32)
+  parent: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  name: CopyTo(Metric[], int)
+  nameWithType: ICollection<Metric>.CopyTo(Metric[], int)
+  fullName: System.Collections.Generic.ICollection<Microsoft.ApplicationInsights.Metric>.CopyTo(Microsoft.ApplicationInsights.Metric[], int)
+  nameWithType.vb: ICollection(Of Metric).CopyTo(Metric(), Integer)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.ApplicationInsights.Metric).CopyTo(Microsoft.ApplicationInsights.Metric(), Integer)
+  name.vb: CopyTo(Metric(), Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.CopyTo(Microsoft.ApplicationInsights.Metric[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Metric
+    name: Metric
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metric.html
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.CopyTo(Microsoft.ApplicationInsights.Metric[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Metric
+    name: Metric
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metric.html
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.ApplicationInsights.Metric[]
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metric.html
+  name: Metric[]
+  nameWithType: Metric[]
+  fullName: Microsoft.ApplicationInsights.Metric[]
+  nameWithType.vb: Metric()
+  fullName.vb: Microsoft.ApplicationInsights.Metric()
+  name.vb: Metric()
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Metric
+    name: Metric
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metric.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Metric
+    name: Metric
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metric.html
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  name: CopyTo(T[], int)
+  nameWithType: ICollection<T>.CopyTo(T[], int)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], int)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Integer)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), Integer)
+  name.vb: CopyTo(T(), Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto
+  - name: (
+  - name: T
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove*
+  commentId: Overload:Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricsCollection.html#Microsoft_ApplicationInsights_Metrics_MetricsCollection_Remove_Microsoft_ApplicationInsights_Metric_
+  name: Remove
+  nameWithType: MetricsCollection.Remove
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Remove
+- uid: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Remove(Microsoft.ApplicationInsights.Metric)
+  commentId: M:System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Remove(Microsoft.ApplicationInsights.Metric)
+  parent: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  name: Remove(Metric)
+  nameWithType: ICollection<Metric>.Remove(Metric)
+  fullName: System.Collections.Generic.ICollection<Microsoft.ApplicationInsights.Metric>.Remove(Microsoft.ApplicationInsights.Metric)
+  nameWithType.vb: ICollection(Of Metric).Remove(Metric)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.ApplicationInsights.Metric).Remove(Microsoft.ApplicationInsights.Metric)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Remove(Microsoft.ApplicationInsights.Metric)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Metric
+    name: Metric
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metric.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Remove(Microsoft.ApplicationInsights.Metric)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Metric
+    name: Metric
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metric.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.GetEnumerator*
+  commentId: Overload:Microsoft.ApplicationInsights.Metrics.MetricsCollection.GetEnumerator
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricsCollection.html#Microsoft_ApplicationInsights_Metrics_MetricsCollection_GetEnumerator
+  name: GetEnumerator
+  nameWithType: MetricsCollection.GetEnumerator
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{Microsoft.ApplicationInsights.Metric}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{Microsoft.ApplicationInsights.Metric}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{Microsoft.ApplicationInsights.Metric}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<Metric>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.ApplicationInsights.Metric>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of Metric).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.ApplicationInsights.Metric).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{Microsoft.ApplicationInsights.Metric}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{Microsoft.ApplicationInsights.Metric}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{Microsoft.ApplicationInsights.Metric}
+  commentId: T:System.Collections.Generic.IEnumerator{Microsoft.ApplicationInsights.Metric}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<Metric>
+  nameWithType: IEnumerator<Metric>
+  fullName: System.Collections.Generic.IEnumerator<Microsoft.ApplicationInsights.Metric>
+  nameWithType.vb: IEnumerator(Of Metric)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of Microsoft.ApplicationInsights.Metric)
+  name.vb: IEnumerator(Of Metric)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: Microsoft.ApplicationInsights.Metric
+    name: Metric
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metric.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.ApplicationInsights.Metric
+    name: Metric
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Metric.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Count*
+  commentId: Overload:Microsoft.ApplicationInsights.Metrics.MetricsCollection.Count
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricsCollection.html#Microsoft_ApplicationInsights_Metrics_MetricsCollection_Count
+  name: Count
+  nameWithType: MetricsCollection.Count
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.Count
+- uid: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Count
+  commentId: P:System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.Count
+  parent: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}
+  definition: System.Collections.Generic.ICollection`1.Count
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count
+  name: Count
+  nameWithType: ICollection<Metric>.Count
+  fullName: System.Collections.Generic.ICollection<Microsoft.ApplicationInsights.Metric>.Count
+  nameWithType.vb: ICollection(Of Metric).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.ApplicationInsights.Metric).Count
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: Microsoft.ApplicationInsights.Metrics.MetricsCollection.IsReadOnly*
+  commentId: Overload:Microsoft.ApplicationInsights.Metrics.MetricsCollection.IsReadOnly
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Metrics.MetricsCollection.html#Microsoft_ApplicationInsights_Metrics_MetricsCollection_IsReadOnly
+  name: IsReadOnly
+  nameWithType: MetricsCollection.IsReadOnly
+  fullName: Microsoft.ApplicationInsights.Metrics.MetricsCollection.IsReadOnly
+- uid: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Metric}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly
+  name: IsReadOnly
+  nameWithType: ICollection<Metric>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<Microsoft.ApplicationInsights.Metric>.IsReadOnly
+  nameWithType.vb: ICollection(Of Metric).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.ApplicationInsights.Metric).IsReadOnly
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly

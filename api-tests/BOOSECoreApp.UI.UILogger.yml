@@ -1,0 +1,942 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSECoreApp.UI.UILogger
+  commentId: T:BOOSECoreApp.UI.UILogger
+  id: UILogger
+  parent: BOOSECoreApp.UI
+  children:
+  - BOOSECoreApp.UI.UILogger.#ctor(System.Windows.Forms.RichTextBox,System.Windows.Forms.RichTextBox,System.Windows.Forms.RichTextBox)
+  - BOOSECoreApp.UI.UILogger.LogDEBUG(System.String)
+  - BOOSECoreApp.UI.UILogger.LogERROR(System.String)
+  - BOOSECoreApp.UI.UILogger.LogEXCEPTION(System.String)
+  - BOOSECoreApp.UI.UILogger.LogFAIL(System.String)
+  - BOOSECoreApp.UI.UILogger.LogFATAL(System.String)
+  - BOOSECoreApp.UI.UILogger.LogINFO(System.String)
+  - BOOSECoreApp.UI.UILogger.LogLOOP(System.String)
+  - BOOSECoreApp.UI.UILogger.LogOK(System.String)
+  - BOOSECoreApp.UI.UILogger.LogRUNTIME(System.String)
+  - BOOSECoreApp.UI.UILogger.LogTRACE_Access(System.String)
+  - BOOSECoreApp.UI.UILogger.LogTRACE_Content(System.String)
+  - BOOSECoreApp.UI.UILogger.LogTRACE_Exception(System.String)
+  - BOOSECoreApp.UI.UILogger.LogWARN(System.String)
+  - BOOSECoreApp.UI.UILogger.SuppressLogging
+  langs:
+  - csharp
+  - vb
+  name: UILogger
+  nameWithType: UILogger
+  fullName: BOOSECoreApp.UI.UILogger
+  type: Class
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/UILogger.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: ''
+  example: []
+  syntax:
+    content: public class UILogger
+    content.vb: Public Class UILogger
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: BOOSECoreApp.UI.UILogger.#ctor(System.Windows.Forms.RichTextBox,System.Windows.Forms.RichTextBox,System.Windows.Forms.RichTextBox)
+  commentId: M:BOOSECoreApp.UI.UILogger.#ctor(System.Windows.Forms.RichTextBox,System.Windows.Forms.RichTextBox,System.Windows.Forms.RichTextBox)
+  id: '#ctor(System.Windows.Forms.RichTextBox,System.Windows.Forms.RichTextBox,System.Windows.Forms.RichTextBox)'
+  parent: BOOSECoreApp.UI.UILogger
+  langs:
+  - csharp
+  - vb
+  name: UILogger(RichTextBox, RichTextBox, RichTextBox)
+  nameWithType: UILogger.UILogger(RichTextBox, RichTextBox, RichTextBox)
+  fullName: BOOSECoreApp.UI.UILogger.UILogger(System.Windows.Forms.RichTextBox, System.Windows.Forms.RichTextBox, System.Windows.Forms.RichTextBox)
+  type: Constructor
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/UILogger.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Initialises a new instance of the  <xref href="BOOSECoreApp.UI.UILogger" data-throw-if-not-resolved="false"></xref> class with the specified command and debug RichTextBox controls
+  example: []
+  syntax:
+    content: public UILogger(RichTextBox CmdBox, RichTextBox DebugBox, RichTextBox TraceBox)
+    parameters:
+    - id: CmdBox
+      type: System.Windows.Forms.RichTextBox
+      description: RichTextBox for Executed Commands Output
+    - id: DebugBox
+      type: System.Windows.Forms.RichTextBox
+      description: RichTextBox for Debug Output
+    - id: TraceBox
+      type: System.Windows.Forms.RichTextBox
+      description: RichTextBox for Trace Output
+    content.vb: Public Sub New(CmdBox As RichTextBox, DebugBox As RichTextBox, TraceBox As RichTextBox)
+  overload: BOOSECoreApp.UI.UILogger.#ctor*
+  nameWithType.vb: UILogger.New(RichTextBox, RichTextBox, RichTextBox)
+  fullName.vb: BOOSECoreApp.UI.UILogger.New(System.Windows.Forms.RichTextBox, System.Windows.Forms.RichTextBox, System.Windows.Forms.RichTextBox)
+  name.vb: New(RichTextBox, RichTextBox, RichTextBox)
+- uid: BOOSECoreApp.UI.UILogger.LogFATAL(System.String)
+  commentId: M:BOOSECoreApp.UI.UILogger.LogFATAL(System.String)
+  id: LogFATAL(System.String)
+  parent: BOOSECoreApp.UI.UILogger
+  langs:
+  - csharp
+  - vb
+  name: LogFATAL(string)
+  nameWithType: UILogger.LogFATAL(string)
+  fullName: BOOSECoreApp.UI.UILogger.LogFATAL(string)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/UILogger.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Logs a fatal error message to the debug output box in crimson, indicating critical failure.
+  remarks: >-
+    This handler is used differently to error and warning logs as it indicates a critical failure that may require immediate attention.
+
+    It may not be seen during normal operation as it indicates a severe issue.
+
+    Therefore this handler is a distinct log level, that is here for the sake of completeness.
+
+    Check debug logs for fatal errors during troubleshooting.
+  example: []
+  syntax:
+    content: public void LogFATAL(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message to log.
+    content.vb: Public Sub LogFATAL(msg As String)
+  overload: BOOSECoreApp.UI.UILogger.LogFATAL*
+  nameWithType.vb: UILogger.LogFATAL(String)
+  fullName.vb: BOOSECoreApp.UI.UILogger.LogFATAL(String)
+  name.vb: LogFATAL(String)
+- uid: BOOSECoreApp.UI.UILogger.LogERROR(System.String)
+  commentId: M:BOOSECoreApp.UI.UILogger.LogERROR(System.String)
+  id: LogERROR(System.String)
+  parent: BOOSECoreApp.UI.UILogger
+  langs:
+  - csharp
+  - vb
+  name: LogERROR(string)
+  nameWithType: UILogger.LogERROR(string)
+  fullName: BOOSECoreApp.UI.UILogger.LogERROR(string)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/UILogger.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Logs an error message to the debug output box in red.
+  example: []
+  syntax:
+    content: public void LogERROR(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message to log.
+    content.vb: Public Sub LogERROR(msg As String)
+  overload: BOOSECoreApp.UI.UILogger.LogERROR*
+  nameWithType.vb: UILogger.LogERROR(String)
+  fullName.vb: BOOSECoreApp.UI.UILogger.LogERROR(String)
+  name.vb: LogERROR(String)
+- uid: BOOSECoreApp.UI.UILogger.LogWARN(System.String)
+  commentId: M:BOOSECoreApp.UI.UILogger.LogWARN(System.String)
+  id: LogWARN(System.String)
+  parent: BOOSECoreApp.UI.UILogger
+  langs:
+  - csharp
+  - vb
+  name: LogWARN(string)
+  nameWithType: UILogger.LogWARN(string)
+  fullName: BOOSECoreApp.UI.UILogger.LogWARN(string)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/UILogger.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Logs a warning message to the debug output box in gold.
+  example: []
+  syntax:
+    content: public void LogWARN(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message to log.
+    content.vb: Public Sub LogWARN(msg As String)
+  overload: BOOSECoreApp.UI.UILogger.LogWARN*
+  nameWithType.vb: UILogger.LogWARN(String)
+  fullName.vb: BOOSECoreApp.UI.UILogger.LogWARN(String)
+  name.vb: LogWARN(String)
+- uid: BOOSECoreApp.UI.UILogger.LogOK(System.String)
+  commentId: M:BOOSECoreApp.UI.UILogger.LogOK(System.String)
+  id: LogOK(System.String)
+  parent: BOOSECoreApp.UI.UILogger
+  langs:
+  - csharp
+  - vb
+  name: LogOK(string)
+  nameWithType: UILogger.LogOK(string)
+  fullName: BOOSECoreApp.UI.UILogger.LogOK(string)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/UILogger.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Logs a successful or positive message to the command execution output box in lime green
+  example: []
+  syntax:
+    content: public void LogOK(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message to log
+    content.vb: Public Sub LogOK(msg As String)
+  overload: BOOSECoreApp.UI.UILogger.LogOK*
+  nameWithType.vb: UILogger.LogOK(String)
+  fullName.vb: BOOSECoreApp.UI.UILogger.LogOK(String)
+  name.vb: LogOK(String)
+- uid: BOOSECoreApp.UI.UILogger.LogFAIL(System.String)
+  commentId: M:BOOSECoreApp.UI.UILogger.LogFAIL(System.String)
+  id: LogFAIL(System.String)
+  parent: BOOSECoreApp.UI.UILogger
+  langs:
+  - csharp
+  - vb
+  name: LogFAIL(string)
+  nameWithType: UILogger.LogFAIL(string)
+  fullName: BOOSECoreApp.UI.UILogger.LogFAIL(string)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/UILogger.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Logs a failure message to the command execution output box in red
+  example: []
+  syntax:
+    content: public void LogFAIL(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message to log
+    content.vb: Public Sub LogFAIL(msg As String)
+  overload: BOOSECoreApp.UI.UILogger.LogFAIL*
+  nameWithType.vb: UILogger.LogFAIL(String)
+  fullName.vb: BOOSECoreApp.UI.UILogger.LogFAIL(String)
+  name.vb: LogFAIL(String)
+- uid: BOOSECoreApp.UI.UILogger.LogRUNTIME(System.String)
+  commentId: M:BOOSECoreApp.UI.UILogger.LogRUNTIME(System.String)
+  id: LogRUNTIME(System.String)
+  parent: BOOSECoreApp.UI.UILogger
+  langs:
+  - csharp
+  - vb
+  name: LogRUNTIME(string)
+  nameWithType: UILogger.LogRUNTIME(string)
+  fullName: BOOSECoreApp.UI.UILogger.LogRUNTIME(string)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/UILogger.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Logs a runtime message to the command execution output box in dodger blue.
+  example: []
+  syntax:
+    content: public void LogRUNTIME(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message to log
+    content.vb: Public Sub LogRUNTIME(msg As String)
+  overload: BOOSECoreApp.UI.UILogger.LogRUNTIME*
+  nameWithType.vb: UILogger.LogRUNTIME(String)
+  fullName.vb: BOOSECoreApp.UI.UILogger.LogRUNTIME(String)
+  name.vb: LogRUNTIME(String)
+- uid: BOOSECoreApp.UI.UILogger.LogINFO(System.String)
+  commentId: M:BOOSECoreApp.UI.UILogger.LogINFO(System.String)
+  id: LogINFO(System.String)
+  parent: BOOSECoreApp.UI.UILogger
+  langs:
+  - csharp
+  - vb
+  name: LogINFO(string)
+  nameWithType: UILogger.LogINFO(string)
+  fullName: BOOSECoreApp.UI.UILogger.LogINFO(string)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/UILogger.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Logs an informational message to the debug output box in deep sky blue.
+  example: []
+  syntax:
+    content: public void LogINFO(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message to log.
+    content.vb: Public Sub LogINFO(msg As String)
+  overload: BOOSECoreApp.UI.UILogger.LogINFO*
+  nameWithType.vb: UILogger.LogINFO(String)
+  fullName.vb: BOOSECoreApp.UI.UILogger.LogINFO(String)
+  name.vb: LogINFO(String)
+- uid: BOOSECoreApp.UI.UILogger.LogDEBUG(System.String)
+  commentId: M:BOOSECoreApp.UI.UILogger.LogDEBUG(System.String)
+  id: LogDEBUG(System.String)
+  parent: BOOSECoreApp.UI.UILogger
+  langs:
+  - csharp
+  - vb
+  name: LogDEBUG(string)
+  nameWithType: UILogger.LogDEBUG(string)
+  fullName: BOOSECoreApp.UI.UILogger.LogDEBUG(string)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/UILogger.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Logs a debug message to the debug output box in light blue if DebugMode is enabled.
+  example: []
+  syntax:
+    content: public void LogDEBUG(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message to log.
+    content.vb: Public Sub LogDEBUG(msg As String)
+  overload: BOOSECoreApp.UI.UILogger.LogDEBUG*
+  nameWithType.vb: UILogger.LogDEBUG(String)
+  fullName.vb: BOOSECoreApp.UI.UILogger.LogDEBUG(String)
+  name.vb: LogDEBUG(String)
+- uid: BOOSECoreApp.UI.UILogger.LogTRACE_Content(System.String)
+  commentId: M:BOOSECoreApp.UI.UILogger.LogTRACE_Content(System.String)
+  id: LogTRACE_Content(System.String)
+  parent: BOOSECoreApp.UI.UILogger
+  langs:
+  - csharp
+  - vb
+  name: LogTRACE_Content(string)
+  nameWithType: UILogger.LogTRACE_Content(string)
+  fullName: BOOSECoreApp.UI.UILogger.LogTRACE_Content(string)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/UILogger.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Logs a trace message to the trace output box in lime green if TraceMode is enabled. Useful for tracking content changes.
+  example: []
+  syntax:
+    content: public void LogTRACE_Content(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message to log.
+    content.vb: Public Sub LogTRACE_Content(msg As String)
+  overload: BOOSECoreApp.UI.UILogger.LogTRACE_Content*
+  nameWithType.vb: UILogger.LogTRACE_Content(String)
+  fullName.vb: BOOSECoreApp.UI.UILogger.LogTRACE_Content(String)
+  name.vb: LogTRACE_Content(String)
+- uid: BOOSECoreApp.UI.UILogger.LogTRACE_Access(System.String)
+  commentId: M:BOOSECoreApp.UI.UILogger.LogTRACE_Access(System.String)
+  id: LogTRACE_Access(System.String)
+  parent: BOOSECoreApp.UI.UILogger
+  langs:
+  - csharp
+  - vb
+  name: LogTRACE_Access(string)
+  nameWithType: UILogger.LogTRACE_Access(string)
+  fullName: BOOSECoreApp.UI.UILogger.LogTRACE_Access(string)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/UILogger.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Logs a trace message to the trace output box in orange if TraceMode is enabled. Useful for tracking access events.
+  example: []
+  syntax:
+    content: public void LogTRACE_Access(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message to log.
+    content.vb: Public Sub LogTRACE_Access(msg As String)
+  overload: BOOSECoreApp.UI.UILogger.LogTRACE_Access*
+  nameWithType.vb: UILogger.LogTRACE_Access(String)
+  fullName.vb: BOOSECoreApp.UI.UILogger.LogTRACE_Access(String)
+  name.vb: LogTRACE_Access(String)
+- uid: BOOSECoreApp.UI.UILogger.LogTRACE_Exception(System.String)
+  commentId: M:BOOSECoreApp.UI.UILogger.LogTRACE_Exception(System.String)
+  id: LogTRACE_Exception(System.String)
+  parent: BOOSECoreApp.UI.UILogger
+  langs:
+  - csharp
+  - vb
+  name: LogTRACE_Exception(string)
+  nameWithType: UILogger.LogTRACE_Exception(string)
+  fullName: BOOSECoreApp.UI.UILogger.LogTRACE_Exception(string)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/UILogger.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Logs an exception message to the trace output box in tomato red if TraceMode is enabled.
+  example: []
+  syntax:
+    content: public void LogTRACE_Exception(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message to log.
+    content.vb: Public Sub LogTRACE_Exception(msg As String)
+  overload: BOOSECoreApp.UI.UILogger.LogTRACE_Exception*
+  nameWithType.vb: UILogger.LogTRACE_Exception(String)
+  fullName.vb: BOOSECoreApp.UI.UILogger.LogTRACE_Exception(String)
+  name.vb: LogTRACE_Exception(String)
+- uid: BOOSECoreApp.UI.UILogger.LogEXCEPTION(System.String)
+  commentId: M:BOOSECoreApp.UI.UILogger.LogEXCEPTION(System.String)
+  id: LogEXCEPTION(System.String)
+  parent: BOOSECoreApp.UI.UILogger
+  langs:
+  - csharp
+  - vb
+  name: LogEXCEPTION(string)
+  nameWithType: UILogger.LogEXCEPTION(string)
+  fullName: BOOSECoreApp.UI.UILogger.LogEXCEPTION(string)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/UILogger.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Logs an exception message to the debug output box in tomato red.
+  remarks: This handler is used differently to error, fatal, and warning logs as it logs the contents of an exception instead of the error message.
+  example: []
+  syntax:
+    content: public void LogEXCEPTION(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message to log.
+    content.vb: Public Sub LogEXCEPTION(msg As String)
+  overload: BOOSECoreApp.UI.UILogger.LogEXCEPTION*
+  nameWithType.vb: UILogger.LogEXCEPTION(String)
+  fullName.vb: BOOSECoreApp.UI.UILogger.LogEXCEPTION(String)
+  name.vb: LogEXCEPTION(String)
+- uid: BOOSECoreApp.UI.UILogger.LogLOOP(System.String)
+  commentId: M:BOOSECoreApp.UI.UILogger.LogLOOP(System.String)
+  id: LogLOOP(System.String)
+  parent: BOOSECoreApp.UI.UILogger
+  langs:
+  - csharp
+  - vb
+  name: LogLOOP(string)
+  nameWithType: UILogger.LogLOOP(string)
+  fullName: BOOSECoreApp.UI.UILogger.LogLOOP(string)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/UILogger.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Logs a loop iteration message to the debug output box in plum.
+  example: []
+  syntax:
+    content: public void LogLOOP(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message to log.
+    content.vb: Public Sub LogLOOP(msg As String)
+  overload: BOOSECoreApp.UI.UILogger.LogLOOP*
+  nameWithType.vb: UILogger.LogLOOP(String)
+  fullName.vb: BOOSECoreApp.UI.UILogger.LogLOOP(String)
+  name.vb: LogLOOP(String)
+- uid: BOOSECoreApp.UI.UILogger.SuppressLogging
+  commentId: P:BOOSECoreApp.UI.UILogger.SuppressLogging
+  id: SuppressLogging
+  parent: BOOSECoreApp.UI.UILogger
+  langs:
+  - csharp
+  - vb
+  name: SuppressLogging
+  nameWithType: UILogger.SuppressLogging
+  fullName: BOOSECoreApp.UI.UILogger.SuppressLogging
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/UILogger.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Toggles suppression of all logging output when set to true.
+  example: []
+  syntax:
+    content: public static bool SuppressLogging { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property SuppressLogging As Boolean
+  overload: BOOSECoreApp.UI.UILogger.SuppressLogging*
+references:
+- uid: BOOSECoreApp.UI
+  commentId: N:BOOSECoreApp.UI
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.UI
+  nameWithType: BOOSECoreApp.UI
+  fullName: BOOSECoreApp.UI
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.UI
+    name: UI
+    isExternal: true
+    href: BOOSECoreApp.UI.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.UI
+    name: UI
+    isExternal: true
+    href: BOOSECoreApp.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSECoreApp.UI.UILogger
+  commentId: T:BOOSECoreApp.UI.UILogger
+  isExternal: true
+  href: BOOSECoreApp.UI.UILogger.html
+  name: UILogger
+  nameWithType: UILogger
+  fullName: BOOSECoreApp.UI.UILogger
+- uid: BOOSECoreApp.UI.UILogger.#ctor*
+  commentId: Overload:BOOSECoreApp.UI.UILogger.#ctor
+  isExternal: true
+  href: BOOSECoreApp.UI.UILogger.html#BOOSECoreApp_UI_UILogger__ctor_System_Windows_Forms_RichTextBox_System_Windows_Forms_RichTextBox_System_Windows_Forms_RichTextBox_
+  name: UILogger
+  nameWithType: UILogger.UILogger
+  fullName: BOOSECoreApp.UI.UILogger.UILogger
+  nameWithType.vb: UILogger.New
+  fullName.vb: BOOSECoreApp.UI.UILogger.New
+  name.vb: New
+- uid: System.Windows.Forms.RichTextBox
+  commentId: T:System.Windows.Forms.RichTextBox
+  parent: System.Windows.Forms
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.forms.richtextbox
+  name: RichTextBox
+  nameWithType: RichTextBox
+  fullName: System.Windows.Forms.RichTextBox
+- uid: System.Windows.Forms
+  commentId: N:System.Windows.Forms
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Forms
+  nameWithType: System.Windows.Forms
+  fullName: System.Windows.Forms
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Forms
+    name: Forms
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Forms
+    name: Forms
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms
+- uid: BOOSECoreApp.UI.UILogger.LogFATAL*
+  commentId: Overload:BOOSECoreApp.UI.UILogger.LogFATAL
+  isExternal: true
+  href: BOOSECoreApp.UI.UILogger.html#BOOSECoreApp_UI_UILogger_LogFATAL_System_String_
+  name: LogFATAL
+  nameWithType: UILogger.LogFATAL
+  fullName: BOOSECoreApp.UI.UILogger.LogFATAL
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BOOSECoreApp.UI.UILogger.LogERROR*
+  commentId: Overload:BOOSECoreApp.UI.UILogger.LogERROR
+  isExternal: true
+  href: BOOSECoreApp.UI.UILogger.html#BOOSECoreApp_UI_UILogger_LogERROR_System_String_
+  name: LogERROR
+  nameWithType: UILogger.LogERROR
+  fullName: BOOSECoreApp.UI.UILogger.LogERROR
+- uid: BOOSECoreApp.UI.UILogger.LogWARN*
+  commentId: Overload:BOOSECoreApp.UI.UILogger.LogWARN
+  isExternal: true
+  href: BOOSECoreApp.UI.UILogger.html#BOOSECoreApp_UI_UILogger_LogWARN_System_String_
+  name: LogWARN
+  nameWithType: UILogger.LogWARN
+  fullName: BOOSECoreApp.UI.UILogger.LogWARN
+- uid: BOOSECoreApp.UI.UILogger.LogOK*
+  commentId: Overload:BOOSECoreApp.UI.UILogger.LogOK
+  isExternal: true
+  href: BOOSECoreApp.UI.UILogger.html#BOOSECoreApp_UI_UILogger_LogOK_System_String_
+  name: LogOK
+  nameWithType: UILogger.LogOK
+  fullName: BOOSECoreApp.UI.UILogger.LogOK
+- uid: BOOSECoreApp.UI.UILogger.LogFAIL*
+  commentId: Overload:BOOSECoreApp.UI.UILogger.LogFAIL
+  isExternal: true
+  href: BOOSECoreApp.UI.UILogger.html#BOOSECoreApp_UI_UILogger_LogFAIL_System_String_
+  name: LogFAIL
+  nameWithType: UILogger.LogFAIL
+  fullName: BOOSECoreApp.UI.UILogger.LogFAIL
+- uid: BOOSECoreApp.UI.UILogger.LogRUNTIME*
+  commentId: Overload:BOOSECoreApp.UI.UILogger.LogRUNTIME
+  isExternal: true
+  href: BOOSECoreApp.UI.UILogger.html#BOOSECoreApp_UI_UILogger_LogRUNTIME_System_String_
+  name: LogRUNTIME
+  nameWithType: UILogger.LogRUNTIME
+  fullName: BOOSECoreApp.UI.UILogger.LogRUNTIME
+- uid: BOOSECoreApp.UI.UILogger.LogINFO*
+  commentId: Overload:BOOSECoreApp.UI.UILogger.LogINFO
+  isExternal: true
+  href: BOOSECoreApp.UI.UILogger.html#BOOSECoreApp_UI_UILogger_LogINFO_System_String_
+  name: LogINFO
+  nameWithType: UILogger.LogINFO
+  fullName: BOOSECoreApp.UI.UILogger.LogINFO
+- uid: BOOSECoreApp.UI.UILogger.LogDEBUG*
+  commentId: Overload:BOOSECoreApp.UI.UILogger.LogDEBUG
+  isExternal: true
+  href: BOOSECoreApp.UI.UILogger.html#BOOSECoreApp_UI_UILogger_LogDEBUG_System_String_
+  name: LogDEBUG
+  nameWithType: UILogger.LogDEBUG
+  fullName: BOOSECoreApp.UI.UILogger.LogDEBUG
+- uid: BOOSECoreApp.UI.UILogger.LogTRACE_Content*
+  commentId: Overload:BOOSECoreApp.UI.UILogger.LogTRACE_Content
+  isExternal: true
+  href: BOOSECoreApp.UI.UILogger.html#BOOSECoreApp_UI_UILogger_LogTRACE_Content_System_String_
+  name: LogTRACE_Content
+  nameWithType: UILogger.LogTRACE_Content
+  fullName: BOOSECoreApp.UI.UILogger.LogTRACE_Content
+- uid: BOOSECoreApp.UI.UILogger.LogTRACE_Access*
+  commentId: Overload:BOOSECoreApp.UI.UILogger.LogTRACE_Access
+  isExternal: true
+  href: BOOSECoreApp.UI.UILogger.html#BOOSECoreApp_UI_UILogger_LogTRACE_Access_System_String_
+  name: LogTRACE_Access
+  nameWithType: UILogger.LogTRACE_Access
+  fullName: BOOSECoreApp.UI.UILogger.LogTRACE_Access
+- uid: BOOSECoreApp.UI.UILogger.LogTRACE_Exception*
+  commentId: Overload:BOOSECoreApp.UI.UILogger.LogTRACE_Exception
+  isExternal: true
+  href: BOOSECoreApp.UI.UILogger.html#BOOSECoreApp_UI_UILogger_LogTRACE_Exception_System_String_
+  name: LogTRACE_Exception
+  nameWithType: UILogger.LogTRACE_Exception
+  fullName: BOOSECoreApp.UI.UILogger.LogTRACE_Exception
+- uid: BOOSECoreApp.UI.UILogger.LogEXCEPTION*
+  commentId: Overload:BOOSECoreApp.UI.UILogger.LogEXCEPTION
+  isExternal: true
+  href: BOOSECoreApp.UI.UILogger.html#BOOSECoreApp_UI_UILogger_LogEXCEPTION_System_String_
+  name: LogEXCEPTION
+  nameWithType: UILogger.LogEXCEPTION
+  fullName: BOOSECoreApp.UI.UILogger.LogEXCEPTION
+- uid: BOOSECoreApp.UI.UILogger.LogLOOP*
+  commentId: Overload:BOOSECoreApp.UI.UILogger.LogLOOP
+  isExternal: true
+  href: BOOSECoreApp.UI.UILogger.html#BOOSECoreApp_UI_UILogger_LogLOOP_System_String_
+  name: LogLOOP
+  nameWithType: UILogger.LogLOOP
+  fullName: BOOSECoreApp.UI.UILogger.LogLOOP
+- uid: BOOSECoreApp.UI.UILogger.SuppressLogging*
+  commentId: Overload:BOOSECoreApp.UI.UILogger.SuppressLogging
+  isExternal: true
+  href: BOOSECoreApp.UI.UILogger.html#BOOSECoreApp_UI_UILogger_SuppressLogging
+  name: SuppressLogging
+  nameWithType: UILogger.SuppressLogging
+  fullName: BOOSECoreApp.UI.UILogger.SuppressLogging
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

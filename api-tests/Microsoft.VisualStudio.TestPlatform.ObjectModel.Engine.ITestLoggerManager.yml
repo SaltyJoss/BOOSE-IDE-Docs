@@ -1,0 +1,602 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager
+  id: ITestLoggerManager
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveredTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCompleteEventArgs)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunStartEventArgs)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunStatsChange(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.Initialize(System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.LoggersInitialized
+  langs:
+  - csharp
+  - vb
+  name: ITestLoggerManager
+  nameWithType: ITestLoggerManager
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager
+  type: Interface
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: 'public interface ITestLoggerManager : IDisposable'
+    content.vb: Public Interface ITestLoggerManager Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.Initialize(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.Initialize(System.String)
+  id: Initialize(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager
+  langs:
+  - csharp
+  - vb
+  name: Initialize(string?)
+  nameWithType: ITestLoggerManager.Initialize(string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.Initialize(string?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: void Initialize(string? runSettings)
+    parameters:
+    - id: runSettings
+      type: System.String
+    content.vb: Sub Initialize(runSettings As String)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.Initialize*
+  nameWithType.vb: ITestLoggerManager.Initialize(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.Initialize(String)
+  name.vb: Initialize(String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs)
+  id: HandleTestRunMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager
+  langs:
+  - csharp
+  - vb
+  name: HandleTestRunMessage(TestRunMessageEventArgs)
+  nameWithType: ITestLoggerManager.HandleTestRunMessage(TestRunMessageEventArgs)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: void HandleTestRunMessage(TestRunMessageEventArgs e)
+    parameters:
+    - id: e
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs
+    content.vb: Sub HandleTestRunMessage(e As TestRunMessageEventArgs)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunMessage*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunStartEventArgs)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunStartEventArgs)
+  id: HandleTestRunStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunStartEventArgs)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager
+  langs:
+  - csharp
+  - vb
+  name: HandleTestRunStart(TestRunStartEventArgs)
+  nameWithType: ITestLoggerManager.HandleTestRunStart(TestRunStartEventArgs)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunStartEventArgs)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: void HandleTestRunStart(TestRunStartEventArgs e)
+    parameters:
+    - id: e
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunStartEventArgs
+    content.vb: Sub HandleTestRunStart(e As TestRunStartEventArgs)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunStart*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunStatsChange(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunStatsChange(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs)
+  id: HandleTestRunStatsChange(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager
+  langs:
+  - csharp
+  - vb
+  name: HandleTestRunStatsChange(TestRunChangedEventArgs)
+  nameWithType: ITestLoggerManager.HandleTestRunStatsChange(TestRunChangedEventArgs)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunStatsChange(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: void HandleTestRunStatsChange(TestRunChangedEventArgs e)
+    parameters:
+    - id: e
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs
+    content.vb: Sub HandleTestRunStatsChange(e As TestRunChangedEventArgs)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunStatsChange*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCompleteEventArgs)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCompleteEventArgs)
+  id: HandleTestRunComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCompleteEventArgs)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager
+  langs:
+  - csharp
+  - vb
+  name: HandleTestRunComplete(TestRunCompleteEventArgs)
+  nameWithType: ITestLoggerManager.HandleTestRunComplete(TestRunCompleteEventArgs)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCompleteEventArgs)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: void HandleTestRunComplete(TestRunCompleteEventArgs e)
+    parameters:
+    - id: e
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCompleteEventArgs
+    content.vb: Sub HandleTestRunComplete(e As TestRunCompleteEventArgs)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunComplete*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs)
+  id: HandleDiscoveryMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager
+  langs:
+  - csharp
+  - vb
+  name: HandleDiscoveryMessage(TestRunMessageEventArgs)
+  nameWithType: ITestLoggerManager.HandleDiscoveryMessage(TestRunMessageEventArgs)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryMessage(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: void HandleDiscoveryMessage(TestRunMessageEventArgs e)
+    parameters:
+    - id: e
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs
+    content.vb: Sub HandleDiscoveryMessage(e As TestRunMessageEventArgs)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryMessage*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs)
+  id: HandleDiscoveryStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager
+  langs:
+  - csharp
+  - vb
+  name: HandleDiscoveryStart(DiscoveryStartEventArgs)
+  nameWithType: ITestLoggerManager.HandleDiscoveryStart(DiscoveryStartEventArgs)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryStart(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: void HandleDiscoveryStart(DiscoveryStartEventArgs e)
+    parameters:
+    - id: e
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs
+    content.vb: Sub HandleDiscoveryStart(e As DiscoveryStartEventArgs)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryStart*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveredTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveredTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs)
+  id: HandleDiscoveredTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager
+  langs:
+  - csharp
+  - vb
+  name: HandleDiscoveredTests(DiscoveredTestsEventArgs)
+  nameWithType: ITestLoggerManager.HandleDiscoveredTests(DiscoveredTestsEventArgs)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveredTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: void HandleDiscoveredTests(DiscoveredTestsEventArgs e)
+    parameters:
+    - id: e
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs
+    content.vb: Sub HandleDiscoveredTests(e As DiscoveredTestsEventArgs)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveredTests*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs)
+  id: HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager
+  langs:
+  - csharp
+  - vb
+  name: HandleDiscoveryComplete(DiscoveryCompleteEventArgs)
+  nameWithType: ITestLoggerManager.HandleDiscoveryComplete(DiscoveryCompleteEventArgs)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: void HandleDiscoveryComplete(DiscoveryCompleteEventArgs e)
+    parameters:
+    - id: e
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs
+    content.vb: Sub HandleDiscoveryComplete(e As DiscoveryCompleteEventArgs)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryComplete*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.LoggersInitialized
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.LoggersInitialized
+  id: LoggersInitialized
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager
+  langs:
+  - csharp
+  - vb
+  name: LoggersInitialized
+  nameWithType: ITestLoggerManager.LoggersInitialized
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.LoggersInitialized
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: bool LoggersInitialized { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property LoggersInitialized As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.LoggersInitialized*
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.Initialize*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.Initialize
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestLoggerManager_Initialize_System_String_
+  name: Initialize
+  nameWithType: ITestLoggerManager.Initialize
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.Initialize
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunMessage*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunMessage
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestLoggerManager_HandleTestRunMessage_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_TestRunMessageEventArgs_
+  name: HandleTestRunMessage
+  nameWithType: ITestLoggerManager.HandleTestRunMessage
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunMessage
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs.html
+  name: TestRunMessageEventArgs
+  nameWithType: TestRunMessageEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestRunMessageEventArgs
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunStart*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunStart
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestLoggerManager_HandleTestRunStart_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_TestRunStartEventArgs_
+  name: HandleTestRunStart
+  nameWithType: ITestLoggerManager.HandleTestRunStart
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunStart
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunStartEventArgs
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunStartEventArgs
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunStartEventArgs.html
+  name: TestRunStartEventArgs
+  nameWithType: TestRunStartEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunStartEventArgs
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunStatsChange*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunStatsChange
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestLoggerManager_HandleTestRunStatsChange_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_TestRunChangedEventArgs_
+  name: HandleTestRunStatsChange
+  nameWithType: ITestLoggerManager.HandleTestRunStatsChange
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunStatsChange
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs.html
+  name: TestRunChangedEventArgs
+  nameWithType: TestRunChangedEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunChangedEventArgs
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunComplete*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunComplete
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestLoggerManager_HandleTestRunComplete_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_TestRunCompleteEventArgs_
+  name: HandleTestRunComplete
+  nameWithType: ITestLoggerManager.HandleTestRunComplete
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleTestRunComplete
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCompleteEventArgs
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCompleteEventArgs
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCompleteEventArgs.html
+  name: TestRunCompleteEventArgs
+  nameWithType: TestRunCompleteEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.TestRunCompleteEventArgs
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryMessage*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryMessage
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestLoggerManager_HandleDiscoveryMessage_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_TestRunMessageEventArgs_
+  name: HandleDiscoveryMessage
+  nameWithType: ITestLoggerManager.HandleDiscoveryMessage
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryMessage
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryStart*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryStart
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestLoggerManager_HandleDiscoveryStart_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryStartEventArgs_
+  name: HandleDiscoveryStart
+  nameWithType: ITestLoggerManager.HandleDiscoveryStart
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryStart
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs.html
+  name: DiscoveryStartEventArgs
+  nameWithType: DiscoveryStartEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryStartEventArgs
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveredTests*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveredTests
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestLoggerManager_HandleDiscoveredTests_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveredTestsEventArgs_
+  name: HandleDiscoveredTests
+  nameWithType: ITestLoggerManager.HandleDiscoveredTests
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveredTests
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs.html
+  name: DiscoveredTestsEventArgs
+  nameWithType: DiscoveredTestsEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveredTestsEventArgs
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryComplete*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryComplete
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestLoggerManager_HandleDiscoveryComplete_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCompleteEventArgs_
+  name: HandleDiscoveryComplete
+  nameWithType: ITestLoggerManager.HandleDiscoveryComplete
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.HandleDiscoveryComplete
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs.html
+  name: DiscoveryCompleteEventArgs
+  nameWithType: DiscoveryCompleteEventArgs
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCompleteEventArgs
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.LoggersInitialized*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.LoggersInitialized
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ITestLoggerManager_LoggersInitialized
+  name: LoggersInitialized
+  nameWithType: ITestLoggerManager.LoggersInitialized
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ITestLoggerManager.LoggersInitialized
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

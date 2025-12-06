@@ -1,0 +1,779 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer
+  commentId: T:Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer
+  id: MSTestDiscoverer
+  parent: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter
+  children:
+  - Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.#ctor
+  - Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.DiscoverTests(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink)
+  langs:
+  - csharp
+  - vb
+  name: MSTestDiscoverer
+  nameWithType: MSTestDiscoverer
+  fullName: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer
+  type: Class
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter
+  namespace: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter
+  syntax:
+    content: >-
+      [DefaultExecutorUri("executor://MSTestAdapter/v2")]
+
+      [FileExtension(".xap")]
+
+      [FileExtension(".appx")]
+
+      [FileExtension(".dll")]
+
+      [FileExtension(".exe")]
+
+      public class MSTestDiscoverer : ITestDiscoverer
+    content.vb: >-
+      <DefaultExecutorUri("executor://MSTestAdapter/v2")>
+
+      <FileExtension(".xap")>
+
+      <FileExtension(".appx")>
+
+      <FileExtension(".dll")>
+
+      <FileExtension(".exe")>
+
+      Public Class MSTestDiscoverer Implements ITestDiscoverer
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: Microsoft.VisualStudio.TestPlatform.ObjectModel.DefaultExecutorUriAttribute
+    ctor: Microsoft.VisualStudio.TestPlatform.ObjectModel.DefaultExecutorUriAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: executor://MSTestAdapter/v2
+  - type: Microsoft.VisualStudio.TestPlatform.ObjectModel.FileExtensionAttribute
+    ctor: Microsoft.VisualStudio.TestPlatform.ObjectModel.FileExtensionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: .xap
+  - type: Microsoft.VisualStudio.TestPlatform.ObjectModel.FileExtensionAttribute
+    ctor: Microsoft.VisualStudio.TestPlatform.ObjectModel.FileExtensionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: .appx
+  - type: Microsoft.VisualStudio.TestPlatform.ObjectModel.FileExtensionAttribute
+    ctor: Microsoft.VisualStudio.TestPlatform.ObjectModel.FileExtensionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: .dll
+  - type: Microsoft.VisualStudio.TestPlatform.ObjectModel.FileExtensionAttribute
+    ctor: Microsoft.VisualStudio.TestPlatform.ObjectModel.FileExtensionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: .exe
+- uid: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.DiscoverTests(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.DiscoverTests(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink)
+  id: DiscoverTests(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink)
+  parent: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: DiscoverTests(IEnumerable<string>, IDiscoveryContext, IMessageLogger, ITestCaseDiscoverySink)
+  nameWithType: MSTestDiscoverer.DiscoverTests(IEnumerable<string>, IDiscoveryContext, IMessageLogger, ITestCaseDiscoverySink)
+  fullName: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.DiscoverTests(System.Collections.Generic.IEnumerable<string>, Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext, Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger, Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter
+  namespace: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter
+  example: []
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      public void DiscoverTests(IEnumerable<string> sources, IDiscoveryContext discoveryContext, IMessageLogger logger, ITestCaseDiscoverySink discoverySink)
+    parameters:
+    - id: sources
+      type: System.Collections.Generic.IEnumerable{System.String}
+    - id: discoveryContext
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext
+    - id: logger
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger
+    - id: discoverySink
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink
+    content.vb: >-
+      <SecurityCritical>
+
+      Public Sub DiscoverTests(sources As IEnumerable(Of String), discoveryContext As IDiscoveryContext, logger As IMessageLogger, discoverySink As ITestCaseDiscoverySink)
+  overload: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.DiscoverTests*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer.DiscoverTests(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink)
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  nameWithType.vb: MSTestDiscoverer.DiscoverTests(IEnumerable(Of String), IDiscoveryContext, IMessageLogger, ITestCaseDiscoverySink)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.DiscoverTests(System.Collections.Generic.IEnumerable(Of String), Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext, Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger, Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink)
+  name.vb: DiscoverTests(IEnumerable(Of String), IDiscoveryContext, IMessageLogger, ITestCaseDiscoverySink)
+- uid: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.#ctor
+  commentId: M:Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.#ctor
+  id: '#ctor'
+  parent: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer
+  langs:
+  - csharp
+  - vb
+  name: MSTestDiscoverer()
+  nameWithType: MSTestDiscoverer.MSTestDiscoverer()
+  fullName: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.MSTestDiscoverer()
+  type: Constructor
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter
+  namespace: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter
+  syntax:
+    content: public MSTestDiscoverer()
+    content.vb: Public Sub New()
+  overload: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.#ctor*
+  nameWithType.vb: MSTestDiscoverer.New()
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.New()
+  name.vb: New()
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter
+  commentId: N:Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter
+  nameWithType: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter
+  fullName: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.MSTest
+    name: MSTest
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.MSTest.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter
+    name: TestAdapter
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.MSTest
+    name: MSTest
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.MSTest.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter
+    name: TestAdapter
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer.html
+  name: ITestDiscoverer
+  nameWithType: ITestDiscoverer
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+    name: Adapter
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+    name: Adapter
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.html
+- uid: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.DiscoverTests*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.DiscoverTests
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.html#Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestDiscoverer_DiscoverTests_System_Collections_Generic_IEnumerable_System_String__Microsoft_VisualStudio_TestPlatform_ObjectModel_Adapter_IDiscoveryContext_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_IMessageLogger_Microsoft_VisualStudio_TestPlatform_ObjectModel_Adapter_ITestCaseDiscoverySink_
+  name: DiscoverTests
+  nameWithType: MSTestDiscoverer.DiscoverTests
+  fullName: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.DiscoverTests
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer.DiscoverTests(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer.DiscoverTests(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: DiscoverTests(IEnumerable<string>, IDiscoveryContext, IMessageLogger, ITestCaseDiscoverySink)
+  nameWithType: ITestDiscoverer.DiscoverTests(IEnumerable<string>, IDiscoveryContext, IMessageLogger, ITestCaseDiscoverySink)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer.DiscoverTests(System.Collections.Generic.IEnumerable<string>, Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext, Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger, Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink)
+  nameWithType.vb: ITestDiscoverer.DiscoverTests(IEnumerable(Of String), IDiscoveryContext, IMessageLogger, ITestCaseDiscoverySink)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer.DiscoverTests(System.Collections.Generic.IEnumerable(Of String), Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext, Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger, Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink)
+  name.vb: DiscoverTests(IEnumerable(Of String), IDiscoveryContext, IMessageLogger, ITestCaseDiscoverySink)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer.DiscoverTests(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink)
+    name: DiscoverTests
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext
+    name: IDiscoveryContext
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger
+    name: IMessageLogger
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink
+    name: ITestCaseDiscoverySink
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestDiscoverer.DiscoverTests(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext,Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink)
+    name: DiscoverTests
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext
+    name: IDiscoveryContext
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger
+    name: IMessageLogger
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink
+    name: ITestCaseDiscoverySink
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext.html
+  name: IDiscoveryContext
+  nameWithType: IDiscoveryContext
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IDiscoveryContext
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger.html
+  name: IMessageLogger
+  nameWithType: IMessageLogger
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink.html
+  name: ITestCaseDiscoverySink
+  nameWithType: ITestCaseDiscoverySink
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestCaseDiscoverySink
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.html
+- uid: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.html#Microsoft_VisualStudio_TestPlatform_MSTest_TestAdapter_MSTestDiscoverer__ctor
+  name: MSTestDiscoverer
+  nameWithType: MSTestDiscoverer.MSTestDiscoverer
+  fullName: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.MSTestDiscoverer
+  nameWithType.vb: MSTestDiscoverer.New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.MSTestDiscoverer.New
+  name.vb: New

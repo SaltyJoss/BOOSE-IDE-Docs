@@ -1,0 +1,841 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Management.RelationshipQuery
+  commentId: T:System.Management.RelationshipQuery
+  id: RelationshipQuery
+  parent: System.Management
+  children:
+  - System.Management.RelationshipQuery.#ctor
+  - System.Management.RelationshipQuery.#ctor(System.Boolean,System.String,System.String,System.String,System.String)
+  - System.Management.RelationshipQuery.#ctor(System.String)
+  - System.Management.RelationshipQuery.#ctor(System.String,System.String)
+  - System.Management.RelationshipQuery.#ctor(System.String,System.String,System.String,System.String,System.Boolean)
+  - System.Management.RelationshipQuery.BuildQuery
+  - System.Management.RelationshipQuery.ClassDefinitionsOnly
+  - System.Management.RelationshipQuery.Clone
+  - System.Management.RelationshipQuery.IsSchemaQuery
+  - System.Management.RelationshipQuery.ParseQuery(System.String)
+  - System.Management.RelationshipQuery.RelationshipClass
+  - System.Management.RelationshipQuery.RelationshipQualifier
+  - System.Management.RelationshipQuery.SourceObject
+  - System.Management.RelationshipQuery.ThisRole
+  langs:
+  - csharp
+  - vb
+  name: RelationshipQuery
+  nameWithType: RelationshipQuery
+  fullName: System.Management.RelationshipQuery
+  type: Class
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: 'public class RelationshipQuery : WqlObjectQuery, ICloneable'
+    content.vb: Public Class RelationshipQuery Inherits WqlObjectQuery Implements ICloneable
+  inheritance:
+  - System.Object
+  - System.Management.ManagementQuery
+  - System.Management.ObjectQuery
+  - System.Management.WqlObjectQuery
+  implements:
+  - System.ICloneable
+  inheritedMembers:
+  - System.Management.WqlObjectQuery.QueryLanguage
+  - System.Management.ManagementQuery.QueryString
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: System.Management.RelationshipQuery.#ctor
+  commentId: M:System.Management.RelationshipQuery.#ctor
+  id: '#ctor'
+  parent: System.Management.RelationshipQuery
+  langs:
+  - csharp
+  - vb
+  name: RelationshipQuery()
+  nameWithType: RelationshipQuery.RelationshipQuery()
+  fullName: System.Management.RelationshipQuery.RelationshipQuery()
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public RelationshipQuery()
+    content.vb: Public Sub New()
+  overload: System.Management.RelationshipQuery.#ctor*
+  nameWithType.vb: RelationshipQuery.New()
+  fullName.vb: System.Management.RelationshipQuery.New()
+  name.vb: New()
+- uid: System.Management.RelationshipQuery.#ctor(System.Boolean,System.String,System.String,System.String,System.String)
+  commentId: M:System.Management.RelationshipQuery.#ctor(System.Boolean,System.String,System.String,System.String,System.String)
+  id: '#ctor(System.Boolean,System.String,System.String,System.String,System.String)'
+  parent: System.Management.RelationshipQuery
+  langs:
+  - csharp
+  - vb
+  name: RelationshipQuery(bool, string, string, string, string)
+  nameWithType: RelationshipQuery.RelationshipQuery(bool, string, string, string, string)
+  fullName: System.Management.RelationshipQuery.RelationshipQuery(bool, string, string, string, string)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public RelationshipQuery(bool isSchemaQuery, string sourceObject, string relationshipClass, string relationshipQualifier, string thisRole)
+    parameters:
+    - id: isSchemaQuery
+      type: System.Boolean
+    - id: sourceObject
+      type: System.String
+    - id: relationshipClass
+      type: System.String
+    - id: relationshipQualifier
+      type: System.String
+    - id: thisRole
+      type: System.String
+    content.vb: Public Sub New(isSchemaQuery As Boolean, sourceObject As String, relationshipClass As String, relationshipQualifier As String, thisRole As String)
+  overload: System.Management.RelationshipQuery.#ctor*
+  nameWithType.vb: RelationshipQuery.New(Boolean, String, String, String, String)
+  fullName.vb: System.Management.RelationshipQuery.New(Boolean, String, String, String, String)
+  name.vb: New(Boolean, String, String, String, String)
+- uid: System.Management.RelationshipQuery.#ctor(System.String)
+  commentId: M:System.Management.RelationshipQuery.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Management.RelationshipQuery
+  langs:
+  - csharp
+  - vb
+  name: RelationshipQuery(string)
+  nameWithType: RelationshipQuery.RelationshipQuery(string)
+  fullName: System.Management.RelationshipQuery.RelationshipQuery(string)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public RelationshipQuery(string queryOrSourceObject)
+    parameters:
+    - id: queryOrSourceObject
+      type: System.String
+    content.vb: Public Sub New(queryOrSourceObject As String)
+  overload: System.Management.RelationshipQuery.#ctor*
+  nameWithType.vb: RelationshipQuery.New(String)
+  fullName.vb: System.Management.RelationshipQuery.New(String)
+  name.vb: New(String)
+- uid: System.Management.RelationshipQuery.#ctor(System.String,System.String)
+  commentId: M:System.Management.RelationshipQuery.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: System.Management.RelationshipQuery
+  langs:
+  - csharp
+  - vb
+  name: RelationshipQuery(string, string)
+  nameWithType: RelationshipQuery.RelationshipQuery(string, string)
+  fullName: System.Management.RelationshipQuery.RelationshipQuery(string, string)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public RelationshipQuery(string sourceObject, string relationshipClass)
+    parameters:
+    - id: sourceObject
+      type: System.String
+    - id: relationshipClass
+      type: System.String
+    content.vb: Public Sub New(sourceObject As String, relationshipClass As String)
+  overload: System.Management.RelationshipQuery.#ctor*
+  nameWithType.vb: RelationshipQuery.New(String, String)
+  fullName.vb: System.Management.RelationshipQuery.New(String, String)
+  name.vb: New(String, String)
+- uid: System.Management.RelationshipQuery.#ctor(System.String,System.String,System.String,System.String,System.Boolean)
+  commentId: M:System.Management.RelationshipQuery.#ctor(System.String,System.String,System.String,System.String,System.Boolean)
+  id: '#ctor(System.String,System.String,System.String,System.String,System.Boolean)'
+  parent: System.Management.RelationshipQuery
+  langs:
+  - csharp
+  - vb
+  name: RelationshipQuery(string, string, string, string, bool)
+  nameWithType: RelationshipQuery.RelationshipQuery(string, string, string, string, bool)
+  fullName: System.Management.RelationshipQuery.RelationshipQuery(string, string, string, string, bool)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public RelationshipQuery(string sourceObject, string relationshipClass, string relationshipQualifier, string thisRole, bool classDefinitionsOnly)
+    parameters:
+    - id: sourceObject
+      type: System.String
+    - id: relationshipClass
+      type: System.String
+    - id: relationshipQualifier
+      type: System.String
+    - id: thisRole
+      type: System.String
+    - id: classDefinitionsOnly
+      type: System.Boolean
+    content.vb: Public Sub New(sourceObject As String, relationshipClass As String, relationshipQualifier As String, thisRole As String, classDefinitionsOnly As Boolean)
+  overload: System.Management.RelationshipQuery.#ctor*
+  nameWithType.vb: RelationshipQuery.New(String, String, String, String, Boolean)
+  fullName.vb: System.Management.RelationshipQuery.New(String, String, String, String, Boolean)
+  name.vb: New(String, String, String, String, Boolean)
+- uid: System.Management.RelationshipQuery.BuildQuery
+  commentId: M:System.Management.RelationshipQuery.BuildQuery
+  id: BuildQuery
+  parent: System.Management.RelationshipQuery
+  langs:
+  - csharp
+  - vb
+  name: BuildQuery()
+  nameWithType: RelationshipQuery.BuildQuery()
+  fullName: System.Management.RelationshipQuery.BuildQuery()
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: protected void BuildQuery()
+    content.vb: Protected Sub BuildQuery()
+  overload: System.Management.RelationshipQuery.BuildQuery*
+- uid: System.Management.RelationshipQuery.Clone
+  commentId: M:System.Management.RelationshipQuery.Clone
+  id: Clone
+  parent: System.Management.RelationshipQuery
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: RelationshipQuery.Clone()
+  fullName: System.Management.RelationshipQuery.Clone()
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  example: []
+  syntax:
+    content: public override object Clone()
+    return:
+      type: System.Object
+    content.vb: Public Overrides Function Clone() As Object
+  overridden: System.Management.WqlObjectQuery.Clone
+  overload: System.Management.RelationshipQuery.Clone*
+- uid: System.Management.RelationshipQuery.ParseQuery(System.String)
+  commentId: M:System.Management.RelationshipQuery.ParseQuery(System.String)
+  id: ParseQuery(System.String)
+  parent: System.Management.RelationshipQuery
+  langs:
+  - csharp
+  - vb
+  name: ParseQuery(string)
+  nameWithType: RelationshipQuery.ParseQuery(string)
+  fullName: System.Management.RelationshipQuery.ParseQuery(string)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  example: []
+  syntax:
+    content: protected override void ParseQuery(string query)
+    parameters:
+    - id: query
+      type: System.String
+    content.vb: Protected Overrides Sub ParseQuery(query As String)
+  overridden: System.Management.ManagementQuery.ParseQuery(System.String)
+  overload: System.Management.RelationshipQuery.ParseQuery*
+  nameWithType.vb: RelationshipQuery.ParseQuery(String)
+  fullName.vb: System.Management.RelationshipQuery.ParseQuery(String)
+  name.vb: ParseQuery(String)
+- uid: System.Management.RelationshipQuery.ClassDefinitionsOnly
+  commentId: P:System.Management.RelationshipQuery.ClassDefinitionsOnly
+  id: ClassDefinitionsOnly
+  parent: System.Management.RelationshipQuery
+  langs:
+  - csharp
+  - vb
+  name: ClassDefinitionsOnly
+  nameWithType: RelationshipQuery.ClassDefinitionsOnly
+  fullName: System.Management.RelationshipQuery.ClassDefinitionsOnly
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public bool ClassDefinitionsOnly { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ClassDefinitionsOnly As Boolean
+  overload: System.Management.RelationshipQuery.ClassDefinitionsOnly*
+- uid: System.Management.RelationshipQuery.IsSchemaQuery
+  commentId: P:System.Management.RelationshipQuery.IsSchemaQuery
+  id: IsSchemaQuery
+  parent: System.Management.RelationshipQuery
+  langs:
+  - csharp
+  - vb
+  name: IsSchemaQuery
+  nameWithType: RelationshipQuery.IsSchemaQuery
+  fullName: System.Management.RelationshipQuery.IsSchemaQuery
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public bool IsSchemaQuery { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSchemaQuery As Boolean
+  overload: System.Management.RelationshipQuery.IsSchemaQuery*
+- uid: System.Management.RelationshipQuery.RelationshipClass
+  commentId: P:System.Management.RelationshipQuery.RelationshipClass
+  id: RelationshipClass
+  parent: System.Management.RelationshipQuery
+  langs:
+  - csharp
+  - vb
+  name: RelationshipClass
+  nameWithType: RelationshipQuery.RelationshipClass
+  fullName: System.Management.RelationshipQuery.RelationshipClass
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public string RelationshipClass { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RelationshipClass As String
+  overload: System.Management.RelationshipQuery.RelationshipClass*
+- uid: System.Management.RelationshipQuery.RelationshipQualifier
+  commentId: P:System.Management.RelationshipQuery.RelationshipQualifier
+  id: RelationshipQualifier
+  parent: System.Management.RelationshipQuery
+  langs:
+  - csharp
+  - vb
+  name: RelationshipQualifier
+  nameWithType: RelationshipQuery.RelationshipQualifier
+  fullName: System.Management.RelationshipQuery.RelationshipQualifier
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public string RelationshipQualifier { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RelationshipQualifier As String
+  overload: System.Management.RelationshipQuery.RelationshipQualifier*
+- uid: System.Management.RelationshipQuery.SourceObject
+  commentId: P:System.Management.RelationshipQuery.SourceObject
+  id: SourceObject
+  parent: System.Management.RelationshipQuery
+  langs:
+  - csharp
+  - vb
+  name: SourceObject
+  nameWithType: RelationshipQuery.SourceObject
+  fullName: System.Management.RelationshipQuery.SourceObject
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public string SourceObject { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SourceObject As String
+  overload: System.Management.RelationshipQuery.SourceObject*
+- uid: System.Management.RelationshipQuery.ThisRole
+  commentId: P:System.Management.RelationshipQuery.ThisRole
+  id: ThisRole
+  parent: System.Management.RelationshipQuery
+  langs:
+  - csharp
+  - vb
+  name: ThisRole
+  nameWithType: RelationshipQuery.ThisRole
+  fullName: System.Management.RelationshipQuery.ThisRole
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public string ThisRole { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ThisRole As String
+  overload: System.Management.RelationshipQuery.ThisRole*
+references:
+- uid: System.Management
+  commentId: N:System.Management
+  isExternal: true
+  href: System.html
+  name: System.Management
+  nameWithType: System.Management
+  fullName: System.Management
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Management
+    name: Management
+    isExternal: true
+    href: System.Management.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Management
+    name: Management
+    isExternal: true
+    href: System.Management.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Management.ManagementQuery
+  commentId: T:System.Management.ManagementQuery
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ManagementQuery.html
+  name: ManagementQuery
+  nameWithType: ManagementQuery
+  fullName: System.Management.ManagementQuery
+- uid: System.Management.ObjectQuery
+  commentId: T:System.Management.ObjectQuery
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ObjectQuery.html
+  name: ObjectQuery
+  nameWithType: ObjectQuery
+  fullName: System.Management.ObjectQuery
+- uid: System.Management.WqlObjectQuery
+  commentId: T:System.Management.WqlObjectQuery
+  parent: System.Management
+  isExternal: true
+  href: System.Management.WqlObjectQuery.html
+  name: WqlObjectQuery
+  nameWithType: WqlObjectQuery
+  fullName: System.Management.WqlObjectQuery
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Management.WqlObjectQuery.QueryLanguage
+  commentId: P:System.Management.WqlObjectQuery.QueryLanguage
+  parent: System.Management.WqlObjectQuery
+  isExternal: true
+  href: System.Management.WqlObjectQuery.html#System_Management_WqlObjectQuery_QueryLanguage
+  name: QueryLanguage
+  nameWithType: WqlObjectQuery.QueryLanguage
+  fullName: System.Management.WqlObjectQuery.QueryLanguage
+- uid: System.Management.ManagementQuery.QueryString
+  commentId: P:System.Management.ManagementQuery.QueryString
+  parent: System.Management.ManagementQuery
+  isExternal: true
+  href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_QueryString
+  name: QueryString
+  nameWithType: ManagementQuery.QueryString
+  fullName: System.Management.ManagementQuery.QueryString
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Management.RelationshipQuery.#ctor*
+  commentId: Overload:System.Management.RelationshipQuery.#ctor
+  isExternal: true
+  href: System.Management.RelationshipQuery.html#System_Management_RelationshipQuery__ctor
+  name: RelationshipQuery
+  nameWithType: RelationshipQuery.RelationshipQuery
+  fullName: System.Management.RelationshipQuery.RelationshipQuery
+  nameWithType.vb: RelationshipQuery.New
+  fullName.vb: System.Management.RelationshipQuery.New
+  name.vb: New
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Management.RelationshipQuery.BuildQuery*
+  commentId: Overload:System.Management.RelationshipQuery.BuildQuery
+  isExternal: true
+  href: System.Management.RelationshipQuery.html#System_Management_RelationshipQuery_BuildQuery
+  name: BuildQuery
+  nameWithType: RelationshipQuery.BuildQuery
+  fullName: System.Management.RelationshipQuery.BuildQuery
+- uid: System.Management.WqlObjectQuery.Clone
+  commentId: M:System.Management.WqlObjectQuery.Clone
+  parent: System.Management.WqlObjectQuery
+  isExternal: true
+  href: System.Management.WqlObjectQuery.html#System_Management_WqlObjectQuery_Clone
+  name: Clone()
+  nameWithType: WqlObjectQuery.Clone()
+  fullName: System.Management.WqlObjectQuery.Clone()
+  spec.csharp:
+  - uid: System.Management.WqlObjectQuery.Clone
+    name: Clone
+    isExternal: true
+    href: System.Management.WqlObjectQuery.html#System_Management_WqlObjectQuery_Clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Management.WqlObjectQuery.Clone
+    name: Clone
+    isExternal: true
+    href: System.Management.WqlObjectQuery.html#System_Management_WqlObjectQuery_Clone
+  - name: (
+  - name: )
+- uid: System.Management.RelationshipQuery.Clone*
+  commentId: Overload:System.Management.RelationshipQuery.Clone
+  isExternal: true
+  href: System.Management.RelationshipQuery.html#System_Management_RelationshipQuery_Clone
+  name: Clone
+  nameWithType: RelationshipQuery.Clone
+  fullName: System.Management.RelationshipQuery.Clone
+- uid: System.Management.ManagementQuery.ParseQuery(System.String)
+  commentId: M:System.Management.ManagementQuery.ParseQuery(System.String)
+  parent: System.Management.ManagementQuery
+  isExternal: true
+  href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_ParseQuery_System_String_
+  name: ParseQuery(string)
+  nameWithType: ManagementQuery.ParseQuery(string)
+  fullName: System.Management.ManagementQuery.ParseQuery(string)
+  nameWithType.vb: ManagementQuery.ParseQuery(String)
+  fullName.vb: System.Management.ManagementQuery.ParseQuery(String)
+  name.vb: ParseQuery(String)
+  spec.csharp:
+  - uid: System.Management.ManagementQuery.ParseQuery(System.String)
+    name: ParseQuery
+    isExternal: true
+    href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_ParseQuery_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementQuery.ParseQuery(System.String)
+    name: ParseQuery
+    isExternal: true
+    href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_ParseQuery_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Management.RelationshipQuery.ParseQuery*
+  commentId: Overload:System.Management.RelationshipQuery.ParseQuery
+  isExternal: true
+  href: System.Management.RelationshipQuery.html#System_Management_RelationshipQuery_ParseQuery_System_String_
+  name: ParseQuery
+  nameWithType: RelationshipQuery.ParseQuery
+  fullName: System.Management.RelationshipQuery.ParseQuery
+- uid: System.Management.RelationshipQuery.ClassDefinitionsOnly*
+  commentId: Overload:System.Management.RelationshipQuery.ClassDefinitionsOnly
+  isExternal: true
+  href: System.Management.RelationshipQuery.html#System_Management_RelationshipQuery_ClassDefinitionsOnly
+  name: ClassDefinitionsOnly
+  nameWithType: RelationshipQuery.ClassDefinitionsOnly
+  fullName: System.Management.RelationshipQuery.ClassDefinitionsOnly
+- uid: System.Management.RelationshipQuery.IsSchemaQuery*
+  commentId: Overload:System.Management.RelationshipQuery.IsSchemaQuery
+  isExternal: true
+  href: System.Management.RelationshipQuery.html#System_Management_RelationshipQuery_IsSchemaQuery
+  name: IsSchemaQuery
+  nameWithType: RelationshipQuery.IsSchemaQuery
+  fullName: System.Management.RelationshipQuery.IsSchemaQuery
+- uid: System.Management.RelationshipQuery.RelationshipClass*
+  commentId: Overload:System.Management.RelationshipQuery.RelationshipClass
+  isExternal: true
+  href: System.Management.RelationshipQuery.html#System_Management_RelationshipQuery_RelationshipClass
+  name: RelationshipClass
+  nameWithType: RelationshipQuery.RelationshipClass
+  fullName: System.Management.RelationshipQuery.RelationshipClass
+- uid: System.Management.RelationshipQuery.RelationshipQualifier*
+  commentId: Overload:System.Management.RelationshipQuery.RelationshipQualifier
+  isExternal: true
+  href: System.Management.RelationshipQuery.html#System_Management_RelationshipQuery_RelationshipQualifier
+  name: RelationshipQualifier
+  nameWithType: RelationshipQuery.RelationshipQualifier
+  fullName: System.Management.RelationshipQuery.RelationshipQualifier
+- uid: System.Management.RelationshipQuery.SourceObject*
+  commentId: Overload:System.Management.RelationshipQuery.SourceObject
+  isExternal: true
+  href: System.Management.RelationshipQuery.html#System_Management_RelationshipQuery_SourceObject
+  name: SourceObject
+  nameWithType: RelationshipQuery.SourceObject
+  fullName: System.Management.RelationshipQuery.SourceObject
+- uid: System.Management.RelationshipQuery.ThisRole*
+  commentId: Overload:System.Management.RelationshipQuery.ThisRole
+  isExternal: true
+  href: System.Management.RelationshipQuery.html#System_Management_RelationshipQuery_ThisRole
+  name: ThisRole
+  nameWithType: RelationshipQuery.ThisRole
+  fullName: System.Management.RelationshipQuery.ThisRole

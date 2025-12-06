@@ -1,0 +1,930 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  id: AutocollectedMetricsExtractor
+  parent: Microsoft.ApplicationInsights.Extensibility
+  children:
+  - Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.#ctor(Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor)
+  - Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Dispose
+  - Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  - Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyCloudRoleInstanceValuesToDiscover
+  - Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyCloudRoleNameValuesToDiscover
+  - Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyResultCodesToDiscover
+  - Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyTargetValuesToDiscover
+  - Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyTypesToDiscover
+  - Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxExceptionCloudRoleInstanceValuesToDiscover
+  - Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxExceptionCloudRoleNameValuesToDiscover
+  - Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestCloudRoleInstanceValuesToDiscover
+  - Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestCloudRoleNameValuesToDiscover
+  - Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestResponseCodeValuesToDiscover
+  - Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxTraceCloudRoleInstanceValuesToDiscover
+  - Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxTraceCloudRoleNameValuesToDiscover
+  - Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Process(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  langs:
+  - csharp
+  - vb
+  name: AutocollectedMetricsExtractor
+  nameWithType: AutocollectedMetricsExtractor
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  type: Class
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: 'public sealed class AutocollectedMetricsExtractor : ITelemetryProcessor, ITelemetryModule, IDisposable'
+    content.vb: Public NotInheritable Class AutocollectedMetricsExtractor Implements ITelemetryProcessor, ITelemetryModule, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor
+  - Microsoft.ApplicationInsights.Extensibility.ITelemetryModule
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.#ctor(Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor)
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.#ctor(Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor)
+  id: '#ctor(Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor)'
+  parent: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  langs:
+  - csharp
+  - vb
+  name: AutocollectedMetricsExtractor(ITelemetryProcessor)
+  nameWithType: AutocollectedMetricsExtractor.AutocollectedMetricsExtractor(ITelemetryProcessor)
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.AutocollectedMetricsExtractor(Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor)
+  type: Constructor
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public AutocollectedMetricsExtractor(ITelemetryProcessor nextProcessorInPipeline)
+    parameters:
+    - id: nextProcessorInPipeline
+      type: Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor
+    content.vb: Public Sub New(nextProcessorInPipeline As ITelemetryProcessor)
+  overload: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.#ctor*
+  nameWithType.vb: AutocollectedMetricsExtractor.New(ITelemetryProcessor)
+  fullName.vb: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.New(Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor)
+  name.vb: New(ITelemetryProcessor)
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  id: Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  parent: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  langs:
+  - csharp
+  - vb
+  name: Initialize(TelemetryConfiguration)
+  nameWithType: AutocollectedMetricsExtractor.Initialize(TelemetryConfiguration)
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  example: []
+  syntax:
+    content: public void Initialize(TelemetryConfiguration configuration)
+    parameters:
+    - id: configuration
+      type: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+    content.vb: Public Sub Initialize(configuration As TelemetryConfiguration)
+  overload: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Initialize*
+  implements:
+  - Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Process(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Process(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  id: Process(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  parent: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  langs:
+  - csharp
+  - vb
+  name: Process(ITelemetry)
+  nameWithType: AutocollectedMetricsExtractor.Process(ITelemetry)
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Process(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  example: []
+  syntax:
+    content: public void Process(ITelemetry item)
+    parameters:
+    - id: item
+      type: Microsoft.ApplicationInsights.Channel.ITelemetry
+    content.vb: Public Sub Process(item As ITelemetry)
+  overload: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Process*
+  implements:
+  - Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor.Process(Microsoft.ApplicationInsights.Channel.ITelemetry)
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Dispose
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Dispose
+  id: Dispose
+  parent: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: AutocollectedMetricsExtractor.Dispose()
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Dispose()
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyTypesToDiscover
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyTypesToDiscover
+  id: MaxDependencyTypesToDiscover
+  parent: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  langs:
+  - csharp
+  - vb
+  name: MaxDependencyTypesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxDependencyTypesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyTypesToDiscover
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public int MaxDependencyTypesToDiscover { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxDependencyTypesToDiscover As Integer
+  overload: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyTypesToDiscover*
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyResultCodesToDiscover
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyResultCodesToDiscover
+  id: MaxDependencyResultCodesToDiscover
+  parent: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  langs:
+  - csharp
+  - vb
+  name: MaxDependencyResultCodesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxDependencyResultCodesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyResultCodesToDiscover
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public int MaxDependencyResultCodesToDiscover { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxDependencyResultCodesToDiscover As Integer
+  overload: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyResultCodesToDiscover*
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyTargetValuesToDiscover
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyTargetValuesToDiscover
+  id: MaxDependencyTargetValuesToDiscover
+  parent: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  langs:
+  - csharp
+  - vb
+  name: MaxDependencyTargetValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxDependencyTargetValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyTargetValuesToDiscover
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public int MaxDependencyTargetValuesToDiscover { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxDependencyTargetValuesToDiscover As Integer
+  overload: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyTargetValuesToDiscover*
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyCloudRoleInstanceValuesToDiscover
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyCloudRoleInstanceValuesToDiscover
+  id: MaxDependencyCloudRoleInstanceValuesToDiscover
+  parent: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  langs:
+  - csharp
+  - vb
+  name: MaxDependencyCloudRoleInstanceValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxDependencyCloudRoleInstanceValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyCloudRoleInstanceValuesToDiscover
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public int MaxDependencyCloudRoleInstanceValuesToDiscover { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxDependencyCloudRoleInstanceValuesToDiscover As Integer
+  overload: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyCloudRoleInstanceValuesToDiscover*
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyCloudRoleNameValuesToDiscover
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyCloudRoleNameValuesToDiscover
+  id: MaxDependencyCloudRoleNameValuesToDiscover
+  parent: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  langs:
+  - csharp
+  - vb
+  name: MaxDependencyCloudRoleNameValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxDependencyCloudRoleNameValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyCloudRoleNameValuesToDiscover
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public int MaxDependencyCloudRoleNameValuesToDiscover { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxDependencyCloudRoleNameValuesToDiscover As Integer
+  overload: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyCloudRoleNameValuesToDiscover*
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxExceptionCloudRoleInstanceValuesToDiscover
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxExceptionCloudRoleInstanceValuesToDiscover
+  id: MaxExceptionCloudRoleInstanceValuesToDiscover
+  parent: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  langs:
+  - csharp
+  - vb
+  name: MaxExceptionCloudRoleInstanceValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxExceptionCloudRoleInstanceValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxExceptionCloudRoleInstanceValuesToDiscover
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public int MaxExceptionCloudRoleInstanceValuesToDiscover { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxExceptionCloudRoleInstanceValuesToDiscover As Integer
+  overload: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxExceptionCloudRoleInstanceValuesToDiscover*
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxExceptionCloudRoleNameValuesToDiscover
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxExceptionCloudRoleNameValuesToDiscover
+  id: MaxExceptionCloudRoleNameValuesToDiscover
+  parent: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  langs:
+  - csharp
+  - vb
+  name: MaxExceptionCloudRoleNameValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxExceptionCloudRoleNameValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxExceptionCloudRoleNameValuesToDiscover
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public int MaxExceptionCloudRoleNameValuesToDiscover { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxExceptionCloudRoleNameValuesToDiscover As Integer
+  overload: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxExceptionCloudRoleNameValuesToDiscover*
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxTraceCloudRoleInstanceValuesToDiscover
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxTraceCloudRoleInstanceValuesToDiscover
+  id: MaxTraceCloudRoleInstanceValuesToDiscover
+  parent: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  langs:
+  - csharp
+  - vb
+  name: MaxTraceCloudRoleInstanceValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxTraceCloudRoleInstanceValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxTraceCloudRoleInstanceValuesToDiscover
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public int MaxTraceCloudRoleInstanceValuesToDiscover { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxTraceCloudRoleInstanceValuesToDiscover As Integer
+  overload: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxTraceCloudRoleInstanceValuesToDiscover*
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxTraceCloudRoleNameValuesToDiscover
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxTraceCloudRoleNameValuesToDiscover
+  id: MaxTraceCloudRoleNameValuesToDiscover
+  parent: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  langs:
+  - csharp
+  - vb
+  name: MaxTraceCloudRoleNameValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxTraceCloudRoleNameValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxTraceCloudRoleNameValuesToDiscover
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public int MaxTraceCloudRoleNameValuesToDiscover { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxTraceCloudRoleNameValuesToDiscover As Integer
+  overload: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxTraceCloudRoleNameValuesToDiscover*
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestCloudRoleInstanceValuesToDiscover
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestCloudRoleInstanceValuesToDiscover
+  id: MaxRequestCloudRoleInstanceValuesToDiscover
+  parent: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  langs:
+  - csharp
+  - vb
+  name: MaxRequestCloudRoleInstanceValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxRequestCloudRoleInstanceValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestCloudRoleInstanceValuesToDiscover
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public int MaxRequestCloudRoleInstanceValuesToDiscover { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxRequestCloudRoleInstanceValuesToDiscover As Integer
+  overload: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestCloudRoleInstanceValuesToDiscover*
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestCloudRoleNameValuesToDiscover
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestCloudRoleNameValuesToDiscover
+  id: MaxRequestCloudRoleNameValuesToDiscover
+  parent: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  langs:
+  - csharp
+  - vb
+  name: MaxRequestCloudRoleNameValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxRequestCloudRoleNameValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestCloudRoleNameValuesToDiscover
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public int MaxRequestCloudRoleNameValuesToDiscover { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxRequestCloudRoleNameValuesToDiscover As Integer
+  overload: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestCloudRoleNameValuesToDiscover*
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestResponseCodeValuesToDiscover
+  commentId: P:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestResponseCodeValuesToDiscover
+  id: MaxRequestResponseCodeValuesToDiscover
+  parent: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor
+  langs:
+  - csharp
+  - vb
+  name: MaxRequestResponseCodeValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxRequestResponseCodeValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestResponseCodeValuesToDiscover
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Extensibility
+  syntax:
+    content: public int MaxRequestResponseCodeValuesToDiscover { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxRequestResponseCodeValuesToDiscover As Integer
+  overload: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestResponseCodeValuesToDiscover*
+references:
+- uid: Microsoft.ApplicationInsights.Extensibility
+  commentId: N:Microsoft.ApplicationInsights.Extensibility
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Extensibility
+  nameWithType: Microsoft.ApplicationInsights.Extensibility
+  fullName: Microsoft.ApplicationInsights.Extensibility
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor
+  parent: Microsoft.ApplicationInsights.Extensibility
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor.html
+  name: ITelemetryProcessor
+  nameWithType: ITelemetryProcessor
+  fullName: Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor
+- uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.ITelemetryModule
+  parent: Microsoft.ApplicationInsights.Extensibility
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.html
+  name: ITelemetryModule
+  nameWithType: ITelemetryModule
+  fullName: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.#ctor*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.#ctor
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.html#Microsoft_ApplicationInsights_Extensibility_AutocollectedMetricsExtractor__ctor_Microsoft_ApplicationInsights_Extensibility_ITelemetryProcessor_
+  name: AutocollectedMetricsExtractor
+  nameWithType: AutocollectedMetricsExtractor.AutocollectedMetricsExtractor
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.AutocollectedMetricsExtractor
+  nameWithType.vb: AutocollectedMetricsExtractor.New
+  fullName.vb: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.New
+  name.vb: New
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Initialize*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Initialize
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.html#Microsoft_ApplicationInsights_Extensibility_AutocollectedMetricsExtractor_Initialize_Microsoft_ApplicationInsights_Extensibility_TelemetryConfiguration_
+  name: Initialize
+  nameWithType: AutocollectedMetricsExtractor.Initialize
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Initialize
+- uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  parent: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_ITelemetryModule_Initialize_Microsoft_ApplicationInsights_Extensibility_TelemetryConfiguration_
+  name: Initialize(TelemetryConfiguration)
+  nameWithType: ITelemetryModule.Initialize(TelemetryConfiguration)
+  fullName: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+    name: Initialize
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_ITelemetryModule_Initialize_Microsoft_ApplicationInsights_Extensibility_TelemetryConfiguration_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+    name: TelemetryConfiguration
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.Initialize(Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration)
+    name: Initialize
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.ITelemetryModule.html#Microsoft_ApplicationInsights_Extensibility_ITelemetryModule_Initialize_Microsoft_ApplicationInsights_Extensibility_TelemetryConfiguration_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+    name: TelemetryConfiguration
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.html
+  - name: )
+- uid: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+  parent: Microsoft.ApplicationInsights.Extensibility
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.html
+  name: TelemetryConfiguration
+  nameWithType: TelemetryConfiguration
+  fullName: Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Process*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Process
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.html#Microsoft_ApplicationInsights_Extensibility_AutocollectedMetricsExtractor_Process_Microsoft_ApplicationInsights_Channel_ITelemetry_
+  name: Process
+  nameWithType: AutocollectedMetricsExtractor.Process
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Process
+- uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor.Process(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  commentId: M:Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor.Process(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  parent: Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor.html#Microsoft_ApplicationInsights_Extensibility_ITelemetryProcessor_Process_Microsoft_ApplicationInsights_Channel_ITelemetry_
+  name: Process(ITelemetry)
+  nameWithType: ITelemetryProcessor.Process(ITelemetry)
+  fullName: Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor.Process(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  spec.csharp:
+  - uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor.Process(Microsoft.ApplicationInsights.Channel.ITelemetry)
+    name: Process
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor.html#Microsoft_ApplicationInsights_Extensibility_ITelemetryProcessor_Process_Microsoft_ApplicationInsights_Channel_ITelemetry_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Channel.ITelemetry
+    name: ITelemetry
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.ITelemetry.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor.Process(Microsoft.ApplicationInsights.Channel.ITelemetry)
+    name: Process
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.ITelemetryProcessor.html#Microsoft_ApplicationInsights_Extensibility_ITelemetryProcessor_Process_Microsoft_ApplicationInsights_Channel_ITelemetry_
+  - name: (
+  - uid: Microsoft.ApplicationInsights.Channel.ITelemetry
+    name: ITelemetry
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.ITelemetry.html
+  - name: )
+- uid: Microsoft.ApplicationInsights.Channel.ITelemetry
+  commentId: T:Microsoft.ApplicationInsights.Channel.ITelemetry
+  parent: Microsoft.ApplicationInsights.Channel
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.ITelemetry.html
+  name: ITelemetry
+  nameWithType: ITelemetry
+  fullName: Microsoft.ApplicationInsights.Channel.ITelemetry
+- uid: Microsoft.ApplicationInsights.Channel
+  commentId: N:Microsoft.ApplicationInsights.Channel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Channel
+  nameWithType: Microsoft.ApplicationInsights.Channel
+  fullName: Microsoft.ApplicationInsights.Channel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Channel
+    name: Channel
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Channel
+    name: Channel
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.html
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Dispose*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Dispose
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.html#Microsoft_ApplicationInsights_Extensibility_AutocollectedMetricsExtractor_Dispose
+  name: Dispose
+  nameWithType: AutocollectedMetricsExtractor.Dispose
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyTypesToDiscover*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyTypesToDiscover
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.html#Microsoft_ApplicationInsights_Extensibility_AutocollectedMetricsExtractor_MaxDependencyTypesToDiscover
+  name: MaxDependencyTypesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxDependencyTypesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyTypesToDiscover
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyResultCodesToDiscover*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyResultCodesToDiscover
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.html#Microsoft_ApplicationInsights_Extensibility_AutocollectedMetricsExtractor_MaxDependencyResultCodesToDiscover
+  name: MaxDependencyResultCodesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxDependencyResultCodesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyResultCodesToDiscover
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyTargetValuesToDiscover*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyTargetValuesToDiscover
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.html#Microsoft_ApplicationInsights_Extensibility_AutocollectedMetricsExtractor_MaxDependencyTargetValuesToDiscover
+  name: MaxDependencyTargetValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxDependencyTargetValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyTargetValuesToDiscover
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyCloudRoleInstanceValuesToDiscover*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyCloudRoleInstanceValuesToDiscover
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.html#Microsoft_ApplicationInsights_Extensibility_AutocollectedMetricsExtractor_MaxDependencyCloudRoleInstanceValuesToDiscover
+  name: MaxDependencyCloudRoleInstanceValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxDependencyCloudRoleInstanceValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyCloudRoleInstanceValuesToDiscover
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyCloudRoleNameValuesToDiscover*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyCloudRoleNameValuesToDiscover
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.html#Microsoft_ApplicationInsights_Extensibility_AutocollectedMetricsExtractor_MaxDependencyCloudRoleNameValuesToDiscover
+  name: MaxDependencyCloudRoleNameValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxDependencyCloudRoleNameValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxDependencyCloudRoleNameValuesToDiscover
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxExceptionCloudRoleInstanceValuesToDiscover*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxExceptionCloudRoleInstanceValuesToDiscover
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.html#Microsoft_ApplicationInsights_Extensibility_AutocollectedMetricsExtractor_MaxExceptionCloudRoleInstanceValuesToDiscover
+  name: MaxExceptionCloudRoleInstanceValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxExceptionCloudRoleInstanceValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxExceptionCloudRoleInstanceValuesToDiscover
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxExceptionCloudRoleNameValuesToDiscover*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxExceptionCloudRoleNameValuesToDiscover
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.html#Microsoft_ApplicationInsights_Extensibility_AutocollectedMetricsExtractor_MaxExceptionCloudRoleNameValuesToDiscover
+  name: MaxExceptionCloudRoleNameValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxExceptionCloudRoleNameValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxExceptionCloudRoleNameValuesToDiscover
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxTraceCloudRoleInstanceValuesToDiscover*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxTraceCloudRoleInstanceValuesToDiscover
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.html#Microsoft_ApplicationInsights_Extensibility_AutocollectedMetricsExtractor_MaxTraceCloudRoleInstanceValuesToDiscover
+  name: MaxTraceCloudRoleInstanceValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxTraceCloudRoleInstanceValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxTraceCloudRoleInstanceValuesToDiscover
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxTraceCloudRoleNameValuesToDiscover*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxTraceCloudRoleNameValuesToDiscover
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.html#Microsoft_ApplicationInsights_Extensibility_AutocollectedMetricsExtractor_MaxTraceCloudRoleNameValuesToDiscover
+  name: MaxTraceCloudRoleNameValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxTraceCloudRoleNameValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxTraceCloudRoleNameValuesToDiscover
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestCloudRoleInstanceValuesToDiscover*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestCloudRoleInstanceValuesToDiscover
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.html#Microsoft_ApplicationInsights_Extensibility_AutocollectedMetricsExtractor_MaxRequestCloudRoleInstanceValuesToDiscover
+  name: MaxRequestCloudRoleInstanceValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxRequestCloudRoleInstanceValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestCloudRoleInstanceValuesToDiscover
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestCloudRoleNameValuesToDiscover*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestCloudRoleNameValuesToDiscover
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.html#Microsoft_ApplicationInsights_Extensibility_AutocollectedMetricsExtractor_MaxRequestCloudRoleNameValuesToDiscover
+  name: MaxRequestCloudRoleNameValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxRequestCloudRoleNameValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestCloudRoleNameValuesToDiscover
+- uid: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestResponseCodeValuesToDiscover*
+  commentId: Overload:Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestResponseCodeValuesToDiscover
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.html#Microsoft_ApplicationInsights_Extensibility_AutocollectedMetricsExtractor_MaxRequestResponseCodeValuesToDiscover
+  name: MaxRequestResponseCodeValuesToDiscover
+  nameWithType: AutocollectedMetricsExtractor.MaxRequestResponseCodeValuesToDiscover
+  fullName: Microsoft.ApplicationInsights.Extensibility.AutocollectedMetricsExtractor.MaxRequestResponseCodeValuesToDiscover

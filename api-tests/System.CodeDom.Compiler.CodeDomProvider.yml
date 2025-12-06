@@ -1,0 +1,2045 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.CodeDom.Compiler.CodeDomProvider
+  commentId: T:System.CodeDom.Compiler.CodeDomProvider
+  id: CodeDomProvider
+  parent: System.CodeDom.Compiler
+  children:
+  - System.CodeDom.Compiler.CodeDomProvider.#ctor
+  - System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom(System.CodeDom.Compiler.CompilerParameters,System.CodeDom.CodeCompileUnit[])
+  - System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile(System.CodeDom.Compiler.CompilerParameters,System.String[])
+  - System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource(System.CodeDom.Compiler.CompilerParameters,System.String[])
+  - System.CodeDom.Compiler.CodeDomProvider.CreateCompiler
+  - System.CodeDom.Compiler.CodeDomProvider.CreateEscapedIdentifier(System.String)
+  - System.CodeDom.Compiler.CodeDomProvider.CreateGenerator
+  - System.CodeDom.Compiler.CodeDomProvider.CreateGenerator(System.IO.TextWriter)
+  - System.CodeDom.Compiler.CodeDomProvider.CreateGenerator(System.String)
+  - System.CodeDom.Compiler.CodeDomProvider.CreateParser
+  - System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String)
+  - System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  - System.CodeDom.Compiler.CodeDomProvider.CreateValidIdentifier(System.String)
+  - System.CodeDom.Compiler.CodeDomProvider.FileExtension
+  - System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromCompileUnit(System.CodeDom.CodeCompileUnit,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  - System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromExpression(System.CodeDom.CodeExpression,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  - System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromMember(System.CodeDom.CodeTypeMember,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  - System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromNamespace(System.CodeDom.CodeNamespace,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  - System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromStatement(System.CodeDom.CodeStatement,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  - System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromType(System.CodeDom.CodeTypeDeclaration,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  - System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo
+  - System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo(System.String)
+  - System.CodeDom.Compiler.CodeDomProvider.GetConverter(System.Type)
+  - System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension(System.String)
+  - System.CodeDom.Compiler.CodeDomProvider.GetTypeOutput(System.CodeDom.CodeTypeReference)
+  - System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension(System.String)
+  - System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage(System.String)
+  - System.CodeDom.Compiler.CodeDomProvider.IsValidIdentifier(System.String)
+  - System.CodeDom.Compiler.CodeDomProvider.LanguageOptions
+  - System.CodeDom.Compiler.CodeDomProvider.Parse(System.IO.TextReader)
+  - System.CodeDom.Compiler.CodeDomProvider.Supports(System.CodeDom.Compiler.GeneratorSupport)
+  langs:
+  - csharp
+  - vb
+  name: CodeDomProvider
+  nameWithType: CodeDomProvider
+  fullName: System.CodeDom.Compiler.CodeDomProvider
+  type: Class
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: 'public abstract class CodeDomProvider : Component, IComponent, IDisposable'
+    content.vb: Public MustInherit Class CodeDomProvider Inherits Component Implements IComponent, IDisposable
+  inheritance:
+  - System.Object
+  - System.MarshalByRefObject
+  - System.ComponentModel.Component
+  derivedClasses:
+  - Microsoft.CSharp.CSharpCodeProvider
+  - Microsoft.CSharp.CSharpCodeProvider
+  - Microsoft.VisualBasic.VBCodeProvider
+  - Microsoft.VisualBasic.VBCodeProvider
+  implements:
+  - System.ComponentModel.IComponent
+  - System.IDisposable
+  inheritedMembers:
+  - System.ComponentModel.Component.Dispose
+  - System.ComponentModel.Component.Dispose(System.Boolean)
+  - System.ComponentModel.Component.GetService(System.Type)
+  - System.ComponentModel.Component.ToString
+  - System.ComponentModel.Component.CanRaiseEvents
+  - System.ComponentModel.Component.Events
+  - System.ComponentModel.Component.Site
+  - System.ComponentModel.Component.Container
+  - System.ComponentModel.Component.DesignMode
+  - System.ComponentModel.Component.Disposed
+  - System.MarshalByRefObject.GetLifetimeService
+  - System.MarshalByRefObject.InitializeLifetimeService
+  - System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  id: CreateProvider(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: CreateProvider(string, IDictionary<string, string>)
+  nameWithType: CodeDomProvider.CreateProvider(string, IDictionary<string, string>)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CreateProvider(string, System.Collections.Generic.IDictionary<string, string>)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public static CodeDomProvider CreateProvider(string language, IDictionary<string, string> providerOptions)
+    parameters:
+    - id: language
+      type: System.String
+    - id: providerOptions
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    return:
+      type: System.CodeDom.Compiler.CodeDomProvider
+    content.vb: Public Shared Function CreateProvider(language As String, providerOptions As IDictionary(Of String, String)) As CodeDomProvider
+  overload: System.CodeDom.Compiler.CodeDomProvider.CreateProvider*
+  nameWithType.vb: CodeDomProvider.CreateProvider(String, IDictionary(Of String, String))
+  fullName.vb: System.CodeDom.Compiler.CodeDomProvider.CreateProvider(String, System.Collections.Generic.IDictionary(Of String, String))
+  name.vb: CreateProvider(String, IDictionary(Of String, String))
+- uid: System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.CreateProvider(System.String)
+  id: CreateProvider(System.String)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: CreateProvider(string)
+  nameWithType: CodeDomProvider.CreateProvider(string)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CreateProvider(string)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public static CodeDomProvider CreateProvider(string language)
+    parameters:
+    - id: language
+      type: System.String
+    return:
+      type: System.CodeDom.Compiler.CodeDomProvider
+    content.vb: Public Shared Function CreateProvider(language As String) As CodeDomProvider
+  overload: System.CodeDom.Compiler.CodeDomProvider.CreateProvider*
+  nameWithType.vb: CodeDomProvider.CreateProvider(String)
+  fullName.vb: System.CodeDom.Compiler.CodeDomProvider.CreateProvider(String)
+  name.vb: CreateProvider(String)
+- uid: System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension(System.String)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension(System.String)
+  id: GetLanguageFromExtension(System.String)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: GetLanguageFromExtension(string)
+  nameWithType: CodeDomProvider.GetLanguageFromExtension(string)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension(string)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public static string GetLanguageFromExtension(string extension)
+    parameters:
+    - id: extension
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetLanguageFromExtension(extension As String) As String
+  overload: System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension*
+  nameWithType.vb: CodeDomProvider.GetLanguageFromExtension(String)
+  fullName.vb: System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension(String)
+  name.vb: GetLanguageFromExtension(String)
+- uid: System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage(System.String)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage(System.String)
+  id: IsDefinedLanguage(System.String)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: IsDefinedLanguage(string)
+  nameWithType: CodeDomProvider.IsDefinedLanguage(string)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage(string)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public static bool IsDefinedLanguage(string language)
+    parameters:
+    - id: language
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsDefinedLanguage(language As String) As Boolean
+  overload: System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage*
+  nameWithType.vb: CodeDomProvider.IsDefinedLanguage(String)
+  fullName.vb: System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage(String)
+  name.vb: IsDefinedLanguage(String)
+- uid: System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension(System.String)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension(System.String)
+  id: IsDefinedExtension(System.String)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: IsDefinedExtension(string)
+  nameWithType: CodeDomProvider.IsDefinedExtension(string)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension(string)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public static bool IsDefinedExtension(string extension)
+    parameters:
+    - id: extension
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsDefinedExtension(extension As String) As Boolean
+  overload: System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension*
+  nameWithType.vb: CodeDomProvider.IsDefinedExtension(String)
+  fullName.vb: System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension(String)
+  name.vb: IsDefinedExtension(String)
+- uid: System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo(System.String)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo(System.String)
+  id: GetCompilerInfo(System.String)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: GetCompilerInfo(string)
+  nameWithType: CodeDomProvider.GetCompilerInfo(string)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo(string)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public static CompilerInfo GetCompilerInfo(string language)
+    parameters:
+    - id: language
+      type: System.String
+    return:
+      type: System.CodeDom.Compiler.CompilerInfo
+    content.vb: Public Shared Function GetCompilerInfo(language As String) As CompilerInfo
+  overload: System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo*
+  nameWithType.vb: CodeDomProvider.GetCompilerInfo(String)
+  fullName.vb: System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo(String)
+  name.vb: GetCompilerInfo(String)
+- uid: System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo
+  id: GetAllCompilerInfo
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: GetAllCompilerInfo()
+  nameWithType: CodeDomProvider.GetAllCompilerInfo()
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo()
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public static CompilerInfo[] GetAllCompilerInfo()
+    return:
+      type: System.CodeDom.Compiler.CompilerInfo[]
+    content.vb: Public Shared Function GetAllCompilerInfo() As CompilerInfo()
+  overload: System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo*
+- uid: System.CodeDom.Compiler.CodeDomProvider.CreateGenerator
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator
+  id: CreateGenerator
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: CreateGenerator()
+  nameWithType: CodeDomProvider.CreateGenerator()
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CreateGenerator()
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: >-
+      [Obsolete("ICodeGenerator has been deprecated. Use the methods directly on the CodeDomProvider class instead. Classes inheriting from CodeDomProvider must still implement this interface, and should suppress this warning or also mark this method as obsolete.")]
+
+      public abstract ICodeGenerator CreateGenerator()
+    return:
+      type: System.CodeDom.Compiler.ICodeGenerator
+    content.vb: >-
+      <Obsolete("ICodeGenerator has been deprecated. Use the methods directly on the CodeDomProvider class instead. Classes inheriting from CodeDomProvider must still implement this interface, and should suppress this warning or also mark this method as obsolete.")>
+
+      Public MustOverride Function CreateGenerator() As ICodeGenerator
+  overload: System.CodeDom.Compiler.CodeDomProvider.CreateGenerator*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ICodeGenerator has been deprecated. Use the methods directly on the CodeDomProvider class instead. Classes inheriting from CodeDomProvider must still implement this interface, and should suppress this warning or also mark this method as obsolete.
+- uid: System.CodeDom.Compiler.CodeDomProvider.CreateGenerator(System.IO.TextWriter)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator(System.IO.TextWriter)
+  id: CreateGenerator(System.IO.TextWriter)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: CreateGenerator(TextWriter)
+  nameWithType: CodeDomProvider.CreateGenerator(TextWriter)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CreateGenerator(System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual ICodeGenerator CreateGenerator(TextWriter output)
+    parameters:
+    - id: output
+      type: System.IO.TextWriter
+    return:
+      type: System.CodeDom.Compiler.ICodeGenerator
+    content.vb: Public Overridable Function CreateGenerator(output As TextWriter) As ICodeGenerator
+  overload: System.CodeDom.Compiler.CodeDomProvider.CreateGenerator*
+- uid: System.CodeDom.Compiler.CodeDomProvider.CreateGenerator(System.String)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator(System.String)
+  id: CreateGenerator(System.String)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: CreateGenerator(string)
+  nameWithType: CodeDomProvider.CreateGenerator(string)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CreateGenerator(string)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual ICodeGenerator CreateGenerator(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+    return:
+      type: System.CodeDom.Compiler.ICodeGenerator
+    content.vb: Public Overridable Function CreateGenerator(fileName As String) As ICodeGenerator
+  overload: System.CodeDom.Compiler.CodeDomProvider.CreateGenerator*
+  nameWithType.vb: CodeDomProvider.CreateGenerator(String)
+  fullName.vb: System.CodeDom.Compiler.CodeDomProvider.CreateGenerator(String)
+  name.vb: CreateGenerator(String)
+- uid: System.CodeDom.Compiler.CodeDomProvider.CreateCompiler
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler
+  id: CreateCompiler
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: CreateCompiler()
+  nameWithType: CodeDomProvider.CreateCompiler()
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CreateCompiler()
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: >-
+      [Obsolete("ICodeCompiler has been deprecated. Use the methods directly on the CodeDomProvider class instead. Classes inheriting from CodeDomProvider must still implement this interface, and should suppress this warning or also mark this method as obsolete.")]
+
+      public abstract ICodeCompiler CreateCompiler()
+    return:
+      type: System.CodeDom.Compiler.ICodeCompiler
+    content.vb: >-
+      <Obsolete("ICodeCompiler has been deprecated. Use the methods directly on the CodeDomProvider class instead. Classes inheriting from CodeDomProvider must still implement this interface, and should suppress this warning or also mark this method as obsolete.")>
+
+      Public MustOverride Function CreateCompiler() As ICodeCompiler
+  overload: System.CodeDom.Compiler.CodeDomProvider.CreateCompiler*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ICodeCompiler has been deprecated. Use the methods directly on the CodeDomProvider class instead. Classes inheriting from CodeDomProvider must still implement this interface, and should suppress this warning or also mark this method as obsolete.
+- uid: System.CodeDom.Compiler.CodeDomProvider.CreateParser
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.CreateParser
+  id: CreateParser
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: CreateParser()
+  nameWithType: CodeDomProvider.CreateParser()
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CreateParser()
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: >-
+      [Obsolete("ICodeParser has been deprecated. Use the methods directly on the CodeDomProvider class instead. Classes inheriting from CodeDomProvider must still implement this interface, and should suppress this warning or also mark this method as obsolete.")]
+
+      public virtual ICodeParser CreateParser()
+    return:
+      type: System.CodeDom.Compiler.ICodeParser
+    content.vb: >-
+      <Obsolete("ICodeParser has been deprecated. Use the methods directly on the CodeDomProvider class instead. Classes inheriting from CodeDomProvider must still implement this interface, and should suppress this warning or also mark this method as obsolete.")>
+
+      Public Overridable Function CreateParser() As ICodeParser
+  overload: System.CodeDom.Compiler.CodeDomProvider.CreateParser*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ICodeParser has been deprecated. Use the methods directly on the CodeDomProvider class instead. Classes inheriting from CodeDomProvider must still implement this interface, and should suppress this warning or also mark this method as obsolete.
+- uid: System.CodeDom.Compiler.CodeDomProvider.GetConverter(System.Type)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.GetConverter(System.Type)
+  id: GetConverter(System.Type)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: GetConverter(Type)
+  nameWithType: CodeDomProvider.GetConverter(Type)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GetConverter(System.Type)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual TypeConverter GetConverter(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.ComponentModel.TypeConverter
+    content.vb: Public Overridable Function GetConverter(type As Type) As TypeConverter
+  overload: System.CodeDom.Compiler.CodeDomProvider.GetConverter*
+- uid: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom(System.CodeDom.Compiler.CompilerParameters,System.CodeDom.CodeCompileUnit[])
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom(System.CodeDom.Compiler.CompilerParameters,System.CodeDom.CodeCompileUnit[])
+  id: CompileAssemblyFromDom(System.CodeDom.Compiler.CompilerParameters,System.CodeDom.CodeCompileUnit[])
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: CompileAssemblyFromDom(CompilerParameters, params CodeCompileUnit[])
+  nameWithType: CodeDomProvider.CompileAssemblyFromDom(CompilerParameters, params CodeCompileUnit[])
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom(System.CodeDom.Compiler.CompilerParameters, params System.CodeDom.CodeCompileUnit[])
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual CompilerResults CompileAssemblyFromDom(CompilerParameters options, params CodeCompileUnit[] compilationUnits)
+    parameters:
+    - id: options
+      type: System.CodeDom.Compiler.CompilerParameters
+    - id: compilationUnits
+      type: System.CodeDom.CodeCompileUnit[]
+    return:
+      type: System.CodeDom.Compiler.CompilerResults
+    content.vb: Public Overridable Function CompileAssemblyFromDom(options As CompilerParameters, ParamArray compilationUnits As CodeCompileUnit()) As CompilerResults
+  overload: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom*
+  nameWithType.vb: CodeDomProvider.CompileAssemblyFromDom(CompilerParameters, ParamArray CodeCompileUnit())
+  fullName.vb: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom(System.CodeDom.Compiler.CompilerParameters, ParamArray System.CodeDom.CodeCompileUnit())
+  name.vb: CompileAssemblyFromDom(CompilerParameters, ParamArray CodeCompileUnit())
+- uid: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile(System.CodeDom.Compiler.CompilerParameters,System.String[])
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile(System.CodeDom.Compiler.CompilerParameters,System.String[])
+  id: CompileAssemblyFromFile(System.CodeDom.Compiler.CompilerParameters,System.String[])
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: CompileAssemblyFromFile(CompilerParameters, params string[])
+  nameWithType: CodeDomProvider.CompileAssemblyFromFile(CompilerParameters, params string[])
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile(System.CodeDom.Compiler.CompilerParameters, params string[])
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual CompilerResults CompileAssemblyFromFile(CompilerParameters options, params string[] fileNames)
+    parameters:
+    - id: options
+      type: System.CodeDom.Compiler.CompilerParameters
+    - id: fileNames
+      type: System.String[]
+    return:
+      type: System.CodeDom.Compiler.CompilerResults
+    content.vb: Public Overridable Function CompileAssemblyFromFile(options As CompilerParameters, ParamArray fileNames As String()) As CompilerResults
+  overload: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile*
+  nameWithType.vb: CodeDomProvider.CompileAssemblyFromFile(CompilerParameters, ParamArray String())
+  fullName.vb: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile(System.CodeDom.Compiler.CompilerParameters, ParamArray String())
+  name.vb: CompileAssemblyFromFile(CompilerParameters, ParamArray String())
+- uid: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource(System.CodeDom.Compiler.CompilerParameters,System.String[])
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource(System.CodeDom.Compiler.CompilerParameters,System.String[])
+  id: CompileAssemblyFromSource(System.CodeDom.Compiler.CompilerParameters,System.String[])
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: CompileAssemblyFromSource(CompilerParameters, params string[])
+  nameWithType: CodeDomProvider.CompileAssemblyFromSource(CompilerParameters, params string[])
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource(System.CodeDom.Compiler.CompilerParameters, params string[])
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual CompilerResults CompileAssemblyFromSource(CompilerParameters options, params string[] sources)
+    parameters:
+    - id: options
+      type: System.CodeDom.Compiler.CompilerParameters
+    - id: sources
+      type: System.String[]
+    return:
+      type: System.CodeDom.Compiler.CompilerResults
+    content.vb: Public Overridable Function CompileAssemblyFromSource(options As CompilerParameters, ParamArray sources As String()) As CompilerResults
+  overload: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource*
+  nameWithType.vb: CodeDomProvider.CompileAssemblyFromSource(CompilerParameters, ParamArray String())
+  fullName.vb: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource(System.CodeDom.Compiler.CompilerParameters, ParamArray String())
+  name.vb: CompileAssemblyFromSource(CompilerParameters, ParamArray String())
+- uid: System.CodeDom.Compiler.CodeDomProvider.IsValidIdentifier(System.String)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.IsValidIdentifier(System.String)
+  id: IsValidIdentifier(System.String)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: IsValidIdentifier(string)
+  nameWithType: CodeDomProvider.IsValidIdentifier(string)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.IsValidIdentifier(string)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual bool IsValidIdentifier(string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function IsValidIdentifier(value As String) As Boolean
+  overload: System.CodeDom.Compiler.CodeDomProvider.IsValidIdentifier*
+  nameWithType.vb: CodeDomProvider.IsValidIdentifier(String)
+  fullName.vb: System.CodeDom.Compiler.CodeDomProvider.IsValidIdentifier(String)
+  name.vb: IsValidIdentifier(String)
+- uid: System.CodeDom.Compiler.CodeDomProvider.CreateEscapedIdentifier(System.String)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.CreateEscapedIdentifier(System.String)
+  id: CreateEscapedIdentifier(System.String)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: CreateEscapedIdentifier(string)
+  nameWithType: CodeDomProvider.CreateEscapedIdentifier(string)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CreateEscapedIdentifier(string)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual string CreateEscapedIdentifier(string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Overridable Function CreateEscapedIdentifier(value As String) As String
+  overload: System.CodeDom.Compiler.CodeDomProvider.CreateEscapedIdentifier*
+  nameWithType.vb: CodeDomProvider.CreateEscapedIdentifier(String)
+  fullName.vb: System.CodeDom.Compiler.CodeDomProvider.CreateEscapedIdentifier(String)
+  name.vb: CreateEscapedIdentifier(String)
+- uid: System.CodeDom.Compiler.CodeDomProvider.CreateValidIdentifier(System.String)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.CreateValidIdentifier(System.String)
+  id: CreateValidIdentifier(System.String)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: CreateValidIdentifier(string)
+  nameWithType: CodeDomProvider.CreateValidIdentifier(string)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CreateValidIdentifier(string)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual string CreateValidIdentifier(string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Overridable Function CreateValidIdentifier(value As String) As String
+  overload: System.CodeDom.Compiler.CodeDomProvider.CreateValidIdentifier*
+  nameWithType.vb: CodeDomProvider.CreateValidIdentifier(String)
+  fullName.vb: System.CodeDom.Compiler.CodeDomProvider.CreateValidIdentifier(String)
+  name.vb: CreateValidIdentifier(String)
+- uid: System.CodeDom.Compiler.CodeDomProvider.GetTypeOutput(System.CodeDom.CodeTypeReference)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.GetTypeOutput(System.CodeDom.CodeTypeReference)
+  id: GetTypeOutput(System.CodeDom.CodeTypeReference)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: GetTypeOutput(CodeTypeReference)
+  nameWithType: CodeDomProvider.GetTypeOutput(CodeTypeReference)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GetTypeOutput(System.CodeDom.CodeTypeReference)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual string GetTypeOutput(CodeTypeReference type)
+    parameters:
+    - id: type
+      type: System.CodeDom.CodeTypeReference
+    return:
+      type: System.String
+    content.vb: Public Overridable Function GetTypeOutput(type As CodeTypeReference) As String
+  overload: System.CodeDom.Compiler.CodeDomProvider.GetTypeOutput*
+- uid: System.CodeDom.Compiler.CodeDomProvider.Supports(System.CodeDom.Compiler.GeneratorSupport)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.Supports(System.CodeDom.Compiler.GeneratorSupport)
+  id: Supports(System.CodeDom.Compiler.GeneratorSupport)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: Supports(GeneratorSupport)
+  nameWithType: CodeDomProvider.Supports(GeneratorSupport)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.Supports(System.CodeDom.Compiler.GeneratorSupport)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual bool Supports(GeneratorSupport generatorSupport)
+    parameters:
+    - id: generatorSupport
+      type: System.CodeDom.Compiler.GeneratorSupport
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function Supports(generatorSupport As GeneratorSupport) As Boolean
+  overload: System.CodeDom.Compiler.CodeDomProvider.Supports*
+- uid: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromExpression(System.CodeDom.CodeExpression,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromExpression(System.CodeDom.CodeExpression,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  id: GenerateCodeFromExpression(System.CodeDom.CodeExpression,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: GenerateCodeFromExpression(CodeExpression, TextWriter, CodeGeneratorOptions)
+  nameWithType: CodeDomProvider.GenerateCodeFromExpression(CodeExpression, TextWriter, CodeGeneratorOptions)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromExpression(System.CodeDom.CodeExpression, System.IO.TextWriter, System.CodeDom.Compiler.CodeGeneratorOptions)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual void GenerateCodeFromExpression(CodeExpression expression, TextWriter writer, CodeGeneratorOptions options)
+    parameters:
+    - id: expression
+      type: System.CodeDom.CodeExpression
+    - id: writer
+      type: System.IO.TextWriter
+    - id: options
+      type: System.CodeDom.Compiler.CodeGeneratorOptions
+    content.vb: Public Overridable Sub GenerateCodeFromExpression(expression As CodeExpression, writer As TextWriter, options As CodeGeneratorOptions)
+  overload: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromExpression*
+- uid: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromStatement(System.CodeDom.CodeStatement,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromStatement(System.CodeDom.CodeStatement,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  id: GenerateCodeFromStatement(System.CodeDom.CodeStatement,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: GenerateCodeFromStatement(CodeStatement, TextWriter, CodeGeneratorOptions)
+  nameWithType: CodeDomProvider.GenerateCodeFromStatement(CodeStatement, TextWriter, CodeGeneratorOptions)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromStatement(System.CodeDom.CodeStatement, System.IO.TextWriter, System.CodeDom.Compiler.CodeGeneratorOptions)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual void GenerateCodeFromStatement(CodeStatement statement, TextWriter writer, CodeGeneratorOptions options)
+    parameters:
+    - id: statement
+      type: System.CodeDom.CodeStatement
+    - id: writer
+      type: System.IO.TextWriter
+    - id: options
+      type: System.CodeDom.Compiler.CodeGeneratorOptions
+    content.vb: Public Overridable Sub GenerateCodeFromStatement(statement As CodeStatement, writer As TextWriter, options As CodeGeneratorOptions)
+  overload: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromStatement*
+- uid: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromNamespace(System.CodeDom.CodeNamespace,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromNamespace(System.CodeDom.CodeNamespace,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  id: GenerateCodeFromNamespace(System.CodeDom.CodeNamespace,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: GenerateCodeFromNamespace(CodeNamespace, TextWriter, CodeGeneratorOptions)
+  nameWithType: CodeDomProvider.GenerateCodeFromNamespace(CodeNamespace, TextWriter, CodeGeneratorOptions)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromNamespace(System.CodeDom.CodeNamespace, System.IO.TextWriter, System.CodeDom.Compiler.CodeGeneratorOptions)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual void GenerateCodeFromNamespace(CodeNamespace codeNamespace, TextWriter writer, CodeGeneratorOptions options)
+    parameters:
+    - id: codeNamespace
+      type: System.CodeDom.CodeNamespace
+    - id: writer
+      type: System.IO.TextWriter
+    - id: options
+      type: System.CodeDom.Compiler.CodeGeneratorOptions
+    content.vb: Public Overridable Sub GenerateCodeFromNamespace(codeNamespace As CodeNamespace, writer As TextWriter, options As CodeGeneratorOptions)
+  overload: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromNamespace*
+- uid: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromCompileUnit(System.CodeDom.CodeCompileUnit,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromCompileUnit(System.CodeDom.CodeCompileUnit,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  id: GenerateCodeFromCompileUnit(System.CodeDom.CodeCompileUnit,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: GenerateCodeFromCompileUnit(CodeCompileUnit, TextWriter, CodeGeneratorOptions)
+  nameWithType: CodeDomProvider.GenerateCodeFromCompileUnit(CodeCompileUnit, TextWriter, CodeGeneratorOptions)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromCompileUnit(System.CodeDom.CodeCompileUnit, System.IO.TextWriter, System.CodeDom.Compiler.CodeGeneratorOptions)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual void GenerateCodeFromCompileUnit(CodeCompileUnit compileUnit, TextWriter writer, CodeGeneratorOptions options)
+    parameters:
+    - id: compileUnit
+      type: System.CodeDom.CodeCompileUnit
+    - id: writer
+      type: System.IO.TextWriter
+    - id: options
+      type: System.CodeDom.Compiler.CodeGeneratorOptions
+    content.vb: Public Overridable Sub GenerateCodeFromCompileUnit(compileUnit As CodeCompileUnit, writer As TextWriter, options As CodeGeneratorOptions)
+  overload: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromCompileUnit*
+- uid: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromType(System.CodeDom.CodeTypeDeclaration,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromType(System.CodeDom.CodeTypeDeclaration,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  id: GenerateCodeFromType(System.CodeDom.CodeTypeDeclaration,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: GenerateCodeFromType(CodeTypeDeclaration, TextWriter, CodeGeneratorOptions)
+  nameWithType: CodeDomProvider.GenerateCodeFromType(CodeTypeDeclaration, TextWriter, CodeGeneratorOptions)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromType(System.CodeDom.CodeTypeDeclaration, System.IO.TextWriter, System.CodeDom.Compiler.CodeGeneratorOptions)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual void GenerateCodeFromType(CodeTypeDeclaration codeType, TextWriter writer, CodeGeneratorOptions options)
+    parameters:
+    - id: codeType
+      type: System.CodeDom.CodeTypeDeclaration
+    - id: writer
+      type: System.IO.TextWriter
+    - id: options
+      type: System.CodeDom.Compiler.CodeGeneratorOptions
+    content.vb: Public Overridable Sub GenerateCodeFromType(codeType As CodeTypeDeclaration, writer As TextWriter, options As CodeGeneratorOptions)
+  overload: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromType*
+- uid: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromMember(System.CodeDom.CodeTypeMember,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromMember(System.CodeDom.CodeTypeMember,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  id: GenerateCodeFromMember(System.CodeDom.CodeTypeMember,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: GenerateCodeFromMember(CodeTypeMember, TextWriter, CodeGeneratorOptions)
+  nameWithType: CodeDomProvider.GenerateCodeFromMember(CodeTypeMember, TextWriter, CodeGeneratorOptions)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromMember(System.CodeDom.CodeTypeMember, System.IO.TextWriter, System.CodeDom.Compiler.CodeGeneratorOptions)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual void GenerateCodeFromMember(CodeTypeMember member, TextWriter writer, CodeGeneratorOptions options)
+    parameters:
+    - id: member
+      type: System.CodeDom.CodeTypeMember
+    - id: writer
+      type: System.IO.TextWriter
+    - id: options
+      type: System.CodeDom.Compiler.CodeGeneratorOptions
+    content.vb: Public Overridable Sub GenerateCodeFromMember(member As CodeTypeMember, writer As TextWriter, options As CodeGeneratorOptions)
+  overload: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromMember*
+- uid: System.CodeDom.Compiler.CodeDomProvider.Parse(System.IO.TextReader)
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.Parse(System.IO.TextReader)
+  id: Parse(System.IO.TextReader)
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: Parse(TextReader)
+  nameWithType: CodeDomProvider.Parse(TextReader)
+  fullName: System.CodeDom.Compiler.CodeDomProvider.Parse(System.IO.TextReader)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual CodeCompileUnit Parse(TextReader codeStream)
+    parameters:
+    - id: codeStream
+      type: System.IO.TextReader
+    return:
+      type: System.CodeDom.CodeCompileUnit
+    content.vb: Public Overridable Function Parse(codeStream As TextReader) As CodeCompileUnit
+  overload: System.CodeDom.Compiler.CodeDomProvider.Parse*
+- uid: System.CodeDom.Compiler.CodeDomProvider.#ctor
+  commentId: M:System.CodeDom.Compiler.CodeDomProvider.#ctor
+  id: '#ctor'
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: CodeDomProvider()
+  nameWithType: CodeDomProvider.CodeDomProvider()
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CodeDomProvider()
+  type: Constructor
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: protected CodeDomProvider()
+    content.vb: Protected Sub New()
+  overload: System.CodeDom.Compiler.CodeDomProvider.#ctor*
+  nameWithType.vb: CodeDomProvider.New()
+  fullName.vb: System.CodeDom.Compiler.CodeDomProvider.New()
+  name.vb: New()
+- uid: System.CodeDom.Compiler.CodeDomProvider.FileExtension
+  commentId: P:System.CodeDom.Compiler.CodeDomProvider.FileExtension
+  id: FileExtension
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: FileExtension
+  nameWithType: CodeDomProvider.FileExtension
+  fullName: System.CodeDom.Compiler.CodeDomProvider.FileExtension
+  type: Property
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual string FileExtension { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property FileExtension As String
+  overload: System.CodeDom.Compiler.CodeDomProvider.FileExtension*
+- uid: System.CodeDom.Compiler.CodeDomProvider.LanguageOptions
+  commentId: P:System.CodeDom.Compiler.CodeDomProvider.LanguageOptions
+  id: LanguageOptions
+  parent: System.CodeDom.Compiler.CodeDomProvider
+  langs:
+  - csharp
+  - vb
+  name: LanguageOptions
+  nameWithType: CodeDomProvider.LanguageOptions
+  fullName: System.CodeDom.Compiler.CodeDomProvider.LanguageOptions
+  type: Property
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public virtual LanguageOptions LanguageOptions { get; }
+    parameters: []
+    return:
+      type: System.CodeDom.Compiler.LanguageOptions
+    content.vb: Public Overridable ReadOnly Property LanguageOptions As LanguageOptions
+  overload: System.CodeDom.Compiler.CodeDomProvider.LanguageOptions*
+references:
+- uid: System.CodeDom.Compiler
+  commentId: N:System.CodeDom.Compiler
+  isExternal: true
+  href: System.html
+  name: System.CodeDom.Compiler
+  nameWithType: System.CodeDom.Compiler
+  fullName: System.CodeDom.Compiler
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.CodeDom
+    name: CodeDom
+    isExternal: true
+    href: System.CodeDom.html
+  - name: .
+  - uid: System.CodeDom.Compiler
+    name: Compiler
+    isExternal: true
+    href: System.CodeDom.Compiler.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.CodeDom
+    name: CodeDom
+    isExternal: true
+    href: System.CodeDom.html
+  - name: .
+  - uid: System.CodeDom.Compiler
+    name: Compiler
+    isExternal: true
+    href: System.CodeDom.Compiler.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.MarshalByRefObject
+  commentId: T:System.MarshalByRefObject
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject
+  name: MarshalByRefObject
+  nameWithType: MarshalByRefObject
+  fullName: System.MarshalByRefObject
+- uid: System.ComponentModel.Component
+  commentId: T:System.ComponentModel.Component
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component
+  name: Component
+  nameWithType: Component
+  fullName: System.ComponentModel.Component
+- uid: System.ComponentModel.IComponent
+  commentId: T:System.ComponentModel.IComponent
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.icomponent
+  name: IComponent
+  nameWithType: IComponent
+  fullName: System.ComponentModel.IComponent
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.ComponentModel.Component.Dispose
+  commentId: M:System.ComponentModel.Component.Dispose
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose
+  name: Dispose()
+  nameWithType: Component.Dispose()
+  fullName: System.ComponentModel.Component.Dispose()
+  spec.csharp:
+  - uid: System.ComponentModel.Component.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose
+  - name: (
+  - name: )
+- uid: System.ComponentModel.Component.Dispose(System.Boolean)
+  commentId: M:System.ComponentModel.Component.Dispose(System.Boolean)
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose(system-boolean)
+  name: Dispose(bool)
+  nameWithType: Component.Dispose(bool)
+  fullName: System.ComponentModel.Component.Dispose(bool)
+  nameWithType.vb: Component.Dispose(Boolean)
+  fullName.vb: System.ComponentModel.Component.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: System.ComponentModel.Component.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose(system-boolean)
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.dispose#system-componentmodel-component-dispose(system-boolean)
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.ComponentModel.Component.GetService(System.Type)
+  commentId: M:System.ComponentModel.Component.GetService(System.Type)
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.getservice
+  name: GetService(Type)
+  nameWithType: Component.GetService(Type)
+  fullName: System.ComponentModel.Component.GetService(System.Type)
+  spec.csharp:
+  - uid: System.ComponentModel.Component.GetService(System.Type)
+    name: GetService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.getservice
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.GetService(System.Type)
+    name: GetService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.getservice
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.ComponentModel.Component.ToString
+  commentId: M:System.ComponentModel.Component.ToString
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.tostring
+  name: ToString()
+  nameWithType: Component.ToString()
+  fullName: System.ComponentModel.Component.ToString()
+  spec.csharp:
+  - uid: System.ComponentModel.Component.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ComponentModel.Component.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.tostring
+  - name: (
+  - name: )
+- uid: System.ComponentModel.Component.CanRaiseEvents
+  commentId: P:System.ComponentModel.Component.CanRaiseEvents
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.canraiseevents
+  name: CanRaiseEvents
+  nameWithType: Component.CanRaiseEvents
+  fullName: System.ComponentModel.Component.CanRaiseEvents
+- uid: System.ComponentModel.Component.Events
+  commentId: P:System.ComponentModel.Component.Events
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.events
+  name: Events
+  nameWithType: Component.Events
+  fullName: System.ComponentModel.Component.Events
+- uid: System.ComponentModel.Component.Site
+  commentId: P:System.ComponentModel.Component.Site
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.site
+  name: Site
+  nameWithType: Component.Site
+  fullName: System.ComponentModel.Component.Site
+- uid: System.ComponentModel.Component.Container
+  commentId: P:System.ComponentModel.Component.Container
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.container
+  name: Container
+  nameWithType: Component.Container
+  fullName: System.ComponentModel.Component.Container
+- uid: System.ComponentModel.Component.DesignMode
+  commentId: P:System.ComponentModel.Component.DesignMode
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.designmode
+  name: DesignMode
+  nameWithType: Component.DesignMode
+  fullName: System.ComponentModel.Component.DesignMode
+- uid: System.ComponentModel.Component.Disposed
+  commentId: E:System.ComponentModel.Component.Disposed
+  parent: System.ComponentModel.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.component.disposed
+  name: Disposed
+  nameWithType: Component.Disposed
+  fullName: System.ComponentModel.Component.Disposed
+- uid: System.MarshalByRefObject.GetLifetimeService
+  commentId: M:System.MarshalByRefObject.GetLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  name: GetLifetimeService()
+  nameWithType: MarshalByRefObject.GetLifetimeService()
+  fullName: System.MarshalByRefObject.GetLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: GetLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.getlifetimeservice
+  - name: (
+  - name: )
+- uid: System.MarshalByRefObject.InitializeLifetimeService
+  commentId: M:System.MarshalByRefObject.InitializeLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  name: InitializeLifetimeService()
+  nameWithType: MarshalByRefObject.InitializeLifetimeService()
+  fullName: System.MarshalByRefObject.InitializeLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: InitializeLifetimeService
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.initializelifetimeservice
+  - name: (
+  - name: )
+- uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  commentId: M:System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  name: MemberwiseClone(bool)
+  nameWithType: MarshalByRefObject.MemberwiseClone(bool)
+  fullName: System.MarshalByRefObject.MemberwiseClone(bool)
+  nameWithType.vb: MarshalByRefObject.MemberwiseClone(Boolean)
+  fullName.vb: System.MarshalByRefObject.MemberwiseClone(Boolean)
+  name.vb: MemberwiseClone(Boolean)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.marshalbyrefobject.memberwiseclone
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: System.CodeDom.Compiler.CodeDomProvider.CreateProvider*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.CreateProvider
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_CreateProvider_System_String_System_Collections_Generic_IDictionary_System_String_System_String__
+  name: CreateProvider
+  nameWithType: CodeDomProvider.CreateProvider
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CreateProvider
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, string>
+  nameWithType: IDictionary<string, string>
+  fullName: System.Collections.Generic.IDictionary<string, string>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.CodeDom.Compiler.CodeDomProvider
+  commentId: T:System.CodeDom.Compiler.CodeDomProvider
+  parent: System.CodeDom.Compiler
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html
+  name: CodeDomProvider
+  nameWithType: CodeDomProvider
+  fullName: System.CodeDom.Compiler.CodeDomProvider
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_GetLanguageFromExtension_System_String_
+  name: GetLanguageFromExtension
+  nameWithType: CodeDomProvider.GetLanguageFromExtension
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GetLanguageFromExtension
+- uid: System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_IsDefinedLanguage_System_String_
+  name: IsDefinedLanguage
+  nameWithType: CodeDomProvider.IsDefinedLanguage
+  fullName: System.CodeDom.Compiler.CodeDomProvider.IsDefinedLanguage
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_IsDefinedExtension_System_String_
+  name: IsDefinedExtension
+  nameWithType: CodeDomProvider.IsDefinedExtension
+  fullName: System.CodeDom.Compiler.CodeDomProvider.IsDefinedExtension
+- uid: System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_GetCompilerInfo_System_String_
+  name: GetCompilerInfo
+  nameWithType: CodeDomProvider.GetCompilerInfo
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo
+- uid: System.CodeDom.Compiler.CompilerInfo
+  commentId: T:System.CodeDom.Compiler.CompilerInfo
+  parent: System.CodeDom.Compiler
+  isExternal: true
+  href: System.CodeDom.Compiler.CompilerInfo.html
+  name: CompilerInfo
+  nameWithType: CompilerInfo
+  fullName: System.CodeDom.Compiler.CompilerInfo
+- uid: System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_GetAllCompilerInfo
+  name: GetAllCompilerInfo
+  nameWithType: CodeDomProvider.GetAllCompilerInfo
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo
+- uid: System.CodeDom.Compiler.CompilerInfo[]
+  isExternal: true
+  href: System.CodeDom.Compiler.CompilerInfo.html
+  name: CompilerInfo[]
+  nameWithType: CompilerInfo[]
+  fullName: System.CodeDom.Compiler.CompilerInfo[]
+  nameWithType.vb: CompilerInfo()
+  fullName.vb: System.CodeDom.Compiler.CompilerInfo()
+  name.vb: CompilerInfo()
+  spec.csharp:
+  - uid: System.CodeDom.Compiler.CompilerInfo
+    name: CompilerInfo
+    isExternal: true
+    href: System.CodeDom.Compiler.CompilerInfo.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.CodeDom.Compiler.CompilerInfo
+    name: CompilerInfo
+    isExternal: true
+    href: System.CodeDom.Compiler.CompilerInfo.html
+  - name: (
+  - name: )
+- uid: System.CodeDom.Compiler.CodeDomProvider.CreateGenerator*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.CreateGenerator
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_CreateGenerator
+  name: CreateGenerator
+  nameWithType: CodeDomProvider.CreateGenerator
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CreateGenerator
+- uid: System.CodeDom.Compiler.ICodeGenerator
+  commentId: T:System.CodeDom.Compiler.ICodeGenerator
+  parent: System.CodeDom.Compiler
+  isExternal: true
+  href: System.CodeDom.Compiler.ICodeGenerator.html
+  name: ICodeGenerator
+  nameWithType: ICodeGenerator
+  fullName: System.CodeDom.Compiler.ICodeGenerator
+- uid: System.IO.TextWriter
+  commentId: T:System.IO.TextWriter
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  name: TextWriter
+  nameWithType: TextWriter
+  fullName: System.IO.TextWriter
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.CodeDom.Compiler.CodeDomProvider.CreateCompiler*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.CreateCompiler
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_CreateCompiler
+  name: CreateCompiler
+  nameWithType: CodeDomProvider.CreateCompiler
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CreateCompiler
+- uid: System.CodeDom.Compiler.ICodeCompiler
+  commentId: T:System.CodeDom.Compiler.ICodeCompiler
+  parent: System.CodeDom.Compiler
+  isExternal: true
+  href: System.CodeDom.Compiler.ICodeCompiler.html
+  name: ICodeCompiler
+  nameWithType: ICodeCompiler
+  fullName: System.CodeDom.Compiler.ICodeCompiler
+- uid: System.CodeDom.Compiler.CodeDomProvider.CreateParser*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.CreateParser
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_CreateParser
+  name: CreateParser
+  nameWithType: CodeDomProvider.CreateParser
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CreateParser
+- uid: System.CodeDom.Compiler.ICodeParser
+  commentId: T:System.CodeDom.Compiler.ICodeParser
+  parent: System.CodeDom.Compiler
+  isExternal: true
+  href: System.CodeDom.Compiler.ICodeParser.html
+  name: ICodeParser
+  nameWithType: ICodeParser
+  fullName: System.CodeDom.Compiler.ICodeParser
+- uid: System.CodeDom.Compiler.CodeDomProvider.GetConverter*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.GetConverter
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_GetConverter_System_Type_
+  name: GetConverter
+  nameWithType: CodeDomProvider.GetConverter
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GetConverter
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.ComponentModel.TypeConverter
+  commentId: T:System.ComponentModel.TypeConverter
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.typeconverter
+  name: TypeConverter
+  nameWithType: TypeConverter
+  fullName: System.ComponentModel.TypeConverter
+- uid: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_CompileAssemblyFromDom_System_CodeDom_Compiler_CompilerParameters_System_CodeDom_CodeCompileUnit___
+  name: CompileAssemblyFromDom
+  nameWithType: CodeDomProvider.CompileAssemblyFromDom
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom
+- uid: System.CodeDom.Compiler.CompilerParameters
+  commentId: T:System.CodeDom.Compiler.CompilerParameters
+  parent: System.CodeDom.Compiler
+  isExternal: true
+  href: System.CodeDom.Compiler.CompilerParameters.html
+  name: CompilerParameters
+  nameWithType: CompilerParameters
+  fullName: System.CodeDom.Compiler.CompilerParameters
+- uid: System.CodeDom.CodeCompileUnit[]
+  isExternal: true
+  href: System.CodeDom.CodeCompileUnit.html
+  name: CodeCompileUnit[]
+  nameWithType: CodeCompileUnit[]
+  fullName: System.CodeDom.CodeCompileUnit[]
+  nameWithType.vb: CodeCompileUnit()
+  fullName.vb: System.CodeDom.CodeCompileUnit()
+  name.vb: CodeCompileUnit()
+  spec.csharp:
+  - uid: System.CodeDom.CodeCompileUnit
+    name: CodeCompileUnit
+    isExternal: true
+    href: System.CodeDom.CodeCompileUnit.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.CodeDom.CodeCompileUnit
+    name: CodeCompileUnit
+    isExternal: true
+    href: System.CodeDom.CodeCompileUnit.html
+  - name: (
+  - name: )
+- uid: System.CodeDom.Compiler.CompilerResults
+  commentId: T:System.CodeDom.Compiler.CompilerResults
+  parent: System.CodeDom.Compiler
+  isExternal: true
+  href: System.CodeDom.Compiler.CompilerResults.html
+  name: CompilerResults
+  nameWithType: CompilerResults
+  fullName: System.CodeDom.Compiler.CompilerResults
+- uid: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_CompileAssemblyFromFile_System_CodeDom_Compiler_CompilerParameters_System_String___
+  name: CompileAssemblyFromFile
+  nameWithType: CodeDomProvider.CompileAssemblyFromFile
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_CompileAssemblyFromSource_System_CodeDom_Compiler_CompilerParameters_System_String___
+  name: CompileAssemblyFromSource
+  nameWithType: CodeDomProvider.CompileAssemblyFromSource
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource
+- uid: System.CodeDom.Compiler.CodeDomProvider.IsValidIdentifier*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.IsValidIdentifier
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_IsValidIdentifier_System_String_
+  name: IsValidIdentifier
+  nameWithType: CodeDomProvider.IsValidIdentifier
+  fullName: System.CodeDom.Compiler.CodeDomProvider.IsValidIdentifier
+- uid: System.CodeDom.Compiler.CodeDomProvider.CreateEscapedIdentifier*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.CreateEscapedIdentifier
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_CreateEscapedIdentifier_System_String_
+  name: CreateEscapedIdentifier
+  nameWithType: CodeDomProvider.CreateEscapedIdentifier
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CreateEscapedIdentifier
+- uid: System.CodeDom.Compiler.CodeDomProvider.CreateValidIdentifier*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.CreateValidIdentifier
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_CreateValidIdentifier_System_String_
+  name: CreateValidIdentifier
+  nameWithType: CodeDomProvider.CreateValidIdentifier
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CreateValidIdentifier
+- uid: System.CodeDom.Compiler.CodeDomProvider.GetTypeOutput*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.GetTypeOutput
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_GetTypeOutput_System_CodeDom_CodeTypeReference_
+  name: GetTypeOutput
+  nameWithType: CodeDomProvider.GetTypeOutput
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GetTypeOutput
+- uid: System.CodeDom.CodeTypeReference
+  commentId: T:System.CodeDom.CodeTypeReference
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeTypeReference.html
+  name: CodeTypeReference
+  nameWithType: CodeTypeReference
+  fullName: System.CodeDom.CodeTypeReference
+- uid: System.CodeDom
+  commentId: N:System.CodeDom
+  isExternal: true
+  href: System.html
+  name: System.CodeDom
+  nameWithType: System.CodeDom
+  fullName: System.CodeDom
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.CodeDom
+    name: CodeDom
+    isExternal: true
+    href: System.CodeDom.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.CodeDom
+    name: CodeDom
+    isExternal: true
+    href: System.CodeDom.html
+- uid: System.CodeDom.Compiler.CodeDomProvider.Supports*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.Supports
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_Supports_System_CodeDom_Compiler_GeneratorSupport_
+  name: Supports
+  nameWithType: CodeDomProvider.Supports
+  fullName: System.CodeDom.Compiler.CodeDomProvider.Supports
+- uid: System.CodeDom.Compiler.GeneratorSupport
+  commentId: T:System.CodeDom.Compiler.GeneratorSupport
+  parent: System.CodeDom.Compiler
+  isExternal: true
+  href: System.CodeDom.Compiler.GeneratorSupport.html
+  name: GeneratorSupport
+  nameWithType: GeneratorSupport
+  fullName: System.CodeDom.Compiler.GeneratorSupport
+- uid: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromExpression*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromExpression
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromExpression_System_CodeDom_CodeExpression_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_
+  name: GenerateCodeFromExpression
+  nameWithType: CodeDomProvider.GenerateCodeFromExpression
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromExpression
+- uid: System.CodeDom.CodeExpression
+  commentId: T:System.CodeDom.CodeExpression
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeExpression.html
+  name: CodeExpression
+  nameWithType: CodeExpression
+  fullName: System.CodeDom.CodeExpression
+- uid: System.CodeDom.Compiler.CodeGeneratorOptions
+  commentId: T:System.CodeDom.Compiler.CodeGeneratorOptions
+  parent: System.CodeDom.Compiler
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeGeneratorOptions.html
+  name: CodeGeneratorOptions
+  nameWithType: CodeGeneratorOptions
+  fullName: System.CodeDom.Compiler.CodeGeneratorOptions
+- uid: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromStatement*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromStatement
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromStatement_System_CodeDom_CodeStatement_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_
+  name: GenerateCodeFromStatement
+  nameWithType: CodeDomProvider.GenerateCodeFromStatement
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromStatement
+- uid: System.CodeDom.CodeStatement
+  commentId: T:System.CodeDom.CodeStatement
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeStatement.html
+  name: CodeStatement
+  nameWithType: CodeStatement
+  fullName: System.CodeDom.CodeStatement
+- uid: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromNamespace*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromNamespace
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromNamespace_System_CodeDom_CodeNamespace_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_
+  name: GenerateCodeFromNamespace
+  nameWithType: CodeDomProvider.GenerateCodeFromNamespace
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromNamespace
+- uid: System.CodeDom.CodeNamespace
+  commentId: T:System.CodeDom.CodeNamespace
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeNamespace.html
+  name: CodeNamespace
+  nameWithType: CodeNamespace
+  fullName: System.CodeDom.CodeNamespace
+- uid: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromCompileUnit*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromCompileUnit
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromCompileUnit_System_CodeDom_CodeCompileUnit_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_
+  name: GenerateCodeFromCompileUnit
+  nameWithType: CodeDomProvider.GenerateCodeFromCompileUnit
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromCompileUnit
+- uid: System.CodeDom.CodeCompileUnit
+  commentId: T:System.CodeDom.CodeCompileUnit
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeCompileUnit.html
+  name: CodeCompileUnit
+  nameWithType: CodeCompileUnit
+  fullName: System.CodeDom.CodeCompileUnit
+- uid: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromType*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromType
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromType_System_CodeDom_CodeTypeDeclaration_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_
+  name: GenerateCodeFromType
+  nameWithType: CodeDomProvider.GenerateCodeFromType
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromType
+- uid: System.CodeDom.CodeTypeDeclaration
+  commentId: T:System.CodeDom.CodeTypeDeclaration
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeTypeDeclaration.html
+  name: CodeTypeDeclaration
+  nameWithType: CodeTypeDeclaration
+  fullName: System.CodeDom.CodeTypeDeclaration
+- uid: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromMember*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromMember
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_GenerateCodeFromMember_System_CodeDom_CodeTypeMember_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_
+  name: GenerateCodeFromMember
+  nameWithType: CodeDomProvider.GenerateCodeFromMember
+  fullName: System.CodeDom.Compiler.CodeDomProvider.GenerateCodeFromMember
+- uid: System.CodeDom.CodeTypeMember
+  commentId: T:System.CodeDom.CodeTypeMember
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeTypeMember.html
+  name: CodeTypeMember
+  nameWithType: CodeTypeMember
+  fullName: System.CodeDom.CodeTypeMember
+- uid: System.CodeDom.Compiler.CodeDomProvider.Parse*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.Parse
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_Parse_System_IO_TextReader_
+  name: Parse
+  nameWithType: CodeDomProvider.Parse
+  fullName: System.CodeDom.Compiler.CodeDomProvider.Parse
+- uid: System.IO.TextReader
+  commentId: T:System.IO.TextReader
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.textreader
+  name: TextReader
+  nameWithType: TextReader
+  fullName: System.IO.TextReader
+- uid: System.CodeDom.Compiler.CodeDomProvider.#ctor*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.#ctor
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider__ctor
+  name: CodeDomProvider
+  nameWithType: CodeDomProvider.CodeDomProvider
+  fullName: System.CodeDom.Compiler.CodeDomProvider.CodeDomProvider
+  nameWithType.vb: CodeDomProvider.New
+  fullName.vb: System.CodeDom.Compiler.CodeDomProvider.New
+  name.vb: New
+- uid: System.CodeDom.Compiler.CodeDomProvider.FileExtension*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.FileExtension
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_FileExtension
+  name: FileExtension
+  nameWithType: CodeDomProvider.FileExtension
+  fullName: System.CodeDom.Compiler.CodeDomProvider.FileExtension
+- uid: System.CodeDom.Compiler.CodeDomProvider.LanguageOptions*
+  commentId: Overload:System.CodeDom.Compiler.CodeDomProvider.LanguageOptions
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeDomProvider.html#System_CodeDom_Compiler_CodeDomProvider_LanguageOptions
+  name: LanguageOptions
+  nameWithType: CodeDomProvider.LanguageOptions
+  fullName: System.CodeDom.Compiler.CodeDomProvider.LanguageOptions
+- uid: System.CodeDom.Compiler.LanguageOptions
+  commentId: T:System.CodeDom.Compiler.LanguageOptions
+  parent: System.CodeDom.Compiler
+  isExternal: true
+  href: System.CodeDom.Compiler.LanguageOptions.html
+  name: LanguageOptions
+  nameWithType: LanguageOptions
+  fullName: System.CodeDom.Compiler.LanguageOptions

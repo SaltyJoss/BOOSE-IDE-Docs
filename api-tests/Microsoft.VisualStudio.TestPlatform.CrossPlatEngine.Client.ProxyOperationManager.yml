@@ -1,0 +1,1248 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+  id: ProxyOperationManager
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  children:
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender,Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider,Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework)
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender,Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider,Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy)
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.CancellationTokenSource
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Close
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Initialize(System.Boolean)
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RemoveNodesFromRunsettingsIfRequired(System.String,System.Action{Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String})
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RequestData
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RequestSender
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel(System.Collections.Generic.IEnumerable{System.String},System.String)
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel(System.Collections.Generic.IEnumerable{System.String},System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler)
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.TestHostManager
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.TestHostManagerFramework
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.UpdateTestProcessStartInfo(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo)
+  langs:
+  - csharp
+  - vb
+  name: ProxyOperationManager
+  nameWithType: ProxyOperationManager
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+  type: Class
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: public class ProxyOperationManager
+    content.vb: Public Class ProxyOperationManager
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManagerWithDataCollection
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender,Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider,Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender,Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider,Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework)
+  id: '#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender,Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider,Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework)'
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+  langs:
+  - csharp
+  - vb
+  name: ProxyOperationManager(IRequestData?, ITestRequestSender, ITestRuntimeProvider, Framework)
+  nameWithType: ProxyOperationManager.ProxyOperationManager(IRequestData?, ITestRequestSender, ITestRuntimeProvider, Framework)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.ProxyOperationManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData?, Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender, Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider, Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework)
+  type: Constructor
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: public ProxyOperationManager(IRequestData? requestData, ITestRequestSender requestSender, ITestRuntimeProvider testHostManager, Framework testhostManagerFramework)
+    parameters:
+    - id: requestData
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+    - id: requestSender
+      type: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+    - id: testHostManager
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider
+    - id: testhostManagerFramework
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework
+    content.vb: Public Sub New(requestData As IRequestData, requestSender As ITestRequestSender, testHostManager As ITestRuntimeProvider, testhostManagerFramework As Framework)
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.#ctor*
+  nameWithType.vb: ProxyOperationManager.New(IRequestData, ITestRequestSender, ITestRuntimeProvider, Framework)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.New(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData, Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender, Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider, Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework)
+  name.vb: New(IRequestData, ITestRequestSender, ITestRuntimeProvider, Framework)
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender,Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider,Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender,Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider,Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy)
+  id: '#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData,Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender,Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider,Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy)'
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+  langs:
+  - csharp
+  - vb
+  name: ProxyOperationManager(IRequestData?, ITestRequestSender, ITestRuntimeProvider, Framework?, IBaseProxy?)
+  nameWithType: ProxyOperationManager.ProxyOperationManager(IRequestData?, ITestRequestSender, ITestRuntimeProvider, Framework?, IBaseProxy?)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.ProxyOperationManager(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData?, Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender, Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider, Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework?, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy?)
+  type: Constructor
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: public ProxyOperationManager(IRequestData? requestData, ITestRequestSender requestSender, ITestRuntimeProvider testHostManager, Framework? testhostManagerFramework, IBaseProxy? baseProxy)
+    parameters:
+    - id: requestData
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+    - id: requestSender
+      type: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+    - id: testHostManager
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider
+    - id: testhostManagerFramework
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework
+    - id: baseProxy
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy
+    content.vb: Public Sub New(requestData As IRequestData, requestSender As ITestRequestSender, testHostManager As ITestRuntimeProvider, testhostManagerFramework As Framework, baseProxy As IBaseProxy)
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.#ctor*
+  nameWithType.vb: ProxyOperationManager.New(IRequestData, ITestRequestSender, ITestRuntimeProvider, Framework, IBaseProxy)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.New(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData, Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender, Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider, Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy)
+  name.vb: New(IRequestData, ITestRequestSender, ITestRuntimeProvider, Framework, IBaseProxy)
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Initialize(System.Boolean)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Initialize(System.Boolean)
+  id: Initialize(System.Boolean)
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+  langs:
+  - csharp
+  - vb
+  name: Initialize(bool)
+  nameWithType: ProxyOperationManager.Initialize(bool)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Initialize(bool)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: public virtual void Initialize(bool skipDefaultAdapters)
+    parameters:
+    - id: skipDefaultAdapters
+      type: System.Boolean
+    content.vb: Public Overridable Sub Initialize(skipDefaultAdapters As Boolean)
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Initialize*
+  nameWithType.vb: ProxyOperationManager.Initialize(Boolean)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Initialize(Boolean)
+  name.vb: Initialize(Boolean)
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel(System.Collections.Generic.IEnumerable{System.String},System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel(System.Collections.Generic.IEnumerable{System.String},System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler)
+  id: SetupChannel(System.Collections.Generic.IEnumerable{System.String},System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler)
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+  langs:
+  - csharp
+  - vb
+  name: SetupChannel(IEnumerable<string>, string, ITestMessageEventHandler)
+  nameWithType: ProxyOperationManager.SetupChannel(IEnumerable<string>, string, ITestMessageEventHandler)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel(System.Collections.Generic.IEnumerable<string>, string, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: public virtual bool SetupChannel(IEnumerable<string> sources, string runSettings, ITestMessageEventHandler eventHandler)
+    parameters:
+    - id: sources
+      type: System.Collections.Generic.IEnumerable{System.String}
+    - id: runSettings
+      type: System.String
+    - id: eventHandler
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function SetupChannel(sources As IEnumerable(Of String), runSettings As String, eventHandler As ITestMessageEventHandler) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel*
+  nameWithType.vb: ProxyOperationManager.SetupChannel(IEnumerable(Of String), String, ITestMessageEventHandler)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel(System.Collections.Generic.IEnumerable(Of String), String, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler)
+  name.vb: SetupChannel(IEnumerable(Of String), String, ITestMessageEventHandler)
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel(System.Collections.Generic.IEnumerable{System.String},System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel(System.Collections.Generic.IEnumerable{System.String},System.String)
+  id: SetupChannel(System.Collections.Generic.IEnumerable{System.String},System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+  langs:
+  - csharp
+  - vb
+  name: SetupChannel(IEnumerable<string>, string?)
+  nameWithType: ProxyOperationManager.SetupChannel(IEnumerable<string>, string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel(System.Collections.Generic.IEnumerable<string>, string?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: public virtual bool SetupChannel(IEnumerable<string> sources, string? runSettings)
+    parameters:
+    - id: sources
+      type: System.Collections.Generic.IEnumerable{System.String}
+    - id: runSettings
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function SetupChannel(sources As IEnumerable(Of String), runSettings As String) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel*
+  nameWithType.vb: ProxyOperationManager.SetupChannel(IEnumerable(Of String), String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel(System.Collections.Generic.IEnumerable(Of String), String)
+  name.vb: SetupChannel(IEnumerable(Of String), String)
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Close
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Close
+  id: Close
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: ProxyOperationManager.Close()
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Close()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: public virtual void Close()
+    content.vb: Public Overridable Sub Close()
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Close*
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.UpdateTestProcessStartInfo(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.UpdateTestProcessStartInfo(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo)
+  id: UpdateTestProcessStartInfo(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo)
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateTestProcessStartInfo(TestProcessStartInfo)
+  nameWithType: ProxyOperationManager.UpdateTestProcessStartInfo(TestProcessStartInfo)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.UpdateTestProcessStartInfo(Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: public virtual TestProcessStartInfo UpdateTestProcessStartInfo(TestProcessStartInfo testProcessStartInfo)
+    parameters:
+    - id: testProcessStartInfo
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo
+    content.vb: Public Overridable Function UpdateTestProcessStartInfo(testProcessStartInfo As TestProcessStartInfo) As TestProcessStartInfo
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.UpdateTestProcessStartInfo*
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RemoveNodesFromRunsettingsIfRequired(System.String,System.Action{Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RemoveNodesFromRunsettingsIfRequired(System.String,System.Action{Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String})
+  id: RemoveNodesFromRunsettingsIfRequired(System.String,System.Action{Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String})
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveNodesFromRunsettingsIfRequired(string?, Action<TestMessageLevel, string>)
+  nameWithType: ProxyOperationManager.RemoveNodesFromRunsettingsIfRequired(string?, Action<TestMessageLevel, string>)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RemoveNodesFromRunsettingsIfRequired(string?, System.Action<Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel, string>)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: public string? RemoveNodesFromRunsettingsIfRequired(string? runsettingsXml, Action<TestMessageLevel, string> logMessage)
+    parameters:
+    - id: runsettingsXml
+      type: System.String
+    - id: logMessage
+      type: System.Action{Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String}
+    return:
+      type: System.String
+    content.vb: Public Function RemoveNodesFromRunsettingsIfRequired(runsettingsXml As String, logMessage As Action(Of TestMessageLevel, String)) As String
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RemoveNodesFromRunsettingsIfRequired*
+  nameWithType.vb: ProxyOperationManager.RemoveNodesFromRunsettingsIfRequired(String, Action(Of TestMessageLevel, String))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RemoveNodesFromRunsettingsIfRequired(String, System.Action(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel, String))
+  name.vb: RemoveNodesFromRunsettingsIfRequired(String, Action(Of TestMessageLevel, String))
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RequestData
+  commentId: P:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RequestData
+  id: RequestData
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+  langs:
+  - csharp
+  - vb
+  name: RequestData
+  nameWithType: ProxyOperationManager.RequestData
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RequestData
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: public IRequestData? RequestData { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+    content.vb: Public Property RequestData As IRequestData
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RequestData*
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RequestSender
+  commentId: P:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RequestSender
+  id: RequestSender
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+  langs:
+  - csharp
+  - vb
+  name: RequestSender
+  nameWithType: ProxyOperationManager.RequestSender
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RequestSender
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: public ITestRequestSender RequestSender { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+    content.vb: Public Property RequestSender As ITestRequestSender
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RequestSender*
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.TestHostManager
+  commentId: P:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.TestHostManager
+  id: TestHostManager
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+  langs:
+  - csharp
+  - vb
+  name: TestHostManager
+  nameWithType: ProxyOperationManager.TestHostManager
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.TestHostManager
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: public ITestRuntimeProvider TestHostManager { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider
+    content.vb: Public Property TestHostManager As ITestRuntimeProvider
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.TestHostManager*
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.CancellationTokenSource
+  commentId: P:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.CancellationTokenSource
+  id: CancellationTokenSource
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+  langs:
+  - csharp
+  - vb
+  name: CancellationTokenSource
+  nameWithType: ProxyOperationManager.CancellationTokenSource
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.CancellationTokenSource
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: public CancellationTokenSource CancellationTokenSource { get; set; }
+    parameters: []
+    return:
+      type: System.Threading.CancellationTokenSource
+    content.vb: Public Property CancellationTokenSource As CancellationTokenSource
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.CancellationTokenSource*
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.TestHostManagerFramework
+  commentId: P:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.TestHostManagerFramework
+  id: TestHostManagerFramework
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager
+  langs:
+  - csharp
+  - vb
+  name: TestHostManagerFramework
+  nameWithType: ProxyOperationManager.TestHostManagerFramework
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.TestHostManagerFramework
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.CrossPlatEngine
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  syntax:
+    content: public Framework? TestHostManagerFramework { get; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework
+    content.vb: Public ReadOnly Property TestHostManagerFramework As Framework
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.TestHostManagerFramework*
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine
+    name: CrossPlatEngine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine
+    name: CrossPlatEngine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyOperationManager__ctor_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IRequestData_Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_ITestRequestSender_Microsoft_VisualStudio_TestPlatform_ObjectModel_Host_ITestRuntimeProvider_Microsoft_VisualStudio_TestPlatform_ObjectModel_Framework_
+  name: ProxyOperationManager
+  nameWithType: ProxyOperationManager.ProxyOperationManager
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.ProxyOperationManager
+  nameWithType.vb: ProxyOperationManager.New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.New
+  name.vb: New
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData.html
+  name: IRequestData
+  nameWithType: IRequestData
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IRequestData
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.html
+  name: ITestRequestSender
+  nameWithType: ITestRequestSender
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider.html
+  name: ITestRuntimeProvider
+  nameWithType: ITestRuntimeProvider
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework.html
+  name: Framework
+  nameWithType: Framework
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Framework
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Host
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host
+    name: Host
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host
+    name: Host
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy.html
+  name: IBaseProxy
+  nameWithType: IBaseProxy
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IBaseProxy
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Initialize*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Initialize
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyOperationManager_Initialize_System_Boolean_
+  name: Initialize
+  nameWithType: ProxyOperationManager.Initialize
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Initialize
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyOperationManager_SetupChannel_System_Collections_Generic_IEnumerable_System_String__System_String_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestMessageEventHandler_
+  name: SetupChannel
+  nameWithType: ProxyOperationManager.SetupChannel
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler.html
+  name: ITestMessageEventHandler
+  nameWithType: ITestMessageEventHandler
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestMessageEventHandler
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Close*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Close
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyOperationManager_Close
+  name: Close
+  nameWithType: ProxyOperationManager.Close
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.Close
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.UpdateTestProcessStartInfo*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.UpdateTestProcessStartInfo
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyOperationManager_UpdateTestProcessStartInfo_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestProcessStartInfo_
+  name: UpdateTestProcessStartInfo
+  nameWithType: ProxyOperationManager.UpdateTestProcessStartInfo
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.UpdateTestProcessStartInfo
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo.html
+  name: TestProcessStartInfo
+  nameWithType: TestProcessStartInfo
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestProcessStartInfo
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RemoveNodesFromRunsettingsIfRequired*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RemoveNodesFromRunsettingsIfRequired
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyOperationManager_RemoveNodesFromRunsettingsIfRequired_System_String_System_Action_Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_TestMessageLevel_System_String__
+  name: RemoveNodesFromRunsettingsIfRequired
+  nameWithType: ProxyOperationManager.RemoveNodesFromRunsettingsIfRequired
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RemoveNodesFromRunsettingsIfRequired
+- uid: System.Action{Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String}
+  commentId: T:System.Action{Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel,System.String}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<TestMessageLevel, string>
+  nameWithType: Action<TestMessageLevel, string>
+  fullName: System.Action<Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel, string>
+  nameWithType.vb: Action(Of TestMessageLevel, String)
+  fullName.vb: System.Action(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel, String)
+  name.vb: Action(Of TestMessageLevel, String)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel
+    name: TestMessageLevel
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.TestMessageLevel
+    name: TestMessageLevel
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RequestData*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RequestData
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyOperationManager_RequestData
+  name: RequestData
+  nameWithType: ProxyOperationManager.RequestData
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RequestData
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RequestSender*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RequestSender
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyOperationManager_RequestSender
+  name: RequestSender
+  nameWithType: ProxyOperationManager.RequestSender
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.RequestSender
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.TestHostManager*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.TestHostManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyOperationManager_TestHostManager
+  name: TestHostManager
+  nameWithType: ProxyOperationManager.TestHostManager
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.TestHostManager
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.CancellationTokenSource*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.CancellationTokenSource
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyOperationManager_CancellationTokenSource
+  name: CancellationTokenSource
+  nameWithType: ProxyOperationManager.CancellationTokenSource
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.CancellationTokenSource
+- uid: System.Threading.CancellationTokenSource
+  commentId: T:System.Threading.CancellationTokenSource
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  name: CancellationTokenSource
+  nameWithType: CancellationTokenSource
+  fullName: System.Threading.CancellationTokenSource
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.TestHostManagerFramework*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.TestHostManagerFramework
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Client_ProxyOperationManager_TestHostManagerFramework
+  name: TestHostManagerFramework
+  nameWithType: ProxyOperationManager.TestHostManagerFramework
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.TestHostManagerFramework

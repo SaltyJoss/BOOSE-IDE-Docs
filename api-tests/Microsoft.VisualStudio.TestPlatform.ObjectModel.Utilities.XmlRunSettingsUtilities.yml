@@ -1,0 +1,1113 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities
+  id: XmlRunSettingsUtilities
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ContainsDataCollector(System.Xml.XPath.IXPathNavigable,System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.CreateDefaultRunSettings
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectionRunSettings(System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectorsFriendlyName(System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetInProcDataCollectionRunSettings(System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetLoggerRunSettings(System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetRunConfigurationNode(System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetTestRunParameters(System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.InsertDataCollectorsNode(System.Xml.XPath.IXPathNavigable,Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollectorSettings)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsDataCollectionEnabled(System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsInProcDataCollectionEnabled(System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.OSArchitecture
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ReaderSettings
+  langs:
+  - csharp
+  - vb
+  name: XmlRunSettingsUtilities
+  nameWithType: XmlRunSettingsUtilities
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities
+  type: Class
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  syntax:
+    content: public static class XmlRunSettingsUtilities
+    content.vb: Public Module XmlRunSettingsUtilities
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ContainsDataCollector(System.Xml.XPath.IXPathNavigable,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ContainsDataCollector(System.Xml.XPath.IXPathNavigable,System.String)
+  id: ContainsDataCollector(System.Xml.XPath.IXPathNavigable,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities
+  langs:
+  - csharp
+  - vb
+  name: ContainsDataCollector(IXPathNavigable, string)
+  nameWithType: XmlRunSettingsUtilities.ContainsDataCollector(IXPathNavigable, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ContainsDataCollector(System.Xml.XPath.IXPathNavigable, string)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  syntax:
+    content: public static bool ContainsDataCollector(IXPathNavigable runSettingDocument, string dataCollectorUri)
+    parameters:
+    - id: runSettingDocument
+      type: System.Xml.XPath.IXPathNavigable
+    - id: dataCollectorUri
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function ContainsDataCollector(runSettingDocument As IXPathNavigable, dataCollectorUri As String) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ContainsDataCollector*
+  nameWithType.vb: XmlRunSettingsUtilities.ContainsDataCollector(IXPathNavigable, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ContainsDataCollector(System.Xml.XPath.IXPathNavigable, String)
+  name.vb: ContainsDataCollector(IXPathNavigable, String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectorsFriendlyName(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectorsFriendlyName(System.String)
+  id: GetDataCollectorsFriendlyName(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetDataCollectorsFriendlyName(string?)
+  nameWithType: XmlRunSettingsUtilities.GetDataCollectorsFriendlyName(string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectorsFriendlyName(string?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  syntax:
+    content: public static IList<string> GetDataCollectorsFriendlyName(string? runsettingsXml)
+    parameters:
+    - id: runsettingsXml
+      type: System.String
+    return:
+      type: System.Collections.Generic.IList{System.String}
+    content.vb: Public Shared Function GetDataCollectorsFriendlyName(runsettingsXml As String) As IList(Of String)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectorsFriendlyName*
+  nameWithType.vb: XmlRunSettingsUtilities.GetDataCollectorsFriendlyName(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectorsFriendlyName(String)
+  name.vb: GetDataCollectorsFriendlyName(String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.InsertDataCollectorsNode(System.Xml.XPath.IXPathNavigable,Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollectorSettings)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.InsertDataCollectorsNode(System.Xml.XPath.IXPathNavigable,Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollectorSettings)
+  id: InsertDataCollectorsNode(System.Xml.XPath.IXPathNavigable,Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollectorSettings)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities
+  langs:
+  - csharp
+  - vb
+  name: InsertDataCollectorsNode(IXPathNavigable, DataCollectorSettings)
+  nameWithType: XmlRunSettingsUtilities.InsertDataCollectorsNode(IXPathNavigable, DataCollectorSettings)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.InsertDataCollectorsNode(System.Xml.XPath.IXPathNavigable, Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollectorSettings)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  syntax:
+    content: public static void InsertDataCollectorsNode(IXPathNavigable runSettingDocument, DataCollectorSettings settings)
+    parameters:
+    - id: runSettingDocument
+      type: System.Xml.XPath.IXPathNavigable
+    - id: settings
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollectorSettings
+    content.vb: Public Shared Sub InsertDataCollectorsNode(runSettingDocument As IXPathNavigable, settings As DataCollectorSettings)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.InsertDataCollectorsNode*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetRunConfigurationNode(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetRunConfigurationNode(System.String)
+  id: GetRunConfigurationNode(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetRunConfigurationNode(string?)
+  nameWithType: XmlRunSettingsUtilities.GetRunConfigurationNode(string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetRunConfigurationNode(string?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  syntax:
+    content: public static RunConfiguration GetRunConfigurationNode(string? settingsXml)
+    parameters:
+    - id: settingsXml
+      type: System.String
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.RunConfiguration
+    content.vb: Public Shared Function GetRunConfigurationNode(settingsXml As String) As RunConfiguration
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetRunConfigurationNode*
+  nameWithType.vb: XmlRunSettingsUtilities.GetRunConfigurationNode(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetRunConfigurationNode(String)
+  name.vb: GetRunConfigurationNode(String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetTestRunParameters(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetTestRunParameters(System.String)
+  id: GetTestRunParameters(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetTestRunParameters(string?)
+  nameWithType: XmlRunSettingsUtilities.GetTestRunParameters(string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetTestRunParameters(string?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  syntax:
+    content: public static Dictionary<string, object> GetTestRunParameters(string? settingsXml)
+    parameters:
+    - id: settingsXml
+      type: System.String
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    content.vb: Public Shared Function GetTestRunParameters(settingsXml As String) As Dictionary(Of String, Object)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetTestRunParameters*
+  nameWithType.vb: XmlRunSettingsUtilities.GetTestRunParameters(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetTestRunParameters(String)
+  name.vb: GetTestRunParameters(String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.CreateDefaultRunSettings
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.CreateDefaultRunSettings
+  id: CreateDefaultRunSettings
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities
+  langs:
+  - csharp
+  - vb
+  name: CreateDefaultRunSettings()
+  nameWithType: XmlRunSettingsUtilities.CreateDefaultRunSettings()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.CreateDefaultRunSettings()
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  syntax:
+    content: public static XmlDocument CreateDefaultRunSettings()
+    return:
+      type: System.Xml.XmlDocument
+    content.vb: Public Shared Function CreateDefaultRunSettings() As XmlDocument
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.CreateDefaultRunSettings*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsDataCollectionEnabled(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsDataCollectionEnabled(System.String)
+  id: IsDataCollectionEnabled(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities
+  langs:
+  - csharp
+  - vb
+  name: IsDataCollectionEnabled(string?)
+  nameWithType: XmlRunSettingsUtilities.IsDataCollectionEnabled(string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsDataCollectionEnabled(string?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  syntax:
+    content: public static bool IsDataCollectionEnabled(string? runSettingsXml)
+    parameters:
+    - id: runSettingsXml
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsDataCollectionEnabled(runSettingsXml As String) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsDataCollectionEnabled*
+  nameWithType.vb: XmlRunSettingsUtilities.IsDataCollectionEnabled(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsDataCollectionEnabled(String)
+  name.vb: IsDataCollectionEnabled(String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsInProcDataCollectionEnabled(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsInProcDataCollectionEnabled(System.String)
+  id: IsInProcDataCollectionEnabled(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities
+  langs:
+  - csharp
+  - vb
+  name: IsInProcDataCollectionEnabled(string?)
+  nameWithType: XmlRunSettingsUtilities.IsInProcDataCollectionEnabled(string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsInProcDataCollectionEnabled(string?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  syntax:
+    content: public static bool IsInProcDataCollectionEnabled(string? runSettingsXml)
+    parameters:
+    - id: runSettingsXml
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsInProcDataCollectionEnabled(runSettingsXml As String) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsInProcDataCollectionEnabled*
+  nameWithType.vb: XmlRunSettingsUtilities.IsInProcDataCollectionEnabled(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsInProcDataCollectionEnabled(String)
+  name.vb: IsInProcDataCollectionEnabled(String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectionRunSettings(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectionRunSettings(System.String)
+  id: GetDataCollectionRunSettings(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetDataCollectionRunSettings(string?)
+  nameWithType: XmlRunSettingsUtilities.GetDataCollectionRunSettings(string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectionRunSettings(string?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  syntax:
+    content: public static DataCollectionRunSettings? GetDataCollectionRunSettings(string? runSettingsXml)
+    parameters:
+    - id: runSettingsXml
+      type: System.String
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollectionRunSettings
+    content.vb: Public Shared Function GetDataCollectionRunSettings(runSettingsXml As String) As DataCollectionRunSettings
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectionRunSettings*
+  nameWithType.vb: XmlRunSettingsUtilities.GetDataCollectionRunSettings(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectionRunSettings(String)
+  name.vb: GetDataCollectionRunSettings(String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetInProcDataCollectionRunSettings(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetInProcDataCollectionRunSettings(System.String)
+  id: GetInProcDataCollectionRunSettings(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetInProcDataCollectionRunSettings(string?)
+  nameWithType: XmlRunSettingsUtilities.GetInProcDataCollectionRunSettings(string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetInProcDataCollectionRunSettings(string?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  syntax:
+    content: public static DataCollectionRunSettings? GetInProcDataCollectionRunSettings(string? runSettingsXml)
+    parameters:
+    - id: runSettingsXml
+      type: System.String
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollectionRunSettings
+    content.vb: Public Shared Function GetInProcDataCollectionRunSettings(runSettingsXml As String) As DataCollectionRunSettings
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetInProcDataCollectionRunSettings*
+  nameWithType.vb: XmlRunSettingsUtilities.GetInProcDataCollectionRunSettings(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetInProcDataCollectionRunSettings(String)
+  name.vb: GetInProcDataCollectionRunSettings(String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetLoggerRunSettings(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetLoggerRunSettings(System.String)
+  id: GetLoggerRunSettings(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetLoggerRunSettings(string?)
+  nameWithType: XmlRunSettingsUtilities.GetLoggerRunSettings(string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetLoggerRunSettings(string?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  syntax:
+    content: public static LoggerRunSettings? GetLoggerRunSettings(string? runSettings)
+    parameters:
+    - id: runSettings
+      type: System.String
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.LoggerRunSettings
+    content.vb: Public Shared Function GetLoggerRunSettings(runSettings As String) As LoggerRunSettings
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetLoggerRunSettings*
+  nameWithType.vb: XmlRunSettingsUtilities.GetLoggerRunSettings(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetLoggerRunSettings(String)
+  name.vb: GetLoggerRunSettings(String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.OSArchitecture
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.OSArchitecture
+  id: OSArchitecture
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities
+  langs:
+  - csharp
+  - vb
+  name: OSArchitecture
+  nameWithType: XmlRunSettingsUtilities.OSArchitecture
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.OSArchitecture
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  syntax:
+    content: public static Architecture OSArchitecture { get; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Architecture
+    content.vb: Public Shared ReadOnly Property OSArchitecture As Architecture
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.OSArchitecture*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ReaderSettings
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ReaderSettings
+  id: ReaderSettings
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities
+  langs:
+  - csharp
+  - vb
+  name: ReaderSettings
+  nameWithType: XmlRunSettingsUtilities.ReaderSettings
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ReaderSettings
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  syntax:
+    content: public static XmlReaderSettings ReaderSettings { get; }
+    parameters: []
+    return:
+      type: System.Xml.XmlReaderSettings
+    content.vb: Public Shared ReadOnly Property ReaderSettings As XmlReaderSettings
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ReaderSettings*
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+    name: Utilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities
+    name: Utilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ContainsDataCollector*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ContainsDataCollector
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Utilities_XmlRunSettingsUtilities_ContainsDataCollector_System_Xml_XPath_IXPathNavigable_System_String_
+  name: ContainsDataCollector
+  nameWithType: XmlRunSettingsUtilities.ContainsDataCollector
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ContainsDataCollector
+- uid: System.Xml.XPath.IXPathNavigable
+  commentId: T:System.Xml.XPath.IXPathNavigable
+  parent: System.Xml.XPath
+  isExternal: true
+  name: IXPathNavigable
+  nameWithType: IXPathNavigable
+  fullName: System.Xml.XPath.IXPathNavigable
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Xml.XPath
+  commentId: N:System.Xml.XPath
+  isExternal: true
+  name: System.Xml.XPath
+  nameWithType: System.Xml.XPath
+  fullName: System.Xml.XPath
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Xml
+    name: Xml
+    isExternal: true
+  - name: .
+  - uid: System.Xml.XPath
+    name: XPath
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Xml
+    name: Xml
+    isExternal: true
+  - name: .
+  - uid: System.Xml.XPath
+    name: XPath
+    isExternal: true
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectorsFriendlyName*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectorsFriendlyName
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Utilities_XmlRunSettingsUtilities_GetDataCollectorsFriendlyName_System_String_
+  name: GetDataCollectorsFriendlyName
+  nameWithType: XmlRunSettingsUtilities.GetDataCollectorsFriendlyName
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectorsFriendlyName
+- uid: System.Collections.Generic.IList{System.String}
+  commentId: T:System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<string>
+  nameWithType: IList<string>
+  fullName: System.Collections.Generic.IList<string>
+  nameWithType.vb: IList(Of String)
+  fullName.vb: System.Collections.Generic.IList(Of String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.InsertDataCollectorsNode*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.InsertDataCollectorsNode
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Utilities_XmlRunSettingsUtilities_InsertDataCollectorsNode_System_Xml_XPath_IXPathNavigable_Microsoft_VisualStudio_TestPlatform_ObjectModel_DataCollectorSettings_
+  name: InsertDataCollectorsNode
+  nameWithType: XmlRunSettingsUtilities.InsertDataCollectorsNode
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.InsertDataCollectorsNode
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollectorSettings
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollectorSettings
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollectorSettings.html
+  name: DataCollectorSettings
+  nameWithType: DataCollectorSettings
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollectorSettings
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetRunConfigurationNode*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetRunConfigurationNode
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Utilities_XmlRunSettingsUtilities_GetRunConfigurationNode_System_String_
+  name: GetRunConfigurationNode
+  nameWithType: XmlRunSettingsUtilities.GetRunConfigurationNode
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetRunConfigurationNode
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.RunConfiguration
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.RunConfiguration
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.RunConfiguration.html
+  name: RunConfiguration
+  nameWithType: RunConfiguration
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.RunConfiguration
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetTestRunParameters*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetTestRunParameters
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Utilities_XmlRunSettingsUtilities_GetTestRunParameters_System_String_
+  name: GetTestRunParameters
+  nameWithType: XmlRunSettingsUtilities.GetTestRunParameters
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetTestRunParameters
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, object>
+  nameWithType: Dictionary<string, object>
+  fullName: System.Collections.Generic.Dictionary<string, object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.CreateDefaultRunSettings*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.CreateDefaultRunSettings
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Utilities_XmlRunSettingsUtilities_CreateDefaultRunSettings
+  name: CreateDefaultRunSettings
+  nameWithType: XmlRunSettingsUtilities.CreateDefaultRunSettings
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.CreateDefaultRunSettings
+- uid: System.Xml.XmlDocument
+  commentId: T:System.Xml.XmlDocument
+  parent: System.Xml
+  isExternal: true
+  name: XmlDocument
+  nameWithType: XmlDocument
+  fullName: System.Xml.XmlDocument
+- uid: System.Xml
+  commentId: N:System.Xml
+  isExternal: true
+  name: System.Xml
+  nameWithType: System.Xml
+  fullName: System.Xml
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Xml
+    name: Xml
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Xml
+    name: Xml
+    isExternal: true
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsDataCollectionEnabled*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsDataCollectionEnabled
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Utilities_XmlRunSettingsUtilities_IsDataCollectionEnabled_System_String_
+  name: IsDataCollectionEnabled
+  nameWithType: XmlRunSettingsUtilities.IsDataCollectionEnabled
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsDataCollectionEnabled
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsInProcDataCollectionEnabled*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsInProcDataCollectionEnabled
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Utilities_XmlRunSettingsUtilities_IsInProcDataCollectionEnabled_System_String_
+  name: IsInProcDataCollectionEnabled
+  nameWithType: XmlRunSettingsUtilities.IsInProcDataCollectionEnabled
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.IsInProcDataCollectionEnabled
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectionRunSettings*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectionRunSettings
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Utilities_XmlRunSettingsUtilities_GetDataCollectionRunSettings_System_String_
+  name: GetDataCollectionRunSettings
+  nameWithType: XmlRunSettingsUtilities.GetDataCollectionRunSettings
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetDataCollectionRunSettings
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollectionRunSettings
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollectionRunSettings
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollectionRunSettings.html
+  name: DataCollectionRunSettings
+  nameWithType: DataCollectionRunSettings
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollectionRunSettings
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetInProcDataCollectionRunSettings*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetInProcDataCollectionRunSettings
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Utilities_XmlRunSettingsUtilities_GetInProcDataCollectionRunSettings_System_String_
+  name: GetInProcDataCollectionRunSettings
+  nameWithType: XmlRunSettingsUtilities.GetInProcDataCollectionRunSettings
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetInProcDataCollectionRunSettings
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetLoggerRunSettings*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetLoggerRunSettings
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Utilities_XmlRunSettingsUtilities_GetLoggerRunSettings_System_String_
+  name: GetLoggerRunSettings
+  nameWithType: XmlRunSettingsUtilities.GetLoggerRunSettings
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.GetLoggerRunSettings
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.LoggerRunSettings
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.LoggerRunSettings
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.LoggerRunSettings.html
+  name: LoggerRunSettings
+  nameWithType: LoggerRunSettings
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.LoggerRunSettings
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.OSArchitecture*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.OSArchitecture
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Utilities_XmlRunSettingsUtilities_OSArchitecture
+  name: OSArchitecture
+  nameWithType: XmlRunSettingsUtilities.OSArchitecture
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.OSArchitecture
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Architecture
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Architecture
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Architecture.html
+  name: Architecture
+  nameWithType: Architecture
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Architecture
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ReaderSettings*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ReaderSettings
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Utilities_XmlRunSettingsUtilities_ReaderSettings
+  name: ReaderSettings
+  nameWithType: XmlRunSettingsUtilities.ReaderSettings
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Utilities.XmlRunSettingsUtilities.ReaderSettings
+- uid: System.Xml.XmlReaderSettings
+  commentId: T:System.Xml.XmlReaderSettings
+  parent: System.Xml
+  isExternal: true
+  name: XmlReaderSettings
+  nameWithType: XmlReaderSettings
+  fullName: System.Xml.XmlReaderSettings

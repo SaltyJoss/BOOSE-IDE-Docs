@@ -1,0 +1,331 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper
+  id: IDotnetHostHelper
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces
+  children:
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.GetDotnetPath
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.GetMonoPath
+  - Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.TryGetDotnetPathByArchitecture(Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture,Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers.DotnetMuxerResolutionStrategy,System.String@)
+  langs:
+  - csharp
+  - vb
+  name: IDotnetHostHelper
+  nameWithType: IDotnetHostHelper
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper
+  type: Interface
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces
+  syntax:
+    content: public interface IDotnetHostHelper
+    content.vb: Public Interface IDotnetHostHelper
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.GetDotnetPath
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.GetDotnetPath
+  id: GetDotnetPath
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper
+  langs:
+  - csharp
+  - vb
+  name: GetDotnetPath()
+  nameWithType: IDotnetHostHelper.GetDotnetPath()
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.GetDotnetPath()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces
+  syntax:
+    content: string GetDotnetPath()
+    return:
+      type: System.String
+    content.vb: Function GetDotnetPath() As String
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.GetDotnetPath*
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.GetMonoPath
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.GetMonoPath
+  id: GetMonoPath
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper
+  langs:
+  - csharp
+  - vb
+  name: GetMonoPath()
+  nameWithType: IDotnetHostHelper.GetMonoPath()
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.GetMonoPath()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces
+  syntax:
+    content: string GetMonoPath()
+    return:
+      type: System.String
+    content.vb: Function GetMonoPath() As String
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.GetMonoPath*
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.TryGetDotnetPathByArchitecture(Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture,Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers.DotnetMuxerResolutionStrategy,System.String@)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.TryGetDotnetPathByArchitecture(Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture,Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers.DotnetMuxerResolutionStrategy,System.String@)
+  id: TryGetDotnetPathByArchitecture(Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture,Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers.DotnetMuxerResolutionStrategy,System.String@)
+  parent: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper
+  langs:
+  - csharp
+  - vb
+  name: TryGetDotnetPathByArchitecture(PlatformArchitecture, DotnetMuxerResolutionStrategy, out string?)
+  nameWithType: IDotnetHostHelper.TryGetDotnetPathByArchitecture(PlatformArchitecture, DotnetMuxerResolutionStrategy, out string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.TryGetDotnetPathByArchitecture(Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture, Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers.DotnetMuxerResolutionStrategy, out string?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CoreUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces
+  syntax:
+    content: bool TryGetDotnetPathByArchitecture(PlatformArchitecture targetArchitecture, DotnetMuxerResolutionStrategy dotnetMuxerResolutionStrategy, out string? muxerPath)
+    parameters:
+    - id: targetArchitecture
+      type: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture
+    - id: dotnetMuxerResolutionStrategy
+      type: Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers.DotnetMuxerResolutionStrategy
+    - id: muxerPath
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function TryGetDotnetPathByArchitecture(targetArchitecture As PlatformArchitecture, dotnetMuxerResolutionStrategy As DotnetMuxerResolutionStrategy, muxerPath As String) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.TryGetDotnetPathByArchitecture*
+  nameWithType.vb: IDotnetHostHelper.TryGetDotnetPathByArchitecture(PlatformArchitecture, DotnetMuxerResolutionStrategy, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.TryGetDotnetPathByArchitecture(Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture, Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers.DotnetMuxerResolutionStrategy, String)
+  name.vb: TryGetDotnetPathByArchitecture(PlatformArchitecture, DotnetMuxerResolutionStrategy, String)
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine
+    name: CrossPlatEngine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers
+    name: Helpers
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine
+    name: CrossPlatEngine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers
+    name: Helpers
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.html
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.GetDotnetPath*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.GetDotnetPath
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Helpers_Interfaces_IDotnetHostHelper_GetDotnetPath
+  name: GetDotnetPath
+  nameWithType: IDotnetHostHelper.GetDotnetPath
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.GetDotnetPath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.GetMonoPath*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.GetMonoPath
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Helpers_Interfaces_IDotnetHostHelper_GetMonoPath
+  name: GetMonoPath
+  nameWithType: IDotnetHostHelper.GetMonoPath
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.GetMonoPath
+- uid: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.TryGetDotnetPathByArchitecture*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.TryGetDotnetPathByArchitecture
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.html#Microsoft_VisualStudio_TestPlatform_CrossPlatEngine_Helpers_Interfaces_IDotnetHostHelper_TryGetDotnetPathByArchitecture_Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_PlatformArchitecture_Microsoft_VisualStudio_TestPlatform_CoreUtilities_Helpers_DotnetMuxerResolutionStrategy_System_String__
+  name: TryGetDotnetPathByArchitecture
+  nameWithType: IDotnetHostHelper.TryGetDotnetPathByArchitecture
+  fullName: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Helpers.Interfaces.IDotnetHostHelper.TryGetDotnetPathByArchitecture
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture
+  commentId: T:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture.html
+  name: PlatformArchitecture
+  nameWithType: PlatformArchitecture
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture
+- uid: Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers.DotnetMuxerResolutionStrategy
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers.DotnetMuxerResolutionStrategy
+  parent: Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers.DotnetMuxerResolutionStrategy.html
+  name: DotnetMuxerResolutionStrategy
+  nameWithType: DotnetMuxerResolutionStrategy
+  fullName: Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers.DotnetMuxerResolutionStrategy
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  commentId: N:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  nameWithType: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+    name: PlatformAbstractions
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+    name: PlatformAbstractions
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.html
+- uid: Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers
+  fullName: Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CoreUtilities
+    name: CoreUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CoreUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers
+    name: Helpers
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CoreUtilities
+    name: CoreUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CoreUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers
+    name: Helpers
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CoreUtilities.Helpers.html

@@ -1,0 +1,1029 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+  commentId: T:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+  id: TestFileLocationProperty
+  parent: Microsoft.Testing.Platform.Extensions.Messages
+  children:
+  - Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.#ctor(System.String,Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan)
+  - Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Deconstruct(System.String@,Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan@)
+  - Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.EqualityContract
+  - Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty)
+  - Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  - Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals(System.Object)
+  - Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.GetHashCode
+  - Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.PrintMembers(System.Text.StringBuilder)
+  - Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.ToString
+  - Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.op_Equality(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty,Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  - Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.op_Inequality(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty,Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  langs:
+  - csharp
+  - vb
+  name: TestFileLocationProperty
+  nameWithType: TestFileLocationProperty
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+  type: Class
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  syntax:
+    content: 'public sealed record TestFileLocationProperty : FileLocationProperty, IProperty, IEquatable<FileLocationProperty>, IEquatable<TestFileLocationProperty>'
+    content.vb: Public NotInheritable Class TestFileLocationProperty Inherits FileLocationProperty Implements IProperty, IEquatable(Of FileLocationProperty), IEquatable(Of TestFileLocationProperty)
+  inheritance:
+  - System.Object
+  - Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+  implements:
+  - Microsoft.Testing.Platform.Extensions.Messages.IProperty
+  - System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty}
+  - System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty}
+  inheritedMembers:
+  - Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.FilePath
+  - Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.LineSpan
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.#ctor(System.String,Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.#ctor(System.String,Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan)
+  id: '#ctor(System.String,Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan)'
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+  langs:
+  - csharp
+  - vb
+  name: TestFileLocationProperty(string, LinePositionSpan)
+  nameWithType: TestFileLocationProperty.TestFileLocationProperty(string, LinePositionSpan)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.TestFileLocationProperty(string, Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan)
+  type: Constructor
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  syntax:
+    content: public TestFileLocationProperty(string FilePath, LinePositionSpan LineSpan)
+    parameters:
+    - id: FilePath
+      type: System.String
+    - id: LineSpan
+      type: Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan
+    content.vb: Public Sub New(FilePath As String, LineSpan As LinePositionSpan)
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.#ctor*
+  nameWithType.vb: TestFileLocationProperty.New(String, LinePositionSpan)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.New(String, Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan)
+  name.vb: New(String, LinePositionSpan)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.ToString
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.ToString
+  id: ToString
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: TestFileLocationProperty.ToString()
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.ToString()
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.ToString
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.ToString*
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.PrintMembers(System.Text.StringBuilder)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.PrintMembers(System.Text.StringBuilder)
+  id: PrintMembers(System.Text.StringBuilder)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+  langs:
+  - csharp
+  - vb
+  name: PrintMembers(StringBuilder)
+  nameWithType: TestFileLocationProperty.PrintMembers(StringBuilder)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.PrintMembers(System.Text.StringBuilder)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: protected override bool PrintMembers(StringBuilder builder)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function PrintMembers(builder As StringBuilder) As Boolean
+  overridden: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.PrintMembers(System.Text.StringBuilder)
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.PrintMembers*
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.op_Inequality(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty,Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.op_Inequality(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty,Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  id: op_Inequality(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty,Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+  langs:
+  - csharp
+  - vb
+  name: operator !=(TestFileLocationProperty?, TestFileLocationProperty?)
+  nameWithType: TestFileLocationProperty.operator !=(TestFileLocationProperty?, TestFileLocationProperty?)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.operator !=(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty?, Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty?)
+  type: Operator
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  syntax:
+    content: public static bool operator !=(TestFileLocationProperty? left, TestFileLocationProperty? right)
+    parameters:
+    - id: left
+      type: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+    - id: right
+      type: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As TestFileLocationProperty, right As TestFileLocationProperty) As Boolean
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.op_Inequality*
+  nameWithType.vb: TestFileLocationProperty.<>(TestFileLocationProperty, TestFileLocationProperty)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.<>(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty, Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  name.vb: <>(TestFileLocationProperty, TestFileLocationProperty)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.op_Equality(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty,Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.op_Equality(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty,Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  id: op_Equality(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty,Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+  langs:
+  - csharp
+  - vb
+  name: operator ==(TestFileLocationProperty?, TestFileLocationProperty?)
+  nameWithType: TestFileLocationProperty.operator ==(TestFileLocationProperty?, TestFileLocationProperty?)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.operator ==(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty?, Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty?)
+  type: Operator
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  syntax:
+    content: public static bool operator ==(TestFileLocationProperty? left, TestFileLocationProperty? right)
+    parameters:
+    - id: left
+      type: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+    - id: right
+      type: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As TestFileLocationProperty, right As TestFileLocationProperty) As Boolean
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.op_Equality*
+  nameWithType.vb: TestFileLocationProperty.=(TestFileLocationProperty, TestFileLocationProperty)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.=(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty, Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  name.vb: =(TestFileLocationProperty, TestFileLocationProperty)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.GetHashCode
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: TestFileLocationProperty.GetHashCode()
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.GetHashCode()
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.GetHashCode
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.GetHashCode*
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals(System.Object)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: TestFileLocationProperty.Equals(object?)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals(object?)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.Equals(System.Object)
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals*
+  nameWithType.vb: TestFileLocationProperty.Equals(Object)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty)
+  id: Equals(Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+  langs:
+  - csharp
+  - vb
+  name: Equals(FileLocationProperty?)
+  nameWithType: TestFileLocationProperty.Equals(FileLocationProperty?)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty?)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: public override sealed bool Equals(FileLocationProperty? other)
+    parameters:
+    - id: other
+      type: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+    return:
+      type: System.Boolean
+    content.vb: Public NotOverridable Overrides Function Equals(other As FileLocationProperty) As Boolean
+  overridden: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty)
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals*
+  nameWithType.vb: TestFileLocationProperty.Equals(FileLocationProperty)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty)
+  name.vb: Equals(FileLocationProperty)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  id: Equals(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+  langs:
+  - csharp
+  - vb
+  name: Equals(TestFileLocationProperty?)
+  nameWithType: TestFileLocationProperty.Equals(TestFileLocationProperty?)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty?)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: public bool Equals(TestFileLocationProperty? other)
+    parameters:
+    - id: other
+      type: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As TestFileLocationProperty) As Boolean
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals*
+  implements:
+  - System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty}.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  nameWithType.vb: TestFileLocationProperty.Equals(TestFileLocationProperty)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  name.vb: Equals(TestFileLocationProperty)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Deconstruct(System.String@,Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan@)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Deconstruct(System.String@,Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan@)
+  id: Deconstruct(System.String@,Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan@)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+  langs:
+  - csharp
+  - vb
+  name: Deconstruct(out string, out LinePositionSpan)
+  nameWithType: TestFileLocationProperty.Deconstruct(out string, out LinePositionSpan)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Deconstruct(out string, out Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  syntax:
+    content: public void Deconstruct(out string FilePath, out LinePositionSpan LineSpan)
+    parameters:
+    - id: FilePath
+      type: System.String
+    - id: LineSpan
+      type: Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan
+    content.vb: Public Sub Deconstruct(FilePath As String, LineSpan As LinePositionSpan)
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Deconstruct*
+  nameWithType.vb: TestFileLocationProperty.Deconstruct(String, LinePositionSpan)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Deconstruct(String, Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan)
+  name.vb: Deconstruct(String, LinePositionSpan)
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.EqualityContract
+  commentId: P:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.EqualityContract
+  id: EqualityContract
+  parent: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+  langs:
+  - csharp
+  - vb
+  name: EqualityContract
+  nameWithType: TestFileLocationProperty.EqualityContract
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.EqualityContract
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Extensions.Messages
+  example: []
+  syntax:
+    content: protected override Type EqualityContract { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Protected Overrides ReadOnly Property EqualityContract As Type
+  overridden: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.EqualityContract
+  overload: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.EqualityContract*
+references:
+- uid: Microsoft.Testing.Platform.Extensions.Messages
+  commentId: N:Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Extensions.Messages
+  nameWithType: Microsoft.Testing.Platform.Extensions.Messages
+  fullName: Microsoft.Testing.Platform.Extensions.Messages
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.Messages
+    name: Messages
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.Messages
+    name: Messages
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+  commentId: T:Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+  parent: Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html
+  name: FileLocationProperty
+  nameWithType: FileLocationProperty
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+- uid: Microsoft.Testing.Platform.Extensions.Messages.IProperty
+  commentId: T:Microsoft.Testing.Platform.Extensions.Messages.IProperty
+  parent: Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.IProperty.html
+  name: IProperty
+  nameWithType: IProperty
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.IProperty
+- uid: System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty}
+  commentId: T:System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<FileLocationProperty>
+  nameWithType: IEquatable<FileLocationProperty>
+  fullName: System.IEquatable<Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty>
+  nameWithType.vb: IEquatable(Of FileLocationProperty)
+  fullName.vb: System.IEquatable(Of Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty)
+  name.vb: IEquatable(Of FileLocationProperty)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+    name: FileLocationProperty
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+    name: FileLocationProperty
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html
+  - name: )
+- uid: System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty}
+  commentId: T:System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<TestFileLocationProperty>
+  nameWithType: IEquatable<TestFileLocationProperty>
+  fullName: System.IEquatable<Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty>
+  nameWithType.vb: IEquatable(Of TestFileLocationProperty)
+  fullName.vb: System.IEquatable(Of Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  name.vb: IEquatable(Of TestFileLocationProperty)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+    name: TestFileLocationProperty
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+    name: TestFileLocationProperty
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.html
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.FilePath
+  commentId: P:Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.FilePath
+  parent: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_FilePath
+  name: FilePath
+  nameWithType: FileLocationProperty.FilePath
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.FilePath
+- uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.LineSpan
+  commentId: P:Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.LineSpan
+  parent: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_LineSpan
+  name: LineSpan
+  nameWithType: FileLocationProperty.LineSpan
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.LineSpan
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.#ctor*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.#ctor
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty__ctor_System_String_Microsoft_Testing_Platform_Extensions_Messages_LinePositionSpan_
+  name: TestFileLocationProperty
+  nameWithType: TestFileLocationProperty.TestFileLocationProperty
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.TestFileLocationProperty
+  nameWithType.vb: TestFileLocationProperty.New
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan
+  commentId: T:Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan
+  parent: Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan.html
+  name: LinePositionSpan
+  nameWithType: LinePositionSpan
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.LinePositionSpan
+- uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.ToString
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.ToString
+  parent: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_ToString
+  name: ToString()
+  nameWithType: FileLocationProperty.ToString()
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.ToString()
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.ToString
+    name: ToString
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.ToString
+    name: ToString
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_ToString
+  - name: (
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.ToString*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.ToString
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_ToString
+  name: ToString
+  nameWithType: TestFileLocationProperty.ToString
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.ToString
+- uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.PrintMembers(System.Text.StringBuilder)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.PrintMembers(System.Text.StringBuilder)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_PrintMembers_System_Text_StringBuilder_
+  name: PrintMembers(StringBuilder)
+  nameWithType: FileLocationProperty.PrintMembers(StringBuilder)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.PrintMembers(System.Text.StringBuilder)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.PrintMembers(System.Text.StringBuilder)
+    name: PrintMembers
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_PrintMembers_System_Text_StringBuilder_
+  - name: (
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.PrintMembers(System.Text.StringBuilder)
+    name: PrintMembers
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_PrintMembers_System_Text_StringBuilder_
+  - name: (
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.PrintMembers*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.PrintMembers
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_PrintMembers_System_Text_StringBuilder_
+  name: PrintMembers
+  nameWithType: TestFileLocationProperty.PrintMembers
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.PrintMembers
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.op_Inequality*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.op_Inequality
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_op_Inequality_Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_
+  name: operator !=
+  nameWithType: TestFileLocationProperty.operator !=
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.operator !=
+  nameWithType.vb: TestFileLocationProperty.<>
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_op_Inequality_Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+  commentId: T:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+  parent: Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.html
+  name: TestFileLocationProperty
+  nameWithType: TestFileLocationProperty
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.op_Equality*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.op_Equality
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_op_Equality_Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_
+  name: operator ==
+  nameWithType: TestFileLocationProperty.operator ==
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.operator ==
+  nameWithType.vb: TestFileLocationProperty.=
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.op_Equality*
+    name: ==
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_op_Equality_Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_
+- uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.GetHashCode
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.GetHashCode
+  parent: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_GetHashCode
+  name: GetHashCode()
+  nameWithType: FileLocationProperty.GetHashCode()
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.GetHashCode()
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_GetHashCode
+  - name: (
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.GetHashCode*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.GetHashCode
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_GetHashCode
+  name: GetHashCode
+  nameWithType: TestFileLocationProperty.GetHashCode
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.Equals(System.Object)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.Equals(System.Object)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: FileLocationProperty.Equals(object)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.Equals(object)
+  nameWithType.vb: FileLocationProperty.Equals(Object)
+  fullName.vb: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_Equals_System_Object_
+  name: Equals
+  nameWithType: TestFileLocationProperty.Equals
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Equals
+- uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty)
+  commentId: M:Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty)
+  parent: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_Equals_Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_
+  name: Equals(FileLocationProperty)
+  nameWithType: FileLocationProperty.Equals(FileLocationProperty)
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty)
+    name: Equals
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_Equals_Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+    name: FileLocationProperty
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.Equals(Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty)
+    name: Equals
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_Equals_Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+    name: FileLocationProperty
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html
+  - name: )
+- uid: System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty}.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  commentId: M:System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty}.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  parent: System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(TestFileLocationProperty)
+  nameWithType: IEquatable<TestFileLocationProperty>.Equals(TestFileLocationProperty)
+  fullName: System.IEquatable<Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty>.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  nameWithType.vb: IEquatable(Of TestFileLocationProperty).Equals(TestFileLocationProperty)
+  fullName.vb: System.IEquatable(Of Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty).Equals(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty}.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+    name: TestFileLocationProperty
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty}.Equals(Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty
+    name: TestFileLocationProperty
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Deconstruct*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Deconstruct
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_Deconstruct_System_String__Microsoft_Testing_Platform_Extensions_Messages_LinePositionSpan__
+  name: Deconstruct
+  nameWithType: TestFileLocationProperty.Deconstruct
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.Deconstruct
+- uid: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.EqualityContract
+  commentId: P:Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.EqualityContract
+  parent: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_FileLocationProperty_EqualityContract
+  name: EqualityContract
+  nameWithType: FileLocationProperty.EqualityContract
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.FileLocationProperty.EqualityContract
+- uid: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.EqualityContract*
+  commentId: Overload:Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.EqualityContract
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.html#Microsoft_Testing_Platform_Extensions_Messages_TestFileLocationProperty_EqualityContract
+  name: EqualityContract
+  nameWithType: TestFileLocationProperty.EqualityContract
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.TestFileLocationProperty.EqualityContract
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

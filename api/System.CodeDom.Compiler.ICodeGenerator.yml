@@ -1,0 +1,574 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.CodeDom.Compiler.ICodeGenerator
+  commentId: T:System.CodeDom.Compiler.ICodeGenerator
+  id: ICodeGenerator
+  parent: System.CodeDom.Compiler
+  children:
+  - System.CodeDom.Compiler.ICodeGenerator.CreateEscapedIdentifier(System.String)
+  - System.CodeDom.Compiler.ICodeGenerator.CreateValidIdentifier(System.String)
+  - System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromCompileUnit(System.CodeDom.CodeCompileUnit,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  - System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromExpression(System.CodeDom.CodeExpression,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  - System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromNamespace(System.CodeDom.CodeNamespace,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  - System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromStatement(System.CodeDom.CodeStatement,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  - System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromType(System.CodeDom.CodeTypeDeclaration,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  - System.CodeDom.Compiler.ICodeGenerator.GetTypeOutput(System.CodeDom.CodeTypeReference)
+  - System.CodeDom.Compiler.ICodeGenerator.IsValidIdentifier(System.String)
+  - System.CodeDom.Compiler.ICodeGenerator.Supports(System.CodeDom.Compiler.GeneratorSupport)
+  - System.CodeDom.Compiler.ICodeGenerator.ValidateIdentifier(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ICodeGenerator
+  nameWithType: ICodeGenerator
+  fullName: System.CodeDom.Compiler.ICodeGenerator
+  type: Interface
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: public interface ICodeGenerator
+    content.vb: Public Interface ICodeGenerator
+- uid: System.CodeDom.Compiler.ICodeGenerator.IsValidIdentifier(System.String)
+  commentId: M:System.CodeDom.Compiler.ICodeGenerator.IsValidIdentifier(System.String)
+  id: IsValidIdentifier(System.String)
+  parent: System.CodeDom.Compiler.ICodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: IsValidIdentifier(string)
+  nameWithType: ICodeGenerator.IsValidIdentifier(string)
+  fullName: System.CodeDom.Compiler.ICodeGenerator.IsValidIdentifier(string)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: bool IsValidIdentifier(string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function IsValidIdentifier(value As String) As Boolean
+  overload: System.CodeDom.Compiler.ICodeGenerator.IsValidIdentifier*
+  nameWithType.vb: ICodeGenerator.IsValidIdentifier(String)
+  fullName.vb: System.CodeDom.Compiler.ICodeGenerator.IsValidIdentifier(String)
+  name.vb: IsValidIdentifier(String)
+- uid: System.CodeDom.Compiler.ICodeGenerator.ValidateIdentifier(System.String)
+  commentId: M:System.CodeDom.Compiler.ICodeGenerator.ValidateIdentifier(System.String)
+  id: ValidateIdentifier(System.String)
+  parent: System.CodeDom.Compiler.ICodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: ValidateIdentifier(string)
+  nameWithType: ICodeGenerator.ValidateIdentifier(string)
+  fullName: System.CodeDom.Compiler.ICodeGenerator.ValidateIdentifier(string)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: void ValidateIdentifier(string value)
+    parameters:
+    - id: value
+      type: System.String
+    content.vb: Sub ValidateIdentifier(value As String)
+  overload: System.CodeDom.Compiler.ICodeGenerator.ValidateIdentifier*
+  nameWithType.vb: ICodeGenerator.ValidateIdentifier(String)
+  fullName.vb: System.CodeDom.Compiler.ICodeGenerator.ValidateIdentifier(String)
+  name.vb: ValidateIdentifier(String)
+- uid: System.CodeDom.Compiler.ICodeGenerator.CreateEscapedIdentifier(System.String)
+  commentId: M:System.CodeDom.Compiler.ICodeGenerator.CreateEscapedIdentifier(System.String)
+  id: CreateEscapedIdentifier(System.String)
+  parent: System.CodeDom.Compiler.ICodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: CreateEscapedIdentifier(string)
+  nameWithType: ICodeGenerator.CreateEscapedIdentifier(string)
+  fullName: System.CodeDom.Compiler.ICodeGenerator.CreateEscapedIdentifier(string)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: string CreateEscapedIdentifier(string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Function CreateEscapedIdentifier(value As String) As String
+  overload: System.CodeDom.Compiler.ICodeGenerator.CreateEscapedIdentifier*
+  nameWithType.vb: ICodeGenerator.CreateEscapedIdentifier(String)
+  fullName.vb: System.CodeDom.Compiler.ICodeGenerator.CreateEscapedIdentifier(String)
+  name.vb: CreateEscapedIdentifier(String)
+- uid: System.CodeDom.Compiler.ICodeGenerator.CreateValidIdentifier(System.String)
+  commentId: M:System.CodeDom.Compiler.ICodeGenerator.CreateValidIdentifier(System.String)
+  id: CreateValidIdentifier(System.String)
+  parent: System.CodeDom.Compiler.ICodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: CreateValidIdentifier(string)
+  nameWithType: ICodeGenerator.CreateValidIdentifier(string)
+  fullName: System.CodeDom.Compiler.ICodeGenerator.CreateValidIdentifier(string)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: string CreateValidIdentifier(string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Function CreateValidIdentifier(value As String) As String
+  overload: System.CodeDom.Compiler.ICodeGenerator.CreateValidIdentifier*
+  nameWithType.vb: ICodeGenerator.CreateValidIdentifier(String)
+  fullName.vb: System.CodeDom.Compiler.ICodeGenerator.CreateValidIdentifier(String)
+  name.vb: CreateValidIdentifier(String)
+- uid: System.CodeDom.Compiler.ICodeGenerator.GetTypeOutput(System.CodeDom.CodeTypeReference)
+  commentId: M:System.CodeDom.Compiler.ICodeGenerator.GetTypeOutput(System.CodeDom.CodeTypeReference)
+  id: GetTypeOutput(System.CodeDom.CodeTypeReference)
+  parent: System.CodeDom.Compiler.ICodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: GetTypeOutput(CodeTypeReference)
+  nameWithType: ICodeGenerator.GetTypeOutput(CodeTypeReference)
+  fullName: System.CodeDom.Compiler.ICodeGenerator.GetTypeOutput(System.CodeDom.CodeTypeReference)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: string GetTypeOutput(CodeTypeReference type)
+    parameters:
+    - id: type
+      type: System.CodeDom.CodeTypeReference
+    return:
+      type: System.String
+    content.vb: Function GetTypeOutput(type As CodeTypeReference) As String
+  overload: System.CodeDom.Compiler.ICodeGenerator.GetTypeOutput*
+- uid: System.CodeDom.Compiler.ICodeGenerator.Supports(System.CodeDom.Compiler.GeneratorSupport)
+  commentId: M:System.CodeDom.Compiler.ICodeGenerator.Supports(System.CodeDom.Compiler.GeneratorSupport)
+  id: Supports(System.CodeDom.Compiler.GeneratorSupport)
+  parent: System.CodeDom.Compiler.ICodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: Supports(GeneratorSupport)
+  nameWithType: ICodeGenerator.Supports(GeneratorSupport)
+  fullName: System.CodeDom.Compiler.ICodeGenerator.Supports(System.CodeDom.Compiler.GeneratorSupport)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: bool Supports(GeneratorSupport supports)
+    parameters:
+    - id: supports
+      type: System.CodeDom.Compiler.GeneratorSupport
+    return:
+      type: System.Boolean
+    content.vb: Function Supports(supports As GeneratorSupport) As Boolean
+  overload: System.CodeDom.Compiler.ICodeGenerator.Supports*
+- uid: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromExpression(System.CodeDom.CodeExpression,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  commentId: M:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromExpression(System.CodeDom.CodeExpression,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  id: GenerateCodeFromExpression(System.CodeDom.CodeExpression,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  parent: System.CodeDom.Compiler.ICodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateCodeFromExpression(CodeExpression, TextWriter, CodeGeneratorOptions)
+  nameWithType: ICodeGenerator.GenerateCodeFromExpression(CodeExpression, TextWriter, CodeGeneratorOptions)
+  fullName: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromExpression(System.CodeDom.CodeExpression, System.IO.TextWriter, System.CodeDom.Compiler.CodeGeneratorOptions)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: void GenerateCodeFromExpression(CodeExpression e, TextWriter w, CodeGeneratorOptions o)
+    parameters:
+    - id: e
+      type: System.CodeDom.CodeExpression
+    - id: w
+      type: System.IO.TextWriter
+    - id: o
+      type: System.CodeDom.Compiler.CodeGeneratorOptions
+    content.vb: Sub GenerateCodeFromExpression(e As CodeExpression, w As TextWriter, o As CodeGeneratorOptions)
+  overload: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromExpression*
+- uid: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromStatement(System.CodeDom.CodeStatement,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  commentId: M:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromStatement(System.CodeDom.CodeStatement,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  id: GenerateCodeFromStatement(System.CodeDom.CodeStatement,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  parent: System.CodeDom.Compiler.ICodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateCodeFromStatement(CodeStatement, TextWriter, CodeGeneratorOptions)
+  nameWithType: ICodeGenerator.GenerateCodeFromStatement(CodeStatement, TextWriter, CodeGeneratorOptions)
+  fullName: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromStatement(System.CodeDom.CodeStatement, System.IO.TextWriter, System.CodeDom.Compiler.CodeGeneratorOptions)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: void GenerateCodeFromStatement(CodeStatement e, TextWriter w, CodeGeneratorOptions o)
+    parameters:
+    - id: e
+      type: System.CodeDom.CodeStatement
+    - id: w
+      type: System.IO.TextWriter
+    - id: o
+      type: System.CodeDom.Compiler.CodeGeneratorOptions
+    content.vb: Sub GenerateCodeFromStatement(e As CodeStatement, w As TextWriter, o As CodeGeneratorOptions)
+  overload: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromStatement*
+- uid: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromNamespace(System.CodeDom.CodeNamespace,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  commentId: M:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromNamespace(System.CodeDom.CodeNamespace,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  id: GenerateCodeFromNamespace(System.CodeDom.CodeNamespace,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  parent: System.CodeDom.Compiler.ICodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateCodeFromNamespace(CodeNamespace, TextWriter, CodeGeneratorOptions)
+  nameWithType: ICodeGenerator.GenerateCodeFromNamespace(CodeNamespace, TextWriter, CodeGeneratorOptions)
+  fullName: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromNamespace(System.CodeDom.CodeNamespace, System.IO.TextWriter, System.CodeDom.Compiler.CodeGeneratorOptions)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: void GenerateCodeFromNamespace(CodeNamespace e, TextWriter w, CodeGeneratorOptions o)
+    parameters:
+    - id: e
+      type: System.CodeDom.CodeNamespace
+    - id: w
+      type: System.IO.TextWriter
+    - id: o
+      type: System.CodeDom.Compiler.CodeGeneratorOptions
+    content.vb: Sub GenerateCodeFromNamespace(e As CodeNamespace, w As TextWriter, o As CodeGeneratorOptions)
+  overload: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromNamespace*
+- uid: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromCompileUnit(System.CodeDom.CodeCompileUnit,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  commentId: M:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromCompileUnit(System.CodeDom.CodeCompileUnit,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  id: GenerateCodeFromCompileUnit(System.CodeDom.CodeCompileUnit,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  parent: System.CodeDom.Compiler.ICodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateCodeFromCompileUnit(CodeCompileUnit, TextWriter, CodeGeneratorOptions)
+  nameWithType: ICodeGenerator.GenerateCodeFromCompileUnit(CodeCompileUnit, TextWriter, CodeGeneratorOptions)
+  fullName: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromCompileUnit(System.CodeDom.CodeCompileUnit, System.IO.TextWriter, System.CodeDom.Compiler.CodeGeneratorOptions)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: void GenerateCodeFromCompileUnit(CodeCompileUnit e, TextWriter w, CodeGeneratorOptions o)
+    parameters:
+    - id: e
+      type: System.CodeDom.CodeCompileUnit
+    - id: w
+      type: System.IO.TextWriter
+    - id: o
+      type: System.CodeDom.Compiler.CodeGeneratorOptions
+    content.vb: Sub GenerateCodeFromCompileUnit(e As CodeCompileUnit, w As TextWriter, o As CodeGeneratorOptions)
+  overload: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromCompileUnit*
+- uid: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromType(System.CodeDom.CodeTypeDeclaration,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  commentId: M:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromType(System.CodeDom.CodeTypeDeclaration,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  id: GenerateCodeFromType(System.CodeDom.CodeTypeDeclaration,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)
+  parent: System.CodeDom.Compiler.ICodeGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateCodeFromType(CodeTypeDeclaration, TextWriter, CodeGeneratorOptions)
+  nameWithType: ICodeGenerator.GenerateCodeFromType(CodeTypeDeclaration, TextWriter, CodeGeneratorOptions)
+  fullName: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromType(System.CodeDom.CodeTypeDeclaration, System.IO.TextWriter, System.CodeDom.Compiler.CodeGeneratorOptions)
+  type: Method
+  assemblies:
+  - System.CodeDom
+  namespace: System.CodeDom.Compiler
+  syntax:
+    content: void GenerateCodeFromType(CodeTypeDeclaration e, TextWriter w, CodeGeneratorOptions o)
+    parameters:
+    - id: e
+      type: System.CodeDom.CodeTypeDeclaration
+    - id: w
+      type: System.IO.TextWriter
+    - id: o
+      type: System.CodeDom.Compiler.CodeGeneratorOptions
+    content.vb: Sub GenerateCodeFromType(e As CodeTypeDeclaration, w As TextWriter, o As CodeGeneratorOptions)
+  overload: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromType*
+references:
+- uid: System.CodeDom.Compiler
+  commentId: N:System.CodeDom.Compiler
+  isExternal: true
+  href: System.html
+  name: System.CodeDom.Compiler
+  nameWithType: System.CodeDom.Compiler
+  fullName: System.CodeDom.Compiler
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.CodeDom
+    name: CodeDom
+    isExternal: true
+    href: System.CodeDom.html
+  - name: .
+  - uid: System.CodeDom.Compiler
+    name: Compiler
+    isExternal: true
+    href: System.CodeDom.Compiler.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.CodeDom
+    name: CodeDom
+    isExternal: true
+    href: System.CodeDom.html
+  - name: .
+  - uid: System.CodeDom.Compiler
+    name: Compiler
+    isExternal: true
+    href: System.CodeDom.Compiler.html
+- uid: System.CodeDom.Compiler.ICodeGenerator.IsValidIdentifier*
+  commentId: Overload:System.CodeDom.Compiler.ICodeGenerator.IsValidIdentifier
+  isExternal: true
+  href: System.CodeDom.Compiler.ICodeGenerator.html#System_CodeDom_Compiler_ICodeGenerator_IsValidIdentifier_System_String_
+  name: IsValidIdentifier
+  nameWithType: ICodeGenerator.IsValidIdentifier
+  fullName: System.CodeDom.Compiler.ICodeGenerator.IsValidIdentifier
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.CodeDom.Compiler.ICodeGenerator.ValidateIdentifier*
+  commentId: Overload:System.CodeDom.Compiler.ICodeGenerator.ValidateIdentifier
+  isExternal: true
+  href: System.CodeDom.Compiler.ICodeGenerator.html#System_CodeDom_Compiler_ICodeGenerator_ValidateIdentifier_System_String_
+  name: ValidateIdentifier
+  nameWithType: ICodeGenerator.ValidateIdentifier
+  fullName: System.CodeDom.Compiler.ICodeGenerator.ValidateIdentifier
+- uid: System.CodeDom.Compiler.ICodeGenerator.CreateEscapedIdentifier*
+  commentId: Overload:System.CodeDom.Compiler.ICodeGenerator.CreateEscapedIdentifier
+  isExternal: true
+  href: System.CodeDom.Compiler.ICodeGenerator.html#System_CodeDom_Compiler_ICodeGenerator_CreateEscapedIdentifier_System_String_
+  name: CreateEscapedIdentifier
+  nameWithType: ICodeGenerator.CreateEscapedIdentifier
+  fullName: System.CodeDom.Compiler.ICodeGenerator.CreateEscapedIdentifier
+- uid: System.CodeDom.Compiler.ICodeGenerator.CreateValidIdentifier*
+  commentId: Overload:System.CodeDom.Compiler.ICodeGenerator.CreateValidIdentifier
+  isExternal: true
+  href: System.CodeDom.Compiler.ICodeGenerator.html#System_CodeDom_Compiler_ICodeGenerator_CreateValidIdentifier_System_String_
+  name: CreateValidIdentifier
+  nameWithType: ICodeGenerator.CreateValidIdentifier
+  fullName: System.CodeDom.Compiler.ICodeGenerator.CreateValidIdentifier
+- uid: System.CodeDom.Compiler.ICodeGenerator.GetTypeOutput*
+  commentId: Overload:System.CodeDom.Compiler.ICodeGenerator.GetTypeOutput
+  isExternal: true
+  href: System.CodeDom.Compiler.ICodeGenerator.html#System_CodeDom_Compiler_ICodeGenerator_GetTypeOutput_System_CodeDom_CodeTypeReference_
+  name: GetTypeOutput
+  nameWithType: ICodeGenerator.GetTypeOutput
+  fullName: System.CodeDom.Compiler.ICodeGenerator.GetTypeOutput
+- uid: System.CodeDom.CodeTypeReference
+  commentId: T:System.CodeDom.CodeTypeReference
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeTypeReference.html
+  name: CodeTypeReference
+  nameWithType: CodeTypeReference
+  fullName: System.CodeDom.CodeTypeReference
+- uid: System.CodeDom
+  commentId: N:System.CodeDom
+  isExternal: true
+  href: System.html
+  name: System.CodeDom
+  nameWithType: System.CodeDom
+  fullName: System.CodeDom
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.CodeDom
+    name: CodeDom
+    isExternal: true
+    href: System.CodeDom.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.CodeDom
+    name: CodeDom
+    isExternal: true
+    href: System.CodeDom.html
+- uid: System.CodeDom.Compiler.ICodeGenerator.Supports*
+  commentId: Overload:System.CodeDom.Compiler.ICodeGenerator.Supports
+  isExternal: true
+  href: System.CodeDom.Compiler.ICodeGenerator.html#System_CodeDom_Compiler_ICodeGenerator_Supports_System_CodeDom_Compiler_GeneratorSupport_
+  name: Supports
+  nameWithType: ICodeGenerator.Supports
+  fullName: System.CodeDom.Compiler.ICodeGenerator.Supports
+- uid: System.CodeDom.Compiler.GeneratorSupport
+  commentId: T:System.CodeDom.Compiler.GeneratorSupport
+  parent: System.CodeDom.Compiler
+  isExternal: true
+  href: System.CodeDom.Compiler.GeneratorSupport.html
+  name: GeneratorSupport
+  nameWithType: GeneratorSupport
+  fullName: System.CodeDom.Compiler.GeneratorSupport
+- uid: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromExpression*
+  commentId: Overload:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromExpression
+  isExternal: true
+  href: System.CodeDom.Compiler.ICodeGenerator.html#System_CodeDom_Compiler_ICodeGenerator_GenerateCodeFromExpression_System_CodeDom_CodeExpression_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_
+  name: GenerateCodeFromExpression
+  nameWithType: ICodeGenerator.GenerateCodeFromExpression
+  fullName: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromExpression
+- uid: System.CodeDom.CodeExpression
+  commentId: T:System.CodeDom.CodeExpression
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeExpression.html
+  name: CodeExpression
+  nameWithType: CodeExpression
+  fullName: System.CodeDom.CodeExpression
+- uid: System.IO.TextWriter
+  commentId: T:System.IO.TextWriter
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  name: TextWriter
+  nameWithType: TextWriter
+  fullName: System.IO.TextWriter
+- uid: System.CodeDom.Compiler.CodeGeneratorOptions
+  commentId: T:System.CodeDom.Compiler.CodeGeneratorOptions
+  parent: System.CodeDom.Compiler
+  isExternal: true
+  href: System.CodeDom.Compiler.CodeGeneratorOptions.html
+  name: CodeGeneratorOptions
+  nameWithType: CodeGeneratorOptions
+  fullName: System.CodeDom.Compiler.CodeGeneratorOptions
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromStatement*
+  commentId: Overload:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromStatement
+  isExternal: true
+  href: System.CodeDom.Compiler.ICodeGenerator.html#System_CodeDom_Compiler_ICodeGenerator_GenerateCodeFromStatement_System_CodeDom_CodeStatement_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_
+  name: GenerateCodeFromStatement
+  nameWithType: ICodeGenerator.GenerateCodeFromStatement
+  fullName: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromStatement
+- uid: System.CodeDom.CodeStatement
+  commentId: T:System.CodeDom.CodeStatement
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeStatement.html
+  name: CodeStatement
+  nameWithType: CodeStatement
+  fullName: System.CodeDom.CodeStatement
+- uid: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromNamespace*
+  commentId: Overload:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromNamespace
+  isExternal: true
+  href: System.CodeDom.Compiler.ICodeGenerator.html#System_CodeDom_Compiler_ICodeGenerator_GenerateCodeFromNamespace_System_CodeDom_CodeNamespace_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_
+  name: GenerateCodeFromNamespace
+  nameWithType: ICodeGenerator.GenerateCodeFromNamespace
+  fullName: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromNamespace
+- uid: System.CodeDom.CodeNamespace
+  commentId: T:System.CodeDom.CodeNamespace
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeNamespace.html
+  name: CodeNamespace
+  nameWithType: CodeNamespace
+  fullName: System.CodeDom.CodeNamespace
+- uid: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromCompileUnit*
+  commentId: Overload:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromCompileUnit
+  isExternal: true
+  href: System.CodeDom.Compiler.ICodeGenerator.html#System_CodeDom_Compiler_ICodeGenerator_GenerateCodeFromCompileUnit_System_CodeDom_CodeCompileUnit_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_
+  name: GenerateCodeFromCompileUnit
+  nameWithType: ICodeGenerator.GenerateCodeFromCompileUnit
+  fullName: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromCompileUnit
+- uid: System.CodeDom.CodeCompileUnit
+  commentId: T:System.CodeDom.CodeCompileUnit
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeCompileUnit.html
+  name: CodeCompileUnit
+  nameWithType: CodeCompileUnit
+  fullName: System.CodeDom.CodeCompileUnit
+- uid: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromType*
+  commentId: Overload:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromType
+  isExternal: true
+  href: System.CodeDom.Compiler.ICodeGenerator.html#System_CodeDom_Compiler_ICodeGenerator_GenerateCodeFromType_System_CodeDom_CodeTypeDeclaration_System_IO_TextWriter_System_CodeDom_Compiler_CodeGeneratorOptions_
+  name: GenerateCodeFromType
+  nameWithType: ICodeGenerator.GenerateCodeFromType
+  fullName: System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromType
+- uid: System.CodeDom.CodeTypeDeclaration
+  commentId: T:System.CodeDom.CodeTypeDeclaration
+  parent: System.CodeDom
+  isExternal: true
+  href: System.CodeDom.CodeTypeDeclaration.html
+  name: CodeTypeDeclaration
+  nameWithType: CodeTypeDeclaration
+  fullName: System.CodeDom.CodeTypeDeclaration

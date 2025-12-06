@@ -1,0 +1,884 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSECoreApp.UI.EditorTheme
+  commentId: T:BOOSECoreApp.UI.EditorTheme
+  id: EditorTheme
+  parent: BOOSECoreApp.UI
+  children:
+  - BOOSECoreApp.UI.EditorTheme.#ctor(System.String,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Collections.Generic.IDictionary{BOOSECoreApp.UI.TokenType,System.Drawing.Color})
+  - BOOSECoreApp.UI.EditorTheme.Background
+  - BOOSECoreApp.UI.EditorTheme.DefaultForeground
+  - BOOSECoreApp.UI.EditorTheme.GetColour(BOOSECoreApp.UI.TokenType,System.Nullable{System.Drawing.Color})
+  - BOOSECoreApp.UI.EditorTheme.Name
+  - BOOSECoreApp.UI.EditorTheme.PenColour
+  - BOOSECoreApp.UI.EditorTheme.TokenColours
+  langs:
+  - csharp
+  - vb
+  name: EditorTheme
+  nameWithType: EditorTheme
+  fullName: BOOSECoreApp.UI.EditorTheme
+  type: Class
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Represents a theme for the code editor, defining colors for various token types and overall appearance.
+  example: []
+  syntax:
+    content: public sealed class EditorTheme
+    content.vb: Public NotInheritable Class EditorTheme
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: BOOSECoreApp.UI.EditorTheme.#ctor(System.String,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Collections.Generic.IDictionary{BOOSECoreApp.UI.TokenType,System.Drawing.Color})
+  commentId: M:BOOSECoreApp.UI.EditorTheme.#ctor(System.String,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Collections.Generic.IDictionary{BOOSECoreApp.UI.TokenType,System.Drawing.Color})
+  id: '#ctor(System.String,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Collections.Generic.IDictionary{BOOSECoreApp.UI.TokenType,System.Drawing.Color})'
+  parent: BOOSECoreApp.UI.EditorTheme
+  langs:
+  - csharp
+  - vb
+  name: EditorTheme(string, Color, Color, Color, IDictionary<TokenType, Color>)
+  nameWithType: EditorTheme.EditorTheme(string, Color, Color, Color, IDictionary<TokenType, Color>)
+  fullName: BOOSECoreApp.UI.EditorTheme.EditorTheme(string, System.Drawing.Color, System.Drawing.Color, System.Drawing.Color, System.Collections.Generic.IDictionary<BOOSECoreApp.UI.TokenType, System.Drawing.Color>)
+  type: Constructor
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Initializes a new instance of the <xref href="BOOSECoreApp.UI.EditorTheme" data-throw-if-not-resolved="false"></xref> class with the specified name, background color, foreground color, and token-specific colors.
+  example: []
+  syntax:
+    content: public EditorTheme(string name, Color background, Color penColour, Color defaultForeground, IDictionary<TokenType, Color> tokenColours)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the theme. This value cannot be null or empty
+    - id: background
+      type: System.Drawing.Color
+      description: The background color of the theme
+    - id: penColour
+      type: System.Drawing.Color
+      description: The pen color of the theme
+    - id: defaultForeground
+      type: System.Drawing.Color
+      description: The default foreground color used for text that does not have a specific token type
+    - id: tokenColours
+      type: System.Collections.Generic.IDictionary{BOOSECoreApp.UI.TokenType,System.Drawing.Color}
+      description: A dictionary mapping <xref href="BOOSECoreApp.Core.Base.ParsedLineType" data-throw-if-not-resolved="false"></xref> values to their corresponding colors
+    content.vb: Public Sub New(name As String, background As Color, penColour As Color, defaultForeground As Color, tokenColours As IDictionary(Of TokenType, Color))
+  overload: BOOSECoreApp.UI.EditorTheme.#ctor*
+  nameWithType.vb: EditorTheme.New(String, Color, Color, Color, IDictionary(Of TokenType, Color))
+  fullName.vb: BOOSECoreApp.UI.EditorTheme.New(String, System.Drawing.Color, System.Drawing.Color, System.Drawing.Color, System.Collections.Generic.IDictionary(Of BOOSECoreApp.UI.TokenType, System.Drawing.Color))
+  name.vb: New(String, Color, Color, Color, IDictionary(Of TokenType, Color))
+- uid: BOOSECoreApp.UI.EditorTheme.GetColour(BOOSECoreApp.UI.TokenType,System.Nullable{System.Drawing.Color})
+  commentId: M:BOOSECoreApp.UI.EditorTheme.GetColour(BOOSECoreApp.UI.TokenType,System.Nullable{System.Drawing.Color})
+  id: GetColour(BOOSECoreApp.UI.TokenType,System.Nullable{System.Drawing.Color})
+  parent: BOOSECoreApp.UI.EditorTheme
+  langs:
+  - csharp
+  - vb
+  name: GetColour(TokenType, Color?)
+  nameWithType: EditorTheme.GetColour(TokenType, Color?)
+  fullName: BOOSECoreApp.UI.EditorTheme.GetColour(BOOSECoreApp.UI.TokenType, System.Drawing.Color?)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: Gets the color associated with the specified token type. If the token type is not defined in the theme,
+  example: []
+  syntax:
+    content: public Color GetColour(TokenType type, Color? fallback = null)
+    parameters:
+    - id: type
+      type: BOOSECoreApp.UI.TokenType
+      description: The token type for which to retrieve the color.
+    - id: fallback
+      type: System.Nullable{System.Drawing.Color}
+      description: An optional fallback color to return if the token type is not defined in the theme.
+    return:
+      type: System.Drawing.Color
+    content.vb: Public Function GetColour(type As TokenType, fallback As Color? = Nothing) As Color
+  overload: BOOSECoreApp.UI.EditorTheme.GetColour*
+- uid: BOOSECoreApp.UI.EditorTheme.Name
+  commentId: P:BOOSECoreApp.UI.EditorTheme.Name
+  id: Name
+  parent: BOOSECoreApp.UI.EditorTheme
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: EditorTheme.Name
+  fullName: BOOSECoreApp.UI.EditorTheme.Name
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: The name of the theme.
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: BOOSECoreApp.UI.EditorTheme.Name*
+- uid: BOOSECoreApp.UI.EditorTheme.Background
+  commentId: P:BOOSECoreApp.UI.EditorTheme.Background
+  id: Background
+  parent: BOOSECoreApp.UI.EditorTheme
+  langs:
+  - csharp
+  - vb
+  name: Background
+  nameWithType: EditorTheme.Background
+  fullName: BOOSECoreApp.UI.EditorTheme.Background
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: The background color of the theme.
+  example: []
+  syntax:
+    content: public Color Background { get; }
+    parameters: []
+    return:
+      type: System.Drawing.Color
+    content.vb: Public ReadOnly Property Background As Color
+  overload: BOOSECoreApp.UI.EditorTheme.Background*
+- uid: BOOSECoreApp.UI.EditorTheme.PenColour
+  commentId: P:BOOSECoreApp.UI.EditorTheme.PenColour
+  id: PenColour
+  parent: BOOSECoreApp.UI.EditorTheme
+  langs:
+  - csharp
+  - vb
+  name: PenColour
+  nameWithType: EditorTheme.PenColour
+  fullName: BOOSECoreApp.UI.EditorTheme.PenColour
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: The pen color of the theme.
+  example: []
+  syntax:
+    content: public Color PenColour { get; }
+    parameters: []
+    return:
+      type: System.Drawing.Color
+    content.vb: Public ReadOnly Property PenColour As Color
+  overload: BOOSECoreApp.UI.EditorTheme.PenColour*
+- uid: BOOSECoreApp.UI.EditorTheme.DefaultForeground
+  commentId: P:BOOSECoreApp.UI.EditorTheme.DefaultForeground
+  id: DefaultForeground
+  parent: BOOSECoreApp.UI.EditorTheme
+  langs:
+  - csharp
+  - vb
+  name: DefaultForeground
+  nameWithType: EditorTheme.DefaultForeground
+  fullName: BOOSECoreApp.UI.EditorTheme.DefaultForeground
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: The default foreground color used for text that does not have a specific token type.
+  example: []
+  syntax:
+    content: public Color DefaultForeground { get; }
+    parameters: []
+    return:
+      type: System.Drawing.Color
+    content.vb: Public ReadOnly Property DefaultForeground As Color
+  overload: BOOSECoreApp.UI.EditorTheme.DefaultForeground*
+- uid: BOOSECoreApp.UI.EditorTheme.TokenColours
+  commentId: P:BOOSECoreApp.UI.EditorTheme.TokenColours
+  id: TokenColours
+  parent: BOOSECoreApp.UI.EditorTheme
+  langs:
+  - csharp
+  - vb
+  name: TokenColours
+  nameWithType: EditorTheme.TokenColours
+  fullName: BOOSECoreApp.UI.EditorTheme.TokenColours
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/UI/Syntax.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.UI
+  summary: A dictionary mapping <xref href="BOOSECoreApp.UI.TokenType" data-throw-if-not-resolved="false"></xref> values to their corresponding colors.
+  example: []
+  syntax:
+    content: public IReadOnlyDictionary<TokenType, Color> TokenColours { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{BOOSECoreApp.UI.TokenType,System.Drawing.Color}
+    content.vb: Public ReadOnly Property TokenColours As IReadOnlyDictionary(Of TokenType, Color)
+  overload: BOOSECoreApp.UI.EditorTheme.TokenColours*
+references:
+- uid: BOOSECoreApp.UI
+  commentId: N:BOOSECoreApp.UI
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.UI
+  nameWithType: BOOSECoreApp.UI
+  fullName: BOOSECoreApp.UI
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.UI
+    name: UI
+    isExternal: true
+    href: BOOSECoreApp.UI.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.UI
+    name: UI
+    isExternal: true
+    href: BOOSECoreApp.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSECoreApp.UI.EditorTheme
+  commentId: T:BOOSECoreApp.UI.EditorTheme
+  parent: BOOSECoreApp.UI
+  isExternal: true
+  href: BOOSECoreApp.UI.EditorTheme.html
+  name: EditorTheme
+  nameWithType: EditorTheme
+  fullName: BOOSECoreApp.UI.EditorTheme
+- uid: BOOSECoreApp.Core.Base.ParsedLineType
+  commentId: T:BOOSECoreApp.Core.Base.ParsedLineType
+  parent: BOOSECoreApp.Core.Base
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.ParsedLineType.html
+  name: ParsedLineType
+  nameWithType: ParsedLineType
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.UI.EditorTheme.#ctor*
+  commentId: Overload:BOOSECoreApp.UI.EditorTheme.#ctor
+  isExternal: true
+  href: BOOSECoreApp.UI.EditorTheme.html#BOOSECoreApp_UI_EditorTheme__ctor_System_String_System_Drawing_Color_System_Drawing_Color_System_Drawing_Color_System_Collections_Generic_IDictionary_BOOSECoreApp_UI_TokenType_System_Drawing_Color__
+  name: EditorTheme
+  nameWithType: EditorTheme.EditorTheme
+  fullName: BOOSECoreApp.UI.EditorTheme.EditorTheme
+  nameWithType.vb: EditorTheme.New
+  fullName.vb: BOOSECoreApp.UI.EditorTheme.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Drawing.Color
+  commentId: T:System.Drawing.Color
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  name: Color
+  nameWithType: Color
+  fullName: System.Drawing.Color
+- uid: System.Collections.Generic.IDictionary{BOOSECoreApp.UI.TokenType,System.Drawing.Color}
+  commentId: T:System.Collections.Generic.IDictionary{BOOSECoreApp.UI.TokenType,System.Drawing.Color}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TokenType, Color>
+  nameWithType: IDictionary<TokenType, Color>
+  fullName: System.Collections.Generic.IDictionary<BOOSECoreApp.UI.TokenType, System.Drawing.Color>
+  nameWithType.vb: IDictionary(Of TokenType, Color)
+  fullName.vb: System.Collections.Generic.IDictionary(Of BOOSECoreApp.UI.TokenType, System.Drawing.Color)
+  name.vb: IDictionary(Of TokenType, Color)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: BOOSECoreApp.UI.TokenType
+    name: TokenType
+    isExternal: true
+    href: BOOSECoreApp.UI.TokenType.html
+  - name: ','
+  - name: " "
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BOOSECoreApp.UI.TokenType
+    name: TokenType
+    isExternal: true
+    href: BOOSECoreApp.UI.TokenType.html
+  - name: ','
+  - name: " "
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: )
+- uid: BOOSECoreApp.Core.Base
+  commentId: N:BOOSECoreApp.Core.Base
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Base
+  nameWithType: BOOSECoreApp.Core.Base
+  fullName: BOOSECoreApp.Core.Base
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Base
+    name: Base
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Base
+    name: Base
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.html
+- uid: System.Drawing
+  commentId: N:System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Drawing
+  nameWithType: System.Drawing
+  fullName: System.Drawing
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: BOOSECoreApp.UI.EditorTheme.GetColour*
+  commentId: Overload:BOOSECoreApp.UI.EditorTheme.GetColour
+  isExternal: true
+  href: BOOSECoreApp.UI.EditorTheme.html#BOOSECoreApp_UI_EditorTheme_GetColour_BOOSECoreApp_UI_TokenType_System_Nullable_System_Drawing_Color__
+  name: GetColour
+  nameWithType: EditorTheme.GetColour
+  fullName: BOOSECoreApp.UI.EditorTheme.GetColour
+- uid: BOOSECoreApp.UI.TokenType
+  commentId: T:BOOSECoreApp.UI.TokenType
+  parent: BOOSECoreApp.UI
+  isExternal: true
+  href: BOOSECoreApp.UI.TokenType.html
+  name: TokenType
+  nameWithType: TokenType
+  fullName: BOOSECoreApp.UI.TokenType
+- uid: System.Nullable{System.Drawing.Color}
+  commentId: T:System.Nullable{System.Drawing.Color}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  name: Color?
+  nameWithType: Color?
+  fullName: System.Drawing.Color?
+  spec.csharp:
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: '?'
+  spec.vb:
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: BOOSECoreApp.UI.EditorTheme.Name*
+  commentId: Overload:BOOSECoreApp.UI.EditorTheme.Name
+  isExternal: true
+  href: BOOSECoreApp.UI.EditorTheme.html#BOOSECoreApp_UI_EditorTheme_Name
+  name: Name
+  nameWithType: EditorTheme.Name
+  fullName: BOOSECoreApp.UI.EditorTheme.Name
+- uid: BOOSECoreApp.UI.EditorTheme.Background*
+  commentId: Overload:BOOSECoreApp.UI.EditorTheme.Background
+  isExternal: true
+  href: BOOSECoreApp.UI.EditorTheme.html#BOOSECoreApp_UI_EditorTheme_Background
+  name: Background
+  nameWithType: EditorTheme.Background
+  fullName: BOOSECoreApp.UI.EditorTheme.Background
+- uid: BOOSECoreApp.UI.EditorTheme.PenColour*
+  commentId: Overload:BOOSECoreApp.UI.EditorTheme.PenColour
+  isExternal: true
+  href: BOOSECoreApp.UI.EditorTheme.html#BOOSECoreApp_UI_EditorTheme_PenColour
+  name: PenColour
+  nameWithType: EditorTheme.PenColour
+  fullName: BOOSECoreApp.UI.EditorTheme.PenColour
+- uid: BOOSECoreApp.UI.EditorTheme.DefaultForeground*
+  commentId: Overload:BOOSECoreApp.UI.EditorTheme.DefaultForeground
+  isExternal: true
+  href: BOOSECoreApp.UI.EditorTheme.html#BOOSECoreApp_UI_EditorTheme_DefaultForeground
+  name: DefaultForeground
+  nameWithType: EditorTheme.DefaultForeground
+  fullName: BOOSECoreApp.UI.EditorTheme.DefaultForeground
+- uid: BOOSECoreApp.UI.EditorTheme.TokenColours*
+  commentId: Overload:BOOSECoreApp.UI.EditorTheme.TokenColours
+  isExternal: true
+  href: BOOSECoreApp.UI.EditorTheme.html#BOOSECoreApp_UI_EditorTheme_TokenColours
+  name: TokenColours
+  nameWithType: EditorTheme.TokenColours
+  fullName: BOOSECoreApp.UI.EditorTheme.TokenColours
+- uid: System.Collections.Generic.IReadOnlyDictionary{BOOSECoreApp.UI.TokenType,System.Drawing.Color}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{BOOSECoreApp.UI.TokenType,System.Drawing.Color}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TokenType, Color>
+  nameWithType: IReadOnlyDictionary<TokenType, Color>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<BOOSECoreApp.UI.TokenType, System.Drawing.Color>
+  nameWithType.vb: IReadOnlyDictionary(Of TokenType, Color)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of BOOSECoreApp.UI.TokenType, System.Drawing.Color)
+  name.vb: IReadOnlyDictionary(Of TokenType, Color)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: BOOSECoreApp.UI.TokenType
+    name: TokenType
+    isExternal: true
+    href: BOOSECoreApp.UI.TokenType.html
+  - name: ','
+  - name: " "
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BOOSECoreApp.UI.TokenType
+    name: TokenType
+    isExternal: true
+    href: BOOSECoreApp.UI.TokenType.html
+  - name: ','
+  - name: " "
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )

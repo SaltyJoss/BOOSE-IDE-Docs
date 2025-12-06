@@ -1,0 +1,871 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Management.SelectQuery
+  commentId: T:System.Management.SelectQuery
+  id: SelectQuery
+  parent: System.Management
+  children:
+  - System.Management.SelectQuery.#ctor
+  - System.Management.SelectQuery.#ctor(System.Boolean,System.String)
+  - System.Management.SelectQuery.#ctor(System.String)
+  - System.Management.SelectQuery.#ctor(System.String,System.String)
+  - System.Management.SelectQuery.#ctor(System.String,System.String,System.String[])
+  - System.Management.SelectQuery.BuildQuery
+  - System.Management.SelectQuery.ClassName
+  - System.Management.SelectQuery.Clone
+  - System.Management.SelectQuery.Condition
+  - System.Management.SelectQuery.IsSchemaQuery
+  - System.Management.SelectQuery.ParseQuery(System.String)
+  - System.Management.SelectQuery.QueryString
+  - System.Management.SelectQuery.SelectedProperties
+  langs:
+  - csharp
+  - vb
+  name: SelectQuery
+  nameWithType: SelectQuery
+  fullName: System.Management.SelectQuery
+  type: Class
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: 'public class SelectQuery : WqlObjectQuery, ICloneable'
+    content.vb: Public Class SelectQuery Inherits WqlObjectQuery Implements ICloneable
+  inheritance:
+  - System.Object
+  - System.Management.ManagementQuery
+  - System.Management.ObjectQuery
+  - System.Management.WqlObjectQuery
+  implements:
+  - System.ICloneable
+  inheritedMembers:
+  - System.Management.WqlObjectQuery.QueryLanguage
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: System.Management.SelectQuery.#ctor
+  commentId: M:System.Management.SelectQuery.#ctor
+  id: '#ctor'
+  parent: System.Management.SelectQuery
+  langs:
+  - csharp
+  - vb
+  name: SelectQuery()
+  nameWithType: SelectQuery.SelectQuery()
+  fullName: System.Management.SelectQuery.SelectQuery()
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public SelectQuery()
+    content.vb: Public Sub New()
+  overload: System.Management.SelectQuery.#ctor*
+  nameWithType.vb: SelectQuery.New()
+  fullName.vb: System.Management.SelectQuery.New()
+  name.vb: New()
+- uid: System.Management.SelectQuery.#ctor(System.Boolean,System.String)
+  commentId: M:System.Management.SelectQuery.#ctor(System.Boolean,System.String)
+  id: '#ctor(System.Boolean,System.String)'
+  parent: System.Management.SelectQuery
+  langs:
+  - csharp
+  - vb
+  name: SelectQuery(bool, string)
+  nameWithType: SelectQuery.SelectQuery(bool, string)
+  fullName: System.Management.SelectQuery.SelectQuery(bool, string)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public SelectQuery(bool isSchemaQuery, string condition)
+    parameters:
+    - id: isSchemaQuery
+      type: System.Boolean
+    - id: condition
+      type: System.String
+    content.vb: Public Sub New(isSchemaQuery As Boolean, condition As String)
+  overload: System.Management.SelectQuery.#ctor*
+  nameWithType.vb: SelectQuery.New(Boolean, String)
+  fullName.vb: System.Management.SelectQuery.New(Boolean, String)
+  name.vb: New(Boolean, String)
+- uid: System.Management.SelectQuery.#ctor(System.String)
+  commentId: M:System.Management.SelectQuery.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Management.SelectQuery
+  langs:
+  - csharp
+  - vb
+  name: SelectQuery(string)
+  nameWithType: SelectQuery.SelectQuery(string)
+  fullName: System.Management.SelectQuery.SelectQuery(string)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public SelectQuery(string queryOrClassName)
+    parameters:
+    - id: queryOrClassName
+      type: System.String
+    content.vb: Public Sub New(queryOrClassName As String)
+  overload: System.Management.SelectQuery.#ctor*
+  nameWithType.vb: SelectQuery.New(String)
+  fullName.vb: System.Management.SelectQuery.New(String)
+  name.vb: New(String)
+- uid: System.Management.SelectQuery.#ctor(System.String,System.String)
+  commentId: M:System.Management.SelectQuery.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: System.Management.SelectQuery
+  langs:
+  - csharp
+  - vb
+  name: SelectQuery(string, string)
+  nameWithType: SelectQuery.SelectQuery(string, string)
+  fullName: System.Management.SelectQuery.SelectQuery(string, string)
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public SelectQuery(string className, string condition)
+    parameters:
+    - id: className
+      type: System.String
+    - id: condition
+      type: System.String
+    content.vb: Public Sub New(className As String, condition As String)
+  overload: System.Management.SelectQuery.#ctor*
+  nameWithType.vb: SelectQuery.New(String, String)
+  fullName.vb: System.Management.SelectQuery.New(String, String)
+  name.vb: New(String, String)
+- uid: System.Management.SelectQuery.#ctor(System.String,System.String,System.String[])
+  commentId: M:System.Management.SelectQuery.#ctor(System.String,System.String,System.String[])
+  id: '#ctor(System.String,System.String,System.String[])'
+  parent: System.Management.SelectQuery
+  langs:
+  - csharp
+  - vb
+  name: SelectQuery(string, string, string[])
+  nameWithType: SelectQuery.SelectQuery(string, string, string[])
+  fullName: System.Management.SelectQuery.SelectQuery(string, string, string[])
+  type: Constructor
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public SelectQuery(string className, string condition, string[] selectedProperties)
+    parameters:
+    - id: className
+      type: System.String
+    - id: condition
+      type: System.String
+    - id: selectedProperties
+      type: System.String[]
+    content.vb: Public Sub New(className As String, condition As String, selectedProperties As String())
+  overload: System.Management.SelectQuery.#ctor*
+  nameWithType.vb: SelectQuery.New(String, String, String())
+  fullName.vb: System.Management.SelectQuery.New(String, String, String())
+  name.vb: New(String, String, String())
+- uid: System.Management.SelectQuery.BuildQuery
+  commentId: M:System.Management.SelectQuery.BuildQuery
+  id: BuildQuery
+  parent: System.Management.SelectQuery
+  langs:
+  - csharp
+  - vb
+  name: BuildQuery()
+  nameWithType: SelectQuery.BuildQuery()
+  fullName: System.Management.SelectQuery.BuildQuery()
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: protected void BuildQuery()
+    content.vb: Protected Sub BuildQuery()
+  overload: System.Management.SelectQuery.BuildQuery*
+- uid: System.Management.SelectQuery.Clone
+  commentId: M:System.Management.SelectQuery.Clone
+  id: Clone
+  parent: System.Management.SelectQuery
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: SelectQuery.Clone()
+  fullName: System.Management.SelectQuery.Clone()
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  example: []
+  syntax:
+    content: public override object Clone()
+    return:
+      type: System.Object
+    content.vb: Public Overrides Function Clone() As Object
+  overridden: System.Management.WqlObjectQuery.Clone
+  overload: System.Management.SelectQuery.Clone*
+- uid: System.Management.SelectQuery.ParseQuery(System.String)
+  commentId: M:System.Management.SelectQuery.ParseQuery(System.String)
+  id: ParseQuery(System.String)
+  parent: System.Management.SelectQuery
+  langs:
+  - csharp
+  - vb
+  name: ParseQuery(string)
+  nameWithType: SelectQuery.ParseQuery(string)
+  fullName: System.Management.SelectQuery.ParseQuery(string)
+  type: Method
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  example: []
+  syntax:
+    content: protected override void ParseQuery(string query)
+    parameters:
+    - id: query
+      type: System.String
+    content.vb: Protected Overrides Sub ParseQuery(query As String)
+  overridden: System.Management.ManagementQuery.ParseQuery(System.String)
+  overload: System.Management.SelectQuery.ParseQuery*
+  nameWithType.vb: SelectQuery.ParseQuery(String)
+  fullName.vb: System.Management.SelectQuery.ParseQuery(String)
+  name.vb: ParseQuery(String)
+- uid: System.Management.SelectQuery.ClassName
+  commentId: P:System.Management.SelectQuery.ClassName
+  id: ClassName
+  parent: System.Management.SelectQuery
+  langs:
+  - csharp
+  - vb
+  name: ClassName
+  nameWithType: SelectQuery.ClassName
+  fullName: System.Management.SelectQuery.ClassName
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public string ClassName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ClassName As String
+  overload: System.Management.SelectQuery.ClassName*
+- uid: System.Management.SelectQuery.Condition
+  commentId: P:System.Management.SelectQuery.Condition
+  id: Condition
+  parent: System.Management.SelectQuery
+  langs:
+  - csharp
+  - vb
+  name: Condition
+  nameWithType: SelectQuery.Condition
+  fullName: System.Management.SelectQuery.Condition
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public string Condition { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Condition As String
+  overload: System.Management.SelectQuery.Condition*
+- uid: System.Management.SelectQuery.IsSchemaQuery
+  commentId: P:System.Management.SelectQuery.IsSchemaQuery
+  id: IsSchemaQuery
+  parent: System.Management.SelectQuery
+  langs:
+  - csharp
+  - vb
+  name: IsSchemaQuery
+  nameWithType: SelectQuery.IsSchemaQuery
+  fullName: System.Management.SelectQuery.IsSchemaQuery
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public bool IsSchemaQuery { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSchemaQuery As Boolean
+  overload: System.Management.SelectQuery.IsSchemaQuery*
+- uid: System.Management.SelectQuery.QueryString
+  commentId: P:System.Management.SelectQuery.QueryString
+  id: QueryString
+  parent: System.Management.SelectQuery
+  langs:
+  - csharp
+  - vb
+  name: QueryString
+  nameWithType: SelectQuery.QueryString
+  fullName: System.Management.SelectQuery.QueryString
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  example: []
+  syntax:
+    content: public override string QueryString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides Property QueryString As String
+  overridden: System.Management.ManagementQuery.QueryString
+  overload: System.Management.SelectQuery.QueryString*
+- uid: System.Management.SelectQuery.SelectedProperties
+  commentId: P:System.Management.SelectQuery.SelectedProperties
+  id: SelectedProperties
+  parent: System.Management.SelectQuery
+  langs:
+  - csharp
+  - vb
+  name: SelectedProperties
+  nameWithType: SelectQuery.SelectedProperties
+  fullName: System.Management.SelectQuery.SelectedProperties
+  type: Property
+  assemblies:
+  - System.Management
+  namespace: System.Management
+  syntax:
+    content: public StringCollection SelectedProperties { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Specialized.StringCollection
+    content.vb: Public Property SelectedProperties As StringCollection
+  overload: System.Management.SelectQuery.SelectedProperties*
+references:
+- uid: System.Management
+  commentId: N:System.Management
+  isExternal: true
+  href: System.html
+  name: System.Management
+  nameWithType: System.Management
+  fullName: System.Management
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Management
+    name: Management
+    isExternal: true
+    href: System.Management.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Management
+    name: Management
+    isExternal: true
+    href: System.Management.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Management.ManagementQuery
+  commentId: T:System.Management.ManagementQuery
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ManagementQuery.html
+  name: ManagementQuery
+  nameWithType: ManagementQuery
+  fullName: System.Management.ManagementQuery
+- uid: System.Management.ObjectQuery
+  commentId: T:System.Management.ObjectQuery
+  parent: System.Management
+  isExternal: true
+  href: System.Management.ObjectQuery.html
+  name: ObjectQuery
+  nameWithType: ObjectQuery
+  fullName: System.Management.ObjectQuery
+- uid: System.Management.WqlObjectQuery
+  commentId: T:System.Management.WqlObjectQuery
+  parent: System.Management
+  isExternal: true
+  href: System.Management.WqlObjectQuery.html
+  name: WqlObjectQuery
+  nameWithType: WqlObjectQuery
+  fullName: System.Management.WqlObjectQuery
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Management.WqlObjectQuery.QueryLanguage
+  commentId: P:System.Management.WqlObjectQuery.QueryLanguage
+  parent: System.Management.WqlObjectQuery
+  isExternal: true
+  href: System.Management.WqlObjectQuery.html#System_Management_WqlObjectQuery_QueryLanguage
+  name: QueryLanguage
+  nameWithType: WqlObjectQuery.QueryLanguage
+  fullName: System.Management.WqlObjectQuery.QueryLanguage
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Management.SelectQuery.#ctor*
+  commentId: Overload:System.Management.SelectQuery.#ctor
+  isExternal: true
+  href: System.Management.SelectQuery.html#System_Management_SelectQuery__ctor
+  name: SelectQuery
+  nameWithType: SelectQuery.SelectQuery
+  fullName: System.Management.SelectQuery.SelectQuery
+  nameWithType.vb: SelectQuery.New
+  fullName.vb: System.Management.SelectQuery.New
+  name.vb: New
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Management.SelectQuery.BuildQuery*
+  commentId: Overload:System.Management.SelectQuery.BuildQuery
+  isExternal: true
+  href: System.Management.SelectQuery.html#System_Management_SelectQuery_BuildQuery
+  name: BuildQuery
+  nameWithType: SelectQuery.BuildQuery
+  fullName: System.Management.SelectQuery.BuildQuery
+- uid: System.Management.WqlObjectQuery.Clone
+  commentId: M:System.Management.WqlObjectQuery.Clone
+  parent: System.Management.WqlObjectQuery
+  isExternal: true
+  href: System.Management.WqlObjectQuery.html#System_Management_WqlObjectQuery_Clone
+  name: Clone()
+  nameWithType: WqlObjectQuery.Clone()
+  fullName: System.Management.WqlObjectQuery.Clone()
+  spec.csharp:
+  - uid: System.Management.WqlObjectQuery.Clone
+    name: Clone
+    isExternal: true
+    href: System.Management.WqlObjectQuery.html#System_Management_WqlObjectQuery_Clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Management.WqlObjectQuery.Clone
+    name: Clone
+    isExternal: true
+    href: System.Management.WqlObjectQuery.html#System_Management_WqlObjectQuery_Clone
+  - name: (
+  - name: )
+- uid: System.Management.SelectQuery.Clone*
+  commentId: Overload:System.Management.SelectQuery.Clone
+  isExternal: true
+  href: System.Management.SelectQuery.html#System_Management_SelectQuery_Clone
+  name: Clone
+  nameWithType: SelectQuery.Clone
+  fullName: System.Management.SelectQuery.Clone
+- uid: System.Management.ManagementQuery.ParseQuery(System.String)
+  commentId: M:System.Management.ManagementQuery.ParseQuery(System.String)
+  parent: System.Management.ManagementQuery
+  isExternal: true
+  href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_ParseQuery_System_String_
+  name: ParseQuery(string)
+  nameWithType: ManagementQuery.ParseQuery(string)
+  fullName: System.Management.ManagementQuery.ParseQuery(string)
+  nameWithType.vb: ManagementQuery.ParseQuery(String)
+  fullName.vb: System.Management.ManagementQuery.ParseQuery(String)
+  name.vb: ParseQuery(String)
+  spec.csharp:
+  - uid: System.Management.ManagementQuery.ParseQuery(System.String)
+    name: ParseQuery
+    isExternal: true
+    href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_ParseQuery_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Management.ManagementQuery.ParseQuery(System.String)
+    name: ParseQuery
+    isExternal: true
+    href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_ParseQuery_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Management.SelectQuery.ParseQuery*
+  commentId: Overload:System.Management.SelectQuery.ParseQuery
+  isExternal: true
+  href: System.Management.SelectQuery.html#System_Management_SelectQuery_ParseQuery_System_String_
+  name: ParseQuery
+  nameWithType: SelectQuery.ParseQuery
+  fullName: System.Management.SelectQuery.ParseQuery
+- uid: System.Management.SelectQuery.ClassName*
+  commentId: Overload:System.Management.SelectQuery.ClassName
+  isExternal: true
+  href: System.Management.SelectQuery.html#System_Management_SelectQuery_ClassName
+  name: ClassName
+  nameWithType: SelectQuery.ClassName
+  fullName: System.Management.SelectQuery.ClassName
+- uid: System.Management.SelectQuery.Condition*
+  commentId: Overload:System.Management.SelectQuery.Condition
+  isExternal: true
+  href: System.Management.SelectQuery.html#System_Management_SelectQuery_Condition
+  name: Condition
+  nameWithType: SelectQuery.Condition
+  fullName: System.Management.SelectQuery.Condition
+- uid: System.Management.SelectQuery.IsSchemaQuery*
+  commentId: Overload:System.Management.SelectQuery.IsSchemaQuery
+  isExternal: true
+  href: System.Management.SelectQuery.html#System_Management_SelectQuery_IsSchemaQuery
+  name: IsSchemaQuery
+  nameWithType: SelectQuery.IsSchemaQuery
+  fullName: System.Management.SelectQuery.IsSchemaQuery
+- uid: System.Management.ManagementQuery.QueryString
+  commentId: P:System.Management.ManagementQuery.QueryString
+  parent: System.Management.ManagementQuery
+  isExternal: true
+  href: System.Management.ManagementQuery.html#System_Management_ManagementQuery_QueryString
+  name: QueryString
+  nameWithType: ManagementQuery.QueryString
+  fullName: System.Management.ManagementQuery.QueryString
+- uid: System.Management.SelectQuery.QueryString*
+  commentId: Overload:System.Management.SelectQuery.QueryString
+  isExternal: true
+  href: System.Management.SelectQuery.html#System_Management_SelectQuery_QueryString
+  name: QueryString
+  nameWithType: SelectQuery.QueryString
+  fullName: System.Management.SelectQuery.QueryString
+- uid: System.Management.SelectQuery.SelectedProperties*
+  commentId: Overload:System.Management.SelectQuery.SelectedProperties
+  isExternal: true
+  href: System.Management.SelectQuery.html#System_Management_SelectQuery_SelectedProperties
+  name: SelectedProperties
+  nameWithType: SelectQuery.SelectedProperties
+  fullName: System.Management.SelectQuery.SelectedProperties
+- uid: System.Collections.Specialized.StringCollection
+  commentId: T:System.Collections.Specialized.StringCollection
+  parent: System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.stringcollection
+  name: StringCollection
+  nameWithType: StringCollection
+  fullName: System.Collections.Specialized.StringCollection
+- uid: System.Collections.Specialized
+  commentId: N:System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Specialized
+  nameWithType: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized

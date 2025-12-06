@@ -1,0 +1,1010 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  id: TestExecutionContext
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.#ctor
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.#ctor(System.Int64,System.TimeSpan,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.FilterOptions)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.AreTestCaseLevelEventsRequired
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.FilterOptions
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.FrequencyOfRunStatsChangeEvent
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.HasTestRun
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.InIsolation
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.IsDataCollectionEnabled
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.IsDebug
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.KeepAlive
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.RunStatsChangeEventTimeout
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestCaseFilter
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestRunConfiguration
+  langs:
+  - csharp
+  - vb
+  name: TestExecutionContext
+  nameWithType: TestExecutionContext
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  type: Class
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  syntax:
+    content: >-
+      [DataContract]
+
+      public class TestExecutionContext
+    content.vb: >-
+      <DataContract>
+
+      Public Class TestExecutionContext
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.#ctor
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.#ctor
+  id: '#ctor'
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: TestExecutionContext()
+  nameWithType: TestExecutionContext.TestExecutionContext()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestExecutionContext()
+  type: Constructor
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  syntax:
+    content: public TestExecutionContext()
+    content.vb: Public Sub New()
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.#ctor*
+  nameWithType.vb: TestExecutionContext.New()
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.New()
+  name.vb: New()
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.#ctor(System.Int64,System.TimeSpan,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.FilterOptions)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.#ctor(System.Int64,System.TimeSpan,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.FilterOptions)
+  id: '#ctor(System.Int64,System.TimeSpan,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.FilterOptions)'
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: TestExecutionContext(long, TimeSpan, bool, bool, bool, bool, bool, bool, string?, FilterOptions?)
+  nameWithType: TestExecutionContext.TestExecutionContext(long, TimeSpan, bool, bool, bool, bool, bool, bool, string?, FilterOptions?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestExecutionContext(long, System.TimeSpan, bool, bool, bool, bool, bool, bool, string?, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.FilterOptions?)
+  type: Constructor
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  syntax:
+    content: public TestExecutionContext(long frequencyOfRunStatsChangeEvent, TimeSpan runStatsChangeEventTimeout, bool inIsolation, bool keepAlive, bool isDataCollectionEnabled, bool areTestCaseLevelEventsRequired, bool hasTestRun, bool isDebug, string? testCaseFilter, FilterOptions? filterOptions)
+    parameters:
+    - id: frequencyOfRunStatsChangeEvent
+      type: System.Int64
+    - id: runStatsChangeEventTimeout
+      type: System.TimeSpan
+    - id: inIsolation
+      type: System.Boolean
+    - id: keepAlive
+      type: System.Boolean
+    - id: isDataCollectionEnabled
+      type: System.Boolean
+    - id: areTestCaseLevelEventsRequired
+      type: System.Boolean
+    - id: hasTestRun
+      type: System.Boolean
+    - id: isDebug
+      type: System.Boolean
+    - id: testCaseFilter
+      type: System.String
+    - id: filterOptions
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.FilterOptions
+    content.vb: Public Sub New(frequencyOfRunStatsChangeEvent As Long, runStatsChangeEventTimeout As TimeSpan, inIsolation As Boolean, keepAlive As Boolean, isDataCollectionEnabled As Boolean, areTestCaseLevelEventsRequired As Boolean, hasTestRun As Boolean, isDebug As Boolean, testCaseFilter As String, filterOptions As FilterOptions)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.#ctor*
+  nameWithType.vb: TestExecutionContext.New(Long, TimeSpan, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, String, FilterOptions)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.New(Long, System.TimeSpan, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, String, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.FilterOptions)
+  name.vb: New(Long, TimeSpan, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, String, FilterOptions)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.FrequencyOfRunStatsChangeEvent
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.FrequencyOfRunStatsChangeEvent
+  id: FrequencyOfRunStatsChangeEvent
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: FrequencyOfRunStatsChangeEvent
+  nameWithType: TestExecutionContext.FrequencyOfRunStatsChangeEvent
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.FrequencyOfRunStatsChangeEvent
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  syntax:
+    content: >-
+      [DataMember]
+
+      public long FrequencyOfRunStatsChangeEvent { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: >-
+      <DataMember>
+
+      Public Property FrequencyOfRunStatsChangeEvent As Long
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.FrequencyOfRunStatsChangeEvent*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.RunStatsChangeEventTimeout
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.RunStatsChangeEventTimeout
+  id: RunStatsChangeEventTimeout
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: RunStatsChangeEventTimeout
+  nameWithType: TestExecutionContext.RunStatsChangeEventTimeout
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.RunStatsChangeEventTimeout
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  syntax:
+    content: >-
+      [DataMember]
+
+      public TimeSpan RunStatsChangeEventTimeout { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: >-
+      <DataMember>
+
+      Public Property RunStatsChangeEventTimeout As TimeSpan
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.RunStatsChangeEventTimeout*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.InIsolation
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.InIsolation
+  id: InIsolation
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: InIsolation
+  nameWithType: TestExecutionContext.InIsolation
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.InIsolation
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool InIsolation { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      Public Property InIsolation As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.InIsolation*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.KeepAlive
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.KeepAlive
+  id: KeepAlive
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: KeepAlive
+  nameWithType: TestExecutionContext.KeepAlive
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.KeepAlive
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool KeepAlive { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      Public Property KeepAlive As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.KeepAlive*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.AreTestCaseLevelEventsRequired
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.AreTestCaseLevelEventsRequired
+  id: AreTestCaseLevelEventsRequired
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: AreTestCaseLevelEventsRequired
+  nameWithType: TestExecutionContext.AreTestCaseLevelEventsRequired
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.AreTestCaseLevelEventsRequired
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool AreTestCaseLevelEventsRequired { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      Public Property AreTestCaseLevelEventsRequired As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.AreTestCaseLevelEventsRequired*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.IsDebug
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.IsDebug
+  id: IsDebug
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: IsDebug
+  nameWithType: TestExecutionContext.IsDebug
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.IsDebug
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool IsDebug { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      Public Property IsDebug As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.IsDebug*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestCaseFilter
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestCaseFilter
+  id: TestCaseFilter
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: TestCaseFilter
+  nameWithType: TestExecutionContext.TestCaseFilter
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestCaseFilter
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  syntax:
+    content: >-
+      [DataMember]
+
+      public string? TestCaseFilter { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      Public Property TestCaseFilter As String
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestCaseFilter*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.FilterOptions
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.FilterOptions
+  id: FilterOptions
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: FilterOptions
+  nameWithType: TestExecutionContext.FilterOptions
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.FilterOptions
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  syntax:
+    content: >-
+      [DataMember]
+
+      public FilterOptions? FilterOptions { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.FilterOptions
+    content.vb: >-
+      <DataMember>
+
+      Public Property FilterOptions As FilterOptions
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.FilterOptions*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.IsDataCollectionEnabled
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.IsDataCollectionEnabled
+  id: IsDataCollectionEnabled
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: IsDataCollectionEnabled
+  nameWithType: TestExecutionContext.IsDataCollectionEnabled
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.IsDataCollectionEnabled
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  syntax:
+    content: >-
+      [IgnoreDataMember]
+
+      public bool IsDataCollectionEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <IgnoreDataMember>
+
+      Public Property IsDataCollectionEnabled As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.IsDataCollectionEnabled*
+  attributes:
+  - type: System.Runtime.Serialization.IgnoreDataMemberAttribute
+    ctor: System.Runtime.Serialization.IgnoreDataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.HasTestRun
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.HasTestRun
+  id: HasTestRun
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: HasTestRun
+  nameWithType: TestExecutionContext.HasTestRun
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.HasTestRun
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  syntax:
+    content: >-
+      [IgnoreDataMember]
+
+      public bool HasTestRun { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <IgnoreDataMember>
+
+      Public Property HasTestRun As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.HasTestRun*
+  attributes:
+  - type: System.Runtime.Serialization.IgnoreDataMemberAttribute
+    ctor: System.Runtime.Serialization.IgnoreDataMemberAttribute.#ctor
+    arguments: []
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestRunConfiguration
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestRunConfiguration
+  id: TestRunConfiguration
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: TestRunConfiguration
+  nameWithType: TestExecutionContext.TestRunConfiguration
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestRunConfiguration
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  syntax:
+    content: >-
+      [IgnoreDataMember]
+
+      public RunConfiguration? TestRunConfiguration { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.RunConfiguration
+    content.vb: >-
+      <IgnoreDataMember>
+
+      Public Property TestRunConfiguration As RunConfiguration
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestRunConfiguration*
+  attributes:
+  - type: System.Runtime.Serialization.IgnoreDataMemberAttribute
+    ctor: System.Runtime.Serialization.IgnoreDataMemberAttribute.#ctor
+    arguments: []
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+    name: ClientProtocol
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol
+    name: ClientProtocol
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ClientProtocol_TestExecutionContext__ctor
+  name: TestExecutionContext
+  nameWithType: TestExecutionContext.TestExecutionContext
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestExecutionContext
+  nameWithType.vb: TestExecutionContext.New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.New
+  name.vb: New
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.FilterOptions
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.FilterOptions
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.FilterOptions.html
+  name: FilterOptions
+  nameWithType: FilterOptions
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.FilterOptions
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.FrequencyOfRunStatsChangeEvent*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.FrequencyOfRunStatsChangeEvent
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ClientProtocol_TestExecutionContext_FrequencyOfRunStatsChangeEvent
+  name: FrequencyOfRunStatsChangeEvent
+  nameWithType: TestExecutionContext.FrequencyOfRunStatsChangeEvent
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.FrequencyOfRunStatsChangeEvent
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.RunStatsChangeEventTimeout*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.RunStatsChangeEventTimeout
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ClientProtocol_TestExecutionContext_RunStatsChangeEventTimeout
+  name: RunStatsChangeEventTimeout
+  nameWithType: TestExecutionContext.RunStatsChangeEventTimeout
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.RunStatsChangeEventTimeout
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.InIsolation*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.InIsolation
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ClientProtocol_TestExecutionContext_InIsolation
+  name: InIsolation
+  nameWithType: TestExecutionContext.InIsolation
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.InIsolation
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.KeepAlive*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.KeepAlive
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ClientProtocol_TestExecutionContext_KeepAlive
+  name: KeepAlive
+  nameWithType: TestExecutionContext.KeepAlive
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.KeepAlive
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.AreTestCaseLevelEventsRequired*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.AreTestCaseLevelEventsRequired
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ClientProtocol_TestExecutionContext_AreTestCaseLevelEventsRequired
+  name: AreTestCaseLevelEventsRequired
+  nameWithType: TestExecutionContext.AreTestCaseLevelEventsRequired
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.AreTestCaseLevelEventsRequired
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.IsDebug*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.IsDebug
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ClientProtocol_TestExecutionContext_IsDebug
+  name: IsDebug
+  nameWithType: TestExecutionContext.IsDebug
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.IsDebug
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestCaseFilter*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestCaseFilter
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ClientProtocol_TestExecutionContext_TestCaseFilter
+  name: TestCaseFilter
+  nameWithType: TestExecutionContext.TestCaseFilter
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestCaseFilter
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.FilterOptions*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.FilterOptions
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ClientProtocol_TestExecutionContext_FilterOptions
+  name: FilterOptions
+  nameWithType: TestExecutionContext.FilterOptions
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.FilterOptions
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.IsDataCollectionEnabled*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.IsDataCollectionEnabled
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ClientProtocol_TestExecutionContext_IsDataCollectionEnabled
+  name: IsDataCollectionEnabled
+  nameWithType: TestExecutionContext.IsDataCollectionEnabled
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.IsDataCollectionEnabled
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.HasTestRun*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.HasTestRun
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ClientProtocol_TestExecutionContext_HasTestRun
+  name: HasTestRun
+  nameWithType: TestExecutionContext.HasTestRun
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.HasTestRun
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestRunConfiguration*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestRunConfiguration
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_ClientProtocol_TestExecutionContext_TestRunConfiguration
+  name: TestRunConfiguration
+  nameWithType: TestExecutionContext.TestRunConfiguration
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.ClientProtocol.TestExecutionContext.TestRunConfiguration
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.RunConfiguration
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.RunConfiguration
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.RunConfiguration.html
+  name: RunConfiguration
+  nameWithType: RunConfiguration
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.RunConfiguration
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html

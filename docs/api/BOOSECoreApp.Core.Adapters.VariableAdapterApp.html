@@ -89,7 +89,7 @@
 
 
   <h1 id="BOOSECoreApp_Core_Adapters_VariableAdapterApp" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp" class="text-break">
-Class VariableAdapterApp  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
+Class VariableAdapterApp  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Class VariableAdapterApp  <a class="header-action link-secondary" title="View so
   <dl><dt>Assembly</dt><dd>BOOSECoreApp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Provides methods for creating, updating, and manipulating <a class="xref" href="BOOSECoreApp.Core.Adapters.SoftVariable.html">SoftVariable</a> instance within a <a class="xref" href="BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a> context.</p>
+  <div class="markdown summary"><p>Provides methods for creating, updating, and manipulating <a class="xref" href="../api-tests/BOOSECoreApp.Core.Adapters.SoftVariable.html">SoftVariable</a> instance within a <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a> context.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -157,10 +157,10 @@ Class VariableAdapterApp  <a class="header-action link-secondary" title="View so
 
   <h3 id="BOOSECoreApp_Core_Adapters_VariableAdapterApp__ctor_BOOSECoreApp_Core_Base_StoredProgramApp_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.#ctor(BOOSECoreApp.Core.Base.StoredProgramApp)">
   VariableAdapterApp(StoredProgramApp)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initialises a new instance of the <a class="xref" href="BOOSECoreApp.Core.Adapters.VariableAdapterApp.html">VariableAdapterApp</a> class.</p>
+  <div class="markdown level1 summary"><p>Initialises a new instance of the <a class="xref" href="../api-tests/BOOSECoreApp.Core.Adapters.VariableAdapterApp.html">VariableAdapterApp</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -170,7 +170,7 @@ Class VariableAdapterApp  <a class="header-action link-secondary" title="View so
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>program</code> <a class="xref" href="BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a></dt>
+    <dt><code>program</code> <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a></dt>
     <dd><p>The stored programme context.</p>
 </dd>
   </dl>
@@ -196,11 +196,65 @@ Class VariableAdapterApp  <a class="header-action link-secondary" title="View so
 </h2>
 
 
+  <a id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_ApplyLogical_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyLogical*"></a>
+
+  <h3 id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_ApplyLogical_System_String_System_Boolean_System_Boolean_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyLogical(System.String,System.Boolean,System.Boolean)">
+  ApplyLogical(string, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies a logical operation based on the provided operator string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ApplyLogical(string op, bool left, bool right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>op</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The logical operator as a string</p>
+</dd>
+    <dt><code>left</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The left operand for the logical operation</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The right operand for the logical operation</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The result of the logical operation as a boolean value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_ApplyLogical_System_String_System_Boolean_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Not current supported, idea for expansion</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>sThrown if the provided operator is not supported</p>
+</dd>
+  </dl>
+
+
+
   <a id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_ApplyOperator_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyOperator*"></a>
 
   <h3 id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_ApplyOperator_System_String_System_String_System_Object_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyOperator(System.String,System.String,System.Object)">
   ApplyOperator(string, string, object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Applies an arithmetic operation based on operator symbol.</p>
@@ -245,7 +299,7 @@ Class VariableAdapterApp  <a class="header-action link-secondary" title="View so
 
   <h3 id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_CreateVariable_System_String_BOOSECoreApp_Core_Adapters_SoftVariable_VariableType_System_String_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.CreateVariable(System.String,BOOSECoreApp.Core.Adapters.SoftVariable.VariableType,System.String)">
   CreateVariable(string, VariableType, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a new variable and adds it to the programme and internal storage.</p>
@@ -286,30 +340,21 @@ Class VariableAdapterApp  <a class="header-action link-secondary" title="View so
 
 
 
-  <a id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_DecrementVariable_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.DecrementVariable*"></a>
+  <a id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_ResetAll_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.ResetAll*"></a>
 
-  <h3 id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_DecrementVariable_System_String_System_Object_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.DecrementVariable(System.String,System.Object)">
-  DecrementVariable(string, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_ResetAll" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.ResetAll">
+  ResetAll()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Decrements the numeric variable by a given Backward Difference {delta}.</p>
+  <div class="markdown level1 summary"><p>Resets the state of the object by clearing all stored variables.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void DecrementVariable(string name, object delta)</code></pre>
+    <pre><code class="lang-csharp hljs">public void ResetAll()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Variable name.</p>
-</dd>
-    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>Change of variable (Backward Difference).</p>
-</dd>
-  </dl>
 
 
 
@@ -318,76 +363,44 @@ Class VariableAdapterApp  <a class="header-action link-secondary" title="View so
 
 
 
+  <h4 class="section" id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_ResetAll_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method removes all entries from the internal collection of variables,
+effectively resetting the object to its initial state. Use this method to  clear all previously stored
+data.</p>
+</div>
 
 
 
 
-  <a id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_GetVariable_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.GetVariable*"></a>
+  <a id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_ToBool_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.ToBool*"></a>
 
-  <h3 id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_GetVariable_System_String_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.GetVariable(System.String)">
-  GetVariable(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_ToBool_System_Object_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.ToBool(System.Object)">
+  ToBool(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the variable.</p>
+  <div class="markdown level1 summary"><p>Converts the specified object to a boolean value, using common conversion rules.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SoftVariable GetVariable(string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool ToBool(object? value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The name.</p>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to convert.
+Can be of type <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>,  or a string representation of these types.
+Null or unsupported types are treated as <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a></p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BOOSECoreApp.Core.Adapters.SoftVariable.html">SoftVariable</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
-    <dd><p>Variable not declared.</p>
-</dd>
-  </dl>
-
-
-
-  <a id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_IncrementVariable_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.IncrementVariable*"></a>
-
-  <h3 id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_IncrementVariable_System_String_System_Object_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.IncrementVariable(System.String,System.Object)">
-  IncrementVariable(string, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Increments the numeric variable by a given Forward Difference {delta}.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void IncrementVariable(string name, object delta)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Variable name..</p>
-</dd>
-    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>Change of variable (Forward Difference).</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the object represents a truthy value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+For numeric types, non-zero values are considered truthy. For strings, values such as &quot;true&quot;, &quot;1&quot;, or  non-zero numeric strings are considered truthy</p>
 </dd>
   </dl>
 
@@ -398,48 +411,6 @@ Class VariableAdapterApp  <a class="header-action link-secondary" title="View so
 
 
 
-
-
-
-
-  <a id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_SetVariable_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.SetVariable*"></a>
-
-  <h3 id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_SetVariable_System_String_System_Object_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.SetVariable(System.String,System.Object)">
-  SetVariable(string, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Retrieves a variable by name.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetVariable(string name, object value)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Variable name.</p>
-</dd>
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
-    <dd><p>Thrown if the variable is not declared.</p>
-</dd>
-  </dl>
 
 
 
@@ -447,7 +418,7 @@ Class VariableAdapterApp  <a class="header-action link-secondary" title="View so
 
   <h3 id="BOOSECoreApp_Core_Adapters_VariableAdapterApp_UpdateVariable_System_String_BOOSECoreApp_Core_Adapters_VariableAdapterApp_Operator_System_Object_" data-uid="BOOSECoreApp.Core.Adapters.VariableAdapterApp.UpdateVariable(System.String,BOOSECoreApp.Core.Adapters.VariableAdapterApp.Operator,System.Object)">
   UpdateVariable(string, Operator, object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Updates the variable value using a specified operator and optional operand.</p>
@@ -486,7 +457,7 @@ Class VariableAdapterApp  <a class="header-action link-secondary" title="View so
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -1,0 +1,390 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer
+  id: IDataSerializer
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  children:
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.Clone``1(``0)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializeMessage(System.String)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializePayload``1(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializeMessage(System.String)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializePayload(System.String,System.Object)
+  - Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializePayload(System.String,System.Object,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IDataSerializer
+  nameWithType: IDataSerializer
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer
+  type: Interface
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: public interface IDataSerializer
+    content.vb: Public Interface IDataSerializer
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializeMessage(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializeMessage(System.String)
+  id: DeserializeMessage(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer
+  langs:
+  - csharp
+  - vb
+  name: DeserializeMessage(string)
+  nameWithType: IDataSerializer.DeserializeMessage(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializeMessage(string)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: Message DeserializeMessage(string rawMessage)
+    parameters:
+    - id: rawMessage
+      type: System.String
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message
+    content.vb: Function DeserializeMessage(rawMessage As String) As Message
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializeMessage*
+  nameWithType.vb: IDataSerializer.DeserializeMessage(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializeMessage(String)
+  name.vb: DeserializeMessage(String)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializePayload``1(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializePayload``1(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  id: DeserializePayload``1(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer
+  langs:
+  - csharp
+  - vb
+  name: DeserializePayload<T>(Message?)
+  nameWithType: IDataSerializer.DeserializePayload<T>(Message?)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializePayload<T>(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: T? DeserializePayload<T>(Message? message)
+    parameters:
+    - id: message
+      type: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Function DeserializePayload(Of T)(message As Message) As T
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializePayload*
+  nameWithType.vb: IDataSerializer.DeserializePayload(Of T)(Message)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializePayload(Of T)(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message)
+  name.vb: DeserializePayload(Of T)(Message)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializeMessage(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializeMessage(System.String)
+  id: SerializeMessage(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer
+  langs:
+  - csharp
+  - vb
+  name: SerializeMessage(string?)
+  nameWithType: IDataSerializer.SerializeMessage(string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializeMessage(string?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: string SerializeMessage(string? messageType)
+    parameters:
+    - id: messageType
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Function SerializeMessage(messageType As String) As String
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializeMessage*
+  nameWithType.vb: IDataSerializer.SerializeMessage(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializeMessage(String)
+  name.vb: SerializeMessage(String)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializePayload(System.String,System.Object)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializePayload(System.String,System.Object)
+  id: SerializePayload(System.String,System.Object)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer
+  langs:
+  - csharp
+  - vb
+  name: SerializePayload(string?, object?)
+  nameWithType: IDataSerializer.SerializePayload(string?, object?)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializePayload(string?, object?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: string SerializePayload(string? messageType, object? payload)
+    parameters:
+    - id: messageType
+      type: System.String
+    - id: payload
+      type: System.Object
+    return:
+      type: System.String
+    content.vb: Function SerializePayload(messageType As String, payload As Object) As String
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializePayload*
+  nameWithType.vb: IDataSerializer.SerializePayload(String, Object)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializePayload(String, Object)
+  name.vb: SerializePayload(String, Object)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializePayload(System.String,System.Object,System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializePayload(System.String,System.Object,System.Int32)
+  id: SerializePayload(System.String,System.Object,System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer
+  langs:
+  - csharp
+  - vb
+  name: SerializePayload(string?, object?, int)
+  nameWithType: IDataSerializer.SerializePayload(string?, object?, int)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializePayload(string?, object?, int)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: string SerializePayload(string? messageType, object? payload, int version)
+    parameters:
+    - id: messageType
+      type: System.String
+    - id: payload
+      type: System.Object
+    - id: version
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Function SerializePayload(messageType As String, payload As Object, version As Integer) As String
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializePayload*
+  nameWithType.vb: IDataSerializer.SerializePayload(String, Object, Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializePayload(String, Object, Integer)
+  name.vb: SerializePayload(String, Object, Integer)
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.Clone``1(``0)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.Clone``1(``0)
+  id: Clone``1(``0)
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer
+  langs:
+  - csharp
+  - vb
+  name: Clone<T>(T?)
+  nameWithType: IDataSerializer.Clone<T>(T?)
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.Clone<T>(T?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.CommunicationUtilities
+  namespace: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  syntax:
+    content: T? Clone<T>(T? obj)
+    parameters:
+    - id: obj
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Function Clone(Of T)(obj As T) As T
+  overload: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.Clone*
+  nameWithType.vb: IDataSerializer.Clone(Of T)(T)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.Clone(Of T)(T)
+  name.vb: Clone(Of T)(T)
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.html
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializeMessage*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializeMessage
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataSerializer_DeserializeMessage_System_String_
+  name: DeserializeMessage
+  nameWithType: IDataSerializer.DeserializeMessage
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializeMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message
+  commentId: T:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message
+  parent: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message.html
+  name: Message
+  nameWithType: Message
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Message
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  commentId: N:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  nameWithType: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities
+    name: CommunicationUtilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializePayload*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializePayload
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataSerializer_DeserializePayload__1_Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Message_
+  name: DeserializePayload
+  nameWithType: IDataSerializer.DeserializePayload
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.DeserializePayload
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializeMessage*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializeMessage
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataSerializer_SerializeMessage_System_String_
+  name: SerializeMessage
+  nameWithType: IDataSerializer.SerializeMessage
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializeMessage
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializePayload*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializePayload
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataSerializer_SerializePayload_System_String_System_Object_
+  name: SerializePayload
+  nameWithType: IDataSerializer.SerializePayload
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.SerializePayload
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.Clone*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.Clone
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.html#Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_Interfaces_IDataSerializer_Clone__1___0_
+  name: Clone
+  nameWithType: IDataSerializer.Clone
+  fullName: Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.IDataSerializer.Clone

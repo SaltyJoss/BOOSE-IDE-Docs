@@ -1,0 +1,487 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager
+  id: IParallelProxyDiscoveryManager
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.HandlePartialDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager,System.Int64,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase},System.Boolean)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.IsAbortRequested
+  langs:
+  - csharp
+  - vb
+  name: IParallelProxyDiscoveryManager
+  nameWithType: IParallelProxyDiscoveryManager
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager
+  type: Interface
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: 'public interface IParallelProxyDiscoveryManager : IProxyDiscoveryManager'
+    content.vb: Public Interface IParallelProxyDiscoveryManager Inherits IProxyDiscoveryManager
+  inheritedMembers:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Initialize(System.Boolean)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2,System.Boolean)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Close
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.HandlePartialDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager,System.Int64,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase},System.Boolean)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.HandlePartialDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager,System.Int64,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase},System.Boolean)
+  id: HandlePartialDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager,System.Int64,System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase},System.Boolean)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: HandlePartialDiscoveryComplete(IProxyDiscoveryManager, long, IEnumerable<TestCase>?, bool)
+  nameWithType: IParallelProxyDiscoveryManager.HandlePartialDiscoveryComplete(IProxyDiscoveryManager, long, IEnumerable<TestCase>?, bool)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.HandlePartialDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager, long, System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase>?, bool)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: bool HandlePartialDiscoveryComplete(IProxyDiscoveryManager proxyDiscoveryManager, long totalTests, IEnumerable<TestCase>? lastChunk, bool isAborted)
+    parameters:
+    - id: proxyDiscoveryManager
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+    - id: totalTests
+      type: System.Int64
+    - id: lastChunk
+      type: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+    - id: isAborted
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Function HandlePartialDiscoveryComplete(proxyDiscoveryManager As IProxyDiscoveryManager, totalTests As Long, lastChunk As IEnumerable(Of TestCase), isAborted As Boolean) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.HandlePartialDiscoveryComplete*
+  nameWithType.vb: IParallelProxyDiscoveryManager.HandlePartialDiscoveryComplete(IProxyDiscoveryManager, Long, IEnumerable(Of TestCase), Boolean)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.HandlePartialDiscoveryComplete(Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager, Long, System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase), Boolean)
+  name.vb: HandlePartialDiscoveryComplete(IProxyDiscoveryManager, Long, IEnumerable(Of TestCase), Boolean)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.IsAbortRequested
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.IsAbortRequested
+  id: IsAbortRequested
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: IsAbortRequested
+  nameWithType: IParallelProxyDiscoveryManager.IsAbortRequested
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.IsAbortRequested
+  type: Property
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  syntax:
+    content: bool IsAbortRequested { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsAbortRequested As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.IsAbortRequested*
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Initialize(System.Boolean)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Initialize(System.Boolean)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Initialize_System_Boolean_
+  name: Initialize(bool)
+  nameWithType: IProxyDiscoveryManager.Initialize(bool)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Initialize(bool)
+  nameWithType.vb: IProxyDiscoveryManager.Initialize(Boolean)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Initialize(Boolean)
+  name.vb: Initialize(Boolean)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Initialize(System.Boolean)
+    name: Initialize
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Initialize_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Initialize(System.Boolean)
+    name: Initialize
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Initialize_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2,System.Boolean)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2,System.Boolean)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_InitializeDiscovery_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_System_Boolean_
+  name: InitializeDiscovery(DiscoveryCriteria, ITestDiscoveryEventsHandler2, bool)
+  nameWithType: IProxyDiscoveryManager.InitializeDiscovery(DiscoveryCriteria, ITestDiscoveryEventsHandler2, bool)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2, bool)
+  nameWithType.vb: IProxyDiscoveryManager.InitializeDiscovery(DiscoveryCriteria, ITestDiscoveryEventsHandler2, Boolean)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2, Boolean)
+  name.vb: InitializeDiscovery(DiscoveryCriteria, ITestDiscoveryEventsHandler2, Boolean)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2,System.Boolean)
+    name: InitializeDiscovery
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_InitializeDiscovery_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_System_Boolean_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+    name: DiscoveryCriteria
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    name: ITestDiscoveryEventsHandler2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.InitializeDiscovery(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2,System.Boolean)
+    name: InitializeDiscovery
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_InitializeDiscovery_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_System_Boolean_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+    name: DiscoveryCriteria
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    name: ITestDiscoveryEventsHandler2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_DiscoverTests_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_
+  name: DiscoverTests(DiscoveryCriteria, ITestDiscoveryEventsHandler2)
+  nameWithType: IProxyDiscoveryManager.DiscoverTests(DiscoveryCriteria, ITestDiscoveryEventsHandler2)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+    name: DiscoverTests
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_DiscoverTests_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+    name: DiscoveryCriteria
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    name: ITestDiscoveryEventsHandler2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+    name: DiscoverTests
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_DiscoverTests_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+    name: DiscoveryCriteria
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    name: ITestDiscoveryEventsHandler2
+    isExternal: true
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Abort
+  name: Abort()
+  nameWithType: IProxyDiscoveryManager.Abort()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort
+    name: Abort
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Abort
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort
+    name: Abort
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Abort
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Abort_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_
+  name: Abort(ITestDiscoveryEventsHandler2)
+  nameWithType: IProxyDiscoveryManager.Abort(ITestDiscoveryEventsHandler2)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+    name: Abort
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Abort_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    name: ITestDiscoveryEventsHandler2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+    name: Abort
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Abort_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    name: ITestDiscoveryEventsHandler2
+    isExternal: true
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Close
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Close
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Close
+  name: Close()
+  nameWithType: IProxyDiscoveryManager.Close()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Close()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Close
+    name: Close
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Close
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.Close
+    name: Close
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_Close
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager.html
+  name: IProxyDiscoveryManager
+  nameWithType: IProxyDiscoveryManager
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IProxyDiscoveryManager
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.HandlePartialDiscoveryComplete*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.HandlePartialDiscoveryComplete
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IParallelProxyDiscoveryManager_HandlePartialDiscoveryComplete_Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IProxyDiscoveryManager_System_Int64_System_Collections_Generic_IEnumerable_Microsoft_VisualStudio_TestPlatform_ObjectModel_TestCase__System_Boolean_
+  name: HandlePartialDiscoveryComplete
+  nameWithType: IParallelProxyDiscoveryManager.HandlePartialDiscoveryComplete
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.HandlePartialDiscoveryComplete
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TestCase>
+  nameWithType: IEnumerable<TestCase>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase>
+  nameWithType.vb: IEnumerable(Of TestCase)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase)
+  name.vb: IEnumerable(Of TestCase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    name: TestCase
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase
+    name: TestCase
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.IsAbortRequested*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.IsAbortRequested
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_IParallelProxyDiscoveryManager_IsAbortRequested
+  name: IsAbortRequested
+  nameWithType: IParallelProxyDiscoveryManager.IsAbortRequested
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.IParallelProxyDiscoveryManager.IsAbortRequested

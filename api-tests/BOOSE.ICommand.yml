@@ -1,0 +1,195 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSE.ICommand
+  commentId: T:BOOSE.ICommand
+  id: ICommand
+  parent: BOOSE
+  children:
+  - BOOSE.ICommand.CheckParameters(System.String[])
+  - BOOSE.ICommand.Compile
+  - BOOSE.ICommand.Execute
+  - BOOSE.ICommand.Set(BOOSE.StoredProgram,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ICommand
+  nameWithType: ICommand
+  fullName: BOOSE.ICommand
+  type: Interface
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: public interface ICommand
+    content.vb: Public Interface ICommand
+- uid: BOOSE.ICommand.Set(BOOSE.StoredProgram,System.String)
+  commentId: M:BOOSE.ICommand.Set(BOOSE.StoredProgram,System.String)
+  id: Set(BOOSE.StoredProgram,System.String)
+  parent: BOOSE.ICommand
+  langs:
+  - csharp
+  - vb
+  name: Set(StoredProgram, string)
+  nameWithType: ICommand.Set(StoredProgram, string)
+  fullName: BOOSE.ICommand.Set(BOOSE.StoredProgram, string)
+  type: Method
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: void Set(StoredProgram Program, string Params)
+    parameters:
+    - id: Program
+      type: BOOSE.StoredProgram
+    - id: Params
+      type: System.String
+    content.vb: Sub [Set](Program As StoredProgram, Params As String)
+  overload: BOOSE.ICommand.Set*
+  nameWithType.vb: ICommand.Set(StoredProgram, String)
+  fullName.vb: BOOSE.ICommand.Set(BOOSE.StoredProgram, String)
+  name.vb: Set(StoredProgram, String)
+- uid: BOOSE.ICommand.Compile
+  commentId: M:BOOSE.ICommand.Compile
+  id: Compile
+  parent: BOOSE.ICommand
+  langs:
+  - csharp
+  - vb
+  name: Compile()
+  nameWithType: ICommand.Compile()
+  fullName: BOOSE.ICommand.Compile()
+  type: Method
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: void Compile()
+    content.vb: Sub Compile()
+  overload: BOOSE.ICommand.Compile*
+- uid: BOOSE.ICommand.Execute
+  commentId: M:BOOSE.ICommand.Execute
+  id: Execute
+  parent: BOOSE.ICommand
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: ICommand.Execute()
+  fullName: BOOSE.ICommand.Execute()
+  type: Method
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: void Execute()
+    content.vb: Sub Execute()
+  overload: BOOSE.ICommand.Execute*
+- uid: BOOSE.ICommand.CheckParameters(System.String[])
+  commentId: M:BOOSE.ICommand.CheckParameters(System.String[])
+  id: CheckParameters(System.String[])
+  parent: BOOSE.ICommand
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters(string[])
+  nameWithType: ICommand.CheckParameters(string[])
+  fullName: BOOSE.ICommand.CheckParameters(string[])
+  type: Method
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: void CheckParameters(string[] Parameters)
+    parameters:
+    - id: Parameters
+      type: System.String[]
+    content.vb: Sub CheckParameters(Parameters As String())
+  overload: BOOSE.ICommand.CheckParameters*
+  nameWithType.vb: ICommand.CheckParameters(String())
+  fullName.vb: BOOSE.ICommand.CheckParameters(String())
+  name.vb: CheckParameters(String())
+references:
+- uid: BOOSE
+  commentId: N:BOOSE
+  isExternal: true
+  href: BOOSE.html
+  name: BOOSE
+  nameWithType: BOOSE
+  fullName: BOOSE
+- uid: BOOSE.ICommand.Set*
+  commentId: Overload:BOOSE.ICommand.Set
+  isExternal: true
+  href: BOOSE.ICommand.html#BOOSE_ICommand_Set_BOOSE_StoredProgram_System_String_
+  name: Set
+  nameWithType: ICommand.Set
+  fullName: BOOSE.ICommand.Set
+- uid: BOOSE.StoredProgram
+  commentId: T:BOOSE.StoredProgram
+  parent: BOOSE
+  isExternal: true
+  href: BOOSE.StoredProgram.html
+  name: StoredProgram
+  nameWithType: StoredProgram
+  fullName: BOOSE.StoredProgram
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSE.ICommand.Compile*
+  commentId: Overload:BOOSE.ICommand.Compile
+  isExternal: true
+  href: BOOSE.ICommand.html#BOOSE_ICommand_Compile
+  name: Compile
+  nameWithType: ICommand.Compile
+  fullName: BOOSE.ICommand.Compile
+- uid: BOOSE.ICommand.Execute*
+  commentId: Overload:BOOSE.ICommand.Execute
+  isExternal: true
+  href: BOOSE.ICommand.html#BOOSE_ICommand_Execute
+  name: Execute
+  nameWithType: ICommand.Execute
+  fullName: BOOSE.ICommand.Execute
+- uid: BOOSE.ICommand.CheckParameters*
+  commentId: Overload:BOOSE.ICommand.CheckParameters
+  isExternal: true
+  href: BOOSE.ICommand.html#BOOSE_ICommand_CheckParameters_System_String___
+  name: CheckParameters
+  nameWithType: ICommand.CheckParameters
+  fullName: BOOSE.ICommand.CheckParameters
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )

@@ -1,0 +1,1944 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  commentId: T:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  id: SynchronizedSingleSessionVSTestBridgedTestFramework
+  parent: Microsoft.Testing.Extensions.VSTestBridge
+  children:
+  - Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.#ctor(Microsoft.Testing.Platform.Extensions.IExtension,System.Func{System.Collections.Generic.IEnumerable{System.Reflection.Assembly}},System.IServiceProvider,Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  - Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.CloseTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext)
+  - Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.CreateTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext)
+  - Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Description
+  - Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.DiscoverTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  - Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.DisplayName
+  - Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose
+  - Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose(System.Boolean)
+  - Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.ExecuteRequestAsync(Microsoft.Testing.Platform.Requests.TestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  - Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.IsEnabledAsync
+  - Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.RunTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  - Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedDiscoverTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  - Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedRunTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  - Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Uid
+  - Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Version
+  langs:
+  - csharp
+  - vb
+  name: SynchronizedSingleSessionVSTestBridgedTestFramework
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  type: Class
+  assemblies:
+  - Microsoft.Testing.Extensions.VSTestBridge
+  namespace: Microsoft.Testing.Extensions.VSTestBridge
+  syntax:
+    content: 'public abstract class SynchronizedSingleSessionVSTestBridgedTestFramework : VSTestBridgedTestFrameworkBase, ITestFramework, IDataProducer, IExtension, IDisposable'
+    content.vb: Public MustInherit Class SynchronizedSingleSessionVSTestBridgedTestFramework Inherits VSTestBridgedTestFrameworkBase Implements ITestFramework, IDataProducer, IExtension, IDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  implements:
+  - Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework
+  - Microsoft.Testing.Platform.Extensions.Messages.IDataProducer
+  - Microsoft.Testing.Platform.Extensions.IExtension
+  - System.IDisposable
+  inheritedMembers:
+  - Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.ExecuteRequestAsync(Microsoft.Testing.Platform.Extensions.TestFramework.ExecuteRequestContext)
+  - Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.DataTypesProduced
+  - Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.ServiceProvider
+  - Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.IsTrxEnabled
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.#ctor(Microsoft.Testing.Platform.Extensions.IExtension,System.Func{System.Collections.Generic.IEnumerable{System.Reflection.Assembly}},System.IServiceProvider,Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.#ctor(Microsoft.Testing.Platform.Extensions.IExtension,System.Func{System.Collections.Generic.IEnumerable{System.Reflection.Assembly}},System.IServiceProvider,Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  id: '#ctor(Microsoft.Testing.Platform.Extensions.IExtension,System.Func{System.Collections.Generic.IEnumerable{System.Reflection.Assembly}},System.IServiceProvider,Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)'
+  parent: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  langs:
+  - csharp
+  - vb
+  name: SynchronizedSingleSessionVSTestBridgedTestFramework(IExtension, Func<IEnumerable<Assembly>>, IServiceProvider, ITestFrameworkCapabilities)
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedSingleSessionVSTestBridgedTestFramework(IExtension, Func<IEnumerable<Assembly>>, IServiceProvider, ITestFrameworkCapabilities)
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedSingleSessionVSTestBridgedTestFramework(Microsoft.Testing.Platform.Extensions.IExtension, System.Func<System.Collections.Generic.IEnumerable<System.Reflection.Assembly>>, System.IServiceProvider, Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  type: Constructor
+  assemblies:
+  - Microsoft.Testing.Extensions.VSTestBridge
+  namespace: Microsoft.Testing.Extensions.VSTestBridge
+  syntax:
+    content: protected SynchronizedSingleSessionVSTestBridgedTestFramework(IExtension extension, Func<IEnumerable<Assembly>> getTestAssemblies, IServiceProvider serviceProvider, ITestFrameworkCapabilities capabilities)
+    parameters:
+    - id: extension
+      type: Microsoft.Testing.Platform.Extensions.IExtension
+    - id: getTestAssemblies
+      type: System.Func{System.Collections.Generic.IEnumerable{System.Reflection.Assembly}}
+    - id: serviceProvider
+      type: System.IServiceProvider
+    - id: capabilities
+      type: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+    content.vb: Protected Sub New(extension As IExtension, getTestAssemblies As Func(Of IEnumerable(Of Assembly)), serviceProvider As IServiceProvider, capabilities As ITestFrameworkCapabilities)
+  overload: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.#ctor*
+  nameWithType.vb: SynchronizedSingleSessionVSTestBridgedTestFramework.New(IExtension, Func(Of IEnumerable(Of Assembly)), IServiceProvider, ITestFrameworkCapabilities)
+  fullName.vb: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.New(Microsoft.Testing.Platform.Extensions.IExtension, System.Func(Of System.Collections.Generic.IEnumerable(Of System.Reflection.Assembly)), System.IServiceProvider, Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities)
+  name.vb: New(IExtension, Func(Of IEnumerable(Of Assembly)), IServiceProvider, ITestFrameworkCapabilities)
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.IsEnabledAsync
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.IsEnabledAsync
+  id: IsEnabledAsync
+  parent: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  langs:
+  - csharp
+  - vb
+  name: IsEnabledAsync()
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.IsEnabledAsync()
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.IsEnabledAsync()
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.VSTestBridge
+  namespace: Microsoft.Testing.Extensions.VSTestBridge
+  example: []
+  syntax:
+    content: public override Task<bool> IsEnabledAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Overrides Function IsEnabledAsync() As Task(Of Boolean)
+  overridden: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.IsEnabledAsync
+  overload: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.IsEnabledAsync*
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.CreateTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext)
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.CreateTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext)
+  id: CreateTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext)
+  parent: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  langs:
+  - csharp
+  - vb
+  name: CreateTestSessionAsync(CreateTestSessionContext)
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.CreateTestSessionAsync(CreateTestSessionContext)
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.CreateTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.VSTestBridge
+  namespace: Microsoft.Testing.Extensions.VSTestBridge
+  example: []
+  syntax:
+    content: public override sealed Task<CreateTestSessionResult> CreateTestSessionAsync(CreateTestSessionContext context)
+    parameters:
+    - id: context
+      type: Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionResult}
+    content.vb: Public NotOverridable Overrides Function CreateTestSessionAsync(context As CreateTestSessionContext) As Task(Of CreateTestSessionResult)
+  overridden: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.CreateTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext)
+  overload: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.CreateTestSessionAsync*
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.CloseTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext)
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.CloseTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext)
+  id: CloseTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext)
+  parent: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  langs:
+  - csharp
+  - vb
+  name: CloseTestSessionAsync(CloseTestSessionContext)
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.CloseTestSessionAsync(CloseTestSessionContext)
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.CloseTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.VSTestBridge
+  namespace: Microsoft.Testing.Extensions.VSTestBridge
+  example: []
+  syntax:
+    content: public override sealed Task<CloseTestSessionResult> CloseTestSessionAsync(CloseTestSessionContext context)
+    parameters:
+    - id: context
+      type: Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionResult}
+    content.vb: Public NotOverridable Overrides Function CloseTestSessionAsync(context As CloseTestSessionContext) As Task(Of CloseTestSessionResult)
+  overridden: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.CloseTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext)
+  overload: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.CloseTestSessionAsync*
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose(System.Boolean)
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose(bool)
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose(bool)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.VSTestBridge
+  namespace: Microsoft.Testing.Extensions.VSTestBridge
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose*
+  nameWithType.vb: SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose(Boolean)
+  fullName.vb: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.DiscoverTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.DiscoverTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  id: DiscoverTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  parent: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  langs:
+  - csharp
+  - vb
+  name: DiscoverTestsAsync(VSTestDiscoverTestExecutionRequest, IMessageBus, CancellationToken)
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.DiscoverTestsAsync(VSTestDiscoverTestExecutionRequest, IMessageBus, CancellationToken)
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.DiscoverTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest, Microsoft.Testing.Platform.Messages.IMessageBus, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.VSTestBridge
+  namespace: Microsoft.Testing.Extensions.VSTestBridge
+  example: []
+  syntax:
+    content: protected override sealed Task DiscoverTestsAsync(VSTestDiscoverTestExecutionRequest request, IMessageBus messageBus, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest
+    - id: messageBus
+      type: Microsoft.Testing.Platform.Messages.IMessageBus
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected NotOverridable Overrides Function DiscoverTestsAsync(request As VSTestDiscoverTestExecutionRequest, messageBus As IMessageBus, cancellationToken As CancellationToken) As Task
+  overridden: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.DiscoverTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  overload: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.DiscoverTestsAsync*
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedDiscoverTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedDiscoverTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  id: SynchronizedDiscoverTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  parent: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  langs:
+  - csharp
+  - vb
+  name: SynchronizedDiscoverTestsAsync(VSTestDiscoverTestExecutionRequest, IMessageBus, CancellationToken)
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedDiscoverTestsAsync(VSTestDiscoverTestExecutionRequest, IMessageBus, CancellationToken)
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedDiscoverTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest, Microsoft.Testing.Platform.Messages.IMessageBus, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.VSTestBridge
+  namespace: Microsoft.Testing.Extensions.VSTestBridge
+  syntax:
+    content: protected abstract Task SynchronizedDiscoverTestsAsync(VSTestDiscoverTestExecutionRequest request, IMessageBus messageBus, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest
+    - id: messageBus
+      type: Microsoft.Testing.Platform.Messages.IMessageBus
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected MustOverride Function SynchronizedDiscoverTestsAsync(request As VSTestDiscoverTestExecutionRequest, messageBus As IMessageBus, cancellationToken As CancellationToken) As Task
+  overload: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedDiscoverTestsAsync*
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.RunTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.RunTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  id: RunTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  parent: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  langs:
+  - csharp
+  - vb
+  name: RunTestsAsync(VSTestRunTestExecutionRequest, IMessageBus, CancellationToken)
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.RunTestsAsync(VSTestRunTestExecutionRequest, IMessageBus, CancellationToken)
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.RunTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest, Microsoft.Testing.Platform.Messages.IMessageBus, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.VSTestBridge
+  namespace: Microsoft.Testing.Extensions.VSTestBridge
+  example: []
+  syntax:
+    content: protected override sealed Task RunTestsAsync(VSTestRunTestExecutionRequest request, IMessageBus messageBus, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest
+    - id: messageBus
+      type: Microsoft.Testing.Platform.Messages.IMessageBus
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected NotOverridable Overrides Function RunTestsAsync(request As VSTestRunTestExecutionRequest, messageBus As IMessageBus, cancellationToken As CancellationToken) As Task
+  overridden: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.RunTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  overload: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.RunTestsAsync*
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedRunTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedRunTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  id: SynchronizedRunTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  parent: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  langs:
+  - csharp
+  - vb
+  name: SynchronizedRunTestsAsync(VSTestRunTestExecutionRequest, IMessageBus, CancellationToken)
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedRunTestsAsync(VSTestRunTestExecutionRequest, IMessageBus, CancellationToken)
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedRunTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest, Microsoft.Testing.Platform.Messages.IMessageBus, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.VSTestBridge
+  namespace: Microsoft.Testing.Extensions.VSTestBridge
+  syntax:
+    content: protected abstract Task SynchronizedRunTestsAsync(VSTestRunTestExecutionRequest request, IMessageBus messageBus, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest
+    - id: messageBus
+      type: Microsoft.Testing.Platform.Messages.IMessageBus
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected MustOverride Function SynchronizedRunTestsAsync(request As VSTestRunTestExecutionRequest, messageBus As IMessageBus, cancellationToken As CancellationToken) As Task
+  overload: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedRunTestsAsync*
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.ExecuteRequestAsync(Microsoft.Testing.Platform.Requests.TestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.ExecuteRequestAsync(Microsoft.Testing.Platform.Requests.TestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  id: ExecuteRequestAsync(Microsoft.Testing.Platform.Requests.TestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  parent: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  langs:
+  - csharp
+  - vb
+  name: ExecuteRequestAsync(TestExecutionRequest, IMessageBus, CancellationToken)
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.ExecuteRequestAsync(TestExecutionRequest, IMessageBus, CancellationToken)
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.ExecuteRequestAsync(Microsoft.Testing.Platform.Requests.TestExecutionRequest, Microsoft.Testing.Platform.Messages.IMessageBus, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.VSTestBridge
+  namespace: Microsoft.Testing.Extensions.VSTestBridge
+  example: []
+  syntax:
+    content: protected override sealed Task ExecuteRequestAsync(TestExecutionRequest request, IMessageBus messageBus, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: Microsoft.Testing.Platform.Requests.TestExecutionRequest
+    - id: messageBus
+      type: Microsoft.Testing.Platform.Messages.IMessageBus
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected NotOverridable Overrides Function ExecuteRequestAsync(request As TestExecutionRequest, messageBus As IMessageBus, cancellationToken As CancellationToken) As Task
+  overridden: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.ExecuteRequestAsync(Microsoft.Testing.Platform.Requests.TestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  overload: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.ExecuteRequestAsync*
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose
+  id: Dispose
+  parent: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose()
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose()
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Extensions.VSTestBridge
+  namespace: Microsoft.Testing.Extensions.VSTestBridge
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Uid
+  commentId: P:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Uid
+  id: Uid
+  parent: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  langs:
+  - csharp
+  - vb
+  name: Uid
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.Uid
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Uid
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Extensions.VSTestBridge
+  namespace: Microsoft.Testing.Extensions.VSTestBridge
+  example: []
+  syntax:
+    content: public override sealed string Uid { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public NotOverridable Overrides ReadOnly Property Uid As String
+  overridden: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.Uid
+  overload: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Uid*
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.DisplayName
+  commentId: P:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.DisplayName
+  id: DisplayName
+  parent: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.DisplayName
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.DisplayName
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Extensions.VSTestBridge
+  namespace: Microsoft.Testing.Extensions.VSTestBridge
+  example: []
+  syntax:
+    content: public override sealed string DisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public NotOverridable Overrides ReadOnly Property DisplayName As String
+  overridden: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.DisplayName
+  overload: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.DisplayName*
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Description
+  commentId: P:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Description
+  id: Description
+  parent: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.Description
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Description
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Extensions.VSTestBridge
+  namespace: Microsoft.Testing.Extensions.VSTestBridge
+  example: []
+  syntax:
+    content: public override sealed string Description { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public NotOverridable Overrides ReadOnly Property Description As String
+  overridden: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.Description
+  overload: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Description*
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Version
+  commentId: P:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Version
+  id: Version
+  parent: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.Version
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Version
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Extensions.VSTestBridge
+  namespace: Microsoft.Testing.Extensions.VSTestBridge
+  example: []
+  syntax:
+    content: public override sealed string Version { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public NotOverridable Overrides ReadOnly Property Version As String
+  overridden: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.Version
+  overload: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Version*
+references:
+- uid: Microsoft.Testing.Extensions.VSTestBridge
+  commentId: N:Microsoft.Testing.Extensions.VSTestBridge
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Extensions.VSTestBridge
+  nameWithType: Microsoft.Testing.Extensions.VSTestBridge
+  fullName: Microsoft.Testing.Extensions.VSTestBridge
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Extensions.VSTestBridge
+    name: VSTestBridge
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Extensions.VSTestBridge
+    name: VSTestBridge
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  commentId: T:Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  parent: Microsoft.Testing.Extensions.VSTestBridge
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html
+  name: VSTestBridgedTestFrameworkBase
+  nameWithType: VSTestBridgedTestFrameworkBase
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+- uid: Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework
+  commentId: T:Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework
+  parent: Microsoft.Testing.Platform.Extensions.TestFramework
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework.html
+  name: ITestFramework
+  nameWithType: ITestFramework
+  fullName: Microsoft.Testing.Platform.Extensions.TestFramework.ITestFramework
+- uid: Microsoft.Testing.Platform.Extensions.Messages.IDataProducer
+  commentId: T:Microsoft.Testing.Platform.Extensions.Messages.IDataProducer
+  parent: Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.Messages.IDataProducer.html
+  name: IDataProducer
+  nameWithType: IDataProducer
+  fullName: Microsoft.Testing.Platform.Extensions.Messages.IDataProducer
+- uid: Microsoft.Testing.Platform.Extensions.IExtension
+  commentId: T:Microsoft.Testing.Platform.Extensions.IExtension
+  parent: Microsoft.Testing.Platform.Extensions
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.IExtension.html
+  name: IExtension
+  nameWithType: IExtension
+  fullName: Microsoft.Testing.Platform.Extensions.IExtension
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.ExecuteRequestAsync(Microsoft.Testing.Platform.Extensions.TestFramework.ExecuteRequestContext)
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.ExecuteRequestAsync(Microsoft.Testing.Platform.Extensions.TestFramework.ExecuteRequestContext)
+  parent: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_ExecuteRequestAsync_Microsoft_Testing_Platform_Extensions_TestFramework_ExecuteRequestContext_
+  name: ExecuteRequestAsync(ExecuteRequestContext)
+  nameWithType: VSTestBridgedTestFrameworkBase.ExecuteRequestAsync(ExecuteRequestContext)
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.ExecuteRequestAsync(Microsoft.Testing.Platform.Extensions.TestFramework.ExecuteRequestContext)
+  spec.csharp:
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.ExecuteRequestAsync(Microsoft.Testing.Platform.Extensions.TestFramework.ExecuteRequestContext)
+    name: ExecuteRequestAsync
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_ExecuteRequestAsync_Microsoft_Testing_Platform_Extensions_TestFramework_ExecuteRequestContext_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Extensions.TestFramework.ExecuteRequestContext
+    name: ExecuteRequestContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.ExecuteRequestAsync(Microsoft.Testing.Platform.Extensions.TestFramework.ExecuteRequestContext)
+    name: ExecuteRequestAsync
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_ExecuteRequestAsync_Microsoft_Testing_Platform_Extensions_TestFramework_ExecuteRequestContext_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Extensions.TestFramework.ExecuteRequestContext
+    name: ExecuteRequestContext
+    isExternal: true
+  - name: )
+- uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.DataTypesProduced
+  commentId: P:Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.DataTypesProduced
+  parent: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_DataTypesProduced
+  name: DataTypesProduced
+  nameWithType: VSTestBridgedTestFrameworkBase.DataTypesProduced
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.DataTypesProduced
+- uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.ServiceProvider
+  commentId: P:Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.ServiceProvider
+  parent: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_ServiceProvider
+  name: ServiceProvider
+  nameWithType: VSTestBridgedTestFrameworkBase.ServiceProvider
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.ServiceProvider
+- uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.IsTrxEnabled
+  commentId: P:Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.IsTrxEnabled
+  parent: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_IsTrxEnabled
+  name: IsTrxEnabled
+  nameWithType: VSTestBridgedTestFrameworkBase.IsTrxEnabled
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.IsTrxEnabled
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Testing.Platform.Extensions.TestFramework
+  commentId: N:Microsoft.Testing.Platform.Extensions.TestFramework
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Extensions.TestFramework
+  nameWithType: Microsoft.Testing.Platform.Extensions.TestFramework
+  fullName: Microsoft.Testing.Platform.Extensions.TestFramework
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.TestFramework
+    name: TestFramework
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.TestFramework.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.TestFramework
+    name: TestFramework
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.TestFramework.html
+- uid: Microsoft.Testing.Platform.Extensions.Messages
+  commentId: N:Microsoft.Testing.Platform.Extensions.Messages
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Extensions.Messages
+  nameWithType: Microsoft.Testing.Platform.Extensions.Messages
+  fullName: Microsoft.Testing.Platform.Extensions.Messages
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.Messages
+    name: Messages
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions.Messages
+    name: Messages
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.Messages.html
+- uid: Microsoft.Testing.Platform.Extensions
+  commentId: N:Microsoft.Testing.Platform.Extensions
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Extensions
+  nameWithType: Microsoft.Testing.Platform.Extensions
+  fullName: Microsoft.Testing.Platform.Extensions
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.html
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.#ctor*
+  commentId: Overload:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.#ctor
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.html#Microsoft_Testing_Extensions_VSTestBridge_SynchronizedSingleSessionVSTestBridgedTestFramework__ctor_Microsoft_Testing_Platform_Extensions_IExtension_System_Func_System_Collections_Generic_IEnumerable_System_Reflection_Assembly___System_IServiceProvider_Microsoft_Testing_Platform_Capabilities_TestFramework_ITestFrameworkCapabilities_
+  name: SynchronizedSingleSessionVSTestBridgedTestFramework
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedSingleSessionVSTestBridgedTestFramework
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedSingleSessionVSTestBridgedTestFramework
+  nameWithType.vb: SynchronizedSingleSessionVSTestBridgedTestFramework.New
+  fullName.vb: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.New
+  name.vb: New
+- uid: System.Func{System.Collections.Generic.IEnumerable{System.Reflection.Assembly}}
+  commentId: T:System.Func{System.Collections.Generic.IEnumerable{System.Reflection.Assembly}}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<IEnumerable<Assembly>>
+  nameWithType: Func<IEnumerable<Assembly>>
+  fullName: System.Func<System.Collections.Generic.IEnumerable<System.Reflection.Assembly>>
+  nameWithType.vb: Func(Of IEnumerable(Of Assembly))
+  fullName.vb: System.Func(Of System.Collections.Generic.IEnumerable(Of System.Reflection.Assembly))
+  name.vb: Func(Of IEnumerable(Of Assembly))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  - name: )
+  - name: )
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+  commentId: T:Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+  parent: Microsoft.Testing.Platform.Capabilities.TestFramework
+  isExternal: true
+  href: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities.html
+  name: ITestFrameworkCapabilities
+  nameWithType: ITestFrameworkCapabilities
+  fullName: Microsoft.Testing.Platform.Capabilities.TestFramework.ITestFrameworkCapabilities
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Microsoft.Testing.Platform.Capabilities.TestFramework
+  commentId: N:Microsoft.Testing.Platform.Capabilities.TestFramework
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Capabilities.TestFramework
+  nameWithType: Microsoft.Testing.Platform.Capabilities.TestFramework
+  fullName: Microsoft.Testing.Platform.Capabilities.TestFramework
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Capabilities
+    name: Capabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework
+    name: TestFramework
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Capabilities
+    name: Capabilities
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Capabilities.TestFramework
+    name: TestFramework
+    isExternal: true
+    href: Microsoft.Testing.Platform.Capabilities.TestFramework.html
+- uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.IsEnabledAsync
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.IsEnabledAsync
+  parent: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_IsEnabledAsync
+  name: IsEnabledAsync()
+  nameWithType: VSTestBridgedTestFrameworkBase.IsEnabledAsync()
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.IsEnabledAsync()
+  spec.csharp:
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.IsEnabledAsync
+    name: IsEnabledAsync
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_IsEnabledAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.IsEnabledAsync
+    name: IsEnabledAsync
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_IsEnabledAsync
+  - name: (
+  - name: )
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.IsEnabledAsync*
+  commentId: Overload:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.IsEnabledAsync
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.html#Microsoft_Testing_Extensions_VSTestBridge_SynchronizedSingleSessionVSTestBridgedTestFramework_IsEnabledAsync
+  name: IsEnabledAsync
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.IsEnabledAsync
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.IsEnabledAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.CreateTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext)
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.CreateTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext)
+  parent: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_CreateTestSessionAsync_Microsoft_Testing_Platform_Extensions_TestFramework_CreateTestSessionContext_
+  name: CreateTestSessionAsync(CreateTestSessionContext)
+  nameWithType: VSTestBridgedTestFrameworkBase.CreateTestSessionAsync(CreateTestSessionContext)
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.CreateTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext)
+  spec.csharp:
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.CreateTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext)
+    name: CreateTestSessionAsync
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_CreateTestSessionAsync_Microsoft_Testing_Platform_Extensions_TestFramework_CreateTestSessionContext_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext
+    name: CreateTestSessionContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.CreateTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext)
+    name: CreateTestSessionAsync
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_CreateTestSessionAsync_Microsoft_Testing_Platform_Extensions_TestFramework_CreateTestSessionContext_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext
+    name: CreateTestSessionContext
+    isExternal: true
+  - name: )
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.CreateTestSessionAsync*
+  commentId: Overload:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.CreateTestSessionAsync
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.html#Microsoft_Testing_Extensions_VSTestBridge_SynchronizedSingleSessionVSTestBridgedTestFramework_CreateTestSessionAsync_Microsoft_Testing_Platform_Extensions_TestFramework_CreateTestSessionContext_
+  name: CreateTestSessionAsync
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.CreateTestSessionAsync
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.CreateTestSessionAsync
+- uid: Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext
+  commentId: T:Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext
+  parent: Microsoft.Testing.Platform.Extensions.TestFramework
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext.html
+  name: CreateTestSessionContext
+  nameWithType: CreateTestSessionContext
+  fullName: Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionContext
+- uid: System.Threading.Tasks.Task{Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionResult}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<CreateTestSessionResult>
+  nameWithType: Task<CreateTestSessionResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionResult>
+  nameWithType.vb: Task(Of CreateTestSessionResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionResult)
+  name.vb: Task(Of CreateTestSessionResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionResult
+    name: CreateTestSessionResult
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionResult
+    name: CreateTestSessionResult
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.TestFramework.CreateTestSessionResult.html
+  - name: )
+- uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.CloseTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext)
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.CloseTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext)
+  parent: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_CloseTestSessionAsync_Microsoft_Testing_Platform_Extensions_TestFramework_CloseTestSessionContext_
+  name: CloseTestSessionAsync(CloseTestSessionContext)
+  nameWithType: VSTestBridgedTestFrameworkBase.CloseTestSessionAsync(CloseTestSessionContext)
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.CloseTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext)
+  spec.csharp:
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.CloseTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext)
+    name: CloseTestSessionAsync
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_CloseTestSessionAsync_Microsoft_Testing_Platform_Extensions_TestFramework_CloseTestSessionContext_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext
+    name: CloseTestSessionContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.CloseTestSessionAsync(Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext)
+    name: CloseTestSessionAsync
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_CloseTestSessionAsync_Microsoft_Testing_Platform_Extensions_TestFramework_CloseTestSessionContext_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext
+    name: CloseTestSessionContext
+    isExternal: true
+  - name: )
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.CloseTestSessionAsync*
+  commentId: Overload:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.CloseTestSessionAsync
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.html#Microsoft_Testing_Extensions_VSTestBridge_SynchronizedSingleSessionVSTestBridgedTestFramework_CloseTestSessionAsync_Microsoft_Testing_Platform_Extensions_TestFramework_CloseTestSessionContext_
+  name: CloseTestSessionAsync
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.CloseTestSessionAsync
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.CloseTestSessionAsync
+- uid: Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext
+  commentId: T:Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext
+  parent: Microsoft.Testing.Platform.Extensions.TestFramework
+  isExternal: true
+  href: Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext.html
+  name: CloseTestSessionContext
+  nameWithType: CloseTestSessionContext
+  fullName: Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionContext
+- uid: System.Threading.Tasks.Task{Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionResult}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<CloseTestSessionResult>
+  nameWithType: Task<CloseTestSessionResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionResult>
+  nameWithType.vb: Task(Of CloseTestSessionResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionResult)
+  name.vb: Task(Of CloseTestSessionResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionResult
+    name: CloseTestSessionResult
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionResult
+    name: CloseTestSessionResult
+    isExternal: true
+    href: Microsoft.Testing.Platform.Extensions.TestFramework.CloseTestSessionResult.html
+  - name: )
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose*
+  commentId: Overload:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.html#Microsoft_Testing_Extensions_VSTestBridge_SynchronizedSingleSessionVSTestBridgedTestFramework_Dispose_System_Boolean_
+  name: Dispose
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Dispose
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.DiscoverTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.DiscoverTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  parent: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_DiscoverTestsAsync_Microsoft_Testing_Extensions_VSTestBridge_Requests_VSTestDiscoverTestExecutionRequest_Microsoft_Testing_Platform_Messages_IMessageBus_System_Threading_CancellationToken_
+  name: DiscoverTestsAsync(VSTestDiscoverTestExecutionRequest, IMessageBus, CancellationToken)
+  nameWithType: VSTestBridgedTestFrameworkBase.DiscoverTestsAsync(VSTestDiscoverTestExecutionRequest, IMessageBus, CancellationToken)
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.DiscoverTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest, Microsoft.Testing.Platform.Messages.IMessageBus, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.DiscoverTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+    name: DiscoverTestsAsync
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_DiscoverTestsAsync_Microsoft_Testing_Extensions_VSTestBridge_Requests_VSTestDiscoverTestExecutionRequest_Microsoft_Testing_Platform_Messages_IMessageBus_System_Threading_CancellationToken_
+  - name: (
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest
+    name: VSTestDiscoverTestExecutionRequest
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Messages.IMessageBus
+    name: IMessageBus
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.DiscoverTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+    name: DiscoverTestsAsync
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_DiscoverTestsAsync_Microsoft_Testing_Extensions_VSTestBridge_Requests_VSTestDiscoverTestExecutionRequest_Microsoft_Testing_Platform_Messages_IMessageBus_System_Threading_CancellationToken_
+  - name: (
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest
+    name: VSTestDiscoverTestExecutionRequest
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Messages.IMessageBus
+    name: IMessageBus
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.DiscoverTestsAsync*
+  commentId: Overload:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.DiscoverTestsAsync
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.html#Microsoft_Testing_Extensions_VSTestBridge_SynchronizedSingleSessionVSTestBridgedTestFramework_DiscoverTestsAsync_Microsoft_Testing_Extensions_VSTestBridge_Requests_VSTestDiscoverTestExecutionRequest_Microsoft_Testing_Platform_Messages_IMessageBus_System_Threading_CancellationToken_
+  name: DiscoverTestsAsync
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.DiscoverTestsAsync
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.DiscoverTestsAsync
+- uid: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest
+  commentId: T:Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest
+  parent: Microsoft.Testing.Extensions.VSTestBridge.Requests
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest.html
+  name: VSTestDiscoverTestExecutionRequest
+  nameWithType: VSTestDiscoverTestExecutionRequest
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestDiscoverTestExecutionRequest
+- uid: Microsoft.Testing.Platform.Messages.IMessageBus
+  commentId: T:Microsoft.Testing.Platform.Messages.IMessageBus
+  parent: Microsoft.Testing.Platform.Messages
+  isExternal: true
+  href: Microsoft.Testing.Platform.Messages.IMessageBus.html
+  name: IMessageBus
+  nameWithType: IMessageBus
+  fullName: Microsoft.Testing.Platform.Messages.IMessageBus
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Testing.Extensions.VSTestBridge.Requests
+  commentId: N:Microsoft.Testing.Extensions.VSTestBridge.Requests
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Extensions.VSTestBridge.Requests
+  nameWithType: Microsoft.Testing.Extensions.VSTestBridge.Requests
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.Requests
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Extensions.VSTestBridge
+    name: VSTestBridge
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.html
+  - name: .
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.Requests
+    name: Requests
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.Requests.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Testing.Extensions.html
+  - name: .
+  - uid: Microsoft.Testing.Extensions.VSTestBridge
+    name: VSTestBridge
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.html
+  - name: .
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.Requests
+    name: Requests
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.Requests.html
+- uid: Microsoft.Testing.Platform.Messages
+  commentId: N:Microsoft.Testing.Platform.Messages
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Messages
+  nameWithType: Microsoft.Testing.Platform.Messages
+  fullName: Microsoft.Testing.Platform.Messages
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Messages
+    name: Messages
+    isExternal: true
+    href: Microsoft.Testing.Platform.Messages.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Messages
+    name: Messages
+    isExternal: true
+    href: Microsoft.Testing.Platform.Messages.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedDiscoverTestsAsync*
+  commentId: Overload:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedDiscoverTestsAsync
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.html#Microsoft_Testing_Extensions_VSTestBridge_SynchronizedSingleSessionVSTestBridgedTestFramework_SynchronizedDiscoverTestsAsync_Microsoft_Testing_Extensions_VSTestBridge_Requests_VSTestDiscoverTestExecutionRequest_Microsoft_Testing_Platform_Messages_IMessageBus_System_Threading_CancellationToken_
+  name: SynchronizedDiscoverTestsAsync
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedDiscoverTestsAsync
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedDiscoverTestsAsync
+- uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.RunTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.RunTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  parent: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_RunTestsAsync_Microsoft_Testing_Extensions_VSTestBridge_Requests_VSTestRunTestExecutionRequest_Microsoft_Testing_Platform_Messages_IMessageBus_System_Threading_CancellationToken_
+  name: RunTestsAsync(VSTestRunTestExecutionRequest, IMessageBus, CancellationToken)
+  nameWithType: VSTestBridgedTestFrameworkBase.RunTestsAsync(VSTestRunTestExecutionRequest, IMessageBus, CancellationToken)
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.RunTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest, Microsoft.Testing.Platform.Messages.IMessageBus, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.RunTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+    name: RunTestsAsync
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_RunTestsAsync_Microsoft_Testing_Extensions_VSTestBridge_Requests_VSTestRunTestExecutionRequest_Microsoft_Testing_Platform_Messages_IMessageBus_System_Threading_CancellationToken_
+  - name: (
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest
+    name: VSTestRunTestExecutionRequest
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Messages.IMessageBus
+    name: IMessageBus
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.RunTestsAsync(Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+    name: RunTestsAsync
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_RunTestsAsync_Microsoft_Testing_Extensions_VSTestBridge_Requests_VSTestRunTestExecutionRequest_Microsoft_Testing_Platform_Messages_IMessageBus_System_Threading_CancellationToken_
+  - name: (
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest
+    name: VSTestRunTestExecutionRequest
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Messages.IMessageBus
+    name: IMessageBus
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.RunTestsAsync*
+  commentId: Overload:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.RunTestsAsync
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.html#Microsoft_Testing_Extensions_VSTestBridge_SynchronizedSingleSessionVSTestBridgedTestFramework_RunTestsAsync_Microsoft_Testing_Extensions_VSTestBridge_Requests_VSTestRunTestExecutionRequest_Microsoft_Testing_Platform_Messages_IMessageBus_System_Threading_CancellationToken_
+  name: RunTestsAsync
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.RunTestsAsync
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.RunTestsAsync
+- uid: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest
+  commentId: T:Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest
+  parent: Microsoft.Testing.Extensions.VSTestBridge.Requests
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest.html
+  name: VSTestRunTestExecutionRequest
+  nameWithType: VSTestRunTestExecutionRequest
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.Requests.VSTestRunTestExecutionRequest
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedRunTestsAsync*
+  commentId: Overload:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedRunTestsAsync
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.html#Microsoft_Testing_Extensions_VSTestBridge_SynchronizedSingleSessionVSTestBridgedTestFramework_SynchronizedRunTestsAsync_Microsoft_Testing_Extensions_VSTestBridge_Requests_VSTestRunTestExecutionRequest_Microsoft_Testing_Platform_Messages_IMessageBus_System_Threading_CancellationToken_
+  name: SynchronizedRunTestsAsync
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedRunTestsAsync
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.SynchronizedRunTestsAsync
+- uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.ExecuteRequestAsync(Microsoft.Testing.Platform.Requests.TestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.ExecuteRequestAsync(Microsoft.Testing.Platform.Requests.TestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+  parent: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_ExecuteRequestAsync_Microsoft_Testing_Platform_Requests_TestExecutionRequest_Microsoft_Testing_Platform_Messages_IMessageBus_System_Threading_CancellationToken_
+  name: ExecuteRequestAsync(TestExecutionRequest, IMessageBus, CancellationToken)
+  nameWithType: VSTestBridgedTestFrameworkBase.ExecuteRequestAsync(TestExecutionRequest, IMessageBus, CancellationToken)
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.ExecuteRequestAsync(Microsoft.Testing.Platform.Requests.TestExecutionRequest, Microsoft.Testing.Platform.Messages.IMessageBus, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.ExecuteRequestAsync(Microsoft.Testing.Platform.Requests.TestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+    name: ExecuteRequestAsync
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_ExecuteRequestAsync_Microsoft_Testing_Platform_Requests_TestExecutionRequest_Microsoft_Testing_Platform_Messages_IMessageBus_System_Threading_CancellationToken_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Requests.TestExecutionRequest
+    name: TestExecutionRequest
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Messages.IMessageBus
+    name: IMessageBus
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.ExecuteRequestAsync(Microsoft.Testing.Platform.Requests.TestExecutionRequest,Microsoft.Testing.Platform.Messages.IMessageBus,System.Threading.CancellationToken)
+    name: ExecuteRequestAsync
+    isExternal: true
+    href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_ExecuteRequestAsync_Microsoft_Testing_Platform_Requests_TestExecutionRequest_Microsoft_Testing_Platform_Messages_IMessageBus_System_Threading_CancellationToken_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Requests.TestExecutionRequest
+    name: TestExecutionRequest
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Testing.Platform.Messages.IMessageBus
+    name: IMessageBus
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.ExecuteRequestAsync*
+  commentId: Overload:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.ExecuteRequestAsync
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.html#Microsoft_Testing_Extensions_VSTestBridge_SynchronizedSingleSessionVSTestBridgedTestFramework_ExecuteRequestAsync_Microsoft_Testing_Platform_Requests_TestExecutionRequest_Microsoft_Testing_Platform_Messages_IMessageBus_System_Threading_CancellationToken_
+  name: ExecuteRequestAsync
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.ExecuteRequestAsync
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.ExecuteRequestAsync
+- uid: Microsoft.Testing.Platform.Requests.TestExecutionRequest
+  commentId: T:Microsoft.Testing.Platform.Requests.TestExecutionRequest
+  parent: Microsoft.Testing.Platform.Requests
+  isExternal: true
+  href: Microsoft.Testing.Platform.Requests.TestExecutionRequest.html
+  name: TestExecutionRequest
+  nameWithType: TestExecutionRequest
+  fullName: Microsoft.Testing.Platform.Requests.TestExecutionRequest
+- uid: Microsoft.Testing.Platform.Requests
+  commentId: N:Microsoft.Testing.Platform.Requests
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Requests
+  nameWithType: Microsoft.Testing.Platform.Requests
+  fullName: Microsoft.Testing.Platform.Requests
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Requests
+    name: Requests
+    isExternal: true
+    href: Microsoft.Testing.Platform.Requests.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Requests
+    name: Requests
+    isExternal: true
+    href: Microsoft.Testing.Platform.Requests.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.Uid
+  commentId: P:Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.Uid
+  parent: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_Uid
+  name: Uid
+  nameWithType: VSTestBridgedTestFrameworkBase.Uid
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.Uid
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Uid*
+  commentId: Overload:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Uid
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.html#Microsoft_Testing_Extensions_VSTestBridge_SynchronizedSingleSessionVSTestBridgedTestFramework_Uid
+  name: Uid
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.Uid
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Uid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.DisplayName
+  commentId: P:Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.DisplayName
+  parent: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_DisplayName
+  name: DisplayName
+  nameWithType: VSTestBridgedTestFrameworkBase.DisplayName
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.DisplayName
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.DisplayName*
+  commentId: Overload:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.DisplayName
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.html#Microsoft_Testing_Extensions_VSTestBridge_SynchronizedSingleSessionVSTestBridgedTestFramework_DisplayName
+  name: DisplayName
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.DisplayName
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.DisplayName
+- uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.Description
+  commentId: P:Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.Description
+  parent: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_Description
+  name: Description
+  nameWithType: VSTestBridgedTestFrameworkBase.Description
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.Description
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Description*
+  commentId: Overload:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Description
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.html#Microsoft_Testing_Extensions_VSTestBridge_SynchronizedSingleSessionVSTestBridgedTestFramework_Description
+  name: Description
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.Description
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Description
+- uid: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.Version
+  commentId: P:Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.Version
+  parent: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.html#Microsoft_Testing_Extensions_VSTestBridge_VSTestBridgedTestFrameworkBase_Version
+  name: Version
+  nameWithType: VSTestBridgedTestFrameworkBase.Version
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.VSTestBridgedTestFrameworkBase.Version
+- uid: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Version*
+  commentId: Overload:Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Version
+  isExternal: true
+  href: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.html#Microsoft_Testing_Extensions_VSTestBridge_SynchronizedSingleSessionVSTestBridgedTestFramework_Version
+  name: Version
+  nameWithType: SynchronizedSingleSessionVSTestBridgedTestFramework.Version
+  fullName: Microsoft.Testing.Extensions.VSTestBridge.SynchronizedSingleSessionVSTestBridgedTestFramework.Version

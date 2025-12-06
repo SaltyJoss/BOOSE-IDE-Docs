@@ -1,0 +1,1048 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace
+  id: PlatformEqtTrace
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.#ctor
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.DoNotInitialize
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.ErrorOnInitialization
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.GetLogFile
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.GetTraceLevel
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeTrace(System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeVerboseTrace(System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.LogFile
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.MapPlatformTraceToTrace(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.SetTraceLevel(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.ShouldTrace(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.TraceLevel
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.WriteLine(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel,System.String)
+  langs:
+  - csharp
+  - vb
+  name: PlatformEqtTrace
+  nameWithType: PlatformEqtTrace
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace
+  type: Class
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: 'public class PlatformEqtTrace : IPlatformEqtTrace'
+    content.vb: Public Class PlatformEqtTrace Implements IPlatformEqtTrace
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeVerboseTrace(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeVerboseTrace(System.String)
+  id: InitializeVerboseTrace(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace
+  langs:
+  - csharp
+  - vb
+  name: InitializeVerboseTrace(string?)
+  nameWithType: PlatformEqtTrace.InitializeVerboseTrace(string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeVerboseTrace(string?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  example: []
+  syntax:
+    content: public bool InitializeVerboseTrace(string? customLogFile)
+    parameters:
+    - id: customLogFile
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function InitializeVerboseTrace(customLogFile As String) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeVerboseTrace*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.InitializeVerboseTrace(System.String)
+  nameWithType.vb: PlatformEqtTrace.InitializeVerboseTrace(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeVerboseTrace(String)
+  name.vb: InitializeVerboseTrace(String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeTrace(System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeTrace(System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  id: InitializeTrace(System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace
+  langs:
+  - csharp
+  - vb
+  name: InitializeTrace(string?, PlatformTraceLevel)
+  nameWithType: PlatformEqtTrace.InitializeTrace(string?, PlatformTraceLevel)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeTrace(string?, Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  example: []
+  syntax:
+    content: public bool InitializeTrace(string? customLogFile, PlatformTraceLevel platformTraceLevel)
+    parameters:
+    - id: customLogFile
+      type: System.String
+    - id: platformTraceLevel
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+    return:
+      type: System.Boolean
+    content.vb: Public Function InitializeTrace(customLogFile As String, platformTraceLevel As PlatformTraceLevel) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeTrace*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.InitializeTrace(System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  nameWithType.vb: PlatformEqtTrace.InitializeTrace(String, PlatformTraceLevel)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeTrace(String, Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  name.vb: InitializeTrace(String, PlatformTraceLevel)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.ShouldTrace(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.ShouldTrace(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  id: ShouldTrace(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace
+  langs:
+  - csharp
+  - vb
+  name: ShouldTrace(PlatformTraceLevel)
+  nameWithType: PlatformEqtTrace.ShouldTrace(PlatformTraceLevel)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.ShouldTrace(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  example: []
+  syntax:
+    content: public bool ShouldTrace(PlatformTraceLevel traceLevel)
+    parameters:
+    - id: traceLevel
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+    return:
+      type: System.Boolean
+    content.vb: Public Function ShouldTrace(traceLevel As PlatformTraceLevel) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.ShouldTrace*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.ShouldTrace(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.GetLogFile
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.GetLogFile
+  id: GetLogFile
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace
+  langs:
+  - csharp
+  - vb
+  name: GetLogFile()
+  nameWithType: PlatformEqtTrace.GetLogFile()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.GetLogFile()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  example: []
+  syntax:
+    content: public string? GetLogFile()
+    return:
+      type: System.String
+    content.vb: Public Function GetLogFile() As String
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.GetLogFile*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.GetLogFile
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.WriteLine(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.WriteLine(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel,System.String)
+  id: WriteLine(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace
+  langs:
+  - csharp
+  - vb
+  name: WriteLine(PlatformTraceLevel, string?)
+  nameWithType: PlatformEqtTrace.WriteLine(PlatformTraceLevel, string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.WriteLine(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel, string?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  example: []
+  syntax:
+    content: public void WriteLine(PlatformTraceLevel level, string? message)
+    parameters:
+    - id: level
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+    - id: message
+      type: System.String
+    content.vb: Public Sub WriteLine(level As PlatformTraceLevel, message As String)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.WriteLine*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.WriteLine(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel,System.String)
+  nameWithType.vb: PlatformEqtTrace.WriteLine(PlatformTraceLevel, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.WriteLine(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel, String)
+  name.vb: WriteLine(PlatformTraceLevel, String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.SetTraceLevel(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.SetTraceLevel(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  id: SetTraceLevel(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace
+  langs:
+  - csharp
+  - vb
+  name: SetTraceLevel(PlatformTraceLevel)
+  nameWithType: PlatformEqtTrace.SetTraceLevel(PlatformTraceLevel)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.SetTraceLevel(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  example: []
+  syntax:
+    content: public void SetTraceLevel(PlatformTraceLevel value)
+    parameters:
+    - id: value
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+    content.vb: Public Sub SetTraceLevel(value As PlatformTraceLevel)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.SetTraceLevel*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.SetTraceLevel(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.GetTraceLevel
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.GetTraceLevel
+  id: GetTraceLevel
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace
+  langs:
+  - csharp
+  - vb
+  name: GetTraceLevel()
+  nameWithType: PlatformEqtTrace.GetTraceLevel()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.GetTraceLevel()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  example: []
+  syntax:
+    content: public PlatformTraceLevel GetTraceLevel()
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+    content.vb: Public Function GetTraceLevel() As PlatformTraceLevel
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.GetTraceLevel*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.GetTraceLevel
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.MapPlatformTraceToTrace(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.MapPlatformTraceToTrace(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  id: MapPlatformTraceToTrace(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace
+  langs:
+  - csharp
+  - vb
+  name: MapPlatformTraceToTrace(PlatformTraceLevel)
+  nameWithType: PlatformEqtTrace.MapPlatformTraceToTrace(PlatformTraceLevel)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.MapPlatformTraceToTrace(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: public TraceLevel MapPlatformTraceToTrace(PlatformTraceLevel traceLevel)
+    parameters:
+    - id: traceLevel
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+    return:
+      type: System.Diagnostics.TraceLevel
+    content.vb: Public Function MapPlatformTraceToTrace(traceLevel As PlatformTraceLevel) As TraceLevel
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.MapPlatformTraceToTrace*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.#ctor
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.#ctor
+  id: '#ctor'
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace
+  langs:
+  - csharp
+  - vb
+  name: PlatformEqtTrace()
+  nameWithType: PlatformEqtTrace.PlatformEqtTrace()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.PlatformEqtTrace()
+  type: Constructor
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: public PlatformEqtTrace()
+    content.vb: Public Sub New()
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.#ctor*
+  nameWithType.vb: PlatformEqtTrace.New()
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.New()
+  name.vb: New()
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.LogFile
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.LogFile
+  id: LogFile
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace
+  langs:
+  - csharp
+  - vb
+  name: LogFile
+  nameWithType: PlatformEqtTrace.LogFile
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.LogFile
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: public static string? LogFile { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property LogFile As String
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.LogFile*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.TraceLevel
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.TraceLevel
+  id: TraceLevel
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace
+  langs:
+  - csharp
+  - vb
+  name: TraceLevel
+  nameWithType: PlatformEqtTrace.TraceLevel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.TraceLevel
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: public static TraceLevel TraceLevel { get; set; }
+    parameters: []
+    return:
+      type: System.Diagnostics.TraceLevel
+    content.vb: Public Shared Property TraceLevel As TraceLevel
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.TraceLevel*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.ErrorOnInitialization
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.ErrorOnInitialization
+  id: ErrorOnInitialization
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace
+  langs:
+  - csharp
+  - vb
+  name: ErrorOnInitialization
+  nameWithType: PlatformEqtTrace.ErrorOnInitialization
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.ErrorOnInitialization
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: public static string? ErrorOnInitialization { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared Property ErrorOnInitialization As String
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.ErrorOnInitialization*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.DoNotInitialize
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.DoNotInitialize
+  id: DoNotInitialize
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace
+  langs:
+  - csharp
+  - vb
+  name: DoNotInitialize
+  nameWithType: PlatformEqtTrace.DoNotInitialize
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.DoNotInitialize
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  example: []
+  syntax:
+    content: public bool DoNotInitialize { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DoNotInitialize As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.DoNotInitialize*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.DoNotInitialize
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html
+  name: IPlatformEqtTrace
+  nameWithType: IPlatformEqtTrace
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeVerboseTrace*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeVerboseTrace
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformEqtTrace_InitializeVerboseTrace_System_String_
+  name: InitializeVerboseTrace
+  nameWithType: PlatformEqtTrace.InitializeVerboseTrace
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeVerboseTrace
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.InitializeVerboseTrace(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.InitializeVerboseTrace(System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_InitializeVerboseTrace_System_String_
+  name: InitializeVerboseTrace(string)
+  nameWithType: IPlatformEqtTrace.InitializeVerboseTrace(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.InitializeVerboseTrace(string)
+  nameWithType.vb: IPlatformEqtTrace.InitializeVerboseTrace(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.InitializeVerboseTrace(String)
+  name.vb: InitializeVerboseTrace(String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.InitializeVerboseTrace(System.String)
+    name: InitializeVerboseTrace
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_InitializeVerboseTrace_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.InitializeVerboseTrace(System.String)
+    name: InitializeVerboseTrace
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_InitializeVerboseTrace_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeTrace*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeTrace
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformEqtTrace_InitializeTrace_System_String_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_
+  name: InitializeTrace
+  nameWithType: PlatformEqtTrace.InitializeTrace
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.InitializeTrace
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.InitializeTrace(System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.InitializeTrace(System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_InitializeTrace_System_String_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_
+  name: InitializeTrace(string, PlatformTraceLevel)
+  nameWithType: IPlatformEqtTrace.InitializeTrace(string, PlatformTraceLevel)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.InitializeTrace(string, Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  nameWithType.vb: IPlatformEqtTrace.InitializeTrace(String, PlatformTraceLevel)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.InitializeTrace(String, Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  name.vb: InitializeTrace(String, PlatformTraceLevel)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.InitializeTrace(System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+    name: InitializeTrace
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_InitializeTrace_System_String_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+    name: PlatformTraceLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.InitializeTrace(System.String,Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+    name: InitializeTrace
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_InitializeTrace_System_String_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+    name: PlatformTraceLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel.html
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel.html
+  name: PlatformTraceLevel
+  nameWithType: PlatformTraceLevel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.ShouldTrace*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.ShouldTrace
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformEqtTrace_ShouldTrace_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_
+  name: ShouldTrace
+  nameWithType: PlatformEqtTrace.ShouldTrace
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.ShouldTrace
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.ShouldTrace(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.ShouldTrace(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_ShouldTrace_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_
+  name: ShouldTrace(PlatformTraceLevel)
+  nameWithType: IPlatformEqtTrace.ShouldTrace(PlatformTraceLevel)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.ShouldTrace(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.ShouldTrace(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+    name: ShouldTrace
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_ShouldTrace_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+    name: PlatformTraceLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.ShouldTrace(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+    name: ShouldTrace
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_ShouldTrace_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+    name: PlatformTraceLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel.html
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.GetLogFile*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.GetLogFile
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformEqtTrace_GetLogFile
+  name: GetLogFile
+  nameWithType: PlatformEqtTrace.GetLogFile
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.GetLogFile
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.GetLogFile
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.GetLogFile
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_GetLogFile
+  name: GetLogFile()
+  nameWithType: IPlatformEqtTrace.GetLogFile()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.GetLogFile()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.GetLogFile
+    name: GetLogFile
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_GetLogFile
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.GetLogFile
+    name: GetLogFile
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_GetLogFile
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.WriteLine*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.WriteLine
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformEqtTrace_WriteLine_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_System_String_
+  name: WriteLine
+  nameWithType: PlatformEqtTrace.WriteLine
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.WriteLine
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.WriteLine(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.WriteLine(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_WriteLine_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_System_String_
+  name: WriteLine(PlatformTraceLevel, string)
+  nameWithType: IPlatformEqtTrace.WriteLine(PlatformTraceLevel, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.WriteLine(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel, string)
+  nameWithType.vb: IPlatformEqtTrace.WriteLine(PlatformTraceLevel, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.WriteLine(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel, String)
+  name.vb: WriteLine(PlatformTraceLevel, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.WriteLine(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel,System.String)
+    name: WriteLine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_WriteLine_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_System_String_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+    name: PlatformTraceLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.WriteLine(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel,System.String)
+    name: WriteLine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_WriteLine_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_System_String_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+    name: PlatformTraceLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.SetTraceLevel*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.SetTraceLevel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformEqtTrace_SetTraceLevel_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_
+  name: SetTraceLevel
+  nameWithType: PlatformEqtTrace.SetTraceLevel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.SetTraceLevel
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.SetTraceLevel(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.SetTraceLevel(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_SetTraceLevel_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_
+  name: SetTraceLevel(PlatformTraceLevel)
+  nameWithType: IPlatformEqtTrace.SetTraceLevel(PlatformTraceLevel)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.SetTraceLevel(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.SetTraceLevel(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+    name: SetTraceLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_SetTraceLevel_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+    name: PlatformTraceLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.SetTraceLevel(Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel)
+    name: SetTraceLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_SetTraceLevel_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_
+  - name: (
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel
+    name: PlatformTraceLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformTraceLevel.html
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.GetTraceLevel*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.GetTraceLevel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformEqtTrace_GetTraceLevel
+  name: GetTraceLevel
+  nameWithType: PlatformEqtTrace.GetTraceLevel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.GetTraceLevel
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.GetTraceLevel
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.GetTraceLevel
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_GetTraceLevel
+  name: GetTraceLevel()
+  nameWithType: IPlatformEqtTrace.GetTraceLevel()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.GetTraceLevel()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.GetTraceLevel
+    name: GetTraceLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_GetTraceLevel
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.GetTraceLevel
+    name: GetTraceLevel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_GetTraceLevel
+  - name: (
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.MapPlatformTraceToTrace*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.MapPlatformTraceToTrace
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformEqtTrace_MapPlatformTraceToTrace_Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformTraceLevel_
+  name: MapPlatformTraceToTrace
+  nameWithType: PlatformEqtTrace.MapPlatformTraceToTrace
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.MapPlatformTraceToTrace
+- uid: System.Diagnostics.TraceLevel
+  commentId: T:System.Diagnostics.TraceLevel
+  parent: System.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelevel
+  name: TraceLevel
+  nameWithType: TraceLevel
+  fullName: System.Diagnostics.TraceLevel
+- uid: System.Diagnostics
+  commentId: N:System.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Diagnostics
+  nameWithType: System.Diagnostics
+  fullName: System.Diagnostics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformEqtTrace__ctor
+  name: PlatformEqtTrace
+  nameWithType: PlatformEqtTrace.PlatformEqtTrace
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.PlatformEqtTrace
+  nameWithType.vb: PlatformEqtTrace.New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.New
+  name.vb: New
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.LogFile*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.LogFile
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformEqtTrace_LogFile
+  name: LogFile
+  nameWithType: PlatformEqtTrace.LogFile
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.LogFile
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.TraceLevel*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.TraceLevel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformEqtTrace_TraceLevel
+  name: TraceLevel
+  nameWithType: PlatformEqtTrace.TraceLevel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.TraceLevel
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.ErrorOnInitialization*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.ErrorOnInitialization
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformEqtTrace_ErrorOnInitialization
+  name: ErrorOnInitialization
+  nameWithType: PlatformEqtTrace.ErrorOnInitialization
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.ErrorOnInitialization
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.DoNotInitialize*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.DoNotInitialize
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_PlatformEqtTrace_DoNotInitialize
+  name: DoNotInitialize
+  nameWithType: PlatformEqtTrace.DoNotInitialize
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.PlatformEqtTrace.DoNotInitialize
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.DoNotInitialize
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.DoNotInitialize
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_IPlatformEqtTrace_DoNotInitialize
+  name: DoNotInitialize
+  nameWithType: IPlatformEqtTrace.DoNotInitialize
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.IPlatformEqtTrace.DoNotInitialize

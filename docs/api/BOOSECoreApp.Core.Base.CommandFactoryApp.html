@@ -89,7 +89,7 @@
 
 
   <h1 id="BOOSECoreApp_Core_Base_CommandFactoryApp" data-uid="BOOSECoreApp.Core.Base.CommandFactoryApp" class="text-break">
-Class CommandFactoryApp  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/CommandFactoryApp.cs"><i class="bi bi-code-slash"></i></a>
+Class CommandFactoryApp  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandFactoryApp.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,12 +98,12 @@ Class CommandFactoryApp  <a class="header-action link-secondary" title="View sou
   </div>
 
   <div class="markdown summary"><p>Factory responsible for creating BOOSE command and variable objects from string identifiers.
-Provides a mapping from command names (e.g., &quot;moveto&quot;, &quot;drawto&quot;) to their corresponding <a class="xref" href="BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a> implementations.</p>
+Provides a mapping from command names (e.g., &quot;moveto&quot;, &quot;drawto&quot;) to their corresponding <a class="xref" href="../api-tests/BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a> implementations.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CommandFactoryApp : CommandFactory, ICommandFactory</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class CommandFactoryApp : CommandFactory, ICommandFactory</code></pre>
   </div>
 
 
@@ -113,7 +113,7 @@ Provides a mapping from command names (e.g., &quot;moveto&quot;, &quot;drawto&qu
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="BOOSE.CommandFactory.html">CommandFactory</a></div>
+      <div><a class="xref" href="../api-tests/BOOSE.CommandFactory.html">CommandFactory</a></div>
       <div><span class="xref">CommandFactoryApp</span></div>
     </dd>
   </dl>
@@ -121,7 +121,7 @@ Provides a mapping from command names (e.g., &quot;moveto&quot;, &quot;drawto&qu
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="BOOSE.ICommandFactory.html">ICommandFactory</a></div>
+      <div><a class="xref" href="../api-tests/BOOSE.ICommandFactory.html">ICommandFactory</a></div>
     </dd>
   </dl>
 
@@ -130,13 +130,10 @@ Provides a mapping from command names (e.g., &quot;moveto&quot;, &quot;drawto&qu
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="BOOSE.CommandFactory.html#BOOSE_CommandFactory_MakeCommand_System_String_">CommandFactory.MakeCommand(string)</a>
+      <a class="xref" href="../api-tests/BOOSE.CommandFactory.html#BOOSE_CommandFactory_MakeCommand_System_String_">CommandFactory.MakeCommand(string)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
@@ -160,32 +157,40 @@ Provides a mapping from command names (e.g., &quot;moveto&quot;, &quot;drawto&qu
 
   <h2 id="BOOSECoreApp_Core_Base_CommandFactoryApp_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>Adheres to the Open/Closed principle by decoupling command registration from execution.
+Follows the singleton pattern to provide a single global access point for command creation.
+Allows easy addition of new commands and variable types by updating the internal registry.
 Enables extension to the boose.dll base WITHOUT modification.</p>
 </div>
 
 
-  <h2 class="section" id="constructors">Constructors
+  <h2 class="section" id="properties">Properties
 </h2>
 
 
-  <a id="BOOSECoreApp_Core_Base_CommandFactoryApp__ctor_" data-uid="BOOSECoreApp.Core.Base.CommandFactoryApp.#ctor*"></a>
+  <a id="BOOSECoreApp_Core_Base_CommandFactoryApp_Instance_" data-uid="BOOSECoreApp.Core.Base.CommandFactoryApp.Instance*"></a>
 
-  <h3 id="BOOSECoreApp_Core_Base_CommandFactoryApp__ctor" data-uid="BOOSECoreApp.Core.Base.CommandFactoryApp.#ctor">
-  CommandFactoryApp()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/CommandFactoryApp.cs"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSECoreApp_Core_Base_CommandFactoryApp_Instance" data-uid="BOOSECoreApp.Core.Base.CommandFactoryApp.Instance">
+  Instance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandFactoryApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the singleton instance of the <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.CommandFactoryApp.html">CommandFactoryApp</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CommandFactoryApp()</code></pre>
+    <pre><code class="lang-csharp hljs">public static CommandFactoryApp Instance { get; }</code></pre>
   </div>
 
 
 
 
 
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.CommandFactoryApp.html">CommandFactoryApp</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -202,15 +207,15 @@ Enables extension to the boose.dll base WITHOUT modification.</p>
 
   <h3 id="BOOSECoreApp_Core_Base_CommandFactoryApp_MakeCommand_System_String_System_String_System_String_" data-uid="BOOSECoreApp.Core.Base.CommandFactoryApp.MakeCommand(System.String,System.String,System.String)">
   MakeCommand(string, string?, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/CommandFactoryApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandFactoryApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a> instance based on the provided command type string.</p>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="../api-tests/BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a> instance based on the provided command type string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ICommandApp? MakeCommand(string commandType, string? name = null, string? initialValue = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public ICommandApp? MakeCommand(string commandType, string? name = null, string? initialValue = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -228,8 +233,8 @@ Enables extension to the boose.dll base WITHOUT modification.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a></dt>
-    <dd><p>A new <a class="xref" href="BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a> instance corresponding to <code class="paramref">commandType</code>.</p>
+    <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a></dt>
+    <dd><p>A new <a class="xref" href="../api-tests/BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a> instance corresponding to <code class="paramref">commandType</code>.</p>
 </dd>
   </dl>
 
@@ -242,7 +247,7 @@ Enables extension to the boose.dll base WITHOUT modification.</p>
 
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BOOSE.CommandException.html">CommandException</a></dt>
+    <dt><a class="xref" href="../api-tests/BOOSE.CommandException.html">CommandException</a></dt>
     <dd><p>Thrown if the <code class="paramref">commandType</code> is not registered in the <code>commandRegistry</code>.</p>
 </dd>
   </dl>
@@ -253,7 +258,7 @@ Enables extension to the boose.dll base WITHOUT modification.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/CommandFactoryApp.cs" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandFactoryApp.cs" class="edit-link">Edit this page</a>
         </div>
 
 

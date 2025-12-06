@@ -1,0 +1,531 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSECoreApp.Core.Base.ParsedLineType
+  commentId: T:BOOSECoreApp.Core.Base.ParsedLineType
+  id: ParsedLineType
+  parent: BOOSECoreApp.Core.Base
+  children:
+  - BOOSECoreApp.Core.Base.ParsedLineType.ArrayDecl
+  - BOOSECoreApp.Core.Base.ParsedLineType.Assignment
+  - BOOSECoreApp.Core.Base.ParsedLineType.CallMethod
+  - BOOSECoreApp.Core.Base.ParsedLineType.Command
+  - BOOSECoreApp.Core.Base.ParsedLineType.Comment
+  - BOOSECoreApp.Core.Base.ParsedLineType.Else
+  - BOOSECoreApp.Core.Base.ParsedLineType.ElseIf
+  - BOOSECoreApp.Core.Base.ParsedLineType.Empty
+  - BOOSECoreApp.Core.Base.ParsedLineType.EndFor
+  - BOOSECoreApp.Core.Base.ParsedLineType.EndIf
+  - BOOSECoreApp.Core.Base.ParsedLineType.EndMethod
+  - BOOSECoreApp.Core.Base.ParsedLineType.EndWhile
+  - BOOSECoreApp.Core.Base.ParsedLineType.For
+  - BOOSECoreApp.Core.Base.ParsedLineType.If
+  - BOOSECoreApp.Core.Base.ParsedLineType.Method
+  - BOOSECoreApp.Core.Base.ParsedLineType.Operator
+  - BOOSECoreApp.Core.Base.ParsedLineType.Peek
+  - BOOSECoreApp.Core.Base.ParsedLineType.Poke
+  - BOOSECoreApp.Core.Base.ParsedLineType.VarDecl
+  - BOOSECoreApp.Core.Base.ParsedLineType.While
+  langs:
+  - csharp
+  - vb
+  name: ParsedLineType
+  nameWithType: ParsedLineType
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType
+  type: Enum
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Types of parsed lines in the code.
+  remarks: This is also used for syntax highlighting
+  example: []
+  syntax:
+    content: public enum ParsedLineType
+    content.vb: Public Enum ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.Empty
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.Empty
+  id: Empty
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: ParsedLineType.Empty
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.Empty
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents an empty line.
+  example: []
+  syntax:
+    content: Empty = 0
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.Comment
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.Comment
+  id: Comment
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: Comment
+  nameWithType: ParsedLineType.Comment
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.Comment
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents a comment line.
+  example: []
+  syntax:
+    content: Comment = 1
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.Method
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.Method
+  id: Method
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: Method
+  nameWithType: ParsedLineType.Method
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.Method
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents a method declaration line.
+  example: []
+  syntax:
+    content: Method = 2
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.EndMethod
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.EndMethod
+  id: EndMethod
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: EndMethod
+  nameWithType: ParsedLineType.EndMethod
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.EndMethod
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents an end method line.
+  example: []
+  syntax:
+    content: EndMethod = 3
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.CallMethod
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.CallMethod
+  id: CallMethod
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: CallMethod
+  nameWithType: ParsedLineType.CallMethod
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.CallMethod
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents a method call line.
+  example: []
+  syntax:
+    content: CallMethod = 4
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.If
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.If
+  id: If
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: If
+  nameWithType: ParsedLineType.If
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.If
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents an if statement line.
+  example: []
+  syntax:
+    content: If = 5
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.ElseIf
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.ElseIf
+  id: ElseIf
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: ElseIf
+  nameWithType: ParsedLineType.ElseIf
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.ElseIf
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents an else if statement line.
+  example: []
+  syntax:
+    content: ElseIf = 6
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.Else
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.Else
+  id: Else
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: Else
+  nameWithType: ParsedLineType.Else
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.Else
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents an else statement line.
+  example: []
+  syntax:
+    content: Else = 7
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.EndIf
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.EndIf
+  id: EndIf
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: EndIf
+  nameWithType: ParsedLineType.EndIf
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.EndIf
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents an end if line.
+  example: []
+  syntax:
+    content: EndIf = 8
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.While
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.While
+  id: While
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: While
+  nameWithType: ParsedLineType.While
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.While
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents a while loop line.
+  example: []
+  syntax:
+    content: While = 9
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.EndWhile
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.EndWhile
+  id: EndWhile
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: EndWhile
+  nameWithType: ParsedLineType.EndWhile
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.EndWhile
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents an end while line.
+  example: []
+  syntax:
+    content: EndWhile = 10
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.For
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.For
+  id: For
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: For
+  nameWithType: ParsedLineType.For
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.For
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents a for loop line.
+  example: []
+  syntax:
+    content: For = 11
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.EndFor
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.EndFor
+  id: EndFor
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: EndFor
+  nameWithType: ParsedLineType.EndFor
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.EndFor
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents an end for line.
+  example: []
+  syntax:
+    content: EndFor = 12
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.VarDecl
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.VarDecl
+  id: VarDecl
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: VarDecl
+  nameWithType: ParsedLineType.VarDecl
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.VarDecl
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents a variable declaration line.
+  example: []
+  syntax:
+    content: VarDecl = 13
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.Assignment
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.Assignment
+  id: Assignment
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: Assignment
+  nameWithType: ParsedLineType.Assignment
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.Assignment
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents an assignment line.
+  example: []
+  syntax:
+    content: Assignment = 14
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.Operator
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.Operator
+  id: Operator
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: Operator
+  nameWithType: ParsedLineType.Operator
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.Operator
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents an operator expression line.
+  example: []
+  syntax:
+    content: Operator = 15
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.ArrayDecl
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.ArrayDecl
+  id: ArrayDecl
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: ArrayDecl
+  nameWithType: ParsedLineType.ArrayDecl
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.ArrayDecl
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents an array declaration line.
+  example: []
+  syntax:
+    content: ArrayDecl = 16
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.Poke
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.Poke
+  id: Poke
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: Poke
+  nameWithType: ParsedLineType.Poke
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.Poke
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents a poke command line.
+  example: []
+  syntax:
+    content: Poke = 17
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.Peek
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.Peek
+  id: Peek
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: Peek
+  nameWithType: ParsedLineType.Peek
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.Peek
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents a peek command line.
+  example: []
+  syntax:
+    content: Peek = 18
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+- uid: BOOSECoreApp.Core.Base.ParsedLineType.Command
+  commentId: F:BOOSECoreApp.Core.Base.ParsedLineType.Command
+  id: Command
+  parent: BOOSECoreApp.Core.Base.ParsedLineType
+  langs:
+  - csharp
+  - vb
+  name: Command
+  nameWithType: ParsedLineType.Command
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType.Command
+  type: Field
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Represents a generic command line.
+  example: []
+  syntax:
+    content: Command = 19
+    return:
+      type: BOOSECoreApp.Core.Base.ParsedLineType
+references:
+- uid: BOOSECoreApp.Core.Base
+  commentId: N:BOOSECoreApp.Core.Base
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Base
+  nameWithType: BOOSECoreApp.Core.Base
+  fullName: BOOSECoreApp.Core.Base
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Base
+    name: Base
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Base
+    name: Base
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.html
+- uid: BOOSECoreApp.Core.Base.ParsedLineType
+  commentId: T:BOOSECoreApp.Core.Base.ParsedLineType
+  parent: BOOSECoreApp.Core.Base
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.ParsedLineType.html
+  name: ParsedLineType
+  nameWithType: ParsedLineType
+  fullName: BOOSECoreApp.Core.Base.ParsedLineType

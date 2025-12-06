@@ -1,0 +1,374 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager
+  id: IDiscoveryManager
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Abort
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Initialize(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  langs:
+  - csharp
+  - vb
+  name: IDiscoveryManager
+  nameWithType: IDiscoveryManager
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager
+  type: Interface
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  syntax:
+    content: public interface IDiscoveryManager
+    content.vb: Public Interface IDiscoveryManager
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Initialize(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Initialize(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  id: Initialize(System.Collections.Generic.IEnumerable{System.String},Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: Initialize(IEnumerable<string>, ITestDiscoveryEventsHandler2?)
+  nameWithType: IDiscoveryManager.Initialize(IEnumerable<string>, ITestDiscoveryEventsHandler2?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Initialize(System.Collections.Generic.IEnumerable<string>, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2?)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  syntax:
+    content: void Initialize(IEnumerable<string> pathToAdditionalExtensions, ITestDiscoveryEventsHandler2? eventHandler)
+    parameters:
+    - id: pathToAdditionalExtensions
+      type: System.Collections.Generic.IEnumerable{System.String}
+    - id: eventHandler
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    content.vb: Sub Initialize(pathToAdditionalExtensions As IEnumerable(Of String), eventHandler As ITestDiscoveryEventsHandler2)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Initialize*
+  nameWithType.vb: IDiscoveryManager.Initialize(IEnumerable(Of String), ITestDiscoveryEventsHandler2)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Initialize(System.Collections.Generic.IEnumerable(Of String), Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  name.vb: Initialize(IEnumerable(Of String), ITestDiscoveryEventsHandler2)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  id: DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: DiscoverTests(DiscoveryCriteria, ITestDiscoveryEventsHandler2)
+  nameWithType: IDiscoveryManager.DiscoverTests(DiscoveryCriteria, ITestDiscoveryEventsHandler2)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria, Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  syntax:
+    content: void DiscoverTests(DiscoveryCriteria discoveryCriteria, ITestDiscoveryEventsHandler2 eventHandler)
+    parameters:
+    - id: discoveryCriteria
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+    - id: eventHandler
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    content.vb: Sub DiscoverTests(discoveryCriteria As DiscoveryCriteria, eventHandler As ITestDiscoveryEventsHandler2)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.DiscoverTests*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Abort
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Abort
+  id: Abort
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: Abort()
+  nameWithType: IDiscoveryManager.Abort()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Abort()
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  syntax:
+    content: void Abort()
+    content.vb: Sub Abort()
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Abort*
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  id: Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager
+  langs:
+  - csharp
+  - vb
+  name: Abort(ITestDiscoveryEventsHandler2)
+  nameWithType: IDiscoveryManager.Abort(ITestDiscoveryEventsHandler2)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Abort(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.Common
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  syntax:
+    content: void Abort(ITestDiscoveryEventsHandler2 eventHandler)
+    parameters:
+    - id: eventHandler
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+    content.vb: Sub Abort(eventHandler As ITestDiscoveryEventsHandler2)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Abort*
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+    name: TesthostProtocol
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine
+    name: Engine
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol
+    name: TesthostProtocol
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Initialize*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Initialize
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_TesthostProtocol_IDiscoveryManager_Initialize_System_Collections_Generic_IEnumerable_System_String__Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_
+  name: Initialize
+  nameWithType: IDiscoveryManager.Initialize
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Initialize
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.html
+  name: ITestDiscoveryEventsHandler2
+  nameWithType: ITestDiscoveryEventsHandler2
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+    name: Client
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.DiscoverTests*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.DiscoverTests
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_TesthostProtocol_IDiscoveryManager_DiscoverTests_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_
+  name: DiscoverTests
+  nameWithType: IDiscoveryManager.DiscoverTests
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.DiscoverTests
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria.html
+  name: DiscoveryCriteria
+  nameWithType: DiscoveryCriteria
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Abort*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Abort
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Engine_TesthostProtocol_IDiscoveryManager_Abort
+  name: Abort
+  nameWithType: IDiscoveryManager.Abort
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Engine.TesthostProtocol.IDiscoveryManager.Abort

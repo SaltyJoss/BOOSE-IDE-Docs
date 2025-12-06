@@ -1,0 +1,510 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData
+  commentId: T:Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData
+  id: FormattedTextOutputDeviceData
+  parent: Microsoft.Testing.Platform.OutputDevice
+  children:
+  - Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.#ctor(System.String)
+  - Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.BackgroundColor
+  - Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.ForegroundColor
+  - Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.Padding
+  langs:
+  - csharp
+  - vb
+  name: FormattedTextOutputDeviceData
+  nameWithType: FormattedTextOutputDeviceData
+  fullName: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData
+  type: Class
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.OutputDevice
+  syntax:
+    content: 'public sealed class FormattedTextOutputDeviceData : TextOutputDeviceData, IOutputDeviceData'
+    content.vb: Public NotInheritable Class FormattedTextOutputDeviceData Inherits TextOutputDeviceData Implements IOutputDeviceData
+  inheritance:
+  - System.Object
+  - Microsoft.Testing.Platform.OutputDevice.TextOutputDeviceData
+  implements:
+  - Microsoft.Testing.Platform.OutputDevice.IOutputDeviceData
+  inheritedMembers:
+  - Microsoft.Testing.Platform.OutputDevice.TextOutputDeviceData.Text
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.#ctor(System.String)
+  commentId: M:Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData
+  langs:
+  - csharp
+  - vb
+  name: FormattedTextOutputDeviceData(string)
+  nameWithType: FormattedTextOutputDeviceData.FormattedTextOutputDeviceData(string)
+  fullName: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.FormattedTextOutputDeviceData(string)
+  type: Constructor
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.OutputDevice
+  syntax:
+    content: public FormattedTextOutputDeviceData(string text)
+    parameters:
+    - id: text
+      type: System.String
+    content.vb: Public Sub New(text As String)
+  overload: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.#ctor*
+  nameWithType.vb: FormattedTextOutputDeviceData.New(String)
+  fullName.vb: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.New(String)
+  name.vb: New(String)
+- uid: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.ForegroundColor
+  commentId: P:Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.ForegroundColor
+  id: ForegroundColor
+  parent: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData
+  langs:
+  - csharp
+  - vb
+  name: ForegroundColor
+  nameWithType: FormattedTextOutputDeviceData.ForegroundColor
+  fullName: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.ForegroundColor
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.OutputDevice
+  syntax:
+    content: public IColor? ForegroundColor { get; init; }
+    parameters: []
+    return:
+      type: Microsoft.Testing.Platform.OutputDevice.IColor
+    content.vb: Public Property ForegroundColor As IColor
+  overload: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.ForegroundColor*
+- uid: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.BackgroundColor
+  commentId: P:Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.BackgroundColor
+  id: BackgroundColor
+  parent: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData
+  langs:
+  - csharp
+  - vb
+  name: BackgroundColor
+  nameWithType: FormattedTextOutputDeviceData.BackgroundColor
+  fullName: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.BackgroundColor
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.OutputDevice
+  syntax:
+    content: public IColor? BackgroundColor { get; init; }
+    parameters: []
+    return:
+      type: Microsoft.Testing.Platform.OutputDevice.IColor
+    content.vb: Public Property BackgroundColor As IColor
+  overload: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.BackgroundColor*
+- uid: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.Padding
+  commentId: P:Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.Padding
+  id: Padding
+  parent: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData
+  langs:
+  - csharp
+  - vb
+  name: Padding
+  nameWithType: FormattedTextOutputDeviceData.Padding
+  fullName: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.Padding
+  type: Property
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.OutputDevice
+  syntax:
+    content: public int? Padding { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property Padding As Integer?
+  overload: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.Padding*
+references:
+- uid: Microsoft.Testing.Platform.OutputDevice
+  commentId: N:Microsoft.Testing.Platform.OutputDevice
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.OutputDevice
+  nameWithType: Microsoft.Testing.Platform.OutputDevice
+  fullName: Microsoft.Testing.Platform.OutputDevice
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.OutputDevice
+    name: OutputDevice
+    isExternal: true
+    href: Microsoft.Testing.Platform.OutputDevice.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.OutputDevice
+    name: OutputDevice
+    isExternal: true
+    href: Microsoft.Testing.Platform.OutputDevice.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Testing.Platform.OutputDevice.TextOutputDeviceData
+  commentId: T:Microsoft.Testing.Platform.OutputDevice.TextOutputDeviceData
+  parent: Microsoft.Testing.Platform.OutputDevice
+  isExternal: true
+  href: Microsoft.Testing.Platform.OutputDevice.TextOutputDeviceData.html
+  name: TextOutputDeviceData
+  nameWithType: TextOutputDeviceData
+  fullName: Microsoft.Testing.Platform.OutputDevice.TextOutputDeviceData
+- uid: Microsoft.Testing.Platform.OutputDevice.IOutputDeviceData
+  commentId: T:Microsoft.Testing.Platform.OutputDevice.IOutputDeviceData
+  parent: Microsoft.Testing.Platform.OutputDevice
+  isExternal: true
+  href: Microsoft.Testing.Platform.OutputDevice.IOutputDeviceData.html
+  name: IOutputDeviceData
+  nameWithType: IOutputDeviceData
+  fullName: Microsoft.Testing.Platform.OutputDevice.IOutputDeviceData
+- uid: Microsoft.Testing.Platform.OutputDevice.TextOutputDeviceData.Text
+  commentId: P:Microsoft.Testing.Platform.OutputDevice.TextOutputDeviceData.Text
+  parent: Microsoft.Testing.Platform.OutputDevice.TextOutputDeviceData
+  isExternal: true
+  href: Microsoft.Testing.Platform.OutputDevice.TextOutputDeviceData.html#Microsoft_Testing_Platform_OutputDevice_TextOutputDeviceData_Text
+  name: Text
+  nameWithType: TextOutputDeviceData.Text
+  fullName: Microsoft.Testing.Platform.OutputDevice.TextOutputDeviceData.Text
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.#ctor*
+  commentId: Overload:Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.#ctor
+  isExternal: true
+  href: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.html#Microsoft_Testing_Platform_OutputDevice_FormattedTextOutputDeviceData__ctor_System_String_
+  name: FormattedTextOutputDeviceData
+  nameWithType: FormattedTextOutputDeviceData.FormattedTextOutputDeviceData
+  fullName: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.FormattedTextOutputDeviceData
+  nameWithType.vb: FormattedTextOutputDeviceData.New
+  fullName.vb: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.ForegroundColor*
+  commentId: Overload:Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.ForegroundColor
+  isExternal: true
+  href: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.html#Microsoft_Testing_Platform_OutputDevice_FormattedTextOutputDeviceData_ForegroundColor
+  name: ForegroundColor
+  nameWithType: FormattedTextOutputDeviceData.ForegroundColor
+  fullName: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.ForegroundColor
+- uid: Microsoft.Testing.Platform.OutputDevice.IColor
+  commentId: T:Microsoft.Testing.Platform.OutputDevice.IColor
+  parent: Microsoft.Testing.Platform.OutputDevice
+  isExternal: true
+  href: Microsoft.Testing.Platform.OutputDevice.IColor.html
+  name: IColor
+  nameWithType: IColor
+  fullName: Microsoft.Testing.Platform.OutputDevice.IColor
+- uid: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.BackgroundColor*
+  commentId: Overload:Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.BackgroundColor
+  isExternal: true
+  href: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.html#Microsoft_Testing_Platform_OutputDevice_FormattedTextOutputDeviceData_BackgroundColor
+  name: BackgroundColor
+  nameWithType: FormattedTextOutputDeviceData.BackgroundColor
+  fullName: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.BackgroundColor
+- uid: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.Padding*
+  commentId: Overload:Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.Padding
+  isExternal: true
+  href: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.html#Microsoft_Testing_Platform_OutputDevice_FormattedTextOutputDeviceData_Padding
+  name: Padding
+  nameWithType: FormattedTextOutputDeviceData.Padding
+  fullName: Microsoft.Testing.Platform.OutputDevice.FormattedTextOutputDeviceData.Padding
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

@@ -89,7 +89,7 @@
 
 
   <h1 id="BOOSECoreApp_Core_Commands_WriteApp" data-uid="BOOSECoreApp.Core.Commands.WriteApp" class="text-break">
-Class WriteApp  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Commands/WriteApp.cs"><i class="bi bi-code-slash"></i></a>
+Class WriteApp  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Commands/WriteApp.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class WriteApp  <a class="header-action link-secondary" title="View source" href
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WriteApp : EvaluationApp, ICommandApp, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public class WriteApp : EvaluationApp, ICommandApp</code></pre>
   </div>
 
 
@@ -112,8 +112,8 @@ Class WriteApp  <a class="header-action link-secondary" title="View source" href
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="BOOSECoreApp.Core.Base.CommandApp.html">CommandApp</a></div>
-      <div><a class="xref" href="BOOSECoreApp.Core.Base.EvaluationApp.html">EvaluationApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.CommandApp.html">CommandApp</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.EvaluationApp.html">EvaluationApp</a></div>
       <div><span class="xref">WriteApp</span></div>
     </dd>
   </dl>
@@ -121,8 +121,7 @@ Class WriteApp  <a class="header-action link-secondary" title="View source" href
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a></div>
-      <div><a class="xref" href="BOOSE.ICommand.html">ICommand</a></div>
+      <div><a class="xref" href="../api-tests/BOOSECoreApp.Core.Interfaces.ICommandApp.html">ICommandApp</a></div>
     </dd>
   </dl>
 
@@ -131,28 +130,19 @@ Class WriteApp  <a class="header-action link-secondary" title="View source" href
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="BOOSECoreApp.Core.Base.EvaluationApp.html#BOOSECoreApp_Core_Base_EvaluationApp_Compile">EvaluationApp.Compile()</a>
+      <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.EvaluationApp.html#BOOSECoreApp_Core_Base_EvaluationApp_VarName">EvaluationApp.VarName</a>
     </div>
     <div>
-      <a class="xref" href="BOOSECoreApp.Core.Base.EvaluationApp.html#BOOSECoreApp_Core_Base_EvaluationApp_VarName">EvaluationApp.VarName</a>
+      <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.EvaluationApp.html#BOOSECoreApp_Core_Base_EvaluationApp_Value">EvaluationApp.Value</a>
     </div>
     <div>
-      <a class="xref" href="BOOSECoreApp.Core.Base.EvaluationApp.html#BOOSECoreApp_Core_Base_EvaluationApp_Value">EvaluationApp.Value</a>
+      <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.EvaluationApp.html#BOOSECoreApp_Core_Base_EvaluationApp_Expression">EvaluationApp.Expression</a>
     </div>
     <div>
-      <a class="xref" href="BOOSECoreApp.Core.Base.EvaluationApp.html#BOOSECoreApp_Core_Base_EvaluationApp_Expression">EvaluationApp.Expression</a>
+      <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp__parameters">CommandApp._parameters</a>
     </div>
     <div>
-      <a class="xref" href="BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp__parameters">CommandApp._parameters</a>
-    </div>
-    <div>
-      <a class="xref" href="BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Set_BOOSE_StoredProgram_System_String_">CommandApp.Set(StoredProgram, string)</a>
-    </div>
-    <div>
-      <a class="xref" href="BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_ProgramApp">CommandApp.ProgramApp</a>
-    </div>
-    <div>
-      <a class="xref" href="BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Parameters">CommandApp.Parameters</a>
+      <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_ProgramApp">CommandApp.ProgramApp</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
@@ -182,7 +172,7 @@ Class WriteApp  <a class="header-action link-secondary" title="View source" href
 
   <h2 id="BOOSECoreApp_Core_Commands_WriteApp_remarks">Remarks</h2>
   <div class="markdown level0 remarks"><p>Accepts a single expression parameter, which is evaluated before writing.
-Inherits from <a class="xref" href="BOOSECoreApp.Core.Base.EvaluationApp.html">EvaluationApp</a> to support expression evaluation.</p>
+Inherits from <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.EvaluationApp.html">EvaluationApp</a> to support expression evaluation.</p>
 </div>
 
 
@@ -192,12 +182,39 @@ Inherits from <a class="xref" href="BOOSECoreApp.Core.Base.EvaluationApp.html">E
 
   <a id="BOOSECoreApp_Core_Commands_WriteApp__ctor_" data-uid="BOOSECoreApp.Core.Commands.WriteApp.#ctor*"></a>
 
-  <h3 id="BOOSECoreApp_Core_Commands_WriteApp__ctor_System_String_System_Object_System_String_" data-uid="BOOSECoreApp.Core.Commands.WriteApp.#ctor(System.String,System.Object,System.String)">
-  WriteApp(string, object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Commands/WriteApp.cs"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSECoreApp_Core_Commands_WriteApp__ctor" data-uid="BOOSECoreApp.Core.Commands.WriteApp.#ctor">
+  WriteApp()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Commands/WriteApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initialises a new instance of <a class="xref" href="BOOSECoreApp.Core.Commands.WriteApp.html">WriteApp</a>.</p>
+  <div class="markdown level1 summary"><p>Parameterless constructor for WriteApp</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WriteApp()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSECoreApp_Core_Commands_WriteApp__ctor_" data-uid="BOOSECoreApp.Core.Commands.WriteApp.#ctor*"></a>
+
+  <h3 id="BOOSECoreApp_Core_Commands_WriteApp__ctor_System_String_System_Object_System_String_" data-uid="BOOSECoreApp.Core.Commands.WriteApp.#ctor(System.String,System.Object,System.String)">
+  WriteApp(string, object, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Commands/WriteApp.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initialises a new instance of <a class="xref" href="../api-tests/BOOSECoreApp.Core.Commands.WriteApp.html">WriteApp</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -237,10 +254,11 @@ Inherits from <a class="xref" href="BOOSECoreApp.Core.Base.EvaluationApp.html">E
 
   <h3 id="BOOSECoreApp_Core_Commands_WriteApp_CheckParameters_System_String___" data-uid="BOOSECoreApp.Core.Commands.WriteApp.CheckParameters(System.String[])">
   CheckParameters(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Commands/WriteApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Commands/WriteApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Validates the provided parameters to ensure they meet the required conditions.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -250,7 +268,8 @@ Inherits from <a class="xref" href="BOOSECoreApp.Core.Base.EvaluationApp.html">E
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd></dd>
+    <dd><p>An array of strings representing the parameters to validate. Cannot be null, and each element must meet specific validation criteria.</p>
+</dd>
   </dl>
 
 
@@ -268,10 +287,11 @@ Inherits from <a class="xref" href="BOOSECoreApp.Core.Base.EvaluationApp.html">E
 
   <h3 id="BOOSECoreApp_Core_Commands_WriteApp_Execute" data-uid="BOOSECoreApp.Core.Commands.WriteApp.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Commands/WriteApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Commands/WriteApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Execute the command.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -294,10 +314,10 @@ Inherits from <a class="xref" href="BOOSECoreApp.Core.Base.EvaluationApp.html">E
 
   <h3 id="BOOSECoreApp_Core_Commands_WriteApp_Set_BOOSECoreApp_Core_Base_StoredProgramApp_System_String___" data-uid="BOOSECoreApp.Core.Commands.WriteApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])">
   Set(StoredProgramApp, string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Commands/WriteApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Commands/WriteApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Assigns the current <a class="xref" href="BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a> context and parses the provided parameters.</p>
+  <div class="markdown level1 summary"><p>Assigns the current <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a> context and parses the provided parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -307,8 +327,8 @@ Inherits from <a class="xref" href="BOOSECoreApp.Core.Base.EvaluationApp.html">E
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>program</code> <a class="xref" href="BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a></dt>
-    <dd><p>The <a class="xref" href="BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a> that owns this command.</p>
+    <dt><code>program</code> <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a></dt>
+    <dd><p>The <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a> that owns this command.</p>
 </dd>
     <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
     <dd><p>The array of string parameters for this command.</p>
@@ -330,7 +350,7 @@ Inherits from <a class="xref" href="BOOSECoreApp.Core.Base.EvaluationApp.html">E
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Commands/WriteApp.cs" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Commands/WriteApp.cs" class="edit-link">Edit this page</a>
         </div>
 
 

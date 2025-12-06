@@ -1,0 +1,941 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  commentId: T:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  id: IProcessHelper
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  children:
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessArchitecture
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessFileName
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessId
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessLocation
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetNativeDllDirectory
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessArchitecture(System.Int32)
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessHandle(System.Int32)
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessId(System.Object)
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessName(System.Int32)
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetTestEngineDirectory
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.LaunchProcess(System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Action{System.Object,System.String},System.Action{System.Object},System.Action{System.Object,System.String})
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.SetExitCallback(System.Int32,System.Action{System.Object})
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TerminateProcess(System.Object)
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TryGetExitCode(System.Object,System.Int32@)
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.WaitForProcessExit(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IProcessHelper
+  nameWithType: IProcessHelper
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  type: Interface
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: public interface IProcessHelper
+    content.vb: Public Interface IProcessHelper
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.LaunchProcess(System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Action{System.Object,System.String},System.Action{System.Object},System.Action{System.Object,System.String})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.LaunchProcess(System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Action{System.Object,System.String},System.Action{System.Object},System.Action{System.Object,System.String})
+  id: LaunchProcess(System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Action{System.Object,System.String},System.Action{System.Object},System.Action{System.Object,System.String})
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  langs:
+  - csharp
+  - vb
+  name: LaunchProcess(string, string?, string?, IDictionary<string, string?>?, Action<object?, string?>?, Action<object?>?, Action<object?, string?>?)
+  nameWithType: IProcessHelper.LaunchProcess(string, string?, string?, IDictionary<string, string?>?, Action<object?, string?>?, Action<object?>?, Action<object?, string?>?)
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.LaunchProcess(string, string?, string?, System.Collections.Generic.IDictionary<string, string?>?, System.Action<object?, string?>?, System.Action<object?>?, System.Action<object?, string?>?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: object LaunchProcess(string processPath, string? arguments, string? workingDirectory, IDictionary<string, string?>? envVariables, Action<object?, string?>? errorCallback, Action<object?>? exitCallBack, Action<object?, string?>? outputCallBack)
+    parameters:
+    - id: processPath
+      type: System.String
+    - id: arguments
+      type: System.String
+    - id: workingDirectory
+      type: System.String
+    - id: envVariables
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    - id: errorCallback
+      type: System.Action{System.Object,System.String}
+    - id: exitCallBack
+      type: System.Action{System.Object}
+    - id: outputCallBack
+      type: System.Action{System.Object,System.String}
+    return:
+      type: System.Object
+    content.vb: Function LaunchProcess(processPath As String, arguments As String, workingDirectory As String, envVariables As IDictionary(Of String, String), errorCallback As Action(Of Object, String), exitCallBack As Action(Of Object), outputCallBack As Action(Of Object, String)) As Object
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.LaunchProcess*
+  nameWithType.vb: IProcessHelper.LaunchProcess(String, String, String, IDictionary(Of String, String), Action(Of Object, String), Action(Of Object), Action(Of Object, String))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.LaunchProcess(String, String, String, System.Collections.Generic.IDictionary(Of String, String), System.Action(Of Object, String), System.Action(Of Object), System.Action(Of Object, String))
+  name.vb: LaunchProcess(String, String, String, IDictionary(Of String, String), Action(Of Object, String), Action(Of Object), Action(Of Object, String))
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessFileName
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessFileName
+  id: GetCurrentProcessFileName
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentProcessFileName()
+  nameWithType: IProcessHelper.GetCurrentProcessFileName()
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessFileName()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: string? GetCurrentProcessFileName()
+    return:
+      type: System.String
+    content.vb: Function GetCurrentProcessFileName() As String
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessFileName*
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessLocation
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessLocation
+  id: GetCurrentProcessLocation
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentProcessLocation()
+  nameWithType: IProcessHelper.GetCurrentProcessLocation()
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessLocation()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: string GetCurrentProcessLocation()
+    return:
+      type: System.String
+    content.vb: Function GetCurrentProcessLocation() As String
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessLocation*
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetTestEngineDirectory
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetTestEngineDirectory
+  id: GetTestEngineDirectory
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTestEngineDirectory()
+  nameWithType: IProcessHelper.GetTestEngineDirectory()
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetTestEngineDirectory()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: string? GetTestEngineDirectory()
+    return:
+      type: System.String
+    content.vb: Function GetTestEngineDirectory() As String
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetTestEngineDirectory*
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetNativeDllDirectory
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetNativeDllDirectory
+  id: GetNativeDllDirectory
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  langs:
+  - csharp
+  - vb
+  name: GetNativeDllDirectory()
+  nameWithType: IProcessHelper.GetNativeDllDirectory()
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetNativeDllDirectory()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: string GetNativeDllDirectory()
+    return:
+      type: System.String
+    content.vb: Function GetNativeDllDirectory() As String
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetNativeDllDirectory*
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessArchitecture
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessArchitecture
+  id: GetCurrentProcessArchitecture
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentProcessArchitecture()
+  nameWithType: IProcessHelper.GetCurrentProcessArchitecture()
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessArchitecture()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: PlatformArchitecture GetCurrentProcessArchitecture()
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture
+    content.vb: Function GetCurrentProcessArchitecture() As PlatformArchitecture
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessArchitecture*
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessArchitecture(System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessArchitecture(System.Int32)
+  id: GetProcessArchitecture(System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  langs:
+  - csharp
+  - vb
+  name: GetProcessArchitecture(int)
+  nameWithType: IProcessHelper.GetProcessArchitecture(int)
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessArchitecture(int)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: PlatformArchitecture GetProcessArchitecture(int processId)
+    parameters:
+    - id: processId
+      type: System.Int32
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture
+    content.vb: Function GetProcessArchitecture(processId As Integer) As PlatformArchitecture
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessArchitecture*
+  nameWithType.vb: IProcessHelper.GetProcessArchitecture(Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessArchitecture(Integer)
+  name.vb: GetProcessArchitecture(Integer)
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessId
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessId
+  id: GetCurrentProcessId
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentProcessId()
+  nameWithType: IProcessHelper.GetCurrentProcessId()
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessId()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: int GetCurrentProcessId()
+    return:
+      type: System.Int32
+    content.vb: Function GetCurrentProcessId() As Integer
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessId*
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessId(System.Object)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessId(System.Object)
+  id: GetProcessId(System.Object)
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  langs:
+  - csharp
+  - vb
+  name: GetProcessId(object?)
+  nameWithType: IProcessHelper.GetProcessId(object?)
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessId(object?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: int GetProcessId(object? process)
+    parameters:
+    - id: process
+      type: System.Object
+    return:
+      type: System.Int32
+    content.vb: Function GetProcessId(process As Object) As Integer
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessId*
+  nameWithType.vb: IProcessHelper.GetProcessId(Object)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessId(Object)
+  name.vb: GetProcessId(Object)
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessName(System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessName(System.Int32)
+  id: GetProcessName(System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  langs:
+  - csharp
+  - vb
+  name: GetProcessName(int)
+  nameWithType: IProcessHelper.GetProcessName(int)
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessName(int)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: string GetProcessName(int processId)
+    parameters:
+    - id: processId
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Function GetProcessName(processId As Integer) As String
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessName*
+  nameWithType.vb: IProcessHelper.GetProcessName(Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessName(Integer)
+  name.vb: GetProcessName(Integer)
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TryGetExitCode(System.Object,System.Int32@)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TryGetExitCode(System.Object,System.Int32@)
+  id: TryGetExitCode(System.Object,System.Int32@)
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  langs:
+  - csharp
+  - vb
+  name: TryGetExitCode(object?, out int)
+  nameWithType: IProcessHelper.TryGetExitCode(object?, out int)
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TryGetExitCode(object?, out int)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: bool TryGetExitCode(object? process, out int exitCode)
+    parameters:
+    - id: process
+      type: System.Object
+    - id: exitCode
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Function TryGetExitCode(process As Object, exitCode As Integer) As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TryGetExitCode*
+  nameWithType.vb: IProcessHelper.TryGetExitCode(Object, Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TryGetExitCode(Object, Integer)
+  name.vb: TryGetExitCode(Object, Integer)
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.SetExitCallback(System.Int32,System.Action{System.Object})
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.SetExitCallback(System.Int32,System.Action{System.Object})
+  id: SetExitCallback(System.Int32,System.Action{System.Object})
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  langs:
+  - csharp
+  - vb
+  name: SetExitCallback(int, Action<object?>?)
+  nameWithType: IProcessHelper.SetExitCallback(int, Action<object?>?)
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.SetExitCallback(int, System.Action<object?>?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: void SetExitCallback(int processId, Action<object?>? callbackAction)
+    parameters:
+    - id: processId
+      type: System.Int32
+    - id: callbackAction
+      type: System.Action{System.Object}
+    content.vb: Sub SetExitCallback(processId As Integer, callbackAction As Action(Of Object))
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.SetExitCallback*
+  nameWithType.vb: IProcessHelper.SetExitCallback(Integer, Action(Of Object))
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.SetExitCallback(Integer, System.Action(Of Object))
+  name.vb: SetExitCallback(Integer, Action(Of Object))
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TerminateProcess(System.Object)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TerminateProcess(System.Object)
+  id: TerminateProcess(System.Object)
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  langs:
+  - csharp
+  - vb
+  name: TerminateProcess(object?)
+  nameWithType: IProcessHelper.TerminateProcess(object?)
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TerminateProcess(object?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: void TerminateProcess(object? process)
+    parameters:
+    - id: process
+      type: System.Object
+    content.vb: Sub TerminateProcess(process As Object)
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TerminateProcess*
+  nameWithType.vb: IProcessHelper.TerminateProcess(Object)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TerminateProcess(Object)
+  name.vb: TerminateProcess(Object)
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.WaitForProcessExit(System.Object)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.WaitForProcessExit(System.Object)
+  id: WaitForProcessExit(System.Object)
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  langs:
+  - csharp
+  - vb
+  name: WaitForProcessExit(object?)
+  nameWithType: IProcessHelper.WaitForProcessExit(object?)
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.WaitForProcessExit(object?)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: void WaitForProcessExit(object? process)
+    parameters:
+    - id: process
+      type: System.Object
+    content.vb: Sub WaitForProcessExit(process As Object)
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.WaitForProcessExit*
+  nameWithType.vb: IProcessHelper.WaitForProcessExit(Object)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.WaitForProcessExit(Object)
+  name.vb: WaitForProcessExit(Object)
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessHandle(System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessHandle(System.Int32)
+  id: GetProcessHandle(System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper
+  langs:
+  - csharp
+  - vb
+  name: GetProcessHandle(int)
+  nameWithType: IProcessHelper.GetProcessHandle(int)
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessHandle(int)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: nint GetProcessHandle(int processId)
+    parameters:
+    - id: processId
+      type: System.Int32
+    return:
+      type: System.IntPtr
+    content.vb: Function GetProcessHandle(processId As Integer) As IntPtr
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessHandle*
+  nameWithType.vb: IProcessHelper.GetProcessHandle(Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessHandle(Integer)
+  name.vb: GetProcessHandle(Integer)
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  commentId: N:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  nameWithType: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+    name: PlatformAbstractions
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+    name: PlatformAbstractions
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.html
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.LaunchProcess*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.LaunchProcess
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IProcessHelper_LaunchProcess_System_String_System_String_System_String_System_Collections_Generic_IDictionary_System_String_System_String__System_Action_System_Object_System_String__System_Action_System_Object__System_Action_System_Object_System_String__
+  name: LaunchProcess
+  nameWithType: IProcessHelper.LaunchProcess
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.LaunchProcess
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, string>
+  nameWithType: IDictionary<string, string>
+  fullName: System.Collections.Generic.IDictionary<string, string>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Action{System.Object,System.String}
+  commentId: T:System.Action{System.Object,System.String}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<object, string>
+  nameWithType: Action<object, string>
+  fullName: System.Action<object, string>
+  nameWithType.vb: Action(Of Object, String)
+  fullName.vb: System.Action(Of Object, String)
+  name.vb: Action(Of Object, String)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Action{System.Object}
+  commentId: T:System.Action{System.Object}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<object>
+  nameWithType: Action<object>
+  fullName: System.Action<object>
+  nameWithType.vb: Action(Of Object)
+  fullName.vb: System.Action(Of Object)
+  name.vb: Action(Of Object)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessFileName*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessFileName
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IProcessHelper_GetCurrentProcessFileName
+  name: GetCurrentProcessFileName
+  nameWithType: IProcessHelper.GetCurrentProcessFileName
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessFileName
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessLocation*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessLocation
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IProcessHelper_GetCurrentProcessLocation
+  name: GetCurrentProcessLocation
+  nameWithType: IProcessHelper.GetCurrentProcessLocation
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessLocation
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetTestEngineDirectory*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetTestEngineDirectory
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IProcessHelper_GetTestEngineDirectory
+  name: GetTestEngineDirectory
+  nameWithType: IProcessHelper.GetTestEngineDirectory
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetTestEngineDirectory
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetNativeDllDirectory*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetNativeDllDirectory
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IProcessHelper_GetNativeDllDirectory
+  name: GetNativeDllDirectory
+  nameWithType: IProcessHelper.GetNativeDllDirectory
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetNativeDllDirectory
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessArchitecture*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessArchitecture
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IProcessHelper_GetCurrentProcessArchitecture
+  name: GetCurrentProcessArchitecture
+  nameWithType: IProcessHelper.GetCurrentProcessArchitecture
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessArchitecture
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture
+  commentId: T:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture.html
+  name: PlatformArchitecture
+  nameWithType: PlatformArchitecture
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  commentId: N:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  nameWithType: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+    name: PlatformAbstractions
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+    name: PlatformAbstractions
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.html
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessArchitecture*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessArchitecture
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IProcessHelper_GetProcessArchitecture_System_Int32_
+  name: GetProcessArchitecture
+  nameWithType: IProcessHelper.GetProcessArchitecture
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessArchitecture
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessId*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessId
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IProcessHelper_GetCurrentProcessId
+  name: GetCurrentProcessId
+  nameWithType: IProcessHelper.GetCurrentProcessId
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetCurrentProcessId
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessId*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessId
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IProcessHelper_GetProcessId_System_Object_
+  name: GetProcessId
+  nameWithType: IProcessHelper.GetProcessId
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessId
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessName*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessName
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IProcessHelper_GetProcessName_System_Int32_
+  name: GetProcessName
+  nameWithType: IProcessHelper.GetProcessName
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessName
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TryGetExitCode*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TryGetExitCode
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IProcessHelper_TryGetExitCode_System_Object_System_Int32__
+  name: TryGetExitCode
+  nameWithType: IProcessHelper.TryGetExitCode
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TryGetExitCode
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.SetExitCallback*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.SetExitCallback
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IProcessHelper_SetExitCallback_System_Int32_System_Action_System_Object__
+  name: SetExitCallback
+  nameWithType: IProcessHelper.SetExitCallback
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.SetExitCallback
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TerminateProcess*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TerminateProcess
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IProcessHelper_TerminateProcess_System_Object_
+  name: TerminateProcess
+  nameWithType: IProcessHelper.TerminateProcess
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.TerminateProcess
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.WaitForProcessExit*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.WaitForProcessExit
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IProcessHelper_WaitForProcessExit_System_Object_
+  name: WaitForProcessExit
+  nameWithType: IProcessHelper.WaitForProcessExit
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.WaitForProcessExit
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessHandle*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessHandle
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IProcessHelper_GetProcessHandle_System_Int32_
+  name: GetProcessHandle
+  nameWithType: IProcessHelper.GetProcessHandle
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IProcessHelper.GetProcessHandle
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr

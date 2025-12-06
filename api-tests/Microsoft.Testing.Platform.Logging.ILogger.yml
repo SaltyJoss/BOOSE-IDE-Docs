@@ -1,0 +1,1848 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Testing.Platform.Logging.ILogger
+  commentId: T:Microsoft.Testing.Platform.Logging.ILogger
+  id: ILogger
+  parent: Microsoft.Testing.Platform.Logging
+  children:
+  - Microsoft.Testing.Platform.Logging.ILogger.IsEnabled(Microsoft.Testing.Platform.Logging.LogLevel)
+  - Microsoft.Testing.Platform.Logging.ILogger.LogAsync``1(Microsoft.Testing.Platform.Logging.LogLevel,``0,System.Exception,System.Func{``0,System.Exception,System.String})
+  - Microsoft.Testing.Platform.Logging.ILogger.Log``1(Microsoft.Testing.Platform.Logging.LogLevel,``0,System.Exception,System.Func{``0,System.Exception,System.String})
+  langs:
+  - csharp
+  - vb
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Testing.Platform.Logging.ILogger
+  type: Interface
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Logging
+  syntax:
+    content: public interface ILogger
+    content.vb: Public Interface ILogger
+  extensionMethods:
+  - Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCritical(System.String)
+  - Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCriticalAsync(System.String)
+  - Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebug(System.String)
+  - Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebugAsync(System.String)
+  - Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(System.Exception)
+  - Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(System.String)
+  - Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(System.String,System.Exception)
+  - Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(System.Exception)
+  - Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(System.String)
+  - Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(System.String,System.Exception)
+  - Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformation(System.String)
+  - Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformationAsync(System.String)
+  - Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTrace(System.String)
+  - Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTraceAsync(System.String)
+  - Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarning(System.String)
+  - Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarningAsync(System.String)
+- uid: Microsoft.Testing.Platform.Logging.ILogger.LogAsync``1(Microsoft.Testing.Platform.Logging.LogLevel,``0,System.Exception,System.Func{``0,System.Exception,System.String})
+  commentId: M:Microsoft.Testing.Platform.Logging.ILogger.LogAsync``1(Microsoft.Testing.Platform.Logging.LogLevel,``0,System.Exception,System.Func{``0,System.Exception,System.String})
+  id: LogAsync``1(Microsoft.Testing.Platform.Logging.LogLevel,``0,System.Exception,System.Func{``0,System.Exception,System.String})
+  parent: Microsoft.Testing.Platform.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: LogAsync<TState>(LogLevel, TState, Exception?, Func<TState, Exception?, string>)
+  nameWithType: ILogger.LogAsync<TState>(LogLevel, TState, Exception?, Func<TState, Exception?, string>)
+  fullName: Microsoft.Testing.Platform.Logging.ILogger.LogAsync<TState>(Microsoft.Testing.Platform.Logging.LogLevel, TState, System.Exception?, System.Func<TState, System.Exception?, string>)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Logging
+  syntax:
+    content: Task LogAsync<TState>(LogLevel logLevel, TState state, Exception? exception, Func<TState, Exception?, string> formatter)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Testing.Platform.Logging.LogLevel
+    - id: state
+      type: '{TState}'
+    - id: exception
+      type: System.Exception
+    - id: formatter
+      type: System.Func{{TState},System.Exception,System.String}
+    typeParameters:
+    - id: TState
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function LogAsync(Of TState)(logLevel As LogLevel, state As TState, exception As Exception, formatter As Func(Of TState, Exception, String)) As Task
+  overload: Microsoft.Testing.Platform.Logging.ILogger.LogAsync*
+  nameWithType.vb: ILogger.LogAsync(Of TState)(LogLevel, TState, Exception, Func(Of TState, Exception, String))
+  fullName.vb: Microsoft.Testing.Platform.Logging.ILogger.LogAsync(Of TState)(Microsoft.Testing.Platform.Logging.LogLevel, TState, System.Exception, System.Func(Of TState, System.Exception, String))
+  name.vb: LogAsync(Of TState)(LogLevel, TState, Exception, Func(Of TState, Exception, String))
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Log``1(Microsoft.Testing.Platform.Logging.LogLevel,``0,System.Exception,System.Func{``0,System.Exception,System.String})
+  commentId: M:Microsoft.Testing.Platform.Logging.ILogger.Log``1(Microsoft.Testing.Platform.Logging.LogLevel,``0,System.Exception,System.Func{``0,System.Exception,System.String})
+  id: Log``1(Microsoft.Testing.Platform.Logging.LogLevel,``0,System.Exception,System.Func{``0,System.Exception,System.String})
+  parent: Microsoft.Testing.Platform.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Log<TState>(LogLevel, TState, Exception?, Func<TState, Exception?, string>)
+  nameWithType: ILogger.Log<TState>(LogLevel, TState, Exception?, Func<TState, Exception?, string>)
+  fullName: Microsoft.Testing.Platform.Logging.ILogger.Log<TState>(Microsoft.Testing.Platform.Logging.LogLevel, TState, System.Exception?, System.Func<TState, System.Exception?, string>)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Logging
+  syntax:
+    content: void Log<TState>(LogLevel logLevel, TState state, Exception? exception, Func<TState, Exception?, string> formatter)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Testing.Platform.Logging.LogLevel
+    - id: state
+      type: '{TState}'
+    - id: exception
+      type: System.Exception
+    - id: formatter
+      type: System.Func{{TState},System.Exception,System.String}
+    typeParameters:
+    - id: TState
+    content.vb: Sub Log(Of TState)(logLevel As LogLevel, state As TState, exception As Exception, formatter As Func(Of TState, Exception, String))
+  overload: Microsoft.Testing.Platform.Logging.ILogger.Log*
+  nameWithType.vb: ILogger.Log(Of TState)(LogLevel, TState, Exception, Func(Of TState, Exception, String))
+  fullName.vb: Microsoft.Testing.Platform.Logging.ILogger.Log(Of TState)(Microsoft.Testing.Platform.Logging.LogLevel, TState, System.Exception, System.Func(Of TState, System.Exception, String))
+  name.vb: Log(Of TState)(LogLevel, TState, Exception, Func(Of TState, Exception, String))
+- uid: Microsoft.Testing.Platform.Logging.ILogger.IsEnabled(Microsoft.Testing.Platform.Logging.LogLevel)
+  commentId: M:Microsoft.Testing.Platform.Logging.ILogger.IsEnabled(Microsoft.Testing.Platform.Logging.LogLevel)
+  id: IsEnabled(Microsoft.Testing.Platform.Logging.LogLevel)
+  parent: Microsoft.Testing.Platform.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: IsEnabled(LogLevel)
+  nameWithType: ILogger.IsEnabled(LogLevel)
+  fullName: Microsoft.Testing.Platform.Logging.ILogger.IsEnabled(Microsoft.Testing.Platform.Logging.LogLevel)
+  type: Method
+  assemblies:
+  - Microsoft.Testing.Platform
+  namespace: Microsoft.Testing.Platform.Logging
+  syntax:
+    content: bool IsEnabled(LogLevel logLevel)
+    parameters:
+    - id: logLevel
+      type: Microsoft.Testing.Platform.Logging.LogLevel
+    return:
+      type: System.Boolean
+    content.vb: Function IsEnabled(logLevel As LogLevel) As Boolean
+  overload: Microsoft.Testing.Platform.Logging.ILogger.IsEnabled*
+references:
+- uid: Microsoft.Testing.Platform.Logging
+  commentId: N:Microsoft.Testing.Platform.Logging
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Testing.Platform.Logging
+  nameWithType: Microsoft.Testing.Platform.Logging
+  fullName: Microsoft.Testing.Platform.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Testing
+    name: Testing
+    isExternal: true
+    href: Microsoft.Testing.html
+  - name: .
+  - uid: Microsoft.Testing.Platform
+    name: Platform
+    isExternal: true
+    href: Microsoft.Testing.Platform.html
+  - name: .
+  - uid: Microsoft.Testing.Platform.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.html
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCritical(System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCritical(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  parent: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  definition: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCritical(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogCritical_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogCritical(ILogger, string)
+  nameWithType: LoggingExtensions.LogCritical(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCritical(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogCritical(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCritical(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogCritical(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCritical(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogCritical
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogCritical_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCritical(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogCritical
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogCritical_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCriticalAsync(System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCriticalAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  parent: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  definition: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCriticalAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogCriticalAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogCriticalAsync(ILogger, string)
+  nameWithType: LoggingExtensions.LogCriticalAsync(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCriticalAsync(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogCriticalAsync(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCriticalAsync(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogCriticalAsync(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCriticalAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogCriticalAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogCriticalAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCriticalAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogCriticalAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogCriticalAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebug(System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebug(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  parent: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  definition: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebug(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogDebug_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogDebug(ILogger, string)
+  nameWithType: LoggingExtensions.LogDebug(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebug(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogDebug(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebug(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogDebug(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebug(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogDebug
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogDebug_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebug(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogDebug
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogDebug_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebugAsync(System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebugAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  parent: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  definition: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebugAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogDebugAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogDebugAsync(ILogger, string)
+  nameWithType: LoggingExtensions.LogDebugAsync(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebugAsync(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogDebugAsync(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebugAsync(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogDebugAsync(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebugAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogDebugAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogDebugAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebugAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogDebugAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogDebugAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(System.Exception)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.Exception)
+  parent: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  definition: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.Exception)
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_Exception_
+  name: LogError(ILogger, Exception)
+  nameWithType: LoggingExtensions.LogError(ILogger, Exception)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger, System.Exception)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.Exception)
+    name: LogError
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_Exception_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.Exception)
+    name: LogError
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_Exception_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  parent: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  definition: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogError(ILogger, string)
+  nameWithType: LoggingExtensions.LogError(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogError(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogError(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogError
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogError
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(System.String,System.Exception)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.String,System.Exception)
+  parent: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  definition: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.String,System.Exception)
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_String_System_Exception_
+  name: LogError(ILogger, string, Exception)
+  nameWithType: LoggingExtensions.LogError(ILogger, string, Exception)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger, string, System.Exception)
+  nameWithType.vb: LoggingExtensions.LogError(ILogger, String, Exception)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger, String, System.Exception)
+  name.vb: LogError(ILogger, String, Exception)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.String,System.Exception)
+    name: LogError
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_String_System_Exception_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.String,System.Exception)
+    name: LogError
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_String_System_Exception_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(System.Exception)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.Exception)
+  parent: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  definition: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.Exception)
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_Exception_
+  name: LogErrorAsync(ILogger, Exception)
+  nameWithType: LoggingExtensions.LogErrorAsync(ILogger, Exception)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger, System.Exception)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.Exception)
+    name: LogErrorAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_Exception_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.Exception)
+    name: LogErrorAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_Exception_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  parent: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  definition: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogErrorAsync(ILogger, string)
+  nameWithType: LoggingExtensions.LogErrorAsync(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogErrorAsync(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogErrorAsync(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogErrorAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogErrorAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(System.String,System.Exception)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String,System.Exception)
+  parent: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  definition: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String,System.Exception)
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_System_Exception_
+  name: LogErrorAsync(ILogger, string, Exception)
+  nameWithType: LoggingExtensions.LogErrorAsync(ILogger, string, Exception)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger, string, System.Exception)
+  nameWithType.vb: LoggingExtensions.LogErrorAsync(ILogger, String, Exception)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger, String, System.Exception)
+  name.vb: LogErrorAsync(ILogger, String, Exception)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String,System.Exception)
+    name: LogErrorAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_System_Exception_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String,System.Exception)
+    name: LogErrorAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_System_Exception_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformation(System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformation(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  parent: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  definition: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformation(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogInformation_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogInformation(ILogger, string)
+  nameWithType: LoggingExtensions.LogInformation(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformation(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogInformation(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformation(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogInformation(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformation(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogInformation
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogInformation_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformation(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogInformation
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogInformation_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformationAsync(System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformationAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  parent: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  definition: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformationAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogInformationAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogInformationAsync(ILogger, string)
+  nameWithType: LoggingExtensions.LogInformationAsync(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformationAsync(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogInformationAsync(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformationAsync(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogInformationAsync(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformationAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogInformationAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogInformationAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformationAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogInformationAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogInformationAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTrace(System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTrace(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  parent: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  definition: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTrace(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogTrace_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogTrace(ILogger, string)
+  nameWithType: LoggingExtensions.LogTrace(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTrace(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogTrace(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTrace(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogTrace(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTrace(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogTrace
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogTrace_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTrace(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogTrace
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogTrace_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTraceAsync(System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTraceAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  parent: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  definition: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTraceAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogTraceAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogTraceAsync(ILogger, string)
+  nameWithType: LoggingExtensions.LogTraceAsync(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTraceAsync(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogTraceAsync(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTraceAsync(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogTraceAsync(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTraceAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogTraceAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogTraceAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTraceAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogTraceAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogTraceAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarning(System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarning(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  parent: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  definition: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarning(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogWarning_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogWarning(ILogger, string)
+  nameWithType: LoggingExtensions.LogWarning(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarning(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogWarning(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarning(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogWarning(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarning(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogWarning
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogWarning_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarning(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogWarning
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogWarning_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarningAsync(System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarningAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  parent: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  definition: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarningAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogWarningAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogWarningAsync(ILogger, string)
+  nameWithType: LoggingExtensions.LogWarningAsync(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarningAsync(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogWarningAsync(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarningAsync(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogWarningAsync(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarningAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogWarningAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogWarningAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarningAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogWarningAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogWarningAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCritical(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCritical(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogCritical_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogCritical(ILogger, string)
+  nameWithType: LoggingExtensions.LogCritical(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCritical(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogCritical(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCritical(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogCritical(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCritical(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogCritical
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogCritical_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCritical(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogCritical
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogCritical_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions
+  commentId: T:Microsoft.Testing.Platform.Logging.LoggingExtensions
+  parent: Microsoft.Testing.Platform.Logging
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html
+  name: LoggingExtensions
+  nameWithType: LoggingExtensions
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCriticalAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCriticalAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogCriticalAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogCriticalAsync(ILogger, string)
+  nameWithType: LoggingExtensions.LogCriticalAsync(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCriticalAsync(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogCriticalAsync(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCriticalAsync(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogCriticalAsync(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCriticalAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogCriticalAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogCriticalAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogCriticalAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogCriticalAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogCriticalAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebug(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebug(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogDebug_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogDebug(ILogger, string)
+  nameWithType: LoggingExtensions.LogDebug(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebug(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogDebug(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebug(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogDebug(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebug(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogDebug
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogDebug_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebug(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogDebug
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogDebug_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebugAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebugAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogDebugAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogDebugAsync(ILogger, string)
+  nameWithType: LoggingExtensions.LogDebugAsync(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebugAsync(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogDebugAsync(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebugAsync(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogDebugAsync(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebugAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogDebugAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogDebugAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogDebugAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogDebugAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogDebugAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.Exception)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.Exception)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_Exception_
+  name: LogError(ILogger, Exception)
+  nameWithType: LoggingExtensions.LogError(ILogger, Exception)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger, System.Exception)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.Exception)
+    name: LogError
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_Exception_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.Exception)
+    name: LogError
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_Exception_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogError(ILogger, string)
+  nameWithType: LoggingExtensions.LogError(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogError(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogError(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogError
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogError
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.String,System.Exception)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.String,System.Exception)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_String_System_Exception_
+  name: LogError(ILogger, string, Exception)
+  nameWithType: LoggingExtensions.LogError(ILogger, string, Exception)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger, string, System.Exception)
+  nameWithType.vb: LoggingExtensions.LogError(ILogger, String, Exception)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger, String, System.Exception)
+  name.vb: LogError(ILogger, String, Exception)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.String,System.Exception)
+    name: LogError
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_String_System_Exception_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogError(Microsoft.Testing.Platform.Logging.ILogger,System.String,System.Exception)
+    name: LogError
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogError_Microsoft_Testing_Platform_Logging_ILogger_System_String_System_Exception_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.Exception)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.Exception)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_Exception_
+  name: LogErrorAsync(ILogger, Exception)
+  nameWithType: LoggingExtensions.LogErrorAsync(ILogger, Exception)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger, System.Exception)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.Exception)
+    name: LogErrorAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_Exception_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.Exception)
+    name: LogErrorAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_Exception_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogErrorAsync(ILogger, string)
+  nameWithType: LoggingExtensions.LogErrorAsync(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogErrorAsync(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogErrorAsync(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogErrorAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogErrorAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String,System.Exception)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String,System.Exception)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_System_Exception_
+  name: LogErrorAsync(ILogger, string, Exception)
+  nameWithType: LoggingExtensions.LogErrorAsync(ILogger, string, Exception)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger, string, System.Exception)
+  nameWithType.vb: LoggingExtensions.LogErrorAsync(ILogger, String, Exception)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger, String, System.Exception)
+  name.vb: LogErrorAsync(ILogger, String, Exception)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String,System.Exception)
+    name: LogErrorAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_System_Exception_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogErrorAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String,System.Exception)
+    name: LogErrorAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogErrorAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_System_Exception_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformation(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformation(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogInformation_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogInformation(ILogger, string)
+  nameWithType: LoggingExtensions.LogInformation(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformation(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogInformation(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformation(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogInformation(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformation(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogInformation
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogInformation_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformation(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogInformation
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogInformation_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformationAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformationAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogInformationAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogInformationAsync(ILogger, string)
+  nameWithType: LoggingExtensions.LogInformationAsync(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformationAsync(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogInformationAsync(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformationAsync(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogInformationAsync(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformationAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogInformationAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogInformationAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogInformationAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogInformationAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogInformationAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTrace(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTrace(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogTrace_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogTrace(ILogger, string)
+  nameWithType: LoggingExtensions.LogTrace(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTrace(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogTrace(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTrace(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogTrace(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTrace(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogTrace
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogTrace_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTrace(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogTrace
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogTrace_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTraceAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTraceAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogTraceAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogTraceAsync(ILogger, string)
+  nameWithType: LoggingExtensions.LogTraceAsync(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTraceAsync(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogTraceAsync(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTraceAsync(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogTraceAsync(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTraceAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogTraceAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogTraceAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogTraceAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogTraceAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogTraceAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarning(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarning(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogWarning_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogWarning(ILogger, string)
+  nameWithType: LoggingExtensions.LogWarning(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarning(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogWarning(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarning(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogWarning(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarning(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogWarning
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogWarning_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarning(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogWarning
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogWarning_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarningAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  commentId: M:Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarningAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogWarningAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  name: LogWarningAsync(ILogger, string)
+  nameWithType: LoggingExtensions.LogWarningAsync(ILogger, string)
+  fullName: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarningAsync(Microsoft.Testing.Platform.Logging.ILogger, string)
+  nameWithType.vb: LoggingExtensions.LogWarningAsync(ILogger, String)
+  fullName.vb: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarningAsync(Microsoft.Testing.Platform.Logging.ILogger, String)
+  name.vb: LogWarningAsync(ILogger, String)
+  spec.csharp:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarningAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogWarningAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogWarningAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Testing.Platform.Logging.LoggingExtensions.LogWarningAsync(Microsoft.Testing.Platform.Logging.ILogger,System.String)
+    name: LogWarningAsync
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.LoggingExtensions.html#Microsoft_Testing_Platform_Logging_LoggingExtensions_LogWarningAsync_Microsoft_Testing_Platform_Logging_ILogger_System_String_
+  - name: (
+  - uid: Microsoft.Testing.Platform.Logging.ILogger
+    name: ILogger
+    isExternal: true
+    href: Microsoft.Testing.Platform.Logging.ILogger.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.Testing.Platform.Logging.ILogger.LogAsync*
+  commentId: Overload:Microsoft.Testing.Platform.Logging.ILogger.LogAsync
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.ILogger.html#Microsoft_Testing_Platform_Logging_ILogger_LogAsync__1_Microsoft_Testing_Platform_Logging_LogLevel___0_System_Exception_System_Func___0_System_Exception_System_String__
+  name: LogAsync
+  nameWithType: ILogger.LogAsync
+  fullName: Microsoft.Testing.Platform.Logging.ILogger.LogAsync
+- uid: Microsoft.Testing.Platform.Logging.LogLevel
+  commentId: T:Microsoft.Testing.Platform.Logging.LogLevel
+  parent: Microsoft.Testing.Platform.Logging
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.LogLevel.html
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Microsoft.Testing.Platform.Logging.LogLevel
+- uid: '{TState}'
+  commentId: '!:TState'
+  definition: TState
+  name: TState
+  nameWithType: TState
+  fullName: TState
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Func{{TState},System.Exception,System.String}
+  commentId: T:System.Func{``0,System.Exception,System.String}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<TState, Exception, string>
+  nameWithType: Func<TState, Exception, string>
+  fullName: System.Func<TState, System.Exception, string>
+  nameWithType.vb: Func(Of TState, Exception, String)
+  fullName.vb: System.Func(Of TState, System.Exception, String)
+  name.vb: Func(Of TState, Exception, String)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: TState
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TState
+  - name: ','
+  - name: " "
+  - uid: System.Exception
+    name: Exception
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: TState
+  name: TState
+  nameWithType: TState
+  fullName: TState
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Microsoft.Testing.Platform.Logging.ILogger.Log*
+  commentId: Overload:Microsoft.Testing.Platform.Logging.ILogger.Log
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.ILogger.html#Microsoft_Testing_Platform_Logging_ILogger_Log__1_Microsoft_Testing_Platform_Logging_LogLevel___0_System_Exception_System_Func___0_System_Exception_System_String__
+  name: Log
+  nameWithType: ILogger.Log
+  fullName: Microsoft.Testing.Platform.Logging.ILogger.Log
+- uid: Microsoft.Testing.Platform.Logging.ILogger.IsEnabled*
+  commentId: Overload:Microsoft.Testing.Platform.Logging.ILogger.IsEnabled
+  isExternal: true
+  href: Microsoft.Testing.Platform.Logging.ILogger.html#Microsoft_Testing_Platform_Logging_ILogger_IsEnabled_Microsoft_Testing_Platform_Logging_LogLevel_
+  name: IsEnabled
+  nameWithType: ILogger.IsEnabled
+  fullName: Microsoft.Testing.Platform.Logging.ILogger.IsEnabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

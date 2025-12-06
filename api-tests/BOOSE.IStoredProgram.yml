@@ -1,0 +1,389 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSE.IStoredProgram
+  commentId: T:BOOSE.IStoredProgram
+  id: IStoredProgram
+  parent: BOOSE
+  children:
+  - BOOSE.IStoredProgram.Add(BOOSE.Command)
+  - BOOSE.IStoredProgram.AddVariable(BOOSE.Evaluation)
+  - BOOSE.IStoredProgram.Commandsleft
+  - BOOSE.IStoredProgram.EvaluateExpression(System.String)
+  - BOOSE.IStoredProgram.GetVarValue(System.String)
+  - BOOSE.IStoredProgram.IsExpression(System.String)
+  - BOOSE.IStoredProgram.PC
+  - BOOSE.IStoredProgram.ResetProgram
+  - BOOSE.IStoredProgram.Run
+  - BOOSE.IStoredProgram.VariableExists(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IStoredProgram
+  nameWithType: IStoredProgram
+  fullName: BOOSE.IStoredProgram
+  type: Interface
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: public interface IStoredProgram
+    content.vb: Public Interface IStoredProgram
+- uid: BOOSE.IStoredProgram.AddVariable(BOOSE.Evaluation)
+  commentId: M:BOOSE.IStoredProgram.AddVariable(BOOSE.Evaluation)
+  id: AddVariable(BOOSE.Evaluation)
+  parent: BOOSE.IStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: AddVariable(Evaluation)
+  nameWithType: IStoredProgram.AddVariable(Evaluation)
+  fullName: BOOSE.IStoredProgram.AddVariable(BOOSE.Evaluation)
+  type: Method
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: void AddVariable(Evaluation Variable)
+    parameters:
+    - id: Variable
+      type: BOOSE.Evaluation
+    content.vb: Sub AddVariable(Variable As Evaluation)
+  overload: BOOSE.IStoredProgram.AddVariable*
+- uid: BOOSE.IStoredProgram.VariableExists(System.String)
+  commentId: M:BOOSE.IStoredProgram.VariableExists(System.String)
+  id: VariableExists(System.String)
+  parent: BOOSE.IStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: VariableExists(string)
+  nameWithType: IStoredProgram.VariableExists(string)
+  fullName: BOOSE.IStoredProgram.VariableExists(string)
+  type: Method
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: bool VariableExists(string varName)
+    parameters:
+    - id: varName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function VariableExists(varName As String) As Boolean
+  overload: BOOSE.IStoredProgram.VariableExists*
+  nameWithType.vb: IStoredProgram.VariableExists(String)
+  fullName.vb: BOOSE.IStoredProgram.VariableExists(String)
+  name.vb: VariableExists(String)
+- uid: BOOSE.IStoredProgram.GetVarValue(System.String)
+  commentId: M:BOOSE.IStoredProgram.GetVarValue(System.String)
+  id: GetVarValue(System.String)
+  parent: BOOSE.IStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: GetVarValue(string)
+  nameWithType: IStoredProgram.GetVarValue(string)
+  fullName: BOOSE.IStoredProgram.GetVarValue(string)
+  type: Method
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: string GetVarValue(string varName)
+    parameters:
+    - id: varName
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Function GetVarValue(varName As String) As String
+  overload: BOOSE.IStoredProgram.GetVarValue*
+  nameWithType.vb: IStoredProgram.GetVarValue(String)
+  fullName.vb: BOOSE.IStoredProgram.GetVarValue(String)
+  name.vb: GetVarValue(String)
+- uid: BOOSE.IStoredProgram.IsExpression(System.String)
+  commentId: M:BOOSE.IStoredProgram.IsExpression(System.String)
+  id: IsExpression(System.String)
+  parent: BOOSE.IStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: IsExpression(string)
+  nameWithType: IStoredProgram.IsExpression(string)
+  fullName: BOOSE.IStoredProgram.IsExpression(string)
+  type: Method
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: bool IsExpression(string expression)
+    parameters:
+    - id: expression
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function IsExpression(expression As String) As Boolean
+  overload: BOOSE.IStoredProgram.IsExpression*
+  nameWithType.vb: IStoredProgram.IsExpression(String)
+  fullName.vb: BOOSE.IStoredProgram.IsExpression(String)
+  name.vb: IsExpression(String)
+- uid: BOOSE.IStoredProgram.EvaluateExpression(System.String)
+  commentId: M:BOOSE.IStoredProgram.EvaluateExpression(System.String)
+  id: EvaluateExpression(System.String)
+  parent: BOOSE.IStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: EvaluateExpression(string)
+  nameWithType: IStoredProgram.EvaluateExpression(string)
+  fullName: BOOSE.IStoredProgram.EvaluateExpression(string)
+  type: Method
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: string EvaluateExpression(string Exp)
+    parameters:
+    - id: Exp
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Function EvaluateExpression(Exp As String) As String
+  overload: BOOSE.IStoredProgram.EvaluateExpression*
+  nameWithType.vb: IStoredProgram.EvaluateExpression(String)
+  fullName.vb: BOOSE.IStoredProgram.EvaluateExpression(String)
+  name.vb: EvaluateExpression(String)
+- uid: BOOSE.IStoredProgram.Add(BOOSE.Command)
+  commentId: M:BOOSE.IStoredProgram.Add(BOOSE.Command)
+  id: Add(BOOSE.Command)
+  parent: BOOSE.IStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: Add(Command)
+  nameWithType: IStoredProgram.Add(Command)
+  fullName: BOOSE.IStoredProgram.Add(BOOSE.Command)
+  type: Method
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: int Add(Command C)
+    parameters:
+    - id: C
+      type: BOOSE.Command
+    return:
+      type: System.Int32
+    content.vb: Function Add(C As Command) As Integer
+  overload: BOOSE.IStoredProgram.Add*
+- uid: BOOSE.IStoredProgram.ResetProgram
+  commentId: M:BOOSE.IStoredProgram.ResetProgram
+  id: ResetProgram
+  parent: BOOSE.IStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: ResetProgram()
+  nameWithType: IStoredProgram.ResetProgram()
+  fullName: BOOSE.IStoredProgram.ResetProgram()
+  type: Method
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: void ResetProgram()
+    content.vb: Sub ResetProgram()
+  overload: BOOSE.IStoredProgram.ResetProgram*
+- uid: BOOSE.IStoredProgram.Commandsleft
+  commentId: M:BOOSE.IStoredProgram.Commandsleft
+  id: Commandsleft
+  parent: BOOSE.IStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: Commandsleft()
+  nameWithType: IStoredProgram.Commandsleft()
+  fullName: BOOSE.IStoredProgram.Commandsleft()
+  type: Method
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: bool Commandsleft()
+    return:
+      type: System.Boolean
+    content.vb: Function Commandsleft() As Boolean
+  overload: BOOSE.IStoredProgram.Commandsleft*
+- uid: BOOSE.IStoredProgram.Run
+  commentId: M:BOOSE.IStoredProgram.Run
+  id: Run
+  parent: BOOSE.IStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: Run()
+  nameWithType: IStoredProgram.Run()
+  fullName: BOOSE.IStoredProgram.Run()
+  type: Method
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: void Run()
+    content.vb: Sub Run()
+  overload: BOOSE.IStoredProgram.Run*
+- uid: BOOSE.IStoredProgram.PC
+  commentId: P:BOOSE.IStoredProgram.PC
+  id: PC
+  parent: BOOSE.IStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: PC
+  nameWithType: IStoredProgram.PC
+  fullName: BOOSE.IStoredProgram.PC
+  type: Property
+  assemblies:
+  - BOOSE
+  namespace: BOOSE
+  syntax:
+    content: int PC { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property PC As Integer
+  overload: BOOSE.IStoredProgram.PC*
+references:
+- uid: BOOSE
+  commentId: N:BOOSE
+  isExternal: true
+  href: BOOSE.html
+  name: BOOSE
+  nameWithType: BOOSE
+  fullName: BOOSE
+- uid: BOOSE.IStoredProgram.AddVariable*
+  commentId: Overload:BOOSE.IStoredProgram.AddVariable
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_AddVariable_BOOSE_Evaluation_
+  name: AddVariable
+  nameWithType: IStoredProgram.AddVariable
+  fullName: BOOSE.IStoredProgram.AddVariable
+- uid: BOOSE.Evaluation
+  commentId: T:BOOSE.Evaluation
+  parent: BOOSE
+  isExternal: true
+  href: BOOSE.Evaluation.html
+  name: Evaluation
+  nameWithType: Evaluation
+  fullName: BOOSE.Evaluation
+- uid: BOOSE.IStoredProgram.VariableExists*
+  commentId: Overload:BOOSE.IStoredProgram.VariableExists
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_VariableExists_System_String_
+  name: VariableExists
+  nameWithType: IStoredProgram.VariableExists
+  fullName: BOOSE.IStoredProgram.VariableExists
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSE.IStoredProgram.GetVarValue*
+  commentId: Overload:BOOSE.IStoredProgram.GetVarValue
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_GetVarValue_System_String_
+  name: GetVarValue
+  nameWithType: IStoredProgram.GetVarValue
+  fullName: BOOSE.IStoredProgram.GetVarValue
+- uid: BOOSE.IStoredProgram.IsExpression*
+  commentId: Overload:BOOSE.IStoredProgram.IsExpression
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_IsExpression_System_String_
+  name: IsExpression
+  nameWithType: IStoredProgram.IsExpression
+  fullName: BOOSE.IStoredProgram.IsExpression
+- uid: BOOSE.IStoredProgram.EvaluateExpression*
+  commentId: Overload:BOOSE.IStoredProgram.EvaluateExpression
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_EvaluateExpression_System_String_
+  name: EvaluateExpression
+  nameWithType: IStoredProgram.EvaluateExpression
+  fullName: BOOSE.IStoredProgram.EvaluateExpression
+- uid: BOOSE.IStoredProgram.Add*
+  commentId: Overload:BOOSE.IStoredProgram.Add
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_Add_BOOSE_Command_
+  name: Add
+  nameWithType: IStoredProgram.Add
+  fullName: BOOSE.IStoredProgram.Add
+- uid: BOOSE.Command
+  commentId: T:BOOSE.Command
+  parent: BOOSE
+  isExternal: true
+  href: BOOSE.Command.html
+  name: Command
+  nameWithType: Command
+  fullName: BOOSE.Command
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: BOOSE.IStoredProgram.ResetProgram*
+  commentId: Overload:BOOSE.IStoredProgram.ResetProgram
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_ResetProgram
+  name: ResetProgram
+  nameWithType: IStoredProgram.ResetProgram
+  fullName: BOOSE.IStoredProgram.ResetProgram
+- uid: BOOSE.IStoredProgram.Commandsleft*
+  commentId: Overload:BOOSE.IStoredProgram.Commandsleft
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_Commandsleft
+  name: Commandsleft
+  nameWithType: IStoredProgram.Commandsleft
+  fullName: BOOSE.IStoredProgram.Commandsleft
+- uid: BOOSE.IStoredProgram.Run*
+  commentId: Overload:BOOSE.IStoredProgram.Run
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_Run
+  name: Run
+  nameWithType: IStoredProgram.Run
+  fullName: BOOSE.IStoredProgram.Run
+- uid: BOOSE.IStoredProgram.PC*
+  commentId: Overload:BOOSE.IStoredProgram.PC
+  isExternal: true
+  href: BOOSE.IStoredProgram.html#BOOSE_IStoredProgram_PC
+  name: PC
+  nameWithType: IStoredProgram.PC
+  fullName: BOOSE.IStoredProgram.PC

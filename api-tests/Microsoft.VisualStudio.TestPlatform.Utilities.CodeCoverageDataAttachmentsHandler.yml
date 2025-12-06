@@ -1,0 +1,1127 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler
+  commentId: T:Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler
+  id: CodeCoverageDataAttachmentsHandler
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities
+  children:
+  - Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.#ctor
+  - Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.GetExtensionUris
+  - Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.ProcessAttachmentSetsAsync(System.Xml.XmlElement,System.Collections.Generic.ICollection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet},System.IProgress{System.Int32},Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,System.Threading.CancellationToken)
+  - Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.SupportsIncrementalProcessing
+  langs:
+  - csharp
+  - vb
+  name: CodeCoverageDataAttachmentsHandler
+  nameWithType: CodeCoverageDataAttachmentsHandler
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler
+  type: Class
+  assemblies:
+  - Microsoft.TestPlatform.Utilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities
+  syntax:
+    content: 'public class CodeCoverageDataAttachmentsHandler : IDataCollectorAttachmentProcessor'
+    content.vb: Public Class CodeCoverageDataAttachmentsHandler Implements IDataCollectorAttachmentProcessor
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.GetExtensionUris
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.GetExtensionUris
+  id: GetExtensionUris
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler
+  langs:
+  - csharp
+  - vb
+  name: GetExtensionUris()
+  nameWithType: CodeCoverageDataAttachmentsHandler.GetExtensionUris()
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.GetExtensionUris()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.Utilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities
+  example: []
+  syntax:
+    content: public IEnumerable<Uri>? GetExtensionUris()
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Uri}
+    content.vb: Public Function GetExtensionUris() As IEnumerable(Of Uri)
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.GetExtensionUris*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.GetExtensionUris
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.ProcessAttachmentSetsAsync(System.Xml.XmlElement,System.Collections.Generic.ICollection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet},System.IProgress{System.Int32},Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,System.Threading.CancellationToken)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.ProcessAttachmentSetsAsync(System.Xml.XmlElement,System.Collections.Generic.ICollection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet},System.IProgress{System.Int32},Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,System.Threading.CancellationToken)
+  id: ProcessAttachmentSetsAsync(System.Xml.XmlElement,System.Collections.Generic.ICollection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet},System.IProgress{System.Int32},Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,System.Threading.CancellationToken)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler
+  langs:
+  - csharp
+  - vb
+  name: ProcessAttachmentSetsAsync(XmlElement, ICollection<AttachmentSet>?, IProgress<int>, IMessageLogger?, CancellationToken)
+  nameWithType: CodeCoverageDataAttachmentsHandler.ProcessAttachmentSetsAsync(XmlElement, ICollection<AttachmentSet>?, IProgress<int>, IMessageLogger?, CancellationToken)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.ProcessAttachmentSetsAsync(System.Xml.XmlElement, System.Collections.Generic.ICollection<Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet>?, System.IProgress<int>, Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger?, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.Utilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities
+  example: []
+  syntax:
+    content: public Task<ICollection<AttachmentSet>> ProcessAttachmentSetsAsync(XmlElement configurationElement, ICollection<AttachmentSet>? attachments, IProgress<int> progressReporter, IMessageLogger? logger, CancellationToken cancellationToken)
+    parameters:
+    - id: configurationElement
+      type: System.Xml.XmlElement
+    - id: attachments
+      type: System.Collections.Generic.ICollection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet}
+    - id: progressReporter
+      type: System.IProgress{System.Int32}
+    - id: logger
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.ICollection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet}}
+    content.vb: Public Function ProcessAttachmentSetsAsync(configurationElement As XmlElement, attachments As ICollection(Of AttachmentSet), progressReporter As IProgress(Of Integer), logger As IMessageLogger, cancellationToken As CancellationToken) As Task(Of ICollection(Of AttachmentSet))
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.ProcessAttachmentSetsAsync*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.ProcessAttachmentSetsAsync(System.Xml.XmlElement,System.Collections.Generic.ICollection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet},System.IProgress{System.Int32},Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,System.Threading.CancellationToken)
+  nameWithType.vb: CodeCoverageDataAttachmentsHandler.ProcessAttachmentSetsAsync(XmlElement, ICollection(Of AttachmentSet), IProgress(Of Integer), IMessageLogger, CancellationToken)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.ProcessAttachmentSetsAsync(System.Xml.XmlElement, System.Collections.Generic.ICollection(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet), System.IProgress(Of Integer), Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger, System.Threading.CancellationToken)
+  name.vb: ProcessAttachmentSetsAsync(XmlElement, ICollection(Of AttachmentSet), IProgress(Of Integer), IMessageLogger, CancellationToken)
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.#ctor
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.#ctor
+  id: '#ctor'
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler
+  langs:
+  - csharp
+  - vb
+  name: CodeCoverageDataAttachmentsHandler()
+  nameWithType: CodeCoverageDataAttachmentsHandler.CodeCoverageDataAttachmentsHandler()
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.CodeCoverageDataAttachmentsHandler()
+  type: Constructor
+  assemblies:
+  - Microsoft.TestPlatform.Utilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities
+  syntax:
+    content: public CodeCoverageDataAttachmentsHandler()
+    content.vb: Public Sub New()
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.#ctor*
+  nameWithType.vb: CodeCoverageDataAttachmentsHandler.New()
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.New()
+  name.vb: New()
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.SupportsIncrementalProcessing
+  commentId: P:Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.SupportsIncrementalProcessing
+  id: SupportsIncrementalProcessing
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler
+  langs:
+  - csharp
+  - vb
+  name: SupportsIncrementalProcessing
+  nameWithType: CodeCoverageDataAttachmentsHandler.SupportsIncrementalProcessing
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.SupportsIncrementalProcessing
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.Utilities
+  namespace: Microsoft.VisualStudio.TestPlatform.Utilities
+  example: []
+  syntax:
+    content: public bool SupportsIncrementalProcessing { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property SupportsIncrementalProcessing As Boolean
+  overload: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.SupportsIncrementalProcessing*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.SupportsIncrementalProcessing
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities
+  commentId: N:Microsoft.VisualStudio.TestPlatform.Utilities
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.Utilities
+  nameWithType: Microsoft.VisualStudio.TestPlatform.Utilities
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities
+    name: Utilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities
+    name: Utilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.html
+  name: IDataCollectorAttachmentProcessor
+  nameWithType: IDataCollectorAttachmentProcessor
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+    name: DataCollection
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection
+    name: DataCollection
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.html
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.GetExtensionUris*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.GetExtensionUris
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.html#Microsoft_VisualStudio_TestPlatform_Utilities_CodeCoverageDataAttachmentsHandler_GetExtensionUris
+  name: GetExtensionUris
+  nameWithType: CodeCoverageDataAttachmentsHandler.GetExtensionUris
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.GetExtensionUris
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.GetExtensionUris
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.GetExtensionUris
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor
+  isExternal: true
+  name: GetExtensionUris()
+  nameWithType: IDataCollectorAttachmentProcessor.GetExtensionUris()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.GetExtensionUris()
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.GetExtensionUris
+    name: GetExtensionUris
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.GetExtensionUris
+    name: GetExtensionUris
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Uri}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Uri}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Uri>
+  nameWithType: IEnumerable<Uri>
+  fullName: System.Collections.Generic.IEnumerable<System.Uri>
+  nameWithType.vb: IEnumerable(Of Uri)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Uri)
+  name.vb: IEnumerable(Of Uri)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Uri
+    name: Uri
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.ProcessAttachmentSetsAsync*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.ProcessAttachmentSetsAsync
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.html#Microsoft_VisualStudio_TestPlatform_Utilities_CodeCoverageDataAttachmentsHandler_ProcessAttachmentSetsAsync_System_Xml_XmlElement_System_Collections_Generic_ICollection_Microsoft_VisualStudio_TestPlatform_ObjectModel_AttachmentSet__System_IProgress_System_Int32__Microsoft_VisualStudio_TestPlatform_ObjectModel_Logging_IMessageLogger_System_Threading_CancellationToken_
+  name: ProcessAttachmentSetsAsync
+  nameWithType: CodeCoverageDataAttachmentsHandler.ProcessAttachmentSetsAsync
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.ProcessAttachmentSetsAsync
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.ProcessAttachmentSetsAsync(System.Xml.XmlElement,System.Collections.Generic.ICollection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet},System.IProgress{System.Int32},Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,System.Threading.CancellationToken)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.ProcessAttachmentSetsAsync(System.Xml.XmlElement,System.Collections.Generic.ICollection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet},System.IProgress{System.Int32},Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,System.Threading.CancellationToken)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ProcessAttachmentSetsAsync(XmlElement, ICollection<AttachmentSet>, IProgress<int>, IMessageLogger, CancellationToken)
+  nameWithType: IDataCollectorAttachmentProcessor.ProcessAttachmentSetsAsync(XmlElement, ICollection<AttachmentSet>, IProgress<int>, IMessageLogger, CancellationToken)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.ProcessAttachmentSetsAsync(System.Xml.XmlElement, System.Collections.Generic.ICollection<Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet>, System.IProgress<int>, Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger, System.Threading.CancellationToken)
+  nameWithType.vb: IDataCollectorAttachmentProcessor.ProcessAttachmentSetsAsync(XmlElement, ICollection(Of AttachmentSet), IProgress(Of Integer), IMessageLogger, CancellationToken)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.ProcessAttachmentSetsAsync(System.Xml.XmlElement, System.Collections.Generic.ICollection(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet), System.IProgress(Of Integer), Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger, System.Threading.CancellationToken)
+  name.vb: ProcessAttachmentSetsAsync(XmlElement, ICollection(Of AttachmentSet), IProgress(Of Integer), IMessageLogger, CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.ProcessAttachmentSetsAsync(System.Xml.XmlElement,System.Collections.Generic.ICollection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet},System.IProgress{System.Int32},Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,System.Threading.CancellationToken)
+    name: ProcessAttachmentSetsAsync
+    isExternal: true
+  - name: (
+  - uid: System.Xml.XmlElement
+    name: XmlElement
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet
+    name: AttachmentSet
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger
+    name: IMessageLogger
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.ProcessAttachmentSetsAsync(System.Xml.XmlElement,System.Collections.Generic.ICollection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet},System.IProgress{System.Int32},Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,System.Threading.CancellationToken)
+    name: ProcessAttachmentSetsAsync
+    isExternal: true
+  - name: (
+  - uid: System.Xml.XmlElement
+    name: XmlElement
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet
+    name: AttachmentSet
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger
+    name: IMessageLogger
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Xml.XmlElement
+  commentId: T:System.Xml.XmlElement
+  parent: System.Xml
+  isExternal: true
+  name: XmlElement
+  nameWithType: XmlElement
+  fullName: System.Xml.XmlElement
+- uid: System.Collections.Generic.ICollection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet}
+  commentId: T:System.Collections.Generic.ICollection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<AttachmentSet>
+  nameWithType: ICollection<AttachmentSet>
+  fullName: System.Collections.Generic.ICollection<Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet>
+  nameWithType.vb: ICollection(Of AttachmentSet)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet)
+  name.vb: ICollection(Of AttachmentSet)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet
+    name: AttachmentSet
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet
+    name: AttachmentSet
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet.html
+  - name: )
+- uid: System.IProgress{System.Int32}
+  commentId: T:System.IProgress{System.Int32}
+  parent: System
+  definition: System.IProgress`1
+  href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  name: IProgress<int>
+  nameWithType: IProgress<int>
+  fullName: System.IProgress<int>
+  nameWithType.vb: IProgress(Of Integer)
+  fullName.vb: System.IProgress(Of Integer)
+  name.vb: IProgress(Of Integer)
+  spec.csharp:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger.html
+  name: IMessageLogger
+  nameWithType: IMessageLogger
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.ICollection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.ICollection{Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ICollection<AttachmentSet>>
+  nameWithType: Task<ICollection<AttachmentSet>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet>>
+  nameWithType.vb: Task(Of ICollection(Of AttachmentSet))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.ICollection(Of Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet))
+  name.vb: Task(Of ICollection(Of AttachmentSet))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet
+    name: AttachmentSet
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet
+    name: AttachmentSet
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.AttachmentSet.html
+  - name: )
+  - name: )
+- uid: System.Xml
+  commentId: N:System.Xml
+  isExternal: true
+  name: System.Xml
+  nameWithType: System.Xml
+  fullName: System.Xml
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Xml
+    name: Xml
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Xml
+    name: Xml
+    isExternal: true
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IProgress`1
+  commentId: T:System.IProgress`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  name: IProgress<T>
+  nameWithType: IProgress<T>
+  fullName: System.IProgress<T>
+  nameWithType.vb: IProgress(Of T)
+  fullName.vb: System.IProgress(Of T)
+  name.vb: IProgress(Of T)
+  spec.csharp:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.html#Microsoft_VisualStudio_TestPlatform_Utilities_CodeCoverageDataAttachmentsHandler__ctor
+  name: CodeCoverageDataAttachmentsHandler
+  nameWithType: CodeCoverageDataAttachmentsHandler.CodeCoverageDataAttachmentsHandler
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.CodeCoverageDataAttachmentsHandler
+  nameWithType.vb: CodeCoverageDataAttachmentsHandler.New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.New
+  name.vb: New
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.SupportsIncrementalProcessing*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.SupportsIncrementalProcessing
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.html#Microsoft_VisualStudio_TestPlatform_Utilities_CodeCoverageDataAttachmentsHandler_SupportsIncrementalProcessing
+  name: SupportsIncrementalProcessing
+  nameWithType: CodeCoverageDataAttachmentsHandler.SupportsIncrementalProcessing
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.CodeCoverageDataAttachmentsHandler.SupportsIncrementalProcessing
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.SupportsIncrementalProcessing
+  commentId: P:Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.SupportsIncrementalProcessing
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor
+  isExternal: true
+  name: SupportsIncrementalProcessing
+  nameWithType: IDataCollectorAttachmentProcessor.SupportsIncrementalProcessing
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.IDataCollectorAttachmentProcessor.SupportsIncrementalProcessing
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

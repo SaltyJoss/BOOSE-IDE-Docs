@@ -1,0 +1,1358 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.ApplicationInsights.Channel.Transmission
+  commentId: T:Microsoft.ApplicationInsights.Channel.Transmission
+  id: Transmission
+  parent: Microsoft.ApplicationInsights.Channel
+  children:
+  - Microsoft.ApplicationInsights.Channel.Transmission.#ctor
+  - Microsoft.ApplicationInsights.Channel.Transmission.#ctor(System.Uri,System.Byte[],System.String,System.String,System.TimeSpan)
+  - Microsoft.ApplicationInsights.Channel.Transmission.#ctor(System.Uri,System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Channel.ITelemetry},System.TimeSpan)
+  - Microsoft.ApplicationInsights.Channel.Transmission.Content
+  - Microsoft.ApplicationInsights.Channel.Transmission.ContentEncoding
+  - Microsoft.ApplicationInsights.Channel.Transmission.ContentType
+  - Microsoft.ApplicationInsights.Channel.Transmission.CreateRequest(System.Uri)
+  - Microsoft.ApplicationInsights.Channel.Transmission.CreateRequestMessage(System.Uri,System.IO.Stream)
+  - Microsoft.ApplicationInsights.Channel.Transmission.EndpointAddress
+  - Microsoft.ApplicationInsights.Channel.Transmission.Id
+  - Microsoft.ApplicationInsights.Channel.Transmission.SendAsync
+  - Microsoft.ApplicationInsights.Channel.Transmission.Split(System.Func{System.Int32,System.Int32})
+  - Microsoft.ApplicationInsights.Channel.Transmission.TelemetryItems
+  - Microsoft.ApplicationInsights.Channel.Transmission.Timeout
+  - Microsoft.ApplicationInsights.Channel.Transmission.TransmissionStatusEvent
+  langs:
+  - csharp
+  - vb
+  name: Transmission
+  nameWithType: Transmission
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission
+  type: Class
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: public class Transmission
+    content.vb: Public Class Transmission
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.#ctor(System.Uri,System.Byte[],System.String,System.String,System.TimeSpan)
+  commentId: M:Microsoft.ApplicationInsights.Channel.Transmission.#ctor(System.Uri,System.Byte[],System.String,System.String,System.TimeSpan)
+  id: '#ctor(System.Uri,System.Byte[],System.String,System.String,System.TimeSpan)'
+  parent: Microsoft.ApplicationInsights.Channel.Transmission
+  langs:
+  - csharp
+  - vb
+  name: Transmission(Uri, byte[], string, string, TimeSpan)
+  nameWithType: Transmission.Transmission(Uri, byte[], string, string, TimeSpan)
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.Transmission(System.Uri, byte[], string, string, System.TimeSpan)
+  type: Constructor
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: public Transmission(Uri address, byte[] content, string contentType, string contentEncoding, TimeSpan timeout = default)
+    parameters:
+    - id: address
+      type: System.Uri
+    - id: content
+      type: System.Byte[]
+    - id: contentType
+      type: System.String
+    - id: contentEncoding
+      type: System.String
+    - id: timeout
+      type: System.TimeSpan
+    content.vb: Public Sub New(address As Uri, content As Byte(), contentType As String, contentEncoding As String, timeout As TimeSpan = Nothing)
+  overload: Microsoft.ApplicationInsights.Channel.Transmission.#ctor*
+  nameWithType.vb: Transmission.New(Uri, Byte(), String, String, TimeSpan)
+  fullName.vb: Microsoft.ApplicationInsights.Channel.Transmission.New(System.Uri, Byte(), String, String, System.TimeSpan)
+  name.vb: New(Uri, Byte(), String, String, TimeSpan)
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.#ctor(System.Uri,System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Channel.ITelemetry},System.TimeSpan)
+  commentId: M:Microsoft.ApplicationInsights.Channel.Transmission.#ctor(System.Uri,System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Channel.ITelemetry},System.TimeSpan)
+  id: '#ctor(System.Uri,System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Channel.ITelemetry},System.TimeSpan)'
+  parent: Microsoft.ApplicationInsights.Channel.Transmission
+  langs:
+  - csharp
+  - vb
+  name: Transmission(Uri, ICollection<ITelemetry>, TimeSpan)
+  nameWithType: Transmission.Transmission(Uri, ICollection<ITelemetry>, TimeSpan)
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.Transmission(System.Uri, System.Collections.Generic.ICollection<Microsoft.ApplicationInsights.Channel.ITelemetry>, System.TimeSpan)
+  type: Constructor
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: public Transmission(Uri address, ICollection<ITelemetry> telemetryItems, TimeSpan timeout = default)
+    parameters:
+    - id: address
+      type: System.Uri
+    - id: telemetryItems
+      type: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Channel.ITelemetry}
+    - id: timeout
+      type: System.TimeSpan
+    content.vb: Public Sub New(address As Uri, telemetryItems As ICollection(Of ITelemetry), timeout As TimeSpan = Nothing)
+  overload: Microsoft.ApplicationInsights.Channel.Transmission.#ctor*
+  nameWithType.vb: Transmission.New(Uri, ICollection(Of ITelemetry), TimeSpan)
+  fullName.vb: Microsoft.ApplicationInsights.Channel.Transmission.New(System.Uri, System.Collections.Generic.ICollection(Of Microsoft.ApplicationInsights.Channel.ITelemetry), System.TimeSpan)
+  name.vb: New(Uri, ICollection(Of ITelemetry), TimeSpan)
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.#ctor
+  commentId: M:Microsoft.ApplicationInsights.Channel.Transmission.#ctor
+  id: '#ctor'
+  parent: Microsoft.ApplicationInsights.Channel.Transmission
+  langs:
+  - csharp
+  - vb
+  name: Transmission()
+  nameWithType: Transmission.Transmission()
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.Transmission()
+  type: Constructor
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: protected Transmission()
+    content.vb: Protected Sub New()
+  overload: Microsoft.ApplicationInsights.Channel.Transmission.#ctor*
+  nameWithType.vb: Transmission.New()
+  fullName.vb: Microsoft.ApplicationInsights.Channel.Transmission.New()
+  name.vb: New()
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.SendAsync
+  commentId: M:Microsoft.ApplicationInsights.Channel.Transmission.SendAsync
+  id: SendAsync
+  parent: Microsoft.ApplicationInsights.Channel.Transmission
+  langs:
+  - csharp
+  - vb
+  name: SendAsync()
+  nameWithType: Transmission.SendAsync()
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.SendAsync()
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: public virtual Task<HttpWebResponseWrapper> SendAsync()
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.ApplicationInsights.Extensibility.Implementation.HttpWebResponseWrapper}
+    content.vb: Public Overridable Function SendAsync() As Task(Of HttpWebResponseWrapper)
+  overload: Microsoft.ApplicationInsights.Channel.Transmission.SendAsync*
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.Split(System.Func{System.Int32,System.Int32})
+  commentId: M:Microsoft.ApplicationInsights.Channel.Transmission.Split(System.Func{System.Int32,System.Int32})
+  id: Split(System.Func{System.Int32,System.Int32})
+  parent: Microsoft.ApplicationInsights.Channel.Transmission
+  langs:
+  - csharp
+  - vb
+  name: Split(Func<int, int>)
+  nameWithType: Transmission.Split(Func<int, int>)
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.Split(System.Func<int, int>)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: public virtual Tuple<Transmission, Transmission> Split(Func<int, int> calculateLength)
+    parameters:
+    - id: calculateLength
+      type: System.Func{System.Int32,System.Int32}
+    return:
+      type: System.Tuple{Microsoft.ApplicationInsights.Channel.Transmission,Microsoft.ApplicationInsights.Channel.Transmission}
+    content.vb: Public Overridable Function Split(calculateLength As Func(Of Integer, Integer)) As Tuple(Of Transmission, Transmission)
+  overload: Microsoft.ApplicationInsights.Channel.Transmission.Split*
+  nameWithType.vb: Transmission.Split(Func(Of Integer, Integer))
+  fullName.vb: Microsoft.ApplicationInsights.Channel.Transmission.Split(System.Func(Of Integer, Integer))
+  name.vb: Split(Func(Of Integer, Integer))
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.CreateRequestMessage(System.Uri,System.IO.Stream)
+  commentId: M:Microsoft.ApplicationInsights.Channel.Transmission.CreateRequestMessage(System.Uri,System.IO.Stream)
+  id: CreateRequestMessage(System.Uri,System.IO.Stream)
+  parent: Microsoft.ApplicationInsights.Channel.Transmission
+  langs:
+  - csharp
+  - vb
+  name: CreateRequestMessage(Uri, Stream)
+  nameWithType: Transmission.CreateRequestMessage(Uri, Stream)
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.CreateRequestMessage(System.Uri, System.IO.Stream)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: protected virtual HttpRequestMessage CreateRequestMessage(Uri address, Stream contentStream)
+    parameters:
+    - id: address
+      type: System.Uri
+    - id: contentStream
+      type: System.IO.Stream
+    return:
+      type: System.Net.Http.HttpRequestMessage
+    content.vb: Protected Overridable Function CreateRequestMessage(address As Uri, contentStream As Stream) As HttpRequestMessage
+  overload: Microsoft.ApplicationInsights.Channel.Transmission.CreateRequestMessage*
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.CreateRequest(System.Uri)
+  commentId: M:Microsoft.ApplicationInsights.Channel.Transmission.CreateRequest(System.Uri)
+  id: CreateRequest(System.Uri)
+  parent: Microsoft.ApplicationInsights.Channel.Transmission
+  langs:
+  - csharp
+  - vb
+  name: CreateRequest(Uri)
+  nameWithType: Transmission.CreateRequest(Uri)
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.CreateRequest(System.Uri)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: >-
+      [Obsolete("Use CreateRequestMessage instead as SendAsync is now using HttpClient to send HttpRequest.")]
+
+      protected virtual WebRequest CreateRequest(Uri address)
+    parameters:
+    - id: address
+      type: System.Uri
+    return:
+      type: System.Net.WebRequest
+    content.vb: >-
+      <Obsolete("Use CreateRequestMessage instead as SendAsync is now using HttpClient to send HttpRequest.")>
+
+      Protected Overridable Function CreateRequest(address As Uri) As WebRequest
+  overload: Microsoft.ApplicationInsights.Channel.Transmission.CreateRequest*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use CreateRequestMessage instead as SendAsync is now using HttpClient to send HttpRequest.
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.TransmissionStatusEvent
+  commentId: P:Microsoft.ApplicationInsights.Channel.Transmission.TransmissionStatusEvent
+  id: TransmissionStatusEvent
+  parent: Microsoft.ApplicationInsights.Channel.Transmission
+  langs:
+  - csharp
+  - vb
+  name: TransmissionStatusEvent
+  nameWithType: Transmission.TransmissionStatusEvent
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.TransmissionStatusEvent
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: public EventHandler<TransmissionStatusEventArgs> TransmissionStatusEvent { get; set; }
+    parameters: []
+    return:
+      type: System.EventHandler{Microsoft.ApplicationInsights.Channel.TransmissionStatusEventArgs}
+    content.vb: Public Property TransmissionStatusEvent As EventHandler(Of TransmissionStatusEventArgs)
+  overload: Microsoft.ApplicationInsights.Channel.Transmission.TransmissionStatusEvent*
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.EndpointAddress
+  commentId: P:Microsoft.ApplicationInsights.Channel.Transmission.EndpointAddress
+  id: EndpointAddress
+  parent: Microsoft.ApplicationInsights.Channel.Transmission
+  langs:
+  - csharp
+  - vb
+  name: EndpointAddress
+  nameWithType: Transmission.EndpointAddress
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.EndpointAddress
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: public Uri EndpointAddress { get; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Public ReadOnly Property EndpointAddress As Uri
+  overload: Microsoft.ApplicationInsights.Channel.Transmission.EndpointAddress*
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.Content
+  commentId: P:Microsoft.ApplicationInsights.Channel.Transmission.Content
+  id: Content
+  parent: Microsoft.ApplicationInsights.Channel.Transmission
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: Transmission.Content
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.Content
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: public byte[] Content { get; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public ReadOnly Property Content As Byte()
+  overload: Microsoft.ApplicationInsights.Channel.Transmission.Content*
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.ContentType
+  commentId: P:Microsoft.ApplicationInsights.Channel.Transmission.ContentType
+  id: ContentType
+  parent: Microsoft.ApplicationInsights.Channel.Transmission
+  langs:
+  - csharp
+  - vb
+  name: ContentType
+  nameWithType: Transmission.ContentType
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.ContentType
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: public string ContentType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ContentType As String
+  overload: Microsoft.ApplicationInsights.Channel.Transmission.ContentType*
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.ContentEncoding
+  commentId: P:Microsoft.ApplicationInsights.Channel.Transmission.ContentEncoding
+  id: ContentEncoding
+  parent: Microsoft.ApplicationInsights.Channel.Transmission
+  langs:
+  - csharp
+  - vb
+  name: ContentEncoding
+  nameWithType: Transmission.ContentEncoding
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.ContentEncoding
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: public string ContentEncoding { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ContentEncoding As String
+  overload: Microsoft.ApplicationInsights.Channel.Transmission.ContentEncoding*
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.Timeout
+  commentId: P:Microsoft.ApplicationInsights.Channel.Transmission.Timeout
+  id: Timeout
+  parent: Microsoft.ApplicationInsights.Channel.Transmission
+  langs:
+  - csharp
+  - vb
+  name: Timeout
+  nameWithType: Transmission.Timeout
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.Timeout
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: public TimeSpan Timeout { get; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public ReadOnly Property Timeout As TimeSpan
+  overload: Microsoft.ApplicationInsights.Channel.Transmission.Timeout*
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.Id
+  commentId: P:Microsoft.ApplicationInsights.Channel.Transmission.Id
+  id: Id
+  parent: Microsoft.ApplicationInsights.Channel.Transmission
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Transmission.Id
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.Id
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: public string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Id As String
+  overload: Microsoft.ApplicationInsights.Channel.Transmission.Id*
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.TelemetryItems
+  commentId: P:Microsoft.ApplicationInsights.Channel.Transmission.TelemetryItems
+  id: TelemetryItems
+  parent: Microsoft.ApplicationInsights.Channel.Transmission
+  langs:
+  - csharp
+  - vb
+  name: TelemetryItems
+  nameWithType: Transmission.TelemetryItems
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.TelemetryItems
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.Channel
+  syntax:
+    content: public ICollection<ITelemetry> TelemetryItems { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Channel.ITelemetry}
+    content.vb: Public ReadOnly Property TelemetryItems As ICollection(Of ITelemetry)
+  overload: Microsoft.ApplicationInsights.Channel.Transmission.TelemetryItems*
+references:
+- uid: Microsoft.ApplicationInsights.Channel
+  commentId: N:Microsoft.ApplicationInsights.Channel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Channel
+  nameWithType: Microsoft.ApplicationInsights.Channel
+  fullName: Microsoft.ApplicationInsights.Channel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Channel
+    name: Channel
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Channel
+    name: Channel
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.#ctor*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.Transmission.#ctor
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.Transmission.html#Microsoft_ApplicationInsights_Channel_Transmission__ctor_System_Uri_System_Byte___System_String_System_String_System_TimeSpan_
+  name: Transmission
+  nameWithType: Transmission.Transmission
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.Transmission
+  nameWithType.vb: Transmission.New
+  fullName.vb: Microsoft.ApplicationInsights.Channel.Transmission.New
+  name.vb: New
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Channel.ITelemetry}
+  commentId: T:System.Collections.Generic.ICollection{Microsoft.ApplicationInsights.Channel.ITelemetry}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<ITelemetry>
+  nameWithType: ICollection<ITelemetry>
+  fullName: System.Collections.Generic.ICollection<Microsoft.ApplicationInsights.Channel.ITelemetry>
+  nameWithType.vb: ICollection(Of ITelemetry)
+  fullName.vb: System.Collections.Generic.ICollection(Of Microsoft.ApplicationInsights.Channel.ITelemetry)
+  name.vb: ICollection(Of ITelemetry)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: Microsoft.ApplicationInsights.Channel.ITelemetry
+    name: ITelemetry
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.ITelemetry.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.ApplicationInsights.Channel.ITelemetry
+    name: ITelemetry
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.ITelemetry.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.SendAsync*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.Transmission.SendAsync
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.Transmission.html#Microsoft_ApplicationInsights_Channel_Transmission_SendAsync
+  name: SendAsync
+  nameWithType: Transmission.SendAsync
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.SendAsync
+- uid: System.Threading.Tasks.Task{Microsoft.ApplicationInsights.Extensibility.Implementation.HttpWebResponseWrapper}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.ApplicationInsights.Extensibility.Implementation.HttpWebResponseWrapper}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<HttpWebResponseWrapper>
+  nameWithType: Task<HttpWebResponseWrapper>
+  fullName: System.Threading.Tasks.Task<Microsoft.ApplicationInsights.Extensibility.Implementation.HttpWebResponseWrapper>
+  nameWithType.vb: Task(Of HttpWebResponseWrapper)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.ApplicationInsights.Extensibility.Implementation.HttpWebResponseWrapper)
+  name.vb: Task(Of HttpWebResponseWrapper)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.HttpWebResponseWrapper
+    name: HttpWebResponseWrapper
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.HttpWebResponseWrapper.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation.HttpWebResponseWrapper
+    name: HttpWebResponseWrapper
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.HttpWebResponseWrapper.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.Split*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.Transmission.Split
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.Transmission.html#Microsoft_ApplicationInsights_Channel_Transmission_Split_System_Func_System_Int32_System_Int32__
+  name: Split
+  nameWithType: Transmission.Split
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.Split
+- uid: System.Func{System.Int32,System.Int32}
+  commentId: T:System.Func{System.Int32,System.Int32}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<int, int>
+  nameWithType: Func<int, int>
+  fullName: System.Func<int, int>
+  nameWithType.vb: Func(Of Integer, Integer)
+  fullName.vb: System.Func(Of Integer, Integer)
+  name.vb: Func(Of Integer, Integer)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Tuple{Microsoft.ApplicationInsights.Channel.Transmission,Microsoft.ApplicationInsights.Channel.Transmission}
+  commentId: T:System.Tuple{Microsoft.ApplicationInsights.Channel.Transmission,Microsoft.ApplicationInsights.Channel.Transmission}
+  parent: System
+  definition: System.Tuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  name: Tuple<Transmission, Transmission>
+  nameWithType: Tuple<Transmission, Transmission>
+  fullName: System.Tuple<Microsoft.ApplicationInsights.Channel.Transmission, Microsoft.ApplicationInsights.Channel.Transmission>
+  nameWithType.vb: Tuple(Of Transmission, Transmission)
+  fullName.vb: System.Tuple(Of Microsoft.ApplicationInsights.Channel.Transmission, Microsoft.ApplicationInsights.Channel.Transmission)
+  name.vb: Tuple(Of Transmission, Transmission)
+  spec.csharp:
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: <
+  - uid: Microsoft.ApplicationInsights.Channel.Transmission
+    name: Transmission
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.Transmission.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.ApplicationInsights.Channel.Transmission
+    name: Transmission
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.Transmission.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.ApplicationInsights.Channel.Transmission
+    name: Transmission
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.Transmission.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.ApplicationInsights.Channel.Transmission
+    name: Transmission
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.Transmission.html
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Tuple`2
+  commentId: T:System.Tuple`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  name: Tuple<T1, T2>
+  nameWithType: Tuple<T1, T2>
+  fullName: System.Tuple<T1, T2>
+  nameWithType.vb: Tuple(Of T1, T2)
+  fullName.vb: System.Tuple(Of T1, T2)
+  name.vb: Tuple(Of T1, T2)
+  spec.csharp:
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.CreateRequestMessage*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.Transmission.CreateRequestMessage
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.Transmission.html#Microsoft_ApplicationInsights_Channel_Transmission_CreateRequestMessage_System_Uri_System_IO_Stream_
+  name: CreateRequestMessage
+  nameWithType: Transmission.CreateRequestMessage
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.CreateRequestMessage
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.Net.Http.HttpRequestMessage
+  commentId: T:System.Net.Http.HttpRequestMessage
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage
+  name: HttpRequestMessage
+  nameWithType: HttpRequestMessage
+  fullName: System.Net.Http.HttpRequestMessage
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.CreateRequest*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.Transmission.CreateRequest
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.Transmission.html#Microsoft_ApplicationInsights_Channel_Transmission_CreateRequest_System_Uri_
+  name: CreateRequest
+  nameWithType: Transmission.CreateRequest
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.CreateRequest
+- uid: System.Net.WebRequest
+  commentId: T:System.Net.WebRequest
+  parent: System.Net
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.webrequest
+  name: WebRequest
+  nameWithType: WebRequest
+  fullName: System.Net.WebRequest
+- uid: System.Net
+  commentId: N:System.Net
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net
+  nameWithType: System.Net
+  fullName: System.Net
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.TransmissionStatusEvent*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.Transmission.TransmissionStatusEvent
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.Transmission.html#Microsoft_ApplicationInsights_Channel_Transmission_TransmissionStatusEvent
+  name: TransmissionStatusEvent
+  nameWithType: Transmission.TransmissionStatusEvent
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.TransmissionStatusEvent
+- uid: System.EventHandler{Microsoft.ApplicationInsights.Channel.TransmissionStatusEventArgs}
+  commentId: T:System.EventHandler{Microsoft.ApplicationInsights.Channel.TransmissionStatusEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TransmissionStatusEventArgs>
+  nameWithType: EventHandler<TransmissionStatusEventArgs>
+  fullName: System.EventHandler<Microsoft.ApplicationInsights.Channel.TransmissionStatusEventArgs>
+  nameWithType.vb: EventHandler(Of TransmissionStatusEventArgs)
+  fullName.vb: System.EventHandler(Of Microsoft.ApplicationInsights.Channel.TransmissionStatusEventArgs)
+  name.vb: EventHandler(Of TransmissionStatusEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: Microsoft.ApplicationInsights.Channel.TransmissionStatusEventArgs
+    name: TransmissionStatusEventArgs
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.TransmissionStatusEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.ApplicationInsights.Channel.TransmissionStatusEventArgs
+    name: TransmissionStatusEventArgs
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Channel.TransmissionStatusEventArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.EndpointAddress*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.Transmission.EndpointAddress
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.Transmission.html#Microsoft_ApplicationInsights_Channel_Transmission_EndpointAddress
+  name: EndpointAddress
+  nameWithType: Transmission.EndpointAddress
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.EndpointAddress
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.Content*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.Transmission.Content
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.Transmission.html#Microsoft_ApplicationInsights_Channel_Transmission_Content
+  name: Content
+  nameWithType: Transmission.Content
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.Content
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.ContentType*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.Transmission.ContentType
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.Transmission.html#Microsoft_ApplicationInsights_Channel_Transmission_ContentType
+  name: ContentType
+  nameWithType: Transmission.ContentType
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.ContentType
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.ContentEncoding*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.Transmission.ContentEncoding
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.Transmission.html#Microsoft_ApplicationInsights_Channel_Transmission_ContentEncoding
+  name: ContentEncoding
+  nameWithType: Transmission.ContentEncoding
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.ContentEncoding
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.Timeout*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.Transmission.Timeout
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.Transmission.html#Microsoft_ApplicationInsights_Channel_Transmission_Timeout
+  name: Timeout
+  nameWithType: Transmission.Timeout
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.Timeout
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.Id*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.Transmission.Id
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.Transmission.html#Microsoft_ApplicationInsights_Channel_Transmission_Id
+  name: Id
+  nameWithType: Transmission.Id
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.Id
+- uid: Microsoft.ApplicationInsights.Channel.Transmission.TelemetryItems*
+  commentId: Overload:Microsoft.ApplicationInsights.Channel.Transmission.TelemetryItems
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Channel.Transmission.html#Microsoft_ApplicationInsights_Channel_Transmission_TelemetryItems
+  name: TelemetryItems
+  nameWithType: Transmission.TelemetryItems
+  fullName: Microsoft.ApplicationInsights.Channel.Transmission.TelemetryItems

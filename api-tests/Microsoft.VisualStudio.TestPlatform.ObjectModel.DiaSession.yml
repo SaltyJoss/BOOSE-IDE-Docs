@@ -1,0 +1,687 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession
+  id: DiaSession
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  children:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.#ctor(System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.#ctor(System.String,System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.Dispose
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.Dispose(System.Boolean)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationData(System.String,System.String)
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationDataForMethod(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: DiaSession
+  nameWithType: DiaSession
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession
+  type: Class
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: 'public class DiaSession : INavigationSession, IDisposable'
+    content.vb: Public Class DiaSession Implements INavigationSession, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationSession
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.#ctor(System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession
+  langs:
+  - csharp
+  - vb
+  name: DiaSession(string)
+  nameWithType: DiaSession.DiaSession(string)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.DiaSession(string)
+  type: Constructor
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: public DiaSession(string binaryPath)
+    parameters:
+    - id: binaryPath
+      type: System.String
+    content.vb: Public Sub New(binaryPath As String)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.#ctor*
+  nameWithType.vb: DiaSession.New(String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.New(String)
+  name.vb: New(String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.#ctor(System.String,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession
+  langs:
+  - csharp
+  - vb
+  name: DiaSession(string, string?)
+  nameWithType: DiaSession.DiaSession(string, string?)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.DiaSession(string, string?)
+  type: Constructor
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: public DiaSession(string binaryPath, string? searchPath)
+    parameters:
+    - id: binaryPath
+      type: System.String
+    - id: searchPath
+      type: System.String
+    content.vb: Public Sub New(binaryPath As String, searchPath As String)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.#ctor*
+  nameWithType.vb: DiaSession.New(String, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.New(String, String)
+  name.vb: New(String, String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.Dispose
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.Dispose
+  id: Dispose
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: DiaSession.Dispose()
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.Dispose()
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.Dispose(System.Boolean)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: DiaSession.Dispose(bool)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.Dispose(bool)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.Dispose*
+  nameWithType.vb: DiaSession.Dispose(Boolean)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationData(System.String,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationData(System.String,System.String)
+  id: GetNavigationData(System.String,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession
+  langs:
+  - csharp
+  - vb
+  name: GetNavigationData(string, string)
+  nameWithType: DiaSession.GetNavigationData(string, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationData(string, string)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  syntax:
+    content: public DiaNavigationData? GetNavigationData(string declaringTypeName, string methodName)
+    parameters:
+    - id: declaringTypeName
+      type: System.String
+    - id: methodName
+      type: System.String
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaNavigationData
+    content.vb: Public Function GetNavigationData(declaringTypeName As String, methodName As String) As DiaNavigationData
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationData*
+  nameWithType.vb: DiaSession.GetNavigationData(String, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationData(String, String)
+  name.vb: GetNavigationData(String, String)
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationDataForMethod(System.String,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationDataForMethod(System.String,System.String)
+  id: GetNavigationDataForMethod(System.String,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession
+  langs:
+  - csharp
+  - vb
+  name: GetNavigationDataForMethod(string, string)
+  nameWithType: DiaSession.GetNavigationDataForMethod(string, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationDataForMethod(string, string)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel
+  namespace: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  example: []
+  syntax:
+    content: public INavigationData? GetNavigationDataForMethod(string declaringTypeName, string methodName)
+    parameters:
+    - id: declaringTypeName
+      type: System.String
+    - id: methodName
+      type: System.String
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationData
+    content.vb: Public Function GetNavigationDataForMethod(declaringTypeName As String, methodName As String) As INavigationData
+  overload: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationDataForMethod*
+  implements:
+  - Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationSession.GetNavigationDataForMethod(System.String,System.String)
+  nameWithType.vb: DiaSession.GetNavigationDataForMethod(String, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationDataForMethod(String, String)
+  name.vb: GetNavigationDataForMethod(String, String)
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationSession
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationSession
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationSession.html
+  name: INavigationSession
+  nameWithType: INavigationSession
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationSession
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation
+  commentId: N:Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation
+  nameWithType: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation
+    name: Navigation
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation
+    name: Navigation
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.html
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_DiaSession__ctor_System_String_
+  name: DiaSession
+  nameWithType: DiaSession.DiaSession
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.DiaSession
+  nameWithType.vb: DiaSession.New
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.Dispose*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.Dispose
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_DiaSession_Dispose
+  name: Dispose
+  nameWithType: DiaSession.Dispose
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationData*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationData
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_DiaSession_GetNavigationData_System_String_System_String_
+  name: GetNavigationData
+  nameWithType: DiaSession.GetNavigationData
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationData
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaNavigationData
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaNavigationData
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaNavigationData.html
+  name: DiaNavigationData
+  nameWithType: DiaNavigationData
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaNavigationData
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationDataForMethod*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationDataForMethod
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_DiaSession_GetNavigationDataForMethod_System_String_System_String_
+  name: GetNavigationDataForMethod
+  nameWithType: DiaSession.GetNavigationDataForMethod
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.DiaSession.GetNavigationDataForMethod
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationSession.GetNavigationDataForMethod(System.String,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationSession.GetNavigationDataForMethod(System.String,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationSession
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationSession.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Navigation_INavigationSession_GetNavigationDataForMethod_System_String_System_String_
+  name: GetNavigationDataForMethod(string, string)
+  nameWithType: INavigationSession.GetNavigationDataForMethod(string, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationSession.GetNavigationDataForMethod(string, string)
+  nameWithType.vb: INavigationSession.GetNavigationDataForMethod(String, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationSession.GetNavigationDataForMethod(String, String)
+  name.vb: GetNavigationDataForMethod(String, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationSession.GetNavigationDataForMethod(System.String,System.String)
+    name: GetNavigationDataForMethod
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationSession.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Navigation_INavigationSession_GetNavigationDataForMethod_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationSession.GetNavigationDataForMethod(System.String,System.String)
+    name: GetNavigationDataForMethod
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationSession.html#Microsoft_VisualStudio_TestPlatform_ObjectModel_Navigation_INavigationSession_GetNavigationDataForMethod_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationData
+  commentId: T:Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationData
+  parent: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationData.html
+  name: INavigationData
+  nameWithType: INavigationData
+  fullName: Microsoft.VisualStudio.TestPlatform.ObjectModel.Navigation.INavigationData

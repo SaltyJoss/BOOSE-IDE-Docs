@@ -7,7 +7,6 @@ items:
   children:
   - BOOSECoreApp.Core.Base.EvaluationApp.#ctor(System.String,System.Object,System.String)
   - BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters(System.String[])
-  - BOOSECoreApp.Core.Base.EvaluationApp.Compile
   - BOOSECoreApp.Core.Base.EvaluationApp.Execute
   - BOOSECoreApp.Core.Base.EvaluationApp.Expression
   - BOOSECoreApp.Core.Base.EvaluationApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
@@ -21,7 +20,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.EvaluationApp
   type: Class
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/EvaluationApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/EvaluationApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -32,8 +31,8 @@ items:
     Intented as a base for future extensions that introduce dynamic evaluation features.
   example: []
   syntax:
-    content: 'public class EvaluationApp : CommandApp, ICommandApp, ICommand'
-    content.vb: Public Class EvaluationApp Inherits CommandApp Implements ICommandApp, ICommand
+    content: 'public class EvaluationApp : CommandApp, ICommandApp'
+    content.vb: Public Class EvaluationApp Inherits CommandApp Implements ICommandApp
   inheritance:
   - System.Object
   - BOOSECoreApp.Core.Base.CommandApp
@@ -41,12 +40,9 @@ items:
   - BOOSECoreApp.Core.Commands.WriteApp
   implements:
   - BOOSECoreApp.Core.Interfaces.ICommandApp
-  - BOOSE.ICommand
   inheritedMembers:
   - BOOSECoreApp.Core.Base.CommandApp._parameters
-  - BOOSECoreApp.Core.Base.CommandApp.Set(BOOSE.StoredProgram,System.String)
   - BOOSECoreApp.Core.Base.CommandApp.ProgramApp
-  - BOOSECoreApp.Core.Base.CommandApp.Parameters
   - System.Object.GetType
   - System.Object.MemberwiseClone
   - System.Object.ToString
@@ -66,7 +62,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.EvaluationApp.EvaluationApp(string, object, string)
   type: Constructor
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/EvaluationApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/EvaluationApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -89,28 +85,36 @@ items:
   nameWithType.vb: EvaluationApp.New(String, Object, String)
   fullName.vb: BOOSECoreApp.Core.Base.EvaluationApp.New(String, Object, String)
   name.vb: New(String, Object, String)
-- uid: BOOSECoreApp.Core.Base.EvaluationApp.Compile
-  commentId: M:BOOSECoreApp.Core.Base.EvaluationApp.Compile
-  id: Compile
+- uid: BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters(System.String[])
+  commentId: M:BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters(System.String[])
+  id: CheckParameters(System.String[])
   parent: BOOSECoreApp.Core.Base.EvaluationApp
   langs:
   - csharp
   - vb
-  name: Compile()
-  nameWithType: EvaluationApp.Compile()
-  fullName: BOOSECoreApp.Core.Base.EvaluationApp.Compile()
+  name: CheckParameters(string[])
+  nameWithType: EvaluationApp.CheckParameters(string[])
+  fullName: BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters(string[])
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/EvaluationApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/EvaluationApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
+  summary: Validates the provided parameters to ensure they meet the required conditions.
   example: []
   syntax:
-    content: public override void Compile()
-    content.vb: Public Overrides Sub Compile()
-  overridden: BOOSECoreApp.Core.Base.CommandApp.Compile
-  overload: BOOSECoreApp.Core.Base.EvaluationApp.Compile*
+    content: public override void CheckParameters(string[] parameters)
+    parameters:
+    - id: parameters
+      type: System.String[]
+      description: An array of strings representing the parameters to validate. Cannot be null, and each element must meet specific validation criteria.
+    content.vb: Public Overrides Sub CheckParameters(parameters As String())
+  overridden: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])
+  overload: BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters*
+  nameWithType.vb: EvaluationApp.CheckParameters(String())
+  fullName.vb: BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters(String())
+  name.vb: CheckParameters(String())
 - uid: BOOSECoreApp.Core.Base.EvaluationApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
   commentId: M:BOOSECoreApp.Core.Base.EvaluationApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
   id: Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
@@ -123,7 +127,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.EvaluationApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp, string[])
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/EvaluationApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/EvaluationApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -156,44 +160,17 @@ items:
   fullName: BOOSECoreApp.Core.Base.EvaluationApp.Execute()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/EvaluationApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/EvaluationApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
+  summary: Execute the command.
   example: []
   syntax:
     content: public override void Execute()
     content.vb: Public Overrides Sub Execute()
   overridden: BOOSECoreApp.Core.Base.CommandApp.Execute
   overload: BOOSECoreApp.Core.Base.EvaluationApp.Execute*
-- uid: BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters(System.String[])
-  commentId: M:BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters(System.String[])
-  id: CheckParameters(System.String[])
-  parent: BOOSECoreApp.Core.Base.EvaluationApp
-  langs:
-  - csharp
-  - vb
-  name: CheckParameters(string[])
-  nameWithType: EvaluationApp.CheckParameters(string[])
-  fullName: BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters(string[])
-  type: Method
-  source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/EvaluationApp.cs
-  assemblies:
-  - BOOSECoreApp
-  namespace: BOOSECoreApp.Core.Base
-  example: []
-  syntax:
-    content: public override void CheckParameters(string[] parameters)
-    parameters:
-    - id: parameters
-      type: System.String[]
-    content.vb: Public Overrides Sub CheckParameters(parameters As String())
-  overridden: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])
-  overload: BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters*
-  nameWithType.vb: EvaluationApp.CheckParameters(String())
-  fullName.vb: BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters(String())
-  name.vb: CheckParameters(String())
 - uid: BOOSECoreApp.Core.Base.EvaluationApp.VarName
   commentId: P:BOOSECoreApp.Core.Base.EvaluationApp.VarName
   id: VarName
@@ -206,7 +183,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.EvaluationApp.VarName
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/EvaluationApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/EvaluationApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -230,7 +207,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.EvaluationApp.Value
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/EvaluationApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/EvaluationApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -254,7 +231,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.EvaluationApp.Expression
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/2ed2fd473751024a036e4f968c5d61a10d0523ce/BOOSECoreApp/Core/Base/EvaluationApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/EvaluationApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -331,14 +308,6 @@ references:
   name: ICommandApp
   nameWithType: ICommandApp
   fullName: BOOSECoreApp.Core.Interfaces.ICommandApp
-- uid: BOOSE.ICommand
-  commentId: T:BOOSE.ICommand
-  parent: BOOSE
-  isExternal: true
-  href: BOOSE.ICommand.html
-  name: ICommand
-  nameWithType: ICommand
-  fullName: BOOSE.ICommand
 - uid: BOOSECoreApp.Core.Base.CommandApp._parameters
   commentId: F:BOOSECoreApp.Core.Base.CommandApp._parameters
   parent: BOOSECoreApp.Core.Base.CommandApp
@@ -347,49 +316,6 @@ references:
   name: _parameters
   nameWithType: CommandApp._parameters
   fullName: BOOSECoreApp.Core.Base.CommandApp._parameters
-- uid: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSE.StoredProgram,System.String)
-  commentId: M:BOOSECoreApp.Core.Base.CommandApp.Set(BOOSE.StoredProgram,System.String)
-  parent: BOOSECoreApp.Core.Base.CommandApp
-  isExternal: true
-  href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Set_BOOSE_StoredProgram_System_String_
-  name: Set(StoredProgram, string)
-  nameWithType: CommandApp.Set(StoredProgram, string)
-  fullName: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSE.StoredProgram, string)
-  nameWithType.vb: CommandApp.Set(StoredProgram, String)
-  fullName.vb: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSE.StoredProgram, String)
-  name.vb: Set(StoredProgram, String)
-  spec.csharp:
-  - uid: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSE.StoredProgram,System.String)
-    name: Set
-    isExternal: true
-    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Set_BOOSE_StoredProgram_System_String_
-  - name: (
-  - uid: BOOSE.StoredProgram
-    name: StoredProgram
-    isExternal: true
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  spec.vb:
-  - uid: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSE.StoredProgram,System.String)
-    name: Set
-    isExternal: true
-    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Set_BOOSE_StoredProgram_System_String_
-  - name: (
-  - uid: BOOSE.StoredProgram
-    name: StoredProgram
-    isExternal: true
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
 - uid: BOOSECoreApp.Core.Base.CommandApp.ProgramApp
   commentId: P:BOOSECoreApp.Core.Base.CommandApp.ProgramApp
   parent: BOOSECoreApp.Core.Base.CommandApp
@@ -398,14 +324,6 @@ references:
   name: ProgramApp
   nameWithType: CommandApp.ProgramApp
   fullName: BOOSECoreApp.Core.Base.CommandApp.ProgramApp
-- uid: BOOSECoreApp.Core.Base.CommandApp.Parameters
-  commentId: P:BOOSECoreApp.Core.Base.CommandApp.Parameters
-  parent: BOOSECoreApp.Core.Base.CommandApp
-  isExternal: true
-  href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Parameters
-  name: Parameters
-  nameWithType: CommandApp.Parameters
-  fullName: BOOSECoreApp.Core.Base.CommandApp.Parameters
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
   parent: System.Object
@@ -669,13 +587,6 @@ references:
     name: Interfaces
     isExternal: true
     href: BOOSECoreApp.Core.Interfaces.html
-- uid: BOOSE
-  commentId: N:BOOSE
-  isExternal: true
-  href: BOOSE.html
-  name: BOOSE
-  nameWithType: BOOSE
-  fullName: BOOSE
 - uid: BOOSECoreApp.Core.Base.EvaluationApp
   commentId: T:BOOSECoreApp.Core.Base.EvaluationApp
   parent: BOOSECoreApp.Core.Base
@@ -705,35 +616,73 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: BOOSECoreApp.Core.Base.CommandApp.Compile
-  commentId: M:BOOSECoreApp.Core.Base.CommandApp.Compile
+- uid: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])
+  commentId: M:BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])
   parent: BOOSECoreApp.Core.Base.CommandApp
   isExternal: true
-  href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Compile
-  name: Compile()
-  nameWithType: CommandApp.Compile()
-  fullName: BOOSECoreApp.Core.Base.CommandApp.Compile()
+  href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_CheckParameters_System_String___
+  name: CheckParameters(string[])
+  nameWithType: CommandApp.CheckParameters(string[])
+  fullName: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(string[])
+  nameWithType.vb: CommandApp.CheckParameters(String())
+  fullName.vb: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(String())
+  name.vb: CheckParameters(String())
   spec.csharp:
-  - uid: BOOSECoreApp.Core.Base.CommandApp.Compile
-    name: Compile
+  - uid: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])
+    name: CheckParameters
     isExternal: true
-    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Compile
+    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_CheckParameters_System_String___
   - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
   - name: )
   spec.vb:
-  - uid: BOOSECoreApp.Core.Base.CommandApp.Compile
-    name: Compile
+  - uid: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])
+    name: CheckParameters
     isExternal: true
-    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Compile
+    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_CheckParameters_System_String___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: (
   - name: )
-- uid: BOOSECoreApp.Core.Base.EvaluationApp.Compile*
-  commentId: Overload:BOOSECoreApp.Core.Base.EvaluationApp.Compile
+  - name: )
+- uid: BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters*
+  commentId: Overload:BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters
   isExternal: true
-  href: BOOSECoreApp.Core.Base.EvaluationApp.html#BOOSECoreApp_Core_Base_EvaluationApp_Compile
-  name: Compile
-  nameWithType: EvaluationApp.Compile
-  fullName: BOOSECoreApp.Core.Base.EvaluationApp.Compile
+  href: BOOSECoreApp.Core.Base.EvaluationApp.html#BOOSECoreApp_Core_Base_EvaluationApp_CheckParameters_System_String___
+  name: CheckParameters
+  nameWithType: EvaluationApp.CheckParameters
+  fullName: BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
 - uid: BOOSECoreApp.Core.Base.StoredProgramApp
   commentId: T:BOOSECoreApp.Core.Base.StoredProgramApp
   parent: BOOSECoreApp.Core.Base
@@ -798,29 +747,6 @@ references:
   name: Set
   nameWithType: EvaluationApp.Set
   fullName: BOOSECoreApp.Core.Base.EvaluationApp.Set
-- uid: System.String[]
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string[]
-  nameWithType: string[]
-  fullName: string[]
-  nameWithType.vb: String()
-  fullName.vb: String()
-  name.vb: String()
-  spec.csharp:
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: (
-  - name: )
 - uid: BOOSECoreApp.Core.Base.CommandApp.Execute
   commentId: M:BOOSECoreApp.Core.Base.CommandApp.Execute
   parent: BOOSECoreApp.Core.Base.CommandApp
@@ -850,50 +776,6 @@ references:
   name: Execute
   nameWithType: EvaluationApp.Execute
   fullName: BOOSECoreApp.Core.Base.EvaluationApp.Execute
-- uid: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])
-  commentId: M:BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])
-  parent: BOOSECoreApp.Core.Base.CommandApp
-  isExternal: true
-  href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_CheckParameters_System_String___
-  name: CheckParameters(string[])
-  nameWithType: CommandApp.CheckParameters(string[])
-  fullName: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(string[])
-  nameWithType.vb: CommandApp.CheckParameters(String())
-  fullName.vb: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(String())
-  name.vb: CheckParameters(String())
-  spec.csharp:
-  - uid: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])
-    name: CheckParameters
-    isExternal: true
-    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_CheckParameters_System_String___
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: '['
-  - name: ']'
-  - name: )
-  spec.vb:
-  - uid: BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])
-    name: CheckParameters
-    isExternal: true
-    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_CheckParameters_System_String___
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: (
-  - name: )
-  - name: )
-- uid: BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters*
-  commentId: Overload:BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters
-  isExternal: true
-  href: BOOSECoreApp.Core.Base.EvaluationApp.html#BOOSECoreApp_Core_Base_EvaluationApp_CheckParameters_System_String___
-  name: CheckParameters
-  nameWithType: EvaluationApp.CheckParameters
-  fullName: BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters
 - uid: BOOSECoreApp.Core.Base.EvaluationApp.VarName*
   commentId: Overload:BOOSECoreApp.Core.Base.EvaluationApp.VarName
   isExternal: true

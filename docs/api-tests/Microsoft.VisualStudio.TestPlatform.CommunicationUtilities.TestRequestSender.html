@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TestRequestSender | BOOSE IDE Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TestRequestSender | BOOSE IDE Documentation ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BOOSE IDE Documentation">
+            BOOSE IDE Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender">
+
+
+
+  <h1 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender" class="text-break">
+Class TestRequestSender  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.VisualStudio.html">VisualStudio</a>.<a class="xref" href="Microsoft.VisualStudio.TestPlatform.html">TestPlatform</a>.<a class="xref" href="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.html">CommunicationUtilities</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Microsoft.TestPlatform.CommunicationUtilities.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TestRequestSender : ITestRequestSender, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TestRequestSender</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Interfaces.ITestRequestSender.html">ITestRequestSender</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender__ctor_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.#ctor*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender__ctor_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ProtocolConfig_Microsoft_VisualStudio_TestPlatform_ObjectModel_Host_ITestRuntimeProvider_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.#ctor(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ProtocolConfig,Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider)">
+  TestRequestSender(ProtocolConfig, ITestRuntimeProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TestRequestSender(ProtocolConfig protocolConfig, ITestRuntimeProvider runtimeProvider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>protocolConfig</code> <a class="xref" href="Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ProtocolConfig.html">ProtocolConfig</a></dt>
+    <dd></dd>
+    <dt><code>runtimeProvider</code> <a class="xref" href="Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider.html">ITestRuntimeProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_CloseConnectionOnOperationComplete_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.CloseConnectionOnOperationComplete*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_CloseConnectionOnOperationComplete" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.CloseConnectionOnOperationComplete">
+  CloseConnectionOnOperationComplete
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CloseConnectionOnOperationComplete { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_CheckVersionWithTestHost_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.CheckVersionWithTestHost*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_CheckVersionWithTestHost" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.CheckVersionWithTestHost">
+  CheckVersionWithTestHost()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckVersionWithTestHost()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_Close_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.Close*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_Close" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.Close">
+  Close()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_DiscoverTests_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.DiscoverTests*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_DiscoverTests_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_DiscoveryCriteria_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_ITestDiscoveryEventsHandler2_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.DiscoverTests(Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2)">
+  DiscoverTests(DiscoveryCriteria, ITestDiscoveryEventsHandler2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DiscoverTests(DiscoveryCriteria discoveryCriteria, ITestDiscoveryEventsHandler2 discoveryEventsHandler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>discoveryCriteria</code> <a class="xref" href="Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.DiscoveryCriteria.html">DiscoveryCriteria</a></dt>
+    <dd></dd>
+    <dt><code>discoveryEventsHandler</code> <a class="xref" href="Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestDiscoveryEventsHandler2.html">ITestDiscoveryEventsHandler2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_Dispose_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.Dispose*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_Dispose" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_EndSession_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.EndSession*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_EndSession" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.EndSession">
+  EndSession()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndSession()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_InitializeCommunication_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.InitializeCommunication*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_InitializeCommunication" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.InitializeCommunication">
+  InitializeCommunication()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int InitializeCommunication()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_InitializeDiscovery_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.InitializeDiscovery*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_InitializeDiscovery_System_Collections_Generic_IEnumerable_System_String__" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.InitializeDiscovery(System.Collections.Generic.IEnumerable{System.String})">
+  InitializeDiscovery(IEnumerable&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeDiscovery(IEnumerable&lt;string&gt; pathToAdditionalExtensions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pathToAdditionalExtensions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_InitializeExecution_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.InitializeExecution*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_InitializeExecution_System_Collections_Generic_IEnumerable_System_String__" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.InitializeExecution(System.Collections.Generic.IEnumerable{System.String})">
+  InitializeExecution(IEnumerable&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeExecution(IEnumerable&lt;string&gt; pathToAdditionalExtensions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pathToAdditionalExtensions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_OnClientProcessExit_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.OnClientProcessExit*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_OnClientProcessExit_System_String_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.OnClientProcessExit(System.String)">
+  OnClientProcessExit(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnClientProcessExit(string stdError)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stdError</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_SendDiscoveryAbort_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.SendDiscoveryAbort*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_SendDiscoveryAbort" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.SendDiscoveryAbort">
+  SendDiscoveryAbort()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendDiscoveryAbort()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_SendTestRunAbort_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.SendTestRunAbort*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_SendTestRunAbort" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.SendTestRunAbort">
+  SendTestRunAbort()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendTestRunAbort()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_SendTestRunCancel_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.SendTestRunCancel*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_SendTestRunCancel" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.SendTestRunCancel">
+  SendTestRunCancel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendTestRunCancel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_StartTestRun_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.StartTestRun*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_StartTestRun_Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_ObjectModel_TestRunCriteriaWithSources_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IInternalTestRunEventsHandler_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.StartTestRun(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithSources,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)">
+  StartTestRun(TestRunCriteriaWithSources, IInternalTestRunEventsHandler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartTestRun(TestRunCriteriaWithSources runCriteria, IInternalTestRunEventsHandler eventHandler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>runCriteria</code> <a class="xref" href="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithSources.html">TestRunCriteriaWithSources</a></dt>
+    <dd></dd>
+    <dt><code>eventHandler</code> <a class="xref" href="Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler.html">IInternalTestRunEventsHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_StartTestRun_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.StartTestRun*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_StartTestRun_Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_ObjectModel_TestRunCriteriaWithTests_Microsoft_VisualStudio_TestPlatform_ObjectModel_Client_IInternalTestRunEventsHandler_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.StartTestRun(Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithTests,Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler)">
+  StartTestRun(TestRunCriteriaWithTests, IInternalTestRunEventsHandler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartTestRun(TestRunCriteriaWithTests runCriteria, IInternalTestRunEventsHandler eventHandler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>runCriteria</code> <a class="xref" href="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel.TestRunCriteriaWithTests.html">TestRunCriteriaWithTests</a></dt>
+    <dd></dd>
+    <dt><code>eventHandler</code> <a class="xref" href="Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.IInternalTestRunEventsHandler.html">IInternalTestRunEventsHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_WaitForRequestHandlerConnection_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.WaitForRequestHandlerConnection*"></a>
+
+  <h3 id="Microsoft_VisualStudio_TestPlatform_CommunicationUtilities_TestRequestSender_WaitForRequestHandlerConnection_System_Int32_System_Threading_CancellationToken_" data-uid="Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.TestRequestSender.WaitForRequestHandlerConnection(System.Int32,System.Threading.CancellationToken)">
+  WaitForRequestHandlerConnection(int, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WaitForRequestHandlerConnection(int connectionTimeout, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connectionTimeout</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

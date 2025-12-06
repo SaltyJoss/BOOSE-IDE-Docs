@@ -1,0 +1,989 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  commentId: T:Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  id: TelemetryContext
+  parent: Microsoft.ApplicationInsights.DataContracts
+  children:
+  - Microsoft.ApplicationInsights.DataContracts.TelemetryContext.#ctor
+  - Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Cloud
+  - Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Component
+  - Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Device
+  - Microsoft.ApplicationInsights.DataContracts.TelemetryContext.FlagDropIdentifiers
+  - Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Flags
+  - Microsoft.ApplicationInsights.DataContracts.TelemetryContext.GlobalProperties
+  - Microsoft.ApplicationInsights.DataContracts.TelemetryContext.InstrumentationKey
+  - Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Location
+  - Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Operation
+  - Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Properties
+  - Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Session
+  - Microsoft.ApplicationInsights.DataContracts.TelemetryContext.StoreRawObject(System.String,System.Object,System.Boolean)
+  - Microsoft.ApplicationInsights.DataContracts.TelemetryContext.TryGetRawObject(System.String,System.Object@)
+  - Microsoft.ApplicationInsights.DataContracts.TelemetryContext.User
+  langs:
+  - csharp
+  - vb
+  name: TelemetryContext
+  nameWithType: TelemetryContext
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  type: Class
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public sealed class TelemetryContext
+    content.vb: Public NotInheritable Class TelemetryContext
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.FlagDropIdentifiers
+  commentId: F:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.FlagDropIdentifiers
+  id: FlagDropIdentifiers
+  parent: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  langs:
+  - csharp
+  - vb
+  name: FlagDropIdentifiers
+  nameWithType: TelemetryContext.FlagDropIdentifiers
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.FlagDropIdentifiers
+  type: Field
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public const long FlagDropIdentifiers = 2097152
+    return:
+      type: System.Int64
+    content.vb: Public Const FlagDropIdentifiers As Long = 2097152
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.#ctor
+  commentId: M:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.#ctor
+  id: '#ctor'
+  parent: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  langs:
+  - csharp
+  - vb
+  name: TelemetryContext()
+  nameWithType: TelemetryContext.TelemetryContext()
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.TelemetryContext()
+  type: Constructor
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public TelemetryContext()
+    content.vb: Public Sub New()
+  overload: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.#ctor*
+  nameWithType.vb: TelemetryContext.New()
+  fullName.vb: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.New()
+  name.vb: New()
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.TryGetRawObject(System.String,System.Object@)
+  commentId: M:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.TryGetRawObject(System.String,System.Object@)
+  id: TryGetRawObject(System.String,System.Object@)
+  parent: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  langs:
+  - csharp
+  - vb
+  name: TryGetRawObject(string, out object)
+  nameWithType: TelemetryContext.TryGetRawObject(string, out object)
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.TryGetRawObject(string, out object)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public bool TryGetRawObject(string key, out object rawObject)
+    parameters:
+    - id: key
+      type: System.String
+    - id: rawObject
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGetRawObject(key As String, rawObject As Object) As Boolean
+  overload: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.TryGetRawObject*
+  nameWithType.vb: TelemetryContext.TryGetRawObject(String, Object)
+  fullName.vb: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.TryGetRawObject(String, Object)
+  name.vb: TryGetRawObject(String, Object)
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.StoreRawObject(System.String,System.Object,System.Boolean)
+  commentId: M:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.StoreRawObject(System.String,System.Object,System.Boolean)
+  id: StoreRawObject(System.String,System.Object,System.Boolean)
+  parent: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  langs:
+  - csharp
+  - vb
+  name: StoreRawObject(string, object, bool)
+  nameWithType: TelemetryContext.StoreRawObject(string, object, bool)
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.StoreRawObject(string, object, bool)
+  type: Method
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public void StoreRawObject(string key, object rawObject, bool keepForInitializationOnly = true)
+    parameters:
+    - id: key
+      type: System.String
+    - id: rawObject
+      type: System.Object
+    - id: keepForInitializationOnly
+      type: System.Boolean
+    content.vb: Public Sub StoreRawObject(key As String, rawObject As Object, keepForInitializationOnly As Boolean = True)
+  overload: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.StoreRawObject*
+  nameWithType.vb: TelemetryContext.StoreRawObject(String, Object, Boolean)
+  fullName.vb: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.StoreRawObject(String, Object, Boolean)
+  name.vb: StoreRawObject(String, Object, Boolean)
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.InstrumentationKey
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.InstrumentationKey
+  id: InstrumentationKey
+  parent: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  langs:
+  - csharp
+  - vb
+  name: InstrumentationKey
+  nameWithType: TelemetryContext.InstrumentationKey
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.InstrumentationKey
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public string InstrumentationKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property InstrumentationKey As String
+  overload: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.InstrumentationKey*
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Flags
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Flags
+  id: Flags
+  parent: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  langs:
+  - csharp
+  - vb
+  name: Flags
+  nameWithType: TelemetryContext.Flags
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Flags
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public long Flags { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property Flags As Long
+  overload: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Flags*
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Component
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Component
+  id: Component
+  parent: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  langs:
+  - csharp
+  - vb
+  name: Component
+  nameWithType: TelemetryContext.Component
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Component
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public ComponentContext Component { get; }
+    parameters: []
+    return:
+      type: Microsoft.ApplicationInsights.Extensibility.Implementation.ComponentContext
+    content.vb: Public ReadOnly Property Component As ComponentContext
+  overload: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Component*
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Device
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Device
+  id: Device
+  parent: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  langs:
+  - csharp
+  - vb
+  name: Device
+  nameWithType: TelemetryContext.Device
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Device
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public DeviceContext Device { get; }
+    parameters: []
+    return:
+      type: Microsoft.ApplicationInsights.Extensibility.Implementation.DeviceContext
+    content.vb: Public ReadOnly Property Device As DeviceContext
+  overload: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Device*
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Cloud
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Cloud
+  id: Cloud
+  parent: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  langs:
+  - csharp
+  - vb
+  name: Cloud
+  nameWithType: TelemetryContext.Cloud
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Cloud
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public CloudContext Cloud { get; }
+    parameters: []
+    return:
+      type: Microsoft.ApplicationInsights.Extensibility.Implementation.CloudContext
+    content.vb: Public ReadOnly Property Cloud As CloudContext
+  overload: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Cloud*
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Session
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Session
+  id: Session
+  parent: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  langs:
+  - csharp
+  - vb
+  name: Session
+  nameWithType: TelemetryContext.Session
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Session
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public SessionContext Session { get; }
+    parameters: []
+    return:
+      type: Microsoft.ApplicationInsights.Extensibility.Implementation.SessionContext
+    content.vb: Public ReadOnly Property Session As SessionContext
+  overload: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Session*
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.User
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.User
+  id: User
+  parent: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: TelemetryContext.User
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.User
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public UserContext User { get; }
+    parameters: []
+    return:
+      type: Microsoft.ApplicationInsights.Extensibility.Implementation.UserContext
+    content.vb: Public ReadOnly Property User As UserContext
+  overload: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.User*
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Operation
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Operation
+  id: Operation
+  parent: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  langs:
+  - csharp
+  - vb
+  name: Operation
+  nameWithType: TelemetryContext.Operation
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Operation
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public OperationContext Operation { get; }
+    parameters: []
+    return:
+      type: Microsoft.ApplicationInsights.Extensibility.Implementation.OperationContext
+    content.vb: Public ReadOnly Property Operation As OperationContext
+  overload: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Operation*
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Location
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Location
+  id: Location
+  parent: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  langs:
+  - csharp
+  - vb
+  name: Location
+  nameWithType: TelemetryContext.Location
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Location
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public LocationContext Location { get; }
+    parameters: []
+    return:
+      type: Microsoft.ApplicationInsights.Extensibility.Implementation.LocationContext
+    content.vb: Public ReadOnly Property Location As LocationContext
+  overload: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Location*
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Properties
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Properties
+  id: Properties
+  parent: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: TelemetryContext.Properties
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Properties
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: >-
+      [Obsolete("Use GlobalProperties to set global level properties. For properties at item level, use ISupportProperties.Properties.")]
+
+      public IDictionary<string, string> Properties { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    content.vb: >-
+      <Obsolete("Use GlobalProperties to set global level properties. For properties at item level, use ISupportProperties.Properties.")>
+
+      Public ReadOnly Property Properties As IDictionary(Of String, String)
+  overload: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Properties*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use GlobalProperties to set global level properties. For properties at item level, use ISupportProperties.Properties.
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.GlobalProperties
+  commentId: P:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.GlobalProperties
+  id: GlobalProperties
+  parent: Microsoft.ApplicationInsights.DataContracts.TelemetryContext
+  langs:
+  - csharp
+  - vb
+  name: GlobalProperties
+  nameWithType: TelemetryContext.GlobalProperties
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.GlobalProperties
+  type: Property
+  assemblies:
+  - Microsoft.ApplicationInsights
+  namespace: Microsoft.ApplicationInsights.DataContracts
+  syntax:
+    content: public IDictionary<string, string> GlobalProperties { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    content.vb: Public ReadOnly Property GlobalProperties As IDictionary(Of String, String)
+  overload: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.GlobalProperties*
+references:
+- uid: Microsoft.ApplicationInsights.DataContracts
+  commentId: N:Microsoft.ApplicationInsights.DataContracts
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.DataContracts
+  nameWithType: Microsoft.ApplicationInsights.DataContracts
+  fullName: Microsoft.ApplicationInsights.DataContracts
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.DataContracts
+    name: DataContracts
+    isExternal: true
+    href: Microsoft.ApplicationInsights.DataContracts.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.DataContracts
+    name: DataContracts
+    isExternal: true
+    href: Microsoft.ApplicationInsights.DataContracts.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.#ctor*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.#ctor
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.html#Microsoft_ApplicationInsights_DataContracts_TelemetryContext__ctor
+  name: TelemetryContext
+  nameWithType: TelemetryContext.TelemetryContext
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.TelemetryContext
+  nameWithType.vb: TelemetryContext.New
+  fullName.vb: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.New
+  name.vb: New
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.TryGetRawObject*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.TryGetRawObject
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.html#Microsoft_ApplicationInsights_DataContracts_TelemetryContext_TryGetRawObject_System_String_System_Object__
+  name: TryGetRawObject
+  nameWithType: TelemetryContext.TryGetRawObject
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.TryGetRawObject
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.StoreRawObject*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.StoreRawObject
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.html#Microsoft_ApplicationInsights_DataContracts_TelemetryContext_StoreRawObject_System_String_System_Object_System_Boolean_
+  name: StoreRawObject
+  nameWithType: TelemetryContext.StoreRawObject
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.StoreRawObject
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.InstrumentationKey*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.InstrumentationKey
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.html#Microsoft_ApplicationInsights_DataContracts_TelemetryContext_InstrumentationKey
+  name: InstrumentationKey
+  nameWithType: TelemetryContext.InstrumentationKey
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.InstrumentationKey
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Flags*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Flags
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.html#Microsoft_ApplicationInsights_DataContracts_TelemetryContext_Flags
+  name: Flags
+  nameWithType: TelemetryContext.Flags
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Flags
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Component*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Component
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.html#Microsoft_ApplicationInsights_DataContracts_TelemetryContext_Component
+  name: Component
+  nameWithType: TelemetryContext.Component
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Component
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.ComponentContext
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.Implementation.ComponentContext
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.ComponentContext.html
+  name: ComponentContext
+  nameWithType: ComponentContext
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.ComponentContext
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation
+  commentId: N:Microsoft.ApplicationInsights.Extensibility.Implementation
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.ApplicationInsights.Extensibility.Implementation
+  nameWithType: Microsoft.ApplicationInsights.Extensibility.Implementation
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation
+    name: Implementation
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights
+    name: ApplicationInsights
+    isExternal: true
+    href: Microsoft.ApplicationInsights.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility
+    name: Extensibility
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.html
+  - name: .
+  - uid: Microsoft.ApplicationInsights.Extensibility.Implementation
+    name: Implementation
+    isExternal: true
+    href: Microsoft.ApplicationInsights.Extensibility.Implementation.html
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Device*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Device
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.html#Microsoft_ApplicationInsights_DataContracts_TelemetryContext_Device
+  name: Device
+  nameWithType: TelemetryContext.Device
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Device
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.DeviceContext
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.Implementation.DeviceContext
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.DeviceContext.html
+  name: DeviceContext
+  nameWithType: DeviceContext
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.DeviceContext
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Cloud*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Cloud
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.html#Microsoft_ApplicationInsights_DataContracts_TelemetryContext_Cloud
+  name: Cloud
+  nameWithType: TelemetryContext.Cloud
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Cloud
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.CloudContext
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.Implementation.CloudContext
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.CloudContext.html
+  name: CloudContext
+  nameWithType: CloudContext
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.CloudContext
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Session*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Session
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.html#Microsoft_ApplicationInsights_DataContracts_TelemetryContext_Session
+  name: Session
+  nameWithType: TelemetryContext.Session
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Session
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.SessionContext
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.Implementation.SessionContext
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.SessionContext.html
+  name: SessionContext
+  nameWithType: SessionContext
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.SessionContext
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.User*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.User
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.html#Microsoft_ApplicationInsights_DataContracts_TelemetryContext_User
+  name: User
+  nameWithType: TelemetryContext.User
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.User
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.UserContext
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.Implementation.UserContext
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.UserContext.html
+  name: UserContext
+  nameWithType: UserContext
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.UserContext
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Operation*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Operation
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.html#Microsoft_ApplicationInsights_DataContracts_TelemetryContext_Operation
+  name: Operation
+  nameWithType: TelemetryContext.Operation
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Operation
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.OperationContext
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.Implementation.OperationContext
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.OperationContext.html
+  name: OperationContext
+  nameWithType: OperationContext
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.OperationContext
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Location*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Location
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.html#Microsoft_ApplicationInsights_DataContracts_TelemetryContext_Location
+  name: Location
+  nameWithType: TelemetryContext.Location
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Location
+- uid: Microsoft.ApplicationInsights.Extensibility.Implementation.LocationContext
+  commentId: T:Microsoft.ApplicationInsights.Extensibility.Implementation.LocationContext
+  parent: Microsoft.ApplicationInsights.Extensibility.Implementation
+  isExternal: true
+  href: Microsoft.ApplicationInsights.Extensibility.Implementation.LocationContext.html
+  name: LocationContext
+  nameWithType: LocationContext
+  fullName: Microsoft.ApplicationInsights.Extensibility.Implementation.LocationContext
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Properties*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Properties
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.html#Microsoft_ApplicationInsights_DataContracts_TelemetryContext_Properties
+  name: Properties
+  nameWithType: TelemetryContext.Properties
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.Properties
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, string>
+  nameWithType: IDictionary<string, string>
+  fullName: System.Collections.Generic.IDictionary<string, string>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.GlobalProperties*
+  commentId: Overload:Microsoft.ApplicationInsights.DataContracts.TelemetryContext.GlobalProperties
+  isExternal: true
+  href: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.html#Microsoft_ApplicationInsights_DataContracts_TelemetryContext_GlobalProperties
+  name: GlobalProperties
+  nameWithType: TelemetryContext.GlobalProperties
+  fullName: Microsoft.ApplicationInsights.DataContracts.TelemetryContext.GlobalProperties

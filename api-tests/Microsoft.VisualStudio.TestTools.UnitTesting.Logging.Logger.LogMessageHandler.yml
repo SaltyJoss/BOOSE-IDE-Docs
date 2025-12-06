@@ -1,0 +1,605 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler
+  commentId: T:Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler
+  id: Logger.LogMessageHandler
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.Logging
+  children:
+  - Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.#ctor(System.Object,System.IntPtr)
+  - Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.BeginInvoke(System.String,System.AsyncCallback,System.Object)
+  - Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.EndInvoke(System.IAsyncResult)
+  - Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.Invoke(System.String)
+  langs:
+  - csharp
+  - vb
+  name: Logger.LogMessageHandler
+  nameWithType: Logger.LogMessageHandler
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler
+  type: Delegate
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting.Logging
+  syntax:
+    content: public delegate void Logger.LogMessageHandler(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Delegate Sub Logger.LogMessageHandler(message As String)
+  extensionMethods:
+  - System.Delegate.Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Object,System.EventArgs,System.String)
+  - System.Delegate.Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Object,System.Object,System.String)
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler
+  langs:
+  - csharp
+  - vb
+  name: LogMessageHandler(object, nint)
+  nameWithType: Logger.LogMessageHandler.LogMessageHandler(object, nint)
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.LogMessageHandler(object, nint)
+  type: Constructor
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting.Logging
+  syntax:
+    content: public LogMessageHandler(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.#ctor*
+  nameWithType.vb: Logger.LogMessageHandler.New(Object, IntPtr)
+  fullName.vb: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.Invoke(System.String)
+  commentId: M:Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.Invoke(System.String)
+  id: Invoke(System.String)
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(string)
+  nameWithType: Logger.LogMessageHandler.Invoke(string)
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.Invoke(string)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting.Logging
+  syntax:
+    content: public virtual void Invoke(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Overridable Sub Invoke(message As String)
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.Invoke*
+  nameWithType.vb: Logger.LogMessageHandler.Invoke(String)
+  fullName.vb: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.Invoke(String)
+  name.vb: Invoke(String)
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.BeginInvoke(System.String,System.AsyncCallback,System.Object)
+  commentId: M:Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.BeginInvoke(System.String,System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.String,System.AsyncCallback,System.Object)
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(string, AsyncCallback, object)
+  nameWithType: Logger.LogMessageHandler.BeginInvoke(string, AsyncCallback, object)
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.BeginInvoke(string, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting.Logging
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(string message, AsyncCallback callback, object @object)
+    parameters:
+    - id: message
+      type: System.String
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(message As String, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.BeginInvoke*
+  nameWithType.vb: Logger.LogMessageHandler.BeginInvoke(String, AsyncCallback, Object)
+  fullName.vb: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.BeginInvoke(String, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(String, AsyncCallback, Object)
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.EndInvoke(System.IAsyncResult)
+  commentId: M:Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.EndInvoke(System.IAsyncResult)
+  id: EndInvoke(System.IAsyncResult)
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(IAsyncResult)
+  nameWithType: Logger.LogMessageHandler.EndInvoke(IAsyncResult)
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.EndInvoke(System.IAsyncResult)
+  type: Method
+  assemblies:
+  - Microsoft.VisualStudio.TestPlatform.TestFramework
+  namespace: Microsoft.VisualStudio.TestTools.UnitTesting.Logging
+  syntax:
+    content: public virtual void EndInvoke(IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+    content.vb: Public Overridable Sub EndInvoke(result As IAsyncResult)
+  overload: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.EndInvoke*
+references:
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.Logging
+  commentId: N:Microsoft.VisualStudio.TestTools.UnitTesting.Logging
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestTools.UnitTesting.Logging
+  nameWithType: Microsoft.VisualStudio.TestTools.UnitTesting.Logging
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools
+    name: TestTools
+    isExternal: true
+    href: Microsoft.VisualStudio.TestTools.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools.UnitTesting
+    name: UnitTesting
+    isExternal: true
+    href: Microsoft.VisualStudio.TestTools.UnitTesting.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools.UnitTesting.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools
+    name: TestTools
+    isExternal: true
+    href: Microsoft.VisualStudio.TestTools.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools.UnitTesting
+    name: UnitTesting
+    isExternal: true
+    href: Microsoft.VisualStudio.TestTools.UnitTesting.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools.UnitTesting.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.html
+- uid: System.Delegate.Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Object,System.EventArgs,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities
+  definition: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  name: SafeInvoke(Delegate, object, EventArgs, string)
+  nameWithType: MulticastDelegateUtilities.SafeInvoke(Delegate, object, EventArgs, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, object, System.EventArgs, string)
+  nameWithType.vb: MulticastDelegateUtilities.SafeInvoke(Delegate, Object, EventArgs, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, Object, System.EventArgs, String)
+  name.vb: SafeInvoke(Delegate, Object, EventArgs, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Delegate.Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Object,System.Object,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities
+  definition: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  name: SafeInvoke(Delegate, object, object, string)
+  nameWithType: MulticastDelegateUtilities.SafeInvoke(Delegate, object, object, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, object, object, string)
+  nameWithType.vb: MulticastDelegateUtilities.SafeInvoke(Delegate, Object, Object, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, Object, Object, String)
+  name.vb: SafeInvoke(Delegate, Object, Object, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  name: SafeInvoke(Delegate, object, EventArgs, string)
+  nameWithType: MulticastDelegateUtilities.SafeInvoke(Delegate, object, EventArgs, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, object, System.EventArgs, string)
+  nameWithType.vb: MulticastDelegateUtilities.SafeInvoke(Delegate, Object, EventArgs, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, Object, System.EventArgs, String)
+  name.vb: SafeInvoke(Delegate, Object, EventArgs, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.EventArgs,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_EventArgs_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities
+  commentId: T:Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities
+  parent: Microsoft.VisualStudio.TestPlatform.Utilities
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html
+  name: MulticastDelegateUtilities
+  nameWithType: MulticastDelegateUtilities
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  name: SafeInvoke(Delegate, object, object, string)
+  nameWithType: MulticastDelegateUtilities.SafeInvoke(Delegate, object, object, string)
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, object, object, string)
+  nameWithType.vb: MulticastDelegateUtilities.SafeInvoke(Delegate, Object, Object, String)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate, Object, Object, String)
+  name.vb: SafeInvoke(Delegate, Object, Object, String)
+  spec.csharp:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.SafeInvoke(System.Delegate,System.Object,System.Object,System.String)
+    name: SafeInvoke
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.MulticastDelegateUtilities.html#Microsoft_VisualStudio_TestPlatform_Utilities_MulticastDelegateUtilities_SafeInvoke_System_Delegate_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.Utilities
+  commentId: N:Microsoft.VisualStudio.TestPlatform.Utilities
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.Utilities
+  nameWithType: Microsoft.VisualStudio.TestPlatform.Utilities
+  fullName: Microsoft.VisualStudio.TestPlatform.Utilities
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities
+    name: Utilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.Utilities
+    name: Utilities
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.Utilities.html
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.#ctor*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.#ctor
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.html#Microsoft_VisualStudio_TestTools_UnitTesting_Logging_Logger_LogMessageHandler__ctor_System_Object_System_IntPtr_
+  name: LogMessageHandler
+  nameWithType: Logger.LogMessageHandler.LogMessageHandler
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.LogMessageHandler
+  nameWithType.vb: Logger.LogMessageHandler.New
+  fullName.vb: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.Invoke*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.Invoke
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.html#Microsoft_VisualStudio_TestTools_UnitTesting_Logging_Logger_LogMessageHandler_Invoke_System_String_
+  name: Invoke
+  nameWithType: Logger.LogMessageHandler.Invoke
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.Invoke
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.BeginInvoke*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.BeginInvoke
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.html#Microsoft_VisualStudio_TestTools_UnitTesting_Logging_Logger_LogMessageHandler_BeginInvoke_System_String_System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: Logger.LogMessageHandler.BeginInvoke
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.EndInvoke*
+  commentId: Overload:Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.EndInvoke
+  isExternal: true
+  href: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.html#Microsoft_VisualStudio_TestTools_UnitTesting_Logging_Logger_LogMessageHandler_EndInvoke_System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: Logger.LogMessageHandler.EndInvoke
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.Logging.Logger.LogMessageHandler.EndInvoke

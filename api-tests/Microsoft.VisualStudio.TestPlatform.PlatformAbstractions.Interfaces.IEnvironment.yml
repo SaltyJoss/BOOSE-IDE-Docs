@@ -1,0 +1,346 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment
+  commentId: T:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment
+  id: IEnvironment
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  children:
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Architecture
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Exit(System.Int32)
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.GetCurrentManagedThreadId
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.OperatingSystem
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.OperatingSystemVersion
+  - Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.ProcessorCount
+  langs:
+  - csharp
+  - vb
+  name: IEnvironment
+  nameWithType: IEnvironment
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment
+  type: Interface
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: public interface IEnvironment
+    content.vb: Public Interface IEnvironment
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Exit(System.Int32)
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Exit(System.Int32)
+  id: Exit(System.Int32)
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment
+  langs:
+  - csharp
+  - vb
+  name: Exit(int)
+  nameWithType: IEnvironment.Exit(int)
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Exit(int)
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: void Exit(int exitcode)
+    parameters:
+    - id: exitcode
+      type: System.Int32
+    content.vb: Sub [Exit](exitcode As Integer)
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Exit*
+  nameWithType.vb: IEnvironment.Exit(Integer)
+  fullName.vb: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Exit(Integer)
+  name.vb: Exit(Integer)
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.GetCurrentManagedThreadId
+  commentId: M:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.GetCurrentManagedThreadId
+  id: GetCurrentManagedThreadId
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentManagedThreadId()
+  nameWithType: IEnvironment.GetCurrentManagedThreadId()
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.GetCurrentManagedThreadId()
+  type: Method
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: int GetCurrentManagedThreadId()
+    return:
+      type: System.Int32
+    content.vb: Function GetCurrentManagedThreadId() As Integer
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.GetCurrentManagedThreadId*
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Architecture
+  commentId: P:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Architecture
+  id: Architecture
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment
+  langs:
+  - csharp
+  - vb
+  name: Architecture
+  nameWithType: IEnvironment.Architecture
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Architecture
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: PlatformArchitecture Architecture { get; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture
+    content.vb: ReadOnly Property Architecture As PlatformArchitecture
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Architecture*
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.OperatingSystem
+  commentId: P:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.OperatingSystem
+  id: OperatingSystem
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment
+  langs:
+  - csharp
+  - vb
+  name: OperatingSystem
+  nameWithType: IEnvironment.OperatingSystem
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.OperatingSystem
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: PlatformOperatingSystem OperatingSystem { get; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformOperatingSystem
+    content.vb: ReadOnly Property OperatingSystem As PlatformOperatingSystem
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.OperatingSystem*
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.OperatingSystemVersion
+  commentId: P:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.OperatingSystemVersion
+  id: OperatingSystemVersion
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment
+  langs:
+  - csharp
+  - vb
+  name: OperatingSystemVersion
+  nameWithType: IEnvironment.OperatingSystemVersion
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.OperatingSystemVersion
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: string OperatingSystemVersion { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property OperatingSystemVersion As String
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.OperatingSystemVersion*
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.ProcessorCount
+  commentId: P:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.ProcessorCount
+  id: ProcessorCount
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment
+  langs:
+  - csharp
+  - vb
+  name: ProcessorCount
+  nameWithType: IEnvironment.ProcessorCount
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.ProcessorCount
+  type: Property
+  assemblies:
+  - Microsoft.TestPlatform.PlatformAbstractions
+  namespace: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  syntax:
+    content: int ProcessorCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ProcessorCount As Integer
+  overload: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.ProcessorCount*
+references:
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  commentId: N:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  nameWithType: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+    name: PlatformAbstractions
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+    name: PlatformAbstractions
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.html
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Exit*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Exit
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IEnvironment_Exit_System_Int32_
+  name: Exit
+  nameWithType: IEnvironment.Exit
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Exit
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.GetCurrentManagedThreadId*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.GetCurrentManagedThreadId
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IEnvironment_GetCurrentManagedThreadId
+  name: GetCurrentManagedThreadId
+  nameWithType: IEnvironment.GetCurrentManagedThreadId
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.GetCurrentManagedThreadId
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Architecture*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Architecture
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IEnvironment_Architecture
+  name: Architecture
+  nameWithType: IEnvironment.Architecture
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.Architecture
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture
+  commentId: T:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture.html
+  name: PlatformArchitecture
+  nameWithType: PlatformArchitecture
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformArchitecture
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  commentId: N:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  nameWithType: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+    name: PlatformAbstractions
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: Microsoft.VisualStudio.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform
+    name: TestPlatform
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.html
+  - name: .
+  - uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+    name: PlatformAbstractions
+    isExternal: true
+    href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.html
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.OperatingSystem*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.OperatingSystem
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IEnvironment_OperatingSystem
+  name: OperatingSystem
+  nameWithType: IEnvironment.OperatingSystem
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.OperatingSystem
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformOperatingSystem
+  commentId: T:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformOperatingSystem
+  parent: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformOperatingSystem.html
+  name: PlatformOperatingSystem
+  nameWithType: PlatformOperatingSystem
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformOperatingSystem
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.OperatingSystemVersion*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.OperatingSystemVersion
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IEnvironment_OperatingSystemVersion
+  name: OperatingSystemVersion
+  nameWithType: IEnvironment.OperatingSystemVersion
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.OperatingSystemVersion
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.ProcessorCount*
+  commentId: Overload:Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.ProcessorCount
+  isExternal: true
+  href: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.html#Microsoft_VisualStudio_TestPlatform_PlatformAbstractions_Interfaces_IEnvironment_ProcessorCount
+  name: ProcessorCount
+  nameWithType: IEnvironment.ProcessorCount
+  fullName: Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.Interfaces.IEnvironment.ProcessorCount
