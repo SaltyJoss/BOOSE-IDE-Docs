@@ -78,11 +78,15 @@
 - [EndMethodApp](api/BOOSECoreApp.Core.Methods.EndMethodApp.yml)
 - [CallMethodApp](api/BOOSECoreApp.Core.Methods.CallMethodApp.yml)
 
-## Exceptions and Exception Handling
+---
+
+## Exception Handling
 > BOOSECoreApp.Exceptions
 
 ### [Exceptions](api/BOOSECoreApp.Exceptions.yml)
 - [BooseSyntaxException](api/BOOSECoreApp.Exceptions.BooseSyntaxException.yml)
+
+---
 
 ## User Interface
 > BOOSECoreApp.UI
@@ -102,11 +106,15 @@
 - [EditorThemes](api/BOOSECoreApp.UI.EditorThemes.yml)
 - [UILogger](api/BOOSECoreApp.UI.UILogger.yml)
 
+---
+
 ## Mock Canvas and Graphic Adapter
 > BOOSECoreApp.Core.Mocks
 ### [Mocks](api-tests/BOOSECoreApp.Core.Mocks.yml)
 - [MockCanvas](api-tests/BOOSECoreApp.Core.Mocks.MockCanvas.yml)
 - [MockGraphicAdapter](api-tests/BOOSECoreApp.Core.Mocks.MockGraphicAdapter.yml)
+
+---
 
 ## Unit Tests
 > BOOSETests
