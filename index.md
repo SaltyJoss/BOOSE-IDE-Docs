@@ -6,9 +6,11 @@
  <br> 
  <br> 
 
-## **INDEX PAGE**
+# **INDEX PAGE**
 
 > :memo: **Note:** The classes below are automatically generated from the BOOSECoreApp XML documentation.
+
+## [Core](api/BOOSECoreApp.Core.yml)
 
 ### [Adapters](api/BOOSECoreApp.Core.Adapters.yml)
 - [CanvasGraphicsAdapter](api/BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.yml)
@@ -75,7 +77,7 @@
 - [EndMethodApp](api/BOOSECoreApp.Core.Methods.EndMethodApp.yml)
 - [CallMethodApp](api/BOOSECoreApp.Core.Methods.CallMethodApp.yml)
 
-### [Exceptions](api/BOOSECoreApp.Exceptions.yml)
+## [Exceptions](api/BOOSECoreApp.Exceptions.yml)
 - [BooseSyntaxException](api/BOOSECoreApp.Exceptions.BooseSyntaxException.yml)
 - [GlobalExceptionHandler](api/BOOSECoreApp.Exceptions.GlobalExceptionHandler.yml)
 
@@ -93,6 +95,8 @@
 - [EditorTheme](api/BOOSECoreApp.UI.EditorTheme.yml)
 - [EditorThemes](api/BOOSECoreApp.UI.EditorThemes.yml)
 - [UILogger](api/BOOSECoreApp.UI.UILogger.yml)
+
+## Unit Tests
 
 ### [Mocks](api-tests/BOOSECoreApp.Mocks.yml)
 - [MockCanvas](api-tests/BOOSECoreApp.Mocks.MockCanvas.yml)
