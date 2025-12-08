@@ -9,7 +9,7 @@ items:
   - BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters(System.String[])
   - BOOSECoreApp.Core.Base.EvaluationApp.Execute
   - BOOSECoreApp.Core.Base.EvaluationApp.Expression
-  - BOOSECoreApp.Core.Base.EvaluationApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
+  - BOOSECoreApp.Core.Base.EvaluationApp.Set(BOOSECoreApp.Core.Interfaces.IStoredProgramApp,System.String[])
   - BOOSECoreApp.Core.Base.EvaluationApp.Value
   - BOOSECoreApp.Core.Base.EvaluationApp.VarName
   langs:
@@ -20,7 +20,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.EvaluationApp
   type: Class
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/EvaluationApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/EvaluationApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -63,7 +63,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.EvaluationApp.EvaluationApp(string, object, string)
   type: Constructor
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/EvaluationApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/EvaluationApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -98,7 +98,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters(string[])
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/EvaluationApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/EvaluationApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -116,39 +116,39 @@ items:
   nameWithType.vb: EvaluationApp.CheckParameters(String())
   fullName.vb: BOOSECoreApp.Core.Base.EvaluationApp.CheckParameters(String())
   name.vb: CheckParameters(String())
-- uid: BOOSECoreApp.Core.Base.EvaluationApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
-  commentId: M:BOOSECoreApp.Core.Base.EvaluationApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
-  id: Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
+- uid: BOOSECoreApp.Core.Base.EvaluationApp.Set(BOOSECoreApp.Core.Interfaces.IStoredProgramApp,System.String[])
+  commentId: M:BOOSECoreApp.Core.Base.EvaluationApp.Set(BOOSECoreApp.Core.Interfaces.IStoredProgramApp,System.String[])
+  id: Set(BOOSECoreApp.Core.Interfaces.IStoredProgramApp,System.String[])
   parent: BOOSECoreApp.Core.Base.EvaluationApp
   langs:
   - csharp
   - vb
-  name: Set(StoredProgramApp, string[])
-  nameWithType: EvaluationApp.Set(StoredProgramApp, string[])
-  fullName: BOOSECoreApp.Core.Base.EvaluationApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp, string[])
+  name: Set(IStoredProgramApp, string[])
+  nameWithType: EvaluationApp.Set(IStoredProgramApp, string[])
+  fullName: BOOSECoreApp.Core.Base.EvaluationApp.Set(BOOSECoreApp.Core.Interfaces.IStoredProgramApp, string[])
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/EvaluationApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/EvaluationApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
   summary: Assigns the current <xref href="BOOSECoreApp.Core.Base.StoredProgramApp" data-throw-if-not-resolved="false"></xref> context and parses the provided parameters.
   example: []
   syntax:
-    content: public override void Set(StoredProgramApp program, string[] parameters)
+    content: public override void Set(IStoredProgramApp program, string[] parameters)
     parameters:
     - id: program
-      type: BOOSECoreApp.Core.Base.StoredProgramApp
+      type: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
       description: The <xref href="BOOSECoreApp.Core.Base.StoredProgramApp" data-throw-if-not-resolved="false"></xref> that owns this command.
     - id: parameters
       type: System.String[]
       description: The array of string parameters for this command.
-    content.vb: Public Overrides Sub [Set](program As StoredProgramApp, parameters As String())
-  overridden: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
+    content.vb: Public Overrides Sub [Set](program As IStoredProgramApp, parameters As String())
+  overridden: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Interfaces.IStoredProgramApp,System.String[])
   overload: BOOSECoreApp.Core.Base.EvaluationApp.Set*
-  nameWithType.vb: EvaluationApp.Set(StoredProgramApp, String())
-  fullName.vb: BOOSECoreApp.Core.Base.EvaluationApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp, String())
-  name.vb: Set(StoredProgramApp, String())
+  nameWithType.vb: EvaluationApp.Set(IStoredProgramApp, String())
+  fullName.vb: BOOSECoreApp.Core.Base.EvaluationApp.Set(BOOSECoreApp.Core.Interfaces.IStoredProgramApp, String())
+  name.vb: Set(IStoredProgramApp, String())
 - uid: BOOSECoreApp.Core.Base.EvaluationApp.Execute
   commentId: M:BOOSECoreApp.Core.Base.EvaluationApp.Execute
   id: Execute
@@ -161,7 +161,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.EvaluationApp.Execute()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/EvaluationApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/EvaluationApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -184,7 +184,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.EvaluationApp.VarName
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/EvaluationApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/EvaluationApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -208,7 +208,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.EvaluationApp.Value
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/EvaluationApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/EvaluationApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -232,7 +232,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.EvaluationApp.Expression
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/EvaluationApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/EvaluationApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -686,33 +686,32 @@ references:
   - name: )
 - uid: BOOSECoreApp.Core.Base.StoredProgramApp
   commentId: T:BOOSECoreApp.Core.Base.StoredProgramApp
-  parent: BOOSECoreApp.Core.Base
   isExternal: true
   href: BOOSECoreApp.Core.Base.StoredProgramApp.html
   name: StoredProgramApp
   nameWithType: StoredProgramApp
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp
-- uid: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
-  commentId: M:BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
+- uid: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Interfaces.IStoredProgramApp,System.String[])
+  commentId: M:BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Interfaces.IStoredProgramApp,System.String[])
   parent: BOOSECoreApp.Core.Base.CommandApp
   isExternal: true
-  href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Set_BOOSECoreApp_Core_Base_StoredProgramApp_System_String___
-  name: Set(StoredProgramApp, string[])
-  nameWithType: CommandApp.Set(StoredProgramApp, string[])
-  fullName: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp, string[])
-  nameWithType.vb: CommandApp.Set(StoredProgramApp, String())
-  fullName.vb: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp, String())
-  name.vb: Set(StoredProgramApp, String())
+  href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Set_BOOSECoreApp_Core_Interfaces_IStoredProgramApp_System_String___
+  name: Set(IStoredProgramApp, string[])
+  nameWithType: CommandApp.Set(IStoredProgramApp, string[])
+  fullName: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Interfaces.IStoredProgramApp, string[])
+  nameWithType.vb: CommandApp.Set(IStoredProgramApp, String())
+  fullName.vb: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Interfaces.IStoredProgramApp, String())
+  name.vb: Set(IStoredProgramApp, String())
   spec.csharp:
-  - uid: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
+  - uid: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Interfaces.IStoredProgramApp,System.String[])
     name: Set
     isExternal: true
-    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Set_BOOSECoreApp_Core_Base_StoredProgramApp_System_String___
+    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Set_BOOSECoreApp_Core_Interfaces_IStoredProgramApp_System_String___
   - name: (
-  - uid: BOOSECoreApp.Core.Base.StoredProgramApp
-    name: StoredProgramApp
+  - uid: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+    name: IStoredProgramApp
     isExternal: true
-    href: BOOSECoreApp.Core.Base.StoredProgramApp.html
+    href: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.html
   - name: ','
   - name: " "
   - uid: System.String
@@ -723,15 +722,15 @@ references:
   - name: ']'
   - name: )
   spec.vb:
-  - uid: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])
+  - uid: BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Interfaces.IStoredProgramApp,System.String[])
     name: Set
     isExternal: true
-    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Set_BOOSECoreApp_Core_Base_StoredProgramApp_System_String___
+    href: BOOSECoreApp.Core.Base.CommandApp.html#BOOSECoreApp_Core_Base_CommandApp_Set_BOOSECoreApp_Core_Interfaces_IStoredProgramApp_System_String___
   - name: (
-  - uid: BOOSECoreApp.Core.Base.StoredProgramApp
-    name: StoredProgramApp
+  - uid: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+    name: IStoredProgramApp
     isExternal: true
-    href: BOOSECoreApp.Core.Base.StoredProgramApp.html
+    href: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.html
   - name: ','
   - name: " "
   - uid: System.String
@@ -744,10 +743,18 @@ references:
 - uid: BOOSECoreApp.Core.Base.EvaluationApp.Set*
   commentId: Overload:BOOSECoreApp.Core.Base.EvaluationApp.Set
   isExternal: true
-  href: BOOSECoreApp.Core.Base.EvaluationApp.html#BOOSECoreApp_Core_Base_EvaluationApp_Set_BOOSECoreApp_Core_Base_StoredProgramApp_System_String___
+  href: BOOSECoreApp.Core.Base.EvaluationApp.html#BOOSECoreApp_Core_Base_EvaluationApp_Set_BOOSECoreApp_Core_Interfaces_IStoredProgramApp_System_String___
   name: Set
   nameWithType: EvaluationApp.Set
   fullName: BOOSECoreApp.Core.Base.EvaluationApp.Set
+- uid: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+  commentId: T:BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+  parent: BOOSECoreApp.Core.Interfaces
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.html
+  name: IStoredProgramApp
+  nameWithType: IStoredProgramApp
+  fullName: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
 - uid: BOOSECoreApp.Core.Base.CommandApp.Execute
   commentId: M:BOOSECoreApp.Core.Base.CommandApp.Execute
   parent: BOOSECoreApp.Core.Base.CommandApp

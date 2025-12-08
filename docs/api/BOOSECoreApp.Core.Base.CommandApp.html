@@ -89,7 +89,7 @@
 
 
   <h1 id="BOOSECoreApp_Core_Base_CommandApp" data-uid="BOOSECoreApp.Core.Base.CommandApp" class="text-break">
-Class CommandApp  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
+Class CommandApp  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -194,7 +194,7 @@ Set -&gt; CheckParameters -&gt; Compile -&gt; Execute.</p>
 
   <h3 id="BOOSECoreApp_Core_Base_CommandApp__ctor" data-uid="BOOSECoreApp.Core.Base.CommandApp.#ctor">
   CommandApp()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -223,7 +223,7 @@ Set -&gt; CheckParameters -&gt; Compile -&gt; Execute.</p>
 
   <h3 id="BOOSECoreApp_Core_Base_CommandApp__parameters" data-uid="BOOSECoreApp.Core.Base.CommandApp._parameters">
   _parameters
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The parameters for the command, usually parsed from the command string.</p>
@@ -259,7 +259,7 @@ Set -&gt; CheckParameters -&gt; Compile -&gt; Execute.</p>
 
   <h3 id="BOOSECoreApp_Core_Base_CommandApp_ProgramApp" data-uid="BOOSECoreApp.Core.Base.CommandApp.ProgramApp">
   ProgramApp
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Exposes the app-level stored program instance.</p>
@@ -267,7 +267,7 @@ Set -&gt; CheckParameters -&gt; Compile -&gt; Execute.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StoredProgramApp? ProgramApp { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IStoredProgramApp ProgramApp { get; set; }</code></pre>
   </div>
 
 
@@ -276,7 +276,7 @@ Set -&gt; CheckParameters -&gt; Compile -&gt; Execute.</p>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a></dt>
+    <dt><a class="xref" href="../api-tests/BOOSECoreApp.Core.Interfaces.IStoredProgramApp.html">IStoredProgramApp</a></dt>
     <dd></dd>
   </dl>
 
@@ -295,7 +295,7 @@ Set -&gt; CheckParameters -&gt; Compile -&gt; Execute.</p>
 
   <h3 id="BOOSECoreApp_Core_Base_CommandApp_CheckParameters_System_String___" data-uid="BOOSECoreApp.Core.Base.CommandApp.CheckParameters(System.String[])">
   CheckParameters(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Validates the provided parameters to ensure they meet the required conditions.</p>
@@ -328,7 +328,7 @@ Set -&gt; CheckParameters -&gt; Compile -&gt; Execute.</p>
 
   <h3 id="BOOSECoreApp_Core_Base_CommandApp_Execute" data-uid="BOOSECoreApp.Core.Base.CommandApp.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Execute the command.</p>
@@ -353,9 +353,9 @@ Set -&gt; CheckParameters -&gt; Compile -&gt; Execute.</p>
 
   <a id="BOOSECoreApp_Core_Base_CommandApp_Set_" data-uid="BOOSECoreApp.Core.Base.CommandApp.Set*"></a>
 
-  <h3 id="BOOSECoreApp_Core_Base_CommandApp_Set_BOOSECoreApp_Core_Base_StoredProgramApp_System_String___" data-uid="BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Base.StoredProgramApp,System.String[])">
-  Set(StoredProgramApp, string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BOOSECoreApp_Core_Base_CommandApp_Set_BOOSECoreApp_Core_Interfaces_IStoredProgramApp_System_String___" data-uid="BOOSECoreApp.Core.Base.CommandApp.Set(BOOSECoreApp.Core.Interfaces.IStoredProgramApp,System.String[])">
+  Set(IStoredProgramApp, string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CommandApp.cs"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Assigns the current <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a> context and parses the provided parameters.</p>
@@ -363,12 +363,12 @@ Set -&gt; CheckParameters -&gt; Compile -&gt; Execute.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void Set(StoredProgramApp program, string[] parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Set(IStoredProgramApp program, string[] parameters)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>program</code> <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a></dt>
+    <dt><code>program</code> <a class="xref" href="../api-tests/BOOSECoreApp.Core.Interfaces.IStoredProgramApp.html">IStoredProgramApp</a></dt>
     <dd><p>The <a class="xref" href="../api-tests/BOOSECoreApp.Core.Base.StoredProgramApp.html">StoredProgramApp</a> that owns this command.</p>
 </dd>
     <dt><code>parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
@@ -391,7 +391,7 @@ Set -&gt; CheckParameters -&gt; Compile -&gt; Execute.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandApp.cs" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CommandApp.cs" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -5,7 +5,7 @@ items:
   id: WrapperApp
   parent: BOOSECoreApp.Core.Base
   children:
-  - BOOSECoreApp.Core.Base.WrapperApp.#ctor(BOOSECoreApp.Core.Base.ParserApp,BOOSECoreApp.Core.Base.StoredProgramApp)
+  - BOOSECoreApp.Core.Base.WrapperApp.#ctor(BOOSECoreApp.Core.Base.ParserApp,BOOSECoreApp.Core.Interfaces.IStoredProgramApp)
   - BOOSECoreApp.Core.Base.WrapperApp.RunProgram(System.String)
   langs:
   - csharp
@@ -15,7 +15,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.WrapperApp
   type: Class
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/WrapperApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/WrapperApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -37,38 +37,38 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
-- uid: BOOSECoreApp.Core.Base.WrapperApp.#ctor(BOOSECoreApp.Core.Base.ParserApp,BOOSECoreApp.Core.Base.StoredProgramApp)
-  commentId: M:BOOSECoreApp.Core.Base.WrapperApp.#ctor(BOOSECoreApp.Core.Base.ParserApp,BOOSECoreApp.Core.Base.StoredProgramApp)
-  id: '#ctor(BOOSECoreApp.Core.Base.ParserApp,BOOSECoreApp.Core.Base.StoredProgramApp)'
+- uid: BOOSECoreApp.Core.Base.WrapperApp.#ctor(BOOSECoreApp.Core.Base.ParserApp,BOOSECoreApp.Core.Interfaces.IStoredProgramApp)
+  commentId: M:BOOSECoreApp.Core.Base.WrapperApp.#ctor(BOOSECoreApp.Core.Base.ParserApp,BOOSECoreApp.Core.Interfaces.IStoredProgramApp)
+  id: '#ctor(BOOSECoreApp.Core.Base.ParserApp,BOOSECoreApp.Core.Interfaces.IStoredProgramApp)'
   parent: BOOSECoreApp.Core.Base.WrapperApp
   langs:
   - csharp
   - vb
-  name: WrapperApp(ParserApp, StoredProgramApp)
-  nameWithType: WrapperApp.WrapperApp(ParserApp, StoredProgramApp)
-  fullName: BOOSECoreApp.Core.Base.WrapperApp.WrapperApp(BOOSECoreApp.Core.Base.ParserApp, BOOSECoreApp.Core.Base.StoredProgramApp)
+  name: WrapperApp(ParserApp, IStoredProgramApp)
+  nameWithType: WrapperApp.WrapperApp(ParserApp, IStoredProgramApp)
+  fullName: BOOSECoreApp.Core.Base.WrapperApp.WrapperApp(BOOSECoreApp.Core.Base.ParserApp, BOOSECoreApp.Core.Interfaces.IStoredProgramApp)
   type: Constructor
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/WrapperApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/WrapperApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
   summary: Initialises an instance of parser, StoredProgram, and the Graphics Adapter
   example: []
   syntax:
-    content: public WrapperApp(ParserApp parser, StoredProgramApp program)
+    content: public WrapperApp(ParserApp parser, IStoredProgramApp program)
     parameters:
     - id: parser
       type: BOOSECoreApp.Core.Base.ParserApp
       description: The BOOSE parser to use.
     - id: program
-      type: BOOSECoreApp.Core.Base.StoredProgramApp
+      type: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
       description: The BOOSE program code to execute.
-    content.vb: Public Sub New(parser As ParserApp, program As StoredProgramApp)
+    content.vb: Public Sub New(parser As ParserApp, program As IStoredProgramApp)
   overload: BOOSECoreApp.Core.Base.WrapperApp.#ctor*
-  nameWithType.vb: WrapperApp.New(ParserApp, StoredProgramApp)
-  fullName.vb: BOOSECoreApp.Core.Base.WrapperApp.New(BOOSECoreApp.Core.Base.ParserApp, BOOSECoreApp.Core.Base.StoredProgramApp)
-  name.vb: New(ParserApp, StoredProgramApp)
+  nameWithType.vb: WrapperApp.New(ParserApp, IStoredProgramApp)
+  fullName.vb: BOOSECoreApp.Core.Base.WrapperApp.New(BOOSECoreApp.Core.Base.ParserApp, BOOSECoreApp.Core.Interfaces.IStoredProgramApp)
+  name.vb: New(ParserApp, IStoredProgramApp)
 - uid: BOOSECoreApp.Core.Base.WrapperApp.RunProgram(System.String)
   commentId: M:BOOSECoreApp.Core.Base.WrapperApp.RunProgram(System.String)
   id: RunProgram(System.String)
@@ -81,7 +81,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.WrapperApp.RunProgram(string)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/WrapperApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/WrapperApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -433,7 +433,7 @@ references:
 - uid: BOOSECoreApp.Core.Base.WrapperApp.#ctor*
   commentId: Overload:BOOSECoreApp.Core.Base.WrapperApp.#ctor
   isExternal: true
-  href: BOOSECoreApp.Core.Base.WrapperApp.html#BOOSECoreApp_Core_Base_WrapperApp__ctor_BOOSECoreApp_Core_Base_ParserApp_BOOSECoreApp_Core_Base_StoredProgramApp_
+  href: BOOSECoreApp.Core.Base.WrapperApp.html#BOOSECoreApp_Core_Base_WrapperApp__ctor_BOOSECoreApp_Core_Base_ParserApp_BOOSECoreApp_Core_Interfaces_IStoredProgramApp_
   name: WrapperApp
   nameWithType: WrapperApp.WrapperApp
   fullName: BOOSECoreApp.Core.Base.WrapperApp.WrapperApp
@@ -448,14 +448,14 @@ references:
   name: ParserApp
   nameWithType: ParserApp
   fullName: BOOSECoreApp.Core.Base.ParserApp
-- uid: BOOSECoreApp.Core.Base.StoredProgramApp
-  commentId: T:BOOSECoreApp.Core.Base.StoredProgramApp
-  parent: BOOSECoreApp.Core.Base
+- uid: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+  commentId: T:BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+  parent: BOOSECoreApp.Core.Interfaces
   isExternal: true
-  href: BOOSECoreApp.Core.Base.StoredProgramApp.html
-  name: StoredProgramApp
-  nameWithType: StoredProgramApp
-  fullName: BOOSECoreApp.Core.Base.StoredProgramApp
+  href: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.html
+  name: IStoredProgramApp
+  nameWithType: IStoredProgramApp
+  fullName: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
 - uid: BOOSECoreApp.Core.Base.CommandFactoryApp
   commentId: T:BOOSECoreApp.Core.Base.CommandFactoryApp
   parent: BOOSECoreApp.Core.Base
@@ -464,6 +464,13 @@ references:
   name: CommandFactoryApp
   nameWithType: CommandFactoryApp
   fullName: BOOSECoreApp.Core.Base.CommandFactoryApp
+- uid: BOOSECoreApp.Core.Base.StoredProgramApp
+  commentId: T:BOOSECoreApp.Core.Base.StoredProgramApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.StoredProgramApp.html
+  name: StoredProgramApp
+  nameWithType: StoredProgramApp
+  fullName: BOOSECoreApp.Core.Base.StoredProgramApp
 - uid: BOOSECoreApp.Core.Base.WrapperApp.RunProgram*
   commentId: Overload:BOOSECoreApp.Core.Base.WrapperApp.RunProgram
   isExternal: true

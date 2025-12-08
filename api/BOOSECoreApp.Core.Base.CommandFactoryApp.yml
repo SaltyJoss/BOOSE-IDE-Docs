@@ -15,7 +15,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CommandFactoryApp
   type: Class
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandFactoryApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CommandFactoryApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -33,15 +33,11 @@ items:
     Enables extension to the boose.dll base WITHOUT modification.
   example: []
   syntax:
-    content: 'public sealed class CommandFactoryApp : CommandFactory, ICommandFactory'
-    content.vb: Public NotInheritable Class CommandFactoryApp Inherits CommandFactory Implements ICommandFactory
+    content: public sealed class CommandFactoryApp
+    content.vb: Public NotInheritable Class CommandFactoryApp
   inheritance:
   - System.Object
-  - BOOSE.CommandFactory
-  implements:
-  - BOOSE.ICommandFactory
   inheritedMembers:
-  - BOOSE.CommandFactory.MakeCommand(System.String)
   - System.Object.GetType
   - System.Object.ToString
   - System.Object.Equals(System.Object)
@@ -60,7 +56,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CommandFactoryApp.MakeCommand(string, string?, string?)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandFactoryApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CommandFactoryApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -102,7 +98,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CommandFactoryApp.Instance
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CommandFactoryApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CommandFactoryApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -172,53 +168,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: BOOSE.CommandFactory
-  commentId: T:BOOSE.CommandFactory
-  parent: BOOSE
-  isExternal: true
-  href: BOOSE.CommandFactory.html
-  name: CommandFactory
-  nameWithType: CommandFactory
-  fullName: BOOSE.CommandFactory
-- uid: BOOSE.ICommandFactory
-  commentId: T:BOOSE.ICommandFactory
-  parent: BOOSE
-  isExternal: true
-  href: BOOSE.ICommandFactory.html
-  name: ICommandFactory
-  nameWithType: ICommandFactory
-  fullName: BOOSE.ICommandFactory
-- uid: BOOSE.CommandFactory.MakeCommand(System.String)
-  commentId: M:BOOSE.CommandFactory.MakeCommand(System.String)
-  parent: BOOSE.CommandFactory
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: MakeCommand(string)
-  nameWithType: CommandFactory.MakeCommand(string)
-  fullName: BOOSE.CommandFactory.MakeCommand(string)
-  nameWithType.vb: CommandFactory.MakeCommand(String)
-  fullName.vb: BOOSE.CommandFactory.MakeCommand(String)
-  name.vb: MakeCommand(String)
-  spec.csharp:
-  - uid: BOOSE.CommandFactory.MakeCommand(System.String)
-    name: MakeCommand
-    isExternal: true
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  spec.vb:
-  - uid: BOOSE.CommandFactory.MakeCommand(System.String)
-    name: MakeCommand
-    isExternal: true
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
   parent: System.Object
@@ -458,13 +407,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: BOOSE
-  commentId: N:BOOSE
-  isExternal: true
-  href: BOOSE.html
-  name: BOOSE
-  nameWithType: BOOSE
-  fullName: BOOSE
 - uid: BOOSE.CommandException
   commentId: T:BOOSE.CommandException
   isExternal: true

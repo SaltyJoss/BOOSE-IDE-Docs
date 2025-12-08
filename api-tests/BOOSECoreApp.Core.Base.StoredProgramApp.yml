@@ -18,6 +18,7 @@ items:
   - BOOSECoreApp.Core.Base.StoredProgramApp.GetVarValue(System.String)
   - BOOSECoreApp.Core.Base.StoredProgramApp.GetVariable(System.String)
   - BOOSECoreApp.Core.Base.StoredProgramApp.MethodTable
+  - BOOSECoreApp.Core.Base.StoredProgramApp.OnUINotificationEvent(BOOSECoreApp.Core.Base.UINotificationType)
   - BOOSECoreApp.Core.Base.StoredProgramApp.PC
   - BOOSECoreApp.Core.Base.StoredProgramApp.ResetAll
   - BOOSECoreApp.Core.Base.StoredProgramApp.ResetProgram
@@ -34,7 +35,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp
   type: Class
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -55,6 +56,34 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+- uid: BOOSECoreApp.Core.Base.StoredProgramApp.OnUINotificationEvent(BOOSECoreApp.Core.Base.UINotificationType)
+  commentId: M:BOOSECoreApp.Core.Base.StoredProgramApp.OnUINotificationEvent(BOOSECoreApp.Core.Base.UINotificationType)
+  id: OnUINotificationEvent(BOOSECoreApp.Core.Base.UINotificationType)
+  parent: BOOSECoreApp.Core.Base.StoredProgramApp
+  langs:
+  - csharp
+  - vb
+  name: OnUINotificationEvent(UINotificationType)
+  nameWithType: StoredProgramApp.OnUINotificationEvent(UINotificationType)
+  fullName: BOOSECoreApp.Core.Base.StoredProgramApp.OnUINotificationEvent(BOOSECoreApp.Core.Base.UINotificationType)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Invokes the UI notification event with the specified notification type.
+  example: []
+  syntax:
+    content: public void OnUINotificationEvent(UINotificationType notificationType)
+    parameters:
+    - id: notificationType
+      type: BOOSECoreApp.Core.Base.UINotificationType
+      description: The type of UI notification to invoke.
+    content.vb: Public Sub OnUINotificationEvent(notificationType As UINotificationType)
+  overload: BOOSECoreApp.Core.Base.StoredProgramApp.OnUINotificationEvent*
+  implements:
+  - BOOSECoreApp.Core.Interfaces.IStoredProgramApp.OnUINotificationEvent(BOOSECoreApp.Core.Base.UINotificationType)
 - uid: BOOSECoreApp.Core.Base.StoredProgramApp.#ctor(BOOSECoreApp.Core.Interfaces.IGraphicAdapter)
   commentId: M:BOOSECoreApp.Core.Base.StoredProgramApp.#ctor(BOOSECoreApp.Core.Interfaces.IGraphicAdapter)
   id: '#ctor(BOOSECoreApp.Core.Interfaces.IGraphicAdapter)'
@@ -67,7 +96,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.StoredProgramApp(BOOSECoreApp.Core.Interfaces.IGraphicAdapter)
   type: Constructor
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -100,7 +129,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.Add(BOOSECoreApp.Core.Interfaces.ICommandApp)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -131,7 +160,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.ResetAll()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -155,7 +184,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.ResetProgram()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -179,7 +208,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.Commandsleft()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -206,7 +235,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.Run()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -230,7 +259,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.AddVariable(BOOSECoreApp.Core.Base.VariableAppBase)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -265,7 +294,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.AddVariable(string, BOOSECoreApp.Core.Adapters.SoftVariable)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -306,7 +335,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.EvaluateExpression(string)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -344,7 +373,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.GetVariable(string)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -386,7 +415,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.GetVarValue(string)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -424,7 +453,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.VariableExists(string)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -458,7 +487,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.SetVarValue(string, object)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -484,31 +513,6 @@ items:
   nameWithType.vb: StoredProgramApp.SetVarValue(String, Object)
   fullName.vb: BOOSECoreApp.Core.Base.StoredProgramApp.SetVarValue(String, Object)
   name.vb: SetVarValue(String, Object)
-- uid: BOOSECoreApp.Core.Base.StoredProgramApp.AppInfo
-  commentId: P:BOOSECoreApp.Core.Base.StoredProgramApp.AppInfo
-  id: AppInfo
-  parent: BOOSECoreApp.Core.Base.StoredProgramApp
-  langs:
-  - csharp
-  - vb
-  name: AppInfo
-  nameWithType: StoredProgramApp.AppInfo
-  fullName: BOOSECoreApp.Core.Base.StoredProgramApp.AppInfo
-  type: Property
-  source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
-  assemblies:
-  - BOOSECoreApp
-  namespace: BOOSECoreApp.Core.Base
-  summary: Gets or sets optional metadata information about the application + system.
-  example: []
-  syntax:
-    content: public InfoUI AppInfo { get; set; }
-    parameters: []
-    return:
-      type: BOOSECoreApp.UI.InfoUI
-    content.vb: Public Property AppInfo As InfoUI
-  overload: BOOSECoreApp.Core.Base.StoredProgramApp.AppInfo*
 - uid: BOOSECoreApp.Core.Base.StoredProgramApp.PC
   commentId: P:BOOSECoreApp.Core.Base.StoredProgramApp.PC
   id: PC
@@ -521,7 +525,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.PC
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -548,7 +552,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.Adapter
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -575,7 +579,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.Commands
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -602,7 +606,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.VariableAdapter
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -629,7 +633,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.MethodTable
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -656,7 +660,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.CallStack
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -671,6 +675,33 @@ items:
   overload: BOOSECoreApp.Core.Base.StoredProgramApp.CallStack*
   implements:
   - BOOSECoreApp.Core.Interfaces.IStoredProgramApp.CallStack
+- uid: BOOSECoreApp.Core.Base.StoredProgramApp.AppInfo
+  commentId: P:BOOSECoreApp.Core.Base.StoredProgramApp.AppInfo
+  id: AppInfo
+  parent: BOOSECoreApp.Core.Base.StoredProgramApp
+  langs:
+  - csharp
+  - vb
+  name: AppInfo
+  nameWithType: StoredProgramApp.AppInfo
+  fullName: BOOSECoreApp.Core.Base.StoredProgramApp.AppInfo
+  type: Property
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Gets or sets optional metadata information about the application + system.
+  example: []
+  syntax:
+    content: public InfoUI AppInfo { get; set; }
+    parameters: []
+    return:
+      type: BOOSECoreApp.UI.InfoUI
+    content.vb: Public Property AppInfo As InfoUI
+  overload: BOOSECoreApp.Core.Base.StoredProgramApp.AppInfo*
+  implements:
+  - BOOSECoreApp.Core.Interfaces.IStoredProgramApp.AppInfo
 - uid: BOOSECoreApp.Core.Base.StoredProgramApp.UINotificationEvent
   commentId: E:BOOSECoreApp.Core.Base.StoredProgramApp.UINotificationEvent
   id: UINotificationEvent
@@ -683,7 +714,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.StoredProgramApp.UINotificationEvent
   type: Event
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/StoredProgramApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/StoredProgramApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -694,6 +725,8 @@ items:
     return:
       type: BOOSECoreApp.Core.Base.UINotificationEventHandler
     content.vb: Public Event UINotificationEvent As UINotificationEventHandler
+  implements:
+  - BOOSECoreApp.Core.Interfaces.IStoredProgramApp.UINotificationEvent
 references:
 - uid: BOOSECoreApp.Core.Interfaces.ICommandApp
   commentId: T:BOOSECoreApp.Core.Interfaces.ICommandApp
@@ -1030,9 +1063,53 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: BOOSECoreApp.Core.Base.StoredProgramApp.OnUINotificationEvent*
+  commentId: Overload:BOOSECoreApp.Core.Base.StoredProgramApp.OnUINotificationEvent
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.StoredProgramApp.html#BOOSECoreApp_Core_Base_StoredProgramApp_OnUINotificationEvent_BOOSECoreApp_Core_Base_UINotificationType_
+  name: OnUINotificationEvent
+  nameWithType: StoredProgramApp.OnUINotificationEvent
+  fullName: BOOSECoreApp.Core.Base.StoredProgramApp.OnUINotificationEvent
+- uid: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.OnUINotificationEvent(BOOSECoreApp.Core.Base.UINotificationType)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IStoredProgramApp.OnUINotificationEvent(BOOSECoreApp.Core.Base.UINotificationType)
+  parent: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.html#BOOSECoreApp_Core_Interfaces_IStoredProgramApp_OnUINotificationEvent_BOOSECoreApp_Core_Base_UINotificationType_
+  name: OnUINotificationEvent(UINotificationType)
+  nameWithType: IStoredProgramApp.OnUINotificationEvent(UINotificationType)
+  fullName: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.OnUINotificationEvent(BOOSECoreApp.Core.Base.UINotificationType)
+  spec.csharp:
+  - uid: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.OnUINotificationEvent(BOOSECoreApp.Core.Base.UINotificationType)
+    name: OnUINotificationEvent
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.html#BOOSECoreApp_Core_Interfaces_IStoredProgramApp_OnUINotificationEvent_BOOSECoreApp_Core_Base_UINotificationType_
+  - name: (
+  - uid: BOOSECoreApp.Core.Base.UINotificationType
+    name: UINotificationType
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.UINotificationType.html
+  - name: )
+  spec.vb:
+  - uid: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.OnUINotificationEvent(BOOSECoreApp.Core.Base.UINotificationType)
+    name: OnUINotificationEvent
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.html#BOOSECoreApp_Core_Interfaces_IStoredProgramApp_OnUINotificationEvent_BOOSECoreApp_Core_Base_UINotificationType_
+  - name: (
+  - uid: BOOSECoreApp.Core.Base.UINotificationType
+    name: UINotificationType
+    isExternal: true
+    href: BOOSECoreApp.Core.Base.UINotificationType.html
+  - name: )
+- uid: BOOSECoreApp.Core.Base.UINotificationType
+  commentId: T:BOOSECoreApp.Core.Base.UINotificationType
+  parent: BOOSECoreApp.Core.Base
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.UINotificationType.html
+  name: UINotificationType
+  nameWithType: UINotificationType
+  fullName: BOOSECoreApp.Core.Base.UINotificationType
 - uid: BOOSECoreApp.Core.Base.StoredProgramApp
   commentId: T:BOOSECoreApp.Core.Base.StoredProgramApp
-  parent: BOOSECoreApp.Core.Base
   isExternal: true
   href: BOOSECoreApp.Core.Base.StoredProgramApp.html
   name: StoredProgramApp
@@ -1602,48 +1679,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: BOOSECoreApp.Core.Base.StoredProgramApp.AppInfo*
-  commentId: Overload:BOOSECoreApp.Core.Base.StoredProgramApp.AppInfo
-  isExternal: true
-  href: BOOSECoreApp.Core.Base.StoredProgramApp.html#BOOSECoreApp_Core_Base_StoredProgramApp_AppInfo
-  name: AppInfo
-  nameWithType: StoredProgramApp.AppInfo
-  fullName: BOOSECoreApp.Core.Base.StoredProgramApp.AppInfo
-- uid: BOOSECoreApp.UI.InfoUI
-  commentId: T:BOOSECoreApp.UI.InfoUI
-  parent: BOOSECoreApp.UI
-  isExternal: true
-  href: BOOSECoreApp.UI.InfoUI.html
-  name: InfoUI
-  nameWithType: InfoUI
-  fullName: BOOSECoreApp.UI.InfoUI
-- uid: BOOSECoreApp.UI
-  commentId: N:BOOSECoreApp.UI
-  isExternal: true
-  href: BOOSECoreApp.html
-  name: BOOSECoreApp.UI
-  nameWithType: BOOSECoreApp.UI
-  fullName: BOOSECoreApp.UI
-  spec.csharp:
-  - uid: BOOSECoreApp
-    name: BOOSECoreApp
-    isExternal: true
-    href: BOOSECoreApp.html
-  - name: .
-  - uid: BOOSECoreApp.UI
-    name: UI
-    isExternal: true
-    href: BOOSECoreApp.UI.html
-  spec.vb:
-  - uid: BOOSECoreApp
-    name: BOOSECoreApp
-    isExternal: true
-    href: BOOSECoreApp.html
-  - name: .
-  - uid: BOOSECoreApp.UI
-    name: UI
-    isExternal: true
-    href: BOOSECoreApp.UI.html
 - uid: BOOSECoreApp.Core.Base.StoredProgramApp.PC*
   commentId: Overload:BOOSECoreApp.Core.Base.StoredProgramApp.PC
   isExternal: true
@@ -1986,6 +2021,64 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: BOOSECoreApp.Core.Base.StoredProgramApp.AppInfo*
+  commentId: Overload:BOOSECoreApp.Core.Base.StoredProgramApp.AppInfo
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.StoredProgramApp.html#BOOSECoreApp_Core_Base_StoredProgramApp_AppInfo
+  name: AppInfo
+  nameWithType: StoredProgramApp.AppInfo
+  fullName: BOOSECoreApp.Core.Base.StoredProgramApp.AppInfo
+- uid: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.AppInfo
+  commentId: P:BOOSECoreApp.Core.Interfaces.IStoredProgramApp.AppInfo
+  parent: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.html#BOOSECoreApp_Core_Interfaces_IStoredProgramApp_AppInfo
+  name: AppInfo
+  nameWithType: IStoredProgramApp.AppInfo
+  fullName: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.AppInfo
+- uid: BOOSECoreApp.UI.InfoUI
+  commentId: T:BOOSECoreApp.UI.InfoUI
+  parent: BOOSECoreApp.UI
+  isExternal: true
+  href: BOOSECoreApp.UI.InfoUI.html
+  name: InfoUI
+  nameWithType: InfoUI
+  fullName: BOOSECoreApp.UI.InfoUI
+- uid: BOOSECoreApp.UI
+  commentId: N:BOOSECoreApp.UI
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.UI
+  nameWithType: BOOSECoreApp.UI
+  fullName: BOOSECoreApp.UI
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.UI
+    name: UI
+    isExternal: true
+    href: BOOSECoreApp.UI.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.UI
+    name: UI
+    isExternal: true
+    href: BOOSECoreApp.UI.html
+- uid: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.UINotificationEvent
+  commentId: E:BOOSECoreApp.Core.Interfaces.IStoredProgramApp.UINotificationEvent
+  parent: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.html#BOOSECoreApp_Core_Interfaces_IStoredProgramApp_UINotificationEvent
+  name: UINotificationEvent
+  nameWithType: IStoredProgramApp.UINotificationEvent
+  fullName: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.UINotificationEvent
 - uid: BOOSECoreApp.Core.Base.UINotificationEventHandler
   commentId: T:BOOSECoreApp.Core.Base.UINotificationEventHandler
   parent: BOOSECoreApp.Core.Base

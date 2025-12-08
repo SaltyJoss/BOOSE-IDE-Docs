@@ -6,18 +6,19 @@ items:
   parent: BOOSETests.Commands
   children:
   - BOOSETests.Commands.CanvasAppTests.#ctor
-  - BOOSETests.Commands.CanvasAppTests.CircleDrawTest_Filled
-  - BOOSETests.Commands.CanvasAppTests.CircleDrawTest_Unfilled
-  - BOOSETests.Commands.CanvasAppTests.DrawToTest
-  - BOOSETests.Commands.CanvasAppTests.MoveToTest
-  - BOOSETests.Commands.CanvasAppTests.RectangleDrawTest_Filled
-  - BOOSETests.Commands.CanvasAppTests.RectangleDrawTest_Unfilled
-  - BOOSETests.Commands.CanvasAppTests.SetColourTest
+  - BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawCircle_FilledIsFalse
+  - BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawCircle_FilledIsTrue
+  - BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawRectangle_FilledIsFalse
+  - BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawRectangle_FilledIsTrue
+  - BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawSquare_FilledIsFalse
+  - BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawSquare_FilledIsTrue
+  - BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTo_DrawsLineToXY
+  - BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTriangle_FilledIsFalse
+  - BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTriangle_FilledIsTrue
+  - BOOSETests.Commands.CanvasAppTests.CanvasApp_MoveTo_MovesCursorToNewXY
+  - BOOSETests.Commands.CanvasAppTests.CanvasApp_SetBackgroundColour_ReturnsCorrectColour
+  - BOOSETests.Commands.CanvasAppTests.CanvasApp_SetPenColour_ReturnsCorrectColour
   - BOOSETests.Commands.CanvasAppTests.Setup
-  - BOOSETests.Commands.CanvasAppTests.SqaureDrawTest_Filled
-  - BOOSETests.Commands.CanvasAppTests.SqaureDrawTest_Unfilled
-  - BOOSETests.Commands.CanvasAppTests.TriangleDrawTest_Filled
-  - BOOSETests.Commands.CanvasAppTests.TriangleDrawTest_Unfilled
   langs:
   - csharp
   - vb
@@ -26,7 +27,7 @@ items:
   fullName: BOOSETests.Commands.CanvasAppTests
   type: Class
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasAppTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Commands/CanvasAppTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.Commands
@@ -67,7 +68,7 @@ items:
   fullName: BOOSETests.Commands.CanvasAppTests.Setup()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasAppTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Commands/CanvasAppTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.Commands
@@ -87,19 +88,19 @@ items:
   - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
     ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
     arguments: []
-- uid: BOOSETests.Commands.CanvasAppTests.MoveToTest
-  commentId: M:BOOSETests.Commands.CanvasAppTests.MoveToTest
-  id: MoveToTest
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_MoveTo_MovesCursorToNewXY
+  commentId: M:BOOSETests.Commands.CanvasAppTests.CanvasApp_MoveTo_MovesCursorToNewXY
+  id: CanvasApp_MoveTo_MovesCursorToNewXY
   parent: BOOSETests.Commands.CanvasAppTests
   langs:
   - csharp
   - vb
-  name: MoveToTest()
-  nameWithType: CanvasAppTests.MoveToTest()
-  fullName: BOOSETests.Commands.CanvasAppTests.MoveToTest()
+  name: CanvasApp_MoveTo_MovesCursorToNewXY()
+  nameWithType: CanvasAppTests.CanvasApp_MoveTo_MovesCursorToNewXY()
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_MoveTo_MovesCursorToNewXY()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasAppTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Commands/CanvasAppTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.Commands
@@ -109,29 +110,29 @@ items:
     content: >-
       [TestMethod]
 
-      public void MoveToTest()
+      public void CanvasApp_MoveTo_MovesCursorToNewXY()
     content.vb: >-
       <TestMethod>
 
-      Public Sub MoveToTest()
-  overload: BOOSETests.Commands.CanvasAppTests.MoveToTest*
+      Public Sub CanvasApp_MoveTo_MovesCursorToNewXY()
+  overload: BOOSETests.Commands.CanvasAppTests.CanvasApp_MoveTo_MovesCursorToNewXY*
   attributes:
   - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
     ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
     arguments: []
-- uid: BOOSETests.Commands.CanvasAppTests.DrawToTest
-  commentId: M:BOOSETests.Commands.CanvasAppTests.DrawToTest
-  id: DrawToTest
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTo_DrawsLineToXY
+  commentId: M:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTo_DrawsLineToXY
+  id: CanvasApp_DrawTo_DrawsLineToXY
   parent: BOOSETests.Commands.CanvasAppTests
   langs:
   - csharp
   - vb
-  name: DrawToTest()
-  nameWithType: CanvasAppTests.DrawToTest()
-  fullName: BOOSETests.Commands.CanvasAppTests.DrawToTest()
+  name: CanvasApp_DrawTo_DrawsLineToXY()
+  nameWithType: CanvasAppTests.CanvasApp_DrawTo_DrawsLineToXY()
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTo_DrawsLineToXY()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasAppTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Commands/CanvasAppTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.Commands
@@ -141,29 +142,29 @@ items:
     content: >-
       [TestMethod]
 
-      public void DrawToTest()
+      public void CanvasApp_DrawTo_DrawsLineToXY()
     content.vb: >-
       <TestMethod>
 
-      Public Sub DrawToTest()
-  overload: BOOSETests.Commands.CanvasAppTests.DrawToTest*
+      Public Sub CanvasApp_DrawTo_DrawsLineToXY()
+  overload: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTo_DrawsLineToXY*
   attributes:
   - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
     ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
     arguments: []
-- uid: BOOSETests.Commands.CanvasAppTests.SetColourTest
-  commentId: M:BOOSETests.Commands.CanvasAppTests.SetColourTest
-  id: SetColourTest
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_SetPenColour_ReturnsCorrectColour
+  commentId: M:BOOSETests.Commands.CanvasAppTests.CanvasApp_SetPenColour_ReturnsCorrectColour
+  id: CanvasApp_SetPenColour_ReturnsCorrectColour
   parent: BOOSETests.Commands.CanvasAppTests
   langs:
   - csharp
   - vb
-  name: SetColourTest()
-  nameWithType: CanvasAppTests.SetColourTest()
-  fullName: BOOSETests.Commands.CanvasAppTests.SetColourTest()
+  name: CanvasApp_SetPenColour_ReturnsCorrectColour()
+  nameWithType: CanvasAppTests.CanvasApp_SetPenColour_ReturnsCorrectColour()
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_SetPenColour_ReturnsCorrectColour()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasAppTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Commands/CanvasAppTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.Commands
@@ -173,29 +174,51 @@ items:
     content: >-
       [TestMethod]
 
-      public void SetColourTest()
+      public void CanvasApp_SetPenColour_ReturnsCorrectColour()
     content.vb: >-
       <TestMethod>
 
-      Public Sub SetColourTest()
-  overload: BOOSETests.Commands.CanvasAppTests.SetColourTest*
+      Public Sub CanvasApp_SetPenColour_ReturnsCorrectColour()
+  overload: BOOSETests.Commands.CanvasAppTests.CanvasApp_SetPenColour_ReturnsCorrectColour*
   attributes:
   - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
     ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
     arguments: []
-- uid: BOOSETests.Commands.CanvasAppTests.CircleDrawTest_Unfilled
-  commentId: M:BOOSETests.Commands.CanvasAppTests.CircleDrawTest_Unfilled
-  id: CircleDrawTest_Unfilled
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_SetBackgroundColour_ReturnsCorrectColour
+  commentId: M:BOOSETests.Commands.CanvasAppTests.CanvasApp_SetBackgroundColour_ReturnsCorrectColour
+  id: CanvasApp_SetBackgroundColour_ReturnsCorrectColour
   parent: BOOSETests.Commands.CanvasAppTests
   langs:
   - csharp
   - vb
-  name: CircleDrawTest_Unfilled()
-  nameWithType: CanvasAppTests.CircleDrawTest_Unfilled()
-  fullName: BOOSETests.Commands.CanvasAppTests.CircleDrawTest_Unfilled()
+  name: CanvasApp_SetBackgroundColour_ReturnsCorrectColour()
+  nameWithType: CanvasAppTests.CanvasApp_SetBackgroundColour_ReturnsCorrectColour()
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_SetBackgroundColour_ReturnsCorrectColour()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasAppTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Commands/CanvasAppTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Unit test for SetBackgroundColour() command
+  example: []
+  syntax:
+    content: public void CanvasApp_SetBackgroundColour_ReturnsCorrectColour()
+    content.vb: Public Sub CanvasApp_SetBackgroundColour_ReturnsCorrectColour()
+  overload: BOOSETests.Commands.CanvasAppTests.CanvasApp_SetBackgroundColour_ReturnsCorrectColour*
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawCircle_FilledIsFalse
+  commentId: M:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawCircle_FilledIsFalse
+  id: CanvasApp_DrawCircle_FilledIsFalse
+  parent: BOOSETests.Commands.CanvasAppTests
+  langs:
+  - csharp
+  - vb
+  name: CanvasApp_DrawCircle_FilledIsFalse()
+  nameWithType: CanvasAppTests.CanvasApp_DrawCircle_FilledIsFalse()
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawCircle_FilledIsFalse()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Commands/CanvasAppTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.Commands
@@ -205,29 +228,29 @@ items:
     content: >-
       [TestMethod]
 
-      public void CircleDrawTest_Unfilled()
+      public void CanvasApp_DrawCircle_FilledIsFalse()
     content.vb: >-
       <TestMethod>
 
-      Public Sub CircleDrawTest_Unfilled()
-  overload: BOOSETests.Commands.CanvasAppTests.CircleDrawTest_Unfilled*
+      Public Sub CanvasApp_DrawCircle_FilledIsFalse()
+  overload: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawCircle_FilledIsFalse*
   attributes:
   - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
     ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
     arguments: []
-- uid: BOOSETests.Commands.CanvasAppTests.CircleDrawTest_Filled
-  commentId: M:BOOSETests.Commands.CanvasAppTests.CircleDrawTest_Filled
-  id: CircleDrawTest_Filled
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawCircle_FilledIsTrue
+  commentId: M:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawCircle_FilledIsTrue
+  id: CanvasApp_DrawCircle_FilledIsTrue
   parent: BOOSETests.Commands.CanvasAppTests
   langs:
   - csharp
   - vb
-  name: CircleDrawTest_Filled()
-  nameWithType: CanvasAppTests.CircleDrawTest_Filled()
-  fullName: BOOSETests.Commands.CanvasAppTests.CircleDrawTest_Filled()
+  name: CanvasApp_DrawCircle_FilledIsTrue()
+  nameWithType: CanvasAppTests.CanvasApp_DrawCircle_FilledIsTrue()
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawCircle_FilledIsTrue()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasAppTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Commands/CanvasAppTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.Commands
@@ -237,29 +260,29 @@ items:
     content: >-
       [TestMethod]
 
-      public void CircleDrawTest_Filled()
+      public void CanvasApp_DrawCircle_FilledIsTrue()
     content.vb: >-
       <TestMethod>
 
-      Public Sub CircleDrawTest_Filled()
-  overload: BOOSETests.Commands.CanvasAppTests.CircleDrawTest_Filled*
+      Public Sub CanvasApp_DrawCircle_FilledIsTrue()
+  overload: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawCircle_FilledIsTrue*
   attributes:
   - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
     ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
     arguments: []
-- uid: BOOSETests.Commands.CanvasAppTests.TriangleDrawTest_Unfilled
-  commentId: M:BOOSETests.Commands.CanvasAppTests.TriangleDrawTest_Unfilled
-  id: TriangleDrawTest_Unfilled
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTriangle_FilledIsFalse
+  commentId: M:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTriangle_FilledIsFalse
+  id: CanvasApp_DrawTriangle_FilledIsFalse
   parent: BOOSETests.Commands.CanvasAppTests
   langs:
   - csharp
   - vb
-  name: TriangleDrawTest_Unfilled()
-  nameWithType: CanvasAppTests.TriangleDrawTest_Unfilled()
-  fullName: BOOSETests.Commands.CanvasAppTests.TriangleDrawTest_Unfilled()
+  name: CanvasApp_DrawTriangle_FilledIsFalse()
+  nameWithType: CanvasAppTests.CanvasApp_DrawTriangle_FilledIsFalse()
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTriangle_FilledIsFalse()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasAppTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Commands/CanvasAppTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.Commands
@@ -269,29 +292,29 @@ items:
     content: >-
       [TestMethod]
 
-      public void TriangleDrawTest_Unfilled()
+      public void CanvasApp_DrawTriangle_FilledIsFalse()
     content.vb: >-
       <TestMethod>
 
-      Public Sub TriangleDrawTest_Unfilled()
-  overload: BOOSETests.Commands.CanvasAppTests.TriangleDrawTest_Unfilled*
+      Public Sub CanvasApp_DrawTriangle_FilledIsFalse()
+  overload: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTriangle_FilledIsFalse*
   attributes:
   - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
     ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
     arguments: []
-- uid: BOOSETests.Commands.CanvasAppTests.TriangleDrawTest_Filled
-  commentId: M:BOOSETests.Commands.CanvasAppTests.TriangleDrawTest_Filled
-  id: TriangleDrawTest_Filled
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTriangle_FilledIsTrue
+  commentId: M:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTriangle_FilledIsTrue
+  id: CanvasApp_DrawTriangle_FilledIsTrue
   parent: BOOSETests.Commands.CanvasAppTests
   langs:
   - csharp
   - vb
-  name: TriangleDrawTest_Filled()
-  nameWithType: CanvasAppTests.TriangleDrawTest_Filled()
-  fullName: BOOSETests.Commands.CanvasAppTests.TriangleDrawTest_Filled()
+  name: CanvasApp_DrawTriangle_FilledIsTrue()
+  nameWithType: CanvasAppTests.CanvasApp_DrawTriangle_FilledIsTrue()
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTriangle_FilledIsTrue()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasAppTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Commands/CanvasAppTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.Commands
@@ -301,29 +324,29 @@ items:
     content: >-
       [TestMethod]
 
-      public void TriangleDrawTest_Filled()
+      public void CanvasApp_DrawTriangle_FilledIsTrue()
     content.vb: >-
       <TestMethod>
 
-      Public Sub TriangleDrawTest_Filled()
-  overload: BOOSETests.Commands.CanvasAppTests.TriangleDrawTest_Filled*
+      Public Sub CanvasApp_DrawTriangle_FilledIsTrue()
+  overload: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTriangle_FilledIsTrue*
   attributes:
   - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
     ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
     arguments: []
-- uid: BOOSETests.Commands.CanvasAppTests.RectangleDrawTest_Filled
-  commentId: M:BOOSETests.Commands.CanvasAppTests.RectangleDrawTest_Filled
-  id: RectangleDrawTest_Filled
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawRectangle_FilledIsFalse
+  commentId: M:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawRectangle_FilledIsFalse
+  id: CanvasApp_DrawRectangle_FilledIsFalse
   parent: BOOSETests.Commands.CanvasAppTests
   langs:
   - csharp
   - vb
-  name: RectangleDrawTest_Filled()
-  nameWithType: CanvasAppTests.RectangleDrawTest_Filled()
-  fullName: BOOSETests.Commands.CanvasAppTests.RectangleDrawTest_Filled()
+  name: CanvasApp_DrawRectangle_FilledIsFalse()
+  nameWithType: CanvasAppTests.CanvasApp_DrawRectangle_FilledIsFalse()
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawRectangle_FilledIsFalse()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasAppTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Commands/CanvasAppTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.Commands
@@ -333,29 +356,29 @@ items:
     content: >-
       [TestMethod]
 
-      public void RectangleDrawTest_Filled()
+      public void CanvasApp_DrawRectangle_FilledIsFalse()
     content.vb: >-
       <TestMethod>
 
-      Public Sub RectangleDrawTest_Filled()
-  overload: BOOSETests.Commands.CanvasAppTests.RectangleDrawTest_Filled*
+      Public Sub CanvasApp_DrawRectangle_FilledIsFalse()
+  overload: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawRectangle_FilledIsFalse*
   attributes:
   - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
     ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
     arguments: []
-- uid: BOOSETests.Commands.CanvasAppTests.RectangleDrawTest_Unfilled
-  commentId: M:BOOSETests.Commands.CanvasAppTests.RectangleDrawTest_Unfilled
-  id: RectangleDrawTest_Unfilled
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawRectangle_FilledIsTrue
+  commentId: M:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawRectangle_FilledIsTrue
+  id: CanvasApp_DrawRectangle_FilledIsTrue
   parent: BOOSETests.Commands.CanvasAppTests
   langs:
   - csharp
   - vb
-  name: RectangleDrawTest_Unfilled()
-  nameWithType: CanvasAppTests.RectangleDrawTest_Unfilled()
-  fullName: BOOSETests.Commands.CanvasAppTests.RectangleDrawTest_Unfilled()
+  name: CanvasApp_DrawRectangle_FilledIsTrue()
+  nameWithType: CanvasAppTests.CanvasApp_DrawRectangle_FilledIsTrue()
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawRectangle_FilledIsTrue()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasAppTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Commands/CanvasAppTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.Commands
@@ -365,61 +388,29 @@ items:
     content: >-
       [TestMethod]
 
-      public void RectangleDrawTest_Unfilled()
+      public void CanvasApp_DrawRectangle_FilledIsTrue()
     content.vb: >-
       <TestMethod>
 
-      Public Sub RectangleDrawTest_Unfilled()
-  overload: BOOSETests.Commands.CanvasAppTests.RectangleDrawTest_Unfilled*
+      Public Sub CanvasApp_DrawRectangle_FilledIsTrue()
+  overload: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawRectangle_FilledIsTrue*
   attributes:
   - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
     ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
     arguments: []
-- uid: BOOSETests.Commands.CanvasAppTests.SqaureDrawTest_Filled
-  commentId: M:BOOSETests.Commands.CanvasAppTests.SqaureDrawTest_Filled
-  id: SqaureDrawTest_Filled
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawSquare_FilledIsFalse
+  commentId: M:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawSquare_FilledIsFalse
+  id: CanvasApp_DrawSquare_FilledIsFalse
   parent: BOOSETests.Commands.CanvasAppTests
   langs:
   - csharp
   - vb
-  name: SqaureDrawTest_Filled()
-  nameWithType: CanvasAppTests.SqaureDrawTest_Filled()
-  fullName: BOOSETests.Commands.CanvasAppTests.SqaureDrawTest_Filled()
+  name: CanvasApp_DrawSquare_FilledIsFalse()
+  nameWithType: CanvasAppTests.CanvasApp_DrawSquare_FilledIsFalse()
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawSquare_FilledIsFalse()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasAppTests.cs
-  assemblies:
-  - BOOSETests
-  namespace: BOOSETests.Commands
-  summary: Unit test for square() command (filled)
-  example: []
-  syntax:
-    content: >-
-      [TestMethod]
-
-      public void SqaureDrawTest_Filled()
-    content.vb: >-
-      <TestMethod>
-
-      Public Sub SqaureDrawTest_Filled()
-  overload: BOOSETests.Commands.CanvasAppTests.SqaureDrawTest_Filled*
-  attributes:
-  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
-    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
-    arguments: []
-- uid: BOOSETests.Commands.CanvasAppTests.SqaureDrawTest_Unfilled
-  commentId: M:BOOSETests.Commands.CanvasAppTests.SqaureDrawTest_Unfilled
-  id: SqaureDrawTest_Unfilled
-  parent: BOOSETests.Commands.CanvasAppTests
-  langs:
-  - csharp
-  - vb
-  name: SqaureDrawTest_Unfilled()
-  nameWithType: CanvasAppTests.SqaureDrawTest_Unfilled()
-  fullName: BOOSETests.Commands.CanvasAppTests.SqaureDrawTest_Unfilled()
-  type: Method
-  source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasAppTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Commands/CanvasAppTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.Commands
@@ -429,12 +420,44 @@ items:
     content: >-
       [TestMethod]
 
-      public void SqaureDrawTest_Unfilled()
+      public void CanvasApp_DrawSquare_FilledIsFalse()
     content.vb: >-
       <TestMethod>
 
-      Public Sub SqaureDrawTest_Unfilled()
-  overload: BOOSETests.Commands.CanvasAppTests.SqaureDrawTest_Unfilled*
+      Public Sub CanvasApp_DrawSquare_FilledIsFalse()
+  overload: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawSquare_FilledIsFalse*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawSquare_FilledIsTrue
+  commentId: M:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawSquare_FilledIsTrue
+  id: CanvasApp_DrawSquare_FilledIsTrue
+  parent: BOOSETests.Commands.CanvasAppTests
+  langs:
+  - csharp
+  - vb
+  name: CanvasApp_DrawSquare_FilledIsTrue()
+  nameWithType: CanvasAppTests.CanvasApp_DrawSquare_FilledIsTrue()
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawSquare_FilledIsTrue()
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Commands/CanvasAppTests.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSETests.Commands
+  summary: Unit test for square() command (filled)
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void CanvasApp_DrawSquare_FilledIsTrue()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub CanvasApp_DrawSquare_FilledIsTrue()
+  overload: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawSquare_FilledIsTrue*
   attributes:
   - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
     ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
@@ -451,7 +474,7 @@ items:
   fullName: BOOSETests.Commands.CanvasAppTests.CanvasAppTests()
   type: Constructor
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Commands/CanvasAppTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Commands/CanvasAppTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.Commands
@@ -710,83 +733,90 @@ references:
   name: Setup
   nameWithType: CanvasAppTests.Setup
   fullName: BOOSETests.Commands.CanvasAppTests.Setup
-- uid: BOOSETests.Commands.CanvasAppTests.MoveToTest*
-  commentId: Overload:BOOSETests.Commands.CanvasAppTests.MoveToTest
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_MoveTo_MovesCursorToNewXY*
+  commentId: Overload:BOOSETests.Commands.CanvasAppTests.CanvasApp_MoveTo_MovesCursorToNewXY
   isExternal: true
-  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_MoveToTest
-  name: MoveToTest
-  nameWithType: CanvasAppTests.MoveToTest
-  fullName: BOOSETests.Commands.CanvasAppTests.MoveToTest
-- uid: BOOSETests.Commands.CanvasAppTests.DrawToTest*
-  commentId: Overload:BOOSETests.Commands.CanvasAppTests.DrawToTest
+  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_CanvasApp_MoveTo_MovesCursorToNewXY
+  name: CanvasApp_MoveTo_MovesCursorToNewXY
+  nameWithType: CanvasAppTests.CanvasApp_MoveTo_MovesCursorToNewXY
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_MoveTo_MovesCursorToNewXY
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTo_DrawsLineToXY*
+  commentId: Overload:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTo_DrawsLineToXY
   isExternal: true
-  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_DrawToTest
-  name: DrawToTest
-  nameWithType: CanvasAppTests.DrawToTest
-  fullName: BOOSETests.Commands.CanvasAppTests.DrawToTest
-- uid: BOOSETests.Commands.CanvasAppTests.SetColourTest*
-  commentId: Overload:BOOSETests.Commands.CanvasAppTests.SetColourTest
+  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_CanvasApp_DrawTo_DrawsLineToXY
+  name: CanvasApp_DrawTo_DrawsLineToXY
+  nameWithType: CanvasAppTests.CanvasApp_DrawTo_DrawsLineToXY
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTo_DrawsLineToXY
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_SetPenColour_ReturnsCorrectColour*
+  commentId: Overload:BOOSETests.Commands.CanvasAppTests.CanvasApp_SetPenColour_ReturnsCorrectColour
   isExternal: true
-  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_SetColourTest
-  name: SetColourTest
-  nameWithType: CanvasAppTests.SetColourTest
-  fullName: BOOSETests.Commands.CanvasAppTests.SetColourTest
-- uid: BOOSETests.Commands.CanvasAppTests.CircleDrawTest_Unfilled*
-  commentId: Overload:BOOSETests.Commands.CanvasAppTests.CircleDrawTest_Unfilled
+  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_CanvasApp_SetPenColour_ReturnsCorrectColour
+  name: CanvasApp_SetPenColour_ReturnsCorrectColour
+  nameWithType: CanvasAppTests.CanvasApp_SetPenColour_ReturnsCorrectColour
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_SetPenColour_ReturnsCorrectColour
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_SetBackgroundColour_ReturnsCorrectColour*
+  commentId: Overload:BOOSETests.Commands.CanvasAppTests.CanvasApp_SetBackgroundColour_ReturnsCorrectColour
   isExternal: true
-  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_CircleDrawTest_Unfilled
-  name: CircleDrawTest_Unfilled
-  nameWithType: CanvasAppTests.CircleDrawTest_Unfilled
-  fullName: BOOSETests.Commands.CanvasAppTests.CircleDrawTest_Unfilled
-- uid: BOOSETests.Commands.CanvasAppTests.CircleDrawTest_Filled*
-  commentId: Overload:BOOSETests.Commands.CanvasAppTests.CircleDrawTest_Filled
+  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_CanvasApp_SetBackgroundColour_ReturnsCorrectColour
+  name: CanvasApp_SetBackgroundColour_ReturnsCorrectColour
+  nameWithType: CanvasAppTests.CanvasApp_SetBackgroundColour_ReturnsCorrectColour
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_SetBackgroundColour_ReturnsCorrectColour
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawCircle_FilledIsFalse*
+  commentId: Overload:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawCircle_FilledIsFalse
   isExternal: true
-  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_CircleDrawTest_Filled
-  name: CircleDrawTest_Filled
-  nameWithType: CanvasAppTests.CircleDrawTest_Filled
-  fullName: BOOSETests.Commands.CanvasAppTests.CircleDrawTest_Filled
-- uid: BOOSETests.Commands.CanvasAppTests.TriangleDrawTest_Unfilled*
-  commentId: Overload:BOOSETests.Commands.CanvasAppTests.TriangleDrawTest_Unfilled
+  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_CanvasApp_DrawCircle_FilledIsFalse
+  name: CanvasApp_DrawCircle_FilledIsFalse
+  nameWithType: CanvasAppTests.CanvasApp_DrawCircle_FilledIsFalse
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawCircle_FilledIsFalse
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawCircle_FilledIsTrue*
+  commentId: Overload:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawCircle_FilledIsTrue
   isExternal: true
-  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_TriangleDrawTest_Unfilled
-  name: TriangleDrawTest_Unfilled
-  nameWithType: CanvasAppTests.TriangleDrawTest_Unfilled
-  fullName: BOOSETests.Commands.CanvasAppTests.TriangleDrawTest_Unfilled
-- uid: BOOSETests.Commands.CanvasAppTests.TriangleDrawTest_Filled*
-  commentId: Overload:BOOSETests.Commands.CanvasAppTests.TriangleDrawTest_Filled
+  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_CanvasApp_DrawCircle_FilledIsTrue
+  name: CanvasApp_DrawCircle_FilledIsTrue
+  nameWithType: CanvasAppTests.CanvasApp_DrawCircle_FilledIsTrue
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawCircle_FilledIsTrue
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTriangle_FilledIsFalse*
+  commentId: Overload:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTriangle_FilledIsFalse
   isExternal: true
-  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_TriangleDrawTest_Filled
-  name: TriangleDrawTest_Filled
-  nameWithType: CanvasAppTests.TriangleDrawTest_Filled
-  fullName: BOOSETests.Commands.CanvasAppTests.TriangleDrawTest_Filled
-- uid: BOOSETests.Commands.CanvasAppTests.RectangleDrawTest_Filled*
-  commentId: Overload:BOOSETests.Commands.CanvasAppTests.RectangleDrawTest_Filled
+  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_CanvasApp_DrawTriangle_FilledIsFalse
+  name: CanvasApp_DrawTriangle_FilledIsFalse
+  nameWithType: CanvasAppTests.CanvasApp_DrawTriangle_FilledIsFalse
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTriangle_FilledIsFalse
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTriangle_FilledIsTrue*
+  commentId: Overload:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTriangle_FilledIsTrue
   isExternal: true
-  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_RectangleDrawTest_Filled
-  name: RectangleDrawTest_Filled
-  nameWithType: CanvasAppTests.RectangleDrawTest_Filled
-  fullName: BOOSETests.Commands.CanvasAppTests.RectangleDrawTest_Filled
-- uid: BOOSETests.Commands.CanvasAppTests.RectangleDrawTest_Unfilled*
-  commentId: Overload:BOOSETests.Commands.CanvasAppTests.RectangleDrawTest_Unfilled
+  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_CanvasApp_DrawTriangle_FilledIsTrue
+  name: CanvasApp_DrawTriangle_FilledIsTrue
+  nameWithType: CanvasAppTests.CanvasApp_DrawTriangle_FilledIsTrue
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawTriangle_FilledIsTrue
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawRectangle_FilledIsFalse*
+  commentId: Overload:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawRectangle_FilledIsFalse
   isExternal: true
-  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_RectangleDrawTest_Unfilled
-  name: RectangleDrawTest_Unfilled
-  nameWithType: CanvasAppTests.RectangleDrawTest_Unfilled
-  fullName: BOOSETests.Commands.CanvasAppTests.RectangleDrawTest_Unfilled
-- uid: BOOSETests.Commands.CanvasAppTests.SqaureDrawTest_Filled*
-  commentId: Overload:BOOSETests.Commands.CanvasAppTests.SqaureDrawTest_Filled
+  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_CanvasApp_DrawRectangle_FilledIsFalse
+  name: CanvasApp_DrawRectangle_FilledIsFalse
+  nameWithType: CanvasAppTests.CanvasApp_DrawRectangle_FilledIsFalse
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawRectangle_FilledIsFalse
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawRectangle_FilledIsTrue*
+  commentId: Overload:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawRectangle_FilledIsTrue
   isExternal: true
-  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_SqaureDrawTest_Filled
-  name: SqaureDrawTest_Filled
-  nameWithType: CanvasAppTests.SqaureDrawTest_Filled
-  fullName: BOOSETests.Commands.CanvasAppTests.SqaureDrawTest_Filled
-- uid: BOOSETests.Commands.CanvasAppTests.SqaureDrawTest_Unfilled*
-  commentId: Overload:BOOSETests.Commands.CanvasAppTests.SqaureDrawTest_Unfilled
+  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_CanvasApp_DrawRectangle_FilledIsTrue
+  name: CanvasApp_DrawRectangle_FilledIsTrue
+  nameWithType: CanvasAppTests.CanvasApp_DrawRectangle_FilledIsTrue
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawRectangle_FilledIsTrue
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawSquare_FilledIsFalse*
+  commentId: Overload:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawSquare_FilledIsFalse
   isExternal: true
-  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_SqaureDrawTest_Unfilled
-  name: SqaureDrawTest_Unfilled
-  nameWithType: CanvasAppTests.SqaureDrawTest_Unfilled
-  fullName: BOOSETests.Commands.CanvasAppTests.SqaureDrawTest_Unfilled
+  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_CanvasApp_DrawSquare_FilledIsFalse
+  name: CanvasApp_DrawSquare_FilledIsFalse
+  nameWithType: CanvasAppTests.CanvasApp_DrawSquare_FilledIsFalse
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawSquare_FilledIsFalse
+- uid: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawSquare_FilledIsTrue*
+  commentId: Overload:BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawSquare_FilledIsTrue
+  isExternal: true
+  href: BOOSETests.Commands.CanvasAppTests.html#BOOSETests_Commands_CanvasAppTests_CanvasApp_DrawSquare_FilledIsTrue
+  name: CanvasApp_DrawSquare_FilledIsTrue
+  nameWithType: CanvasAppTests.CanvasApp_DrawSquare_FilledIsTrue
+  fullName: BOOSETests.Commands.CanvasAppTests.CanvasApp_DrawSquare_FilledIsTrue
 - uid: BOOSETests.Commands.CanvasAppTests.#ctor*
   commentId: Overload:BOOSETests.Commands.CanvasAppTests.#ctor
   isExternal: true

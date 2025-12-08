@@ -45,7 +45,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests
   type: Class
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -55,9 +55,13 @@ items:
     content: >-
       [TestClass]
 
+      [DoNotParallelize]
+
       public sealed class UILoggerTests
     content.vb: >-
       <TestClass>
+
+      <DoNotParallelize>
 
       Public NotInheritable Class UILoggerTests
   inheritance:
@@ -73,6 +77,9 @@ items:
   - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
     ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
     arguments: []
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.DoNotParallelizeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.DoNotParallelizeAttribute.#ctor
+    arguments: []
 - uid: BOOSETests.UI.UILoggerTests.Setup
   commentId: M:BOOSETests.UI.UILoggerTests.Setup
   id: Setup
@@ -85,10 +92,12 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.Setup()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
+  summary: Initializes the test environment before each test method is run.
+  example: []
   syntax:
     content: >-
       [TestInitialize]
@@ -115,7 +124,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogFATAL_WritesPrefixAndMessage_DebugTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -147,7 +156,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogERROR_WritesPrefixAndMessage_DebugTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -179,7 +188,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogWARN_WritesPrefixAndMessage_DebugTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -211,7 +220,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogOK_WritesPrefixAndMessage_CmdTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -243,7 +252,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogFAIL_WritesPrefixAndMessage_CmdTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -275,7 +284,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogRUNTIME_WritesPrefixAndMessage_CmdTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -307,7 +316,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogINFO_WritesPrefixAndMessage_DebugTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -339,7 +348,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOff_DoesNotWritePrefixAndMessage_DebugTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -371,7 +380,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogDEBUG_DebugModeOn_WritesPrefixAndMessage_DebugTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -403,7 +412,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -435,7 +444,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Content_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -467,7 +476,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -499,7 +508,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Access_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -531,7 +540,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOff_DoesNotWritePrefixAndMessage_TraceTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -563,7 +572,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_TraceModeOn_WritesPrefixAndMessage_TraceTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -595,7 +604,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogEXCEPTION_WritesPrefixAndMessage_DebugTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -627,7 +636,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogLOOP_WritesPrefixAndMessage_CmdTextBox()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -659,7 +668,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogFATAL_ColourTest()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -691,7 +700,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogERROR_ColourTest()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -723,7 +732,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogWARNING_ColourTest()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -755,7 +764,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogOK_ColourTest()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -787,7 +796,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogFAIL_ColourTest()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -819,7 +828,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogRUNTIME_ColourTest()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -851,7 +860,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogINFO_ColourTest()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -883,7 +892,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogDEBUG_ColourTest()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -915,7 +924,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Content_ColourTest()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -947,7 +956,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Access_ColourTest()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -979,7 +988,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogTRACE_Exception_ColourTest()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -1011,7 +1020,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogEXCEPTION_ColourTest()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -1043,7 +1052,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.LogLOOP_ColourTest()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI
@@ -1075,7 +1084,7 @@ items:
   fullName: BOOSETests.UI.UILoggerTests.UILoggerTests()
   type: Constructor
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/UI/UILoggerTests.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/UI/UILoggerTests.cs
   assemblies:
   - BOOSETests
   namespace: BOOSETests.UI

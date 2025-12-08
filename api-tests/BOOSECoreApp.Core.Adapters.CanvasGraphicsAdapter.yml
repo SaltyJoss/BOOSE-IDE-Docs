@@ -12,6 +12,7 @@ items:
   - BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.DrawAsciiArt(System.String,System.Int32,System.Int32,System.Drawing.Font,System.Func{System.Char,System.Drawing.Color})
   - BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.DrawInfoLines(System.Collections.Generic.IEnumerable{BOOSECoreApp.UI.InfoLine},System.Int32,System.Int32,System.Drawing.Font,System.Drawing.Color)
   - BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.DrawTo(System.Int32,System.Int32)
+  - BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.GetBitmap
   - BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.MoveTo(System.Int32,System.Int32)
   - BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.Rect(System.Int32,System.Int32,System.Boolean)
   - BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.Reset
@@ -21,7 +22,6 @@ items:
   - BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.Square(System.Int32,System.Boolean)
   - BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.Tri(System.Int32,System.Int32,System.Boolean)
   - BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.WriteText(System.String)
-  - BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.getBitmap
   langs:
   - csharp
   - vb
@@ -30,27 +30,23 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter
   type: Class
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
-  summary: >-
-    Provides an adapter that exposes a <xref href="BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.CanvasApp" data-throw-if-not-resolved="false"></xref> as an <xref href="BOOSECoreApp.Core.Interfaces.IGraphicAdapter" data-throw-if-not-resolved="false"></xref>
-
-    and <xref href="BOOSECoreApp.Core.Interfaces.ICanvasProvider" data-throw-if-not-resolved="false"></xref> for executing drawing commands.
+  summary: Provides an adapter that exposes a <xref href="BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.CanvasApp" data-throw-if-not-resolved="false"></xref> as an <xref href="BOOSECoreApp.Core.Interfaces.IGraphicAdapter" data-throw-if-not-resolved="false"></xref> for the UI to use.
   remarks: >-
     This class allows commands to interact with a <xref href="BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.CanvasApp" data-throw-if-not-resolved="false"></xref> via the standard
 
     graphics interface used in BOOSE applications.
   example: []
   syntax:
-    content: 'public class CanvasGraphicsAdapter : IGraphicAdapter, ICanvasProvider'
-    content.vb: Public Class CanvasGraphicsAdapter Implements IGraphicAdapter, ICanvasProvider
+    content: 'public class CanvasGraphicsAdapter : IGraphicAdapter'
+    content.vb: Public Class CanvasGraphicsAdapter Implements IGraphicAdapter
   inheritance:
   - System.Object
   implements:
   - BOOSECoreApp.Core.Interfaces.IGraphicAdapter
-  - BOOSECoreApp.Core.Interfaces.ICanvasProvider
   inheritedMembers:
   - System.Object.GetType
   - System.Object.MemberwiseClone
@@ -71,7 +67,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.CanvasGraphicsAdapter(BOOSECoreApp.Core.Base.CanvasApp)
   type: Constructor
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -88,43 +84,6 @@ items:
   nameWithType.vb: CanvasGraphicsAdapter.New(CanvasApp)
   fullName.vb: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.New(BOOSECoreApp.Core.Base.CanvasApp)
   name.vb: New(CanvasApp)
-- uid: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
-  commentId: M:BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
-  id: SetBackgroundColour(System.Int32,System.Int32,System.Int32)
-  parent: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter
-  langs:
-  - csharp
-  - vb
-  name: SetBackgroundColour(int, int, int)
-  nameWithType: CanvasGraphicsAdapter.SetBackgroundColour(int, int, int)
-  fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetBackgroundColour(int, int, int)
-  type: Method
-  source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
-  assemblies:
-  - BOOSECoreApp
-  namespace: BOOSECoreApp.Core.Adapters
-  summary: Sets the background colour of the canvas.
-  example: []
-  syntax:
-    content: public void SetBackgroundColour(int r, int g, int b)
-    parameters:
-    - id: r
-      type: System.Int32
-      description: Red component (0-255).
-    - id: g
-      type: System.Int32
-      description: Green component (0-255).
-    - id: b
-      type: System.Int32
-      description: Blue component (0-255).
-    content.vb: Public Sub SetBackgroundColour(r As Integer, g As Integer, b As Integer)
-  overload: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetBackgroundColour*
-  implements:
-  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
-  nameWithType.vb: CanvasGraphicsAdapter.SetBackgroundColour(Integer, Integer, Integer)
-  fullName.vb: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetBackgroundColour(Integer, Integer, Integer)
-  name.vb: SetBackgroundColour(Integer, Integer, Integer)
 - uid: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.DrawAsciiArt(System.String,System.Int32,System.Int32,System.Drawing.Font,System.Func{System.Char,System.Drawing.Color})
   commentId: M:BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.DrawAsciiArt(System.String,System.Int32,System.Int32,System.Drawing.Font,System.Func{System.Char,System.Drawing.Color})
   id: DrawAsciiArt(System.String,System.Int32,System.Int32,System.Drawing.Font,System.Func{System.Char,System.Drawing.Color})
@@ -137,7 +96,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.DrawAsciiArt(string, int, int, System.Drawing.Font, System.Func<char, System.Drawing.Color>)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -182,7 +141,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.DrawInfoLines(System.Collections.Generic.IEnumerable<BOOSECoreApp.UI.InfoLine>, int, int, System.Drawing.Font, System.Drawing.Color)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -227,7 +186,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetColour(int, int, int)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -252,6 +211,43 @@ items:
   nameWithType.vb: CanvasGraphicsAdapter.SetColour(Integer, Integer, Integer)
   fullName.vb: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetColour(Integer, Integer, Integer)
   name.vb: SetColour(Integer, Integer, Integer)
+- uid: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+  commentId: M:BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+  id: SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+  parent: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter
+  langs:
+  - csharp
+  - vb
+  name: SetBackgroundColour(int, int, int)
+  nameWithType: CanvasGraphicsAdapter.SetBackgroundColour(int, int, int)
+  fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetBackgroundColour(int, int, int)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Adapters
+  summary: Sets the background colour of the canvas.
+  example: []
+  syntax:
+    content: public void SetBackgroundColour(int r, int g, int b)
+    parameters:
+    - id: r
+      type: System.Int32
+      description: Red component (0-255).
+    - id: g
+      type: System.Int32
+      description: Green component (0-255).
+    - id: b
+      type: System.Int32
+      description: Blue component (0-255).
+    content.vb: Public Sub SetBackgroundColour(r As Integer, g As Integer, b As Integer)
+  overload: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetBackgroundColour*
+  implements:
+  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+  nameWithType.vb: CanvasGraphicsAdapter.SetBackgroundColour(Integer, Integer, Integer)
+  fullName.vb: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetBackgroundColour(Integer, Integer, Integer)
+  name.vb: SetBackgroundColour(Integer, Integer, Integer)
 - uid: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.MoveTo(System.Int32,System.Int32)
   commentId: M:BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.MoveTo(System.Int32,System.Int32)
   id: MoveTo(System.Int32,System.Int32)
@@ -264,7 +260,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.MoveTo(int, int)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -298,7 +294,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.DrawTo(int, int)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -332,7 +328,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.Clear()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -356,7 +352,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.Reset()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -380,7 +376,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.Circle(int, bool)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -414,7 +410,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.Tri(int, int, bool)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -451,7 +447,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.Rect(int, int, bool)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -488,7 +484,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.Square(int, bool)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -522,7 +518,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.WriteText(string)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -553,7 +549,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.Set(int, int)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -575,33 +571,33 @@ items:
   nameWithType.vb: CanvasGraphicsAdapter.Set(Integer, Integer)
   fullName.vb: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.Set(Integer, Integer)
   name.vb: Set(Integer, Integer)
-- uid: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.getBitmap
-  commentId: M:BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.getBitmap
-  id: getBitmap
+- uid: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.GetBitmap
+  commentId: M:BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.GetBitmap
+  id: GetBitmap
   parent: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter
   langs:
   - csharp
   - vb
-  name: getBitmap()
-  nameWithType: CanvasGraphicsAdapter.getBitmap()
-  fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.getBitmap()
+  name: GetBitmap()
+  nameWithType: CanvasGraphicsAdapter.GetBitmap()
+  fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.GetBitmap()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
   summary: Returns the underlying bitmap or canvas object.
   example: []
   syntax:
-    content: public object getBitmap()
+    content: public object GetBitmap()
     return:
       type: System.Object
       description: The bitmap or canvas object.
-    content.vb: Public Function getBitmap() As Object
-  overload: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.getBitmap*
+    content.vb: Public Function GetBitmap() As Object
+  overload: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.GetBitmap*
   implements:
-  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.getBitmap
+  - BOOSECoreApp.Core.Interfaces.IGraphicAdapter.GetBitmap
 - uid: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.CanvasApp
   commentId: P:BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.CanvasApp
   id: CanvasApp
@@ -614,7 +610,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.CanvasApp
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Adapters/CanvasGraphicsAdapter.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -643,14 +639,6 @@ references:
   name: IGraphicAdapter
   nameWithType: IGraphicAdapter
   fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
-- uid: BOOSECoreApp.Core.Interfaces.ICanvasProvider
-  commentId: T:BOOSECoreApp.Core.Interfaces.ICanvasProvider
-  parent: BOOSECoreApp.Core.Interfaces
-  isExternal: true
-  href: BOOSECoreApp.Core.Interfaces.ICanvasProvider.html
-  name: ICanvasProvider
-  nameWithType: ICanvasProvider
-  fullName: BOOSECoreApp.Core.Interfaces.ICanvasProvider
 - uid: BOOSECoreApp.Core.Adapters
   commentId: N:BOOSECoreApp.Core.Adapters
   isExternal: true
@@ -1024,81 +1012,6 @@ references:
     name: Base
     isExternal: true
     href: BOOSECoreApp.Core.Base.html
-- uid: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetBackgroundColour*
-  commentId: Overload:BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetBackgroundColour
-  isExternal: true
-  href: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.html#BOOSECoreApp_Core_Adapters_CanvasGraphicsAdapter_SetBackgroundColour_System_Int32_System_Int32_System_Int32_
-  name: SetBackgroundColour
-  nameWithType: CanvasGraphicsAdapter.SetBackgroundColour
-  fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetBackgroundColour
-- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
-  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
-  parent: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
-  isExternal: true
-  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_SetBackgroundColour_System_Int32_System_Int32_System_Int32_
-  name: SetBackgroundColour(int, int, int)
-  nameWithType: IGraphicAdapter.SetBackgroundColour(int, int, int)
-  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(int, int, int)
-  nameWithType.vb: IGraphicAdapter.SetBackgroundColour(Integer, Integer, Integer)
-  fullName.vb: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(Integer, Integer, Integer)
-  name.vb: SetBackgroundColour(Integer, Integer, Integer)
-  spec.csharp:
-  - uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
-    name: SetBackgroundColour
-    isExternal: true
-    href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_SetBackgroundColour_System_Int32_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-  spec.vb:
-  - uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
-    name: SetBackgroundColour
-    isExternal: true
-    href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_SetBackgroundColour_System_Int32_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
 - uid: System.ArgumentNullException
   commentId: T:System.ArgumentNullException
   isExternal: true
@@ -1124,6 +1037,17 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: System.Drawing.Font
   commentId: T:System.Drawing.Font
   parent: System.Drawing
@@ -1401,6 +1325,70 @@ references:
     name: SetColour
     isExternal: true
     href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_SetColour_System_Int32_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetBackgroundColour*
+  commentId: Overload:BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetBackgroundColour
+  isExternal: true
+  href: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.html#BOOSECoreApp_Core_Adapters_CanvasGraphicsAdapter_SetBackgroundColour_System_Int32_System_Int32_System_Int32_
+  name: SetBackgroundColour
+  nameWithType: CanvasGraphicsAdapter.SetBackgroundColour
+  fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.SetBackgroundColour
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+  parent: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_SetBackgroundColour_System_Int32_System_Int32_System_Int32_
+  name: SetBackgroundColour(int, int, int)
+  nameWithType: IGraphicAdapter.SetBackgroundColour(int, int, int)
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(int, int, int)
+  nameWithType.vb: IGraphicAdapter.SetBackgroundColour(Integer, Integer, Integer)
+  fullName.vb: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(Integer, Integer, Integer)
+  name.vb: SetBackgroundColour(Integer, Integer, Integer)
+  spec.csharp:
+  - uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+    name: SetBackgroundColour
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_SetBackgroundColour_System_Int32_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+    name: SetBackgroundColour
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_SetBackgroundColour_System_Int32_System_Int32_System_Int32_
   - name: (
   - uid: System.Int32
     name: Integer
@@ -1916,33 +1904,33 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
-- uid: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.getBitmap*
-  commentId: Overload:BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.getBitmap
+- uid: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.GetBitmap*
+  commentId: Overload:BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.GetBitmap
   isExternal: true
-  href: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.html#BOOSECoreApp_Core_Adapters_CanvasGraphicsAdapter_getBitmap
-  name: getBitmap
-  nameWithType: CanvasGraphicsAdapter.getBitmap
-  fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.getBitmap
-- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.getBitmap
-  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.getBitmap
+  href: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.html#BOOSECoreApp_Core_Adapters_CanvasGraphicsAdapter_GetBitmap
+  name: GetBitmap
+  nameWithType: CanvasGraphicsAdapter.GetBitmap
+  fullName: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.GetBitmap
+- uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.GetBitmap
+  commentId: M:BOOSECoreApp.Core.Interfaces.IGraphicAdapter.GetBitmap
   parent: BOOSECoreApp.Core.Interfaces.IGraphicAdapter
   isExternal: true
-  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_getBitmap
-  name: getBitmap()
-  nameWithType: IGraphicAdapter.getBitmap()
-  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.getBitmap()
+  href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_GetBitmap
+  name: GetBitmap()
+  nameWithType: IGraphicAdapter.GetBitmap()
+  fullName: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.GetBitmap()
   spec.csharp:
-  - uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.getBitmap
-    name: getBitmap
+  - uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.GetBitmap
+    name: GetBitmap
     isExternal: true
-    href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_getBitmap
+    href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_GetBitmap
   - name: (
   - name: )
   spec.vb:
-  - uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.getBitmap
-    name: getBitmap
+  - uid: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.GetBitmap
+    name: GetBitmap
     isExternal: true
-    href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_getBitmap
+    href: BOOSECoreApp.Core.Interfaces.IGraphicAdapter.html#BOOSECoreApp_Core_Interfaces_IGraphicAdapter_GetBitmap
   - name: (
   - name: )
 - uid: BOOSECoreApp.Core.Adapters.CanvasGraphicsAdapter.CanvasApp*

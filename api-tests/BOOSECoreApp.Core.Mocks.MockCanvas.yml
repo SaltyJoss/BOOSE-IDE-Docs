@@ -11,18 +11,19 @@ items:
   - BOOSECoreApp.Core.Mocks.MockCanvas.Clear
   - BOOSECoreApp.Core.Mocks.MockCanvas.DrawTo(System.Int32,System.Int32)
   - BOOSECoreApp.Core.Mocks.MockCanvas.Filled
+  - BOOSECoreApp.Core.Mocks.MockCanvas.GetBitmap
   - BOOSECoreApp.Core.Mocks.MockCanvas.Height
   - BOOSECoreApp.Core.Mocks.MockCanvas.MoveTo(System.Int32,System.Int32)
   - BOOSECoreApp.Core.Mocks.MockCanvas.Radius
   - BOOSECoreApp.Core.Mocks.MockCanvas.Rect(System.Int32,System.Int32,System.Boolean)
   - BOOSECoreApp.Core.Mocks.MockCanvas.Reset
   - BOOSECoreApp.Core.Mocks.MockCanvas.Set(System.Int32,System.Int32)
+  - BOOSECoreApp.Core.Mocks.MockCanvas.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
   - BOOSECoreApp.Core.Mocks.MockCanvas.SetColour(System.Int32,System.Int32,System.Int32)
   - BOOSECoreApp.Core.Mocks.MockCanvas.Square(System.Int32,System.Boolean)
   - BOOSECoreApp.Core.Mocks.MockCanvas.Tri(System.Int32,System.Int32)
   - BOOSECoreApp.Core.Mocks.MockCanvas.Width
   - BOOSECoreApp.Core.Mocks.MockCanvas.WriteText(System.String)
-  - BOOSECoreApp.Core.Mocks.MockCanvas.getBitmap
   langs:
   - csharp
   - vb
@@ -31,7 +32,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas
   type: Class
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -45,15 +46,13 @@ items:
     Does not track state or record calls.
   example: []
   syntax:
-    content: 'public class MockCanvas : ICanvas'
-    content.vb: Public Class MockCanvas Implements ICanvas
+    content: public class MockCanvas
+    content.vb: Public Class MockCanvas
   seealso:
   - linkId: BOOSE.ICanvas
     commentId: T:BOOSE.ICanvas
   inheritance:
   - System.Object
-  implements:
-  - BOOSE.ICanvas
   inheritedMembers:
   - System.Object.GetType
   - System.Object.MemberwiseClone
@@ -74,7 +73,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.SetColour(int, int, int)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -90,11 +89,40 @@ items:
       type: System.Int32
     content.vb: Public Sub SetColour(r As Integer, g As Integer, b As Integer)
   overload: BOOSECoreApp.Core.Mocks.MockCanvas.SetColour*
-  implements:
-  - BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
   nameWithType.vb: MockCanvas.SetColour(Integer, Integer, Integer)
   fullName.vb: BOOSECoreApp.Core.Mocks.MockCanvas.SetColour(Integer, Integer, Integer)
   name.vb: SetColour(Integer, Integer, Integer)
+- uid: BOOSECoreApp.Core.Mocks.MockCanvas.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+  commentId: M:BOOSECoreApp.Core.Mocks.MockCanvas.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+  id: SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+  parent: BOOSECoreApp.Core.Mocks.MockCanvas
+  langs:
+  - csharp
+  - vb
+  name: SetBackgroundColour(int, int, int)
+  nameWithType: MockCanvas.SetBackgroundColour(int, int, int)
+  fullName: BOOSECoreApp.Core.Mocks.MockCanvas.SetBackgroundColour(int, int, int)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
+  assemblies:
+  - BOOSETests
+  namespace: BOOSECoreApp.Core.Mocks
+  example: []
+  syntax:
+    content: public void SetBackgroundColour(int r, int g, int b)
+    parameters:
+    - id: r
+      type: System.Int32
+    - id: g
+      type: System.Int32
+    - id: b
+      type: System.Int32
+    content.vb: Public Sub SetBackgroundColour(r As Integer, g As Integer, b As Integer)
+  overload: BOOSECoreApp.Core.Mocks.MockCanvas.SetBackgroundColour*
+  nameWithType.vb: MockCanvas.SetBackgroundColour(Integer, Integer, Integer)
+  fullName.vb: BOOSECoreApp.Core.Mocks.MockCanvas.SetBackgroundColour(Integer, Integer, Integer)
+  name.vb: SetBackgroundColour(Integer, Integer, Integer)
 - uid: BOOSECoreApp.Core.Mocks.MockCanvas.MoveTo(System.Int32,System.Int32)
   commentId: M:BOOSECoreApp.Core.Mocks.MockCanvas.MoveTo(System.Int32,System.Int32)
   id: MoveTo(System.Int32,System.Int32)
@@ -107,7 +135,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.MoveTo(int, int)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -121,8 +149,6 @@ items:
       type: System.Int32
     content.vb: Public Sub MoveTo(x As Integer, y As Integer)
   overload: BOOSECoreApp.Core.Mocks.MockCanvas.MoveTo*
-  implements:
-  - BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
   nameWithType.vb: MockCanvas.MoveTo(Integer, Integer)
   fullName.vb: BOOSECoreApp.Core.Mocks.MockCanvas.MoveTo(Integer, Integer)
   name.vb: MoveTo(Integer, Integer)
@@ -138,7 +164,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.DrawTo(int, int)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -152,8 +178,6 @@ items:
       type: System.Int32
     content.vb: Public Sub DrawTo(x As Integer, y As Integer)
   overload: BOOSECoreApp.Core.Mocks.MockCanvas.DrawTo*
-  implements:
-  - BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
   nameWithType.vb: MockCanvas.DrawTo(Integer, Integer)
   fullName.vb: BOOSECoreApp.Core.Mocks.MockCanvas.DrawTo(Integer, Integer)
   name.vb: DrawTo(Integer, Integer)
@@ -169,7 +193,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Clear()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -178,8 +202,6 @@ items:
     content: public void Clear()
     content.vb: Public Sub Clear()
   overload: BOOSECoreApp.Core.Mocks.MockCanvas.Clear*
-  implements:
-  - BOOSE.ICanvas.Clear
 - uid: BOOSECoreApp.Core.Mocks.MockCanvas.Reset
   commentId: M:BOOSECoreApp.Core.Mocks.MockCanvas.Reset
   id: Reset
@@ -192,7 +214,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Reset()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -201,8 +223,6 @@ items:
     content: public void Reset()
     content.vb: Public Sub Reset()
   overload: BOOSECoreApp.Core.Mocks.MockCanvas.Reset*
-  implements:
-  - BOOSE.ICanvas.Reset
 - uid: BOOSECoreApp.Core.Mocks.MockCanvas.Circle(System.Int32,System.Boolean)
   commentId: M:BOOSECoreApp.Core.Mocks.MockCanvas.Circle(System.Int32,System.Boolean)
   id: Circle(System.Int32,System.Boolean)
@@ -215,7 +235,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Circle(int, bool)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -229,8 +249,6 @@ items:
       type: System.Boolean
     content.vb: Public Sub Circle(radius As Integer, filled As Boolean)
   overload: BOOSECoreApp.Core.Mocks.MockCanvas.Circle*
-  implements:
-  - BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
   nameWithType.vb: MockCanvas.Circle(Integer, Boolean)
   fullName.vb: BOOSECoreApp.Core.Mocks.MockCanvas.Circle(Integer, Boolean)
   name.vb: Circle(Integer, Boolean)
@@ -246,7 +264,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Tri(int, int)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -260,8 +278,6 @@ items:
       type: System.Int32
     content.vb: Public Sub Tri(width As Integer, height As Integer)
   overload: BOOSECoreApp.Core.Mocks.MockCanvas.Tri*
-  implements:
-  - BOOSE.ICanvas.Tri(System.Int32,System.Int32)
   nameWithType.vb: MockCanvas.Tri(Integer, Integer)
   fullName.vb: BOOSECoreApp.Core.Mocks.MockCanvas.Tri(Integer, Integer)
   name.vb: Tri(Integer, Integer)
@@ -277,7 +293,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Rect(int, int, bool)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -293,8 +309,6 @@ items:
       type: System.Boolean
     content.vb: Public Sub Rect(width As Integer, height As Integer, filled As Boolean)
   overload: BOOSECoreApp.Core.Mocks.MockCanvas.Rect*
-  implements:
-  - BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
   nameWithType.vb: MockCanvas.Rect(Integer, Integer, Boolean)
   fullName.vb: BOOSECoreApp.Core.Mocks.MockCanvas.Rect(Integer, Integer, Boolean)
   name.vb: Rect(Integer, Integer, Boolean)
@@ -310,7 +324,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Square(int, bool)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -339,7 +353,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.WriteText(string)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -351,8 +365,6 @@ items:
       type: System.String
     content.vb: Public Sub WriteText(text As String)
   overload: BOOSECoreApp.Core.Mocks.MockCanvas.WriteText*
-  implements:
-  - BOOSE.ICanvas.WriteText(System.String)
   nameWithType.vb: MockCanvas.WriteText(String)
   fullName.vb: BOOSECoreApp.Core.Mocks.MockCanvas.WriteText(String)
   name.vb: WriteText(String)
@@ -368,7 +380,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Set(int, int)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -382,36 +394,32 @@ items:
       type: System.Int32
     content.vb: Public Sub [Set](width As Integer, height As Integer)
   overload: BOOSECoreApp.Core.Mocks.MockCanvas.Set*
-  implements:
-  - BOOSE.ICanvas.Set(System.Int32,System.Int32)
   nameWithType.vb: MockCanvas.Set(Integer, Integer)
   fullName.vb: BOOSECoreApp.Core.Mocks.MockCanvas.Set(Integer, Integer)
   name.vb: Set(Integer, Integer)
-- uid: BOOSECoreApp.Core.Mocks.MockCanvas.getBitmap
-  commentId: M:BOOSECoreApp.Core.Mocks.MockCanvas.getBitmap
-  id: getBitmap
+- uid: BOOSECoreApp.Core.Mocks.MockCanvas.GetBitmap
+  commentId: M:BOOSECoreApp.Core.Mocks.MockCanvas.GetBitmap
+  id: GetBitmap
   parent: BOOSECoreApp.Core.Mocks.MockCanvas
   langs:
   - csharp
   - vb
-  name: getBitmap()
-  nameWithType: MockCanvas.getBitmap()
-  fullName: BOOSECoreApp.Core.Mocks.MockCanvas.getBitmap()
+  name: GetBitmap()
+  nameWithType: MockCanvas.GetBitmap()
+  fullName: BOOSECoreApp.Core.Mocks.MockCanvas.GetBitmap()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
   example: []
   syntax:
-    content: public object? getBitmap()
+    content: public object? GetBitmap()
     return:
       type: System.Object
-    content.vb: Public Function getBitmap() As Object
-  overload: BOOSECoreApp.Core.Mocks.MockCanvas.getBitmap*
-  implements:
-  - BOOSE.ICanvas.getBitmap
+    content.vb: Public Function GetBitmap() As Object
+  overload: BOOSECoreApp.Core.Mocks.MockCanvas.GetBitmap*
 - uid: BOOSECoreApp.Core.Mocks.MockCanvas.#ctor
   commentId: M:BOOSECoreApp.Core.Mocks.MockCanvas.#ctor
   id: '#ctor'
@@ -424,7 +432,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.MockCanvas()
   type: Constructor
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -447,7 +455,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Calls
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -473,7 +481,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Width
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -497,7 +505,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Height
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -521,7 +529,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Radius
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -545,7 +553,7 @@ items:
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Filled
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSETests/Mocks/MockCanvas.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/c70004fbd05c87b9acfabbfd87a8d4898cb8b96f/BOOSETests/Mocks/MockCanvas.cs
   assemblies:
   - BOOSETests
   namespace: BOOSECoreApp.Core.Mocks
@@ -937,63 +945,6 @@ references:
   name: SetColour
   nameWithType: MockCanvas.SetColour
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.SetColour
-- uid: BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
-  commentId: M:BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_SetColour_System_Int32_System_Int32_System_Int32_
-  name: SetColour(int, int, int)
-  nameWithType: ICanvas.SetColour(int, int, int)
-  fullName: BOOSE.ICanvas.SetColour(int, int, int)
-  nameWithType.vb: ICanvas.SetColour(Integer, Integer, Integer)
-  fullName.vb: BOOSE.ICanvas.SetColour(Integer, Integer, Integer)
-  name.vb: SetColour(Integer, Integer, Integer)
-  spec.csharp:
-  - uid: BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
-    name: SetColour
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_SetColour_System_Int32_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
-    name: SetColour
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_SetColour_System_Int32_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -1005,6 +956,13 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: BOOSECoreApp.Core.Mocks.MockCanvas.SetBackgroundColour*
+  commentId: Overload:BOOSECoreApp.Core.Mocks.MockCanvas.SetBackgroundColour
+  isExternal: true
+  href: BOOSECoreApp.Core.Mocks.MockCanvas.html#BOOSECoreApp_Core_Mocks_MockCanvas_SetBackgroundColour_System_Int32_System_Int32_System_Int32_
+  name: SetBackgroundColour
+  nameWithType: MockCanvas.SetBackgroundColour
+  fullName: BOOSECoreApp.Core.Mocks.MockCanvas.SetBackgroundColour
 - uid: BOOSECoreApp.Core.Mocks.MockCanvas.MoveTo*
   commentId: Overload:BOOSECoreApp.Core.Mocks.MockCanvas.MoveTo
   isExternal: true
@@ -1012,51 +970,6 @@ references:
   name: MoveTo
   nameWithType: MockCanvas.MoveTo
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.MoveTo
-- uid: BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
-  commentId: M:BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_MoveTo_System_Int32_System_Int32_
-  name: MoveTo(int, int)
-  nameWithType: ICanvas.MoveTo(int, int)
-  fullName: BOOSE.ICanvas.MoveTo(int, int)
-  nameWithType.vb: ICanvas.MoveTo(Integer, Integer)
-  fullName.vb: BOOSE.ICanvas.MoveTo(Integer, Integer)
-  name.vb: MoveTo(Integer, Integer)
-  spec.csharp:
-  - uid: BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
-    name: MoveTo
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_MoveTo_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
-    name: MoveTo
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_MoveTo_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
 - uid: BOOSECoreApp.Core.Mocks.MockCanvas.DrawTo*
   commentId: Overload:BOOSECoreApp.Core.Mocks.MockCanvas.DrawTo
   isExternal: true
@@ -1064,51 +977,6 @@ references:
   name: DrawTo
   nameWithType: MockCanvas.DrawTo
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.DrawTo
-- uid: BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
-  commentId: M:BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_DrawTo_System_Int32_System_Int32_
-  name: DrawTo(int, int)
-  nameWithType: ICanvas.DrawTo(int, int)
-  fullName: BOOSE.ICanvas.DrawTo(int, int)
-  nameWithType.vb: ICanvas.DrawTo(Integer, Integer)
-  fullName.vb: BOOSE.ICanvas.DrawTo(Integer, Integer)
-  name.vb: DrawTo(Integer, Integer)
-  spec.csharp:
-  - uid: BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
-    name: DrawTo
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_DrawTo_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
-    name: DrawTo
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_DrawTo_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
 - uid: BOOSECoreApp.Core.Mocks.MockCanvas.Clear*
   commentId: Overload:BOOSECoreApp.Core.Mocks.MockCanvas.Clear
   isExternal: true
@@ -1116,28 +984,6 @@ references:
   name: Clear
   nameWithType: MockCanvas.Clear
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Clear
-- uid: BOOSE.ICanvas.Clear
-  commentId: M:BOOSE.ICanvas.Clear
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_Clear
-  name: Clear()
-  nameWithType: ICanvas.Clear()
-  fullName: BOOSE.ICanvas.Clear()
-  spec.csharp:
-  - uid: BOOSE.ICanvas.Clear
-    name: Clear
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Clear
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.Clear
-    name: Clear
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Clear
-  - name: (
-  - name: )
 - uid: BOOSECoreApp.Core.Mocks.MockCanvas.Reset*
   commentId: Overload:BOOSECoreApp.Core.Mocks.MockCanvas.Reset
   isExternal: true
@@ -1145,28 +991,6 @@ references:
   name: Reset
   nameWithType: MockCanvas.Reset
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Reset
-- uid: BOOSE.ICanvas.Reset
-  commentId: M:BOOSE.ICanvas.Reset
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_Reset
-  name: Reset()
-  nameWithType: ICanvas.Reset()
-  fullName: BOOSE.ICanvas.Reset()
-  spec.csharp:
-  - uid: BOOSE.ICanvas.Reset
-    name: Reset
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Reset
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.Reset
-    name: Reset
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Reset
-  - name: (
-  - name: )
 - uid: BOOSECoreApp.Core.Mocks.MockCanvas.Circle*
   commentId: Overload:BOOSECoreApp.Core.Mocks.MockCanvas.Circle
   isExternal: true
@@ -1174,51 +998,6 @@ references:
   name: Circle
   nameWithType: MockCanvas.Circle
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Circle
-- uid: BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
-  commentId: M:BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_Circle_System_Int32_System_Boolean_
-  name: Circle(int, bool)
-  nameWithType: ICanvas.Circle(int, bool)
-  fullName: BOOSE.ICanvas.Circle(int, bool)
-  nameWithType.vb: ICanvas.Circle(Integer, Boolean)
-  fullName.vb: BOOSE.ICanvas.Circle(Integer, Boolean)
-  name.vb: Circle(Integer, Boolean)
-  spec.csharp:
-  - uid: BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
-    name: Circle
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Circle_System_Int32_System_Boolean_
-  - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Boolean
-    name: bool
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
-    name: Circle
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Circle_System_Int32_System_Boolean_
-  - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Boolean
-    name: Boolean
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: )
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -1237,51 +1016,6 @@ references:
   name: Tri
   nameWithType: MockCanvas.Tri
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Tri
-- uid: BOOSE.ICanvas.Tri(System.Int32,System.Int32)
-  commentId: M:BOOSE.ICanvas.Tri(System.Int32,System.Int32)
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_Tri_System_Int32_System_Int32_
-  name: Tri(int, int)
-  nameWithType: ICanvas.Tri(int, int)
-  fullName: BOOSE.ICanvas.Tri(int, int)
-  nameWithType.vb: ICanvas.Tri(Integer, Integer)
-  fullName.vb: BOOSE.ICanvas.Tri(Integer, Integer)
-  name.vb: Tri(Integer, Integer)
-  spec.csharp:
-  - uid: BOOSE.ICanvas.Tri(System.Int32,System.Int32)
-    name: Tri
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Tri_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.Tri(System.Int32,System.Int32)
-    name: Tri
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Tri_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
 - uid: BOOSECoreApp.Core.Mocks.MockCanvas.Rect*
   commentId: Overload:BOOSECoreApp.Core.Mocks.MockCanvas.Rect
   isExternal: true
@@ -1289,63 +1023,6 @@ references:
   name: Rect
   nameWithType: MockCanvas.Rect
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Rect
-- uid: BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
-  commentId: M:BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_Rect_System_Int32_System_Int32_System_Boolean_
-  name: Rect(int, int, bool)
-  nameWithType: ICanvas.Rect(int, int, bool)
-  fullName: BOOSE.ICanvas.Rect(int, int, bool)
-  nameWithType.vb: ICanvas.Rect(Integer, Integer, Boolean)
-  fullName.vb: BOOSE.ICanvas.Rect(Integer, Integer, Boolean)
-  name.vb: Rect(Integer, Integer, Boolean)
-  spec.csharp:
-  - uid: BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
-    name: Rect
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Rect_System_Int32_System_Int32_System_Boolean_
-  - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Boolean
-    name: bool
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
-    name: Rect
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Rect_System_Int32_System_Int32_System_Boolean_
-  - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Boolean
-    name: Boolean
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: )
 - uid: BOOSECoreApp.Core.Mocks.MockCanvas.Square*
   commentId: Overload:BOOSECoreApp.Core.Mocks.MockCanvas.Square
   isExternal: true
@@ -1360,39 +1037,6 @@ references:
   name: WriteText
   nameWithType: MockCanvas.WriteText
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.WriteText
-- uid: BOOSE.ICanvas.WriteText(System.String)
-  commentId: M:BOOSE.ICanvas.WriteText(System.String)
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_WriteText_System_String_
-  name: WriteText(string)
-  nameWithType: ICanvas.WriteText(string)
-  fullName: BOOSE.ICanvas.WriteText(string)
-  nameWithType.vb: ICanvas.WriteText(String)
-  fullName.vb: BOOSE.ICanvas.WriteText(String)
-  name.vb: WriteText(String)
-  spec.csharp:
-  - uid: BOOSE.ICanvas.WriteText(System.String)
-    name: WriteText
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_WriteText_System_String_
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.WriteText(System.String)
-    name: WriteText
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_WriteText_System_String_
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -1411,80 +1055,13 @@ references:
   name: Set
   nameWithType: MockCanvas.Set
   fullName: BOOSECoreApp.Core.Mocks.MockCanvas.Set
-- uid: BOOSE.ICanvas.Set(System.Int32,System.Int32)
-  commentId: M:BOOSE.ICanvas.Set(System.Int32,System.Int32)
-  parent: BOOSE.ICanvas
+- uid: BOOSECoreApp.Core.Mocks.MockCanvas.GetBitmap*
+  commentId: Overload:BOOSECoreApp.Core.Mocks.MockCanvas.GetBitmap
   isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_Set_System_Int32_System_Int32_
-  name: Set(int, int)
-  nameWithType: ICanvas.Set(int, int)
-  fullName: BOOSE.ICanvas.Set(int, int)
-  nameWithType.vb: ICanvas.Set(Integer, Integer)
-  fullName.vb: BOOSE.ICanvas.Set(Integer, Integer)
-  name.vb: Set(Integer, Integer)
-  spec.csharp:
-  - uid: BOOSE.ICanvas.Set(System.Int32,System.Int32)
-    name: Set
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Set_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.Set(System.Int32,System.Int32)
-    name: Set
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Set_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-- uid: BOOSECoreApp.Core.Mocks.MockCanvas.getBitmap*
-  commentId: Overload:BOOSECoreApp.Core.Mocks.MockCanvas.getBitmap
-  isExternal: true
-  href: BOOSECoreApp.Core.Mocks.MockCanvas.html#BOOSECoreApp_Core_Mocks_MockCanvas_getBitmap
-  name: getBitmap
-  nameWithType: MockCanvas.getBitmap
-  fullName: BOOSECoreApp.Core.Mocks.MockCanvas.getBitmap
-- uid: BOOSE.ICanvas.getBitmap
-  commentId: M:BOOSE.ICanvas.getBitmap
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_getBitmap
-  name: getBitmap()
-  nameWithType: ICanvas.getBitmap()
-  fullName: BOOSE.ICanvas.getBitmap()
-  spec.csharp:
-  - uid: BOOSE.ICanvas.getBitmap
-    name: getBitmap
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_getBitmap
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.getBitmap
-    name: getBitmap
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_getBitmap
-  - name: (
-  - name: )
+  href: BOOSECoreApp.Core.Mocks.MockCanvas.html#BOOSECoreApp_Core_Mocks_MockCanvas_GetBitmap
+  name: GetBitmap
+  nameWithType: MockCanvas.GetBitmap
+  fullName: BOOSECoreApp.Core.Mocks.MockCanvas.GetBitmap
 - uid: BOOSECoreApp.Core.Mocks.MockCanvas.#ctor*
   commentId: Overload:BOOSECoreApp.Core.Mocks.MockCanvas.#ctor
   isExternal: true

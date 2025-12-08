@@ -37,11 +37,11 @@
 ### [Commands](api/BOOSECoreApp.Core.Commands.yml)
 - [AboutApp](api/BOOSECoreApp.Core.Commands.AboutApp.yml)
 - [BackgroundColourApp](api/BOOSECoreApp.Core.Commands.BackgroundColourApp.yml)
+- [PenColourApp](api/BOOSECoreApp.Core.Commands.PenColourApp.yml)
 - [CircleApp](api/BOOSECoreApp.Core.Commands.CircleApp.yml)
 - [DrawToApp](api/BOOSECoreApp.Core.Commands.DrawToApp.yml)
 - [MoveToApp](api/BOOSECoreApp.Core.Commands.MoveToApp.yml)
 - [RectApp](api/BOOSECoreApp.Core.Commands.RectApp.yml)
-- [PenColourApp](api/BOOSECoreApp.Core.Commands.PenColourApp.yml)
 - [SquareApp](api/BOOSECoreApp.Core.Commands.SquareApp.yml)
 - [SysInfoApp](api/BOOSECoreApp.Core.Commands.SysInfoApp.yml)]
 - [TriApp](api/BOOSECoreApp.Core.Commands.TriApp.yml)
@@ -49,7 +49,6 @@
 
 ### [Interface](api/BOOSECoreApp.Core.Interfaces.yml)
 - [IArrayApp](api/BOOSECoreApp.Core.Interfaces.IArrayApp.yml)]
-- [ICanvasProvider](api/BOOSECoreApp.Core.Interfaces.ICanvasProvider.yml)
 - [ICommandApp](api/BOOSECoreApp.Core.Interfaces.ICommandApp.yml)
 - [IGraphicAdapter](api/BOOSECoreApp.Core.Interfaces.IGraphicAdapter.yml)
 - [IStoredProgramApp](api/BOOSECoreApp.Core.Interfaces.IStoredProgramApp.yml)
@@ -85,6 +84,7 @@
 
 ### [Exceptions](api/BOOSECoreApp.Exceptions.yml)
 - [BooseSyntaxException](api/BOOSECoreApp.Exceptions.BooseSyntaxException.yml)
+- [BooseRuntimeException](api/BOOSECoreApp.Exceptions.BooseRuntimeException.yml)
 
 ---
 

@@ -11,6 +11,7 @@ items:
   - BOOSECoreApp.Core.Base.CanvasApp.Clear
   - BOOSECoreApp.Core.Base.CanvasApp.DrawTo(System.Int32,System.Int32)
   - BOOSECoreApp.Core.Base.CanvasApp.Filled
+  - BOOSECoreApp.Core.Base.CanvasApp.GetBitmap
   - BOOSECoreApp.Core.Base.CanvasApp.Height
   - BOOSECoreApp.Core.Base.CanvasApp.MoveTo(System.Int32,System.Int32)
   - BOOSECoreApp.Core.Base.CanvasApp.PenColour
@@ -18,6 +19,7 @@ items:
   - BOOSECoreApp.Core.Base.CanvasApp.Rect(System.Int32,System.Int32,System.Boolean)
   - BOOSECoreApp.Core.Base.CanvasApp.Reset
   - BOOSECoreApp.Core.Base.CanvasApp.Set(System.Int32,System.Int32)
+  - BOOSECoreApp.Core.Base.CanvasApp.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
   - BOOSECoreApp.Core.Base.CanvasApp.SetColour(System.Int32,System.Int32,System.Int32)
   - BOOSECoreApp.Core.Base.CanvasApp.Square(System.Int32,System.Boolean)
   - BOOSECoreApp.Core.Base.CanvasApp.Tri(System.Int32,System.Int32,System.Boolean)
@@ -25,8 +27,6 @@ items:
   - BOOSECoreApp.Core.Base.CanvasApp.WriteText(System.String)
   - BOOSECoreApp.Core.Base.CanvasApp.Xpos
   - BOOSECoreApp.Core.Base.CanvasApp.Ypos
-  - BOOSECoreApp.Core.Base.CanvasApp.bitmapCanvas
-  - BOOSECoreApp.Core.Base.CanvasApp.getBitmap
   - BOOSECoreApp.Core.Base.CanvasApp.graphics
   langs:
   - csharp
@@ -36,22 +36,17 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp
   type: Class
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
-  summary: >-
-    Base class for all drawing operations in the BOOSE framework.
-
-    Implements <xref href="BOOSE.ICanvas" data-throw-if-not-resolved="false"></xref> and can be inherited for different canvas types.
+  summary: Base class for all drawing operations in the BOOSE framework.
   example: []
   syntax:
-    content: 'public class CanvasApp : ICanvas'
-    content.vb: Public Class CanvasApp Implements ICanvas
+    content: public class CanvasApp
+    content.vb: Public Class CanvasApp
   inheritance:
   - System.Object
-  implements:
-  - BOOSE.ICanvas
   inheritedMembers:
   - System.Object.GetType
   - System.Object.MemberwiseClone
@@ -60,29 +55,6 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
-- uid: BOOSECoreApp.Core.Base.CanvasApp.bitmapCanvas
-  commentId: F:BOOSECoreApp.Core.Base.CanvasApp.bitmapCanvas
-  id: bitmapCanvas
-  parent: BOOSECoreApp.Core.Base.CanvasApp
-  langs:
-  - csharp
-  - vb
-  name: bitmapCanvas
-  nameWithType: CanvasApp.bitmapCanvas
-  fullName: BOOSECoreApp.Core.Base.CanvasApp.bitmapCanvas
-  type: Field
-  source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
-  assemblies:
-  - BOOSECoreApp
-  namespace: BOOSECoreApp.Core.Base
-  summary: The underlying <xref href="System.Drawing.Bitmap" data-throw-if-not-resolved="false"></xref> used as the drawing surface for the canvas.
-  example: []
-  syntax:
-    content: public Bitmap bitmapCanvas
-    return:
-      type: System.Drawing.Bitmap
-    content.vb: Public bitmapCanvas As Bitmap
 - uid: BOOSECoreApp.Core.Base.CanvasApp.graphics
   commentId: F:BOOSECoreApp.Core.Base.CanvasApp.graphics
   id: graphics
@@ -95,7 +67,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.graphics
   type: Field
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -118,7 +90,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.CanvasApp(System.Drawing.Bitmap)
   type: Constructor
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -147,7 +119,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.SetColour(int, int, int)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -167,11 +139,44 @@ items:
       description: Blue component (0-255).
     content.vb: Public Sub SetColour(r As Integer, g As Integer, b As Integer)
   overload: BOOSECoreApp.Core.Base.CanvasApp.SetColour*
-  implements:
-  - BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
   nameWithType.vb: CanvasApp.SetColour(Integer, Integer, Integer)
   fullName.vb: BOOSECoreApp.Core.Base.CanvasApp.SetColour(Integer, Integer, Integer)
   name.vb: SetColour(Integer, Integer, Integer)
+- uid: BOOSECoreApp.Core.Base.CanvasApp.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+  commentId: M:BOOSECoreApp.Core.Base.CanvasApp.SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+  id: SetBackgroundColour(System.Int32,System.Int32,System.Int32)
+  parent: BOOSECoreApp.Core.Base.CanvasApp
+  langs:
+  - csharp
+  - vb
+  name: SetBackgroundColour(int, int, int)
+  nameWithType: CanvasApp.SetBackgroundColour(int, int, int)
+  fullName: BOOSECoreApp.Core.Base.CanvasApp.SetBackgroundColour(int, int, int)
+  type: Method
+  source:
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
+  assemblies:
+  - BOOSECoreApp
+  namespace: BOOSECoreApp.Core.Base
+  summary: Sets the background colour of the canvas.
+  example: []
+  syntax:
+    content: public void SetBackgroundColour(int r, int g, int b)
+    parameters:
+    - id: r
+      type: System.Int32
+      description: Red component (0-255).
+    - id: g
+      type: System.Int32
+      description: Green component (0-255).
+    - id: b
+      type: System.Int32
+      description: Blue component (0-255).
+    content.vb: Public Sub SetBackgroundColour(r As Integer, g As Integer, b As Integer)
+  overload: BOOSECoreApp.Core.Base.CanvasApp.SetBackgroundColour*
+  nameWithType.vb: CanvasApp.SetBackgroundColour(Integer, Integer, Integer)
+  fullName.vb: BOOSECoreApp.Core.Base.CanvasApp.SetBackgroundColour(Integer, Integer, Integer)
+  name.vb: SetBackgroundColour(Integer, Integer, Integer)
 - uid: BOOSECoreApp.Core.Base.CanvasApp.MoveTo(System.Int32,System.Int32)
   commentId: M:BOOSECoreApp.Core.Base.CanvasApp.MoveTo(System.Int32,System.Int32)
   id: MoveTo(System.Int32,System.Int32)
@@ -184,7 +189,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.MoveTo(int, int)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -201,8 +206,6 @@ items:
       description: Y coordinate.
     content.vb: Public Sub MoveTo(x As Integer, y As Integer)
   overload: BOOSECoreApp.Core.Base.CanvasApp.MoveTo*
-  implements:
-  - BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
   nameWithType.vb: CanvasApp.MoveTo(Integer, Integer)
   fullName.vb: BOOSECoreApp.Core.Base.CanvasApp.MoveTo(Integer, Integer)
   name.vb: MoveTo(Integer, Integer)
@@ -218,7 +221,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.DrawTo(int, int)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -235,8 +238,6 @@ items:
       description: Y coordinate of the endpoint.
     content.vb: Public Sub DrawTo(x As Integer, y As Integer)
   overload: BOOSECoreApp.Core.Base.CanvasApp.DrawTo*
-  implements:
-  - BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
   nameWithType.vb: CanvasApp.DrawTo(Integer, Integer)
   fullName.vb: BOOSECoreApp.Core.Base.CanvasApp.DrawTo(Integer, Integer)
   name.vb: DrawTo(Integer, Integer)
@@ -252,7 +253,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Clear()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -262,8 +263,6 @@ items:
     content: public void Clear()
     content.vb: Public Sub Clear()
   overload: BOOSECoreApp.Core.Base.CanvasApp.Clear*
-  implements:
-  - BOOSE.ICanvas.Clear
 - uid: BOOSECoreApp.Core.Base.CanvasApp.Reset
   commentId: M:BOOSECoreApp.Core.Base.CanvasApp.Reset
   id: Reset
@@ -276,7 +275,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Reset()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -286,8 +285,6 @@ items:
     content: public void Reset()
     content.vb: Public Sub Reset()
   overload: BOOSECoreApp.Core.Base.CanvasApp.Reset*
-  implements:
-  - BOOSE.ICanvas.Reset
 - uid: BOOSECoreApp.Core.Base.CanvasApp.Circle(System.Int32,System.Boolean)
   commentId: M:BOOSECoreApp.Core.Base.CanvasApp.Circle(System.Int32,System.Boolean)
   id: Circle(System.Int32,System.Boolean)
@@ -300,7 +297,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Circle(int, bool)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -317,8 +314,6 @@ items:
       description: Whether the circle should be filled.
     content.vb: Public Sub Circle(radius As Integer, filled As Boolean)
   overload: BOOSECoreApp.Core.Base.CanvasApp.Circle*
-  implements:
-  - BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
   nameWithType.vb: CanvasApp.Circle(Integer, Boolean)
   fullName.vb: BOOSECoreApp.Core.Base.CanvasApp.Circle(Integer, Boolean)
   name.vb: Circle(Integer, Boolean)
@@ -334,7 +329,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Tri(int, int, bool)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -369,7 +364,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Rect(int, int, bool)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -389,8 +384,6 @@ items:
       description: Whether the rectangle should be filled.
     content.vb: Public Sub Rect(width As Integer, height As Integer, filled As Boolean)
   overload: BOOSECoreApp.Core.Base.CanvasApp.Rect*
-  implements:
-  - BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
   nameWithType.vb: CanvasApp.Rect(Integer, Integer, Boolean)
   fullName.vb: BOOSECoreApp.Core.Base.CanvasApp.Rect(Integer, Integer, Boolean)
   name.vb: Rect(Integer, Integer, Boolean)
@@ -406,7 +399,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Square(int, bool)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -438,7 +431,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.WriteText(string)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -452,8 +445,6 @@ items:
       description: Text to draw.
     content.vb: Public Sub WriteText(text As String)
   overload: BOOSECoreApp.Core.Base.CanvasApp.WriteText*
-  implements:
-  - BOOSE.ICanvas.WriteText(System.String)
   nameWithType.vb: CanvasApp.WriteText(String)
   fullName.vb: BOOSECoreApp.Core.Base.CanvasApp.WriteText(String)
   name.vb: WriteText(String)
@@ -469,7 +460,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Set(int, int)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -486,38 +477,34 @@ items:
       description: Canvas height.
     content.vb: Public Sub [Set](width As Integer, height As Integer)
   overload: BOOSECoreApp.Core.Base.CanvasApp.Set*
-  implements:
-  - BOOSE.ICanvas.Set(System.Int32,System.Int32)
   nameWithType.vb: CanvasApp.Set(Integer, Integer)
   fullName.vb: BOOSECoreApp.Core.Base.CanvasApp.Set(Integer, Integer)
   name.vb: Set(Integer, Integer)
-- uid: BOOSECoreApp.Core.Base.CanvasApp.getBitmap
-  commentId: M:BOOSECoreApp.Core.Base.CanvasApp.getBitmap
-  id: getBitmap
+- uid: BOOSECoreApp.Core.Base.CanvasApp.GetBitmap
+  commentId: M:BOOSECoreApp.Core.Base.CanvasApp.GetBitmap
+  id: GetBitmap
   parent: BOOSECoreApp.Core.Base.CanvasApp
   langs:
   - csharp
   - vb
-  name: getBitmap()
-  nameWithType: CanvasApp.getBitmap()
-  fullName: BOOSECoreApp.Core.Base.CanvasApp.getBitmap()
+  name: GetBitmap()
+  nameWithType: CanvasApp.GetBitmap()
+  fullName: BOOSECoreApp.Core.Base.CanvasApp.GetBitmap()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
   summary: Returns the underlying bitmap representing the canvas content.
   example: []
   syntax:
-    content: public object getBitmap()
+    content: public object GetBitmap()
     return:
       type: System.Object
       description: The <xref href="BOOSECoreApp.Core.Base.CanvasApp.bitmapCanvas" data-throw-if-not-resolved="false"></xref>
-    content.vb: Public Function getBitmap() As Object
-  overload: BOOSECoreApp.Core.Base.CanvasApp.getBitmap*
-  implements:
-  - BOOSE.ICanvas.getBitmap
+    content.vb: Public Function GetBitmap() As Object
+  overload: BOOSECoreApp.Core.Base.CanvasApp.GetBitmap*
 - uid: BOOSECoreApp.Core.Base.CanvasApp.Radius
   commentId: P:BOOSECoreApp.Core.Base.CanvasApp.Radius
   id: Radius
@@ -530,7 +517,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Radius
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -555,7 +542,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Width
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -580,7 +567,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Height
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -605,7 +592,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Filled
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -630,7 +617,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.BackgroundColour
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -655,7 +642,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Xpos
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -668,8 +655,6 @@ items:
       type: System.Int32
     content.vb: Public Property Xpos As Integer
   overload: BOOSECoreApp.Core.Base.CanvasApp.Xpos*
-  implements:
-  - BOOSE.ICanvas.Xpos
 - uid: BOOSECoreApp.Core.Base.CanvasApp.Ypos
   commentId: P:BOOSECoreApp.Core.Base.CanvasApp.Ypos
   id: Ypos
@@ -682,7 +667,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Ypos
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -695,8 +680,6 @@ items:
       type: System.Int32
     content.vb: Public Property Ypos As Integer
   overload: BOOSECoreApp.Core.Base.CanvasApp.Ypos*
-  implements:
-  - BOOSE.ICanvas.Ypos
 - uid: BOOSECoreApp.Core.Base.CanvasApp.PenColour
   commentId: P:BOOSECoreApp.Core.Base.CanvasApp.PenColour
   id: PenColour
@@ -709,7 +692,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.CanvasApp.PenColour
   type: Property
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/CanvasApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Base/CanvasApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -722,17 +705,7 @@ items:
       type: System.Object
     content.vb: Public Property PenColour As Object
   overload: BOOSECoreApp.Core.Base.CanvasApp.PenColour*
-  implements:
-  - BOOSE.ICanvas.PenColour
 references:
-- uid: BOOSE.ICanvas
-  commentId: T:BOOSE.ICanvas
-  parent: BOOSE
-  isExternal: true
-  href: BOOSE.ICanvas.html
-  name: ICanvas
-  nameWithType: ICanvas
-  fullName: BOOSE.ICanvas
 - uid: BOOSECoreApp.Core.Base
   commentId: N:BOOSECoreApp.Core.Base
   isExternal: true
@@ -1000,13 +973,6 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
   - name: (
   - name: )
-- uid: BOOSE
-  commentId: N:BOOSE
-  isExternal: true
-  href: BOOSE.html
-  name: BOOSE
-  nameWithType: BOOSE
-  fullName: BOOSE
 - uid: System
   commentId: N:System
   isExternal: true
@@ -1014,14 +980,14 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Drawing.Bitmap
-  commentId: T:System.Drawing.Bitmap
+- uid: System.Drawing.Graphics
+  commentId: T:System.Drawing.Graphics
   parent: System.Drawing
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.drawing.bitmap
-  name: Bitmap
-  nameWithType: Bitmap
-  fullName: System.Drawing.Bitmap
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.graphics
+  name: Graphics
+  nameWithType: Graphics
+  fullName: System.Drawing.Graphics
 - uid: System.Drawing
   commentId: N:System.Drawing
   isExternal: true
@@ -1049,14 +1015,6 @@ references:
     name: Drawing
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.drawing
-- uid: System.Drawing.Graphics
-  commentId: T:System.Drawing.Graphics
-  parent: System.Drawing
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.drawing.graphics
-  name: Graphics
-  nameWithType: Graphics
-  fullName: System.Drawing.Graphics
 - uid: BOOSECoreApp.Core.Base.CanvasApp
   commentId: T:BOOSECoreApp.Core.Base.CanvasApp
   parent: BOOSECoreApp.Core.Base
@@ -1075,6 +1033,14 @@ references:
   nameWithType.vb: CanvasApp.New
   fullName.vb: BOOSECoreApp.Core.Base.CanvasApp.New
   name.vb: New
+- uid: System.Drawing.Bitmap
+  commentId: T:System.Drawing.Bitmap
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.bitmap
+  name: Bitmap
+  nameWithType: Bitmap
+  fullName: System.Drawing.Bitmap
 - uid: BOOSECoreApp.Core.Base.CanvasApp.SetColour*
   commentId: Overload:BOOSECoreApp.Core.Base.CanvasApp.SetColour
   isExternal: true
@@ -1082,63 +1048,6 @@ references:
   name: SetColour
   nameWithType: CanvasApp.SetColour
   fullName: BOOSECoreApp.Core.Base.CanvasApp.SetColour
-- uid: BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
-  commentId: M:BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_SetColour_System_Int32_System_Int32_System_Int32_
-  name: SetColour(int, int, int)
-  nameWithType: ICanvas.SetColour(int, int, int)
-  fullName: BOOSE.ICanvas.SetColour(int, int, int)
-  nameWithType.vb: ICanvas.SetColour(Integer, Integer, Integer)
-  fullName.vb: BOOSE.ICanvas.SetColour(Integer, Integer, Integer)
-  name.vb: SetColour(Integer, Integer, Integer)
-  spec.csharp:
-  - uid: BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
-    name: SetColour
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_SetColour_System_Int32_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
-    name: SetColour
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_SetColour_System_Int32_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -1150,6 +1059,13 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: BOOSECoreApp.Core.Base.CanvasApp.SetBackgroundColour*
+  commentId: Overload:BOOSECoreApp.Core.Base.CanvasApp.SetBackgroundColour
+  isExternal: true
+  href: BOOSECoreApp.Core.Base.CanvasApp.html#BOOSECoreApp_Core_Base_CanvasApp_SetBackgroundColour_System_Int32_System_Int32_System_Int32_
+  name: SetBackgroundColour
+  nameWithType: CanvasApp.SetBackgroundColour
+  fullName: BOOSECoreApp.Core.Base.CanvasApp.SetBackgroundColour
 - uid: BOOSECoreApp.Core.Base.CanvasApp.MoveTo*
   commentId: Overload:BOOSECoreApp.Core.Base.CanvasApp.MoveTo
   isExternal: true
@@ -1157,51 +1073,6 @@ references:
   name: MoveTo
   nameWithType: CanvasApp.MoveTo
   fullName: BOOSECoreApp.Core.Base.CanvasApp.MoveTo
-- uid: BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
-  commentId: M:BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_MoveTo_System_Int32_System_Int32_
-  name: MoveTo(int, int)
-  nameWithType: ICanvas.MoveTo(int, int)
-  fullName: BOOSE.ICanvas.MoveTo(int, int)
-  nameWithType.vb: ICanvas.MoveTo(Integer, Integer)
-  fullName.vb: BOOSE.ICanvas.MoveTo(Integer, Integer)
-  name.vb: MoveTo(Integer, Integer)
-  spec.csharp:
-  - uid: BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
-    name: MoveTo
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_MoveTo_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
-    name: MoveTo
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_MoveTo_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
 - uid: BOOSECoreApp.Core.Base.CanvasApp.DrawTo*
   commentId: Overload:BOOSECoreApp.Core.Base.CanvasApp.DrawTo
   isExternal: true
@@ -1209,51 +1080,6 @@ references:
   name: DrawTo
   nameWithType: CanvasApp.DrawTo
   fullName: BOOSECoreApp.Core.Base.CanvasApp.DrawTo
-- uid: BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
-  commentId: M:BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_DrawTo_System_Int32_System_Int32_
-  name: DrawTo(int, int)
-  nameWithType: ICanvas.DrawTo(int, int)
-  fullName: BOOSE.ICanvas.DrawTo(int, int)
-  nameWithType.vb: ICanvas.DrawTo(Integer, Integer)
-  fullName.vb: BOOSE.ICanvas.DrawTo(Integer, Integer)
-  name.vb: DrawTo(Integer, Integer)
-  spec.csharp:
-  - uid: BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
-    name: DrawTo
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_DrawTo_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
-    name: DrawTo
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_DrawTo_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
 - uid: BOOSECoreApp.Core.Base.CanvasApp.Clear*
   commentId: Overload:BOOSECoreApp.Core.Base.CanvasApp.Clear
   isExternal: true
@@ -1261,28 +1087,6 @@ references:
   name: Clear
   nameWithType: CanvasApp.Clear
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Clear
-- uid: BOOSE.ICanvas.Clear
-  commentId: M:BOOSE.ICanvas.Clear
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_Clear
-  name: Clear()
-  nameWithType: ICanvas.Clear()
-  fullName: BOOSE.ICanvas.Clear()
-  spec.csharp:
-  - uid: BOOSE.ICanvas.Clear
-    name: Clear
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Clear
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.Clear
-    name: Clear
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Clear
-  - name: (
-  - name: )
 - uid: BOOSECoreApp.Core.Base.CanvasApp.Reset*
   commentId: Overload:BOOSECoreApp.Core.Base.CanvasApp.Reset
   isExternal: true
@@ -1290,28 +1094,6 @@ references:
   name: Reset
   nameWithType: CanvasApp.Reset
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Reset
-- uid: BOOSE.ICanvas.Reset
-  commentId: M:BOOSE.ICanvas.Reset
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_Reset
-  name: Reset()
-  nameWithType: ICanvas.Reset()
-  fullName: BOOSE.ICanvas.Reset()
-  spec.csharp:
-  - uid: BOOSE.ICanvas.Reset
-    name: Reset
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Reset
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.Reset
-    name: Reset
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Reset
-  - name: (
-  - name: )
 - uid: BOOSECoreApp.Core.Base.CanvasApp.Circle*
   commentId: Overload:BOOSECoreApp.Core.Base.CanvasApp.Circle
   isExternal: true
@@ -1319,51 +1101,6 @@ references:
   name: Circle
   nameWithType: CanvasApp.Circle
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Circle
-- uid: BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
-  commentId: M:BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_Circle_System_Int32_System_Boolean_
-  name: Circle(int, bool)
-  nameWithType: ICanvas.Circle(int, bool)
-  fullName: BOOSE.ICanvas.Circle(int, bool)
-  nameWithType.vb: ICanvas.Circle(Integer, Boolean)
-  fullName.vb: BOOSE.ICanvas.Circle(Integer, Boolean)
-  name.vb: Circle(Integer, Boolean)
-  spec.csharp:
-  - uid: BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
-    name: Circle
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Circle_System_Int32_System_Boolean_
-  - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Boolean
-    name: bool
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
-    name: Circle
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Circle_System_Int32_System_Boolean_
-  - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Boolean
-    name: Boolean
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: )
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -1389,63 +1126,6 @@ references:
   name: Rect
   nameWithType: CanvasApp.Rect
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Rect
-- uid: BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
-  commentId: M:BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_Rect_System_Int32_System_Int32_System_Boolean_
-  name: Rect(int, int, bool)
-  nameWithType: ICanvas.Rect(int, int, bool)
-  fullName: BOOSE.ICanvas.Rect(int, int, bool)
-  nameWithType.vb: ICanvas.Rect(Integer, Integer, Boolean)
-  fullName.vb: BOOSE.ICanvas.Rect(Integer, Integer, Boolean)
-  name.vb: Rect(Integer, Integer, Boolean)
-  spec.csharp:
-  - uid: BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
-    name: Rect
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Rect_System_Int32_System_Int32_System_Boolean_
-  - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Boolean
-    name: bool
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
-    name: Rect
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Rect_System_Int32_System_Int32_System_Boolean_
-  - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Boolean
-    name: Boolean
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
-  - name: )
 - uid: BOOSECoreApp.Core.Base.CanvasApp.Square*
   commentId: Overload:BOOSECoreApp.Core.Base.CanvasApp.Square
   isExternal: true
@@ -1460,39 +1140,6 @@ references:
   name: WriteText
   nameWithType: CanvasApp.WriteText
   fullName: BOOSECoreApp.Core.Base.CanvasApp.WriteText
-- uid: BOOSE.ICanvas.WriteText(System.String)
-  commentId: M:BOOSE.ICanvas.WriteText(System.String)
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_WriteText_System_String_
-  name: WriteText(string)
-  nameWithType: ICanvas.WriteText(string)
-  fullName: BOOSE.ICanvas.WriteText(string)
-  nameWithType.vb: ICanvas.WriteText(String)
-  fullName.vb: BOOSE.ICanvas.WriteText(String)
-  name.vb: WriteText(String)
-  spec.csharp:
-  - uid: BOOSE.ICanvas.WriteText(System.String)
-    name: WriteText
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_WriteText_System_String_
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.WriteText(System.String)
-    name: WriteText
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_WriteText_System_String_
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -1511,87 +1158,16 @@ references:
   name: Set
   nameWithType: CanvasApp.Set
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Set
-- uid: BOOSE.ICanvas.Set(System.Int32,System.Int32)
-  commentId: M:BOOSE.ICanvas.Set(System.Int32,System.Int32)
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_Set_System_Int32_System_Int32_
-  name: Set(int, int)
-  nameWithType: ICanvas.Set(int, int)
-  fullName: BOOSE.ICanvas.Set(int, int)
-  nameWithType.vb: ICanvas.Set(Integer, Integer)
-  fullName.vb: BOOSE.ICanvas.Set(Integer, Integer)
-  name.vb: Set(Integer, Integer)
-  spec.csharp:
-  - uid: BOOSE.ICanvas.Set(System.Int32,System.Int32)
-    name: Set
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Set_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.Set(System.Int32,System.Int32)
-    name: Set
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_Set_System_Int32_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
 - uid: BOOSECoreApp.Core.Base.CanvasApp.bitmapCanvas
   commentId: F:BOOSECoreApp.Core.Base.CanvasApp.bitmapCanvas
   isExternal: true
-  href: BOOSECoreApp.Core.Base.CanvasApp.html#BOOSECoreApp_Core_Base_CanvasApp_bitmapCanvas
-  name: bitmapCanvas
-  nameWithType: CanvasApp.bitmapCanvas
-  fullName: BOOSECoreApp.Core.Base.CanvasApp.bitmapCanvas
-- uid: BOOSECoreApp.Core.Base.CanvasApp.getBitmap*
-  commentId: Overload:BOOSECoreApp.Core.Base.CanvasApp.getBitmap
+- uid: BOOSECoreApp.Core.Base.CanvasApp.GetBitmap*
+  commentId: Overload:BOOSECoreApp.Core.Base.CanvasApp.GetBitmap
   isExternal: true
-  href: BOOSECoreApp.Core.Base.CanvasApp.html#BOOSECoreApp_Core_Base_CanvasApp_getBitmap
-  name: getBitmap
-  nameWithType: CanvasApp.getBitmap
-  fullName: BOOSECoreApp.Core.Base.CanvasApp.getBitmap
-- uid: BOOSE.ICanvas.getBitmap
-  commentId: M:BOOSE.ICanvas.getBitmap
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_getBitmap
-  name: getBitmap()
-  nameWithType: ICanvas.getBitmap()
-  fullName: BOOSE.ICanvas.getBitmap()
-  spec.csharp:
-  - uid: BOOSE.ICanvas.getBitmap
-    name: getBitmap
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_getBitmap
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: BOOSE.ICanvas.getBitmap
-    name: getBitmap
-    isExternal: true
-    href: BOOSE.ICanvas.html#BOOSE_ICanvas_getBitmap
-  - name: (
-  - name: )
+  href: BOOSECoreApp.Core.Base.CanvasApp.html#BOOSECoreApp_Core_Base_CanvasApp_GetBitmap
+  name: GetBitmap
+  nameWithType: CanvasApp.GetBitmap
+  fullName: BOOSECoreApp.Core.Base.CanvasApp.GetBitmap
 - uid: BOOSECoreApp.Core.Base.CanvasApp.Radius*
   commentId: Overload:BOOSECoreApp.Core.Base.CanvasApp.Radius
   isExternal: true
@@ -1642,14 +1218,6 @@ references:
   name: Xpos
   nameWithType: CanvasApp.Xpos
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Xpos
-- uid: BOOSE.ICanvas.Xpos
-  commentId: P:BOOSE.ICanvas.Xpos
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_Xpos
-  name: Xpos
-  nameWithType: ICanvas.Xpos
-  fullName: BOOSE.ICanvas.Xpos
 - uid: BOOSECoreApp.Core.Base.CanvasApp.Ypos*
   commentId: Overload:BOOSECoreApp.Core.Base.CanvasApp.Ypos
   isExternal: true
@@ -1657,14 +1225,6 @@ references:
   name: Ypos
   nameWithType: CanvasApp.Ypos
   fullName: BOOSECoreApp.Core.Base.CanvasApp.Ypos
-- uid: BOOSE.ICanvas.Ypos
-  commentId: P:BOOSE.ICanvas.Ypos
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_Ypos
-  name: Ypos
-  nameWithType: ICanvas.Ypos
-  fullName: BOOSE.ICanvas.Ypos
 - uid: BOOSECoreApp.Core.Base.CanvasApp.PenColour*
   commentId: Overload:BOOSECoreApp.Core.Base.CanvasApp.PenColour
   isExternal: true
@@ -1672,11 +1232,3 @@ references:
   name: PenColour
   nameWithType: CanvasApp.PenColour
   fullName: BOOSECoreApp.Core.Base.CanvasApp.PenColour
-- uid: BOOSE.ICanvas.PenColour
-  commentId: P:BOOSE.ICanvas.PenColour
-  parent: BOOSE.ICanvas
-  isExternal: true
-  href: BOOSE.ICanvas.html#BOOSE_ICanvas_PenColour
-  name: PenColour
-  nameWithType: ICanvas.PenColour
-  fullName: BOOSE.ICanvas.PenColour

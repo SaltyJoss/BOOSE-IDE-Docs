@@ -5,7 +5,7 @@ items:
   id: ParserApp
   parent: BOOSECoreApp.Core.Base
   children:
-  - BOOSECoreApp.Core.Base.ParserApp.#ctor(BOOSECoreApp.Core.Base.StoredProgramApp)
+  - BOOSECoreApp.Core.Base.ParserApp.#ctor(BOOSECoreApp.Core.Interfaces.IStoredProgramApp)
   - BOOSECoreApp.Core.Base.ParserApp.ParseCode(System.String)
   langs:
   - csharp
@@ -15,7 +15,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.ParserApp
   type: Class
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/ParserApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -52,39 +52,39 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
-- uid: BOOSECoreApp.Core.Base.ParserApp.#ctor(BOOSECoreApp.Core.Base.StoredProgramApp)
-  commentId: M:BOOSECoreApp.Core.Base.ParserApp.#ctor(BOOSECoreApp.Core.Base.StoredProgramApp)
-  id: '#ctor(BOOSECoreApp.Core.Base.StoredProgramApp)'
+- uid: BOOSECoreApp.Core.Base.ParserApp.#ctor(BOOSECoreApp.Core.Interfaces.IStoredProgramApp)
+  commentId: M:BOOSECoreApp.Core.Base.ParserApp.#ctor(BOOSECoreApp.Core.Interfaces.IStoredProgramApp)
+  id: '#ctor(BOOSECoreApp.Core.Interfaces.IStoredProgramApp)'
   parent: BOOSECoreApp.Core.Base.ParserApp
   langs:
   - csharp
   - vb
-  name: ParserApp(StoredProgramApp)
-  nameWithType: ParserApp.ParserApp(StoredProgramApp)
-  fullName: BOOSECoreApp.Core.Base.ParserApp.ParserApp(BOOSECoreApp.Core.Base.StoredProgramApp)
+  name: ParserApp(IStoredProgramApp)
+  nameWithType: ParserApp.ParserApp(IStoredProgramApp)
+  fullName: BOOSECoreApp.Core.Base.ParserApp.ParserApp(BOOSECoreApp.Core.Interfaces.IStoredProgramApp)
   type: Constructor
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/ParserApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
   summary: Initialises a new instance of the <xref href="BOOSECoreApp.Core.Base.ParserApp" data-throw-if-not-resolved="false"></xref> class.
   example: []
   syntax:
-    content: public ParserApp(StoredProgramApp program)
+    content: public ParserApp(IStoredProgramApp program)
     parameters:
     - id: program
-      type: BOOSECoreApp.Core.Base.StoredProgramApp
+      type: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
       description: The current stored program context.
-    content.vb: Public Sub New(program As StoredProgramApp)
+    content.vb: Public Sub New(program As IStoredProgramApp)
   overload: BOOSECoreApp.Core.Base.ParserApp.#ctor*
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
     description: Thrown if the provided program is null.
-  nameWithType.vb: ParserApp.New(StoredProgramApp)
-  fullName.vb: BOOSECoreApp.Core.Base.ParserApp.New(BOOSECoreApp.Core.Base.StoredProgramApp)
-  name.vb: New(StoredProgramApp)
+  nameWithType.vb: ParserApp.New(IStoredProgramApp)
+  fullName.vb: BOOSECoreApp.Core.Base.ParserApp.New(BOOSECoreApp.Core.Interfaces.IStoredProgramApp)
+  name.vb: New(IStoredProgramApp)
 - uid: BOOSECoreApp.Core.Base.ParserApp.ParseCode(System.String)
   commentId: M:BOOSECoreApp.Core.Base.ParserApp.ParseCode(System.String)
   id: ParseCode(System.String)
@@ -97,7 +97,7 @@ items:
   fullName: BOOSECoreApp.Core.Base.ParserApp.ParseCode(string)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Base/ParserApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/71af51b64936fa29bbdbdb1146b52b1c5bb212d2/BOOSECoreApp/Core/Base/ParserApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Base
@@ -411,21 +411,58 @@ references:
 - uid: BOOSECoreApp.Core.Base.ParserApp.#ctor*
   commentId: Overload:BOOSECoreApp.Core.Base.ParserApp.#ctor
   isExternal: true
-  href: BOOSECoreApp.Core.Base.ParserApp.html#BOOSECoreApp_Core_Base_ParserApp__ctor_BOOSECoreApp_Core_Base_StoredProgramApp_
+  href: BOOSECoreApp.Core.Base.ParserApp.html#BOOSECoreApp_Core_Base_ParserApp__ctor_BOOSECoreApp_Core_Interfaces_IStoredProgramApp_
   name: ParserApp
   nameWithType: ParserApp.ParserApp
   fullName: BOOSECoreApp.Core.Base.ParserApp.ParserApp
   nameWithType.vb: ParserApp.New
   fullName.vb: BOOSECoreApp.Core.Base.ParserApp.New
   name.vb: New
-- uid: BOOSECoreApp.Core.Base.StoredProgramApp
-  commentId: T:BOOSECoreApp.Core.Base.StoredProgramApp
-  parent: BOOSECoreApp.Core.Base
+- uid: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+  commentId: T:BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+  parent: BOOSECoreApp.Core.Interfaces
   isExternal: true
-  href: BOOSECoreApp.Core.Base.StoredProgramApp.html
-  name: StoredProgramApp
-  nameWithType: StoredProgramApp
-  fullName: BOOSECoreApp.Core.Base.StoredProgramApp
+  href: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.html
+  name: IStoredProgramApp
+  nameWithType: IStoredProgramApp
+  fullName: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+- uid: BOOSECoreApp.Core.Interfaces
+  commentId: N:BOOSECoreApp.Core.Interfaces
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Interfaces
+  nameWithType: BOOSECoreApp.Core.Interfaces
+  fullName: BOOSECoreApp.Core.Interfaces
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.html
 - uid: BOOSECoreApp.Exceptions.GlobalExceptionHandler
   commentId: T:BOOSECoreApp.Exceptions.GlobalExceptionHandler
   isExternal: true

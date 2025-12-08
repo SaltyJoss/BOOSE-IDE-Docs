@@ -5,7 +5,7 @@ items:
   id: VariableAdapterApp
   parent: BOOSECoreApp.Core.Adapters
   children:
-  - BOOSECoreApp.Core.Adapters.VariableAdapterApp.#ctor(BOOSECoreApp.Core.Base.StoredProgramApp)
+  - BOOSECoreApp.Core.Adapters.VariableAdapterApp.#ctor(BOOSECoreApp.Core.Interfaces.IStoredProgramApp)
   - BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyLogical(System.String,System.Boolean,System.Boolean)
   - BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyOperator(System.String,System.String,System.Object)
   - BOOSECoreApp.Core.Adapters.VariableAdapterApp.CreateVariable(System.String,BOOSECoreApp.Core.Adapters.SoftVariable.VariableType,System.String)
@@ -20,7 +20,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp
   type: Class
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -39,39 +39,39 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
-- uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.#ctor(BOOSECoreApp.Core.Base.StoredProgramApp)
-  commentId: M:BOOSECoreApp.Core.Adapters.VariableAdapterApp.#ctor(BOOSECoreApp.Core.Base.StoredProgramApp)
-  id: '#ctor(BOOSECoreApp.Core.Base.StoredProgramApp)'
+- uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.#ctor(BOOSECoreApp.Core.Interfaces.IStoredProgramApp)
+  commentId: M:BOOSECoreApp.Core.Adapters.VariableAdapterApp.#ctor(BOOSECoreApp.Core.Interfaces.IStoredProgramApp)
+  id: '#ctor(BOOSECoreApp.Core.Interfaces.IStoredProgramApp)'
   parent: BOOSECoreApp.Core.Adapters.VariableAdapterApp
   langs:
   - csharp
   - vb
-  name: VariableAdapterApp(StoredProgramApp)
-  nameWithType: VariableAdapterApp.VariableAdapterApp(StoredProgramApp)
-  fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.VariableAdapterApp(BOOSECoreApp.Core.Base.StoredProgramApp)
+  name: VariableAdapterApp(IStoredProgramApp)
+  nameWithType: VariableAdapterApp.VariableAdapterApp(IStoredProgramApp)
+  fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.VariableAdapterApp(BOOSECoreApp.Core.Interfaces.IStoredProgramApp)
   type: Constructor
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
   summary: Initialises a new instance of the <xref href="BOOSECoreApp.Core.Adapters.VariableAdapterApp" data-throw-if-not-resolved="false"></xref> class.
   example: []
   syntax:
-    content: public VariableAdapterApp(StoredProgramApp program)
+    content: public VariableAdapterApp(IStoredProgramApp program)
     parameters:
     - id: program
-      type: BOOSECoreApp.Core.Base.StoredProgramApp
+      type: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
       description: The stored programme context.
-    content.vb: Public Sub New(program As StoredProgramApp)
+    content.vb: Public Sub New(program As IStoredProgramApp)
   overload: BOOSECoreApp.Core.Adapters.VariableAdapterApp.#ctor*
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
     description: Thrown if <code class="paramref">program</code> is null.
-  nameWithType.vb: VariableAdapterApp.New(StoredProgramApp)
-  fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.New(BOOSECoreApp.Core.Base.StoredProgramApp)
-  name.vb: New(StoredProgramApp)
+  nameWithType.vb: VariableAdapterApp.New(IStoredProgramApp)
+  fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.New(BOOSECoreApp.Core.Interfaces.IStoredProgramApp)
+  name.vb: New(IStoredProgramApp)
 - uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ResetAll
   commentId: M:BOOSECoreApp.Core.Adapters.VariableAdapterApp.ResetAll
   id: ResetAll
@@ -84,7 +84,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ResetAll()
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -110,7 +110,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.CreateVariable(string, BOOSECoreApp.Core.Adapters.SoftVariable.VariableType, string?)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -131,9 +131,9 @@ items:
     content.vb: Public Sub CreateVariable(name As String, type As SoftVariable.VariableType, initialValue As String = Nothing)
   overload: BOOSECoreApp.Core.Adapters.VariableAdapterApp.CreateVariable*
   exceptions:
-  - type: System.InvalidOperationException
-    commentId: T:System.InvalidOperationException
-    description: Thrown if variable already exists.
+  - type: BOOSECoreApp.Exceptions.BooseSyntaxException
+    commentId: T:BOOSECoreApp.Exceptions.BooseSyntaxException
+    description: Thrown if variable already exists or type is unknown.
   nameWithType.vb: VariableAdapterApp.CreateVariable(String, SoftVariable.VariableType, String)
   fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.CreateVariable(String, BOOSECoreApp.Core.Adapters.SoftVariable.VariableType, String)
   name.vb: CreateVariable(String, VariableType, String)
@@ -149,7 +149,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.UpdateVariable(string, BOOSECoreApp.Core.Adapters.VariableAdapterApp.Operator, object?)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -169,6 +169,10 @@ items:
       description: Optional operand.
     content.vb: Public Sub UpdateVariable(name As String, op As VariableAdapterApp.Operator, operand As Object = Nothing)
   overload: BOOSECoreApp.Core.Adapters.VariableAdapterApp.UpdateVariable*
+  exceptions:
+  - type: BOOSECoreApp.Exceptions.BooseSyntaxException
+    commentId: T:BOOSECoreApp.Exceptions.BooseSyntaxException
+    description: Thrown if variable not declared or operator unsupported.
   nameWithType.vb: VariableAdapterApp.UpdateVariable(String, VariableAdapterApp.Operator, Object)
   fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.UpdateVariable(String, BOOSECoreApp.Core.Adapters.VariableAdapterApp.Operator, Object)
   name.vb: UpdateVariable(String, Operator, Object)
@@ -184,7 +188,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyOperator(string, string, object?)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -205,9 +209,9 @@ items:
     content.vb: Public Sub ApplyOperator(name As String, op As String, value As Object = Nothing)
   overload: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyOperator*
   exceptions:
-  - type: System.InvalidOperationException
-    commentId: T:System.InvalidOperationException
-    description: Unsupported operator.
+  - type: BOOSECoreApp.Exceptions.BooseSyntaxException
+    commentId: T:BOOSECoreApp.Exceptions.BooseSyntaxException
+    description: Thrown if operator is unsupported.
   nameWithType.vb: VariableAdapterApp.ApplyOperator(String, String, Object)
   fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyOperator(String, String, Object)
   name.vb: ApplyOperator(String, String, Object)
@@ -223,7 +227,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ToBool(object?)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -263,7 +267,7 @@ items:
   fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ApplyLogical(string, bool, bool)
   type: Method
   source:
-    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/55d2b27d58f7b59c269a65ea8a7973052a6dd3ea/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
+    href: https://github.com/ASE2025repos/ase-boose-assignment-SaltyJoss/blob/1ed8ce4b884990b05db228066bb19047522af177/BOOSECoreApp/Core/Adapters/VariableAdapterApp.cs
   assemblies:
   - BOOSECoreApp
   namespace: BOOSECoreApp.Core.Adapters
@@ -305,7 +309,6 @@ references:
   fullName: BOOSECoreApp.Core.Adapters.SoftVariable
 - uid: BOOSECoreApp.Core.Base.StoredProgramApp
   commentId: T:BOOSECoreApp.Core.Base.StoredProgramApp
-  parent: BOOSECoreApp.Core.Base
   isExternal: true
   href: BOOSECoreApp.Core.Base.StoredProgramApp.html
   name: StoredProgramApp
@@ -578,43 +581,6 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
   - name: (
   - name: )
-- uid: BOOSECoreApp.Core.Base
-  commentId: N:BOOSECoreApp.Core.Base
-  isExternal: true
-  href: BOOSECoreApp.html
-  name: BOOSECoreApp.Core.Base
-  nameWithType: BOOSECoreApp.Core.Base
-  fullName: BOOSECoreApp.Core.Base
-  spec.csharp:
-  - uid: BOOSECoreApp
-    name: BOOSECoreApp
-    isExternal: true
-    href: BOOSECoreApp.html
-  - name: .
-  - uid: BOOSECoreApp.Core
-    name: Core
-    isExternal: true
-    href: BOOSECoreApp.Core.html
-  - name: .
-  - uid: BOOSECoreApp.Core.Base
-    name: Base
-    isExternal: true
-    href: BOOSECoreApp.Core.Base.html
-  spec.vb:
-  - uid: BOOSECoreApp
-    name: BOOSECoreApp
-    isExternal: true
-    href: BOOSECoreApp.html
-  - name: .
-  - uid: BOOSECoreApp.Core
-    name: Core
-    isExternal: true
-    href: BOOSECoreApp.Core.html
-  - name: .
-  - uid: BOOSECoreApp.Core.Base
-    name: Base
-    isExternal: true
-    href: BOOSECoreApp.Core.Base.html
 - uid: System
   commentId: N:System
   isExternal: true
@@ -640,13 +606,58 @@ references:
 - uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.#ctor*
   commentId: Overload:BOOSECoreApp.Core.Adapters.VariableAdapterApp.#ctor
   isExternal: true
-  href: BOOSECoreApp.Core.Adapters.VariableAdapterApp.html#BOOSECoreApp_Core_Adapters_VariableAdapterApp__ctor_BOOSECoreApp_Core_Base_StoredProgramApp_
+  href: BOOSECoreApp.Core.Adapters.VariableAdapterApp.html#BOOSECoreApp_Core_Adapters_VariableAdapterApp__ctor_BOOSECoreApp_Core_Interfaces_IStoredProgramApp_
   name: VariableAdapterApp
   nameWithType: VariableAdapterApp.VariableAdapterApp
   fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.VariableAdapterApp
   nameWithType.vb: VariableAdapterApp.New
   fullName.vb: BOOSECoreApp.Core.Adapters.VariableAdapterApp.New
   name.vb: New
+- uid: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+  commentId: T:BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+  parent: BOOSECoreApp.Core.Interfaces
+  isExternal: true
+  href: BOOSECoreApp.Core.Interfaces.IStoredProgramApp.html
+  name: IStoredProgramApp
+  nameWithType: IStoredProgramApp
+  fullName: BOOSECoreApp.Core.Interfaces.IStoredProgramApp
+- uid: BOOSECoreApp.Core.Interfaces
+  commentId: N:BOOSECoreApp.Core.Interfaces
+  isExternal: true
+  href: BOOSECoreApp.html
+  name: BOOSECoreApp.Core.Interfaces
+  nameWithType: BOOSECoreApp.Core.Interfaces
+  fullName: BOOSECoreApp.Core.Interfaces
+  spec.csharp:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.html
+  spec.vb:
+  - uid: BOOSECoreApp
+    name: BOOSECoreApp
+    isExternal: true
+    href: BOOSECoreApp.html
+  - name: .
+  - uid: BOOSECoreApp.Core
+    name: Core
+    isExternal: true
+    href: BOOSECoreApp.Core.html
+  - name: .
+  - uid: BOOSECoreApp.Core.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: BOOSECoreApp.Core.Interfaces.html
 - uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ResetAll*
   commentId: Overload:BOOSECoreApp.Core.Adapters.VariableAdapterApp.ResetAll
   isExternal: true
@@ -654,13 +665,13 @@ references:
   name: ResetAll
   nameWithType: VariableAdapterApp.ResetAll
   fullName: BOOSECoreApp.Core.Adapters.VariableAdapterApp.ResetAll
-- uid: System.InvalidOperationException
-  commentId: T:System.InvalidOperationException
+- uid: BOOSECoreApp.Exceptions.BooseSyntaxException
+  commentId: T:BOOSECoreApp.Exceptions.BooseSyntaxException
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
-  name: InvalidOperationException
-  nameWithType: InvalidOperationException
-  fullName: System.InvalidOperationException
+  href: BOOSECoreApp.Exceptions.BooseSyntaxException.html
+  name: BooseSyntaxException
+  nameWithType: BooseSyntaxException
+  fullName: BOOSECoreApp.Exceptions.BooseSyntaxException
 - uid: BOOSECoreApp.Core.Adapters.VariableAdapterApp.CreateVariable*
   commentId: Overload:BOOSECoreApp.Core.Adapters.VariableAdapterApp.CreateVariable
   isExternal: true
